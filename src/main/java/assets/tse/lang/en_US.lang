@@ -13,3 +13,4 @@ tile.copper_block.name=Copper Block
 item.copper_ingot.name=Copper Ingot
 item.copper_pickaxe.name=Copper Pickaxe
 item.copper_axe.name=Copper Axe
+tile.store_box.name=Store Box

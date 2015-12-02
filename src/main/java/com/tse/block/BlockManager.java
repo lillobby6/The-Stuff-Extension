@@ -16,6 +16,7 @@ public class BlockManager {
 	public static Block moonTeleporter;	
 	public static Block copperBlock;
 	public static Block copperOre;
+	public static Block storeBox;
 	
 	public static void createBlocks()
 	{
@@ -27,6 +28,7 @@ public class BlockManager {
 		GameRegistry.registerBlock(moonTeleporter = new MoonTeleporter(Material.rock), "moon_teleporter");
 		GameRegistry.registerBlock(copperBlock = new TSEBlock("copper_block"), "copper_block");
 		GameRegistry.registerBlock(copperOre = new TSEBlock("copper_ore"), "copper_ore");
+		GameRegistry.registerBlock(storeBox = new StoreBox("store_box"), "store_box");
 	}
 	
 }

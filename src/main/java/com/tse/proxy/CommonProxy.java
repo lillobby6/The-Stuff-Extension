@@ -3,9 +3,12 @@ package com.tse.proxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 import com.tse.block.BlockManager;
+import com.tse.gui.GuiHandler;
 import com.tse.item.ItemManager;
+import com.tse.main.core.TheStuffExtension;
 import com.tse.recipe.Crafting;
 
 public class CommonProxy {
@@ -17,7 +20,7 @@ public class CommonProxy {
     }
 
     public void init(FMLInitializationEvent e) {
-
+    	NetworkRegistry.INSTANCE.registerGuiHandler(TheStuffExtension.instance, new GuiHandler());
     }
 
     public void postInit(FMLPostInitializationEvent e) {
