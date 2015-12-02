@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tse",
+  "name": "The Stuff Extension",
+  "description": "A mod adding tons of stuff!",
+  "version": "0.1.1",
+  "mcversion": "${1.8}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["lillobby6"],
+  "credits": "lillobby6 for coding this alone, all alone... how lonely",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
