@@ -1,7 +1,8 @@
 package com.tse.item;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+
+import com.tse.creativetabs.TSECreativeTabs;
 
 public class TSEItem extends Item
 {
@@ -9,7 +10,6 @@ public class TSEItem extends Item
 	{
 		super();
 		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
-		
+		this.setCreativeTab(TSECreativeTabs.tabMaterials);
 	}
 }

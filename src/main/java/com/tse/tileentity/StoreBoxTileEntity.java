@@ -1,10 +1,8 @@
 package com.tse.tileentity;
 
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
@@ -12,8 +10,12 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.ChatComponentTranslation;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
+
+import com.tse.gui.GuiManager;
+import com.tse.main.core.TheStuffExtension;
 
 public class StoreBoxTileEntity extends TileEntity implements IInventory{
 	
@@ -183,6 +185,7 @@ public class StoreBoxTileEntity extends TileEntity implements IInventory{
 	        this.setCustomName(nbt.getString("CustomName"));
 	    }
 	}
+
 	
 
 }

@@ -14,12 +14,12 @@ public class SuperStoreBoxContainer extends Container{
 	
 	public SuperStoreBoxContainer(IInventory playerInv, SuperStoreBoxTileEntity te){
 		this.te = te;
-		//TileEntity Inventory ID#0-71
-		for (int y = 0; y < 6; ++y)
+		//TileEntity Inventory ID#0-71                                                         
+		for (int y = 0; y < 5; ++y)
 		{
 			for (int x = 0; x < 12; ++x)
 			{
-	            	this.addSlotToContainer(new Slot(te, x + y * 12, 8 + x * 18, 18 + y * 18));
+				this.addSlotToContainer(new Slot(te, x + y * 12, 8 + x * 18, 18 + y * 18));	            	
 	        }
 	    }
 		
@@ -27,14 +27,14 @@ public class SuperStoreBoxContainer extends Container{
 		for (int y = 0; y < 3; ++y) {
 	        for (int x = 0; x < 9; ++x)
 	        {
-	            this.addSlotToContainer(new Slot(playerInv, x + y * 9 + 9, 34 + x * 18, 140 + y * 18));
+	            this.addSlotToContainer(new Slot(playerInv, x + y * 9 + 9, 34 + x * 18, 122 + y * 18));
 	        }
 	    }
 		
 		//TileEntity Inventory ID#0-8
 		for (int x = 0; x < 9; ++x)
 		{
-	        this.addSlotToContainer(new Slot(playerInv, x, 34 + x * 18, 198));
+	        this.addSlotToContainer(new Slot(playerInv, x, 34 + x * 18, 180));
 	    }
 		
 		/*

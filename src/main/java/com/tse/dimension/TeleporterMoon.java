@@ -20,64 +20,51 @@ import net.minecraft.world.Teleporter;
 import net.minecraft.world.WorldServer;
 
 public class TeleporterMoon extends Teleporter{
-
-	private final WorldServer worldServerInstance;
-	private final Random random;
-	private final LongHashMap destinationCoordinateCache = new LongHashMap();
-	private final List destinationCoordinateKeys = Lists.newArrayList();
-	private static final String __OBFID = "CL_00000153";
 	
+	private final WorldServer worldServerInstance;
+
 	public TeleporterMoon(WorldServer worldIn) {
 		super(worldIn);
-		this.worldServerInstance = worldIn;
-		this.random = new Random(worldIn.getSeed());
+		 this.worldServerInstance = worldIn;
 	}
 	
-
-
-    private boolean func_180265_a(BlockPos p_180265_1_)
+	public void placeInPortal(Entity entityIn, float rotationYaw)
     {
-        return !this.worldServerInstance.isAirBlock(p_180265_1_) || !this.worldServerInstance.isAirBlock(p_180265_1_.up());
-    }
-
-
-    /**
-     * called periodically to remove out-of-date portal locations from the cache list. Argument par1 is a
-     * WorldServer.getTotalWorldTime() value.
-     */
-    public void removeStalePortalLocations(long p_85189_1_)
-    {
-        if (p_85189_1_ % 100L == 0L)
+        if (this.worldServerInstance.provider.getDimensionId() != 1)
         {
-            Iterator iterator = this.destinationCoordinateKeys.iterator();
-            long j = p_85189_1_ - 600L;
-
-            while (iterator.hasNext())
+            if (!this.placeInExistingPortal(entityIn, rotationYaw))
             {
-                Long olong = (Long)iterator.next();
-                Teleporter.PortalPosition portalposition = (Teleporter.PortalPosition)this.destinationCoordinateCache.getValueByKey(olong.longValue());
-
-                if (portalposition == null || portalposition.lastUpdateTime < j)
-                {
-                    iterator.remove();
-                    this.destinationCoordinateCache.remove(olong.longValue());
-                }
+                this.makePortal(entityIn);
+                this.placeInExistingPortal(entityIn, rotationYaw);
             }
         }
-    }
-
-    public class PortalPosition extends BlockPos
-    {
-        /** The worldtime at which this PortalPosition was last verified */
-        public long lastUpdateTime;
-        private static final String __OBFID = "CL_00000154";
-
-        public PortalPosition(BlockPos pos, long p_i45747_3_)
+        else
         {
-            super(pos.getX(), pos.getY(), pos.getZ());
-            this.lastUpdateTime = p_i45747_3_;
+            int i = MathHelper.floor_double(entityIn.posX);
+            int j = MathHelper.floor_double(entityIn.posY) - 1;
+            int k = MathHelper.floor_double(entityIn.posZ);
+            byte b0 = 1;
+            byte b1 = 0;
+
+            for (int l = -2; l <= 2; ++l)
+            {
+                for (int i1 = -2; i1 <= 2; ++i1)
+                {
+                    for (int j1 = -1; j1 < 3; ++j1)
+                    {
+                        int k1 = i + i1 * b0 + l * b1;
+                        int l1 = j + j1;
+                        int i2 = k + i1 * b1 - l * b0;
+                        boolean flag = j1 < 0;
+                        this.worldServerInstance.setBlockState(new BlockPos(k1, l1, i2), flag ? Blocks.obsidian.getDefaultState() : Blocks.air.getDefaultState());
+                    }
+                }
+            }
+
+            entityIn.setLocationAndAngles((double)i, (double)j, (double)k, entityIn.rotationYaw, 0.0F);
+            entityIn.motionX = entityIn.motionY = entityIn.motionZ = 0.0D;
         }
     }
-}
 
+}
 

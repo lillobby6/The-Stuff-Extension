@@ -1,0 +1,47 @@
+item.exalted_diamond.name=Adamas Elatus
+item.blood_diamond.name=Adamas Sanguinolentus
+item.terra_diamond.name=Adamas de Terra
+item.luna_diamond.name=Adamas de Luna
+
+item.copper_ingot.name=Later Aheneus
+item.steel_ingot.name=Later Adamanteus
+
+item.copper_pickaxe.name=Dolabra Ahenea
+item.copper_axe.name=Ascea Ahenea
+item.copper_shovel.name=Rutrum Aheneum
+item.copper_hoe.name=Sarculum Aheneum
+item.copper_mattock.name=Ligo Aheneus
+item.copper_sword.name=Gladius Aheneus
+
+item.wood_mattock.name=Ligo Ligneus
+item.stone_mattock.name=Ligo Concretus
+item.iron_mattock.name=Ligo Ferrous
+item.diamond_mattock.name=Ligo Adamantinus
+item.gold_mattock.name=Ligo Aureus
+
+item.copper_helmet.name=Galea Ahenea
+item.copper_chestplate.name=Thorax Ahenea
+item.copper_leggings.name=Genual Ahenea
+item.copper_boots.name=Calagae Aheneae
+
+tile.exalted_diamond_ore.name=Minerale Adamatis Elati
+tile.blood_diamond_ore.name=Minerale Adamatis Sanguinolenti
+tile.terra_diamond_ore.name=Minerale Adamas de Terra
+tile.moon_sand.name=Harenae de Luna
+tile.moon_stone.name=Saxum de Luna
+tile.copper_ore.name=Aurichalcum
+tile.moon_teleporter.name=Transportare ad Lunam
+tile.copper_block.name=Talea Ahenea
+
+tile.store_box.name=Cavea
+tile.super_store_box.name=Cavea Magna
+tile.mysterious_box.name=Cavea Arcana
+
+container.store_box=Cavea
+container.super_store_box=Cavea Magna
+container.mysterious_box=Cavea Arcana
+
+itemGroup.tabStorage=Tendens Scrutum: Apotheca
+itemGroup.tabTools=Tendens Scrutum: Instrumenta
+itemGroup.tabWeapons=Tendens Scrutum: Bellum
+itemGroup.tabMaterials=Tendens Scrutum: Materiae

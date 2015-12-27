@@ -16,6 +16,22 @@ public class ItemRenderRegister {
 		reg(ItemManager.copperIngot);
 		reg(ItemManager.copperAxe);
 		reg(ItemManager.copperPickaxe);
+		reg(ItemManager.copperShovel);
+		reg(ItemManager.copperSword);
+		reg(ItemManager.copperHoe);
+		reg(ItemManager.mysteriousRemover);
+		reg(ItemManager.steelIngot);
+		reg(ItemManager.stoneMattock);
+		reg(ItemManager.copperMattock);
+		reg(ItemManager.copperHelmet);
+		reg(ItemManager.copperChestplate);
+		reg(ItemManager.copperLeggings);
+		reg(ItemManager.copperBoots);
+		reg(ItemManager.ironMattock);
+		reg(ItemManager.woodMattock);
+		reg(ItemManager.goldMattock);
+		reg(ItemManager.diamondMattock);
+		
 	}
 	public static void reg(Item item)
 	{

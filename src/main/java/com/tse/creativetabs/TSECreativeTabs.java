@@ -4,6 +4,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 import com.tse.block.BlockManager;
+import com.tse.item.ItemManager;
 
 public class TSECreativeTabs {
 	
@@ -11,5 +12,27 @@ public class TSECreativeTabs {
 	    @Override public Item getTabIconItem() {
 	        return Item.getItemFromBlock(BlockManager.storeBox);
 	    }
+	};
+	
+	public static final CreativeTabs tabTools = new CreativeTabs("tabTools") {
+	    @Override public Item getTabIconItem() {
+	        return ItemManager.copperPickaxe;
+	    }
+	};
+	
+	public static final CreativeTabs tabWeapons = new CreativeTabs("tabWeapons")
+	{
+		@Override public Item getTabIconItem()
+		{
+			return ItemManager.copperSword;
+		}
+	};
+	
+	public static final CreativeTabs tabMaterials = new CreativeTabs("tabMaterials")
+	{
+		@Override public Item getTabIconItem()
+		{
+			return ItemManager.bloodDiamond;
+		}
 	};
 }

@@ -3,6 +3,8 @@ package com.tse.item;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemAxe;
 
+import com.tse.creativetabs.TSECreativeTabs;
+
 public class TSEAxe extends ItemAxe{
 
 	public TSEAxe(ToolMaterial material, CreativeTabs tab, int level, String unlocalizedName) {
@@ -14,8 +16,8 @@ public class TSEAxe extends ItemAxe{
 	public TSEAxe(ToolMaterial material, String unlocalizedName)
 	{
 		super(material);
-		this.setCreativeTab(CreativeTabs.tabTools);
-		this.setHarvestLevel("axe", 1);
+		this.setCreativeTab(TSECreativeTabs.tabTools);
+		this.setHarvestLevel("axe", 2);
 		this.setUnlocalizedName(unlocalizedName);
 	}
 

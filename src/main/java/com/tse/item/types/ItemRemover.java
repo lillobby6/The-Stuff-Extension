@@ -1,0 +1,21 @@
+package com.tse.item.types;
+
+import java.util.Set;
+
+import com.google.common.collect.Sets;
+import com.tse.block.BlockManager;
+
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemTool;
+
+public class ItemRemover extends ItemTool{
+	
+    private static final Set EFFECTIVE_ON = Sets.newHashSet(new Block[] {BlockManager.mysteriousBox, BlockManager.storeBox, BlockManager.superStoreBox});
+
+
+	protected ItemRemover(ToolMaterial material) {
+		super(0F, material, EFFECTIVE_ON);
+	}
+
+}

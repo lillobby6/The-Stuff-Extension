@@ -19,7 +19,7 @@ public class StoreBoxContainer extends Container{
 		{
 			for (int x = 0; x < 9; ++x)
 			{
-	            	this.addSlotToContainer(new Slot(te, x + y * 3, 8 + x * 18, 18 + y * 18));
+	            	this.addSlotToContainer(new Slot(te, x + y * 9, 8 + x * 18, 18 + y * 18));
 	        }
 	    }
 		

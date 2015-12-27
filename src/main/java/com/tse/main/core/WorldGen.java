@@ -16,6 +16,7 @@ public class WorldGen implements IWorldGenerator{
 	private WorldGenerator gen_exalted_diamond_ore;
 	private WorldGenerator gen_blood_diamond_ore;
 	private WorldGenerator gen_terra_diamond_ore;
+	private WorldGenerator gCopperOre;
 
 	
 	@Override
@@ -27,6 +28,7 @@ public class WorldGen implements IWorldGenerator{
 		    	this.runGenerator(this.gen_exalted_diamond_ore, world, random, chunkX, chunkZ, 10, 0, 16);
 		    	this.runGenerator(this.gen_blood_diamond_ore, world, random, chunkX, chunkZ, 10, 0, 16);
 		    	this.runGenerator(this.gen_terra_diamond_ore, world, random, chunkX, chunkZ, 10, 0, 16);
+		    	this.runGenerator(this.gCopperOre, world, random, chunkX, chunkZ, 30, 0, 64);
 		        break;
 		    case -1: //Nether
 
@@ -41,6 +43,8 @@ public class WorldGen implements IWorldGenerator{
 	public WorldGen() {
 	    this.gen_exalted_diamond_ore = new WorldGenMinable(BlockManager.exaltedDiamondOre.getDefaultState(), 8);
 	    this.gen_blood_diamond_ore = new WorldGenMinable(BlockManager.bloodDiamondOre.getDefaultState(), 8);
+	    this.gen_terra_diamond_ore = new WorldGenMinable(BlockManager.terraDiamondOre.getDefaultState(), 8);
+	    this.gCopperOre = new WorldGenMinable(BlockManager.copperOre.getDefaultState(), 8);
 	}
 	
 	private void runGenerator(WorldGenerator generator, World world, Random rand, int chunk_X, int chunk_Z, int chancesToSpawn, int minHeight, int maxHeight) {
