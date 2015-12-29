@@ -24,6 +24,8 @@ item.copper_chestplate.name=Copper Chestplate
 item.copper_leggings.name=Copper Leggings
 item.copper_boots.name=Copper Boots
 
+item.lapis_remover.name=Lapis Lazuli Remover
+
 tile.exalted_diamond_ore.name=Exalted Diamond Ore
 tile.blood_diamond_ore.name=Blood Diamond Ore
 tile.terra_diamond_ore.name=Terra Diamond Ore

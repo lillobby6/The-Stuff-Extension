@@ -3,10 +3,11 @@ package com.tse.item;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
-import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+import com.tse.creativetabs.TSECreativeTabs;
 import com.tse.item.materials.TSEArmorMaterials;
+import com.tse.item.materials.TSEToolMaterials;
 
 public class ItemManager {
 
@@ -32,7 +33,7 @@ public class ItemManager {
 	public static Item diamondMattock;
 	public static Item goldMattock;
 	
-	public static Item mysteriousRemover;
+	public static Item lapisRemover;
 	
 	public static Item copperHelmet;
 	public static Item copperChestplate;
@@ -49,12 +50,12 @@ public class ItemManager {
 		GameRegistry.registerItem(copperIngot = new TSEItem("copper_ingot"), "copper_ingot");
 		GameRegistry.registerItem(steelIngot = new TSEItem("steel_ingot"), "steel_ingot");
 		
-		GameRegistry.registerItem(copperPickaxe = new TSEPickaxe(ToolMaterial.IRON, "copper_pickaxe"), "copper_pickaxe");
-		GameRegistry.registerItem(copperAxe = new TSEAxe(ToolMaterial.IRON, "copper_axe"), "copper_axe");
-		GameRegistry.registerItem(copperShovel = new TSESpade(ToolMaterial.IRON, "copper_shovel"), "copper_shovel");
-		GameRegistry.registerItem(copperHoe = new TSEHoe(ToolMaterial.IRON, "copper_hoe"), "copper_hoe");
-		GameRegistry.registerItem(copperMattock = new TSEMattock(ToolMaterial.IRON, "copper_mattock"), "copper_mattock");
-		GameRegistry.registerItem(copperSword = new TSESword("copper_sword"), "copper_sword");
+		GameRegistry.registerItem(copperPickaxe = new TSEPickaxe(TSEToolMaterials.COPPER, "copper_pickaxe"), "copper_pickaxe");
+		GameRegistry.registerItem(copperAxe = new TSEAxe(TSEToolMaterials.COPPER, "copper_axe"), "copper_axe");
+		GameRegistry.registerItem(copperShovel = new TSESpade(TSEToolMaterials.COPPER, "copper_shovel"), "copper_shovel");
+		GameRegistry.registerItem(copperHoe = new TSEHoe(TSEToolMaterials.COPPER, "copper_hoe"), "copper_hoe");
+		GameRegistry.registerItem(copperMattock = new TSEMattock(TSEToolMaterials.COPPER, "copper_mattock"), "copper_mattock");
+		GameRegistry.registerItem(copperSword = new TSESword(TSEToolMaterials.COPPER, "copper_sword"), "copper_sword");
 		
 		GameRegistry.registerItem(woodMattock = new TSEMattock(ToolMaterial.WOOD, 0, "wood_mattock", CreativeTabs.tabTools), "wood_mattock");
 		GameRegistry.registerItem(stoneMattock = new TSEMattock(ToolMaterial.STONE, 1, "stone_mattock", CreativeTabs.tabTools), "stone_mattock");
@@ -67,7 +68,7 @@ public class ItemManager {
 		GameRegistry.registerItem(copperLeggings = new TSEArmor("copper_leggings", TSEArmorMaterials.COPPER, 1, 2), "copper_leggings");
 		GameRegistry.registerItem(copperBoots = new TSEArmor("copper_boots", TSEArmorMaterials.COPPER, 1, 3), "copper_boots");
 		
-		GameRegistry.registerItem(mysteriousRemover = new MysteriousRemover(), "mysterious_remover");
+		GameRegistry.registerItem(lapisRemover = new TSERemover(TSEToolMaterials.LAPIS, TSECreativeTabs.tabTools, "lapis_remover", 0), "lapis_remover");
 
 		
 	}

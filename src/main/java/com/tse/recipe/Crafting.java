@@ -13,7 +13,8 @@ public class Crafting {
 	public static void initCrafting()
 	{
 		smelting();
-		crafting();
+		craftingShaped();
+		craftingShapeless();
 	}
 	public static void smelting()
 	{
@@ -23,21 +24,25 @@ public class Crafting {
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.copperOre), new ItemStack(ItemManager.copperIngot), 0.1F);
 		GameRegistry.addSmelting(Items.iron_ingot, new ItemStack(ItemManager.steelIngot), 0.1F);
 	}
-	public static void crafting()
+	public static void craftingShapeless()
 	{
-		GameRegistry.addShapelessRecipe(new ItemStack(BlockManager.copperBlock),
-    	ItemManager.copperIngot,
-    	ItemManager.copperIngot,
-    	ItemManager.copperIngot,
-    	ItemManager.copperIngot,
-    	ItemManager.copperIngot,
-    	ItemManager.copperIngot,
-    	ItemManager.copperIngot,
-    	ItemManager.copperIngot,
-    	ItemManager.copperIngot);
-		
+		GameRegistry.addShapelessRecipe(new ItemStack(BlockManager.copperBlock, 1),
+		ItemManager.copperIngot,
+		ItemManager.copperIngot,
+	 	ItemManager.copperIngot,
+	  	ItemManager.copperIngot,
+	  	ItemManager.copperIngot,
+	  	ItemManager.copperIngot,
+	  	ItemManager.copperIngot,
+	  	ItemManager.copperIngot,
+		ItemManager.copperIngot);
+			
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.copperIngot, 9),
 		BlockManager.copperBlock);
+	}
+	public static void craftingShaped()
+	{
+		
 		
 		GameRegistry.addShapedRecipe(new ItemStack(BlockManager.storeBox),
 		"xyx",
@@ -171,16 +176,28 @@ public class Crafting {
 		"xxx",
 		'x', ItemManager.copperIngot);
 		
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperChestplate),
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperLeggings),
 		"xxx",
 		"x x",
 		"x x",
 		'x', ItemManager.copperIngot);
 		
-		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperChestplate),
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperBoots),
 		"x x",
 		"x x",
 		'x', ItemManager.copperIngot);
 		//end copper armor
+		
+		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.lapisRemover),
+		" xx",
+		" yx",
+		"y  ",
+		'x', Item.getItemFromBlock(Blocks.lapis_block), 'y', Items.stick);
+		
+		GameRegistry.addShapedRecipe(new ItemStack(BlockManager.mysteriousBox),
+		"xyx",
+		"yzy",
+		"xxx",
+		'x', Item.getItemFromBlock(Blocks.lapis_block), 'y', Items.iron_ingot, 'z', Item.getItemFromBlock(Blocks.chest));
 	}
 }

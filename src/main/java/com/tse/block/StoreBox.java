@@ -26,7 +26,7 @@ public class StoreBox extends BlockContainer{
 		this.setUnlocalizedName(unlocalizedName);
 		this.setHardness(2.0F);
 		this.setResistance(6.0F);
-		this.setHarvestLevel("axe", 1);
+		this.setHarvestLevel("axe", 0);
 		this.setCreativeTab(TSECreativeTabs.tabStorage);
 	}
 	

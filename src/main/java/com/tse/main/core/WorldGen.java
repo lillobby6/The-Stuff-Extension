@@ -28,7 +28,7 @@ public class WorldGen implements IWorldGenerator{
 		    	this.runGenerator(this.gen_exalted_diamond_ore, world, random, chunkX, chunkZ, 10, 0, 16);
 		    	this.runGenerator(this.gen_blood_diamond_ore, world, random, chunkX, chunkZ, 10, 0, 16);
 		    	this.runGenerator(this.gen_terra_diamond_ore, world, random, chunkX, chunkZ, 10, 0, 16);
-		    	this.runGenerator(this.gCopperOre, world, random, chunkX, chunkZ, 30, 0, 64);
+		    	this.runGenerator(this.gCopperOre, world, random, chunkX, chunkZ, 20, 0, 64);
 		        break;
 		    case -1: //Nether
 

@@ -19,7 +19,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.copperShovel);
 		reg(ItemManager.copperSword);
 		reg(ItemManager.copperHoe);
-		reg(ItemManager.mysteriousRemover);
+		reg(ItemManager.lapisRemover);
 		reg(ItemManager.steelIngot);
 		reg(ItemManager.stoneMattock);
 		reg(ItemManager.copperMattock);

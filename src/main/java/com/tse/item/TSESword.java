@@ -13,9 +13,9 @@ public class TSESword extends ItemSword{
 		this.setUnlocalizedName(name);
 	}
 	
-	public TSESword(String name)
+	public TSESword(ToolMaterial material, String name)
 	{
-		super(ToolMaterial.IRON);
+		super(material);
 		this.setCreativeTab(TSECreativeTabs.tabWeapons);
 		this.setUnlocalizedName(name);
 	}
