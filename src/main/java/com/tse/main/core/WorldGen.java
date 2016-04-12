@@ -25,9 +25,9 @@ public class WorldGen implements IWorldGenerator{
 		 switch (world.provider.getDimensionId()) 
 		 {
 		    case 0: //Overworld
-		    	this.runGenerator(this.gen_exalted_diamond_ore, world, random, chunkX, chunkZ, 10, 0, 16);
-		    	this.runGenerator(this.gen_blood_diamond_ore, world, random, chunkX, chunkZ, 10, 0, 16);
-		    	this.runGenerator(this.gen_terra_diamond_ore, world, random, chunkX, chunkZ, 10, 0, 16);
+		    	this.runGenerator(this.gen_exalted_diamond_ore, world, random, chunkX, chunkZ, 3, 0, 16);
+		    	this.runGenerator(this.gen_blood_diamond_ore, world, random, chunkX, chunkZ, 3, 0, 16);
+		    	this.runGenerator(this.gen_terra_diamond_ore, world, random, chunkX, chunkZ, 3, 0, 16);
 		    	this.runGenerator(this.gCopperOre, world, random, chunkX, chunkZ, 20, 0, 64);
 		        break;
 		    case -1: //Nether
@@ -41,9 +41,9 @@ public class WorldGen implements IWorldGenerator{
 	
 
 	public WorldGen() {
-	    this.gen_exalted_diamond_ore = new WorldGenMinable(BlockManager.exaltedDiamondOre.getDefaultState(), 8);
-	    this.gen_blood_diamond_ore = new WorldGenMinable(BlockManager.bloodDiamondOre.getDefaultState(), 8);
-	    this.gen_terra_diamond_ore = new WorldGenMinable(BlockManager.terraDiamondOre.getDefaultState(), 8);
+	    this.gen_exalted_diamond_ore = new WorldGenMinable(BlockManager.exaltedDiamondOre.getDefaultState(), 4);
+	    this.gen_blood_diamond_ore = new WorldGenMinable(BlockManager.bloodDiamondOre.getDefaultState(), 4);
+	    this.gen_terra_diamond_ore = new WorldGenMinable(BlockManager.terraDiamondOre.getDefaultState(), 4);
 	    this.gCopperOre = new WorldGenMinable(BlockManager.copperOre.getDefaultState(), 8);
 	}
 	

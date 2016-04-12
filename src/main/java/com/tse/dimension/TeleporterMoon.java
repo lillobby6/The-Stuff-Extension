@@ -1,21 +1,9 @@
 package com.tse.dimension;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
-
-import com.google.common.collect.Lists;
-import com.tse.block.BlockManager;
-
-import net.minecraft.block.BlockPortal;
-import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
-import net.minecraft.util.BlockPos;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.LongHashMap;
-import net.minecraft.util.MathHelper;
-import net.minecraft.world.ChunkCoordIntPair;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.Teleporter;
 import net.minecraft.world.WorldServer;
 

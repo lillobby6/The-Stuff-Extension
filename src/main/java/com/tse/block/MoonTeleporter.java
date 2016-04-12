@@ -7,7 +7,7 @@ public class MoonTeleporter extends BlockPortal
 		public MoonTeleporter()
 		{
 			this.setUnlocalizedName("moon_teleporter");
-			this.isNormalCube();
+			//this.isNormalCube();
 		}
 
 }

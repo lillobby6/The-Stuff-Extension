@@ -8,6 +8,8 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
+import com.tse.creativetabs.TSECreativeTabs;
+
 
 
 public class TSEBlockOre extends Block{
@@ -31,7 +33,7 @@ public class TSEBlockOre extends Block{
     }
 	
 	protected TSEBlockOre(String unlocalizedName, Material mat, Item drop, int least_quantity, int most_quantity) {
-	    this(unlocalizedName, mat, 1, "pickaxe", 10.0F, 15.0F, CreativeTabs.tabBlock, drop, 0, least_quantity, most_quantity);
+	    this(unlocalizedName, mat, 1, "pickaxe", 10.0F, 15.0F, TSECreativeTabs.tabOres, drop, 0, least_quantity, most_quantity);
 	}
 
 	protected TSEBlockOre(String unlocalizedName, Material mat, Item drop) {

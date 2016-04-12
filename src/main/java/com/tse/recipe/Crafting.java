@@ -36,9 +36,23 @@ public class Crafting {
 	  	ItemManager.copperIngot,
 	  	ItemManager.copperIngot,
 		ItemManager.copperIngot);
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(BlockManager.steelBlock, 1),
+		ItemManager.steelIngot,
+		ItemManager.steelIngot,
+		ItemManager.steelIngot,
+		ItemManager.steelIngot,
+		ItemManager.steelIngot,
+		ItemManager.steelIngot,
+		ItemManager.steelIngot,
+		ItemManager.steelIngot,
+		ItemManager.steelIngot);
 			
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.copperIngot, 9),
 		BlockManager.copperBlock);
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.steelIngot, 9),
+		BlockManager.steelBlock);
 	}
 	public static void craftingShaped()
 	{

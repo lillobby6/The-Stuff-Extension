@@ -1,11 +1,5 @@
 package com.tse.block;
 
-import com.tse.creativetabs.TSECreativeTabs;
-import com.tse.gui.GuiManager;
-import com.tse.main.core.TheStuffExtension;
-import com.tse.tileentity.MysteriousTileEntity;
-import com.tse.tileentity.SuperStoreBoxTileEntity;
-
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -14,9 +8,14 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+
+import com.tse.creativetabs.TSECreativeTabs;
+import com.tse.gui.GuiManager;
+import com.tse.main.core.TheStuffExtension;
+import com.tse.tileentity.MysteriousTileEntity;
 
 public class MysteriousBox extends BlockContainer {
 

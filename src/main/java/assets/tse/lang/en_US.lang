@@ -34,6 +34,7 @@ tile.moon_stone.name=Moon Stone
 tile.copper_ore.name=Copper Ore
 tile.moon_teleporter.name=Moon Teleporter
 tile.copper_block.name=Copper Block
+tile.steel_block.name=Steel Block
 
 tile.store_box.name=Store Box
 tile.super_store_box.name=Super Store Box
@@ -47,3 +48,5 @@ itemGroup.tabStorage=The Stuff Extension: Storage
 itemGroup.tabTools=The Stuff Extension: Tools
 itemGroup.tabWeapons=The Stuff Extension: Combat
 itemGroup.tabMaterials=The Stuff Extension: Materials
+itemGroup.tabBlocks=The Stuff Extension: Blocks
+itemGroup.tabOres=The Stuff Extension: Ores

@@ -35,4 +35,20 @@ public class TSECreativeTabs {
 			return ItemManager.bloodDiamond;
 		}
 	};
+	
+	public static final CreativeTabs tabBlocks = new CreativeTabs("tabBlocks")
+	{
+		@Override public Item getTabIconItem()
+		{
+			return Item.getItemFromBlock(BlockManager.copperBlock);
+		}
+	};
+	
+	public static final CreativeTabs tabOres = new CreativeTabs("tabOres")
+	{
+		@Override public Item getTabIconItem()
+		{
+			return Item.getItemFromBlock(BlockManager.copperOre);
+		}
+	};
 }
