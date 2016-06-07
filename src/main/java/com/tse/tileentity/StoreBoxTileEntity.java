@@ -1,21 +1,15 @@
 package com.tse.tileentity;
 
-import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.BlockPos;
-import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.ChatComponentTranslation;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.IChatComponent;
-import net.minecraft.world.World;
-
-import com.tse.gui.GuiManager;
-import com.tse.main.core.TheStuffExtension;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentBase;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextComponentTranslation;
 
 public class StoreBoxTileEntity extends TileEntity implements IInventory{
 	
@@ -45,8 +39,8 @@ public class StoreBoxTileEntity extends TileEntity implements IInventory{
 	}
 
 	@Override
-	public IChatComponent getDisplayName() {
-		 return this.hasCustomName() ? new ChatComponentText(this.getName()) : new ChatComponentTranslation(this.getName());
+	public ITextComponent getDisplayName() {
+		 return this.hasCustomName() ? new TextComponentString(this.getName()) : new TextComponentTranslation(this.getName());
 	}
 
 	@Override
@@ -88,12 +82,12 @@ public class StoreBoxTileEntity extends TileEntity implements IInventory{
 	    }
 	}
 
-	@Override
+	/*@Override
 	public ItemStack getStackInSlotOnClosing(int index) {
 		 ItemStack stack = this.getStackInSlot(index);
 		 this.setInventorySlotContents(index, null);
 		 return stack;
-	}
+	}*/
 
 	@Override
 	public void setInventorySlotContents(int index, ItemStack stack) {
@@ -150,7 +144,7 @@ public class StoreBoxTileEntity extends TileEntity implements IInventory{
 		        this.setInventorySlotContents(i, null);
 	}
 	@Override
-	public void writeToNBT(NBTTagCompound nbt) {
+	public NBTTagCompound writeToNBT(NBTTagCompound nbt) {
 	    super.writeToNBT(nbt);
 
 	    NBTTagList list = new NBTTagList();
@@ -167,6 +161,7 @@ public class StoreBoxTileEntity extends TileEntity implements IInventory{
 	    if (this.hasCustomName()) {
 	        nbt.setString("CustomName", this.getCustomName());
 	    }
+	    return nbt;
 	}
 
 
@@ -184,6 +179,13 @@ public class StoreBoxTileEntity extends TileEntity implements IInventory{
 	    if (nbt.hasKey("CustomName", 8)) {
 	        this.setCustomName(nbt.getString("CustomName"));
 	    }
+	}
+
+	@Override
+	public ItemStack removeStackFromSlot(int index) {
+		ItemStack stack = this.getStackInSlot(index);
+		 this.setInventorySlotContents(index, null);
+		 return stack;
 	}
 
 	

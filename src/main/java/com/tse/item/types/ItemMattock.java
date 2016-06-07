@@ -6,6 +6,7 @@ import com.google.common.collect.Sets;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -13,27 +14,74 @@ import net.minecraft.item.ItemTool;
 
 public class ItemMattock extends ItemTool{
 	
-	private static final Set EFFECTIVE_ON = Sets.newHashSet(new Block[] {Blocks.activator_rail, Blocks.coal_ore, Blocks.cobblestone, Blocks.detector_rail, Blocks.diamond_block, Blocks.diamond_ore, Blocks.double_stone_slab, Blocks.golden_rail, Blocks.gold_block, Blocks.gold_ore, Blocks.ice, Blocks.iron_block, Blocks.iron_ore, Blocks.lapis_block, Blocks.lapis_ore, Blocks.lit_redstone_ore, Blocks.mossy_cobblestone, Blocks.netherrack, Blocks.packed_ice, Blocks.rail, Blocks.redstone_ore, Blocks.sandstone, Blocks.red_sandstone, Blocks.stone, Blocks.stone_slab, Blocks.planks, Blocks.bookshelf, Blocks.log, Blocks.log2, Blocks.chest, Blocks.pumpkin, Blocks.lit_pumpkin, Blocks.melon_block, Blocks.ladder});
+	private static final Set EFFECTIVE_ON = Sets.newHashSet(new Block[] {Blocks.ACTIVATOR_RAIL, Blocks.COAL_ORE, Blocks.COBBLESTONE, Blocks.DETECTOR_RAIL, Blocks.DIAMOND_BLOCK, Blocks.DIAMOND_ORE, Blocks.DOUBLE_STONE_SLAB, Blocks.GOLDEN_RAIL, Blocks.GOLD_BLOCK, Blocks.GOLD_ORE, Blocks.ICE, Blocks.IRON_BLOCK, Blocks.IRON_ORE, Blocks.LAPIS_BLOCK, Blocks.LAPIS_ORE, Blocks.LIT_REDSTONE_ORE, Blocks.MOSSY_COBBLESTONE, Blocks.NETHERRACK, Blocks.PACKED_ICE, Blocks.RAIL, Blocks.REDSTONE_ORE, Blocks.SANDSTONE, Blocks.RED_SANDSTONE, Blocks.STONE, Blocks.STONE_SLAB, Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN, Blocks.MELON_BLOCK, Blocks.LADDER});
     private static final String __OBFID = "CL_00000053";
 
 
 
-	protected ItemMattock( ToolMaterial material) {
-		super(4.0F, material, EFFECTIVE_ON);
+	protected ItemMattock(float attackSpeed, ToolMaterial material) {
+		super(4.0F, attackSpeed, material, EFFECTIVE_ON);
 	}
 
-    /**
-     * Check whether this Item can harvest the given Block
-     */
-    public boolean canHarvestBlock(Block blockIn)
+	public boolean canHarvestBlock(IBlockState blockIn)
     {
-        return blockIn == Blocks.obsidian ? this.toolMaterial.getHarvestLevel() == 3 : (blockIn != Blocks.diamond_block && blockIn != Blocks.diamond_ore ? (blockIn != Blocks.emerald_ore && blockIn != Blocks.emerald_block ? (blockIn != Blocks.gold_block && blockIn != Blocks.gold_ore ? (blockIn != Blocks.iron_block && blockIn != Blocks.iron_ore ? (blockIn != Blocks.lapis_block && blockIn != Blocks.lapis_ore ? (blockIn != Blocks.redstone_ore && blockIn != Blocks.lit_redstone_ore ? (blockIn.getMaterial() == Material.rock ? true : (blockIn.getMaterial() == Material.iron ? true : blockIn.getMaterial() == Material.anvil)) : this.toolMaterial.getHarvestLevel() >= 2) : this.toolMaterial.getHarvestLevel() >= 1) : this.toolMaterial.getHarvestLevel() >= 1) : this.toolMaterial.getHarvestLevel() >= 2) : this.toolMaterial.getHarvestLevel() >= 2) : this.toolMaterial.getHarvestLevel() >= 2);
+        Block block = blockIn.getBlock();
+
+        if (block == Blocks.OBSIDIAN)
+        {
+            return this.toolMaterial.getHarvestLevel() == 3;
+        }
+        else if (block != Blocks.DIAMOND_BLOCK && block != Blocks.DIAMOND_ORE)
+        {
+            if (block != Blocks.EMERALD_ORE && block != Blocks.EMERALD_BLOCK)
+            {
+                if (block != Blocks.GOLD_BLOCK && block != Blocks.GOLD_ORE)
+                {
+                    if (block != Blocks.IRON_BLOCK && block != Blocks.IRON_ORE)
+                    {
+                        if (block != Blocks.LAPIS_BLOCK && block != Blocks.LAPIS_ORE)
+                        {
+                            if (block != Blocks.REDSTONE_ORE && block != Blocks.LIT_REDSTONE_ORE)
+                            {
+                                Material material = blockIn.getMaterial();
+                                return material == Material.ROCK ? true : (material == Material.IRON ? true : material == Material.ANVIL);
+                            }
+                            else
+                            {
+                                return this.toolMaterial.getHarvestLevel() >= 2;
+                            }
+                        }
+                        else
+                        {
+                            return this.toolMaterial.getHarvestLevel() >= 1;
+                        }
+                    }
+                    else
+                    {
+                        return this.toolMaterial.getHarvestLevel() >= 1;
+                    }
+                }
+                else
+                {
+                    return this.toolMaterial.getHarvestLevel() >= 2;
+                }
+            }
+            else
+            {
+                return this.toolMaterial.getHarvestLevel() >= 2;
+            }
+        }
+        else
+        {
+            return this.toolMaterial.getHarvestLevel() >= 2;
+        }
     }
 
-    public float getStrVsBlock(ItemStack stack, Block block)
+    public float getStrVsBlock(ItemStack stack, IBlockState state)
     {
-        return block.getMaterial() != Material.iron && block.getMaterial() != Material.anvil && block.getMaterial() != Material.wood && block.getMaterial() != Material.plants && block.getMaterial() != Material.vine && block.getMaterial() != Material.rock ? super.getStrVsBlock(stack, block) : this.efficiencyOnProperMaterial;
-    }
+        Material material = state.getMaterial();
+        return material != Material.WOOD && material != Material.PLANTS && material != Material.VINE && material != Material.IRON && material != Material.ANVIL && material != Material.ROCK ? super.getStrVsBlock(stack, state) : this.efficiencyOnProperMaterial; //material != Material.iron && material != Material.anvil && material != Material.rock ? super.getStrVsBlock(stack, state) : this.efficiencyOnProperMaterial;
 
+    }
 
 }

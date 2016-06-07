@@ -1,12 +1,13 @@
 package com.tse.block;
 
+import com.tse.creativetabs.TSECreativeTabs;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-
-import com.tse.creativetabs.TSECreativeTabs;
-import com.tse.item.ItemManager;
 
 public class BlockManager {
 	
@@ -18,25 +19,70 @@ public class BlockManager {
 	public static Block moonTeleporter;	
 	public static Block copperBlock;
 	public static Block copperOre;
+	public static Block steelBlock;
+	
+	
 	public static Block storeBox;
+		
 	public static Block superStoreBox;
 	public static Block mysteriousBox;
-	public static Block steelBlock;
+	
+
+	
+	private static Block registerBlock(String registerName, ItemBlock itemBlock, Block block) {
+        block.setRegistryName(registerName);
+        block.setUnlocalizedName(registerName);
+
+        GameRegistry.register(block);
+
+        itemBlock.setRegistryName(registerName);
+        itemBlock.setUnlocalizedName(registerName);
+        GameRegistry.register(itemBlock);
+
+        return block;
+    }
+	
+	public static Block registerBlockNormal(String registerName, float hardness,  float resistance) {
+		final Block block = new TSEBlock(registerName, hardness, resistance);
+        final ItemBlock itemBlock = new ItemBlock(block);
+        block.setCreativeTab(TSECreativeTabs.tabBlocks);
+        return registerBlock(registerName, itemBlock, block);
+    }
+	
+	private static Block registerOre(String registerName, Material mat, int harvestLevel, String toolType, float hardness, float resistance, CreativeTabs tab) {
+        final Block ore = new TSEBlockOre(registerName, mat, harvestLevel, toolType, hardness, resistance, tab, 1);
+        final ItemBlock itemBlock = new ItemBlock(ore);
+
+        return registerBlock(registerName, itemBlock, ore);
+    }
+	
+	
 	
 	public static void createBlocks()
 	{
-		GameRegistry.registerBlock(exaltedDiamondOre = new TSEBlockOre("exalted_diamond_ore", Material.rock, ItemManager.exaltedDiamond, 1, 3), "exalted_diamond_ore");
-		GameRegistry.registerBlock(bloodDiamondOre = new TSEBlockOre("blood_diamond_ore", Material.rock, ItemManager.bloodDiamond, 1, 3), "blood_diamond_ore");
-		GameRegistry.registerBlock(terraDiamondOre = new TSEBlockOre("terra_diamond_ore", Material.rock, ItemManager.terraDiamond, 1, 3), "terra_diamond_ore");
+		exaltedDiamondOre = registerOre("exalted_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		bloodDiamondOre = registerOre("blood_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		terraDiamondOre = registerOre("terra_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		copperOre = registerOre("copper_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+			
+		moonStone = registerBlockNormal("moon_stone", 5.0F, 5.0F);
+		moonSand = registerBlockNormal("moon_sand", 2.0F, 2.0F);
+		moonTeleporter = registerBlockNormal("moon_teleporter", 5.0F, 5.0F);
+		
+		copperBlock = registerBlockNormal("copper_block", 5.0F, 5.0F);
+		
+		/*GameRegistry.registerBlock(exaltedDiamondOre = new TSEBlockOre("exalted_diamond_ore", Material.ROCK, ItemManager.exaltedDiamond, 1, 3), "exalted_diamond_ore");
+		GameRegistry.registerBlock(bloodDiamondOre = new TSEBlockOre("blood_diamond_ore", Material.ROCK, ItemManager.bloodDiamond, 1, 3), "blood_diamond_ore");
+		GameRegistry.registerBlock(terraDiamondOre = new TSEBlockOre("terra_diamond_ore", Material.ROCK, ItemManager.terraDiamond, 1, 3), "terra_diamond_ore");
 		GameRegistry.registerBlock(moonStone = new TSEBlock("moon_stone"), "moon_stone");
 		GameRegistry.registerBlock(moonSand = new TSEBlock("moon_sand"), "moon_sand");
 		GameRegistry.registerBlock(moonTeleporter = new MoonTeleporter(), "moon_teleporter");
 		GameRegistry.registerBlock(copperBlock = new TSEBlock("copper_block"), "copper_block");
-		GameRegistry.registerBlock(copperOre = new TSEBlockOre("copper_ore", Material.rock, 1, "pickaxe", 5F, 10F, TSECreativeTabs.tabOres, Item.getItemFromBlock(BlockManager.copperOre), 0, 1, 1), "copper_ore");
+		//GameRegistry.registerBlock(copperOre = new TSEBlockOre("copper_ore", Material.ROCK, 1, "pickaxe", 5F, 10F, TSECreativeTabs.tabOres, Item.getItemFromBlock(BlockManager.copperOre), 0, 1, 1), "copper_ore");
 		GameRegistry.registerBlock(storeBox = new StoreBox("store_box"), "store_box");
 		GameRegistry.registerBlock(superStoreBox = new SuperStoreBox("super_store_box"), "super_store_box");
 		GameRegistry.registerBlock(mysteriousBox = new MysteriousBox("mysterious_box"), "mysterious_box");
-		GameRegistry.registerBlock(steelBlock = new TSEBlock("steel_block"), "steel_block");
-		}
+		GameRegistry.registerBlock(steelBlock = new TSEBlock("steel_block"), "steel_block");*/
+	}
 	
 }

@@ -22,7 +22,7 @@ public class Crafting {
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.bloodDiamondOre), new ItemStack(ItemManager.bloodDiamond), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.terraDiamondOre), new ItemStack(ItemManager.terraDiamond), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.copperOre), new ItemStack(ItemManager.copperIngot), 0.1F);
-		GameRegistry.addSmelting(Items.iron_ingot, new ItemStack(ItemManager.steelIngot), 0.1F);
+		GameRegistry.addSmelting(Items.IRON_INGOT, new ItemStack(ItemManager.steelIngot), 0.1F);
 	}
 	public static void craftingShapeless()
 	{
@@ -62,7 +62,7 @@ public class Crafting {
 		"xyx",
 		"xax",
 		"xxx",
-		'y', BlockManager.copperBlock, 'x', Blocks.planks, 'a', Blocks.chest);
+		'y', BlockManager.copperBlock, 'x', Blocks.PLANKS, 'a', Blocks.CHEST);
 		
 		GameRegistry.addShapedRecipe(new ItemStack(BlockManager.superStoreBox),
 		"xxx",
@@ -75,108 +75,108 @@ public class Crafting {
 		"xx ",
 		"xy ",
 		" y ",
-		'x', ItemManager.copperIngot, 'y', Items.stick);
+		'x', ItemManager.copperIngot, 'y', Items.STICK);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperAxe),
 		" xx",
 		" yx",
 		" y ",
-		'x', ItemManager.copperIngot, 'y', Items.stick);
+		'x', ItemManager.copperIngot, 'y', Items.STICK);
 		
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperHoe),
 		"xx ",
 		" y ",
 		" y ",
-		'x', ItemManager.copperIngot, 'y', Items.stick);
+		'x', ItemManager.copperIngot, 'y', Items.STICK);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperHoe),
 		" xx",
 		" y ",
 		" y ",
-		'x', ItemManager.copperIngot, 'y', Items.stick);
+		'x', ItemManager.copperIngot, 'y', Items.STICK);
 		
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperPickaxe),
 		"xxx",
 		" y ",
 		" y ",
-		'x', ItemManager.copperIngot, 'y', Items.stick);
+		'x', ItemManager.copperIngot, 'y', Items.STICK);
 		
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperShovel),
 		" x ",
 		" y ",
 		" y ",
-		'x', ItemManager.copperIngot, 'y', Items.stick);
+		'x', ItemManager.copperIngot, 'y', Items.STICK);
 		
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperMattock),
 		"xxx",
 		" yx",
 		" y ",
-		'x', ItemManager.copperIngot, 'y', Items.stick);
+		'x', ItemManager.copperIngot, 'y', Items.STICK);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperMattock),
 		"xxx",
 		"xy ",
 		" y ",
-		'x', ItemManager.copperIngot, 'y', Items.stick);
+		'x', ItemManager.copperIngot, 'y', Items.STICK);
 		
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperSword),
 		" x ",
 		" x ",
 		" y ",
-		'x', ItemManager.copperIngot, 'y', Items.stick);
+		'x', ItemManager.copperIngot, 'y', Items.STICK);
 		//end Copper Tools
 		
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.woodMattock),
 		"xxx",
 		" yx",
 		" y ",
-		'x', Item.getItemFromBlock(Blocks.planks), 'y', Items.stick);
+		'x', Item.getItemFromBlock(Blocks.PLANKS), 'y', Items.STICK);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.woodMattock),
 		"xxx",
 		"xy ",
 		" y ",
-		'x', Item.getItemFromBlock(Blocks.planks), 'y', Items.stick);
+		'x', Item.getItemFromBlock(Blocks.PLANKS), 'y', Items.STICK);
 		
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.stoneMattock),
 		"xxx",
 		" yx",
 		" y ",
-		'x', Item.getItemFromBlock(Blocks.cobblestone), 'y', Items.stick);
+		'x', Item.getItemFromBlock(Blocks.COBBLESTONE), 'y', Items.STICK);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.stoneMattock),
 		"xxx",
 		"xy ",
 		" y ",
-		'x', Item.getItemFromBlock(Blocks.cobblestone), 'y', Items.stick);
+		'x', Item.getItemFromBlock(Blocks.COBBLESTONE), 'y', Items.STICK);
 		
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.ironMattock),
 		"xxx",
 		" yx",
 		" y ",
-		'x', Items.iron_ingot, 'y', Items.stick);
+		'x', Items.IRON_INGOT, 'y', Items.STICK);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.ironMattock),
 		"xxx",
 		"xy ",
 		" y ",
-		'x', Items.iron_ingot, 'y', Items.stick);
+		'x', Items.IRON_INGOT, 'y', Items.STICK);
 		
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.diamondMattock),
 		"xxx",
 		" yx",
 		" y ",
-		'x', Items.diamond, 'y', Items.stick);
+		'x', Items.DIAMOND, 'y', Items.STICK);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.diamondMattock),
 		"xxx",
 		"xy ",
 		" y ",
-		'x', Items.diamond, 'y', Items.stick);
+		'x', Items.DIAMOND, 'y', Items.STICK);
 		
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.goldMattock),
 		"xxx",
 		" yx",
 		" y ",
-		'x', Items.gold_ingot, 'y', Items.stick);
+		'x', Items.GOLD_INGOT, 'y', Items.STICK);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.goldMattock),
 		"xxx",
 		"xy ",
 		" y ",
-		'x', Items.gold_ingot, 'y', Items.stick);
+		'x', Items.GOLD_INGOT, 'y', Items.STICK);
 		
 		//start copper armor
 		GameRegistry.addShapedRecipe(new ItemStack(ItemManager.copperHelmet),
@@ -206,12 +206,12 @@ public class Crafting {
 		" xx",
 		" yx",
 		"y  ",
-		'x', Item.getItemFromBlock(Blocks.lapis_block), 'y', Items.stick);
+		'x', Item.getItemFromBlock(Blocks.LAPIS_BLOCK), 'y', Items.STICK);
 		
 		GameRegistry.addShapedRecipe(new ItemStack(BlockManager.mysteriousBox),
 		"xyx",
 		"yzy",
 		"xxx",
-		'x', Item.getItemFromBlock(Blocks.lapis_block), 'y', Items.iron_ingot, 'z', Item.getItemFromBlock(Blocks.chest));
+		'x', Item.getItemFromBlock(Blocks.LAPIS_BLOCK), 'y', Items.IRON_INGOT, 'z', Item.getItemFromBlock(Blocks.CHEST));
 	}
 }

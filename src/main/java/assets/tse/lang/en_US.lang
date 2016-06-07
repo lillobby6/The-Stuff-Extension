@@ -13,6 +13,13 @@ item.copper_hoe.name=Copper Hoe
 item.copper_mattock.name=Copper Mattock
 item.copper_sword.name=Copper Sword
 
+item.terra_diamond_pickaxe.name=Terra Diamond Pickaxe
+item.terra_diamond_axe.name=Terra Diamond Axe
+item.terra_diamond_shovel.name=Terra Diamond Shovel
+item.terra_diamond_hoe.name=Terra Diamond Hoe
+item.terra_diamond_mattock.name=Terra Diamond Mattock
+item.terra_diamond_sword.name=Terra Diamond Sword
+
 item.wood_mattock.name=Wood Mattock
 item.stone_mattock.name=Stone Mattock
 item.iron_mattock.name=Iron Mattock
@@ -23,6 +30,11 @@ item.copper_helmet.name=Copper Helmet
 item.copper_chestplate.name=Copper Chestplate
 item.copper_leggings.name=Copper Leggings
 item.copper_boots.name=Copper Boots
+
+item.terra_diamond_helmet.name=Terra Diamond Helmet
+item.terra_diamond_chestplate.name=Terra Diamond Chestplate
+item.terra_diamond_leggings.name=Terra Diamond Leggings
+item.terra_diamond_boots.name=Terra Diamond Boots
 
 item.lapis_remover.name=Lapis Lazuli Remover
 

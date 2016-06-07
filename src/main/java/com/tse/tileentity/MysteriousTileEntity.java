@@ -6,9 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.ChatComponentTranslation;
-import net.minecraft.util.IChatComponent;
+import net.minecraft.util.text.ITextComponent;
 
 public class MysteriousTileEntity extends TileEntity implements IInventory{
 
@@ -37,10 +35,10 @@ public class MysteriousTileEntity extends TileEntity implements IInventory{
 		return this.customName != null && !this.customName.equals("");
 	}
 
-	@Override
+	/*@Override
 	public IChatComponent getDisplayName() {
 		 return this.hasCustomName() ? new ChatComponentText(this.getName()) : new ChatComponentTranslation(this.getName());
-	}
+	}*/
 
 	@Override
 	public int getSizeInventory() {
@@ -81,12 +79,12 @@ public class MysteriousTileEntity extends TileEntity implements IInventory{
 	    }
 	}
 
-	@Override
+	/*@Override
 	public ItemStack getStackInSlotOnClosing(int index) {
 		 ItemStack stack = this.getStackInSlot(index);
 		 this.setInventorySlotContents(index, null);
 		 return stack;
-	}
+	}*/
 
 	@Override
 	public void setInventorySlotContents(int index, ItemStack stack) {
@@ -143,7 +141,7 @@ public class MysteriousTileEntity extends TileEntity implements IInventory{
 		        this.setInventorySlotContents(i, null);
 	}
 	@Override
-	public void writeToNBT(NBTTagCompound nbt) {
+	public NBTTagCompound writeToNBT(NBTTagCompound nbt) {
 	    super.writeToNBT(nbt);
 
 	    NBTTagList list = new NBTTagList();
@@ -160,6 +158,7 @@ public class MysteriousTileEntity extends TileEntity implements IInventory{
 	    if (this.hasCustomName()) {
 	        nbt.setString("CustomName", this.getCustomName());
 	    }
+	    return nbt;
 	}
 
 
@@ -177,6 +176,19 @@ public class MysteriousTileEntity extends TileEntity implements IInventory{
 	    if (nbt.hasKey("CustomName", 8)) {
 	        this.setCustomName(nbt.getString("CustomName"));
 	    }
+	}
+
+	@Override
+	public ITextComponent getDisplayName() {
+	//	return this.hasCustomName() ? new ChatComponentText(this.getName()) : new ChatComponentTranslation(this.getName());
+	return null;
+	}
+
+	@Override
+	public ItemStack removeStackFromSlot(int index) {
+		ItemStack stack = this.getStackInSlot(index);
+		 this.setInventorySlotContents(index, null);
+		 return stack;
 	}
 
 	

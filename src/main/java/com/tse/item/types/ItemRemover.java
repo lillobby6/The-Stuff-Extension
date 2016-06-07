@@ -14,8 +14,8 @@ public class ItemRemover extends ItemTool{
     private static final Set EFFECTIVE_ON = Sets.newHashSet(new Block[] {BlockManager.mysteriousBox, BlockManager.storeBox, BlockManager.superStoreBox});
 
 
-	protected ItemRemover(ToolMaterial material) {
-		super(0F, material, EFFECTIVE_ON);
+	protected ItemRemover(float attackSpeed, ToolMaterial material) {
+		super(0F, attackSpeed, material, EFFECTIVE_ON);
 	}
 
 }

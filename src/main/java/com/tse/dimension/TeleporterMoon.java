@@ -18,7 +18,7 @@ public class TeleporterMoon extends Teleporter{
 	
 	public void placeInPortal(Entity entityIn, float rotationYaw)
     {
-        if (this.worldServerInstance.provider.getDimensionId() != 1)
+        if (this.worldServerInstance.provider.getDimension() != 1)
         {
             if (!this.placeInExistingPortal(entityIn, rotationYaw))
             {
@@ -44,7 +44,7 @@ public class TeleporterMoon extends Teleporter{
                         int l1 = j + j1;
                         int i2 = k + i1 * b1 - l * b0;
                         boolean flag = j1 < 0;
-                        this.worldServerInstance.setBlockState(new BlockPos(k1, l1, i2), flag ? Blocks.obsidian.getDefaultState() : Blocks.air.getDefaultState());
+                        this.worldServerInstance.setBlockState(new BlockPos(k1, l1, i2), flag ? Blocks.OBSIDIAN.getDefaultState() : Blocks.AIR.getDefaultState());
                     }
                 }
             }

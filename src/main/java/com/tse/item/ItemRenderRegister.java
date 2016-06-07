@@ -28,7 +28,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.copperBoots);
 		reg(ItemManager.ironMattock);
 		reg(ItemManager.woodMattock);
-		reg(ItemManager.goldMattock);
+		//reg(ItemManager.goldMattock);
 		reg(ItemManager.diamondMattock);
 		reg(ItemManager.terraDiamondPickaxe);
 		reg(ItemManager.terraDiamondAxe);

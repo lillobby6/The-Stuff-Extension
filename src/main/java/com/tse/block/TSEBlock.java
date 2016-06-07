@@ -18,11 +18,11 @@ public class TSEBlock extends Block{
 	
 	public TSEBlock(String unlocalizedName, float hardness, float resistance)
 	{
-		this(unlocalizedName, Material.rock, hardness, resistance, TSECreativeTabs.tabBlocks);
+		this(unlocalizedName, Material.ROCK, hardness, resistance, TSECreativeTabs.tabBlocks);
 	}
 	
 	public TSEBlock(String unlocalizedName)
 	{
-		this(unlocalizedName, Material.rock, 2.0f, 10.0f, TSECreativeTabs.tabBlocks);
+		this(unlocalizedName, Material.ROCK, 2.0f, 10.0f, TSECreativeTabs.tabBlocks);
 	}
 }

@@ -13,7 +13,7 @@ public class TSEStairs extends BlockStairs
         this.setHardness(10.0F);
         this.setResistance(3.0F);
         this.setLightOpacity(255);
-        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	}
     
 }

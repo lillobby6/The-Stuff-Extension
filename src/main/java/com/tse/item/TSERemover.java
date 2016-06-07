@@ -6,9 +6,9 @@ import com.tse.item.types.ItemRemover;
 
 public class TSERemover extends ItemRemover{
 
-	protected TSERemover(ToolMaterial material, CreativeTabs tab, String unlocalizedName, int harvestLevel)
+	protected TSERemover(ToolMaterial material, CreativeTabs tab, String unlocalizedName, int harvestLevel, float attackSpeed)
 	{
-		super(material);
+		super(attackSpeed, material);
 		this.setCreativeTab(tab);
 		this.setUnlocalizedName(unlocalizedName);
 		this.setHarvestLevel("Remover", harvestLevel);

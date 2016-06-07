@@ -7,12 +7,12 @@ import com.tse.block.BlockManager;
 import com.tse.item.ItemManager;
 
 public class TSECreativeTabs {
-	
-	public static final CreativeTabs tabStorage = new CreativeTabs("tabStorage") {
+
+	/*public static final CreativeTabs tabStorage = new CreativeTabs("tabStorage") {
 	    @Override public Item getTabIconItem() {
 	        return Item.getItemFromBlock(BlockManager.storeBox);
 	    }
-	};
+	};*/
 	
 	public static final CreativeTabs tabTools = new CreativeTabs("tabTools") {
 	    @Override public Item getTabIconItem() {
@@ -32,7 +32,7 @@ public class TSECreativeTabs {
 	{
 		@Override public Item getTabIconItem()
 		{
-			return ItemManager.bloodDiamond;
+			return ItemManager.copperIngot;
 		}
 	};
 	

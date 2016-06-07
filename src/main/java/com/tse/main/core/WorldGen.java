@@ -1,4 +1,4 @@
-package com.tse.main.core;
+/*package com.tse.main.core;
 
 import java.util.Random;
 
@@ -60,3 +60,4 @@ public class WorldGen implements IWorldGenerator{
 	    }
 	}
 }
+*/

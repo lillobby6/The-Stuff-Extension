@@ -1,5 +1,13 @@
 {
+	"forge_marker": 1,
+	"defaults": {
+		"model": "minecraft:cube_all",
+		"textures": {
+			"all": "tse:blocks/exalted_diamond_ore"
+		}
+	},
 	"variants": {
-		"normal": { "model": "tse:exalted_diamond_ore" }
+		"normal": [ { } ],
+		"inventory": [ { } ]
 	}
 }

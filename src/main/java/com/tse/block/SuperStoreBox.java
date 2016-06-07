@@ -22,12 +22,12 @@ import com.tse.tileentity.SuperStoreBoxTileEntity;
 public class SuperStoreBox extends BlockContainer{
 
 	protected SuperStoreBox(String unlocalizedName) {
-		super(Material.iron);
+		super(Material.IRON);
 		this.setUnlocalizedName(unlocalizedName);
 		this.setHardness(2.0F);
 		this.setResistance(6.0F);
 		this.setHarvestLevel("pickaxe", 1);
-		this.setCreativeTab(TSECreativeTabs.tabStorage);
+	//	this.setCreativeTab(TSECreativeTabs.tabStorage);
 	}
 	
 	public void func_77624_a(ItemStack itemStack, EntityPlayer player, List list, boolean p_77624_4_)
@@ -53,7 +53,7 @@ public class SuperStoreBox extends BlockContainer{
 		}
 	}
 
-	@Override
+	/*@Override
 	public int getRenderType() {
 		return 3;
 	}
@@ -64,6 +64,6 @@ public class SuperStoreBox extends BlockContainer{
 	        player.openGui(TheStuffExtension.instance, GuiManager.SUPER_STORE_BOX_GUI, world, pos.getX(), pos.getY(), pos.getZ());
 	    }
 	    return true;
-	}
+	}*/
 
 }

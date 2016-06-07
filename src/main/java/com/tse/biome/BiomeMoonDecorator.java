@@ -1,12 +1,8 @@
 package com.tse.biome;
 
-import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.world.biome.BiomeDecorator;
-import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.gen.feature.WorldGenSpikes;
 import net.minecraft.world.gen.feature.WorldGenerator;
-
-import com.tse.block.BlockManager;
 
 public class BiomeMoonDecorator extends BiomeDecorator{
 	protected WorldGenerator spikeGen;
@@ -14,12 +10,12 @@ public class BiomeMoonDecorator extends BiomeDecorator{
 
     public BiomeMoonDecorator()
     {
-        this.spikeGen = new WorldGenSpikes(BlockManager.moonStone);
+        this.spikeGen = new WorldGenSpikes();
     }
 
-    protected void genDecorations(BiomeGenBase p_150513_1_)
+   /* protected void genDecorations(BiomeGenBase p_150513_1_)
     {
-        this.generateOres();
+        this.generateOres(null, null);
 
         if (this.randomGenerator.nextInt(5) == 0)
         {
@@ -34,6 +30,6 @@ public class BiomeMoonDecorator extends BiomeDecorator{
             entitydragon.setLocationAndAngles(0.0D, 128.0D, 0.0D, this.randomGenerator.nextFloat() * 360.0F, 0.0F);
             this.currentWorld.spawnEntityInWorld(entitydragon);
         }
-    }
+    }*/
 
 }

@@ -1,6 +1,6 @@
 {
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "tse:blocks/exalted_diamond_ore"
-	}
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "tse:blocks/exalted_diamond_ore"
+  }
 }

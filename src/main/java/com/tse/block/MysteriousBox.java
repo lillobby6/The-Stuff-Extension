@@ -8,6 +8,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -20,12 +21,12 @@ import com.tse.tileentity.MysteriousTileEntity;
 public class MysteriousBox extends BlockContainer {
 
 	protected MysteriousBox(String unlocalizedName) {
-		super(Material.iron);
+		super(Material.IRON);
 		this.setUnlocalizedName(unlocalizedName);
 		this.setHardness(1.0F);
 		this.setResistance(9999999999999999999.0F);
 		this.setHarvestLevel("Remover", 1);
-		this.setCreativeTab(TSECreativeTabs.tabStorage);
+		//this.setCreativeTab(TSECreativeTabs.tabStorage);
 	}
 
 	@Override
@@ -47,16 +48,17 @@ public class MysteriousBox extends BlockContainer {
 	}
 
 	@Override
-	public int getRenderType() {
-		return 3;
-	}
+	public EnumBlockRenderType getRenderType(IBlockState state)
+    {
+        return EnumBlockRenderType.MODEL;
+    }
 	
-	@Override
+	/*@Override
 	public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumFacing side, float hitX, float hitY, float hitZ) {
 	    if (!world.isRemote) {
 	        player.openGui(TheStuffExtension.instance, GuiManager.MYSTERIOUS_BOX_GUI, world, pos.getX(), pos.getY(), pos.getZ());
 	    }
 	    return true;
-	}
+	}*/
 
 }
