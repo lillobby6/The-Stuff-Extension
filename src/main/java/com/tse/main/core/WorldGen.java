@@ -1,9 +1,10 @@
-/*package com.tse.main.core;
+package com.tse.main.core;
 
 import java.util.Random;
 
-import net.minecraft.util.BlockPos;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
@@ -20,9 +21,8 @@ public class WorldGen implements IWorldGenerator{
 
 	
 	@Override
-	 public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
-	 {   
-		 switch (world.provider.getDimensionId()) 
+	 public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider)	 {   
+		 switch (world.provider.getDimension()) 
 		 {
 		    case 0: //Overworld
 		    	this.runGenerator(this.gen_exalted_diamond_ore, world, random, chunkX, chunkZ, 3, 0, 16);
@@ -60,4 +60,3 @@ public class WorldGen implements IWorldGenerator{
 	    }
 	}
 }
-*/

@@ -56,7 +56,29 @@ public class BlockManager {
         return registerBlock(registerName, itemBlock, ore);
     }
 	
+	private static Block registerStoreBox(String registryName)
+	{
+		final Block block = new StoreBox(registryName);
+		final ItemBlock itemBlock = new ItemBlock(block);
+		
+		return registerBlock(registryName, itemBlock, block);
+	}
 	
+	private static Block registerSSBox(String registryName)
+	{
+		final Block block = new SuperStoreBox(registryName);
+		final ItemBlock itemBlock = new ItemBlock(block);
+		
+		return registerBlock(registryName, itemBlock, block);
+	}
+	
+	private static Block registerMBox(String registryName)
+	{
+		final Block block = new MysteriousBox(registryName);
+		final ItemBlock itemBlock = new ItemBlock(block);
+		
+		return registerBlock(registryName, itemBlock, block);
+	}
 	
 	public static void createBlocks()
 	{
@@ -70,6 +92,11 @@ public class BlockManager {
 		moonTeleporter = registerBlockNormal("moon_teleporter", 5.0F, 5.0F);
 		
 		copperBlock = registerBlockNormal("copper_block", 5.0F, 5.0F);
+		steelBlock = registerBlockNormal("steel_block", 5.0F, 5.0F);
+		
+		storeBox = registerStoreBox("store_box");
+		mysteriousBox = registerMBox("mysterious_box");
+		superStoreBox = registerSSBox("super_store_box");
 		
 		/*GameRegistry.registerBlock(exaltedDiamondOre = new TSEBlockOre("exalted_diamond_ore", Material.ROCK, ItemManager.exaltedDiamond, 1, 3), "exalted_diamond_ore");
 		GameRegistry.registerBlock(bloodDiamondOre = new TSEBlockOre("blood_diamond_ore", Material.ROCK, ItemManager.bloodDiamond, 1, 3), "blood_diamond_ore");

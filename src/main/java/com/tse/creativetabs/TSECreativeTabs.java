@@ -8,18 +8,18 @@ import com.tse.item.ItemManager;
 
 public class TSECreativeTabs {
 
-	/*public static final CreativeTabs tabStorage = new CreativeTabs("tabStorage") {
+	public static final CreativeTabs tabStorage = new CreativeTabs("tabStorage") {
 	    @Override public Item getTabIconItem() {
-	        return Item.getItemFromBlock(BlockManager.storeBox);
+	        return Item.getItemFromBlock(BlockManager.superStoreBox);
 	    }
-	};*/
+	};
 	
 	public static final CreativeTabs tabTools = new CreativeTabs("tabTools") {
 	    @Override public Item getTabIconItem() {
 	        return ItemManager.copperPickaxe;
 	    }
 	};
-	
+	 
 	public static final CreativeTabs tabWeapons = new CreativeTabs("tabWeapons")
 	{
 		@Override public Item getTabIconItem()

@@ -17,10 +17,10 @@ public class BlockRenderRegister {
 		reg(BlockManager.moonTeleporter);
 		reg(BlockManager.copperBlock);
 		reg(BlockManager.copperOre);
-		/*reg(BlockManager.storeBox);
+		reg(BlockManager.storeBox);
 		reg(BlockManager.superStoreBox);
 		reg(BlockManager.mysteriousBox);
-		reg(BlockManager.steelBlock);*/
+		reg(BlockManager.steelBlock);
 		
 	}
 	

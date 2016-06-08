@@ -10,6 +10,7 @@ import com.tse.block.BlockManager;
 import com.tse.gui.GuiManager;
 import com.tse.item.ItemManager;
 import com.tse.main.core.TheStuffExtension;
+import com.tse.main.core.WorldGen;
 import com.tse.recipe.Crafting;
 
 public class CommonProxy {
@@ -17,12 +18,12 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
     	ItemManager.createItems();
     	BlockManager.createBlocks();
-    //	Crafting.initCrafting();
+    	Crafting.initCrafting();
     }
 
     public void init(FMLInitializationEvent e) {
     	NetworkRegistry.INSTANCE.registerGuiHandler(TheStuffExtension.instance, new GuiManager());
-    	//GameRegistry.registerWorldGenerator(new WorldGen(), 0);
+        GameRegistry.registerWorldGenerator(new WorldGen(), 0);
     }
 
     public void postInit(FMLPostInitializationEvent e) {

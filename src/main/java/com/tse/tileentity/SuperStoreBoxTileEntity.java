@@ -7,6 +7,8 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextComponentTranslation;
 
 public class SuperStoreBoxTileEntity extends TileEntity implements IInventory{
 	
@@ -35,10 +37,10 @@ public class SuperStoreBoxTileEntity extends TileEntity implements IInventory{
 		return this.customName != null && !this.customName.equals("");
 	}
 
-	/*@Override
-	public IChatComponent getDisplayName() {
-		 return this.hasCustomName() ? new ChatComponentText(this.getName()) : new ChatComponentTranslation(this.getName());
-	}*/
+	@Override
+	public ITextComponent getDisplayName() {
+		 return this.hasCustomName() ? new TextComponentString(this.getName()) : new TextComponentTranslation(this.getName());
+	}
 
 	@Override
 	public int getSizeInventory() {
@@ -178,16 +180,12 @@ public class SuperStoreBoxTileEntity extends TileEntity implements IInventory{
 	    }
 	}
 
-	@Override
-	public ITextComponent getDisplayName() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public ItemStack removeStackFromSlot(int index) {
-		// TODO Auto-generated method stub
-		return null;
+		ItemStack stack = this.getStackInSlot(index);
+		 this.setInventorySlotContents(index, null);
+		 return stack;
 	}
 
 	

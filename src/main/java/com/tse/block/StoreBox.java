@@ -18,6 +18,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+import com.tse.creativetabs.TSECreativeTabs;
 import com.tse.gui.GuiManager;
 import com.tse.main.core.TheStuffExtension;
 import com.tse.tileentity.StoreBoxTileEntity;
@@ -30,7 +31,7 @@ public class StoreBox extends BlockContainer{
 		this.setHardness(2.0F);
 		this.setResistance(6.0F);
 		this.setHarvestLevel("axe", 0);
-	//	this.setCreativeTab(TSECreativeTabs.tabStorage);
+		this.setCreativeTab(TSECreativeTabs.tabStorage);
 	}
 	
 	public void func_77624_a(ItemStack itemStack, EntityPlayer player, List list, boolean p_77624_4_)

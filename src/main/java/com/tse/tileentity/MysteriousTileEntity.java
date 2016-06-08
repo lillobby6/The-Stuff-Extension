@@ -7,6 +7,8 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextComponentTranslation;
 
 public class MysteriousTileEntity extends TileEntity implements IInventory{
 
@@ -34,11 +36,6 @@ public class MysteriousTileEntity extends TileEntity implements IInventory{
 	public boolean hasCustomName() {
 		return this.customName != null && !this.customName.equals("");
 	}
-
-	/*@Override
-	public IChatComponent getDisplayName() {
-		 return this.hasCustomName() ? new ChatComponentText(this.getName()) : new ChatComponentTranslation(this.getName());
-	}*/
 
 	@Override
 	public int getSizeInventory() {
@@ -180,8 +177,7 @@ public class MysteriousTileEntity extends TileEntity implements IInventory{
 
 	@Override
 	public ITextComponent getDisplayName() {
-	//	return this.hasCustomName() ? new ChatComponentText(this.getName()) : new ChatComponentTranslation(this.getName());
-	return null;
+		 return this.hasCustomName() ? new TextComponentString(this.getName()) : new TextComponentTranslation(this.getName());
 	}
 
 	@Override
