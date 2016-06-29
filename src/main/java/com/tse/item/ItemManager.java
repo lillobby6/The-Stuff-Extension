@@ -21,6 +21,24 @@ public class ItemManager {
 	
 	public static Item copperIngot;
 	public static Item steelIngot;
+	public static Item tinIngot;
+	public static Item tyionetiumIngot;
+	public static Item bronzeIngot;//TODO
+	public static Item brightflameIngot;
+	public static Item brightsteelIngot;
+	public static Item diamondIngot;
+	public static Item reforgedGoldIngot;
+	public static Item magicIngot;
+	public static Item mithrilIngot;
+	public static Item mortiumIngot;
+	public static Item mysteriousIngot;
+	public static Item mysticIngot;
+	public static Item skyIronIngot;
+	public static Item terriumIngot;
+	public static Item toslotriumIngot;
+	public static Item vividiumIngot;
+	
+	public static Item mixedIngot;
 	
 	public static Item copperPickaxe;
 	public static Item copperAxe;
@@ -48,6 +66,20 @@ public class ItemManager {
 	public static Item terraDiamondHoe;
 	public static Item terraDiamondMattock;
 	public static Item terraDiamondSword;
+	
+	public static Item tyionetiumPickaxe;
+	public static Item tyionetiumAxe;
+	public static Item tyionetiumShovel;
+	public static Item tyionetiumHoe;
+	public static Item tyionetiumMattock;
+	public static Item tyionetiumSword;
+	
+	public static Item exaltedDiamondPickaxe;
+	public static Item exaltedDiamondAxe;
+	public static Item exaltedDiamondShovel;
+	public static Item exaltedDiamondHoe;
+	public static Item exaltedDiamondMattock;
+	public static Item exaltedDiamondSword;
 	
 	public static Item terraDiamondHelmet;
 	public static Item terraDiamondChestplate;
@@ -118,8 +150,18 @@ public class ItemManager {
 		bloodDiamond = registerMainItem("blood_diamond", TSECreativeTabs.tabMaterials);
 		terraDiamond = registerMainItem("terra_diamond", TSECreativeTabs.tabMaterials);
 		lunaDiamond = registerMainItem("luna_diamond", TSECreativeTabs.tabMaterials);
+		
 		copperIngot = registerMainItem("copper_ingot", TSECreativeTabs.tabMaterials);
 		steelIngot = registerMainItem("steel_ingot", TSECreativeTabs.tabMaterials);
+		tinIngot = registerMainItem("tin_ingot", TSECreativeTabs.tabMaterials);
+		tyionetiumIngot = registerMainItem("tyionetium_ingot", TSECreativeTabs.tabMaterials);
+		bronzeIngot = registerMainItem("bronze_ingot", TSECreativeTabs.tabMaterials);
+		brightflameIngot = registerMainItem("brightflame_ingot", TSECreativeTabs.tabMaterials);
+		brightsteelIngot = registerMainItem("brightsteel_ingot", TSECreativeTabs.tabMaterials);
+		diamondIngot = registerMainItem("diamond_ingot", TSECreativeTabs.tabMaterials);
+		reforgedGoldIngot = registerMainItem("reforged_gold_ingot", TSECreativeTabs.tabMaterials);
+		magicIngot = registerMainItem("magic_ingot", TSECreativeTabs.tabMaterials);
+		mithrilIngot = registerMainItem("mithril_ingot", TSECreativeTabs.tabMaterials);
 		//End Materials
 		
 		//Start Tools
@@ -139,11 +181,18 @@ public class ItemManager {
 		terraDiamondMattock = registerMattock(-2.0F, TSEToolMaterials.TDIAMOND, "terra_diamond_mattock", TSECreativeTabs.tabTools, 4);
 		//Terra Diamond
 		
+		tyionetiumPickaxe = registerPickaxe(TSEToolMaterials.COPPER, "tyionetium_pickaxe", TSECreativeTabs.tabTools, 1);
+		tyionetiumAxe = registerAxe(ToolMaterial.IRON, "tyionetium_axe", TSECreativeTabs.tabTools, 1);
+		tyionetiumMattock = registerMattock(-2.2F, TSEToolMaterials.COPPER, "tyionetium_mattock", TSECreativeTabs.tabTools, 1);
+		tyionetiumShovel = registerShovel(TSEToolMaterials.COPPER, "tyionetium_shovel", TSECreativeTabs.tabTools, 1);
+		tyionetiumHoe = registerHoe(TSEToolMaterials.COPPER, "tyionetium_hoe", TSECreativeTabs.tabTools, 1);
+		
 		//Others
 		woodMattock = registerMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools, 0);
 		stoneMattock = registerMattock(-2.5F, ToolMaterial.STONE, "stone_mattock", TSECreativeTabs.tabTools, 1);
 		ironMattock = registerMattock(-2.2F, ToolMaterial.IRON, "iron_mattock", TSECreativeTabs.tabTools, 2);
 		diamondMattock = registerMattock(-2.0F, ToolMaterial.DIAMOND, "diamond_mattock", TSECreativeTabs.tabTools, 3);
+		goldMattock = registerMattock(1.0F, ToolMaterial.GOLD, "gold_mattock", TSECreativeTabs.tabTools, 0);
 		
 		lapisRemover = registerRemover("lapis_remover", -5.0F, TSEToolMaterials.LAPIS, 1, TSECreativeTabs.tabTools);
 		//Others
@@ -154,6 +203,7 @@ public class ItemManager {
 		
 		copperSword = registerSword(TSEToolMaterials.COPPER, "copper_sword", TSECreativeTabs.tabWeapons);
 		terraDiamondSword = registerSword(TSEToolMaterials.TDIAMOND, "terra_diamond_sword", TSECreativeTabs.tabWeapons);
+		tyionetiumSword = registerSword(TSEToolMaterials.COPPER, "tyionetium_sword", TSECreativeTabs.tabWeapons);
 		
 		//End Swords
 		

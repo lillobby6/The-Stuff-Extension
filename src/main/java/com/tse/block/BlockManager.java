@@ -14,18 +14,21 @@ public class BlockManager {
 	public static Block exaltedDiamondOre;
 	public static Block bloodDiamondOre;
 	public static Block terraDiamondOre;
+	public static Block copperOre;
+	
 	public static Block moonStone;
 	public static Block moonSand;
 	public static Block moonTeleporter;	
-	public static Block copperBlock;
-	public static Block copperOre;
-	public static Block steelBlock;
 	
+	public static Block copperBlock;
+	public static Block steelBlock;
+	public static Block terraDiamondBlock;
+	public static Block exaltedDiamondBlock;
 	
 	public static Block storeBox;
-		
 	public static Block superStoreBox;
 	public static Block mysteriousBox;
+	public static Block diamondStoreBox;
 	
 
 	
@@ -80,6 +83,14 @@ public class BlockManager {
 		return registerBlock(registryName, itemBlock, block);
 	}
 	
+	private static Block registerDSBox(String registryName)
+	{
+		final Block block = new DiamondStoreBox(registryName);
+		final ItemBlock itemBlock = new ItemBlock(block);
+		
+		return registerBlock(registryName, itemBlock, block);
+	}
+	
 	public static void createBlocks()
 	{
 		exaltedDiamondOre = registerOre("exalted_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
@@ -93,10 +104,13 @@ public class BlockManager {
 		
 		copperBlock = registerBlockNormal("copper_block", 5.0F, 5.0F);
 		steelBlock = registerBlockNormal("steel_block", 5.0F, 5.0F);
+		terraDiamondBlock = registerBlockNormal("terra_diamond_block", 5.0F, 5.0F);
+		exaltedDiamondBlock = registerBlockNormal("exalted_diamond_block", 5.0F, 5.0F);
 		
 		storeBox = registerStoreBox("store_box");
 		mysteriousBox = registerMBox("mysterious_box");
 		superStoreBox = registerSSBox("super_store_box");
+		//diamondStoreBox = registerDSBox("diamond_store_box");
 		
 		/*GameRegistry.registerBlock(exaltedDiamondOre = new TSEBlockOre("exalted_diamond_ore", Material.ROCK, ItemManager.exaltedDiamond, 1, 3), "exalted_diamond_ore");
 		GameRegistry.registerBlock(bloodDiamondOre = new TSEBlockOre("blood_diamond_ore", Material.ROCK, ItemManager.bloodDiamond, 1, 3), "blood_diamond_ore");

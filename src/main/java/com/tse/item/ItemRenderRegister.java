@@ -28,7 +28,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.copperBoots);
 		reg(ItemManager.ironMattock);
 		reg(ItemManager.woodMattock);
-		//reg(ItemManager.goldMattock);
+		reg(ItemManager.goldMattock);
 		reg(ItemManager.diamondMattock);
 		reg(ItemManager.terraDiamondPickaxe);
 		reg(ItemManager.terraDiamondAxe);
@@ -40,6 +40,21 @@ public class ItemRenderRegister {
 		reg(ItemManager.terraDiamondChestplate);
 		reg(ItemManager.terraDiamondLeggings);
 		reg(ItemManager.terraDiamondBoots);
+		reg(ItemManager.tinIngot);
+		reg(ItemManager.tyionetiumIngot);
+		reg(ItemManager.tyionetiumPickaxe);
+		reg(ItemManager.tyionetiumAxe);
+		reg(ItemManager.tyionetiumShovel);
+		reg(ItemManager.tyionetiumHoe);
+		reg(ItemManager.tyionetiumMattock);
+		reg(ItemManager.tyionetiumSword);
+		reg(ItemManager.bronzeIngot);
+		reg(ItemManager.brightflameIngot);
+		reg(ItemManager.brightsteelIngot);
+		reg(ItemManager.diamondIngot);
+		reg(ItemManager.reforgedGoldIngot);
+		reg(ItemManager.magicIngot);
+		reg(ItemManager.mithrilIngot);
 		
 	}
 	public static void reg(Item item)

@@ -5,6 +5,15 @@ item.luna_diamond.name=Luna Diamond
 
 item.copper_ingot.name=Copper Ingot
 item.steel_ingot.name=Steel Ingot
+item.tin_ingot.name=Tin Ingot
+item.tyionetium_ingot.name=Tyionetium Ingot
+item.bronze_ingot.name=Bronze Ingot
+item.brightflame_ingot.name=Brightflame Ingot
+item.brightsteel_ingot.name=Brightsteel Ingot
+item.diamond_ingot.name=Diamond Ingot
+item.reforged_gold_ingot.name=Reforged Gold Ingot
+item.magic_ingot.name=Magic Ingot
+item.mithril_ingot.name=Mithril Ingot
 
 item.copper_pickaxe.name=Copper Pickaxe
 item.copper_axe.name=Copper Axe
@@ -19,6 +28,13 @@ item.terra_diamond_shovel.name=Terra Diamond Shovel
 item.terra_diamond_hoe.name=Terra Diamond Hoe
 item.terra_diamond_mattock.name=Terra Diamond Mattock
 item.terra_diamond_sword.name=Terra Diamond Sword
+
+item.tyionetium_pickaxe.name=Tyionetium Pickaxe
+item.tyionetium_axe.name=Tyionetium Axe
+item.tyionetium_shovel.name=Tyionetium Shovel
+item.tyionetium_hoe.name=Tyionetium Hoe
+item.tyionetium_mattock.name=Tyionetium Mattock
+item.tyionetium_sword.name=Tyionetium Sword
 
 item.wood_mattock.name=Wood Mattock
 item.stone_mattock.name=Stone Mattock
@@ -45,6 +61,9 @@ tile.moon_sand.name=Moon Sand
 tile.moon_stone.name=Moon Stone
 tile.copper_ore.name=Copper Ore
 tile.moon_teleporter.name=Moon Teleporter
+
+tile.terra_diamond_block.name=Terra Diamond Block
+tile.exalted_diamond_block.name=Exalted Diamond Block
 tile.copper_block.name=Copper Block
 tile.steel_block.name=Steel Block
 

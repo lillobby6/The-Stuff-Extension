@@ -21,6 +21,8 @@ public class BlockRenderRegister {
 		reg(BlockManager.superStoreBox);
 		reg(BlockManager.mysteriousBox);
 		reg(BlockManager.steelBlock);
+		reg(BlockManager.exaltedDiamondBlock);
+		reg(BlockManager.terraDiamondBlock);
 		
 	}
 	

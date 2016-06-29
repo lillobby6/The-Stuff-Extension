@@ -7,15 +7,16 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentBase;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
 
-public class MysteriousTileEntity extends TileEntity implements IInventory{
-
+public class DiamondSBTileEntity extends TileEntity implements IInventory{
+	
 	private ItemStack[] inventory;
 	private String customName;
 	 
-	public MysteriousTileEntity() {
+	public DiamondSBTileEntity() {
 		this.inventory = new ItemStack[this.getSizeInventory()];
 	}
 
@@ -29,7 +30,7 @@ public class MysteriousTileEntity extends TileEntity implements IInventory{
 
 	@Override
 	public String getName() {
-		 return this.hasCustomName() ? this.customName : "container.mysterious_box";
+		 return this.hasCustomName() ? this.customName : "container.diamond_store_box";
 	}
 
 	@Override
@@ -38,8 +39,13 @@ public class MysteriousTileEntity extends TileEntity implements IInventory{
 	}
 
 	@Override
+	public ITextComponent getDisplayName() {
+		 return this.hasCustomName() ? new TextComponentString(this.getName()) : new TextComponentTranslation(this.getName());
+	}
+
+	@Override
 	public int getSizeInventory() {
-		return 37;
+		return 114;
 	}
 
 	@Override
@@ -100,7 +106,7 @@ public class MysteriousTileEntity extends TileEntity implements IInventory{
 
 	@Override
 	public int getInventoryStackLimit() {
-		return 128;
+		return 64;
 	}
 
 	@Override
@@ -173,11 +179,6 @@ public class MysteriousTileEntity extends TileEntity implements IInventory{
 	    if (nbt.hasKey("CustomName", 8)) {
 	        this.setCustomName(nbt.getString("CustomName"));
 	    }
-	}
-
-	@Override
-	public ITextComponent getDisplayName() {
-		 return this.hasCustomName() ? new TextComponentString(this.getName()) : new TextComponentTranslation(this.getName());
 	}
 
 	@Override
