@@ -55,6 +55,13 @@ public class ItemRenderRegister {
 		reg(ItemManager.reforgedGoldIngot);
 		reg(ItemManager.magicIngot);
 		reg(ItemManager.mithrilIngot);
+		reg(ItemManager.mortiumIngot);
+		reg(ItemManager.mysteriousIngot);
+		reg(ItemManager.mysticIngot);
+		reg(ItemManager.skyIronIngot);
+		reg(ItemManager.terriumIngot);
+		reg(ItemManager.toslotriumIngot);
+		reg(ItemManager.vividiumIngot);
 		
 	}
 	public static void reg(Item item)

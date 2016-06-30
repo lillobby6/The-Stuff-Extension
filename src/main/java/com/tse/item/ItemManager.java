@@ -23,7 +23,7 @@ public class ItemManager {
 	public static Item steelIngot;
 	public static Item tinIngot;
 	public static Item tyionetiumIngot;
-	public static Item bronzeIngot;//TODO
+	public static Item bronzeIngot;
 	public static Item brightflameIngot;
 	public static Item brightsteelIngot;
 	public static Item diamondIngot;
@@ -46,6 +46,20 @@ public class ItemManager {
 	public static Item copperHoe;
 	public static Item copperMattock;
 	public static Item copperSword;
+	
+	public static Item brightflamePickaxe;
+	public static Item brightflameAxe;
+	public static Item brightflameShovel;
+	public static Item brightflameHoe;
+	public static Item brightflameMattock;
+	public static Item brightflameSword;
+	
+	public static Item brightsteelPickaxe;
+	public static Item brightsteelAxe;
+	public static Item brightsteelShovel;
+	public static Item brightsteelHoe;
+	public static Item brightsteelMattock;
+	public static Item brightsteelSword;
 	
 	public static Item woodMattock;
 	public static Item stoneMattock;
@@ -162,6 +176,13 @@ public class ItemManager {
 		reforgedGoldIngot = registerMainItem("reforged_gold_ingot", TSECreativeTabs.tabMaterials);
 		magicIngot = registerMainItem("magic_ingot", TSECreativeTabs.tabMaterials);
 		mithrilIngot = registerMainItem("mithril_ingot", TSECreativeTabs.tabMaterials);
+		mortiumIngot = registerMainItem("mortium_ingot", TSECreativeTabs.tabMaterials);
+		mysteriousIngot = registerMainItem("mysterious_ingot", TSECreativeTabs.tabMaterials);
+		mysticIngot = registerMainItem("mystic_ingot", TSECreativeTabs.tabMaterials);
+		skyIronIngot = registerMainItem("sky_iron_ingot", TSECreativeTabs.tabMaterials);
+		terriumIngot = registerMainItem("terrium_ingot", TSECreativeTabs.tabMaterials);
+		toslotriumIngot = registerMainItem("toslotrium_ingot", TSECreativeTabs.tabMaterials);
+		vividiumIngot = registerMainItem("vividium_ingot", TSECreativeTabs.tabMaterials);
 		//End Materials
 		
 		//Start Tools
@@ -181,11 +202,23 @@ public class ItemManager {
 		terraDiamondMattock = registerMattock(-2.0F, TSEToolMaterials.TDIAMOND, "terra_diamond_mattock", TSECreativeTabs.tabTools, 4);
 		//Terra Diamond
 		
-		tyionetiumPickaxe = registerPickaxe(TSEToolMaterials.COPPER, "tyionetium_pickaxe", TSECreativeTabs.tabTools, 1);
+		tyionetiumPickaxe = registerPickaxe(TSEToolMaterials.TYIONETIUM, "tyionetium_pickaxe", TSECreativeTabs.tabTools, 1);
 		tyionetiumAxe = registerAxe(ToolMaterial.IRON, "tyionetium_axe", TSECreativeTabs.tabTools, 1);
-		tyionetiumMattock = registerMattock(-2.2F, TSEToolMaterials.COPPER, "tyionetium_mattock", TSECreativeTabs.tabTools, 1);
-		tyionetiumShovel = registerShovel(TSEToolMaterials.COPPER, "tyionetium_shovel", TSECreativeTabs.tabTools, 1);
-		tyionetiumHoe = registerHoe(TSEToolMaterials.COPPER, "tyionetium_hoe", TSECreativeTabs.tabTools, 1);
+		tyionetiumMattock = registerMattock(-2.2F, TSEToolMaterials.TYIONETIUM, "tyionetium_mattock", TSECreativeTabs.tabTools, 1);
+		tyionetiumShovel = registerShovel(TSEToolMaterials.TYIONETIUM, "tyionetium_shovel", TSECreativeTabs.tabTools, 1);
+		tyionetiumHoe = registerHoe(TSEToolMaterials.TYIONETIUM, "tyionetium_hoe", TSECreativeTabs.tabTools, 1);
+		
+		brightflamePickaxe = registerPickaxe(TSEToolMaterials.BRIGHTFLAME, "brightflame_pickaxe", TSECreativeTabs.tabTools, 1);
+		brightflameAxe = registerAxe(ToolMaterial.DIAMOND, "brightflame_axe", TSECreativeTabs.tabTools, 1);
+		brightflameShovel = registerShovel(TSEToolMaterials.BRIGHTFLAME, "brightflame_shovel", TSECreativeTabs.tabTools, 1);
+		brightflameMattock = registerMattock(-2.2F, TSEToolMaterials.BRIGHTFLAME, "brightflame_mattock", TSECreativeTabs.tabTools, 1);
+		brightflameHoe = registerHoe(TSEToolMaterials.BRIGHTFLAME, "brightflame_hoe", TSECreativeTabs.tabTools, 1);
+		
+		brightsteelPickaxe = registerPickaxe(TSEToolMaterials.BRIGHTFLAME, "brightsteel_pickaxe", TSECreativeTabs.tabTools, 1);
+		brightsteelAxe = registerAxe(ToolMaterial.DIAMOND, "brightsteel_axe", TSECreativeTabs.tabTools, 1);
+		brightsteelShovel = registerShovel(TSEToolMaterials.BRIGHTFLAME, "brightsteel_shovel", TSECreativeTabs.tabTools, 1);
+		brightsteelMattock = registerMattock(-2.2F, TSEToolMaterials.BRIGHTFLAME, "brightsteel_mattock", TSECreativeTabs.tabTools, 1);
+		brightsteelHoe = registerHoe(TSEToolMaterials.BRIGHTFLAME, "brightsteel_hoe", TSECreativeTabs.tabTools, 1);
 		
 		//Others
 		woodMattock = registerMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools, 0);
@@ -203,7 +236,9 @@ public class ItemManager {
 		
 		copperSword = registerSword(TSEToolMaterials.COPPER, "copper_sword", TSECreativeTabs.tabWeapons);
 		terraDiamondSword = registerSword(TSEToolMaterials.TDIAMOND, "terra_diamond_sword", TSECreativeTabs.tabWeapons);
-		tyionetiumSword = registerSword(TSEToolMaterials.COPPER, "tyionetium_sword", TSECreativeTabs.tabWeapons);
+		tyionetiumSword = registerSword(TSEToolMaterials.TYIONETIUM, "tyionetium_sword", TSECreativeTabs.tabWeapons);
+		brightflameSword = registerSword(TSEToolMaterials.BRIGHTFLAME, "brightflame_sword", TSECreativeTabs.tabWeapons);
+		brightsteelSword = registerSword(TSEToolMaterials.BRIGHTFLAME, "brightsteel_sword", TSECreativeTabs.tabWeapons);
 		
 		//End Swords
 		
