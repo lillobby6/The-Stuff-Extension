@@ -62,6 +62,8 @@ public class ItemRenderRegister {
 		reg(ItemManager.terriumIngot);
 		reg(ItemManager.toslotriumIngot);
 		reg(ItemManager.vividiumIngot);
+		reg(ItemManager.justice);
+		reg(ItemManager.corruption);
 		
 	}
 	public static void reg(Item item)

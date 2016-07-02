@@ -40,6 +40,9 @@ public class ItemManager {
 	
 	public static Item mixedIngot;
 	
+	public static Item justice;
+	public static Item corruption;
+	
 	public static Item copperPickaxe;
 	public static Item copperAxe;
 	public static Item copperShovel;
@@ -117,6 +120,11 @@ public class ItemManager {
 	public static Item registerSword(ToolMaterial mat, String registryName, CreativeTabs tab)
 	{
 		final Item item = new TSESword(mat, tab, registryName);
+		return registerItem(item, registryName);
+	}
+	public static Item registerLightSword(ToolMaterial mat, String registryName, CreativeTabs tab, boolean hasFlames)
+	{
+		final Item item = new LightningSword(mat, tab, registryName, hasFlames);
 		return registerItem(item, registryName);
 	}
 	public static Item registerPickaxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel)
@@ -239,6 +247,9 @@ public class ItemManager {
 		tyionetiumSword = registerSword(TSEToolMaterials.TYIONETIUM, "tyionetium_sword", TSECreativeTabs.tabWeapons);
 		brightflameSword = registerSword(TSEToolMaterials.BRIGHTFLAME, "brightflame_sword", TSECreativeTabs.tabWeapons);
 		brightsteelSword = registerSword(TSEToolMaterials.BRIGHTFLAME, "brightsteel_sword", TSECreativeTabs.tabWeapons);
+		
+		justice = registerLightSword(ToolMaterial.DIAMOND, "justice", TSECreativeTabs.tabWeapons, true);
+		corruption = registerLightSword(ToolMaterial.DIAMOND, "corruption", TSECreativeTabs.tabWeapons, false);
 		
 		//End Swords
 		

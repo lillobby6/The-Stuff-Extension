@@ -12,8 +12,15 @@ item.brightflame_ingot.name=Brightflame Ingot
 item.brightsteel_ingot.name=Brightsteel Ingot
 item.diamond_ingot.name=Diamond Ingot
 item.reforged_gold_ingot.name=Reforged Gold Ingot
-item.magic_ingot.name=Magic Ingot
+item.magic_ingot.name=Magic Ingot   
 item.mithril_ingot.name=Mithril Ingot
+item.mortium_ingot.name=Mortium Ingot
+item.terrium_ingot.name=Terrium Ingot
+item.mystic_ingot.name=Mystic Ingot
+item.sky_iron_ingot.name=Sky Iron Ingot
+item.toslotrium_ingot.name=Toslotrium Ingot
+item.vividium_ingot.name=Vividium Ingot
+item.mysterious_ingot.name=Mysterious Ingot
 
 item.copper_pickaxe.name=Copper Pickaxe
 item.copper_axe.name=Copper Axe
@@ -28,6 +35,20 @@ item.terra_diamond_shovel.name=Terra Diamond Shovel
 item.terra_diamond_hoe.name=Terra Diamond Hoe
 item.terra_diamond_mattock.name=Terra Diamond Mattock
 item.terra_diamond_sword.name=Terra Diamond Sword
+
+item.brightflame_pickaxe.name=Brightflame Pickaxe
+item.brightflame_axe.name=Brightflame Axe
+item.brightflame_shovel.name=Brightflame Shovel
+item.brightflame_hoe.name=Brightflame Hoe
+item.brightflame_mattock.name=Brightflame Mattock
+item.brightflame_sword.name=Brightflame Sword
+
+item.brightsteel_pickaxe.name=Brightsteel Pickaxe
+item.brightsteel_axe.name=Brightsteel Axe
+item.brightsteel_shovel.name=Brightsteel Shovel
+item.brightsteel_hoe.name=Brightsteel Hoe
+item.brightsteel_mattock.name=Brightsteel Mattock
+item.brightsteel_sword.name=Brightsteel Sword
 
 item.tyionetium_pickaxe.name=Tyionetium Pickaxe
 item.tyionetium_axe.name=Tyionetium Axe
@@ -53,6 +74,9 @@ item.terra_diamond_leggings.name=Terra Diamond Leggings
 item.terra_diamond_boots.name=Terra Diamond Boots
 
 item.lapis_remover.name=Lapis Lazuli Remover
+
+item.justice.name=Justice
+item.corruption.name=Corruption
 
 tile.exalted_diamond_ore.name=Exalted Diamond Ore
 tile.blood_diamond_ore.name=Blood Diamond Ore
