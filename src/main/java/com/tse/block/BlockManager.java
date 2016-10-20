@@ -24,6 +24,22 @@ public class BlockManager {
 	public static Block steelBlock;
 	public static Block terraDiamondBlock;
 	public static Block exaltedDiamondBlock;
+	public static Block bloodDiamondBlock;
+	public static Block tinBlock;
+	public static Block tyionetiumBlock;
+	public static Block bronzeBlock;
+	public static Block brightflameBlock;
+	public static Block brightsteelBlock;
+	public static Block reforgedGoldBlock;
+	public static Block magicBlock;
+	public static Block mithrilBlock;
+	public static Block mortiumBlock;
+	public static Block mysteriousBlock;
+	public static Block mysticBlock;
+	public static Block skyIronBlock;
+	public static Block terriumBlock;
+	public static Block toslotriumBlock;
+	public static Block vividiumBlock;
 	
 	public static Block storeBox;
 	public static Block superStoreBox;
@@ -106,6 +122,22 @@ public class BlockManager {
 		steelBlock = registerBlockNormal("steel_block", 5.0F, 5.0F);
 		terraDiamondBlock = registerBlockNormal("terra_diamond_block", 5.0F, 5.0F);
 		exaltedDiamondBlock = registerBlockNormal("exalted_diamond_block", 5.0F, 5.0F);
+		bloodDiamondBlock = registerBlockNormal("blood_diamond_block", 5.0F, 5.0F);
+		tinBlock = registerBlockNormal("tin_block", 5.0F, 5.0F);
+		tyionetiumBlock = registerBlockNormal("tyionetium_block", 5.0F, 5.0F);
+		bronzeBlock = registerBlockNormal("bronze_block", 5.0F, 5.0F);
+		brightflameBlock = registerBlockNormal("brightflame_block", 5.0F, 5.0F);
+		brightsteelBlock = registerBlockNormal("brightsteel_block", 5.0F, 5.0F);
+		reforgedGoldBlock = registerBlockNormal("reforged_gold_block", 5.0F, 5.0F);
+		magicBlock = registerBlockNormal("magic_block", 5.0F, 5.0F);
+		mithrilBlock = registerBlockNormal("mithril_block", 5.0F, 5.0F);
+		mortiumBlock = registerBlockNormal("mortium_block", 5.0F, 5.0F);
+		mysteriousBlock = registerBlockNormal("mysterious_block", 5.0F, 5.0F);
+		mysticBlock = registerBlockNormal("mystic_block", 5.0F, 5.0F);
+		skyIronBlock = registerBlockNormal("sky_iron_block", 5.0F, 5.0F);
+		terriumBlock = registerBlockNormal("terrium_block", 5.0F, 5.0F);
+		toslotriumBlock = registerBlockNormal("toslotrium_block", 5.0F, 5.0F);
+		vividiumBlock = registerBlockNormal("vividium_block", 5.0F, 5.0F);
 		
 		storeBox = registerStoreBox("store_box");
 		mysteriousBox = registerMBox("mysterious_box");

@@ -23,7 +23,22 @@ public class BlockRenderRegister {
 		reg(BlockManager.steelBlock);
 		reg(BlockManager.exaltedDiamondBlock);
 		reg(BlockManager.terraDiamondBlock);
-		
+		reg(BlockManager.bronzeBlock);
+		reg(BlockManager.tyionetiumBlock);
+		reg(BlockManager.brightsteelBlock);
+		reg(BlockManager.reforgedGoldBlock);
+		reg(BlockManager.tinBlock);
+		reg(BlockManager.mithrilBlock);
+		reg(BlockManager.brightflameBlock);
+		reg(BlockManager.mysteriousBlock);
+		reg(BlockManager.mysticBlock);
+		reg(BlockManager.skyIronBlock);
+		reg(BlockManager.terriumBlock);
+		reg(BlockManager.bloodDiamondBlock);	
+		reg(BlockManager.vividiumBlock);
+		reg(BlockManager.mortiumBlock);
+		reg(BlockManager.toslotriumBlock);
+		reg(BlockManager.magicBlock);
 	}
 	
 	public static void reg(Block block) {

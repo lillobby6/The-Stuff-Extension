@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.tse.block.BlockManager;
+import com.tse.events.AchievementManager;
 import com.tse.gui.GuiManager;
 import com.tse.item.ItemManager;
 import com.tse.main.core.TheStuffExtension;
@@ -18,6 +19,7 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
     	ItemManager.createItems();
     	BlockManager.createBlocks();
+    	//AchievementManager.createAchievements();
     	Crafting.initCrafting();
     }
 
