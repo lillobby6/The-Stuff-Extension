@@ -166,6 +166,26 @@ public class ItemRenderRegister {
 	    reg(ItemManager.mysteriousNugget);
 	    reg(ItemManager.brightflameNugget);
 	    reg(ItemManager.diamondToslotriumMixedIngot);
+	    
+	    reg(ItemManager.brightsteelHelmet);
+	    reg(ItemManager.brightsteelChestplate);
+	    reg(ItemManager.brightsteelLeggings);
+	    reg(ItemManager.brightsteelBoots);
+	    
+	    reg(ItemManager.tinHelmet);
+	    reg(ItemManager.tinChestplate);
+	    reg(ItemManager.tinLeggings);
+	    reg(ItemManager.tinBoots);
+	    
+	    reg(ItemManager.magicHelmet);
+	    reg(ItemManager.magicChestplate);
+	    reg(ItemManager.magicLeggings);
+	    reg(ItemManager.magicBoots);
+	    
+	    reg(ItemManager.mithrilHelmet);
+	    reg(ItemManager.mithrilChestplate);
+	    reg(ItemManager.mithrilLeggings);
+	    reg(ItemManager.mithrilBoots);
 	}
 	public static void reg(Item item)
 	{

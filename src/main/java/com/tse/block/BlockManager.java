@@ -46,7 +46,8 @@ public class BlockManager {
 	public static Block mysteriousBox;
 	public static Block diamondStoreBox;
 	
-
+	public static Block whiteStone;
+	public static Block whiteCobblestone;
 	
 	private static Block registerBlock(String registerName, ItemBlock itemBlock, Block block) {
         block.setRegistryName(registerName);
@@ -142,20 +143,10 @@ public class BlockManager {
 		storeBox = registerStoreBox("store_box");
 		mysteriousBox = registerMBox("mysterious_box");
 		superStoreBox = registerSSBox("super_store_box");
-		//diamondStoreBox = registerDSBox("diamond_store_box");
 		
-		/*GameRegistry.registerBlock(exaltedDiamondOre = new TSEBlockOre("exalted_diamond_ore", Material.ROCK, ItemManager.exaltedDiamond, 1, 3), "exalted_diamond_ore");
-		GameRegistry.registerBlock(bloodDiamondOre = new TSEBlockOre("blood_diamond_ore", Material.ROCK, ItemManager.bloodDiamond, 1, 3), "blood_diamond_ore");
-		GameRegistry.registerBlock(terraDiamondOre = new TSEBlockOre("terra_diamond_ore", Material.ROCK, ItemManager.terraDiamond, 1, 3), "terra_diamond_ore");
-		GameRegistry.registerBlock(moonStone = new TSEBlock("moon_stone"), "moon_stone");
-		GameRegistry.registerBlock(moonSand = new TSEBlock("moon_sand"), "moon_sand");
-		GameRegistry.registerBlock(moonTeleporter = new MoonTeleporter(), "moon_teleporter");
-		GameRegistry.registerBlock(copperBlock = new TSEBlock("copper_block"), "copper_block");
-		//GameRegistry.registerBlock(copperOre = new TSEBlockOre("copper_ore", Material.ROCK, 1, "pickaxe", 5F, 10F, TSECreativeTabs.tabOres, Item.getItemFromBlock(BlockManager.copperOre), 0, 1, 1), "copper_ore");
-		GameRegistry.registerBlock(storeBox = new StoreBox("store_box"), "store_box");
-		GameRegistry.registerBlock(superStoreBox = new SuperStoreBox("super_store_box"), "super_store_box");
-		GameRegistry.registerBlock(mysteriousBox = new MysteriousBox("mysterious_box"), "mysterious_box");
-		GameRegistry.registerBlock(steelBlock = new TSEBlock("steel_block"), "steel_block");*/
+		whiteStone = registerBlockNormal("white_stone", 2.0F, 2.0F);
+		whiteCobblestone = registerBlockNormal("white_cobblestone", 2.0F, 2.0F);
+		
 	}
 	
 }

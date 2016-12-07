@@ -20,19 +20,28 @@ public class Crafting {
 		GameRegistry.addSmelting(
 				Item.getItemFromBlock(BlockManager.exaltedDiamondOre),
 				new ItemStack(ItemManager.exaltedDiamond), 0.1F);
+		
 		GameRegistry.addSmelting(
 				Item.getItemFromBlock(BlockManager.bloodDiamondOre),
 				new ItemStack(ItemManager.bloodDiamond), 0.1F);
+		
 		GameRegistry.addSmelting(
 				Item.getItemFromBlock(BlockManager.terraDiamondOre),
 				new ItemStack(ItemManager.terraDiamond), 0.1F);
+		
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.copperOre),
 				new ItemStack(ItemManager.copperIngot), 0.1F);
+		
 		GameRegistry.addSmelting(Items.IRON_INGOT, new ItemStack(
 				ItemManager.steelIngot), 0.1F);
+		
 		GameRegistry.addSmelting(Item.getItemFromBlock(Blocks.IRON_BLOCK),
 				new ItemStack(Item.getItemFromBlock(BlockManager.steelBlock)),
 				0.9F);
+		
+		GameRegistry.addSmelting(Items.GOLD_INGOT, new ItemStack(ItemManager.reforgedGoldIngot), 0.1F);
+		
+		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.whiteStone), new ItemStack(Item.getItemFromBlock(BlockManager.whiteCobblestone)), 0.1F);
 	}
 
 	public static void craftingShapeless() {
@@ -86,6 +95,61 @@ public class Crafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(
 				ItemManager.tyionetiumIngot, 1), ItemManager.bronzeIngot,
 				ItemManager.exaltedDiamond);
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.magicIngot),
+				ItemManager.magicNugget,
+				ItemManager.magicNugget,
+				ItemManager.magicNugget,
+				ItemManager.magicNugget,
+				ItemManager.magicNugget,
+				ItemManager.magicNugget,
+				ItemManager.magicNugget,
+				ItemManager.magicNugget);
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.magicNugget, 9),
+				ItemManager.magicIngot);		
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.mysticIngot),
+				ItemManager.mysticNugget,
+				ItemManager.mysticNugget,
+				ItemManager.mysticNugget,
+				ItemManager.mysticNugget,
+				ItemManager.mysticNugget,
+				ItemManager.mysticNugget,
+				ItemManager.mysticNugget,
+				ItemManager.mysticNugget,
+				ItemManager.mysticNugget);
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.mysticNugget, 9),
+				ItemManager.mysticIngot);
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.mysteriousIngot),
+				ItemManager.mysteriousNugget,
+				ItemManager.mysteriousNugget,
+				ItemManager.mysteriousNugget,
+				ItemManager.mysteriousNugget,
+				ItemManager.mysteriousNugget,
+				ItemManager.mysteriousNugget,
+				ItemManager.mysteriousNugget,
+				ItemManager.mysteriousNugget,
+				ItemManager.mysteriousNugget);
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.mysteriousNugget, 9),
+				ItemManager.mysteriousIngot);
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.brightflameIngot),
+				ItemManager.brightflameNugget,
+				ItemManager.brightflameNugget,
+				ItemManager.brightflameNugget,
+				ItemManager.brightflameNugget,
+				ItemManager.brightflameNugget,
+				ItemManager.brightflameNugget,
+				ItemManager.brightflameNugget,
+				ItemManager.brightflameNugget,
+				ItemManager.brightflameNugget);
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.brightflameNugget, 9),
+				ItemManager.brightflameIngot);
 	}
 
 	public static void craftingShaped() {

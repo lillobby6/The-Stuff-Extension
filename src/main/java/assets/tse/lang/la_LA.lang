@@ -41,7 +41,7 @@ container.store_box=Cavea
 container.super_store_box=Cavea Magna
 container.mysterious_box=Cavea Arcana
 
-itemGroup.tabStorage=Tendens Scrutum: Apotheca
-itemGroup.tabTools=Tendens Scrutum: Instrumenta
-itemGroup.tabWeapons=Tendens Scrutum: Bellum
+itemGroup.tabStorage=Tendens Scrutum: Apothecae
+itemGroup.tabTools=Tendens Scrutum: Instrumentae
+itemGroup.tabWeapons=Tendens Scrutum: Bella
 itemGroup.tabMaterials=Tendens Scrutum: Materiae

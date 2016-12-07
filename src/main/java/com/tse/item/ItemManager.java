@@ -65,12 +65,12 @@ public class ItemManager {
 	public static Item brightflameAxe;
 	public static Item brightflameShovel;
 	public static Item brightflameHoe;
-	public static Item brightflameMattock;//TEXTURE
+	public static Item brightflameMattock;
 	public static Item brightflameSword;
 	
-	public static Item brightsteelPickaxe;  //TODO  |
-	public static Item brightsteelAxe;		//      | 
-	public static Item brightsteelShovel;   //     \ /  
+	public static Item brightsteelPickaxe;  
+	public static Item brightsteelAxe;		
+	public static Item brightsteelShovel;   
 	public static Item brightsteelHoe;
 	public static Item brightsteelMattock;
 	public static Item brightsteelSword;
@@ -175,7 +175,36 @@ public class ItemManager {
 	public static Item brightflameLeggings;
 	public static Item brightflameBoots;
 	
+	public static Item brightsteelHelmet;
+	public static Item brightsteelChestplate;
+	public static Item brightsteelLeggings;
+	public static Item brightsteelBoots;
+	
+	public static Item bronzeHelmet;
+	public static Item bronzeChestplate;
+	public static Item bronzeLeggings;
+	public static Item bronzeBoots;
 
+	public static Item tinHelmet;
+	public static Item tinChestplate;
+	public static Item tinLeggings;
+	public static Item tinBoots;
+	
+	public static Item magicHelmet;
+	public static Item magicChestplate;
+	public static Item magicLeggings;
+	public static Item magicBoots;
+	
+	public static Item mithrilHelmet;
+	public static Item mithrilChestplate;
+	public static Item mithrilLeggings;
+	public static Item mithrilBoots;
+	
+	public static Item mortiumHelmet;
+	public static Item mortiumChestplate;
+	public static Item mortiumLeggings;
+	public static Item mortiumBoots;
+	
 	private static Item registerItem(Item item, String registryName) {
 		item.setRegistryName(registryName);
 		item.setUnlocalizedName(registryName);
@@ -412,6 +441,31 @@ public class ItemManager {
 		brightflameChestplate = registerArmor("brightflame_chestplate", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.CHEST);
 		brightflameLeggings = registerArmor("brightflame_leggings", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.LEGS);
 		brightflameBoots = registerArmor("brightflame_boots", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.FEET);
+		
+		brightsteelHelmet = registerArmor("brightsteel_helmet", TSEArmorMaterials.BRIGHTSTEEL, 1, EntityEquipmentSlot.HEAD);
+		brightsteelChestplate = registerArmor("brightsteel_chestplate", TSEArmorMaterials.BRIGHTSTEEL, 1, EntityEquipmentSlot.CHEST);
+		brightsteelLeggings = registerArmor("brightsteel_leggings", TSEArmorMaterials.BRIGHTSTEEL, 1, EntityEquipmentSlot.LEGS);
+		brightsteelBoots = registerArmor("brightsteel_boots", TSEArmorMaterials.BRIGHTSTEEL, 1, EntityEquipmentSlot.FEET);
+		
+		tinHelmet = registerArmor("tin_helmet", TSEArmorMaterials.TIN, 1, EntityEquipmentSlot.HEAD);
+		tinChestplate = registerArmor("tin_chestplate", TSEArmorMaterials.TIN, 1, EntityEquipmentSlot.CHEST);
+		tinLeggings = registerArmor("tin_leggings", TSEArmorMaterials.TIN, 1, EntityEquipmentSlot.LEGS);
+		tinBoots = registerArmor("tin_boots", TSEArmorMaterials.TIN, 1, EntityEquipmentSlot.FEET);
+		
+		magicHelmet = registerArmor("magic_helmet", TSEArmorMaterials.MAGIC, 1, EntityEquipmentSlot.HEAD);
+		magicChestplate = registerArmor("magic_chestplate", TSEArmorMaterials.MAGIC, 1, EntityEquipmentSlot.CHEST);
+		magicLeggings = registerArmor("magic_leggings", TSEArmorMaterials.MAGIC, 1, EntityEquipmentSlot.LEGS);
+		magicBoots = registerArmor("magic_boots", TSEArmorMaterials.MAGIC, 1, EntityEquipmentSlot.FEET);
+		
+		mithrilHelmet = registerArmor("mithril_helmet", TSEArmorMaterials.MITHRIL, 1, EntityEquipmentSlot.HEAD);
+		mithrilChestplate = registerArmor("mithril_chestplate", TSEArmorMaterials.MITHRIL, 1, EntityEquipmentSlot.CHEST);
+		mithrilLeggings = registerArmor("mithril_leggings", TSEArmorMaterials.MITHRIL, 1, EntityEquipmentSlot.LEGS);
+		mithrilBoots = registerArmor("mithril_boots", TSEArmorMaterials.MITHRIL, 1, EntityEquipmentSlot.FEET);
+		
+		mortiumHelmet = registerArmor("mortium_helmet", TSEArmorMaterials.MORTIUM, 1, EntityEquipmentSlot.HEAD);
+		mortiumChestplate = registerArmor("mortium_chestplate", TSEArmorMaterials.MORTIUM, 1, EntityEquipmentSlot.CHEST);
+		mortiumLeggings = registerArmor("mortium_leggings", TSEArmorMaterials.MORTIUM, 1, EntityEquipmentSlot.LEGS);
+		mortiumBoots = registerArmor("mortium_boots", TSEArmorMaterials.MORTIUM, 1, EntityEquipmentSlot.FEET);
 		//End Armor
 	}
 	

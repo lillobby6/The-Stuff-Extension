@@ -39,6 +39,8 @@ public class BlockRenderRegister {
 		reg(BlockManager.mortiumBlock);
 		reg(BlockManager.toslotriumBlock);
 		reg(BlockManager.magicBlock);
+		reg(BlockManager.whiteStone);
+		reg(BlockManager.whiteCobblestone);
 	}
 	
 	public static void reg(Block block) {
