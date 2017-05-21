@@ -1,4 +1,4 @@
-package com.tse.container;
+/*package com.tse.container;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
@@ -37,7 +37,7 @@ public class MysteriousContainer extends Container{
 		 * Tile Entity 0-53 ........ 0 - 53
 		 * Player Inventory 54-80 . 54 - 80
 		 * Player Inventory 0-8 ... 81 - 89
-		 */
+		 *
 	}
 	@Override
 	public ItemStack transferStackInSlot(EntityPlayer playerIn, int fromSlot) {
@@ -58,14 +58,14 @@ public class MysteriousContainer extends Container{
 	                return null;
 	        }
 
-	        if (current.stackSize == 0)
+	        if (current.getMaxStackSize() == 0)
 	            slot.putStack((ItemStack) null);
 	        else
 	            slot.onSlotChanged();
 
-	        if (current.stackSize == previous.stackSize)
+	        if (current.getMaxStackSize() == previous.getMaxStackSize())
 	            return null;
-	        slot.onPickupFromSlot(playerIn, current);
+	        slot.func_190901_a(playerIn, current);
 	    }
 	    return previous;
 	}
@@ -77,3 +77,4 @@ public class MysteriousContainer extends Container{
 		return this.te.isUseableByPlayer(playerIn);
 	}
 }
+*/

@@ -1,4 +1,4 @@
-package com.tse.dimension;
+/*package com.tse.dimension;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
@@ -55,4 +55,4 @@ public class TeleporterMoon extends Teleporter{
     }
 
 }
-
+*/

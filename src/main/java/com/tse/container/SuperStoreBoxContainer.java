@@ -1,4 +1,4 @@
-package com.tse.container;
+/*package com.tse.container;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
@@ -43,7 +43,7 @@ public class SuperStoreBoxContainer extends Container{
 		 * Tile Entity 0-71 ........ 0 - 71
 		 * Player Inventory 72-98 . 72 - 98
 		 * Player Inventory 0-8 ... 99 - 107
-		 */
+		 *
 	}
 	@Override
 	public ItemStack transferStackInSlot(EntityPlayer playerIn, int fromSlot) {
@@ -64,14 +64,14 @@ public class SuperStoreBoxContainer extends Container{
 	                return null;
 	        }
 
-	        if (current.stackSize == 0)
+	        if (current.getMaxStackSize() == 0)
 	            slot.putStack((ItemStack) null);
 	        else
 	            slot.onSlotChanged();
 
-	        if (current.stackSize == previous.stackSize)
+	        if (current.getMaxStackSize() == previous.getMaxStackSize())
 	            return null;
-	        slot.onPickupFromSlot(playerIn, current);
+	        slot.func_190901_a(playerIn, current);
 	    }
 	    return previous;
 	}
@@ -84,3 +84,4 @@ public class SuperStoreBoxContainer extends Container{
 	}
 
 }
+*/

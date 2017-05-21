@@ -1,4 +1,4 @@
-package com.tse.gui;
+/*package com.tse.gui;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.BlockPos;
@@ -67,3 +67,4 @@ public class GuiManager implements IGuiHandler{
 	}
 
 }
+*/

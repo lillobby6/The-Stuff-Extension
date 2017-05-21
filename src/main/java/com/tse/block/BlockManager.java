@@ -76,7 +76,7 @@ public class BlockManager {
         return registerBlock(registerName, itemBlock, ore);
     }
 	
-	private static Block registerStoreBox(String registryName)
+	/*private static Block registerStoreBox(String registryName)
 	{
 		final Block block = new StoreBox(registryName);
 		final ItemBlock itemBlock = new ItemBlock(block);
@@ -106,7 +106,7 @@ public class BlockManager {
 		final ItemBlock itemBlock = new ItemBlock(block);
 		
 		return registerBlock(registryName, itemBlock, block);
-	}
+	}*/
 	
 	public static void createBlocks()
 	{
@@ -140,9 +140,10 @@ public class BlockManager {
 		toslotriumBlock = registerBlockNormal("toslotrium_block", 5.0F, 5.0F);
 		vividiumBlock = registerBlockNormal("vividium_block", 5.0F, 5.0F);
 		
-		storeBox = registerStoreBox("store_box");
-		mysteriousBox = registerMBox("mysterious_box");
-		superStoreBox = registerSSBox("super_store_box");
+		//storeBox = registerStoreBox("store_box");
+		//mysteriousBox = registerMBox("mysterious_box");
+		//superStoreBox = registerSSBox("super_store_box");
+		//diamondStoreBox = registerDSBox("diamond_store_box");
 		
 		whiteStone = registerBlockNormal("white_stone", 2.0F, 2.0F);
 		whiteCobblestone = registerBlockNormal("white_cobblestone", 2.0F, 2.0F);

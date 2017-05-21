@@ -1,4 +1,4 @@
-package com.tse.block;
+/*package com.tse.block;
 
 import javax.annotation.Nullable;
 
@@ -57,7 +57,7 @@ public class MysteriousBox extends BlockContainer {
     }
 	
 	@Override
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing heldItem, float side, float hitX, float hitY)
     {
 		if (!worldIn.isRemote) {
 	        playerIn.openGui(TheStuffExtension.instance, GuiManager.MYSTERIOUS_BOX_GUI, worldIn, pos.getX(), pos.getY(), pos.getZ());
@@ -66,3 +66,4 @@ public class MysteriousBox extends BlockContainer {
 	}
 
 }
+*/

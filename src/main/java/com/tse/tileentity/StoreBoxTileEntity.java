@@ -1,4 +1,4 @@
-package com.tse.tileentity;
+/*package com.tse.tileentity;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
@@ -60,7 +60,7 @@ public class StoreBoxTileEntity extends TileEntity implements IInventory{
 		if (this.getStackInSlot(index) != null) {
 	        ItemStack itemstack;
 
-	        if (this.getStackInSlot(index).stackSize <= count) {
+	        if (this.getStackInSlot(index).getMaxStackSize() <= count) {
 	            itemstack = this.getStackInSlot(index);
 	            this.setInventorySlotContents(index, null);
 	            this.markDirty();
@@ -68,7 +68,7 @@ public class StoreBoxTileEntity extends TileEntity implements IInventory{
 	        } else {
 	            itemstack = this.getStackInSlot(index).splitStack(count);
 
-	            if (this.getStackInSlot(index).stackSize <= 0) {
+	            if (this.getStackInSlot(index).getMaxStackSize() <= 0) {
 	                this.setInventorySlotContents(index, null);
 	            } else {
 	                this.setInventorySlotContents(index, this.getStackInSlot(index));
@@ -87,17 +87,18 @@ public class StoreBoxTileEntity extends TileEntity implements IInventory{
 		 ItemStack stack = this.getStackInSlot(index);
 		 this.setInventorySlotContents(index, null);
 		 return stack;
-	}*/
+	}*
 
 	@Override
 	public void setInventorySlotContents(int index, ItemStack stack) {
+		int st = stack.getMaxStackSize();
 		if (index < 0 || index >= this.getSizeInventory())
 	        return;
 
-	    if (stack != null && stack.stackSize > this.getInventoryStackLimit())
-	        stack.stackSize = this.getInventoryStackLimit();
+	    if (stack != null && stack.getMaxStackSize() > this.getInventoryStackLimit())
+	        st = this.getInventoryStackLimit();
 	        
-	    if (stack != null && stack.stackSize == 0)
+	    if (stack != null && stack.getMaxStackSize() == 0)
 	        stack = null;
 
 	    this.inventory[index] = stack;
@@ -173,7 +174,7 @@ public class StoreBoxTileEntity extends TileEntity implements IInventory{
 	    for (int i = 0; i < list.tagCount(); ++i) {
 	        NBTTagCompound stackTag = list.getCompoundTagAt(i);
 	        int slot = stackTag.getByte("Slot") & 255;
-	        this.setInventorySlotContents(slot, ItemStack.loadItemStackFromNBT(stackTag));
+	        //;this.setInventorySlotContents(slot, ItemStack.loadItemStackFromNBT(stackTag));
 	    }
 
 	    if (nbt.hasKey("CustomName", 8)) {
@@ -188,6 +189,11 @@ public class StoreBoxTileEntity extends TileEntity implements IInventory{
 		 return stack;
 	}
 
+	@Override
+	public boolean func_191420_l() {
+		return false;
+	}
+
 	
 
-}
+}*/

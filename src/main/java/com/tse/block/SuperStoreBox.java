@@ -1,4 +1,4 @@
-package com.tse.block;
+/*package com.tse.block;
 
 import java.awt.List;
 
@@ -64,7 +64,7 @@ public class SuperStoreBox extends BlockContainer{
     }
 	
 	@Override
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing heldItem, float side, float hitX, float hitY)
     {
 		if (!worldIn.isRemote) {
 	        playerIn.openGui(TheStuffExtension.instance, GuiManager.SUPER_STORE_BOX_GUI, worldIn, pos.getX(), pos.getY(), pos.getZ());
@@ -72,4 +72,4 @@ public class SuperStoreBox extends BlockContainer{
 	    return true;
 	}
 
-}
+}*/
