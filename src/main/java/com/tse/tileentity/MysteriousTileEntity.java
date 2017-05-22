@@ -1,30 +1,46 @@
-/*package com.tse.tileentity;
+package com.tse.tileentity;
+
+import java.util.Random;
+
+import com.tse.container.MysteriousContainer;
 
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.IInventory;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextComponentString;
-import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraft.tileentity.TileEntityLockableLoot;
+import net.minecraft.util.NonNullList;
 
-public class MysteriousTileEntity extends TileEntity implements IInventory{
+public class MysteriousTileEntity extends TileEntityLockableLoot{
 
-	private ItemStack[] inventory;
+	private static final Random RNG = new Random();
+    private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(1, ItemStack.EMPTY);
 	private String customName;
-	 
-	public MysteriousTileEntity() {
-		this.inventory = new ItemStack[this.getSizeInventory()];
+    
+	@Override
+	public int getSizeInventory() {
+		return 1;
 	}
 
-	public String getCustomName() {
-		return this.customName;
+	@Override
+	public boolean isEmpty() {
+		for (ItemStack itemstack : this.stacks)
+        {
+            if (!itemstack.isEmpty())
+            {
+                return false;
+            }
+        }
+
+        return true;
 	}
 
-	public void setCustomName(String customName) {
-	    this.customName = customName;
+	@Override
+	public int getInventoryStackLimit() {
+		return 64;
 	}
 
 	@Override
@@ -33,168 +49,58 @@ public class MysteriousTileEntity extends TileEntity implements IInventory{
 	}
 
 	@Override
-	public boolean hasCustomName() {
-		return this.customName != null && !this.customName.equals("");
+	public Container createContainer(InventoryPlayer playerInventory,
+			EntityPlayer playerIn) {
+		return new MysteriousContainer(playerInventory, this);
 	}
 
 	@Override
-	public int getSizeInventory() {
-		return 37;
+	public String getGuiID() {
+		return "tse:mysteriousbox";
 	}
 
 	@Override
-	public ItemStack getStackInSlot(int index) {
-		 if (index < 0 || index >= this.getSizeInventory())
-		        return null;
-		    return this.inventory[index];
+	protected NonNullList<ItemStack> getItems() {
+		return this.stacks;
 	}
-
+	
 	@Override
-	public ItemStack decrStackSize(int index, int count) {
-		if (this.getStackInSlot(index) != null) {
-	        ItemStack itemstack;
+	public NBTTagCompound writeToNBT(NBTTagCompound compound) {
+		super.writeToNBT(compound);
 
-	        if (this.getStackInSlot(index).getMaxStackSize() <= count) {
-	            itemstack = this.getStackInSlot(index);
-	            this.setInventorySlotContents(index, null);
-	            this.markDirty();
-	            return itemstack;
-	        } else {
-	            itemstack = this.getStackInSlot(index).splitStack(count);
+        if (!this.checkLootAndWrite(compound))
+        {
+            ItemStackHelper.saveAllItems(compound, this.stacks);
+        }
 
-	            if (this.getStackInSlot(index).getMaxStackSize() <= 0) {
-	                this.setInventorySlotContents(index, null);
-	            } else {
-	                this.setInventorySlotContents(index, this.getStackInSlot(index));
-	            }
+        if (this.hasCustomName())
+        {
+            compound.setString("CustomName", this.customName);
+        }
 
-	            this.markDirty();
-	            return itemstack;
-	        }
-	    } else {
-	        return null;
-	    }
-	}
-
-	/*@Override
-	public ItemStack getStackInSlotOnClosing(int index) {
-		 ItemStack stack = this.getStackInSlot(index);
-		 this.setInventorySlotContents(index, null);
-		 return stack;
-	}*
-
-	@Override
-	public void setInventorySlotContents(int index, ItemStack stack) {
-		int st = stack.getMaxStackSize();
-		if (index < 0 || index >= this.getSizeInventory())
-	        return;
-
-	    if (stack != null && stack.getMaxStackSize() > this.getInventoryStackLimit())
-	        st = this.getInventoryStackLimit();
-	        
-	    if (stack != null && stack.getMaxStackSize() == 0)
-	        stack = null;
-
-	    this.inventory[index] = stack;
-	    this.markDirty();
-	}
-
-	@Override
-	public int getInventoryStackLimit() {
-		return 128;
-	}
-
-	@Override
-	public boolean isUseableByPlayer(EntityPlayer player) {
-		return this.worldObj.getTileEntity(this.getPos()) == this && player.getDistanceSq(this.pos.add(0.5, 0.5, 0.5)) <= 64;
-	}
-
-	@Override
-	public void openInventory(EntityPlayer player) {}
-
-	@Override
-	public void closeInventory(EntityPlayer player) {}
-
-	@Override
-	public boolean isItemValidForSlot(int index, ItemStack stack) {
-		return true;
-	}
-
-	@Override
-	public int getField(int id) {
-		return 0;
-	}
-
-	@Override
-	public void setField(int id, int value) {}
-
-	@Override
-	public int getFieldCount() {
-		return 0;
-	}
-
-	@Override
-	public void clear() {
-		 for (int i = 0; i < this.getSizeInventory(); i++)
-		        this.setInventorySlotContents(i, null);
-	}
-	@Override
-	public NBTTagCompound writeToNBT(NBTTagCompound nbt) {
-	    super.writeToNBT(nbt);
-
-	    NBTTagList list = new NBTTagList();
-	    for (int i = 0; i < this.getSizeInventory(); ++i) {
-	        if (this.getStackInSlot(i) != null) {
-	            NBTTagCompound stackTag = new NBTTagCompound();
-	            stackTag.setByte("Slot", (byte) i);
-	            this.getStackInSlot(i).writeToNBT(stackTag);
-	            list.appendTag(stackTag);
-	        }
-	    }
-	    nbt.setTag("Items", list);
-
-	    if (this.hasCustomName()) {
-	        nbt.setString("CustomName", this.getCustomName());
-	    }
-	    return nbt;
+        return compound;
 	}
 
 
 	@Override
-	public void readFromNBT(NBTTagCompound nbt) {
-	    super.readFromNBT(nbt);
+	public void readFromNBT(NBTTagCompound compound) {
+		super.readFromNBT(compound);
+        this.stacks = NonNullList.<ItemStack>withSize(this.getSizeInventory(), ItemStack.EMPTY);
 
-	    NBTTagList list = nbt.getTagList("Items", 10);
-	    for (int i = 0; i < list.tagCount(); ++i) {
-	        NBTTagCompound stackTag = list.getCompoundTagAt(i);
-	        int slot = stackTag.getByte("Slot") & 255;
-	        //this.setInventorySlotContents(slot, ItemStack.loadItemStackFromNBT(stackTag));
-	    }
+        if (!this.checkLootAndRead(compound))
+        {
+            ItemStackHelper.loadAllItems(compound, this.stacks);
+        }
 
-	    if (nbt.hasKey("CustomName", 8)) {
-	        this.setCustomName(nbt.getString("CustomName"));
-	    }
+        if (compound.hasKey("CustomName", 8))
+        {
+            this.customName = compound.getString("CustomName");
+        }
 	}
-
-	@Override
-	public ITextComponent getDisplayName() {
-		 return this.hasCustomName() ? new TextComponentString(this.getName()) : new TextComponentTranslation(this.getName());
-	}
-
-	@Override
-	public ItemStack removeStackFromSlot(int index) {
-		ItemStack stack = this.getStackInSlot(index);
-		 this.setInventorySlotContents(index, null);
-		 return stack;
-	}
-
-	@Override
-	public boolean func_191420_l() {
-		// TODO Auto-generated method stub
-		return false;
+	public void setCustomName(String customName) {
+	    this.customName = customName;
 	}
 
 	
 
 }
-*/

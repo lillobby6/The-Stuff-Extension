@@ -5,12 +5,14 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import com.tse.block.BlockRenderRegister;
+import com.tse.entity.EntityManager;
 import com.tse.item.ItemRenderRegister;
 
 public class ClientProxy extends CommonProxy{
 	@Override
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);
+        
     }
 
     @Override
@@ -19,6 +21,7 @@ public class ClientProxy extends CommonProxy{
         
         ItemRenderRegister.registerItemRenderer();
         BlockRenderRegister.registerBlockRenderer();
+        EntityManager.initmodels();
     }
 
     @Override

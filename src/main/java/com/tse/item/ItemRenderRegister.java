@@ -186,6 +186,11 @@ public class ItemRenderRegister {
 	    reg(ItemManager.mithrilChestplate);
 	    reg(ItemManager.mithrilLeggings);
 	    reg(ItemManager.mithrilBoots);
+	    
+	    reg(ItemManager.mortiumHelmet);
+	    reg(ItemManager.mortiumChestplate);
+	    reg(ItemManager.mortiumLeggings);
+	    reg(ItemManager.mortiumBoots);
 	}
 	public static void reg(Item item)
 	{

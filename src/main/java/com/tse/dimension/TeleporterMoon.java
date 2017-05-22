@@ -1,4 +1,4 @@
-/*package com.tse.dimension;
+package com.tse.dimension;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
@@ -28,9 +28,9 @@ public class TeleporterMoon extends Teleporter{
         }
         else
         {
-            int i = MathHelper.floor_double(entityIn.posX);
-            int j = MathHelper.floor_double(entityIn.posY) - 1;
-            int k = MathHelper.floor_double(entityIn.posZ);
+            int i = MathHelper.floor(entityIn.posX);
+            int j = MathHelper.floor(entityIn.posY) - 1;
+            int k = MathHelper.floor(entityIn.posZ);
             byte b0 = 1;
             byte b1 = 0;
 
@@ -55,4 +55,4 @@ public class TeleporterMoon extends Teleporter{
     }
 
 }
-*/
+

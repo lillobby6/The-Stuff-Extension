@@ -1,12 +1,16 @@
-/*package com.tse.block;
+package com.tse.block;
 
-import javax.annotation.Nullable;
+import com.tse.creativetabs.TSECreativeTabs;
+import com.tse.gui.GuiManager;
+import com.tse.main.core.TheStuffExtension;
+import com.tse.tileentity.MysteriousTileEntity;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -15,11 +19,6 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-
-import com.tse.creativetabs.TSECreativeTabs;
-import com.tse.gui.GuiManager;
-import com.tse.main.core.TheStuffExtension;
-import com.tse.tileentity.MysteriousTileEntity;
 
 public class MysteriousBox extends BlockContainer {
 
@@ -37,18 +36,24 @@ public class MysteriousBox extends BlockContainer {
 		return new MysteriousTileEntity();
 	}
 	@Override
-	public void breakBlock(World world, BlockPos pos, IBlockState blockstate) {
-		MysteriousTileEntity te = (MysteriousTileEntity) world.getTileEntity(pos);
-		InventoryHelper.dropInventoryItems(world, pos, te);
-		super.breakBlock(world, pos, blockstate);
+	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
+		TileEntity tileentity = worldIn.getTileEntity(pos);
+
+        if (tileentity instanceof IInventory)
+        {
+            InventoryHelper.dropInventoryItems(worldIn, pos, (IInventory)tileentity);
+           // worldIn.updateComparatorOutputLevel(pos, this);
+        }
+
+        super.breakBlock(worldIn, pos, state);
 	}
 
-	@Override
+	/*@Override
 	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
 		if (stack.hasDisplayName()) {
 			((MysteriousTileEntity) worldIn.getTileEntity(pos)).setCustomName(stack.getDisplayName());
 		}
-	}
+	}*/
 
 	@Override
 	public EnumBlockRenderType getRenderType(IBlockState state)
@@ -57,13 +62,13 @@ public class MysteriousBox extends BlockContainer {
     }
 	
 	@Override
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing heldItem, float side, float hitX, float hitY)
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing sidw, float hitX, float hitY, float hitZ)
     {
-		if (!worldIn.isRemote) {
-	        playerIn.openGui(TheStuffExtension.instance, GuiManager.MYSTERIOUS_BOX_GUI, worldIn, pos.getX(), pos.getY(), pos.getZ());
+		if (worldIn.isRemote) {
+	        return true;
 	    }
-	    return true;
+		playerIn.openGui(TheStuffExtension.instance, GuiManager.MYSTERIOUS_BOX_GUI, worldIn, pos.getX(), pos.getY(), pos.getZ());
+		return true;
 	}
 
 }
-*/

@@ -139,6 +139,36 @@ item.copper_chestplate.name=Copper Chestplate
 item.copper_leggings.name=Copper Leggings
 item.copper_boots.name=Copper Boots
 
+item.mortium_helmet.name=Mortium Helmet
+item.mortium_chestplate.name=Mortium Chestplate
+item.mortium_leggings.name=Mortium Leggings
+item.mortium_boots.name=Mortium Boots
+
+item.brightflame_helmet.name=Brightflame Helmet
+item.brightflame_chestplate.name=Brightflame Chestplate
+item.brightflame_leggings.name=Brightflame Leggings
+item.brightflame_boots.name=Brightflame Boots
+
+item.brightsteel_helmet.name=Brightsteel Helmet
+item.brightsteel_chestplate.name=Brightsteel Chestplate
+item.brightsteel_leggings.name=Brightsteel Leggings
+item.brightsteel_boots.name=Brightsteel Boots
+
+item.tin_helmet.name=Tin Helmet
+item.tin_chestplate.name=Tin Chestplate
+item.tin_leggings.name=Tin Leggings
+item.tin_boots.name=Tin Boots
+
+item.magic_helmet.name=Magic Helmet
+item.magic_chestplate.name=Magic Chestplate
+item.magic_leggings.name=Magic Leggings
+item.magic_boots.name=Magic Boots
+
+item.mithril_helmet.name=Mithril Helmet
+item.mithril_chestplate.name=Mithril Chestplate
+item.mithril_leggings.name=Mithril Leggings
+item.mithril_boots.name=Mithril Boots
+
 item.terra_diamond_helmet.name=Terra Diamond Helmet
 item.terra_diamond_chestplate.name=Terra Diamond Chestplate
 item.terra_diamond_leggings.name=Terra Diamond Leggings
@@ -178,10 +208,13 @@ tile.vividium_block.name=Vividium Block
 tile.mortium_block.name=Mortium Block
 tile.toslotrium_block.name=Toslotrium Block
 tile.magic_block.name=Magic Block
+tile.white_stone.name=White Stone
+tile.white_cobblestone.name=White Cobblestone
 
 tile.store_box.name=Store Box
 tile.super_store_box.name=Super Store Box
 tile.mysterious_box.name=Mysterious Box
+tile.diamond_store_box.name=Diamond Store Box
 
 container.store_box=Store Box
 container.super_store_box=Super Store Box

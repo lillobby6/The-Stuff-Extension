@@ -1,4 +1,4 @@
-/*package com.tse.block;
+package com.tse.block;
 
 import java.awt.List;
 
@@ -9,6 +9,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -44,10 +45,16 @@ public class SuperStoreBox extends BlockContainer{
 		return new SuperStoreBoxTileEntity();
 	}
 	@Override
-	public void breakBlock(World world, BlockPos pos, IBlockState blockstate) {
-		SuperStoreBoxTileEntity te = (SuperStoreBoxTileEntity) world.getTileEntity(pos);
-		InventoryHelper.dropInventoryItems(world, pos, te);
-		super.breakBlock(world, pos, blockstate);
+	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
+		TileEntity tileentity = worldIn.getTileEntity(pos);
+
+        if (tileentity instanceof IInventory)
+        {
+            InventoryHelper.dropInventoryItems(worldIn, pos, (IInventory)tileentity);
+            worldIn.updateComparatorOutputLevel(pos, this);
+        }
+
+        super.breakBlock(worldIn, pos, state);
 	}
 
 	@Override
@@ -72,4 +79,4 @@ public class SuperStoreBox extends BlockContainer{
 	    return true;
 	}
 
-}*/
+}

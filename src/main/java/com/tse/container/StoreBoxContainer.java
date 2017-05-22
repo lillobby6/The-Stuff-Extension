@@ -1,4 +1,4 @@
-/*package com.tse.container;
+package com.tse.container;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
@@ -43,11 +43,11 @@ public class StoreBoxContainer extends Container{
 		 * Tile Entity 0-53 ........ 0 - 53
 		 * Player Inventory 54-80 . 54 - 80
 		 * Player Inventory 0-8 ... 81 - 89
-		 *
+		 */
 	}
 	@Override
 	public ItemStack transferStackInSlot(EntityPlayer playerIn, int fromSlot) {
-	    ItemStack previous = null;
+	    ItemStack previous = ItemStack.EMPTY;
 	    Slot slot = (Slot) this.inventorySlots.get(fromSlot);
 
 	    if (slot != null && slot.getHasStack()) {
@@ -57,21 +57,21 @@ public class StoreBoxContainer extends Container{
 	        if (fromSlot < 54) {
 	            // From TE Inventory to Player Inventory
 	            if (!this.mergeItemStack(current, 55, 81, true))
-	                return null;
+	                return ItemStack.EMPTY;
 	        } else {
 	            // From Player Inventory to TE Inventory
 	            if (!this.mergeItemStack(current, 0, 54, false))
-	                return null;
+	                return ItemStack.EMPTY;
 	        }
 
-	        if (current.getMaxStackSize() == 0)
-	            slot.putStack((ItemStack) null);
+	        if (current.isEmpty())
+	            slot.putStack(ItemStack.EMPTY);
 	        else
 	            slot.onSlotChanged();
 
-	        if (current.getMaxStackSize() == previous.getMaxStackSize())
+	        /*if (current.getMaxStackSize() == previous.getMaxStackSize())
 	            return null;
-	        slot.func_190901_a(playerIn, current);
+	        slot.func_190901_a(playerIn, current);*/
 	    }
 	    return previous;
 	}
@@ -80,8 +80,7 @@ public class StoreBoxContainer extends Container{
 	
 	@Override
 	public boolean canInteractWith(EntityPlayer playerIn) {
-		return this.te.isUseableByPlayer(playerIn);
+		return this.te.isUsableByPlayer(playerIn);
 	}
 
 }
-*/
