@@ -1,7 +1,7 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "tse:items/mysterious_axe"
+		"layer0": "tse:items/mysterious_pickaxe"
 	}
 }
 

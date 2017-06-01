@@ -15,10 +15,20 @@ public class BlockManager {
 	public static Block bloodDiamondOre;
 	public static Block terraDiamondOre;
 	public static Block copperOre;
+	public static Block mortiumOre;
+	public static Block tinOre;
+	public static Block toslotriumOre;
+	public static Block vividiumOre;
+	
+	public static Block skyIronOre;
+	
+	public static Block terriumOre;
 	
 	public static Block moonStone;
 	public static Block moonSand;
 	public static Block moonTeleporter;	
+	
+	public static Block lunaDiamondOre;
 	
 	public static Block copperBlock;
 	public static Block steelBlock;
@@ -45,6 +55,8 @@ public class BlockManager {
 	public static Block superStoreBox;
 	public static Block mysteriousBox;
 	public static Block diamondStoreBox;
+	
+	public static Block alloyFurnace;
 	
 	public static Block whiteStone;
 	public static Block whiteCobblestone;
@@ -114,10 +126,20 @@ public class BlockManager {
 		bloodDiamondOre = registerOre("blood_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		terraDiamondOre = registerOre("terra_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		copperOre = registerOre("copper_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		mortiumOre = registerOre("mortium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		tinOre = registerOre("tin_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		toslotriumOre = registerOre("toslotrium_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		vividiumOre = registerOre("vividium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		
+		skyIronOre = registerOre("sky_iron_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
+		
+		terriumOre = registerOre("terrium_ore", Material.ROCK, 4, "pickaxe", 3.5F, 3.5F, TSECreativeTabs.tabOres);
 			
 		moonStone = registerBlockNormal("moon_stone", 5.0F, 5.0F);
 		moonSand = registerBlockNormal("moon_sand", 2.0F, 2.0F);
 		moonTeleporter = registerBlockNormal("moon_teleporter", 5.0F, 5.0F);
+		
+		lunaDiamondOre = registerOre("luna_diamond_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		
 		copperBlock = registerBlockNormal("copper_block", 5.0F, 5.0F);
 		steelBlock = registerBlockNormal("steel_block", 5.0F, 5.0F);

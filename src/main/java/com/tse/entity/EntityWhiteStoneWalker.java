@@ -2,6 +2,7 @@ package com.tse.entity;
 
 import javax.annotation.Nullable;
 
+import com.tse.block.BlockManager;
 import com.tse.item.ItemManager;
 import com.tse.main.lib.StringsLib;
 
@@ -15,14 +16,15 @@ import net.minecraft.entity.ai.EntityAITempt;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.monster.EntitySkeleton;
 import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 
-public class EntityMortiumOreWalker extends EntityAnimal
+public class EntityWhiteStoneWalker extends EntityAnimal
 {
 
-	public static final ResourceLocation LOOT = new ResourceLocation(StringsLib.MODID, "entities/mortium_ore_walker");
-	public EntityMortiumOreWalker(World worldIn)
+	public static final ResourceLocation LOOT = new ResourceLocation(StringsLib.MODID, "entities/white_stone_walker");
+	public EntityWhiteStoneWalker(World worldIn)
 	{
 		super(worldIn);
 		this.setSize(1.1F, 1F);
@@ -41,7 +43,7 @@ public class EntityMortiumOreWalker extends EntityAnimal
 		this.tasks.addTask(0, new EntityAIWander(this, 0.5D));
 		this.tasks.addTask(1, new EntityAIPanic(this, 1D));
 		this.tasks.addTask(2, new EntityAILookIdle(this));
-		this.tasks.addTask(3, new EntityAITempt(this, 1.2D, ItemManager.mortiumIngot, false));
+		this.tasks.addTask(3, new EntityAITempt(this, 1.2D, Item.getItemFromBlock(BlockManager.whiteStone), false));
 		this.tasks.addTask(5, new EntityAISwimming(this));
 		this.applyEntityAI();
 	}

@@ -36,7 +36,7 @@ public class ModelOreWalker extends ModelBase
 	      setRotation(LeftArm, 0F, 0F, 0F);
 	      RightArm = new ModelRenderer(this, 0, 0);
 	      RightArm.addBox(0F, 0F, 0F, 4, 5, 10);
-	      RightArm.setRotationPoint(-7F, 12F, 1F);
+	      RightArm.setRotationPoint(-7F, 12F, 0F);
 	      RightArm.setTextureSize(128, 32);
 	      RightArm.mirror = true;
 	      setRotation(RightArm, 0F, 3.141593F, 0F);
@@ -93,7 +93,7 @@ public class ModelOreWalker extends ModelBase
 	    this.BackLeftLeg.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
 	    this.FrontRightLeg.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
 	    this.BackRightLeg.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
-	    this.LeftArm.rotateAngleY = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
+	    //this.RightArm.rotateAngleY = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
 	    this.LeftArm.rotateAngleY = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
 	  }
 

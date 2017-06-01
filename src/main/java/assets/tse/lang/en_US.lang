@@ -86,12 +86,12 @@ item.mortium_hoe.name=Mortium Hoe
 item.mortium_mattock.name=Mortium Mattock
 item.mortium_sword.name=Mortium Sword
 
-item.mysterious_pickaxe.name=Mithril Pickaxe
-item.mysterious_axe.name=Mithril Axe
-item.mysterious_shovel.name=Mithril Shovel
-item.mysterious_hoe.name=Mithril Hoe
-item.mysterious_mattock.name=Mithril Mattock
-item.mysterious_sword.name=Mithril Sword
+item.mysterious_pickaxe.name=Mysterious Pickaxe
+item.mysterious_axe.name=Mysterious Axe
+item.mysterious_shovel.name=Mysterious Shovel
+item.mysterious_hoe.name=Mysterious Hoe
+item.mysterious_mattock.name=Mysterious Mattock
+item.mysterious_sword.name=Mysterious Sword
 
 item.mystic_pickaxe.name=Mystic Pickaxe
 item.mystic_axe.name=Mystic Axe
@@ -183,6 +183,8 @@ tile.exalted_diamond_ore.name=Exalted Diamond Ore
 tile.blood_diamond_ore.name=Blood Diamond Ore
 tile.terra_diamond_ore.name=Terra Diamond Ore
 tile.copper_ore.name=Copper Ore
+tile.mortium_ore.name=Mortium Ore
+tile.tin_ore.name=Tin Ore
 
 tile.moon_sand.name=Moon Sand
 tile.moon_stone.name=Moon Stone
@@ -226,3 +228,9 @@ itemGroup.tabWeapons=The Stuff Extension: Combat
 itemGroup.tabMaterials=The Stuff Extension: Materials
 itemGroup.tabBlocks=The Stuff Extension: Blocks
 itemGroup.tabOres=The Stuff Extension: Ores
+
+entity.MortiumOreWalker.name=Mortium Ore Walker
+entity.ToslotriumOreWalker.name=Toslotrium Ore Walker
+entity.WhiteStoneWalker.name=White Stone Walker
+entity.StoneWalker.name=Stone Walker
+entity.BrightsteelBlockWalker.name=Brightsteel Block Walker

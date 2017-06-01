@@ -10,7 +10,7 @@ import net.minecraftforge.fml.client.registry.IRenderFactory;
 
 public class RenderMortiumOreWalker extends RenderLiving<EntityMortiumOreWalker>{
 		
-	private ResourceLocation mobTexture = new ResourceLocation("tse:textures/entity/mortium_ore_walker.png");
+	private ResourceLocation mobTexture = new ResourceLocation("tse:textures/entity/mortiumorewalker.png");
 
 	public static final Factory FACTORY = new Factory();
 	
@@ -22,7 +22,6 @@ public class RenderMortiumOreWalker extends RenderLiving<EntityMortiumOreWalker>
 	@Override
 	@Nonnull
 	protected ResourceLocation getEntityTexture(EntityMortiumOreWalker entity) {
-		// TODO Auto-generated method stub
 		return mobTexture;
 	}
 	

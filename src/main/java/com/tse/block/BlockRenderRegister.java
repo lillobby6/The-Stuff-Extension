@@ -17,6 +17,8 @@ public class BlockRenderRegister {
 		reg(BlockManager.moonTeleporter);
 		reg(BlockManager.copperBlock);
 		reg(BlockManager.copperOre);
+		reg(BlockManager.mortiumOre);
+		reg(BlockManager.tinOre);
 		
 		reg(BlockManager.storeBox);
 		reg(BlockManager.superStoreBox);
