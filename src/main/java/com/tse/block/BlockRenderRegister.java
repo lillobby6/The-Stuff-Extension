@@ -12,13 +12,22 @@ public class BlockRenderRegister {
 		reg(BlockManager.exaltedDiamondOre);
 		reg(BlockManager.bloodDiamondOre);
 		reg(BlockManager.terraDiamondOre);
-		reg(BlockManager.moonSand);
-		reg(BlockManager.moonStone);
-		reg(BlockManager.moonTeleporter);
-		reg(BlockManager.copperBlock);
 		reg(BlockManager.copperOre);
 		reg(BlockManager.mortiumOre);
 		reg(BlockManager.tinOre);
+		reg(BlockManager.toslotriumOre);
+		reg(BlockManager.vividiumOre);
+		
+		reg(BlockManager.skyIronOre);
+
+		reg(BlockManager.terriumOre);
+		
+		reg(BlockManager.moonSand);
+		reg(BlockManager.moonStone);
+		reg(BlockManager.moonTeleporter);
+
+		reg(BlockManager.lunaDiamondOre);
+		reg(BlockManager.moonIronOre);
 		
 		reg(BlockManager.storeBox);
 		reg(BlockManager.superStoreBox);
@@ -44,6 +53,8 @@ public class BlockRenderRegister {
 		reg(BlockManager.mortiumBlock);
 		reg(BlockManager.toslotriumBlock);
 		reg(BlockManager.magicBlock);
+		reg(BlockManager.copperBlock);
+		
 		reg(BlockManager.whiteStone);
 		reg(BlockManager.whiteCobblestone);
 	}

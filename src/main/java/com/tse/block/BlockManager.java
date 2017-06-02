@@ -29,6 +29,7 @@ public class BlockManager {
 	public static Block moonTeleporter;	
 	
 	public static Block lunaDiamondOre;
+	public static Block moonIronOre;
 	
 	public static Block copperBlock;
 	public static Block steelBlock;
@@ -140,6 +141,7 @@ public class BlockManager {
 		moonTeleporter = registerBlockNormal("moon_teleporter", 5.0F, 5.0F);
 		
 		lunaDiamondOre = registerOre("luna_diamond_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		moonIronOre = registerOre("moon_iron_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		
 		copperBlock = registerBlockNormal("copper_block", 5.0F, 5.0F);
 		steelBlock = registerBlockNormal("steel_block", 5.0F, 5.0F);

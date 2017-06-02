@@ -185,10 +185,19 @@ tile.terra_diamond_ore.name=Terra Diamond Ore
 tile.copper_ore.name=Copper Ore
 tile.mortium_ore.name=Mortium Ore
 tile.tin_ore.name=Tin Ore
+tile.toslotrium_ore.name=Toslotrium Ore
+tile.vividium_ore.name=Vividum Ore
+
+tile.sky_iron_ore.name=Sky Iron Ore
+
+tile.terrium_ore.name=Terrium Ore
 
 tile.moon_sand.name=Moon Sand
 tile.moon_stone.name=Moon Stone
 tile.moon_teleporter.name=Moon Teleporter
+
+tile.luna_diamond_ore.name=Luna Diamond Ore
+tile.moon_iron_ore.name=Iron Ore
 
 tile.terra_diamond_block.name=Terra Diamond Block
 tile.exalted_diamond_block.name=Exalted Diamond Block

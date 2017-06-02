@@ -1,4 +1,4 @@
-package com.tse.biome;
+/*package com.tse.biome;
 
 import net.minecraft.world.biome.BiomeDecorator;
 import net.minecraft.world.gen.feature.WorldGenSpikes;
@@ -30,6 +30,6 @@ public class BiomeMoonDecorator extends BiomeDecorator{
             entitydragon.setLocationAndAngles(0.0D, 128.0D, 0.0D, this.randomGenerator.nextFloat() * 360.0F, 0.0F);
             this.currentWorld.spawnEntityInWorld(entitydragon);
         }
-    }*/
+    }
 
-}
+}*/

@@ -1,11 +1,15 @@
-/*package com.tse.biome;
+package com.tse.biome;
 
-import net.minecraft.world.biome.Biome.BiomeProperties;
+import com.tse.block.BlockManager;
 
-public class BiomeGenMoon extends BiomeGenBase{
+import net.minecraft.world.biome.Biome;
 
-	public BiomeGenMoon(BiomeProperties p_i1971_1_) {
-		super(p_i1971_1_);
+public class BiomeGenMoon extends Biome{
+
+	public BiomeGenMoon(Biome.BiomeProperties properties) {
+		super(properties);
+		this.topBlock = BlockManager.moonSand.getDefaultState();
+		this.fillerBlock = BlockManager.moonStone.getDefaultState();
 		this.spawnableMonsterList.clear();
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();
@@ -13,4 +17,3 @@ public class BiomeGenMoon extends BiomeGenBase{
 	}
 
 }
-*/

@@ -469,5 +469,4 @@ public class ItemManager {
 		//End Armor
 	}
 	
-	
 }
