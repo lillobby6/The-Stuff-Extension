@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "normal":  { "model": "tse:purpleheart_log" },
+        "axis=y":  { "model": "tse:purpleheart_log" },
+        "axis=z":   { "model": "tse:purpleheart_log", "x": 90 },
+        "axis=x":   { "model": "tse:purpleheart_log", "x": 90, "y": 90 },
+        "axis=none": { "model": "tse:purpleheart_bark" }
+    }
+}

@@ -57,6 +57,8 @@ public class BlockRenderRegister {
 		
 		reg(BlockManager.whiteStone);
 		reg(BlockManager.whiteCobblestone);
+		
+		//reg(BlockManager.purpleheartLog);
 	}
 	
 	public static void reg(Block block) {

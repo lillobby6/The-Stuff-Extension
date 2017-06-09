@@ -3,9 +3,9 @@ package com.tse.block;
 import com.tse.creativetabs.TSECreativeTabs;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -62,6 +62,14 @@ public class BlockManager {
 	public static Block whiteStone;
 	public static Block whiteCobblestone;
 	
+	public static Block purpleheartLog;
+	public static Block purpleheartPlanks;
+	public static Block purpleheartLeaves;
+	
+	public static Block padaukLog;
+	public static Block paduakPlanks;
+	public static Block padaukLeaves;
+	
 	private static Block registerBlock(String registerName, ItemBlock itemBlock, Block block) {
         block.setRegistryName(registerName);
         block.setUnlocalizedName(registerName);
@@ -81,9 +89,16 @@ public class BlockManager {
         block.setCreativeTab(TSECreativeTabs.tabBlocks);
         return registerBlock(registerName, itemBlock, block);
     }
+	public static Block registerBlockWithSound(String registerName, float harness, float resistance, SoundType sound)
+	{
+		final Block block = new TSEBlock(registerName, harness, resistance, sound);
+		final ItemBlock itemBlock = new ItemBlock(block);
+		
+		return registerBlock(registerName, itemBlock, block);
+	}
 	
 	private static Block registerOre(String registerName, Material mat, int harvestLevel, String toolType, float hardness, float resistance, CreativeTabs tab) {
-        final Block ore = new TSEBlockOre(registerName, mat, harvestLevel, toolType, hardness, resistance, tab, 1);
+        final Block ore = new TSEBlockOre(registerName, mat, harvestLevel, toolType, hardness, resistance, tab, 0);
         final ItemBlock itemBlock = new ItemBlock(ore);
 
         return registerBlock(registerName, itemBlock, ore);
@@ -120,6 +135,13 @@ public class BlockManager {
 		
 		return registerBlock(registryName, itemBlock, block);
 	}
+	public static Block registerLog(String registryName)
+	{
+		final Block block = new TSEBlockLog();
+		block.setCreativeTab(TSECreativeTabs.tabBlocks);
+		final ItemBlock itemBlock = new ItemBlock(block);
+		return registerBlock(registryName, itemBlock, block);
+	}
 	
 	public static void createBlocks()
 	{
@@ -137,7 +159,7 @@ public class BlockManager {
 		terriumOre = registerOre("terrium_ore", Material.ROCK, 4, "pickaxe", 3.5F, 3.5F, TSECreativeTabs.tabOres);
 			
 		moonStone = registerBlockNormal("moon_stone", 5.0F, 5.0F);
-		moonSand = registerBlockNormal("moon_sand", 2.0F, 2.0F);
+		moonSand = registerBlockWithSound("moon_sand", 2.0F, 2.0F, SoundType.SAND);
 		moonTeleporter = registerBlockNormal("moon_teleporter", 5.0F, 5.0F);
 		
 		lunaDiamondOre = registerOre("luna_diamond_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
@@ -171,6 +193,8 @@ public class BlockManager {
 		
 		whiteStone = registerBlockNormal("white_stone", 2.0F, 2.0F);
 		whiteCobblestone = registerBlockNormal("white_cobblestone", 2.0F, 2.0F);
+		
+		//purpleheartLog = registerLog("purpleheart_log");
 		
 	}
 	

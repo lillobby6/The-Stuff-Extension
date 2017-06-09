@@ -9,16 +9,16 @@ public class TSEPickaxe extends ItemPickaxe{
 
 	public TSEPickaxe(ToolMaterial material, CreativeTabs tab, int harvestLevel, String unlocalizedName) {
 		super(material);
-		this.setCreativeTab(tab);
-		this.setHarvestLevel("pickaxe", harvestLevel);
-		this.setUnlocalizedName(unlocalizedName);
+		setCreativeTab(tab);
+		setHarvestLevel("pickaxe", harvestLevel);
+		setUnlocalizedName(unlocalizedName);
 	}
 	public TSEPickaxe(ToolMaterial material, String unlocalizedName)
 	{
 		super(material);
-		this.setCreativeTab(TSECreativeTabs.tabTools);
-		this.setHarvestLevel("pickaxe", 2);
-		this.setUnlocalizedName(unlocalizedName);
+		setCreativeTab(TSECreativeTabs.tabTools);
+		setHarvestLevel("pickaxe", 2);
+		setUnlocalizedName(unlocalizedName);
 	}
 	
 	

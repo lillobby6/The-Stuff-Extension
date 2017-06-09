@@ -221,6 +221,7 @@ tile.toslotrium_block.name=Toslotrium Block
 tile.magic_block.name=Magic Block
 tile.white_stone.name=White Stone
 tile.white_cobblestone.name=White Cobblestone
+tile.purpleheart_log.name=Purpleheart Log
 
 tile.store_box.name=Store Box
 tile.super_store_box.name=Super Store Box
