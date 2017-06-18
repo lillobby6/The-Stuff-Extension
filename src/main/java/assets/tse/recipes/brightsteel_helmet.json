@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:brightsteel_helmet"
+  },
+  "pattern": [
+    "xxx",
+    "x x"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:brightsteel_ingot"
+    }
+  }
+}

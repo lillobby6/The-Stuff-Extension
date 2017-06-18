@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:super_store_box"
+  },
+  "pattern": [
+    "xxx",
+    "xax",
+    "xxx"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+	"x": {
+	  "item": "tse:copper_block"
+	},
+    "a": {
+      "item": "tse:store_box"
+    }
+  }
+}

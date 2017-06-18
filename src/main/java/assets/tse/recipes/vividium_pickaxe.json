@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:vividium_pickaxe"
+  },
+  "pattern": [
+    "xxx",
+    " y ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:vividium_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

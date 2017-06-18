@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:vividium_ingot"
+        },
+		{
+            "item": "tse:vividium_ingot"
+        },
+		{
+            "item": "tse:vividium_ingot"
+        },
+		{
+            "item": "tse:vividium_ingot"
+        },
+		{
+            "item": "tse:vividium_ingot"
+        },
+		{
+            "item": "tse:vividium_ingot"
+        },
+		{
+            "item": "tse:vividium_ingot"
+        },
+		{
+            "item": "tse:vividium_ingot"
+        },
+		{
+            "item": "tse:vividium_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:vividium_block"
+    }
+}

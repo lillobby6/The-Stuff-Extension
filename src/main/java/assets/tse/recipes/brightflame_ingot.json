@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:brightflame_nugget"
+        },
+		{
+            "item": "tse:brightflame_nugget"
+        },
+		{
+            "item": "tse:brightflame_nugget"
+        },
+		{
+            "item": "tse:brightflame_nugget"
+        },
+		{
+            "item": "tse:brightflame_nugget"
+        },
+		{
+            "item": "tse:brightflame_nugget"
+        },
+		{
+            "item": "tse:brightflame_nugget"
+        },
+		{
+            "item": "tse:brightflame_nugget"
+        },
+		{
+            "item": "tse:brightflame_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:brightflame_ingot"
+    }
+}

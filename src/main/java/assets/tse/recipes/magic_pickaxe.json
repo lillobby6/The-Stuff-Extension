@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:magic_pickaxe"
+  },
+  "pattern": [
+    "xxx",
+    " y ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:magic_ingot"
+    },
+    "y": {
+      "item": "tse:mystic_stick"
+    }
+  }
+}

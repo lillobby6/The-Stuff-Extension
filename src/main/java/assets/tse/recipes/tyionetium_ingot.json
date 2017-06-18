@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:exalted_diamond"
+        },
+		{
+			"item": "tse:bronze_ingot"
+		}
+    ],
+    "result": {
+        "item": "tse:tyionetium_ingot"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:brightsteel_axe"
+  },
+  "pattern": [
+    "xx ",
+    "xy ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:brightsteel_ingot"
+    },
+    "y": {
+      "item": "tse:mystic_stick"
+    }
+  }
+}

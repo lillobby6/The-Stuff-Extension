@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:gold_mattock"
+  },
+  "pattern": [
+    "xxx",
+    " yx",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "minecraft:gold_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

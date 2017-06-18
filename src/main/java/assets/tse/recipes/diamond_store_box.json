@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "tse:diamond_store_box"
+  },
+  "pattern": [
+    "xax"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+	"x": {
+	  "item": "minecraft:diamond_block"
+	},
+    "a": {
+      "item": "tse:super_store_box"
+    }
+  }
+}

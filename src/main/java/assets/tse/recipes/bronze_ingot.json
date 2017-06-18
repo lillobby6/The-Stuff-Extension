@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:copper_ingot"
+        },
+		{
+            "item": "tse:copper_ingot"
+        },
+		{
+            "item": "tse:copper_ingot"
+        },
+		{
+			"item": "tse:tin_ingot"
+		}
+    ],
+    "result": {
+        "item": "tse:bronze_ingot"
+    }
+}

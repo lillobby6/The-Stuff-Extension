@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:mysterious_nugget"
+        },
+		{
+            "item": "tse:mysterious_nugget"
+        },
+		{
+            "item": "tse:mysterious_nugget"
+        },
+		{
+            "item": "tse:mysterious_nugget"
+        },
+		{
+            "item": "tse:mysterious_nugget"
+        },
+		{
+            "item": "tse:mysterious_nugget"
+        },
+		{
+            "item": "tse:mysterious_nugget"
+        },
+		{
+            "item": "tse:mysterious_nugget"
+        },
+		{
+            "item": "tse:mysterious_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:mysterious_ingot"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:terrium_ingot"
+        },
+		{
+            "item": "tse:terrium_ingot"
+        },
+		{
+            "item": "tse:terrium_ingot"
+        },
+		{
+            "item": "tse:terrium_ingot"
+        },
+		{
+            "item": "tse:terrium_ingot"
+        },
+		{
+            "item": "tse:terrium_ingot"
+        },
+		{
+            "item": "tse:terrium_ingot"
+        },
+		{
+            "item": "tse:terrium_ingot"
+        },
+		{
+            "item": "tse:terrium_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:terrium_block"
+    }
+}

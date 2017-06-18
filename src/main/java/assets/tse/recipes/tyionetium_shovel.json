@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:tyionetium_shovel"
+  },
+  "pattern": [
+    " x ",
+    " y ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:tyionetium_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:mysterious_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:mysterious_nugget", "count": 9
+    }
+}

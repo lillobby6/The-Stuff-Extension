@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "tse:mortium_leggings"
+  },
+  "pattern": [
+    "xxx",
+    "x x",
+	"x x"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:mortium_ingot"
+    }
+  }
+}

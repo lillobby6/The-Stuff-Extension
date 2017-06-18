@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:mithril_mattock"
+  },
+  "pattern": [
+    "xxx",
+    " yx",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:mithril_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

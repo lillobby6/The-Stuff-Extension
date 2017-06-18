@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "tse:store_box"
+  },
+  "pattern": [
+    "xyx",
+    "xax",
+    "xxx"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+	"y": {
+	  "item": "tse:copper_block"
+	},
+    "x": {
+      "item": "minecraft:planks", "data": 0
+    },
+    "a": {
+      "item": "minecraft:chest"
+    }
+  }
+}

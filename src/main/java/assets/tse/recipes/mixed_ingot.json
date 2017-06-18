@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:mysterious_ingot"
+        },
+		{
+            "item": "tse:mystic_ingot"
+        },
+		{
+            "item": "tse:magic_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:mixed_ingot"
+    }
+}

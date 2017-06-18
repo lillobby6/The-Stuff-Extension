@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:copper_hoe"
+  },
+  "pattern": [
+    "xx ",
+    " y ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:copper_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

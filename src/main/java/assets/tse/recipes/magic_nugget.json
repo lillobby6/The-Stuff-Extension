@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:magic_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:magic_nugget", "count": 9
+    }
+}

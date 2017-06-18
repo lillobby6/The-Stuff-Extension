@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:mysterious_ingot"
+        },
+		{
+            "item": "tse:mysterious_ingot"
+        },
+		{
+            "item": "tse:mysterious_ingot"
+        },
+		{
+            "item": "tse:mysterious_ingot"
+        },
+		{
+            "item": "tse:mysterious_ingot"
+        },
+		{
+            "item": "tse:mysterious_ingot"
+        },
+		{
+            "item": "tse:mysterious_ingot"
+        },
+		{
+            "item": "tse:mysterious_ingot"
+        },
+		{
+            "item": "tse:mysterious_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:mysterious_block"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:mortium_shovel"
+  },
+  "pattern": [
+    " x ",
+    " y ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:mortium_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

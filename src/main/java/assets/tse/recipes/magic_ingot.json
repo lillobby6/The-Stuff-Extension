@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:magic_nugget"
+        },
+		{
+            "item": "tse:magic_nugget"
+        },
+		{
+            "item": "tse:magic_nugget"
+        },
+		{
+            "item": "tse:magic_nugget"
+        },
+		{
+            "item": "tse:magic_nugget"
+        },
+		{
+            "item": "tse:magic_nugget"
+        },
+		{
+            "item": "tse:magic_nugget"
+        },
+		{
+            "item": "tse:magic_nugget"
+        },
+		{
+            "item": "tse:magic_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:magic_ingot"
+    }
+}

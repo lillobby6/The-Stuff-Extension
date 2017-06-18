@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:mysterious_shovel"
+  },
+  "pattern": [
+    " x ",
+    " y ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:mysterious_ingot"
+    },
+    "y": {
+      "item": "tse:mystic_stick"
+    }
+  }
+}

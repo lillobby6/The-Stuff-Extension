@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:mystic_axe"
+  },
+  "pattern": [
+    "xx ",
+    "xy ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:mystic_ingot"
+    },
+    "y": {
+      "item": "tse:diamond_stick"
+    }
+  }
+}

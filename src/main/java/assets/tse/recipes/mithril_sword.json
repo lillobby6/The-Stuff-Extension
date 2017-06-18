@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:mithril_sword"
+  },
+  "pattern": [
+    " x ",
+    " x ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:mithril_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

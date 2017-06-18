@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:terra_diamond_axe"
+  },
+  "pattern": [
+    "xx ",
+    "xy ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:terra_diamond"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

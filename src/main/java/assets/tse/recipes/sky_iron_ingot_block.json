@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{
+            "item": "tse:sky_iron_block"
+        }
+    ],
+    "result": {
+        "item": "tse:sky_iron_ingot", "count": 9
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:mortium_axe"
+  },
+  "pattern": [
+    "xx ",
+    "xy ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:mortium_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

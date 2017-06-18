@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:magic_ingot"
+        },
+		{
+            "item": "tse:magic_ingot"
+        },
+		{
+            "item": "tse:magic_ingot"
+        },
+		{
+            "item": "tse:magic_ingot"
+        },
+		{
+            "item": "tse:magic_ingot"
+        },
+		{
+            "item": "tse:magic_ingot"
+        },
+		{
+            "item": "tse:magic_ingot"
+        },
+		{
+            "item": "tse:magic_ingot"
+        },
+		{
+            "item": "tse:magic_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:magic_block"
+    }
+}

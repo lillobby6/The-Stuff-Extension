@@ -1,4 +1,4 @@
-package com.tse.dimension;
+/*package com.tse.dimension;
 
 import java.util.List;
 import java.util.Random;
@@ -428,4 +428,4 @@ public class ChunkProviderMoon implements IChunkGenerator
 	@Override
 	public void recreateStructures(Chunk chunkIn, int x, int z) {}
    
-}
+}*/

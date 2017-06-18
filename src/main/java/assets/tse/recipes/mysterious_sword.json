@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:mysterious_sword"
+  },
+  "pattern": [
+    " x ",
+    " x ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:mysterious_ingot"
+    },
+    "y": {
+      "item": "tse:mystic_stick"
+    }
+  }
+}

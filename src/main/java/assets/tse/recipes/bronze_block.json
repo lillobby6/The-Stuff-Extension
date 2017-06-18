@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:bronze_ingot"
+        },
+		{
+            "item": "tse:bronze_ingot"
+        },
+		{
+            "item": "tse:bronze_ingot"
+        },
+		{
+            "item": "tse:bronze_ingot"
+        },
+		{
+            "item": "tse:bronze_ingot"
+        },
+		{
+            "item": "tse:bronze_ingot"
+        },
+		{
+            "item": "tse:bronze_ingot"
+        },
+		{
+            "item": "tse:bronze_ingot"
+        },
+		{
+            "item": "tse:bronze_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:bronze_block"
+    }
+}

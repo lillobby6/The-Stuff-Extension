@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:stone_mattock"
+  },
+  "pattern": [
+    "xxx",
+    " yx",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "minecraft:cobblestone"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}
