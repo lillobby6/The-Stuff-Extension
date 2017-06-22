@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:golden_stick", "count": 2
+  },
+  "pattern": [
+    "y",
+    "y"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "y": {
+      "item": "minecraft:GOLD_NUGGET"
+    }
+  }
+}

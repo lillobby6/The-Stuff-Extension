@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:mystic_stick", "count": 2
+  },
+  "pattern": [
+    "y",
+    "y"    
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "y": {
+      "item": "tse:mystic_nugget"
+    }
+  }
+}

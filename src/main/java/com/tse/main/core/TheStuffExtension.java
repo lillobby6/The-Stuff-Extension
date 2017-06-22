@@ -12,6 +12,8 @@ import com.tse.main.lib.StringsLib;
 import com.tse.proxy.CommonProxy;
 import com.tse.tileentity.TileEntityRegistry;
 
+import jline.internal.Log;
+
 @Mod(modid = StringsLib.MODID, version = StringsLib.VERSION)
 public class TheStuffExtension
 {

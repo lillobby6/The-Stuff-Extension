@@ -7,6 +7,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class Smelting {
@@ -27,6 +28,7 @@ public class Smelting {
 		
 		GameRegistry.addSmelting(ItemManager.mixedIngot, new ItemStack(ItemManager.mithrilIngot), 0.1F);
 		GameRegistry.addSmelting(ItemManager.diamondToslotriumMixedIngot, new ItemStack(ItemManager.mysticIngot), 0.1F);
+		GameRegistry.addSmelting(ItemManager.tyionetiumMithrilToslotriumMixedIngot, new ItemStack(ItemManager.extranetiumIngot), 0.5F);
 		
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.moonIronOre), new ItemStack(Items.IRON_INGOT), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.lunaDiamondOre), new ItemStack(ItemManager.lunaDiamond), 0.1F);
@@ -38,6 +40,9 @@ public class Smelting {
 		GameRegistry.addSmelting(Item.getItemFromBlock(Blocks.GOLD_BLOCK), new ItemStack(Item.getItemFromBlock(BlockManager.reforgedGoldBlock)), 0.1F);
 		
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.whiteCobblestone), new ItemStack(Item.getItemFromBlock(BlockManager.whiteStone)), 0.1F);
+		
+		
 	}	
 	/**All shaped and shapeless recipes moved into JSONs.*/
+		
 }

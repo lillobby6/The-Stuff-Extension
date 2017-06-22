@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "tse:bronze_axe"
+  },
+  "pattern": [
+	"xx ",
+	"xy ",
+	" y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:bronze_ingot"
+    },
+	"y": {
+	  "item": "minecraft:STICK"
+	}
+	
+  }
+}

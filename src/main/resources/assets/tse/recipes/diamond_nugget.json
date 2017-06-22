@@ -3,12 +3,9 @@
     "ingredients": [
         {
             "item": "tse:diamond_ingot"
-        },
-		{
-            "item": "tse:toslotrium_ingot"
         }
     ],
     "result": {
-        "item": "tse:diamond_toslotrium_mixed_ingot", "count": 2
+        "item": "tse:diamond_nugget", "count": 9
     }
 }

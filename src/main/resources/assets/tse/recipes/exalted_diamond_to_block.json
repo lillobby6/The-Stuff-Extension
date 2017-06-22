@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{
+            "item": "tse:exalted_diamond_block"
+        }
+    ],
+    "result": {
+        "item": "tse:exalted_diamond", "count": 9
+    }
+}

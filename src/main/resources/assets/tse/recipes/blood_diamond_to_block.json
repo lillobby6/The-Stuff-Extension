@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{
+            "item": "tse:blood_diamond_block"
+        }
+    ],
+    "result": {
+        "item": "tse:blood_diamond", "count": 9
+    }
+}

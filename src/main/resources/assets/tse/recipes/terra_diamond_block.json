@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:terra_diamond"
+        },
+		{
+            "item": "tse:terra_diamond"
+        },
+		{
+            "item": "tse:terra_diamond"
+        },
+		{
+            "item": "tse:terra_diamond"
+        },
+		{
+            "item": "tse:terra_diamond"
+        },
+		{
+            "item": "tse:terra_diamond"
+        },
+		{
+            "item": "tse:terra_diamond"
+        },
+		{
+            "item": "tse:terra_diamond"
+        },
+		{
+            "item": "tse:terra_diamond"
+        }
+    ],
+    "result": {
+        "item": "tse:terra_diamond_block"
+    }
+}

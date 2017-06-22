@@ -2,13 +2,16 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "tse:diamond_ingot"
+            "item": "tse:tyionetium_ingot"
+        },
+		{
+            "item": "tse:mithril_ingot"
         },
 		{
             "item": "tse:toslotrium_ingot"
         }
     ],
     "result": {
-        "item": "tse:diamond_toslotrium_mixed_ingot", "count": 2
+        "item": "tse:tyionetium_mithril_toslotrium_mixed_ingot", "count": 3
     }
 }

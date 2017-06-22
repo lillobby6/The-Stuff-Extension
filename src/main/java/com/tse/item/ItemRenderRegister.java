@@ -20,6 +20,19 @@ public class ItemRenderRegister {
 	    reg(ItemManager.copperSword);
 	    reg(ItemManager.copperHoe);
 	    
+	    reg(ItemManager.bronzePickaxe);
+	    reg(ItemManager.bronzeAxe);
+	    reg(ItemManager.bronzeMattock);
+	    reg(ItemManager.bronzeShovel);
+	    reg(ItemManager.bronzeHoe);
+	    
+	    reg(ItemManager.bronzeHelmet);
+	    reg(ItemManager.bronzeChestplate);
+	    reg(ItemManager.bronzeLeggings);
+	    reg(ItemManager.bronzeBoots);
+	    
+	    reg(ItemManager.bronzeNugget);
+	    
 	    reg(ItemManager.lapisRemover);
 	    
 	    reg(ItemManager.steelIngot);
@@ -27,6 +40,7 @@ public class ItemRenderRegister {
 	    reg(ItemManager.stoneMattock);
 	    
 	    reg(ItemManager.copperMattock);
+	    
 	    reg(ItemManager.copperHelmet);
 	    reg(ItemManager.copperChestplate);
 	    reg(ItemManager.copperLeggings);
@@ -73,6 +87,7 @@ public class ItemRenderRegister {
 	    reg(ItemManager.terriumIngot);
 	    reg(ItemManager.toslotriumIngot);
 	    reg(ItemManager.vividiumIngot);
+	    reg(ItemManager.extranetiumIngot);
 	    
 	    reg(ItemManager.justice);
 	    reg(ItemManager.corruption);
@@ -100,6 +115,7 @@ public class ItemRenderRegister {
 	    reg(ItemManager.skyIronSword);
 	    reg(ItemManager.terriumSword);
 	    reg(ItemManager.vividiumSword);
+	    reg(ItemManager.bronzeSword);
 	    
 	    reg(ItemManager.magicPickaxe);
 	    reg(ItemManager.magicAxe);
@@ -165,7 +181,10 @@ public class ItemRenderRegister {
 	    reg(ItemManager.mysticNugget);
 	    reg(ItemManager.mysteriousNugget);
 	    reg(ItemManager.brightflameNugget);
+	    reg(ItemManager.diamondNugget);
+	    
 	    reg(ItemManager.diamondToslotriumMixedIngot);
+	    reg(ItemManager.tyionetiumMithrilToslotriumMixedIngot);
 	    
 	    reg(ItemManager.brightsteelHelmet);
 	    reg(ItemManager.brightsteelChestplate);

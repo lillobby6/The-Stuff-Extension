@@ -12,6 +12,6 @@
         }
     ],
     "result": {
-        "item": "tse:mixed_ingot"
+        "item": "tse:mixed_ingot", "count": 3
     }
 }

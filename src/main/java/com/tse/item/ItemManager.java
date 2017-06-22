@@ -41,18 +41,30 @@ public class ItemManager {
 	public static Item terriumIngot;
 	public static Item toslotriumIngot;
 	public static Item vividiumIngot;
+	public static Item extranetiumIngot;
 	
 	public static Item magicNugget;
 	public static Item mysticNugget;
 	public static Item mysteriousNugget;
 	public static Item brightflameNugget;
+	public static Item diamondNugget;
+	public static Item bronzeNugget;
 	
 	public static Item diamondToslotriumMixedIngot;
+	
+	public static Item tyionetiumMithrilToslotriumMixedIngot;
 	
 	public static Item mixedIngot;
 	
 	public static Item justice;
 	public static Item corruption;
+	
+	public static Item bronzePickaxe;
+	public static Item bronzeAxe;
+	public static Item bronzeMattock;
+	public static Item bronzeShovel;
+	public static Item bronzeHoe;
+	public static Item bronzeSword;
 	
 	public static Item copperPickaxe;
 	public static Item copperAxe;
@@ -233,9 +245,9 @@ public class ItemManager {
 		final Item item = new TSEPickaxe(mat, tab, harvestLevel, registryName);
 		return registerItem(item, registryName);
 	}
-	public static Item registerAxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel)
+	public static Item registerAxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel, float damage, float speed)
 	{
-		final Item item = new TSEAxe(mat, tab, harvestLevel, registryName);
+		final Item item = new TSEAxe(mat, speed, damage, tab, harvestLevel, registryName);
 		return registerItem(item, registryName);
 	}
 	public static Item registerMattock(float attackSpeed, ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel)
@@ -295,97 +307,107 @@ public class ItemManager {
 		terriumIngot = registerMainItem("terrium_ingot", TSECreativeTabs.tabMaterials);
 		toslotriumIngot = registerMainItem("toslotrium_ingot", TSECreativeTabs.tabMaterials);
 		vividiumIngot = registerMainItem("vividium_ingot", TSECreativeTabs.tabMaterials);
+		extranetiumIngot = registerMainItem("extranetium_ingot", TSECreativeTabs.tabMaterials);
 		
 		magicNugget = registerMainItem("magic_nugget", TSECreativeTabs.tabMaterials);
 		mysticNugget = registerMainItem("mystic_nugget", TSECreativeTabs.tabMaterials);
 		mysteriousNugget = registerMainItem("mysterious_nugget", TSECreativeTabs.tabMaterials);
 		brightflameNugget = registerMainItem("brightflame_nugget", TSECreativeTabs.tabMaterials);
+		diamondNugget = registerMainItem("diamond_nugget", TSECreativeTabs.tabMaterials);
+		bronzeNugget = registerMainItem("bronze_nugget", TSECreativeTabs.tabMaterials);
 		
 		diamondToslotriumMixedIngot = registerMainItem("diamond_toslotrium_mixed_ingot", TSECreativeTabs.tabMaterials);
 		mixedIngot = registerMainItem("mixed_ingot", TSECreativeTabs.tabMaterials);
+		tyionetiumMithrilToslotriumMixedIngot = registerMainItem("tyionetium_mithril_toslotrium_mixed_ingot", TSECreativeTabs.tabMaterials);
 		//End Materials
 		
 		//Start Tools
 		//Copper
 		copperPickaxe = registerPickaxe(TSEToolMaterials.COPPER, "copper_pickaxe", TSECreativeTabs.tabTools, 2);
-		copperAxe = registerAxe(ToolMaterial.IRON, "copper_axe", TSECreativeTabs.tabTools, 2);
+		copperAxe = registerAxe(TSEToolMaterials.COPPER, "copper_axe", TSECreativeTabs.tabTools, 2, 2.0F, 5.0F);
 		copperMattock = registerMattock(-2.2F, TSEToolMaterials.COPPER, "copper_mattock", TSECreativeTabs.tabTools, 2);
 		copperShovel = registerShovel(TSEToolMaterials.COPPER, "copper_shovel", TSECreativeTabs.tabTools, 2);
 		copperHoe = registerHoe(TSEToolMaterials.COPPER, "copper_hoe", TSECreativeTabs.tabTools, 2);
 		//Copper
 		
+		bronzePickaxe = registerPickaxe(TSEToolMaterials.BRONZE, "bronze_pickaxe", TSECreativeTabs.tabTools, 3);
+		bronzeAxe = registerAxe(TSEToolMaterials.BRONZE, "bronze_axe", TSECreativeTabs.tabTools, 3, 7.0F, 4.0F);
+		bronzeMattock = registerMattock(-2.2F, TSEToolMaterials.BRONZE, "bronze_mattock", TSECreativeTabs.tabTools, 3);
+		bronzeShovel = registerShovel(TSEToolMaterials.BRONZE, "bronze_shovel", TSECreativeTabs.tabTools, 3);
+		bronzeHoe = registerHoe(TSEToolMaterials.BRONZE, "bronze_hoe", TSECreativeTabs.tabTools, 3);
+		
 		magicPickaxe = registerPickaxe(TSEToolMaterials.MAGIC, "magic_pickaxe", TSECreativeTabs.tabTools, 6);
-		magicAxe = registerAxe(ToolMaterial.DIAMOND, "magic_axe", TSECreativeTabs.tabTools, 6);
+		magicAxe = registerAxe(TSEToolMaterials.MITHRIL, "magic_axe", TSECreativeTabs.tabTools, 6, 30.0F, 10.0F);
 		magicMattock = registerMattock(-2.2F, TSEToolMaterials.MAGIC, "magic_mattock", TSECreativeTabs.tabTools, 6);
 		magicShovel = registerShovel(TSEToolMaterials.MAGIC, "magic_shovel", TSECreativeTabs.tabTools, 6);
 		magicHoe = registerHoe(TSEToolMaterials.MAGIC, "magic_hoe", TSECreativeTabs.tabTools, 6);
 		
 		mithrilPickaxe = registerPickaxe(TSEToolMaterials.MITHRIL, "mithril_pickaxe", TSECreativeTabs.tabTools, 7);
-		mithrilAxe = registerAxe(ToolMaterial.DIAMOND, "mithril_axe", TSECreativeTabs.tabTools, 7);
+		mithrilAxe = registerAxe(TSEToolMaterials.MITHRIL, "mithril_axe", TSECreativeTabs.tabTools, 7, 35.0F, 15.0F);
 		mithrilMattock = registerMattock(-2.2F, TSEToolMaterials.MITHRIL, "mithril_mattock", TSECreativeTabs.tabTools, 7);
 		mithrilShovel = registerShovel(TSEToolMaterials.MITHRIL, "mithril_shovel", TSECreativeTabs.tabTools, 7);
 		mithrilHoe = registerHoe(TSEToolMaterials.MITHRIL, "mithril_hoe", TSECreativeTabs.tabTools, 7);
 		
 		mortiumPickaxe = registerPickaxe(TSEToolMaterials.MORTIUM, "mortium_pickaxe", TSECreativeTabs.tabTools, 4);
-		mortiumAxe = registerAxe(ToolMaterial.DIAMOND, "mortium_axe", TSECreativeTabs.tabTools, 4);
+		mortiumAxe = registerAxe(TSEToolMaterials.MORTIUM, "mortium_axe", TSECreativeTabs.tabTools, 4, 9.0F, 4.0F);
 		mortiumMattock = registerMattock(-2.2F, TSEToolMaterials.MORTIUM, "mortium_mattock", TSECreativeTabs.tabTools, 4);
 		mortiumShovel = registerShovel(TSEToolMaterials.MORTIUM, "mortium_shovel", TSECreativeTabs.tabTools, 4);
 		mortiumHoe = registerHoe(TSEToolMaterials.MORTIUM, "mortium_hoe", TSECreativeTabs.tabTools, 4);
 		
 		mysteriousPickaxe = registerPickaxe(TSEToolMaterials.MYSTERIOUS, "mysterious_pickaxe", TSECreativeTabs.tabTools, 6);
-		mysteriousAxe = registerAxe(ToolMaterial.DIAMOND, "mysterious_axe", TSECreativeTabs.tabTools, 6);
+		mysteriousAxe = registerAxe(TSEToolMaterials.MYSTERIOUS, "mysterious_axe", TSECreativeTabs.tabTools, 6, 32F, 11F);
 		mysteriousMattock = registerMattock(-2.2F, TSEToolMaterials.MYSTERIOUS, "mysterious_mattock", TSECreativeTabs.tabTools, 6);
 		mysteriousShovel = registerShovel(TSEToolMaterials.MYSTERIOUS, "mysterious_shovel", TSECreativeTabs.tabTools, 6);
 		mysteriousHoe = registerHoe(TSEToolMaterials.MYSTERIOUS, "mysterious_hoe", TSECreativeTabs.tabTools, 6);
 		
 		mysticPickaxe = registerPickaxe(TSEToolMaterials.MYSTIC, "mystic_pickaxe", TSECreativeTabs.tabTools, 5);
-		mysticAxe = registerAxe(ToolMaterial.DIAMOND, "mystic_axe", TSECreativeTabs.tabTools, 5);
+		mysticAxe = registerAxe(TSEToolMaterials.MYSTIC, "mystic_axe", TSECreativeTabs.tabTools, 5, 20F, 7F);
 		mysticMattock = registerMattock(-2.2F, TSEToolMaterials.MYSTIC, "mystic_mattock", TSECreativeTabs.tabTools, 5);
 		mysticShovel = registerShovel(TSEToolMaterials.MYSTIC, "mystic_shovel", TSECreativeTabs.tabTools, 5);
 		mysticHoe = registerHoe(TSEToolMaterials.MYSTIC, "mystic_hoe", TSECreativeTabs.tabTools, 5);
 		
 		skyIronPickaxe = registerPickaxe(TSEToolMaterials.SKYIRON, "sky_iron_pickaxe", TSECreativeTabs.tabTools, 2);
-		skyIronAxe = registerAxe(ToolMaterial.IRON, "sky_iron_axe", TSECreativeTabs.tabTools, 2);
+		skyIronAxe = registerAxe(TSEToolMaterials.SKYIRON, "sky_iron_axe", TSECreativeTabs.tabTools, 2, 6.5F, 2F);
 		skyIronMattock = registerMattock(-2.2F, TSEToolMaterials.SKYIRON, "sky_iron_mattock", TSECreativeTabs.tabTools, 2);
 		skyIronShovel = registerShovel(TSEToolMaterials.SKYIRON, "sky_iron_shovel", TSECreativeTabs.tabTools, 2);
 		skyIronHoe = registerHoe(TSEToolMaterials.SKYIRON, "sky_iron_hoe", TSECreativeTabs.tabTools, 2);
 		
 		terriumPickaxe = registerPickaxe(TSEToolMaterials.TERRIUM, "terrium_pickaxe", TSECreativeTabs.tabTools, 5);
-		terriumAxe = registerAxe(ToolMaterial.DIAMOND, "terrium_axe", TSECreativeTabs.tabTools, 5);
+		terriumAxe = registerAxe(TSEToolMaterials.TERRIUM, "terrium_axe", TSECreativeTabs.tabTools, 5, 12.5F, 4.0F);
 		terriumMattock = registerMattock(-2.2F, TSEToolMaterials.TERRIUM, "terrium_mattock", TSECreativeTabs.tabTools, 5);
 		terriumShovel = registerShovel(TSEToolMaterials.TERRIUM, "terrium_shovel", TSECreativeTabs.tabTools, 5);
 		terriumHoe = registerHoe(TSEToolMaterials.TERRIUM, "terrium_hoe", TSECreativeTabs.tabTools, 5);
 		
 		vividiumPickaxe = registerPickaxe(TSEToolMaterials.VIVIDIUM, "vividium_pickaxe", TSECreativeTabs.tabTools, 4);
-		vividiumAxe = registerAxe(ToolMaterial.DIAMOND, "vividium_axe", TSECreativeTabs.tabTools, 4);
+		vividiumAxe = registerAxe(TSEToolMaterials.VIVIDIUM, "vividium_axe", TSECreativeTabs.tabTools, 4, 9.0F, 4F);
 		vividiumMattock = registerMattock(-2.2F, TSEToolMaterials.VIVIDIUM, "vividium_mattock", TSECreativeTabs.tabTools, 4);
 		vividiumShovel = registerShovel(TSEToolMaterials.VIVIDIUM, "vividium_shovel", TSECreativeTabs.tabTools, 4);
 		vividiumHoe = registerHoe(TSEToolMaterials.VIVIDIUM, "vividium_hoe", TSECreativeTabs.tabTools, 4);
 		
 		//Terra Diamond
 		terraDiamondPickaxe = registerPickaxe(TSEToolMaterials.TDIAMOND, "terra_diamond_pickaxe", TSECreativeTabs.tabTools, 4);
-		terraDiamondAxe = registerAxe(ToolMaterial.DIAMOND, "terra_diamond_axe", TSECreativeTabs.tabTools, 4);
+		terraDiamondAxe = registerAxe(TSEToolMaterials.TDIAMOND, "terra_diamond_axe", TSECreativeTabs.tabTools, 4, 13F, 5F);
+		terraDiamondMattock = registerMattock(-2.0F, TSEToolMaterials.TDIAMOND, "terra_diamond_mattock", TSECreativeTabs.tabTools, 4);
 		terraDiamondShovel = registerShovel(TSEToolMaterials.TDIAMOND, "terra_diamond_shovel", TSECreativeTabs.tabTools, 4);
 		terraDiamondHoe = registerHoe(TSEToolMaterials.TDIAMOND, "terra_diamond_hoe", TSECreativeTabs.tabTools, 4);
-		terraDiamondMattock = registerMattock(-2.0F, TSEToolMaterials.TDIAMOND, "terra_diamond_mattock", TSECreativeTabs.tabTools, 4);
 		//Terra Diamond
 		
-		tyionetiumPickaxe = registerPickaxe(TSEToolMaterials.TYIONETIUM, "tyionetium_pickaxe", TSECreativeTabs.tabTools, 2);
-		tyionetiumAxe = registerAxe(ToolMaterial.IRON, "tyionetium_axe", TSECreativeTabs.tabTools, 2);
-		tyionetiumMattock = registerMattock(-2.2F, TSEToolMaterials.TYIONETIUM, "tyionetium_mattock", TSECreativeTabs.tabTools, 2);
-		tyionetiumShovel = registerShovel(TSEToolMaterials.TYIONETIUM, "tyionetium_shovel", TSECreativeTabs.tabTools, 2);
-		tyionetiumHoe = registerHoe(TSEToolMaterials.TYIONETIUM, "tyionetium_hoe", TSECreativeTabs.tabTools, 2);
+		tyionetiumPickaxe = registerPickaxe(TSEToolMaterials.TYIONETIUM, "tyionetium_pickaxe", TSECreativeTabs.tabTools, 5);
+		tyionetiumAxe = registerAxe(TSEToolMaterials.TYIONETIUM, "tyionetium_axe", TSECreativeTabs.tabTools, 5, 15F, 7F);
+		tyionetiumMattock = registerMattock(-2.2F, TSEToolMaterials.TYIONETIUM, "tyionetium_mattock", TSECreativeTabs.tabTools, 5);
+		tyionetiumShovel = registerShovel(TSEToolMaterials.TYIONETIUM, "tyionetium_shovel", TSECreativeTabs.tabTools, 5);
+		tyionetiumHoe = registerHoe(TSEToolMaterials.TYIONETIUM, "tyionetium_hoe", TSECreativeTabs.tabTools, 5);
 		
 		brightflamePickaxe = registerPickaxe(TSEToolMaterials.BRIGHTFLAME, "brightflame_pickaxe", TSECreativeTabs.tabTools, 6);
-		brightflameAxe = registerAxe(ToolMaterial.DIAMOND, "brightflame_axe", TSECreativeTabs.tabTools, 6);
-		brightflameShovel = registerShovel(TSEToolMaterials.BRIGHTFLAME, "brightflame_shovel", TSECreativeTabs.tabTools, 6);
+		brightflameAxe = registerAxe(ToolMaterial.DIAMOND, "brightflame_axe", TSECreativeTabs.tabTools, 6, 25F, 9F);
 		brightflameMattock = registerMattock(-2.2F, TSEToolMaterials.BRIGHTFLAME, "brightflame_mattock", TSECreativeTabs.tabTools, 6);
+		brightflameShovel = registerShovel(TSEToolMaterials.BRIGHTFLAME, "brightflame_shovel", TSECreativeTabs.tabTools, 6);
 		brightflameHoe = registerHoe(TSEToolMaterials.BRIGHTFLAME, "brightflame_hoe", TSECreativeTabs.tabTools, 6);
 		
 		brightsteelPickaxe = registerPickaxe(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_pickaxe", TSECreativeTabs.tabTools, 6);
-		brightsteelAxe = registerAxe(ToolMaterial.DIAMOND, "brightsteel_axe", TSECreativeTabs.tabTools, 6);
-		brightsteelShovel = registerShovel(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_shovel", TSECreativeTabs.tabTools, 6);
+		brightsteelAxe = registerAxe(ToolMaterial.DIAMOND, "brightsteel_axe", TSECreativeTabs.tabTools, 6, 30F, 4F);
 		brightsteelMattock = registerMattock(-2.2F, TSEToolMaterials.BRIGHTSTEEL, "brightsteel_mattock", TSECreativeTabs.tabTools, 6);
+		brightsteelShovel = registerShovel(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_shovel", TSECreativeTabs.tabTools, 6);
 		brightsteelHoe = registerHoe(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_hoe", TSECreativeTabs.tabTools, 6);
 		
 		//Others
@@ -403,6 +425,7 @@ public class ItemManager {
 		//Start Swords
 		
 		copperSword = registerSword(TSEToolMaterials.COPPER, "copper_sword", TSECreativeTabs.tabWeapons);
+		bronzeSword = registerSword(TSEToolMaterials.BRONZE, "bronze_sword", TSECreativeTabs.tabWeapons);
 		terraDiamondSword = registerSword(TSEToolMaterials.TDIAMOND, "terra_diamond_sword", TSECreativeTabs.tabWeapons);
 		tyionetiumSword = registerSword(TSEToolMaterials.TYIONETIUM, "tyionetium_sword", TSECreativeTabs.tabWeapons);
 		brightflameSword = registerSword(TSEToolMaterials.BRIGHTFLAME, "brightflame_sword", TSECreativeTabs.tabWeapons);
@@ -429,6 +452,11 @@ public class ItemManager {
 		copperLeggings = registerArmor("copper_leggings", TSEArmorMaterials.COPPER, 1, EntityEquipmentSlot.LEGS);
 		copperBoots = registerArmor("copper_boots", TSEArmorMaterials.COPPER, 1, EntityEquipmentSlot.FEET);
 		//Copper
+		
+		bronzeHelmet = registerArmor("bronze_helmet", TSEArmorMaterials.BRONZE, 1, EntityEquipmentSlot.HEAD);
+		bronzeChestplate = registerArmor("bronze_chestplate", TSEArmorMaterials.BRONZE, 1, EntityEquipmentSlot.CHEST);
+		bronzeLeggings = registerArmor("bronze_leggings", TSEArmorMaterials.BRONZE, 1, EntityEquipmentSlot.LEGS);
+		bronzeBoots = registerArmor("bronze_boots", TSEArmorMaterials.BRONZE, 1, EntityEquipmentSlot.FEET);
 		
 		//Terra Diamond
 		terraDiamondHelmet = registerArmor("terra_diamond_helmet", TSEArmorMaterials.TERRADIAMOND, 1, EntityEquipmentSlot.HEAD);

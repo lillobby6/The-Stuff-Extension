@@ -1,3 +1,7 @@
+item.mystic_stick.name=Mystic Stick
+item.golden_stick.name=Golden Stick
+item.diamond_stick.name=Diamond Stick
+
 item.exalted_diamond.name=Exalted Diamond
 item.blood_diamond.name=Blood Diamond
 item.terra_diamond.name=Terra Diamond
@@ -7,9 +11,12 @@ item.magic_nugget.name=Magic Nugget
 item.mystic_nugget.name=Mystic Nugget
 item.mysterious_nugget.name=Mysterious Nugget
 item.brightflame_nugget.name=Brightflame Nugget
+item.diamond_nugget.name=Diamond Nugget
+item.bronze_nugget.name=Bronze Nugget
 
 item.diamond_toslotrium_mixed_ingot.name=Diamond/Toslotrium Mixed Ingot
 item.mixed_ingot.name=Mixed Ingot
+item.tyionetium_mithril_toslotrium_mixed_ingot.name=Tyionetium/Mithril/Toslotrium Mixed Ingot
 
 item.copper_ingot.name=Copper Ingot
 item.steel_ingot.name=Steel Ingot
@@ -29,6 +36,7 @@ item.sky_iron_ingot.name=Sky Iron Ingot
 item.toslotrium_ingot.name=Toslotrium Ingot
 item.vividium_ingot.name=Vividium Ingot
 item.mysterious_ingot.name=Mysterious Ingot
+item.extranetium_ingot.name=Extranetium Ingot
 
 item.copper_pickaxe.name=Copper Pickaxe
 item.copper_axe.name=Copper Axe
@@ -36,6 +44,13 @@ item.copper_shovel.name=Copper Shovel
 item.copper_hoe.name=Copper Hoe
 item.copper_mattock.name=Copper Mattock
 item.copper_sword.name=Copper Sword
+
+item.copper_pickaxe.name=Copper Pickaxe
+item.bronze_axe.name=Bronze Axe
+item.bronze_shovel.name=Bronze Shovel
+item.bronze_hoe.name=Bronze Hoe
+item.bronze_mattock.name=Bronze Mattock
+item.bronze_sword.name=Bronze Sword
 
 item.terra_diamond_pickaxe.name=Terra Diamond Pickaxe
 item.terra_diamond_axe.name=Terra Diamond Axe
@@ -138,6 +153,11 @@ item.copper_helmet.name=Copper Helmet
 item.copper_chestplate.name=Copper Chestplate
 item.copper_leggings.name=Copper Leggings
 item.copper_boots.name=Copper Boots
+
+item.bronze_helmet.name=Bronze Helmet
+item.bronze_chestplate.name=Bronze Chestplate
+item.bronze_leggings.name=Bronze Leggings
+item.bronze_boots.name=Bronze Boots
 
 item.mortium_helmet.name=Mortium Helmet
 item.mortium_chestplate.name=Mortium Chestplate
