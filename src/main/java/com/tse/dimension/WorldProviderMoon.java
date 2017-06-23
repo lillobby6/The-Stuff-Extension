@@ -1,37 +1,21 @@
-/*package com.tse.dimension;
+package com.tse.dimension;
 
 import net.minecraft.world.DimensionType;
-import net.minecraft.world.WorldProvider;
-import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraft.world.chunk.IChunkGenerator;
-import net.minecraft.world.chunk.IChunkProvider;
-import net.minecraft.world.gen.ChunkProviderEnd;
+import net.minecraft.world.WorldProviderSurface;
+import net.minecraft.world.gen.IChunkGenerator;
 
-public class WorldProviderMoon extends WorldProvider{
+public class WorldProviderMoon extends WorldProviderSurface{
 
+	
 	public void registerWorldChunkManager()
 	{
-		this.worldChunkMgr = new WorldChunkManagerHell(BiomeGenBase.sky, 0.0F);
-		this.dimensionId = 63;
-		this.hasNoSky = true;
+
 	}
 	
 	public IChunkGenerator createChunkGenerator()
     {
-        return new ChunkProviderEnd(this.worldObj, false, this.worldObj.getSeed());
+        return null;
     }
-	
-	@Override
-	public String getDimensionName() {
-		// TODO Auto-generated method stub
-		return "Moon";
-	}
-
-	@Override
-	public String getInternalNameSuffix() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public DimensionType getDimensionType() {
@@ -39,4 +23,4 @@ public class WorldProviderMoon extends WorldProvider{
 		return null;
 	}
 
-}*/
+}

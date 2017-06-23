@@ -19,6 +19,7 @@ public class BlockManager {
 	public static Block tinOre;
 	public static Block toslotriumOre;
 	public static Block vividiumOre;
+	public static Block sphalerite;
 	
 	public static Block skyIronOre;
 	
@@ -153,6 +154,7 @@ public class BlockManager {
 		tinOre = registerOre("tin_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		toslotriumOre = registerOre("toslotrium_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		vividiumOre = registerOre("vividium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		sphalerite = registerOre("sphalerite", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		
 		skyIronOre = registerOre("sky_iron_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
 		

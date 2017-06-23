@@ -18,6 +18,8 @@ public class BlockRenderRegister {
 		reg(BlockManager.toslotriumOre);
 		reg(BlockManager.vividiumOre);
 		
+		reg(BlockManager.sphalerite);
+		
 		reg(BlockManager.skyIronOre);
 
 		reg(BlockManager.terriumOre);

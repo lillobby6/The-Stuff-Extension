@@ -52,4 +52,12 @@ public class TSECreativeTabs {
 			return new ItemStack(Item.getItemFromBlock(BlockManager.copperOre));
 		}
 	};
+	
+	public static final CreativeTabs tabMachines = new CreativeTabs("tabMachines")
+	{
+		@Override public ItemStack getTabIconItem()
+		{
+			return new ItemStack(Item.getItemFromBlock(BlockManager.brightflameBlock));
+		}
+	};
 }

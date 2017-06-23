@@ -25,6 +25,7 @@ public class WorldGen implements IWorldGenerator{
 	private WorldGenerator gSkyIronOre;
 	private WorldGenerator gMortiumOre;
 	private WorldGenerator gTinOre;
+	private WorldGenerator gSphalerite;
 
 	
 	@Override
@@ -49,6 +50,8 @@ public class WorldGen implements IWorldGenerator{
 		addGen(BlockManager.whiteStone, world, random, chunkX, chunkZ, 20, 30, 80, 0, 255);
 		
 		addGen(BlockManager.toslotriumOre, world, random, chunkX, chunkZ, 8, 16, 30, 16, 128);
+		
+		addGen(BlockManager.sphalerite, world, random, chunkX, chunkZ, 4, 8, 20, 0, 128);
 		
 		addGen(BlockManager.exaltedDiamondOre, world, random, chunkX, chunkZ, 2, 6, 3, 0, 16);
 		addGen(BlockManager.bloodDiamondOre, world, random, chunkX, chunkZ, 2, 6, 3, 0, 16);

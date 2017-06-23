@@ -13,6 +13,8 @@ public class ItemRenderRegister {
 	    reg(ItemManager.terraDiamond);
 	    reg(ItemManager.lunaDiamond);
 	    
+	    reg(ItemManager.sphaleriteGem);
+	    
 	    reg(ItemManager.copperIngot);
 	    reg(ItemManager.copperAxe);
 	    reg(ItemManager.copperPickaxe);
