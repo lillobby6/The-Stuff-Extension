@@ -20,6 +20,9 @@ public class ItemManager {
 	
 	public static Item ironRod;
 	public static Item steelRod;
+	public static Item bronzeRod;
+	public static Item brassRod;
+	public static Item titaniumRod;
 	
 	public static Item exaltedDiamond;
 	public static Item bloodDiamond;
@@ -48,7 +51,14 @@ public class ItemManager {
 	public static Item vividiumIngot;
 	public static Item extranetiumIngot;
 	public static Item silverIngot;
+	public static Item platinumIngot;
 	public static Item titaniumIngot;
+	public static Item zincIngot;
+	public static Item brassIngot;
+	public static Item leadIngot;
+	public static Item nickelIngot;
+	public static Item pewterIngot;
+	public static Item aluminumIngot;
 	
 	public static Item magicNugget;
 	public static Item mysticNugget;
@@ -56,6 +66,11 @@ public class ItemManager {
 	public static Item brightflameNugget;
 	public static Item diamondNugget;
 	public static Item bronzeNugget;
+	public static Item brassNugget;
+	public static Item silverNugget;
+	public static Item platinumNugget;
+	public static Item titaniumNugget;
+	public static Item steelNugget;
 	
 	public static Item diamondToslotriumMixedIngot;
 	
@@ -300,6 +315,9 @@ public class ItemManager {
 		
 		ironRod = registerMainItem("iron_rod", TSECreativeTabs.tabMaterials);
 		steelRod = registerMainItem("steel_rod", TSECreativeTabs.tabMaterials);
+		bronzeRod = registerMainItem("bronze_rod", TSECreativeTabs.tabMaterials);
+		brassRod = registerMainItem("brass_rod", TSECreativeTabs.tabMaterials);
+		titaniumRod = registerMainItem("titanium_rod", TSECreativeTabs.tabMaterials);
 		
 		exaltedDiamond = registerMainItem("exalted_diamond", TSECreativeTabs.tabMaterials);
 		bloodDiamond = registerMainItem("blood_diamond", TSECreativeTabs.tabMaterials);
@@ -328,7 +346,14 @@ public class ItemManager {
 		vividiumIngot = registerMainItem("vividium_ingot", TSECreativeTabs.tabMaterials);
 		extranetiumIngot = registerMainItem("extranetium_ingot", TSECreativeTabs.tabMaterials);
 		silverIngot = registerMainItem("silver_ingot", TSECreativeTabs.tabMaterials);
+		platinumIngot = registerMainItem("platinum_ingot", TSECreativeTabs.tabMaterials);
 		titaniumIngot = registerMainItem("titanium_ingot", TSECreativeTabs.tabMaterials);
+		zincIngot = registerMainItem("zinc_ingot", TSECreativeTabs.tabMaterials);
+		brassIngot = registerMainItem("brass_ingot", TSECreativeTabs.tabMaterials);
+		leadIngot = registerMainItem("lead_ingot", TSECreativeTabs.tabMaterials);
+		nickelIngot = registerMainItem("nickel_ingot", TSECreativeTabs.tabMaterials);
+		pewterIngot = registerMainItem("pewter_ingot", TSECreativeTabs.tabMaterials);
+		aluminumIngot = registerMainItem("aluminum_ingot", TSECreativeTabs.tabMaterials);
 		
 		magicNugget = registerMainItem("magic_nugget", TSECreativeTabs.tabMaterials);
 		mysticNugget = registerMainItem("mystic_nugget", TSECreativeTabs.tabMaterials);
@@ -336,6 +361,11 @@ public class ItemManager {
 		brightflameNugget = registerMainItem("brightflame_nugget", TSECreativeTabs.tabMaterials);
 		diamondNugget = registerMainItem("diamond_nugget", TSECreativeTabs.tabMaterials);
 		bronzeNugget = registerMainItem("bronze_nugget", TSECreativeTabs.tabMaterials);
+		brassNugget = registerMainItem("brass_nugget", TSECreativeTabs.tabMaterials);
+		silverNugget = registerMainItem("silver_nugget", TSECreativeTabs.tabMaterials);
+		platinumNugget = registerMainItem("platinum_nugget", TSECreativeTabs.tabMaterials);
+		titaniumNugget = registerMainItem("titanium_nugget", TSECreativeTabs.tabMaterials);
+		steelNugget = registerMainItem("steel_nugget", TSECreativeTabs.tabMaterials);
 		
 		diamondToslotriumMixedIngot = registerMainItem("diamond_toslotrium_mixed_ingot", TSECreativeTabs.tabMaterials);
 		mixedIngot = registerMainItem("mixed_ingot", TSECreativeTabs.tabMaterials);

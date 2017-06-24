@@ -20,6 +20,11 @@ public class BlockManager {
 	public static Block toslotriumOre;
 	public static Block vividiumOre;
 	public static Block sphalerite;
+	public static Block silverOre;
+	public static Block platinumOre;
+	public static Block titaniumOre;
+	public static Block galena;
+	public static Block pentlandite;
 	
 	public static Block skyIronOre;
 	
@@ -52,6 +57,7 @@ public class BlockManager {
 	public static Block terriumBlock;
 	public static Block toslotriumBlock;
 	public static Block vividiumBlock;
+	public static Block sphaleriteBlock;
 	
 	public static Block storeBox;
 	public static Block superStoreBox;
@@ -155,6 +161,11 @@ public class BlockManager {
 		toslotriumOre = registerOre("toslotrium_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		vividiumOre = registerOre("vividium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		sphalerite = registerOre("sphalerite", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		silverOre = registerOre("silver_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		platinumOre = registerOre("platinum_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		titaniumOre = registerOre("titanium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		galena = registerOre("galena", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		pentlandite = registerOre("pentlandite", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		
 		skyIronOre = registerOre("sky_iron_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
 		
@@ -187,6 +198,7 @@ public class BlockManager {
 		terriumBlock = registerBlockNormal("terrium_block", 5.0F, 5.0F);
 		toslotriumBlock = registerBlockNormal("toslotrium_block", 5.0F, 5.0F);
 		vividiumBlock = registerBlockNormal("vividium_block", 5.0F, 5.0F);
+		sphaleriteBlock = registerBlockNormal("sphalerite_block", 5.0F, 5.0F);
 		
 		storeBox = registerStoreBox("store_box");
 		mysteriousBox = registerMBox("mysterious_box");

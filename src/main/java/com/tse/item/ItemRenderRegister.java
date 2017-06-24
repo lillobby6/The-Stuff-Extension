@@ -13,6 +13,10 @@ public class ItemRenderRegister {
 	    reg(ItemManager.terraDiamond);
 	    reg(ItemManager.lunaDiamond);
 	    
+	    reg(ItemManager.ironRod);
+	    reg(ItemManager.steelRod);
+	    reg(ItemManager.bronzeRod);
+	    
 	    reg(ItemManager.sphaleriteGem);
 	    
 	    reg(ItemManager.copperIngot);
@@ -90,6 +94,15 @@ public class ItemRenderRegister {
 	    reg(ItemManager.toslotriumIngot);
 	    reg(ItemManager.vividiumIngot);
 	    reg(ItemManager.extranetiumIngot);
+	    reg(ItemManager.silverIngot);
+	    reg(ItemManager.platinumIngot);
+	    reg(ItemManager.titaniumIngot);
+	    reg(ItemManager.zincIngot);
+	    reg(ItemManager.brassIngot);
+	    reg(ItemManager.leadIngot);
+	    reg(ItemManager.nickelIngot);
+	    reg(ItemManager.pewterIngot);
+	    reg(ItemManager.aluminumIngot);
 	    
 	    reg(ItemManager.justice);
 	    reg(ItemManager.corruption);

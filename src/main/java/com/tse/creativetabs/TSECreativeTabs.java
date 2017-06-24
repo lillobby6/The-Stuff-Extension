@@ -53,11 +53,11 @@ public class TSECreativeTabs {
 		}
 	};
 	
-	public static final CreativeTabs tabMachines = new CreativeTabs("tabMachines")
+	/**public static final CreativeTabs tabMachines = new CreativeTabs("tabMachines")
 	{
 		@Override public ItemStack getTabIconItem()
 		{
 			return new ItemStack(Item.getItemFromBlock(BlockManager.brightflameBlock));
 		}
-	};
+	};*/
 }
