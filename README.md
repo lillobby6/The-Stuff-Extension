@@ -1,7 +1,7 @@
 # The Stuff Extension
 A mod that adds tons of cool stuff.
 
-#Reporting Issues:
+# Reporting Issues:
 Please include
 
 	*The Stuff Extension version number
