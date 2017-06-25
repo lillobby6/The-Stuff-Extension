@@ -19,12 +19,12 @@ public class BlockManager {
 	public static Block tinOre;
 	public static Block toslotriumOre;
 	public static Block vividiumOre;
-	public static Block sphalerite;
+	public static Block sphaleriteOre;
 	public static Block silverOre;
 	public static Block platinumOre;
 	public static Block titaniumOre;
-	public static Block galena;
-	public static Block pentlandite;
+	public static Block galenaOre;
+	public static Block pentlanditeOre;
 	
 	public static Block skyIronOre;
 	
@@ -160,12 +160,12 @@ public class BlockManager {
 		tinOre = registerOre("tin_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		toslotriumOre = registerOre("toslotrium_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		vividiumOre = registerOre("vividium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		sphalerite = registerOre("sphalerite", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		sphaleriteOre = registerOre("sphalerite_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		silverOre = registerOre("silver_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		platinumOre = registerOre("platinum_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		titaniumOre = registerOre("titanium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		galena = registerOre("galena", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		pentlandite = registerOre("pentlandite", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		galenaOre = registerOre("galena_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
+		pentlanditeOre = registerOre("pentlandite_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
 		
 		skyIronOre = registerOre("sky_iron_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
 		
@@ -208,6 +208,7 @@ public class BlockManager {
 		whiteStone = registerBlockNormal("white_stone", 2.0F, 2.0F);
 		whiteCobblestone = registerBlockNormal("white_cobblestone", 2.0F, 2.0F);
 		
+		purpleheartLog = registerBlockNormal("purpleheart_log", 2.0F, 2.0F);
 		//purpleheartLog = registerLog("purpleheart_log");
 		
 	}

@@ -16,6 +16,8 @@ public class ItemRenderRegister {
 	    reg(ItemManager.ironRod);
 	    reg(ItemManager.steelRod);
 	    reg(ItemManager.bronzeRod);
+	    reg(ItemManager.brassRod);
+	    reg(ItemManager.titaniumRod);
 	    
 	    reg(ItemManager.sphaleriteGem);
 	    
@@ -197,6 +199,11 @@ public class ItemRenderRegister {
 	    reg(ItemManager.mysteriousNugget);
 	    reg(ItemManager.brightflameNugget);
 	    reg(ItemManager.diamondNugget);
+	    reg(ItemManager.brassNugget);
+	    reg(ItemManager.silverNugget);
+	    reg(ItemManager.platinumNugget);
+	    reg(ItemManager.titaniumNugget);
+	    reg(ItemManager.steelNugget);
 	    
 	    reg(ItemManager.diamondToslotriumMixedIngot);
 	    reg(ItemManager.tyionetiumMithrilToslotriumMixedIngot);

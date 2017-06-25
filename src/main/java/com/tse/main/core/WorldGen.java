@@ -14,20 +14,7 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
-public class WorldGen implements IWorldGenerator{
-	
-	private WorldGenerator gen_exalted_diamond_ore;
-	private WorldGenerator gen_blood_diamond_ore;
-	private WorldGenerator gen_terra_diamond_ore;
-	private WorldGenerator gCopperOre;
-	private WorldGenerator gTerriumOre;
-	private WorldGenerator gWhiteStone;
-	private WorldGenerator gSkyIronOre;
-	private WorldGenerator gMortiumOre;
-	private WorldGenerator gTinOre;
-	private WorldGenerator gSphalerite;
-
-	
+public class WorldGen implements IWorldGenerator{	
 	@Override
 	 public void generate(Random random, int chunkX, int chunkZ, World world, net.minecraft.world.gen.IChunkGenerator chunkGenerator, IChunkProvider chunkProvider)	 {   
 		 switch (world.provider.getDimension()) 
@@ -49,9 +36,19 @@ public class WorldGen implements IWorldGenerator{
 	{
 		addGen(BlockManager.whiteStone, world, random, chunkX, chunkZ, 20, 30, 80, 0, 255);
 		
+		addGen(BlockManager.titaniumOre, world, random, chunkX, chunkZ, 1, 8, 7, 0, 30);
+		
+		addGen(BlockManager.platinumOre, world, random, chunkX, chunkZ, 1, 4, 8, 0, 40);
+		
+		addGen(BlockManager.galenaOre, world, random, chunkX, chunkZ, 1, 12, 10, 0, 32);
+		
+		addGen(BlockManager.silverOre, world, random, chunkX, chunkZ, 1, 8, 15, 0, 32);
+		
+		addGen(BlockManager.pentlanditeOre, world, random, chunkX, chunkZ, 4, 16, 22, 0, 64);
+		
 		addGen(BlockManager.toslotriumOre, world, random, chunkX, chunkZ, 8, 16, 30, 16, 128);
 		
-		addGen(BlockManager.sphalerite, world, random, chunkX, chunkZ, 4, 8, 20, 0, 128);
+		addGen(BlockManager.sphaleriteOre, world, random, chunkX, chunkZ, 4, 8, 20, 0, 128);
 		
 		addGen(BlockManager.exaltedDiamondOre, world, random, chunkX, chunkZ, 2, 6, 3, 0, 16);
 		addGen(BlockManager.bloodDiamondOre, world, random, chunkX, chunkZ, 2, 6, 3, 0, 16);

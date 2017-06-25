@@ -23,7 +23,12 @@ public class Smelting {
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.skyIronOre), new ItemStack(ItemManager.skyIronIngot), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.terriumOre), new ItemStack(ItemManager.terriumIngot), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.toslotriumOre), new ItemStack(ItemManager.toslotriumIngot), 0.1F);
-		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.sphalerite), new ItemStack(ItemManager.sphaleriteGem), 0.1F);
+		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.sphaleriteOre), new ItemStack(ItemManager.sphaleriteGem), 0.1F);
+		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.titaniumOre), new ItemStack(ItemManager.titaniumIngot), 0.1F);
+		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.platinumOre), new ItemStack(ItemManager.platinumIngot), 0.1F);
+		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.galenaOre), new ItemStack(ItemManager.leadIngot), 0.1F);
+		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.pentlanditeOre), new ItemStack(ItemManager.nickelIngot), 0.1F);
+		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.silverOre), new ItemStack(ItemManager.silverIngot), 0.1F);
 		
 		GameRegistry.addSmelting(Items.DIAMOND, new ItemStack(ItemManager.diamondIngot), 0.1F);
 		
@@ -38,6 +43,7 @@ public class Smelting {
 		GameRegistry.addSmelting(Item.getItemFromBlock(Blocks.IRON_BLOCK), new ItemStack(Item.getItemFromBlock(BlockManager.steelBlock)), 0.9F);
 		
 		GameRegistry.addSmelting(ItemManager.tinIngot, new ItemStack(ItemManager.pewterIngot), 0.1F);
+		GameRegistry.addSmelting(ItemManager.sphaleriteGem, new ItemStack(ItemManager.zincIngot), 0.1F);
 		
 		GameRegistry.addSmelting(Items.GOLD_INGOT, new ItemStack(ItemManager.reforgedGoldIngot), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(Blocks.GOLD_BLOCK), new ItemStack(Item.getItemFromBlock(BlockManager.reforgedGoldBlock)), 0.1F);

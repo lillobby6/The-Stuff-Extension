@@ -51,7 +51,7 @@ public class TSEBlockOre extends Block{
     		return ItemManager.terraDiamond;
     	else if(this == BlockManager.lunaDiamondOre)
     		return ItemManager.lunaDiamond;
-    	else if(this == BlockManager.sphalerite)
+    	else if(this == BlockManager.sphaleriteOre)
     		return ItemManager.sphaleriteGem;
     	else
     		return Item.getItemFromBlock(this);

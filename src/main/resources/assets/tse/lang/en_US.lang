@@ -2,10 +2,18 @@ item.mystic_stick.name=Mystic Stick
 item.golden_stick.name=Golden Stick
 item.diamond_stick.name=Diamond Stick
 
+item.iron_rod.name=Iron Rod
+item.steel_rod.name=Steel Rod
+item.bronze_rod.name=Bronze Rod
+item.brass_rod.name=Brass Rod
+item.titanium_rod.name=Titanium Rod
+
 item.exalted_diamond.name=Exalted Diamond
 item.blood_diamond.name=Blood Diamond
 item.terra_diamond.name=Terra Diamond
 item.luna_diamond.name=Luna Diamond
+
+item.sphalerite_gem.name=Sphalerite Gem
 
 item.magic_nugget.name=Magic Nugget
 item.mystic_nugget.name=Mystic Nugget
@@ -13,6 +21,11 @@ item.mysterious_nugget.name=Mysterious Nugget
 item.brightflame_nugget.name=Brightflame Nugget
 item.diamond_nugget.name=Diamond Nugget
 item.bronze_nugget.name=Bronze Nugget
+item.brass_nugget.name=Brass Nugget
+item.silver_nugget.name=Silver Nugget
+item.platinum_nugget.name=Platinum Nugget
+item.titanium_nugget.name=Titanium Nugget
+item.steel_nugget.name=Steel Nugget
 
 item.diamond_toslotrium_mixed_ingot.name=Diamond/Toslotrium Mixed Ingot
 item.mixed_ingot.name=Mixed Ingot
@@ -37,6 +50,15 @@ item.toslotrium_ingot.name=Toslotrium Ingot
 item.vividium_ingot.name=Vividium Ingot
 item.mysterious_ingot.name=Mysterious Ingot
 item.extranetium_ingot.name=Extranetium Ingot
+item.silver_ingot.name=Silver Ingot
+item.platinum_ingot.name=Platinum Ingot
+item.titanium_ingot.name=Titanium Ingot
+item.zinc_ingot.name=Zinc Ingot
+item.brass_ingot.name=Brass Ingot
+item.lead_ingot.name=Lead Ingot
+item.nickel_ingot.name=Nickel Ingot
+item.pewter_ingot.name=Pewter Ingot
+item.aluminum_ingot.name=Aluminum Ingot
 
 item.copper_pickaxe.name=Copper Pickaxe
 item.copper_axe.name=Copper Axe
@@ -207,10 +229,13 @@ tile.mortium_ore.name=Mortium Ore
 tile.tin_ore.name=Tin Ore
 tile.toslotrium_ore.name=Toslotrium Ore
 tile.vividium_ore.name=Vividum Ore
-
 tile.sky_iron_ore.name=Sky Iron Ore
-
 tile.terrium_ore.name=Terrium Ore
+tile.silver_ore.name=Silver Ore
+tile.platinum_ore.name=Platinum Ore
+tile.titanium_ore.name=Titanium Ore
+tile.galena_ore.name=Galena Ore
+tile.pentlandite_ore.name=Pentlandite Ore
 
 tile.moon_sand.name=Moon Sand
 tile.moon_stone.name=Moon Stone
@@ -239,8 +264,11 @@ tile.vividium_block.name=Vividium Block
 tile.mortium_block.name=Mortium Block
 tile.toslotrium_block.name=Toslotrium Block
 tile.magic_block.name=Magic Block
+tile.sphalerite_block.name=Sphalerite Block
+
 tile.white_stone.name=White Stone
 tile.white_cobblestone.name=White Cobblestone
+
 tile.purpleheart_log.name=Purpleheart Log
 
 tile.store_box.name=Store Box
@@ -251,6 +279,7 @@ tile.diamond_store_box.name=Diamond Store Box
 container.store_box=Store Box
 container.super_store_box=Super Store Box
 container.mysterious_box=Mysterious Box
+container.diamond_store_box=Diamond Store Box
 
 itemGroup.tabStorage=The Stuff Extension: Storage
 itemGroup.tabTools=The Stuff Extension: Tools

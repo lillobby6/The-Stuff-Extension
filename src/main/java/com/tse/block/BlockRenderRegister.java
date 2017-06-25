@@ -17,8 +17,12 @@ public class BlockRenderRegister {
 		reg(BlockManager.tinOre);
 		reg(BlockManager.toslotriumOre);
 		reg(BlockManager.vividiumOre);
-		
-		reg(BlockManager.sphalerite);
+		reg(BlockManager.silverOre);
+		reg(BlockManager.sphaleriteOre);
+		reg(BlockManager.titaniumOre);
+		reg(BlockManager.platinumOre);
+		reg(BlockManager.galenaOre);
+		reg(BlockManager.pentlanditeOre);
 		
 		reg(BlockManager.skyIronOre);
 
@@ -56,11 +60,12 @@ public class BlockRenderRegister {
 		reg(BlockManager.toslotriumBlock);
 		reg(BlockManager.magicBlock);
 		reg(BlockManager.copperBlock);
+		reg(BlockManager.sphaleriteBlock);
 		
 		reg(BlockManager.whiteStone);
 		reg(BlockManager.whiteCobblestone);
 		
-		//reg(BlockManager.purpleheartLog);
+		reg(BlockManager.purpleheartLog);
 	}
 	
 	public static void reg(Block block) {
