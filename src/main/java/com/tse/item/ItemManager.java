@@ -3,6 +3,7 @@ package com.tse.item;
 import com.tse.creativetabs.TSECreativeTabs;
 import com.tse.item.materials.TSEArmorMaterials;
 import com.tse.item.materials.TSEToolMaterials;
+import com.tse.main.core.TheStuffExtension;
 import com.tse.main.lib.StringsLib;
 
 import jline.internal.Log;
@@ -82,6 +83,10 @@ public class ItemManager {
 	public static Item mixedIngot = registerMainItem("mixed_ingot", TSECreativeTabs.tabMaterials);
 	public static Item tyionetiumMithrilToslotriumMixedIngot = registerMainItem(
 			"tyionetium_mithril_toslotrium_mixed_ingot", TSECreativeTabs.tabMaterials);
+	public static Item reforgedGoldTyionetiumMixedIngot = registerMainItem("reforged_gold_tyionetium_mixed_ingot",
+			TSECreativeTabs.tabMaterials);
+	public static Item titaniumMysticMixedIngot = registerMainItem("titanium_mystic_mixed_ingot",
+			TSECreativeTabs.tabMaterials);
 	// End Materials
 
 	// Start Tools
@@ -445,7 +450,7 @@ public class ItemManager {
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Item> event) {
 		final IForgeRegistry<Item> registry = event.getRegistry();
-		Log.info("Registering Items...");
+		TheStuffExtension.log("Registering Items...");
 		registry.registerAll(goldenStick, diamondStick, mysticStick,
 
 				ironRod, steelRod, bronzeRod, brassRod, titaniumRod,
@@ -467,6 +472,10 @@ public class ItemManager {
 				tyionetiumMithrilToslotriumMixedIngot,
 
 				mixedIngot,
+
+				reforgedGoldTyionetiumMixedIngot,
+
+				titaniumMysticMixedIngot,
 
 				justice, corruption,
 
@@ -533,7 +542,7 @@ public class ItemManager {
 				mithrilHelmet, mithrilChestplate, mithrilLeggings, mithrilBoots,
 
 				mortiumHelmet, mortiumChestplate, mortiumLeggings, mortiumBoots);
-		Log.info("Registered Items");
+		TheStuffExtension.log("Registered Items");
 	}
 
 }

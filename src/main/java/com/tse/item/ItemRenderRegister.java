@@ -3,11 +3,13 @@ package com.tse.item;
 import net.minecraft.client.Minecraft;
 import net.minecraft.item.Item;
 
+import com.tse.main.core.TheStuffExtension;
 import com.tse.main.lib.StringsLib;
 
 public class ItemRenderRegister {
 	public static void registerItemRenderer()
 	{
+		TheStuffExtension.log("Rendering items...");
 		reg(ItemManager.exaltedDiamond);
 	    reg(ItemManager.bloodDiamond);
 	    reg(ItemManager.terraDiamond);
@@ -207,6 +209,8 @@ public class ItemRenderRegister {
 	    
 	    reg(ItemManager.diamondToslotriumMixedIngot);
 	    reg(ItemManager.tyionetiumMithrilToslotriumMixedIngot);
+	    reg(ItemManager.reforgedGoldTyionetiumMixedIngot);
+	    reg(ItemManager.titaniumMysticMixedIngot);
 	    
 	    reg(ItemManager.brightsteelHelmet);
 	    reg(ItemManager.brightsteelChestplate);
@@ -232,6 +236,7 @@ public class ItemRenderRegister {
 	    reg(ItemManager.mortiumChestplate);
 	    reg(ItemManager.mortiumLeggings);
 	    reg(ItemManager.mortiumBoots);
+	    TheStuffExtension.log("Rendered items.");
 	}
 	public static void reg(Item item)
 	{

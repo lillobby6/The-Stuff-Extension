@@ -18,20 +18,23 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent e) {
+    	TheStuffExtension.log("Starting preInit...");
     	//AchievementManager.createAchievements();
-    	
+    	TheStuffExtension.log("Finished preInit.");
     }
 
     public void init(FMLInitializationEvent e) {
+    	TheStuffExtension.log("Starting init...");
     	Smelting.smelting();
     	EntityManager.init();
     	OreDictionaryManager.registerOres();
     	NetworkRegistry.INSTANCE.registerGuiHandler(TheStuffExtension.instance, new GuiManager());
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
-       
+        TheStuffExtension.log("Finished Init.");
     }
 
     public void postInit(FMLPostInitializationEvent e) {
-
+    	TheStuffExtension.log("Starting postInit");
+    	TheStuffExtension.log("Finished postInit.");
     }
 }

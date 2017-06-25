@@ -8,13 +8,13 @@
             "ore": "ingotCopper", "type": "forge:ore_dict"
         },
 		{
-            "ore": "ingotCopper", "type": "forge:ore_dict"
+            "ore": "ingotZinc", "type": "forge:ore_dict"
         },
 		{
-			"ore": "ingotTin", "type": "forge:ore_dict"
+			"ore": "ingotZinc", "type": "forge:ore_dict"
 		}
     ],
     "result": {
-        "item": "tse:bronze_ingot"
+        "item": "tse:brass_ingot"
     }
 }

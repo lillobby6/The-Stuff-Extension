@@ -2,6 +2,7 @@ package com.tse.recipe;
 
 import com.tse.block.BlockManager;
 import com.tse.item.ItemManager;
+import com.tse.main.core.TheStuffExtension;
 
 import jline.internal.Log;
 import net.minecraft.init.Blocks;
@@ -13,7 +14,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class Smelting {
 	public static void smelting() {
-		Log.info("Staring registering smelting...");
+		TheStuffExtension.log("Staring registering smelting...");
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.exaltedDiamondOre), new ItemStack(ItemManager.exaltedDiamond), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.bloodDiamondOre), new ItemStack(ItemManager.bloodDiamond), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.terraDiamondOre), new ItemStack(ItemManager.terraDiamond), 0.1F);
@@ -38,6 +39,8 @@ public class Smelting {
 		GameRegistry.addSmelting(ItemManager.mixedIngot, new ItemStack(ItemManager.mithrilIngot), 0.1F);
 		GameRegistry.addSmelting(ItemManager.diamondToslotriumMixedIngot, new ItemStack(ItemManager.mysticIngot), 0.1F);
 		GameRegistry.addSmelting(ItemManager.tyionetiumMithrilToslotriumMixedIngot, new ItemStack(ItemManager.extranetiumIngot), 0.5F);
+		GameRegistry.addSmelting(ItemManager.reforgedGoldTyionetiumMixedIngot, new ItemStack(ItemManager.mysteriousIngot), 0.3F);
+		GameRegistry.addSmelting(ItemManager.titaniumMysticMixedIngot, new ItemStack(ItemManager.magicIngot), 0.4F);
 		
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.moonIronOre), new ItemStack(Items.IRON_INGOT), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.lunaDiamondOre), new ItemStack(ItemManager.lunaDiamond), 0.1F);
@@ -53,7 +56,7 @@ public class Smelting {
 		
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.whiteCobblestone), new ItemStack(Item.getItemFromBlock(BlockManager.whiteStone)), 0.1F);
 		
-		Log.info("Finished registering smelting.");
+		TheStuffExtension.log("Finished registering smelting.");
 	}	
 	/**All shaped and shapeless recipes moved into JSONs.*/
 		

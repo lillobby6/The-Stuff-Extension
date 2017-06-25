@@ -3,7 +3,7 @@
   "modid": "tse",
   "name": "The Stuff Extension",
   "description": "A mod adding tons of stuff!",
-  "version": "v1.0.7.3-1.12",
+  "version": "v1.0.8.0-1.12",
   "mcversion": "${1.8}",
   "url": "https://minecraft.curseforge.com/projects/the-stuff-extension",
   "updateUrl": "",

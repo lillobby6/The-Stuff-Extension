@@ -4,11 +4,13 @@ import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.item.Item;
 
+import com.tse.main.core.TheStuffExtension;
 import com.tse.main.lib.StringsLib;
 
 public class BlockRenderRegister {
 	public static void registerBlockRenderer()
 	{
+		TheStuffExtension.log("Rendering blocks...");
 		reg(BlockManager.exaltedDiamondOre);
 		reg(BlockManager.bloodDiamondOre);
 		reg(BlockManager.terraDiamondOre);
@@ -67,6 +69,7 @@ public class BlockRenderRegister {
 		reg(BlockManager.whiteCobblestone);
 		
 		reg(BlockManager.purpleheartLog);
+		TheStuffExtension.log("Rendered blocks.");
 	}
 	
 	public static void reg(Block block) {

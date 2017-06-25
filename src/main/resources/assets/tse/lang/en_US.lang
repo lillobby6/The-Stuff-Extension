@@ -30,6 +30,8 @@ item.steel_nugget.name=Steel Nugget
 item.diamond_toslotrium_mixed_ingot.name=Diamond/Toslotrium Mixed Ingot
 item.mixed_ingot.name=Mixed Ingot
 item.tyionetium_mithril_toslotrium_mixed_ingot.name=Tyionetium/Mithril/Toslotrium Mixed Ingot
+item.reforged_gold_tyionetium_mixed_ingot.name=Reforged Gold/Tyionetium Mixed Ingot
+item.titanium_mystic_mixed_ingot.name=Titanium/Mystic Mixed Ingot
 
 item.copper_ingot.name=Copper Ingot
 item.steel_ingot.name=Steel Ingot

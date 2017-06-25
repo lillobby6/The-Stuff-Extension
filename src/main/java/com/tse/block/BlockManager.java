@@ -1,6 +1,7 @@
 package com.tse.block;
 
 import com.tse.creativetabs.TSECreativeTabs;
+import com.tse.main.core.TheStuffExtension;
 
 import jline.internal.Log;
 import net.minecraft.block.Block;
@@ -280,7 +281,7 @@ public class BlockManager {
 	@SubscribeEvent
 	public static void registerBlocks(RegistryEvent.Register<Block> event) {
 		final IForgeRegistry<Block> registry = event.getRegistry();
-		Log.info("Registering blocks...");
+		TheStuffExtension.log("Registering blocks...");
 		registry.registerAll(exaltedDiamondOre, bloodDiamondOre, terraDiamondOre, copperOre, mortiumOre, tinOre,
 				toslotriumOre, vividiumOre, sphaleriteOre, silverOre, platinumOre, titaniumOre, galenaOre,
 				pentlanditeOre, skyIronOre, terriumOre, aluminumOre,
@@ -297,13 +298,13 @@ public class BlockManager {
 				storeBox, superStoreBox, mysteriousBox, diamondStoreBox, whiteStone, whiteCobblestone,
 
 				purpleheartLog);
-		Log.info("Registered blocks.");
+		TheStuffExtension.log("Registered blocks.");
 	}
 
 	@SubscribeEvent
 	public static void registerItemBlocks(RegistryEvent.Register<Item> event) {
 		final IForgeRegistry<Item> registry = event.getRegistry();
-		Log.info("Registering ItemBlocks...");
+		TheStuffExtension.log("Registering ItemBlocks...");
 		registry.registerAll(exaltedDiamondOreItem, bloodDiamondOreItem, terraDiamondOreItem, copperOreItem,
 				mortiumOreItem, tinOreItem, toslotriumOreItem, vividiumOreItem, sphaleriteOreItem, silverOreItem,
 				platinumOreItem, titaniumOreItem, galenaOreItem, pentlanditeOreItem, skyIronOreItem, terriumOreItem,
@@ -324,7 +325,7 @@ public class BlockManager {
 				whiteStoneItem, whiteCobblestoneItem,
 
 				purpleheartLogItem);
-		Log.info("Registered ItemBlocks.");
+		TheStuffExtension.log("Registered ItemBlocks.");
 	}
 
 }

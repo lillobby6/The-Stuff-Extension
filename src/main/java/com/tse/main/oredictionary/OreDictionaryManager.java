@@ -2,6 +2,7 @@ package com.tse.main.oredictionary;
 
 import com.tse.block.BlockManager;
 import com.tse.item.ItemManager;
+import com.tse.main.core.TheStuffExtension;
 
 import jline.internal.Log;
 import net.minecraftforge.oredict.OreDictionary;
@@ -15,7 +16,7 @@ public class OreDictionaryManager {
 	}
 	public static void registerItems()
 	{
-		Log.info("Registering items to ore dictionary...");
+		TheStuffExtension.log("Registering items to ore dictionary...");
 		OreDictionary.registerOre("stickGold", ItemManager.goldenStick);
 		OreDictionary.registerOre("stickDiamond", ItemManager.diamondStick);
 		OreDictionary.registerOre("stickMystic", ItemManager.mysticStick);
@@ -72,12 +73,12 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("nuggetPlatinum", ItemManager.platinumNugget);
 		OreDictionary.registerOre("nuggetTitanium", ItemManager.titaniumNugget);
 		OreDictionary.registerOre("nuggetSteel", ItemManager.steelNugget);
-		Log.info("Finished registering items to ore dictionary.");
+		TheStuffExtension.log("Finished registering items to ore dictionary.");
 	}
 	
 	public static void registerBlocks()
 	{
-		Log.info("Registering blocks to ore dictionary...");
+		TheStuffExtension.log("Registering blocks to ore dictionary...");
 		OreDictionary.registerOre("oreDiamondExalted", BlockManager.exaltedDiamondOre);
 		OreDictionary.registerOre("oreDiamondBlood", BlockManager.bloodDiamondOre);
 		OreDictionary.registerOre("oreDiamondTerra", BlockManager.terraDiamondOre);
@@ -122,6 +123,6 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("cobblestone", BlockManager.whiteCobblestone);
 		
 		OreDictionary.registerOre("logWood", BlockManager.purpleheartLog);
-		Log.info("Blocks registered to ore dictionary.");
+		TheStuffExtension.log("Blocks registered to ore dictionary.");
 	}
 }
