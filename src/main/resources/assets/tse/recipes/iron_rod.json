@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:iron_rod", "count": 2
+  },
+  "pattern": [
+    "y",
+    "y"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "y": {
+      "item": "minecraft:IRON_NUGGET"
+    }
+  }
+}

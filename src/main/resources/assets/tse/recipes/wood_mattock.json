@@ -10,7 +10,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "x": {
-      "item": "minecraft:planks", "data": 0
+      "ore": "plankWood", "type": "forge:ore_dict"
     },
     "y": {
       "item": "minecraft:stick"

@@ -23,6 +23,7 @@ public class BlockRenderRegister {
 		reg(BlockManager.platinumOre);
 		reg(BlockManager.galenaOre);
 		reg(BlockManager.pentlanditeOre);
+		reg(BlockManager.aluminumOre);
 		
 		reg(BlockManager.skyIronOre);
 

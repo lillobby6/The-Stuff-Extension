@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{
+            "item": "tse:sphalerite_block"
+        }
+    ],
+    "result": {
+        "item": "tse:sphalerite_gem", "count": 9
+    }
+}

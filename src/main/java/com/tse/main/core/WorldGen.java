@@ -5,6 +5,7 @@ import java.util.Random;
 import com.google.common.base.Predicate;
 import com.tse.block.BlockManager;
 
+import jline.internal.Log;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
@@ -45,6 +46,8 @@ public class WorldGen implements IWorldGenerator{
 		addGen(BlockManager.silverOre, world, random, chunkX, chunkZ, 1, 8, 15, 0, 32);
 		
 		addGen(BlockManager.pentlanditeOre, world, random, chunkX, chunkZ, 4, 16, 22, 0, 64);
+		
+		addGen(BlockManager.aluminumOre, world, random, chunkX, chunkZ, 4, 20, 22, 0, 64);
 		
 		addGen(BlockManager.toslotriumOre, world, random, chunkX, chunkZ, 8, 16, 30, 16, 128);
 		

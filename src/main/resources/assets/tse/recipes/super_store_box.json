@@ -10,7 +10,7 @@
   "type": "forge:ore_shaped",
   "key": {
 	"x": {
-	  "item": "tse:copper_block"
+	  "ore": "blockCopper", "type": "forge:ore_dict"
 	},
     "a": {
       "item": "tse:store_box"

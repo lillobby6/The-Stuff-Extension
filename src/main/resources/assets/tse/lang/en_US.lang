@@ -265,6 +265,7 @@ tile.mortium_block.name=Mortium Block
 tile.toslotrium_block.name=Toslotrium Block
 tile.magic_block.name=Magic Block
 tile.sphalerite_block.name=Sphalerite Block
+tile.aluminum_ore.name=Aluminum Ore
 
 tile.white_stone.name=White Stone
 tile.white_cobblestone.name=White Cobblestone

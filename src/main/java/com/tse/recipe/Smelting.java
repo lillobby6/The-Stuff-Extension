@@ -3,6 +3,7 @@ package com.tse.recipe;
 import com.tse.block.BlockManager;
 import com.tse.item.ItemManager;
 
+import jline.internal.Log;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -12,6 +13,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class Smelting {
 	public static void smelting() {
+		Log.info("Staring registering smelting...");
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.exaltedDiamondOre), new ItemStack(ItemManager.exaltedDiamond), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.bloodDiamondOre), new ItemStack(ItemManager.bloodDiamond), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.terraDiamondOre), new ItemStack(ItemManager.terraDiamond), 0.1F);
@@ -29,6 +31,7 @@ public class Smelting {
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.galenaOre), new ItemStack(ItemManager.leadIngot), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.pentlanditeOre), new ItemStack(ItemManager.nickelIngot), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.silverOre), new ItemStack(ItemManager.silverIngot), 0.1F);
+		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.aluminumOre), new ItemStack(ItemManager.aluminumIngot), 0.1F);
 		
 		GameRegistry.addSmelting(Items.DIAMOND, new ItemStack(ItemManager.diamondIngot), 0.1F);
 		
@@ -50,7 +53,7 @@ public class Smelting {
 		
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.whiteCobblestone), new ItemStack(Item.getItemFromBlock(BlockManager.whiteStone)), 0.1F);
 		
-		
+		Log.info("Finished registering smelting.");
 	}	
 	/**All shaped and shapeless recipes moved into JSONs.*/
 		

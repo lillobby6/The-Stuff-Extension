@@ -10,10 +10,10 @@
   "type": "forge:ore_shaped",
   "key": {
 	"y": {
-	  "item": "tse:copper_block"
+	  "ore": "blockCopper", "type": "forge:ore_dict"
 	},
     "x": {
-      "item": "minecraft:planks", "data": 0
+      "ore": "plankWood", "type": "forge:ore_dict"
     },
     "a": {
       "item": "minecraft:chest"

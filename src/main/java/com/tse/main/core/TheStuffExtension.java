@@ -25,13 +25,16 @@ public class TheStuffExtension
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent e)
-    {    	
+    {   
+    	Log.info("Welcome to The Stuff Extension, we hope you have a wonderful trip!");
+    	Log.info("Starting PreINIT");
     	this.proxy.preInit(e);
     }
     
     @EventHandler
     public void init(FMLInitializationEvent e)
     {
+    	Log.info("Starting INIT...");
     	TileEntityRegistry.init();
     	this.proxy.init(e);
     }
@@ -39,6 +42,7 @@ public class TheStuffExtension
     @EventHandler
     public void postInit(FMLPostInitializationEvent e)
     {
+    	Log.info("Starting PostINIT...");
     	this.proxy.postInit(e);
     }
 }

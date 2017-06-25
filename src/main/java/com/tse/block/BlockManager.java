@@ -2,215 +2,329 @@ package com.tse.block;
 
 import com.tse.creativetabs.TSECreativeTabs;
 
+import jline.internal.Log;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.registries.IForgeRegistry;
 
+@Mod.EventBusSubscriber
 public class BlockManager {
-	
-	public static Block exaltedDiamondOre;
-	public static Block bloodDiamondOre;
-	public static Block terraDiamondOre;
-	public static Block copperOre;
-	public static Block mortiumOre;
-	public static Block tinOre;
-	public static Block toslotriumOre;
-	public static Block vividiumOre;
-	public static Block sphaleriteOre;
-	public static Block silverOre;
-	public static Block platinumOre;
-	public static Block titaniumOre;
-	public static Block galenaOre;
-	public static Block pentlanditeOre;
-	
-	public static Block skyIronOre;
-	
-	public static Block terriumOre;
-	
-	public static Block moonStone;
-	public static Block moonSand;
-	public static Block moonTeleporter;	
-	
-	public static Block lunaDiamondOre;
-	public static Block moonIronOre;
-	
-	public static Block copperBlock;
-	public static Block steelBlock;
-	public static Block terraDiamondBlock;
-	public static Block exaltedDiamondBlock;
-	public static Block bloodDiamondBlock;
-	public static Block tinBlock;
-	public static Block tyionetiumBlock;
-	public static Block bronzeBlock;
-	public static Block brightflameBlock;
-	public static Block brightsteelBlock;
-	public static Block reforgedGoldBlock;
-	public static Block magicBlock;
-	public static Block mithrilBlock;
-	public static Block mortiumBlock;
-	public static Block mysteriousBlock;
-	public static Block mysticBlock;
-	public static Block skyIronBlock;
-	public static Block terriumBlock;
-	public static Block toslotriumBlock;
-	public static Block vividiumBlock;
-	public static Block sphaleriteBlock;
-	
-	public static Block storeBox;
-	public static Block superStoreBox;
-	public static Block mysteriousBox;
-	public static Block diamondStoreBox;
-	
-	public static Block alloyFurnace;
-	
-	public static Block whiteStone;
-	public static Block whiteCobblestone;
-	
-	public static Block purpleheartLog;
+
+	public static Block exaltedDiamondOre = registerOre("exalted_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block bloodDiamondOre = registerOre("blood_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block terraDiamondOre = registerOre("terra_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block copperOre = registerOre("copper_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block mortiumOre = registerOre("mortium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block tinOre = registerOre("tin_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block toslotriumOre = registerOre("toslotrium_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block vividiumOre = registerOre("vividium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block sphaleriteOre = registerOre("sphalerite_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block silverOre = registerOre("silver_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block platinumOre = registerOre("platinum_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block titaniumOre = registerOre("titanium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block galenaOre = registerOre("galena_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block pentlanditeOre = registerOre("pentlandite_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block skyIronOre = registerOre("sky_iron_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F,
+			TSECreativeTabs.tabOres);
+	public static Block terriumOre = registerOre("terrium_ore", Material.ROCK, 4, "pickaxe", 3.5F, 3.5F,
+			TSECreativeTabs.tabOres);
+	public static Block aluminumOre = registerOre("aluminum_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+
+	public static Block moonStone = registerBlockNormal("moon_stone", 5.0F, 5.0F);
+	public static Block moonSand = registerBlockWithSound("moon_sand", 2.0F, 2.0F, SoundType.SAND);
+	public static Block moonTeleporter = registerBlockNormal("moon_teleporter", 5.0F, 5.0F);
+
+	public static Block lunaDiamondOre = registerOre("luna_diamond_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+	public static Block moonIronOre = registerOre("moon_iron_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F,
+			TSECreativeTabs.tabOres);
+
+	public static Block copperBlock = registerBlockNormal("copper_block", 5.0F, 5.0F);
+	public static Block steelBlock = registerBlockNormal("steel_block", 5.0F, 5.0F);
+	public static Block terraDiamondBlock = registerBlockNormal("terra_diamond_block", 5.0F, 5.0F);
+	public static Block exaltedDiamondBlock = registerBlockNormal("exalted_diamond_block", 5.0F, 5.0F);
+	public static Block bloodDiamondBlock = registerBlockNormal("blood_diamond_block", 5.0F, 5.0F);
+	public static Block tinBlock = registerBlockNormal("tin_block", 5.0F, 5.0F);
+	public static Block tyionetiumBlock = registerBlockNormal("tyionetium_block", 5.0F, 5.0F);
+	public static Block bronzeBlock = registerBlockNormal("bronze_block", 5.0F, 5.0F);
+	public static Block brightflameBlock = registerBlockNormal("brightflame_block", 5.0F, 5.0F);
+	public static Block brightsteelBlock = registerBlockNormal("brightsteel_block", 5.0F, 5.0F);
+	public static Block reforgedGoldBlock = registerBlockNormal("reforged_gold_block", 5.0F, 5.0F);
+	public static Block magicBlock = registerBlockNormal("magic_block", 5.0F, 5.0F);
+	public static Block mithrilBlock = registerBlockNormal("mithril_block", 5.0F, 5.0F);
+	public static Block mortiumBlock = registerBlockNormal("mortium_block", 5.0F, 5.0F);
+	public static Block mysteriousBlock = registerBlockNormal("mysterious_block", 5.0F, 5.0F);
+	public static Block mysticBlock = registerBlockNormal("mystic_block", 5.0F, 5.0F);
+	public static Block skyIronBlock = registerBlockNormal("sky_iron_block", 5.0F, 5.0F);
+	public static Block terriumBlock = registerBlockNormal("terrium_block", 5.0F, 5.0F);
+	public static Block toslotriumBlock = registerBlockNormal("toslotrium_block", 5.0F, 5.0F);
+	public static Block vividiumBlock = registerBlockNormal("vividium_block", 5.0F, 5.0F);
+	public static Block sphaleriteBlock = registerBlockNormal("sphalerite_block", 5.0F, 5.0F);
+
+	public static Block storeBox = registerStoreBox("store_box");
+	public static Block mysteriousBox = registerMBox("mysterious_box");
+	public static Block superStoreBox = registerSSBox("super_store_box");
+	public static Block diamondStoreBox = registerDSBox("diamond_store_box");
+
+	public static Block whiteStone = registerBlockNormal("white_stone", 2.0F, 2.0F);
+	public static Block whiteCobblestone = registerBlockNormal("white_cobblestone", 2.0F, 2.0F);
+
+	public static Block purpleheartLog = registerBlockNormal("purpleheart_log", 2.0F, 2.0F);
 	public static Block purpleheartPlanks;
 	public static Block purpleheartLeaves;
-	
+
 	public static Block padaukLog;
 	public static Block paduakPlanks;
 	public static Block padaukLeaves;
-	
+
+	public static Item exaltedDiamondOreItem = new ItemBlock(exaltedDiamondOre).setRegistryName("exalted_diamond_ore")
+			.setUnlocalizedName("exalted_diamond_ore");
+	public static Item bloodDiamondOreItem = new ItemBlock(bloodDiamondOre).setRegistryName("blood_diamond_ore")
+			.setUnlocalizedName("blood_diamond_ore");
+	public static Item terraDiamondOreItem = new ItemBlock(terraDiamondOre).setRegistryName("terra_diamond_ore")
+			.setUnlocalizedName("terra_diamond_ore");
+	public static Item copperOreItem = new ItemBlock(copperOre).setRegistryName("copper_ore")
+			.setUnlocalizedName("copper_ore");
+	public static Item mortiumOreItem = new ItemBlock(mortiumOre).setRegistryName("mortium_ore")
+			.setUnlocalizedName("mortium_ore");
+	public static Item tinOreItem = new ItemBlock(tinOre).setRegistryName("tin_ore").setUnlocalizedName("tin_ore");
+	public static Item toslotriumOreItem = new ItemBlock(toslotriumOre).setRegistryName("toslotrium_ore")
+			.setUnlocalizedName("toslotrium_ore");
+	public static Item vividiumOreItem = new ItemBlock(vividiumOre).setRegistryName("vividium_ore")
+			.setUnlocalizedName("vividium_ore");
+	public static Item sphaleriteOreItem = new ItemBlock(sphaleriteOre).setRegistryName("sphalerite_ore")
+			.setUnlocalizedName("sphalerite_ore");
+	public static Item silverOreItem = new ItemBlock(silverOre).setRegistryName("silver_ore")
+			.setUnlocalizedName("silver_ore");
+	public static Item platinumOreItem = new ItemBlock(platinumOre).setRegistryName("platinum_ore")
+			.setUnlocalizedName("platinum_ore");
+	public static Item titaniumOreItem = new ItemBlock(titaniumOre).setRegistryName("titanium_ore")
+			.setUnlocalizedName("titanium_ore");
+	public static Item galenaOreItem = new ItemBlock(galenaOre).setRegistryName("galena_ore")
+			.setUnlocalizedName("galena_ore");
+	public static Item pentlanditeOreItem = new ItemBlock(pentlanditeOre).setRegistryName("pentlandite_ore")
+			.setUnlocalizedName("pentlandite_ore");
+	public static Item skyIronOreItem = new ItemBlock(skyIronOre).setRegistryName("sky_iron_ore")
+			.setUnlocalizedName("sky_iron_ore");
+	public static Item terriumOreItem = new ItemBlock(terriumOre).setRegistryName("terrium_ore")
+			.setUnlocalizedName("terrium_ore");
+	public static Item aluminumOreItem = new ItemBlock(aluminumOre).setRegistryName("aluminum_ore")
+			.setUnlocalizedName("aluminum_ore");
+
+	public static Item moonStoneItem = new ItemBlock(moonStone).setRegistryName("moon_stone")
+			.setUnlocalizedName("moon_stone");
+	public static Item moonSandItem = new ItemBlock(moonSand).setRegistryName("moon_sand")
+			.setUnlocalizedName("moon_sand");
+	public static Item moonTeleporterItem = new ItemBlock(moonTeleporter).setRegistryName("moon_teleporter")
+			.setUnlocalizedName("moon_teleporter");
+
+	public static Item lunaDiamondOreItem = new ItemBlock(lunaDiamondOre).setRegistryName("luna_diamond_ore")
+			.setUnlocalizedName("luna_diamond_ore");
+	public static Item moonIronOreItem = new ItemBlock(moonIronOre).setRegistryName("moon_iron_ore")
+			.setUnlocalizedName("moon_diamond_ore");
+
+	public static Item copperBlockItem = new ItemBlock(copperBlock).setRegistryName("copper_block")
+			.setUnlocalizedName("copper_block");
+	public static Item steelBlockItem = new ItemBlock(steelBlock).setRegistryName("steel_block")
+			.setUnlocalizedName("steel_block");
+	public static Item terraDiamondBlockItem = new ItemBlock(terraDiamondBlock).setRegistryName("terra_diamond_block")
+			.setUnlocalizedName("terra_diamond_block");
+	public static Item exaltedDiamondBlockItem = new ItemBlock(exaltedDiamondBlock)
+			.setRegistryName("exalted_diamond_block").setUnlocalizedName("exalted_diamond_block");
+	public static Item bloodDiamondBlockItem = new ItemBlock(bloodDiamondBlock).setRegistryName("blood_diamond_block")
+			.setUnlocalizedName("blood_diamond_block");
+	public static Item tinBlockItem = new ItemBlock(tinBlock).setRegistryName("tin_block")
+			.setUnlocalizedName("tin_block");
+	public static Item tyionetiumBlockItem = new ItemBlock(tyionetiumBlock).setRegistryName("tyionetium_block")
+			.setUnlocalizedName("tyionetium_block");
+	public static Item bronzeBlockItem = new ItemBlock(bronzeBlock).setRegistryName("bronze_block")
+			.setUnlocalizedName("bronze_block");
+	public static Item brightflameBlockItem = new ItemBlock(brightflameBlock).setRegistryName("brightflame_block")
+			.setUnlocalizedName("brightflame_block");
+	public static Item brightsteelBlockItem = new ItemBlock(brightsteelBlock).setRegistryName("brightsteel_block")
+			.setUnlocalizedName("brightsteel_block");
+	public static Item reforgedGoldBlockItem = new ItemBlock(reforgedGoldBlock).setRegistryName("reforged_gold_block")
+			.setUnlocalizedName("reforged_gold_block");
+	public static Item magicBlockItem = new ItemBlock(magicBlock).setRegistryName("magic_block")
+			.setUnlocalizedName("magic_block");
+	public static Item mithrilBlockItem = new ItemBlock(mithrilBlock).setRegistryName("mithril_block")
+			.setUnlocalizedName("mithril_block");
+	public static Item mortiumBlockItem = new ItemBlock(mortiumBlock).setRegistryName("mortium_block")
+			.setUnlocalizedName("mortium_block");
+	public static Item mysteriousBlockItem = new ItemBlock(mysteriousBlock).setRegistryName("mysterious_block")
+			.setUnlocalizedName("mysterious_block");
+	public static Item mysticBlockItem = new ItemBlock(mysticBlock).setRegistryName("mystic_block")
+			.setUnlocalizedName("mystic_block");
+	public static Item skyIronBlockItem = new ItemBlock(skyIronBlock).setRegistryName("sky_iron_block")
+			.setUnlocalizedName("sky_iron_block");
+	public static Item terriumBlockItem = new ItemBlock(terriumBlock).setRegistryName("terrium_block")
+			.setUnlocalizedName("terrium_block");
+	public static Item toslotriumBlockItem = new ItemBlock(toslotriumBlock).setRegistryName("toslotrium_block")
+			.setUnlocalizedName("toslotrium_block");
+	public static Item vividiumBlockItem = new ItemBlock(vividiumBlock).setRegistryName("vividium_block")
+			.setUnlocalizedName("vividium_block");
+	public static Item sphaleriteBlockItem = new ItemBlock(sphaleriteBlock).setRegistryName("sphalerite_block")
+			.setUnlocalizedName("sphalerite_block");
+
+	public static Item storeBoxItem = new ItemBlock(storeBox).setRegistryName("store_box")
+			.setUnlocalizedName("store_box");
+	public static Item superStoreBoxItem = new ItemBlock(superStoreBox).setRegistryName("super_store_box")
+			.setUnlocalizedName("super_store_box");
+	public static Item mysteriousBoxItem = new ItemBlock(mysteriousBox).setRegistryName("mysterious_box")
+			.setUnlocalizedName("mysterious_box");
+	public static Item diamondStoreBoxItem = new ItemBlock(diamondStoreBox).setRegistryName("diamond_store_box")
+			.setUnlocalizedName("diamond_store_box");
+
+	// new ItemBlock( alloyFurnace);
+
+	public static Item whiteStoneItem = new ItemBlock(whiteStone).setRegistryName("white_stone")
+			.setUnlocalizedName("white_stone");
+	public static Item whiteCobblestoneItem = new ItemBlock(whiteCobblestone).setRegistryName("white_cobblestone")
+			.setUnlocalizedName("white_cobblestone");
+
+	public static Item purpleheartLogItem = new ItemBlock(purpleheartLog).setRegistryName("purpleheart_log")
+			.setUnlocalizedName("purpleheart_log");
+
 	private static Block registerBlock(String registerName, ItemBlock itemBlock, Block block) {
-        block.setRegistryName(registerName);
-        block.setUnlocalizedName(registerName);
+		block.setRegistryName(registerName);
+		block.setUnlocalizedName(registerName);
 
-        GameRegistry.register(block);
+		// GameRegistry.register(block);
 
-        itemBlock.setRegistryName(registerName);
-        itemBlock.setUnlocalizedName(registerName);
-        GameRegistry.register(itemBlock);
+		itemBlock.setRegistryName(registerName);
+		itemBlock.setUnlocalizedName(registerName);
+		// GameRegistry.register(itemBlock);
 
-        return block;
-    }
-	
-	public static Block registerBlockNormal(String registerName, float hardness,  float resistance) {
+		return block;
+	}
+
+	public static Block registerBlockNormal(String registerName, float hardness, float resistance) {
 		final Block block = new TSEBlock(registerName, hardness, resistance);
-        final ItemBlock itemBlock = new ItemBlock(block);
-        block.setCreativeTab(TSECreativeTabs.tabBlocks);
-        return registerBlock(registerName, itemBlock, block);
-    }
-	public static Block registerBlockWithSound(String registerName, float harness, float resistance, SoundType sound)
-	{
-		final Block block = new TSEBlock(registerName, harness, resistance, sound);
 		final ItemBlock itemBlock = new ItemBlock(block);
-		
+		block.setCreativeTab(TSECreativeTabs.tabBlocks);
 		return registerBlock(registerName, itemBlock, block);
 	}
-	
-	private static Block registerOre(String registerName, Material mat, int harvestLevel, String toolType, float hardness, float resistance, CreativeTabs tab) {
-        final Block ore = new TSEBlockOre(registerName, mat, harvestLevel, toolType, hardness, resistance, tab, 0);
-        final ItemBlock itemBlock = new ItemBlock(ore);
 
-        return registerBlock(registerName, itemBlock, ore);
-    }
-	
-	private static Block registerStoreBox(String registryName)
-	{
+	public static Block registerBlockWithSound(String registerName, float harness, float resistance, SoundType sound) {
+		final Block block = new TSEBlock(registerName, harness, resistance, sound);
+		final ItemBlock itemBlock = new ItemBlock(block);
+
+		return registerBlock(registerName, itemBlock, block);
+	}
+
+	private static Block registerOre(String registerName, Material mat, int harvestLevel, String toolType,
+			float hardness, float resistance, CreativeTabs tab) {
+		final Block ore = new TSEBlockOre(registerName, mat, harvestLevel, toolType, hardness, resistance, tab, 0);
+		final ItemBlock itemBlock = new ItemBlock(ore);
+
+		return registerBlock(registerName, itemBlock, ore);
+	}
+
+	private static Block registerStoreBox(String registryName) {
 		final Block block = new StoreBox(registryName);
 		final ItemBlock itemBlock = new ItemBlock(block);
-		
+
 		return registerBlock(registryName, itemBlock, block);
 	}
-	
-	private static Block registerSSBox(String registryName)
-	{
+
+	private static Block registerSSBox(String registryName) {
 		final Block block = new SuperStoreBox(registryName);
 		final ItemBlock itemBlock = new ItemBlock(block);
-		
+
 		return registerBlock(registryName, itemBlock, block);
 	}
-	
-	private static Block registerMBox(String registryName)
-	{
+
+	private static Block registerMBox(String registryName) {
 		final Block block = new MysteriousBox(registryName);
 		final ItemBlock itemBlock = new ItemBlock(block);
-		
+
 		return registerBlock(registryName, itemBlock, block);
 	}
-	
-	private static Block registerDSBox(String registryName)
-	{
+
+	private static Block registerDSBox(String registryName) {
 		final Block block = new DiamondStoreBox(registryName);
 		final ItemBlock itemBlock = new ItemBlock(block);
-		
+
 		return registerBlock(registryName, itemBlock, block);
 	}
-	public static Block registerLog(String registryName)
-	{
+
+	public static Block registerLog(String registryName) {
 		final Block block = new TSEBlockLog();
 		block.setCreativeTab(TSECreativeTabs.tabBlocks);
 		final ItemBlock itemBlock = new ItemBlock(block);
 		return registerBlock(registryName, itemBlock, block);
 	}
-	
-	public static void createBlocks()
-	{
-		exaltedDiamondOre = registerOre("exalted_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		bloodDiamondOre = registerOre("blood_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		terraDiamondOre = registerOre("terra_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		copperOre = registerOre("copper_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		mortiumOre = registerOre("mortium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		tinOre = registerOre("tin_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		toslotriumOre = registerOre("toslotrium_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		vividiumOre = registerOre("vividium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		sphaleriteOre = registerOre("sphalerite_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		silverOre = registerOre("silver_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		platinumOre = registerOre("platinum_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		titaniumOre = registerOre("titanium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		galenaOre = registerOre("galena_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		pentlanditeOre = registerOre("pentlandite_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		
-		skyIronOre = registerOre("sky_iron_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
-		
-		terriumOre = registerOre("terrium_ore", Material.ROCK, 4, "pickaxe", 3.5F, 3.5F, TSECreativeTabs.tabOres);
-			
-		moonStone = registerBlockNormal("moon_stone", 5.0F, 5.0F);
-		moonSand = registerBlockWithSound("moon_sand", 2.0F, 2.0F, SoundType.SAND);
-		moonTeleporter = registerBlockNormal("moon_teleporter", 5.0F, 5.0F);
-		
-		lunaDiamondOre = registerOre("luna_diamond_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		moonIronOre = registerOre("moon_iron_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F, TSECreativeTabs.tabOres);
-		
-		copperBlock = registerBlockNormal("copper_block", 5.0F, 5.0F);
-		steelBlock = registerBlockNormal("steel_block", 5.0F, 5.0F);
-		terraDiamondBlock = registerBlockNormal("terra_diamond_block", 5.0F, 5.0F);
-		exaltedDiamondBlock = registerBlockNormal("exalted_diamond_block", 5.0F, 5.0F);
-		bloodDiamondBlock = registerBlockNormal("blood_diamond_block", 5.0F, 5.0F);
-		tinBlock = registerBlockNormal("tin_block", 5.0F, 5.0F);
-		tyionetiumBlock = registerBlockNormal("tyionetium_block", 5.0F, 5.0F);
-		bronzeBlock = registerBlockNormal("bronze_block", 5.0F, 5.0F);
-		brightflameBlock = registerBlockNormal("brightflame_block", 5.0F, 5.0F);
-		brightsteelBlock = registerBlockNormal("brightsteel_block", 5.0F, 5.0F);
-		reforgedGoldBlock = registerBlockNormal("reforged_gold_block", 5.0F, 5.0F);
-		magicBlock = registerBlockNormal("magic_block", 5.0F, 5.0F);
-		mithrilBlock = registerBlockNormal("mithril_block", 5.0F, 5.0F);
-		mortiumBlock = registerBlockNormal("mortium_block", 5.0F, 5.0F);
-		mysteriousBlock = registerBlockNormal("mysterious_block", 5.0F, 5.0F);
-		mysticBlock = registerBlockNormal("mystic_block", 5.0F, 5.0F);
-		skyIronBlock = registerBlockNormal("sky_iron_block", 5.0F, 5.0F);
-		terriumBlock = registerBlockNormal("terrium_block", 5.0F, 5.0F);
-		toslotriumBlock = registerBlockNormal("toslotrium_block", 5.0F, 5.0F);
-		vividiumBlock = registerBlockNormal("vividium_block", 5.0F, 5.0F);
-		sphaleriteBlock = registerBlockNormal("sphalerite_block", 5.0F, 5.0F);
-		
-		storeBox = registerStoreBox("store_box");
-		mysteriousBox = registerMBox("mysterious_box");
-		superStoreBox = registerSSBox("super_store_box");
-		diamondStoreBox = registerDSBox("diamond_store_box");
-		
-		whiteStone = registerBlockNormal("white_stone", 2.0F, 2.0F);
-		whiteCobblestone = registerBlockNormal("white_cobblestone", 2.0F, 2.0F);
-		
-		purpleheartLog = registerBlockNormal("purpleheart_log", 2.0F, 2.0F);
-		//purpleheartLog = registerLog("purpleheart_log");
-		
+
+	@SubscribeEvent
+	public static void registerBlocks(RegistryEvent.Register<Block> event) {
+		final IForgeRegistry<Block> registry = event.getRegistry();
+		Log.info("Registering blocks...");
+		registry.registerAll(exaltedDiamondOre, bloodDiamondOre, terraDiamondOre, copperOre, mortiumOre, tinOre,
+				toslotriumOre, vividiumOre, sphaleriteOre, silverOre, platinumOre, titaniumOre, galenaOre,
+				pentlanditeOre, skyIronOre, terriumOre, aluminumOre,
+
+				moonStone, moonSand, moonTeleporter,
+
+				lunaDiamondOre, moonIronOre,
+
+				copperBlock, steelBlock, terraDiamondBlock, exaltedDiamondBlock, bloodDiamondBlock, tinBlock,
+				tyionetiumBlock, bronzeBlock, brightflameBlock, brightsteelBlock, reforgedGoldBlock, magicBlock,
+				mithrilBlock, mortiumBlock, mysteriousBlock, mysticBlock, skyIronBlock, terriumBlock, toslotriumBlock,
+				vividiumBlock, sphaleriteBlock,
+
+				storeBox, superStoreBox, mysteriousBox, diamondStoreBox, whiteStone, whiteCobblestone,
+
+				purpleheartLog);
+		Log.info("Registered blocks.");
 	}
-	
+
+	@SubscribeEvent
+	public static void registerItemBlocks(RegistryEvent.Register<Item> event) {
+		final IForgeRegistry<Item> registry = event.getRegistry();
+		Log.info("Registering ItemBlocks...");
+		registry.registerAll(exaltedDiamondOreItem, bloodDiamondOreItem, terraDiamondOreItem, copperOreItem,
+				mortiumOreItem, tinOreItem, toslotriumOreItem, vividiumOreItem, sphaleriteOreItem, silverOreItem,
+				platinumOreItem, titaniumOreItem, galenaOreItem, pentlanditeOreItem, skyIronOreItem, terriumOreItem,
+				aluminumOreItem,
+
+				moonStoneItem, moonSandItem, moonTeleporterItem,
+
+				lunaDiamondOreItem, moonIronOreItem,
+
+				copperBlockItem, steelBlockItem, terraDiamondBlockItem, exaltedDiamondBlockItem, bloodDiamondBlockItem,
+				tinBlockItem, tyionetiumBlockItem, bronzeBlockItem, brightflameBlockItem, brightsteelBlockItem,
+				reforgedGoldBlockItem, magicBlockItem, mithrilBlockItem, mortiumBlockItem, mysteriousBlockItem,
+				mysticBlockItem, skyIronBlockItem, terriumBlockItem, toslotriumBlockItem, vividiumBlockItem,
+				sphaleriteBlockItem,
+
+				storeBoxItem, superStoreBoxItem, mysteriousBoxItem, diamondStoreBoxItem,
+
+				whiteStoneItem, whiteCobblestoneItem,
+
+				purpleheartLogItem);
+		Log.info("Registered ItemBlocks.");
+	}
+
 }
