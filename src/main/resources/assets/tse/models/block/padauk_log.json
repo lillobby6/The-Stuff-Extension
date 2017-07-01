@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "tse:blocks/log_padauk_top",
+        "side": "tse:blocks/log_padauk"
+    }
+}

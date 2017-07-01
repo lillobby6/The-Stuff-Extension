@@ -95,6 +95,7 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("orePentlandite", BlockManager.pentlanditeOre);
 		OreDictionary.registerOre("oreIronSky", BlockManager.skyIronOre);
 		OreDictionary.registerOre("oreTerrium", BlockManager.terriumOre);
+		OreDictionary.registerOre("oreAluminum", BlockManager.aluminumOre);
 		
 		OreDictionary.registerOre("oreIron", BlockManager.moonIronOre);
 		
@@ -123,6 +124,9 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("cobblestone", BlockManager.whiteCobblestone);
 		
 		OreDictionary.registerOre("logWood", BlockManager.purpleheartLog);
+
+		OreDictionary.registerOre("plankWood", BlockManager.purpleheartPlanks);
+		//OreDictionary.registerOre("logWood", BlockManager.padaukLog);
 		TheStuffExtension.log("Blocks registered to ore dictionary.");
 	}
 }

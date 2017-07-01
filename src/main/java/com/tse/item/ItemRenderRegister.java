@@ -56,6 +56,13 @@ public class ItemRenderRegister {
 	    reg(ItemManager.copperLeggings);
 	    reg(ItemManager.copperBoots);
 	    
+	    reg(ItemManager.extranetiumAxe);
+	    reg(ItemManager.extranetiumHoe);
+	    reg(ItemManager.extranetiumMattock);
+	    reg(ItemManager.extranetiumPickaxe);
+	    reg(ItemManager.extranetiumShovel);
+	    reg(ItemManager.extranetiumSword);
+	    
 	    reg(ItemManager.ironMattock);
 	    reg(ItemManager.woodMattock);
 	    reg(ItemManager.goldMattock);
@@ -194,6 +201,13 @@ public class ItemRenderRegister {
 	    reg(ItemManager.vividiumShovel);
 	    reg(ItemManager.vividiumHoe);
 	    reg(ItemManager.vividiumMattock);
+	    
+	    reg(ItemManager.steelPickaxe);
+	    reg(ItemManager.steelAxe);
+	    reg(ItemManager.steelShovel);
+	    reg(ItemManager.steelHoe);
+	    reg(ItemManager.steelMattock);
+	    reg(ItemManager.steelSword);
 	    
 	    reg(ItemManager.magicNugget);
 	    reg(ItemManager.mixedIngot);

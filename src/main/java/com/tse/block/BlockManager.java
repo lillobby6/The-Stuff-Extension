@@ -83,6 +83,17 @@ public class BlockManager {
 	public static Block toslotriumBlock = registerBlockNormal("toslotrium_block", 5.0F, 5.0F);
 	public static Block vividiumBlock = registerBlockNormal("vividium_block", 5.0F, 5.0F);
 	public static Block sphaleriteBlock = registerBlockNormal("sphalerite_block", 5.0F, 5.0F);
+	// TODO
+	public static Block extranetiumBlock = registerBlockNormal("extranetium_block", 5.0F, 5.0F);
+	public static Block silverBlock = registerBlockNormal("silver_block", 5.0F, 5.0F);
+	public static Block platinumBlock = registerBlockNormal("platinum_block", 5.0F, 5.0F);
+	public static Block titaniumBlock = registerBlockNormal("titanium_block", 5.0F, 5.0F);
+	public static Block zincBlock = registerBlockNormal("zinc_block", 5.0F, 5.0F);
+	public static Block brassBlock = registerBlockNormal("brass_block", 5.0F, 5.0F);
+	public static Block leadBlock = registerBlockNormal("lead_block", 5.0F, 5.0F);
+	public static Block nickelBlock = registerBlockNormal("nickel_block", 5.0F, 5.0F);
+	public static Block pewterBlock = registerBlockNormal("pewter_block", 5.0F, 5.0F);
+	public static Block aluminumBlock = registerBlockNormal("aluminum_block", 5.0F, 5.0F);
 
 	public static Block storeBox = registerStoreBox("store_box");
 	public static Block mysteriousBox = registerMBox("mysterious_box");
@@ -93,11 +104,13 @@ public class BlockManager {
 	public static Block whiteCobblestone = registerBlockNormal("white_cobblestone", 2.0F, 2.0F);
 
 	public static Block purpleheartLog = registerBlockNormal("purpleheart_log", 2.0F, 2.0F);
-	public static Block purpleheartPlanks;
+	public static Block purpleheartPlanks = registerBlockNormal("purpleheart_planks", 2.0F, 2.0F);
 	public static Block purpleheartLeaves;
 
-	public static Block padaukLog;
-	public static Block paduakPlanks;
+	// public static Block padaukLog = registerBlockNormal("padauk_log", 2.0F,
+	// 2.0F);
+	// public static Block paduakPlanks = registerBlockNormal("padauk_planks",
+	// 2.0F, 2.0F);
 	public static Block padaukLeaves;
 
 	public static Item exaltedDiamondOreItem = new ItemBlock(exaltedDiamondOre).setRegistryName("exalted_diamond_ore")
@@ -188,6 +201,27 @@ public class BlockManager {
 			.setUnlocalizedName("vividium_block");
 	public static Item sphaleriteBlockItem = new ItemBlock(sphaleriteBlock).setRegistryName("sphalerite_block")
 			.setUnlocalizedName("sphalerite_block");
+	// TODO
+	public static Item extranetiumBlockItem = new ItemBlock(extranetiumBlock).setRegistryName("extranetium_block")
+			.setUnlocalizedName("extranetium_block");
+	public static Item silverBlockItem = new ItemBlock(silverBlock).setRegistryName("silver_block")
+			.setUnlocalizedName("silver_block");
+	public static Item platinumBlockItem = new ItemBlock(platinumBlock).setRegistryName("platinum_block")
+			.setUnlocalizedName("platinum_block");
+	public static Item titaniumBlockItem = new ItemBlock(titaniumBlock).setRegistryName("titanium_block")
+			.setUnlocalizedName("titanium_block");
+	public static Item zincBlockItem = new ItemBlock(zincBlock).setRegistryName("zinc_block")
+			.setUnlocalizedName("zinc_block");
+	public static Item brassBlockItem = new ItemBlock(brassBlock).setRegistryName("brass_block")
+			.setUnlocalizedName("brass_block");
+	public static Item leadBlockItem = new ItemBlock(leadBlock).setRegistryName("lead_block")
+			.setUnlocalizedName("lead_block");
+	public static Item nickelBlockItem = new ItemBlock(nickelBlock).setRegistryName("nickel_block")
+			.setUnlocalizedName("nickel_block");
+	public static Item pewterBlockItem = new ItemBlock(pewterBlock).setRegistryName("pewter_block")
+			.setUnlocalizedName("pewter_block");
+	public static Item aluminumBlockItem = new ItemBlock(aluminumBlock).setRegistryName("aluminum_block")
+			.setUnlocalizedName("aluminum_block");
 
 	public static Item storeBoxItem = new ItemBlock(storeBox).setRegistryName("store_box")
 			.setUnlocalizedName("store_box");
@@ -207,6 +241,15 @@ public class BlockManager {
 
 	public static Item purpleheartLogItem = new ItemBlock(purpleheartLog).setRegistryName("purpleheart_log")
 			.setUnlocalizedName("purpleheart_log");
+	public static Item purpleheartPlanksItem = new ItemBlock(purpleheartPlanks).setRegistryName("purpleheart_planks")
+			.setUnlocalizedName("purpleheart_planks");
+
+	// public static Item padaukLogItem = new
+	// ItemBlock(padaukLog).setRegistryName("padauk_log")
+	// .setUnlocalizedName("purpleheart_log");
+	// public static Item padaukPlanksItem = new
+	// ItemBlock(paduakPlanks).setRegistryName("padauk_planks")
+	// .setUnlocalizedName("padauk_planks");
 
 	private static Block registerBlock(String registerName, ItemBlock itemBlock, Block block) {
 		block.setRegistryName(registerName);
@@ -282,6 +325,7 @@ public class BlockManager {
 	public static void registerBlocks(RegistryEvent.Register<Block> event) {
 		final IForgeRegistry<Block> registry = event.getRegistry();
 		TheStuffExtension.log("Registering blocks...");
+		// TODO
 		registry.registerAll(exaltedDiamondOre, bloodDiamondOre, terraDiamondOre, copperOre, mortiumOre, tinOre,
 				toslotriumOre, vividiumOre, sphaleriteOre, silverOre, platinumOre, titaniumOre, galenaOre,
 				pentlanditeOre, skyIronOre, terriumOre, aluminumOre,
@@ -293,11 +337,15 @@ public class BlockManager {
 				copperBlock, steelBlock, terraDiamondBlock, exaltedDiamondBlock, bloodDiamondBlock, tinBlock,
 				tyionetiumBlock, bronzeBlock, brightflameBlock, brightsteelBlock, reforgedGoldBlock, magicBlock,
 				mithrilBlock, mortiumBlock, mysteriousBlock, mysticBlock, skyIronBlock, terriumBlock, toslotriumBlock,
-				vividiumBlock, sphaleriteBlock,
+				vividiumBlock, sphaleriteBlock, extranetiumBlock, silverBlock, platinumBlock, titaniumBlock, zincBlock,
+				brassBlock, leadBlock, nickelBlock, pewterBlock, aluminumBlock,
 
 				storeBox, superStoreBox, mysteriousBox, diamondStoreBox, whiteStone, whiteCobblestone,
 
-				purpleheartLog);
+				purpleheartLog, purpleheartPlanks
+
+		// padaukLog, paduakPlanks
+		);
 		TheStuffExtension.log("Registered blocks.");
 	}
 
@@ -318,13 +366,17 @@ public class BlockManager {
 				tinBlockItem, tyionetiumBlockItem, bronzeBlockItem, brightflameBlockItem, brightsteelBlockItem,
 				reforgedGoldBlockItem, magicBlockItem, mithrilBlockItem, mortiumBlockItem, mysteriousBlockItem,
 				mysticBlockItem, skyIronBlockItem, terriumBlockItem, toslotriumBlockItem, vividiumBlockItem,
-				sphaleriteBlockItem,
+				sphaleriteBlockItem, extranetiumBlockItem, silverBlockItem, platinumBlockItem, titaniumBlockItem, zincBlockItem,
+				brassBlockItem, leadBlockItem, nickelBlockItem, pewterBlockItem, aluminumBlockItem,
 
 				storeBoxItem, superStoreBoxItem, mysteriousBoxItem, diamondStoreBoxItem,
 
 				whiteStoneItem, whiteCobblestoneItem,
 
-				purpleheartLogItem);
+				purpleheartLogItem, purpleheartPlanksItem// ,
+
+		// padaukLogItem, padaukPlanksItem
+		);
 		TheStuffExtension.log("Registered ItemBlocks.");
 	}
 

@@ -31,7 +31,7 @@ public class TheStuffExtension
 	
 	public static void log(String message)
 	{
-		Console.print("[" + hms.format(date) + "] " + "[main/INFO] " + "[TSE]: " + message + "\n");
+		Console.print("[" + hms.format(date) + "] " + "[main/INFO] " + "[tse]: " + message + "\n");
 	}
     
     @EventHandler

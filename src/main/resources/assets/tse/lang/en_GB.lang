@@ -1,3 +1,5 @@
 item.aluminum_ingot.name=Aluminium Ingot
 
 tile.aluminum_ore.name=Aluminium Ore
+
+tile.aluminum_block.name=Aluminium Block

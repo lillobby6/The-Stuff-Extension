@@ -2,8 +2,8 @@
 {
   "modid": "tse",
   "name": "The Stuff Extension",
-  "description": "A mod adding tons of stuff!",
-  "version": "v1.0.8.0-1.12",
+  "description": "A mod that adds tons of cool stuff!",
+  "version": "v1.0.8.1-1.12",
   "mcversion": "${1.8}",
   "url": "https://minecraft.curseforge.com/projects/the-stuff-extension",
   "updateUrl": "",

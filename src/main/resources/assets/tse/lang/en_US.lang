@@ -69,7 +69,7 @@ item.copper_hoe.name=Copper Hoe
 item.copper_mattock.name=Copper Mattock
 item.copper_sword.name=Copper Sword
 
-item.copper_pickaxe.name=Copper Pickaxe
+item.bronze_pickaxe.name=Bronze Pickaxe
 item.bronze_axe.name=Bronze Axe
 item.bronze_shovel.name=Bronze Shovel
 item.bronze_hoe.name=Bronze Hoe
@@ -117,6 +117,13 @@ item.mithril_shovel.name=Mithril Shovel
 item.mithril_hoe.name=Mithril Hoe
 item.mithril_mattock.name=Mithril Mattock
 item.mithril_sword.name=Mithril Sword
+
+item.extranetium_pickaxe.name=Extranetium Pickaxe
+item.extranetium_axe.name=Extranetium Axe
+item.extranetium_shovel.name=Extranetium Shovel
+item.extranetium_hoe.name=Extranetium Hoe
+item.extranetium_mattock.name=Extranetium Mattock
+item.extranetium_sword.name=Extranetium Sword
 
 item.mortium_pickaxe.name=Mortium Pickaxe
 item.mortium_axe.name=Mortium Axe
@@ -166,6 +173,13 @@ item.mithril_shovel.name=Mithril Shovel
 item.mithril_hoe.name=Mithril Hoe
 item.mithril_mattock.name=Mithril Mattock
 item.mithril_sword.name=Mithril Sword
+
+item.steel_pickaxe.name=Steel Pickaxe
+item.steel_axe.name=Steel Axe
+item.steel_shovel.name=Steel Shovel
+item.steel_hoe.name=Steel Hoe
+item.steel_mattock.name=Steel Mattock
+item.steel_sword.name=Steel Sword
 
 item.wood_mattock.name=Wood Mattock
 item.stone_mattock.name=Stone Mattock
@@ -238,6 +252,7 @@ tile.platinum_ore.name=Platinum Ore
 tile.titanium_ore.name=Titanium Ore
 tile.galena_ore.name=Galena Ore
 tile.pentlandite_ore.name=Pentlandite Ore
+tile.aluminum_ore.name=Aluminum Ore
 
 tile.moon_sand.name=Moon Sand
 tile.moon_stone.name=Moon Stone
@@ -267,12 +282,22 @@ tile.mortium_block.name=Mortium Block
 tile.toslotrium_block.name=Toslotrium Block
 tile.magic_block.name=Magic Block
 tile.sphalerite_block.name=Sphalerite Block
-tile.aluminum_ore.name=Aluminum Ore
+tile.extranetium_block.name=Extranetium Block
+tile.silver_block.name=Silver Block
+tile.platinum_block.name=Platinum Block
+tile.titanium_block.name=Titanium Block
+tile.zinc_block.name=Zinc Block
+tile.brass_block.name=Brass Block
+tile.lead_block.name=Lead Block
+tile.nickel_block.name=Nickel Block
+tile.pewter_block.name=Pewter Block
+tile.aluminum_block.name=Aluminum Block
 
 tile.white_stone.name=White Stone
 tile.white_cobblestone.name=White Cobblestone
 
 tile.purpleheart_log.name=Purpleheart Log
+tile.purpleheart_planks.name=Purpleheart Planks
 
 tile.store_box.name=Store Box
 tile.super_store_box.name=Super Store Box

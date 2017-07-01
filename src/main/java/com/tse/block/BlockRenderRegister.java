@@ -64,11 +64,24 @@ public class BlockRenderRegister {
 		reg(BlockManager.magicBlock);
 		reg(BlockManager.copperBlock);
 		reg(BlockManager.sphaleriteBlock);
+		reg(BlockManager.extranetiumBlock);
+		reg(BlockManager.silverBlock);
+		reg(BlockManager.platinumBlock);
+		reg(BlockManager.titaniumBlock);
+		reg(BlockManager.zincBlock);
+		reg(BlockManager.brassBlock);
+		reg(BlockManager.leadBlock);
+		reg(BlockManager.nickelBlock);
+		reg(BlockManager.pewterBlock);
+		reg(BlockManager.aluminumBlock);
 		
 		reg(BlockManager.whiteStone);
 		reg(BlockManager.whiteCobblestone);
 		
 		reg(BlockManager.purpleheartLog);
+		reg(BlockManager.purpleheartPlanks);
+		
+		//reg(BlockManager.padaukLog);
 		TheStuffExtension.log("Rendered blocks.");
 	}
 	

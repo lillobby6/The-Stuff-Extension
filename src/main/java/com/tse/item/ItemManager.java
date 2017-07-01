@@ -240,6 +240,26 @@ public class ItemManager {
 	public static Item brightsteelHoe = registerHoe(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_hoe",
 			TSECreativeTabs.tabTools, 6);
 
+	public static Item extranetiumPickaxe = registerPickaxe(TSEToolMaterials.EXTRANETIUM, "extranetium_pickaxe",
+			TSECreativeTabs.tabTools, 8);
+	public static Item extranetiumAxe = registerAxe(TSEToolMaterials.EXTRANETIUM, "extranetium_axe",
+			TSECreativeTabs.tabTools, 8, 1F, 20F);
+	public static Item extranetiumMattock = registerMattock(-2.2F, TSEToolMaterials.EXTRANETIUM, "extranetium_mattock",
+			TSECreativeTabs.tabTools, 8);
+	public static Item extranetiumShovel = registerShovel(TSEToolMaterials.EXTRANETIUM, "extranetium_shovel",
+			TSECreativeTabs.tabTools, 8);
+	public static Item extranetiumHoe = registerHoe(TSEToolMaterials.EXTRANETIUM, "extranetium_hoe",
+			TSECreativeTabs.tabTools, 8);
+
+	public static Item steelPickaxe = registerPickaxe(TSEToolMaterials.STEEL, "steel_pickaxe", TSECreativeTabs.tabTools,
+			3);
+	public static Item steelAxe = registerAxe(TSEToolMaterials.STEEL, "steel_axe", TSECreativeTabs.tabTools, 3, 1F, 5F);
+	public static Item steelShovel = registerShovel(TSEToolMaterials.STEEL, "steel_shovel", TSECreativeTabs.tabTools,
+			3);
+	public static Item steelHoe = registerHoe(TSEToolMaterials.STEEL, "steel_hoe", TSECreativeTabs.tabTools, 3);
+	public static Item steelMattock = registerMattock(-2.2F, TSEToolMaterials.STEEL, "steel_mattock",
+			TSECreativeTabs.tabTools, 3);
+
 	// Others
 	public static Item woodMattock = registerMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools,
 			0);
@@ -284,6 +304,9 @@ public class ItemManager {
 			TSECreativeTabs.tabWeapons);
 	public static Item vividiumSword = registerSword(TSEToolMaterials.VIVIDIUM, "vividium_sword",
 			TSECreativeTabs.tabWeapons);
+	public static Item extranetiumSword = registerSword(TSEToolMaterials.EXTRANETIUM, "extranetium_sword",
+			TSECreativeTabs.tabWeapons);
+	public static Item steelSword = registerSword(TSEToolMaterials.STEEL, "steel_sword", TSECreativeTabs.tabWeapons);
 
 	public static Item justice = registerLightSword(ToolMaterial.DIAMOND, "justice", TSECreativeTabs.tabWeapons, true);
 	public static Item corruption = registerLightSword(ToolMaterial.DIAMOND, "corruption", TSECreativeTabs.tabWeapons,
@@ -467,19 +490,12 @@ public class ItemManager {
 				magicNugget, mysticNugget, mysteriousNugget, brightflameNugget, diamondNugget, bronzeNugget,
 				brassNugget, silverNugget, platinumNugget, titaniumNugget, steelNugget,
 
-				diamondToslotriumMixedIngot,
-
-				tyionetiumMithrilToslotriumMixedIngot,
-
-				mixedIngot,
-
-				reforgedGoldTyionetiumMixedIngot,
-
-				titaniumMysticMixedIngot,
+				diamondToslotriumMixedIngot, tyionetiumMithrilToslotriumMixedIngot, mixedIngot,
+				reforgedGoldTyionetiumMixedIngot, titaniumMysticMixedIngot,
 
 				justice, corruption,
 
-				bronzePickaxe, bronzeAxe, bronzeMattock, bronzeShovel, bronzeHoe, bronzeSword,
+				bronzePickaxe, bronzeAxe, bronzeShovel, bronzeHoe, bronzeMattock, bronzeSword,
 
 				copperPickaxe, copperAxe, copperShovel, copperHoe, copperMattock, copperSword,
 
@@ -493,39 +509,38 @@ public class ItemManager {
 
 				mithrilPickaxe, mithrilAxe, mithrilShovel, mithrilHoe, mithrilMattock, mithrilSword,
 
-				/*
-				 * extranetiumPickaxe, extranetiumAxe, extranetiumMattock,
-				 * extranetiumShovel, extranetiumHoe, extranetiumSword,
-				 */
+				extranetiumPickaxe, extranetiumAxe, extranetiumShovel, extranetiumHoe, extranetiumMattock,
+				extranetiumSword,
 
-				mortiumPickaxe, mortiumAxe, mortiumHoe, mortiumShovel, mortiumMattock, mortiumSword,
+				mortiumPickaxe, mortiumAxe, mortiumShovel, mortiumHoe, mortiumMattock, mortiumSword,
 
-				mysteriousPickaxe, mysteriousAxe, mysteriousHoe, mysteriousShovel, mysteriousMattock, mysteriousSword,
+				mysteriousPickaxe, mysteriousAxe, mysteriousShovel, mysteriousHoe, mysteriousMattock, mysteriousSword,
 
-				mysticPickaxe, mysticAxe, mysticHoe, mysticShovel, mysticMattock, mysticSword,
+				mysticPickaxe, mysticAxe, mysticShovel, mysticHoe, mysticMattock, mysticSword,
 
-				skyIronPickaxe, skyIronAxe, skyIronHoe, skyIronShovel, skyIronMattock, skyIronSword,
+				skyIronPickaxe, skyIronAxe, skyIronShovel, skyIronHoe, skyIronMattock, skyIronSword,
 
-				terriumPickaxe, terriumAxe, terriumHoe, terriumShovel, terriumMattock, terriumSword,
+				terriumPickaxe, terriumAxe, terriumShovel, terriumHoe, terriumMattock, terriumSword,
 
-				vividiumPickaxe, vividiumAxe, vividiumHoe, vividiumShovel, vividiumMattock, vividiumSword,
-
-				woodMattock, stoneMattock, ironMattock, diamondMattock, goldMattock,
-
-				lapisRemover,
-
-				copperHelmet, copperChestplate, copperLeggings, copperBoots,
+				vividiumPickaxe, vividiumAxe, vividiumShovel, vividiumHoe, vividiumMattock, vividiumSword,
 
 				terraDiamondPickaxe, terraDiamondAxe, terraDiamondShovel, terraDiamondHoe, terraDiamondMattock,
 				terraDiamondSword,
 
 				tyionetiumPickaxe, tyionetiumAxe, tyionetiumShovel, tyionetiumHoe, tyionetiumMattock, tyionetiumSword,
 
+				steelPickaxe, steelAxe, steelShovel, steelHoe, steelMattock, steelSword,
+
+				woodMattock, stoneMattock, ironMattock, diamondMattock, goldMattock,
+
+				lapisRemover,
+
 				/*
 				 * exaltedDiamondPickaxe, exaltedDiamondAxe,
 				 * exaltedDiamondShovel, exaltedDiamondHoe,
 				 * exaltedDiamondMattock, exaltedDiamondSword,
 				 */
+				copperHelmet, copperChestplate, copperLeggings, copperBoots,
 
 				terraDiamondHelmet, terraDiamondChestplate, terraDiamondLeggings, terraDiamondBoots,
 
