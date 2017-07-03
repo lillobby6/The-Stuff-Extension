@@ -281,6 +281,11 @@ item.terra_diamond_chestplate.name=Terra Diamond Chestplate
 item.terra_diamond_leggings.name=Terra Diamond Leggings
 item.terra_diamond_boots.name=Terra Diamond Boots
 
+item.steel_helmet.name=Steel Helmet
+item.steel_chestplate.name=Steel Chestplate
+item.steel_leggings.name=Steel Leggings
+item.steel_boots.name=Steel Boots
+
 item.lapis_remover.name=Lapis Lazuli Remover
 
 item.justice.name=Justice

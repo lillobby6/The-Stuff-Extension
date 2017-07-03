@@ -477,6 +477,11 @@ public class ItemManager {
 			EntityEquipmentSlot.LEGS);
 	public static Item mortiumBoots = registerArmor("mortium_boots", TSEArmorMaterials.MORTIUM, 1,
 			EntityEquipmentSlot.FEET);
+	
+	public static Item steelHelmet = registerArmor("steel_helmet", TSEArmorMaterials.STEEL, 1, EntityEquipmentSlot.HEAD);
+	public static Item steelChestplate = registerArmor("steel_chestplate", TSEArmorMaterials.STEEL, 1, EntityEquipmentSlot.CHEST);
+	public static Item steelLeggings = registerArmor("steel_leggings", TSEArmorMaterials.STEEL, 1, EntityEquipmentSlot.LEGS);
+	public static Item steelBoots = registerArmor("steel_boots", TSEArmorMaterials.STEEL, 1, EntityEquipmentSlot.FEET);
 
 	private static void registerItem(Item item, String registryName) {
 		item.setRegistryName(StringsLib.MODID, registryName);
@@ -661,7 +666,9 @@ public class ItemManager {
 
 				mithrilHelmet, mithrilChestplate, mithrilLeggings, mithrilBoots,
 
-				mortiumHelmet, mortiumChestplate, mortiumLeggings, mortiumBoots);
+				mortiumHelmet, mortiumChestplate, mortiumLeggings, mortiumBoots,
+				
+				steelHelmet, steelChestplate, steelLeggings, steelBoots);
 		TheStuffExtension.log("Registered Items");
 	}
 

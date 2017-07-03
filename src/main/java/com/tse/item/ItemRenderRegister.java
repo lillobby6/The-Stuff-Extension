@@ -299,6 +299,11 @@ public class ItemRenderRegister {
 	    reg(ItemManager.mortiumChestplate);
 	    reg(ItemManager.mortiumLeggings);
 	    reg(ItemManager.mortiumBoots);
+	    
+	    reg(ItemManager.steelHelmet);
+	    reg(ItemManager.steelChestplate);
+	    reg(ItemManager.steelLeggings);
+	    reg(ItemManager.steelBoots);
 	    TheStuffExtension.log("Rendered items.");
 	}
 	public static void reg(Item item)
