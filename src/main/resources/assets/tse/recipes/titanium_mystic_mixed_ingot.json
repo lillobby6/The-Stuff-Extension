@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "ore": "ingotTitantium", "type": "forge:ore_dict"
+            "ore": "ingotTitanium", "type": "forge:ore_dict"
         },
 		{
             "ore": "ingotMystic", "type": "forge:ore_dict"

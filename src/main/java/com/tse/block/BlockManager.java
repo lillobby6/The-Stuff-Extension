@@ -56,6 +56,11 @@ public class BlockManager {
 	public static Block moonStone = registerBlockNormal("moon_stone", 5.0F, 5.0F);
 	public static Block moonSand = registerBlockWithSound("moon_sand", 2.0F, 2.0F, SoundType.SAND);
 	public static Block moonTeleporter = registerBlockNormal("moon_teleporter", 5.0F, 5.0F);
+	
+	/*public static Block mysticStone = registerBlockNormal("mystic_stone", 5.0F, 5.0F);
+	public static Block mysticDirt = registerBlockNormal("mystic_dirt", 1.0F, 1.0F);
+	public static Block mysticLog = registerBlockNormal("mystic_log", 2.0F, 2.0F);
+	public static Block mysticPlanks = registerBlockNormal("mystic_planks", 2.0F, 2.0F);*/
 
 	public static Block lunaDiamondOre = registerOre("luna_diamond_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F,
 			TSECreativeTabs.tabOres);
@@ -105,7 +110,7 @@ public class BlockManager {
 
 	public static Block purpleheartLog = registerBlockNormal("purpleheart_log", 2.0F, 2.0F);
 	public static Block purpleheartPlanks = registerBlockNormal("purpleheart_planks", 2.0F, 2.0F);
-	public static Block purpleheartLeaves;
+	//public static Block purpleheartLeaves;
 
 	// public static Block padaukLog = registerBlockNormal("padauk_log", 2.0F,
 	// 2.0F);

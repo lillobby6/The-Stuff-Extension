@@ -3,9 +3,9 @@
     "item": "tse:copper_shovel"
   },
   "pattern": [
-    " x ",
-    " y ",
-    " y "
+    "x",
+    "y",
+    "y"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {

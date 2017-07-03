@@ -3,9 +3,9 @@
     "item": "tse:sky_iron_shovel"
   },
   "pattern": [
-    " x ",
-    " y ",
-    " y "
+    "x",
+    "y",
+    "y"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {

@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:extranetium_ingot"
+        },
+		{
+            "item": "tse:extranetium_ingot"
+        },
+		{
+            "item": "tse:extranetium_ingot"
+        },
+		{
+            "item": "tse:extranetium_ingot"
+        },
+		{
+            "item": "tse:extranetium_ingot"
+        },
+		{
+            "item": "tse:extranetium_ingot"
+        },
+		{
+            "item": "tse:extranetium_ingot"
+        },
+		{
+            "item": "tse:extranetium_ingot"
+        },
+		{
+            "item": "tse:extranetium_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:extranetium_block"
+    }
+}

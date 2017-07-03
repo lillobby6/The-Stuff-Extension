@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:brass_ingot"
+        },
+		{
+            "item": "tse:brass_ingot"
+        },
+		{
+            "item": "tse:brass_ingot"
+        },
+		{
+            "item": "tse:brass_ingot"
+        },
+		{
+            "item": "tse:brass_ingot"
+        },
+		{
+            "item": "tse:brass_ingot"
+        },
+		{
+            "item": "tse:brass_ingot"
+        },
+		{
+            "item": "tse:brass_ingot"
+        },
+		{
+            "item": "tse:brass_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:brass_block"
+    }
+}

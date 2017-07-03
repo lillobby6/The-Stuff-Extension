@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:pewter_ingot"
+        },
+		{
+            "item": "tse:pewter_ingot"
+        },
+		{
+            "item": "tse:pewter_ingot"
+        },
+		{
+            "item": "tse:pewter_ingot"
+        },
+		{
+            "item": "tse:pewter_ingot"
+        },
+		{
+            "item": "tse:pewter_ingot"
+        },
+		{
+            "item": "tse:pewter_ingot"
+        },
+		{
+            "item": "tse:pewter_ingot"
+        },
+		{
+            "item": "tse:pewter_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:pewter_block"
+    }
+}

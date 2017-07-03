@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:lead_ingot"
+        },
+		{
+            "item": "tse:lead_ingot"
+        },
+		{
+            "item": "tse:lead_ingot"
+        },
+		{
+            "item": "tse:lead_ingot"
+        },
+		{
+            "item": "tse:lead_ingot"
+        },
+		{
+            "item": "tse:lead_ingot"
+        },
+		{
+            "item": "tse:lead_ingot"
+        },
+		{
+            "item": "tse:lead_ingot"
+        },
+		{
+            "item": "tse:lead_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:lead_block"
+    }
+}

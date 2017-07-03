@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:platinum_axe"
+  },
+  "pattern": [
+    "xx",
+    "xy",
+    " y"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:platinum_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

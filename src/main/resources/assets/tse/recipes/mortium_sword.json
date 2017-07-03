@@ -3,9 +3,9 @@
     "item": "tse:mortium_sword"
   },
   "pattern": [
-    " x ",
-    " x ",
-    " y "
+    "x",
+    "x",
+    "y"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {

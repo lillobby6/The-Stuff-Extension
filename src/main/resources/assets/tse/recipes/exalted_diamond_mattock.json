@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:exalted_diamond_mattock"
+  },
+  "pattern": [
+    "xxx",
+    " yx",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:exalted_diamond"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

@@ -181,6 +181,55 @@ item.steel_hoe.name=Steel Hoe
 item.steel_mattock.name=Steel Mattock
 item.steel_sword.name=Steel Sword
 
+item.titanium_pickaxe.name=Titanium Pickaxe
+item.titanium_axe.name=Titanium Axe
+item.titanium_shovel.name=Titanium Shovel
+item.titanium_hoe.name=Titanium Hoe
+item.titanium_mattock.name=Titanium Mattock
+item.titanium_sword.name=Titanium Sword
+
+item.silver_pickaxe.name=Silver Pickaxe
+item.silver_axe.name=Silver Axe
+item.silver_shovel.name=Silver Shovel
+item.silver_hoe.name=Silver Hoe
+item.silver_mattock.name=Silver Mattock
+item.silver_sword.name=Silver Sword
+
+item.exalted_diamond_pickaxe.name=Exalted Diamond Pickaxe
+item.exalted_diamond_axe.name=Exalted Diamond Axe
+item.exalted_diamond_shovel.name=Exalted Diamond Shovel
+item.exalted_diamond_hoe.name=Exalted Diamond Hoe
+item.exalted_diamond_mattock.name=Exalted Diamond Mattock
+item.exalted_diamond_sword.name=Exalted Diamond Sword
+
+item.blood_diamond_pickaxe.name=Blood Diamond Pickaxe
+item.blood_diamond_axe.name=Blood Diamond Axe
+item.blood_diamond_shovel.name=Blood Diamond Shovel
+item.blood_diamond_hoe.name=Blood Diamond Hoe
+item.blood_diamond_mattock.name=Blood Diamond Mattock
+item.blood_diamond_sword.name=Blood Diamond Sword
+
+item.platinum_pickaxe.name=Platinum Pickaxe
+item.platinum_axe.name=Platinum Axe
+item.platinum_shovel.name=Platinum Shovel
+item.platinum_hoe.name=Platinum Hoe
+item.platinum_mattock.name=Platinum Mattock
+item.platinum_sword.name=Platinum Sword
+
+item.tin_pickaxe.name=Tin Pickaxe
+item.tin_axe.name=Tin Axe
+item.tin_shovel.name=Tin Shovel
+item.tin_hoe.name=Tin Hoe
+item.tin_mattock.name=Tin Mattock
+item.tin_sword.name=Tin Sword
+
+item.pewter_pickaxe.name=Pewter Pickaxe
+item.pewter_axe.name=Pewter Axe
+item.pewter_shovel.name=Pewter Shovel
+item.pewter_hoe.name=Pewter Hoe
+item.pewter_mattock.name=Pewter Mattock
+item.pewter_sword.name=Pewter Sword
+
 item.wood_mattock.name=Wood Mattock
 item.stone_mattock.name=Stone Mattock
 item.iron_mattock.name=Iron Mattock

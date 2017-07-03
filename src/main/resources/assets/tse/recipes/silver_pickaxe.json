@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:silver_pickaxe"
+  },
+  "pattern": [
+    "xxx",
+    " y ",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:silver_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

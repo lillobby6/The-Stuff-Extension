@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:blood_diamond_pickaxe"
+  },
+  "pattern": [
+    "xxx",
+    " y ",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:blood_diamond"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

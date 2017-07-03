@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:platinum_mattock"
+  },
+  "pattern": [
+    "xxx",
+    " yx",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:platinum_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

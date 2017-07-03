@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:silver_axe"
+  },
+  "pattern": [
+    "xx",
+    "xy",
+    " y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:silver_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

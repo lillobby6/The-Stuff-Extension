@@ -260,6 +260,76 @@ public class ItemManager {
 	public static Item steelMattock = registerMattock(-2.2F, TSEToolMaterials.STEEL, "steel_mattock",
 			TSECreativeTabs.tabTools, 3);
 
+	public static Item titaniumPickaxe = registerPickaxe(TSEToolMaterials.TITANIUM, "titanium_pickaxe",
+			TSECreativeTabs.tabTools, 3);
+	public static Item titaniumAxe = registerAxe(TSEToolMaterials.TITANIUM, "titanium_axe", TSECreativeTabs.tabTools, 3,
+			1F, 6F);
+	public static Item titaniumShovel = registerShovel(TSEToolMaterials.TITANIUM, "titanium_shovel",
+			TSECreativeTabs.tabTools, 3);
+	public static Item titaniumHoe = registerHoe(TSEToolMaterials.TITANIUM, "titanium_hoe", TSECreativeTabs.tabTools,
+			3);
+	public static Item titaniumMattock = registerMattock(-2.2F, TSEToolMaterials.TITANIUM, "titanium_mattock",
+			TSECreativeTabs.tabTools, 3);
+
+	public static Item silverPickaxe = registerPickaxe(TSEToolMaterials.SILVER, "silver_pickaxe",
+			TSECreativeTabs.tabTools, 0);
+	public static Item silverAxe = registerAxe(TSEToolMaterials.SILVER, "silver_axe", TSECreativeTabs.tabTools, 0, 1F,
+			1F);
+	public static Item silverShovel = registerShovel(TSEToolMaterials.SILVER, "silver_shovel", TSECreativeTabs.tabTools,
+			0);
+	public static Item silverHoe = registerHoe(TSEToolMaterials.SILVER, "silver_hoe", TSECreativeTabs.tabTools, 0);
+	public static Item silverMattock = registerMattock(-2.2F, TSEToolMaterials.SILVER, "silver_mattock",
+			TSECreativeTabs.tabTools, 0);
+
+	public static Item exaltedDiamondPickaxe = registerPickaxe(TSEToolMaterials.EDIAMOND, "exalted_diamond_pickaxe",
+			TSECreativeTabs.tabTools, 4);
+	public static Item exaltedDiamondAxe = registerAxe(TSEToolMaterials.EDIAMOND, "exalted_diamond_axe",
+			TSECreativeTabs.tabTools, 4, 1F, 6F);
+	public static Item exaltedDiamondShovel = registerShovel(TSEToolMaterials.EDIAMOND, "exalted_diamond_shovel",
+			TSECreativeTabs.tabTools, 4);
+	public static Item exaltedDiamondHoe = registerHoe(TSEToolMaterials.EDIAMOND, "exalted_diamond_hoe",
+			TSECreativeTabs.tabTools, 4);
+	public static Item exaltedDiamondMattock = registerMattock(TSEToolMaterials.EDIAMOND, "exalted_diamond_mattock",
+			TSECreativeTabs.tabTools, 4);
+
+	public static Item bloodDiamondPickaxe = registerPickaxe(TSEToolMaterials.BDIAMOND, "blood_diamond_pickaxe",
+			TSECreativeTabs.tabTools, 4);
+	public static Item bloodDiamondAxe = registerAxe(TSEToolMaterials.BDIAMOND, "blood_diamond_axe",
+			TSECreativeTabs.tabTools, 4, 4F);
+	public static Item bloodDiamondShovel = registerShovel(TSEToolMaterials.BDIAMOND, "blood_diamond_shovel",
+			TSECreativeTabs.tabTools, 4);
+	public static Item bloodDiamondHoe = registerHoe(TSEToolMaterials.BDIAMOND, "blood_diamond_hoe",
+			TSECreativeTabs.tabTools, 4);
+	public static Item bloodDiamondMattock = registerMattock(TSEToolMaterials.BDIAMOND, "blood_diamond_mattock",
+			TSECreativeTabs.tabTools, 4);
+
+	public static Item platinumPickaxe = registerPickaxe(TSEToolMaterials.PLATINUM, "platinum_pickaxe",
+			TSECreativeTabs.tabTools, 0);
+	public static Item platinumAxe = registerAxe(TSEToolMaterials.PLATINUM, "platinum_axe", TSECreativeTabs.tabTools, 0,
+			2F);
+	public static Item platinumShovel = registerShovel(TSEToolMaterials.PLATINUM, "platinum_shovel",
+			TSECreativeTabs.tabTools, 0);
+	public static Item platinumHoe = registerHoe(TSEToolMaterials.PLATINUM, "platinum_hoe", TSECreativeTabs.tabTools,
+			0);
+	public static Item platinumMattock = registerMattock(TSEToolMaterials.PLATINUM, "platinum_mattock",
+			TSECreativeTabs.tabTools, 0);
+
+	public static Item tinPickaxe = registerPickaxe(TSEToolMaterials.TIN, "tin_pickaxe", TSECreativeTabs.tabTools, 1);
+	public static Item tinAxe = registerAxe(TSEToolMaterials.TIN, "tin_axe", TSECreativeTabs.tabTools, 1, 1F);
+	public static Item tinShovel = registerShovel(TSEToolMaterials.TIN, "tin_shovel", TSECreativeTabs.tabTools, 1);
+	public static Item tinHoe = registerHoe(TSEToolMaterials.TIN, "tin_hoe", TSECreativeTabs.tabTools, 1);
+	public static Item tinMattock = registerMattock(TSEToolMaterials.TIN, "tin_mattock", TSECreativeTabs.tabTools, 1);
+
+	public static Item pewterPickaxe = registerPickaxe(TSEToolMaterials.PEWTER, "pewter_pickaxe",
+			TSECreativeTabs.tabTools, 3);
+	public static Item pewterAxe = registerAxe(TSEToolMaterials.PEWTER, "pewter_axe", TSECreativeTabs.tabTools, 3,
+			3.0F);
+	public static Item pewterShovel = registerShovel(TSEToolMaterials.PEWTER, "pewter_shovel", TSECreativeTabs.tabTools,
+			3);
+	public static Item pewterHoe = registerHoe(TSEToolMaterials.PEWTER, "pewter_hoe", TSECreativeTabs.tabTools, 3);
+	public static Item pewterMattock = registerMattock(TSEToolMaterials.PEWTER, "pewter_mattock",
+			TSECreativeTabs.tabTools, 3);
+
 	// Others
 	public static Item woodMattock = registerMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools,
 			0);
@@ -307,6 +377,17 @@ public class ItemManager {
 	public static Item extranetiumSword = registerSword(TSEToolMaterials.EXTRANETIUM, "extranetium_sword",
 			TSECreativeTabs.tabWeapons);
 	public static Item steelSword = registerSword(TSEToolMaterials.STEEL, "steel_sword", TSECreativeTabs.tabWeapons);
+	public static Item titaniumSword = registerSword(TSEToolMaterials.TITANIUM, "titanium_sword",
+			TSECreativeTabs.tabWeapons);
+	public static Item silverSword = registerSword(TSEToolMaterials.SILVER, "silver_sword", TSECreativeTabs.tabWeapons);
+	public static Item exaltedDiamondSword = registerSword(TSEToolMaterials.EDIAMOND, "exalted_diamond_sword",
+			TSECreativeTabs.tabWeapons);
+	public static Item bloodDiamondSword = registerSword(TSEToolMaterials.BDIAMOND, "blood_diamond_sword",
+			TSECreativeTabs.tabWeapons);
+	public static Item platinumSword = registerSword(TSEToolMaterials.PLATINUM, "platinum_sword",
+			TSECreativeTabs.tabWeapons);
+	public static Item tinSword = registerSword(TSEToolMaterials.TIN, "tin_sword", TSECreativeTabs.tabWeapons);
+	public static Item pewterSword = registerSword(TSEToolMaterials.PEWTER, "pewter_sword", TSECreativeTabs.tabWeapons);
 
 	public static Item justice = registerLightSword(ToolMaterial.DIAMOND, "justice", TSECreativeTabs.tabWeapons, true);
 	public static Item corruption = registerLightSword(ToolMaterial.DIAMOND, "corruption", TSECreativeTabs.tabWeapons,
@@ -432,14 +513,27 @@ public class ItemManager {
 
 	public static Item registerAxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel,
 			float attackSpeed, float damage) {
-		final Item item = new TSEAxe(mat, attackSpeed, damage, tab, harvestLevel, registryName);
+		final Item item = new TSEAxe(mat, damage, -1F, tab, harvestLevel, registryName);
+		registerItem(item, registryName);
+		return item;
+	}
+
+	public static Item registerAxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel,
+			float damage) {
+		final Item item = new TSEAxe(mat, damage, -1F, tab, harvestLevel, registryName);
 		registerItem(item, registryName);
 		return item;
 	}
 
 	public static Item registerMattock(float attackSpeed, ToolMaterial mat, String registryName, CreativeTabs tab,
 			int harvestLevel) {
-		final Item item = new TSEMattock(attackSpeed, mat, harvestLevel, registryName, tab);
+		final Item item = new TSEMattock(-2.2F, mat, harvestLevel, registryName, tab);
+		registerItem(item, registryName);
+		return item;
+	}
+
+	public static Item registerMattock(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel) {
+		final Item item = new TSEMattock(-2.2F, mat, harvestLevel, registryName, tab);
 		registerItem(item, registryName);
 		return item;
 	}
@@ -531,15 +625,26 @@ public class ItemManager {
 
 				steelPickaxe, steelAxe, steelShovel, steelHoe, steelMattock, steelSword,
 
+				titaniumPickaxe, titaniumAxe, titaniumShovel, titaniumHoe, titaniumMattock, titaniumSword,
+
+				silverPickaxe, silverAxe, silverShovel, silverHoe, silverMattock, silverSword,
+
+				exaltedDiamondPickaxe, exaltedDiamondAxe, exaltedDiamondShovel, exaltedDiamondHoe,
+				exaltedDiamondMattock, exaltedDiamondSword,
+
+				bloodDiamondPickaxe, bloodDiamondAxe, bloodDiamondShovel, bloodDiamondHoe, bloodDiamondMattock,
+				bloodDiamondSword,
+
+				platinumPickaxe, platinumAxe, platinumShovel, platinumHoe, platinumMattock, platinumSword,
+				
+				tinPickaxe, tinAxe, tinShovel, tinHoe, tinMattock, tinSword,
+				
+				pewterPickaxe, pewterAxe, pewterShovel, pewterHoe, pewterMattock, pewterSword,
+
 				woodMattock, stoneMattock, ironMattock, diamondMattock, goldMattock,
 
 				lapisRemover,
 
-				/*
-				 * exaltedDiamondPickaxe, exaltedDiamondAxe,
-				 * exaltedDiamondShovel, exaltedDiamondHoe,
-				 * exaltedDiamondMattock, exaltedDiamondSword,
-				 */
 				copperHelmet, copperChestplate, copperLeggings, copperBoots,
 
 				terraDiamondHelmet, terraDiamondChestplate, terraDiamondLeggings, terraDiamondBoots,

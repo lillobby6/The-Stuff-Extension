@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{
+            "item": "tse:nickel_block"
+        }
+    ],
+    "result": {
+        "item": "tse:nickel_ingot", "count": 9
+    }
+}

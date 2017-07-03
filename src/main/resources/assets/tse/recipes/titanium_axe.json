@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:titanium_axe"
+  },
+  "pattern": [
+    "xx",
+    "xy",
+    " y"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:titanium_ingot"
+    },
+    "y": {
+      "item": "tse:brass_rod"
+    }
+  }
+}

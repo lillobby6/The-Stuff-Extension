@@ -3,9 +3,9 @@
     "item": "tse:vividium_sword"
   },
   "pattern": [
-    " x ",
-    " x ",
-    " y "
+    "x",
+    "x",
+    "y"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {

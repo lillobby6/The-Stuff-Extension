@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:titanium_shovel"
+  },
+  "pattern": [
+    "x",
+    "y",
+    "y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:titanium_ingot"
+    },
+    "y": {
+      "item": "tse:brass_rod"
+    }
+  }
+}

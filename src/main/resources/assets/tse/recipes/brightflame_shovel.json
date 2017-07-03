@@ -3,9 +3,9 @@
     "item": "tse:brightflame_shovel"
   },
   "pattern": [
-    " x ",
-    " y ",
-    " y "
+    "x",
+    "y",
+    "y"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {

@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:exalted_diamond_hoe"
+  },
+  "pattern": [
+    "xx",
+    " y",
+    " y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:exalted_diamond"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

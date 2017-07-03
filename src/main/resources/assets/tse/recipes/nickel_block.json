@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:nickel_ingot"
+        },
+		{
+            "item": "tse:nickel_ingot"
+        },
+		{
+            "item": "tse:nickel_ingot"
+        },
+		{
+            "item": "tse:nickel_ingot"
+        },
+		{
+            "item": "tse:nickel_ingot"
+        },
+		{
+            "item": "tse:nickel_ingot"
+        },
+		{
+            "item": "tse:nickel_ingot"
+        },
+		{
+            "item": "tse:nickel_ingot"
+        },
+		{
+            "item": "tse:nickel_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:nickel_block"
+    }
+}

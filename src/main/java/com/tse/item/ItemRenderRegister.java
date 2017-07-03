@@ -209,6 +209,55 @@ public class ItemRenderRegister {
 	    reg(ItemManager.steelMattock);
 	    reg(ItemManager.steelSword);
 	    
+	    reg(ItemManager.silverPickaxe);
+	    reg(ItemManager.silverAxe);
+	    reg(ItemManager.silverShovel);
+	    reg(ItemManager.silverHoe);
+	    reg(ItemManager.silverMattock);
+	    reg(ItemManager.silverSword);
+	    
+	    reg(ItemManager.exaltedDiamondPickaxe);
+	    reg(ItemManager.exaltedDiamondAxe);
+	    reg(ItemManager.exaltedDiamondShovel);
+	    reg(ItemManager.exaltedDiamondHoe);
+	    reg(ItemManager.exaltedDiamondMattock);
+	    reg(ItemManager.exaltedDiamondSword);
+	    
+	    reg(ItemManager.bloodDiamondPickaxe);
+	    reg(ItemManager.bloodDiamondAxe);
+	    reg(ItemManager.bloodDiamondShovel);
+	    reg(ItemManager.bloodDiamondHoe);
+	    reg(ItemManager.bloodDiamondMattock);
+	    reg(ItemManager.bloodDiamondSword);
+	    
+	    reg(ItemManager.platinumPickaxe);
+	    reg(ItemManager.platinumAxe);
+	    reg(ItemManager.platinumShovel);
+	    reg(ItemManager.platinumHoe);
+	    reg(ItemManager.platinumMattock);
+	    reg(ItemManager.platinumSword);
+	    
+	    reg(ItemManager.tinPickaxe);
+	    reg(ItemManager.tinAxe);
+	    reg(ItemManager.tinShovel);
+	    reg(ItemManager.tinHoe);
+	    reg(ItemManager.tinMattock);
+	    reg(ItemManager.tinSword);
+	    
+	    reg(ItemManager.pewterPickaxe);
+	    reg(ItemManager.pewterAxe);
+	    reg(ItemManager.pewterShovel);
+	    reg(ItemManager.pewterHoe);
+	    reg(ItemManager.pewterMattock);
+	    reg(ItemManager.pewterSword);
+	    
+	    reg(ItemManager.titaniumPickaxe);
+	    reg(ItemManager.titaniumAxe);
+	    reg(ItemManager.titaniumShovel);
+	    reg(ItemManager.titaniumHoe);
+	    reg(ItemManager.titaniumMattock);
+	    reg(ItemManager.titaniumSword);
+	    
 	    reg(ItemManager.magicNugget);
 	    reg(ItemManager.mixedIngot);
 	    reg(ItemManager.mysticNugget);
