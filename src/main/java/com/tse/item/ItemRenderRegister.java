@@ -266,6 +266,13 @@ public class ItemRenderRegister {
 	    reg(ItemManager.titaniumMattock);
 	    reg(ItemManager.titaniumSword);
 	    
+	    reg(ItemManager.aluminumPickaxe);
+	    reg(ItemManager.aluminumAxe);
+	    reg(ItemManager.aluminumShovel);
+	    reg(ItemManager.aluminumHoe);
+	    reg(ItemManager.aluminumMattock);
+	    reg(ItemManager.aluminumSword);
+	    
 	    reg(ItemManager.magicNugget);
 	    reg(ItemManager.mixedIngot);
 	    reg(ItemManager.mysticNugget);
@@ -282,6 +289,7 @@ public class ItemRenderRegister {
 	    reg(ItemManager.tyionetiumMithrilToslotriumMixedIngot);
 	    reg(ItemManager.reforgedGoldTyionetiumMixedIngot);
 	    reg(ItemManager.titaniumMysticMixedIngot);
+	    reg(ItemManager.titaniumExtranetiumMixedIngot);
 	    
 	    reg(ItemManager.brightsteelHelmet);
 	    reg(ItemManager.brightsteelChestplate);

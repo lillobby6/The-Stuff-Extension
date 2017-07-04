@@ -32,6 +32,7 @@ item.mixed_ingot.name=Mixed Ingot
 item.tyionetium_mithril_toslotrium_mixed_ingot.name=Tyionetium/Mithril/Toslotrium Mixed Ingot
 item.reforged_gold_tyionetium_mixed_ingot.name=Reforged Gold/Tyionetium Mixed Ingot
 item.titanium_mystic_mixed_ingot.name=Titanium/Mystic Mixed Ingot
+item.titanium_extranetium_mixed_ingot.name=Titanium/Extranetium Mixed Ingot
 
 item.copper_ingot.name=Copper Ingot
 item.steel_ingot.name=Steel Ingot
@@ -230,6 +231,20 @@ item.pewter_shovel.name=Pewter Shovel
 item.pewter_hoe.name=Pewter Hoe
 item.pewter_mattock.name=Pewter Mattock
 item.pewter_sword.name=Pewter Sword
+
+item.mnemium_pickaxe.name=Mnemium Pickaxe
+item.mnemium_axe.name=Mnemium Axe
+item.mnemium_shovel.name=Mnemium Shovel
+item.mnemium_hoe.name=Mnemium Hoe
+item.mnemium_mattock.name=Mnemium Mattock
+item.mnemium_sword.name=Mnemium Sword
+
+item.aluminum_pickaxe.name=Aluminum Pickaxe
+item.aluminum_axe.name=Aluminum Axe
+item.aluminum_shovel.name=Aluminum Shovel
+item.aluminum_hoe.name=Aluminum Hoe
+item.aluminum_mattock.name=Aluminum Mattock
+item.aluminum_sword.name=Aluminum Sword
 
 item.wood_mattock.name=Wood Mattock
 item.stone_mattock.name=Stone Mattock

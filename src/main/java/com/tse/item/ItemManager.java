@@ -88,6 +88,7 @@ public class ItemManager {
 			TSECreativeTabs.tabMaterials);
 	public static Item titaniumMysticMixedIngot = registerMainItem("titanium_mystic_mixed_ingot",
 			TSECreativeTabs.tabMaterials);
+	public static Item titaniumExtranetiumMixedIngot = registerMainItem("titanium_extranetium_mixed_ingot", TSECreativeTabs.tabMaterials);
 	// End Materials
 
 	// Start Tools
@@ -641,7 +642,7 @@ public class ItemManager {
 				brassNugget, silverNugget, platinumNugget, titaniumNugget, steelNugget,
 
 				diamondToslotriumMixedIngot, tyionetiumMithrilToslotriumMixedIngot, mixedIngot,
-				reforgedGoldTyionetiumMixedIngot, titaniumMysticMixedIngot,
+				reforgedGoldTyionetiumMixedIngot, titaniumMysticMixedIngot, titaniumExtranetiumMixedIngot,
 
 				justice, corruption,
 

@@ -348,7 +348,7 @@ public class BlockManager {
 				tyionetiumBlock, bronzeBlock, brightflameBlock, brightsteelBlock, reforgedGoldBlock, magicBlock,
 				mithrilBlock, mortiumBlock, mysteriousBlock, mysticBlock, skyIronBlock, terriumBlock, toslotriumBlock,
 				vividiumBlock, sphaleriteBlock, extranetiumBlock, silverBlock, platinumBlock, titaniumBlock, zincBlock,
-				brassBlock, leadBlock, nickelBlock, pewterBlock, aluminumBlock,
+				brassBlock, leadBlock, nickelBlock, pewterBlock, aluminumBlock, mnemiumBlock,
 
 				storeBox, superStoreBox, mysteriousBox, diamondStoreBox, whiteStone, whiteCobblestone,
 
@@ -378,6 +378,7 @@ public class BlockManager {
 				mysticBlockItem, skyIronBlockItem, terriumBlockItem, toslotriumBlockItem, vividiumBlockItem,
 				sphaleriteBlockItem, extranetiumBlockItem, silverBlockItem, platinumBlockItem, titaniumBlockItem,
 				zincBlockItem, brassBlockItem, leadBlockItem, nickelBlockItem, pewterBlockItem, aluminumBlockItem,
+				mnemiumBlockItem,
 
 				storeBoxItem, superStoreBoxItem, mysteriousBoxItem, diamondStoreBoxItem,
 

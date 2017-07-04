@@ -1,5 +1,12 @@
 item.aluminum_ingot.name=Aluminium Ingot
 
+item.aluminum_pickaxe.name=Aluminium Pickaxe
+item.aluminum_axe.name=Aluminium Axe
+item.aluminum_shovel.name=Aluminium Shovel
+item.aluminum_hoe.name=Aluminium Hoe
+item.aluminum_mattock.name=Aluminium Mattock
+item.aluminum_sword.name=Aluminium Sword
+
 tile.aluminum_ore.name=Aluminium Ore
 
 tile.aluminum_block.name=Aluminium Block

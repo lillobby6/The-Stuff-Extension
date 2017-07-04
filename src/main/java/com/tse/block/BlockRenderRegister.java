@@ -74,6 +74,7 @@ public class BlockRenderRegister {
 		reg(BlockManager.nickelBlock);
 		reg(BlockManager.pewterBlock);
 		reg(BlockManager.aluminumBlock);
+		reg(BlockManager.mnemiumBlock);
 		
 		reg(BlockManager.whiteStone);
 		reg(BlockManager.whiteCobblestone);

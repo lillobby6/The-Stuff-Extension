@@ -41,6 +41,7 @@ public class Smelting {
 		GameRegistry.addSmelting(ItemManager.tyionetiumMithrilToslotriumMixedIngot, new ItemStack(ItemManager.extranetiumIngot), 0.5F);
 		GameRegistry.addSmelting(ItemManager.reforgedGoldTyionetiumMixedIngot, new ItemStack(ItemManager.mysteriousIngot), 0.3F);
 		GameRegistry.addSmelting(ItemManager.titaniumMysticMixedIngot, new ItemStack(ItemManager.magicIngot), 0.4F);
+		GameRegistry.addSmelting(ItemManager.titaniumExtranetiumMixedIngot, new ItemStack(ItemManager.mnemiumIngot), 0.8F);
 		
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.moonIronOre), new ItemStack(Items.IRON_INGOT), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.lunaDiamondOre), new ItemStack(ItemManager.lunaDiamond), 0.1F);
