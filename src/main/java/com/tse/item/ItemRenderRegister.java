@@ -90,6 +90,13 @@ public class ItemRenderRegister {
 	    reg(ItemManager.tyionetiumMattock);
 	    reg(ItemManager.tyionetiumSword);
 	    
+	    reg(ItemManager.mnemiumPickaxe);
+	    reg(ItemManager.mnemiumAxe);
+	    reg(ItemManager.mnemiumShovel);
+	    reg(ItemManager.mnemiumHoe);
+	    reg(ItemManager.mnemiumMattock);
+	    reg(ItemManager.mnemiumSword);
+	    
 	    reg(ItemManager.bronzeIngot);
 	    reg(ItemManager.brightflameIngot);
 	    reg(ItemManager.brightsteelIngot);
@@ -320,6 +327,11 @@ public class ItemRenderRegister {
 	    reg(ItemManager.mysteriousChestplate);
 	    reg(ItemManager.mysteriousLeggings);
 	    reg(ItemManager.mysteriousBoots);
+	    
+	    reg(ItemManager.mysticHelmet);
+	    reg(ItemManager.mysticChestplate);
+	    reg(ItemManager.mysticLeggings);
+	    reg(ItemManager.mysticBoots);
 	    TheStuffExtension.log("Rendered items.");
 	}
 	public static void reg(Item item)

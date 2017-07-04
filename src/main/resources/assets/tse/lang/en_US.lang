@@ -302,6 +302,11 @@ item.mysterious_chestplate.name=Mysterious Chestplate
 item.mysterious_leggings.name=Mysterious Leggings
 item.mysterious_boots.name=Mysterious Boots
 
+item.mystic_helmet.name=Mystic Helmet
+item.mystic_chestplate.name=Mystic Chestplate
+item.mystic_leggings.name=Mystic Leggings
+item.mystic_boots.name=Mystic Boots
+
 item.lapis_remover.name=Lapis Lazuli Remover
 
 item.justice.name=Justice

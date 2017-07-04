@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:mnemium_axe"
+  },
+  "pattern": [
+    "xx",
+    "xy",
+    " y"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:mnemium_ingot"
+    },
+    "y": {
+      "item": "tse:titanium_rod"
+    }
+  }
+}

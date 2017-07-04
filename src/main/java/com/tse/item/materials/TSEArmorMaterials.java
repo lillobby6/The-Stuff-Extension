@@ -19,6 +19,7 @@ public class TSEArmorMaterials {
 	public static final ArmorMaterial BRONZE = EnumHelper.addArmorMaterial("BRONZE", "tse:bronze", 25, new int[] {3, 5, 6, 3}, 5, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F);
 	public static final ArmorMaterial MAGIC = EnumHelper.addArmorMaterial("MAGIC", "tse:magic", 45, new int[] {6, 9, 7, 5}, 40, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F);
 	public static final ArmorMaterial MITHRIL = EnumHelper.addArmorMaterial("MITHRIL", "tse:mithril", 65, new int[] {7, 10, 8, 6}, 60, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0F);
+	public static final ArmorMaterial MYSTIC = EnumHelper.addArmorMaterial("MYTIC", "tse:mystic", 40, new int[] {5, 8, 6, 3}, 45, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.5F);
 	public static final ArmorMaterial MORTIUM = EnumHelper.addArmorMaterial("MORTIUM", "tse:mortium", 45, new int[] {6, 8, 7, 4}, 40, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 4.0F);
 	public static final ArmorMaterial MYSTERIOUS = EnumHelper.addArmorMaterial("MYSTERIOUS", "tse:mysterious", 53, new int[] {7, 8, 8, 5}, 50, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 4.5F);
 	public static final ArmorMaterial STEEL = EnumHelper.addArmorMaterial("STEEL", "tse:steel", 23, new int[] {3,  6,  7,  3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.5F);

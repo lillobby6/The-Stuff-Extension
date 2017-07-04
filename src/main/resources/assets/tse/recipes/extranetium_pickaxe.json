@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:extranetium_pickaxe"
+  },
+  "pattern": [
+    "xxx",
+    " y ",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:extranetium_ingot"
+    },
+    "y": {
+      "item": "tse:titanium_rod"
+    }
+  }
+}

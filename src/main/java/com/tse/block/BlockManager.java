@@ -56,11 +56,14 @@ public class BlockManager {
 	public static Block moonStone = registerBlockNormal("moon_stone", 5.0F, 5.0F);
 	public static Block moonSand = registerBlockWithSound("moon_sand", 2.0F, 2.0F, SoundType.SAND);
 	public static Block moonTeleporter = registerBlockNormal("moon_teleporter", 5.0F, 5.0F);
-	
-	/*public static Block mysticStone = registerBlockNormal("mystic_stone", 5.0F, 5.0F);
-	public static Block mysticDirt = registerBlockNormal("mystic_dirt", 1.0F, 1.0F);
-	public static Block mysticLog = registerBlockNormal("mystic_log", 2.0F, 2.0F);
-	public static Block mysticPlanks = registerBlockNormal("mystic_planks", 2.0F, 2.0F);*/
+
+	/*
+	 * public static Block mysticStone = registerBlockNormal("mystic_stone", 5.0F,
+	 * 5.0F); public static Block mysticDirt = registerBlockNormal("mystic_dirt",
+	 * 1.0F, 1.0F); public static Block mysticLog =
+	 * registerBlockNormal("mystic_log", 2.0F, 2.0F); public static Block
+	 * mysticPlanks = registerBlockNormal("mystic_planks", 2.0F, 2.0F);
+	 */
 
 	public static Block lunaDiamondOre = registerOre("luna_diamond_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F,
 			TSECreativeTabs.tabOres);
@@ -88,7 +91,6 @@ public class BlockManager {
 	public static Block toslotriumBlock = registerBlockNormal("toslotrium_block", 5.0F, 5.0F);
 	public static Block vividiumBlock = registerBlockNormal("vividium_block", 5.0F, 5.0F);
 	public static Block sphaleriteBlock = registerBlockNormal("sphalerite_block", 5.0F, 5.0F);
-	// TODO
 	public static Block extranetiumBlock = registerBlockNormal("extranetium_block", 5.0F, 5.0F);
 	public static Block silverBlock = registerBlockNormal("silver_block", 5.0F, 5.0F);
 	public static Block platinumBlock = registerBlockNormal("platinum_block", 5.0F, 5.0F);
@@ -99,6 +101,7 @@ public class BlockManager {
 	public static Block nickelBlock = registerBlockNormal("nickel_block", 5.0F, 5.0F);
 	public static Block pewterBlock = registerBlockNormal("pewter_block", 5.0F, 5.0F);
 	public static Block aluminumBlock = registerBlockNormal("aluminum_block", 5.0F, 5.0F);
+	public static Block mnemiumBlock = registerBlockNormal("mnemium_block", 5.0F, 5.0F);
 
 	public static Block storeBox = registerStoreBox("store_box");
 	public static Block mysteriousBox = registerMBox("mysterious_box");
@@ -110,7 +113,7 @@ public class BlockManager {
 
 	public static Block purpleheartLog = registerBlockNormal("purpleheart_log", 2.0F, 2.0F);
 	public static Block purpleheartPlanks = registerBlockNormal("purpleheart_planks", 2.0F, 2.0F);
-	//public static Block purpleheartLeaves;
+	// public static Block purpleheartLeaves;
 
 	// public static Block padaukLog = registerBlockNormal("padauk_log", 2.0F,
 	// 2.0F);
@@ -227,6 +230,8 @@ public class BlockManager {
 			.setUnlocalizedName("pewter_block");
 	public static Item aluminumBlockItem = new ItemBlock(aluminumBlock).setRegistryName("aluminum_block")
 			.setUnlocalizedName("aluminum_block");
+	public static Item mnemiumBlockItem = new ItemBlock(mnemiumBlock).setRegistryName("mnemium_block")
+			.setUnlocalizedName("mnemium_block");
 
 	public static Item storeBoxItem = new ItemBlock(storeBox).setRegistryName("store_box")
 			.setUnlocalizedName("store_box");
@@ -371,8 +376,8 @@ public class BlockManager {
 				tinBlockItem, tyionetiumBlockItem, bronzeBlockItem, brightflameBlockItem, brightsteelBlockItem,
 				reforgedGoldBlockItem, magicBlockItem, mithrilBlockItem, mortiumBlockItem, mysteriousBlockItem,
 				mysticBlockItem, skyIronBlockItem, terriumBlockItem, toslotriumBlockItem, vividiumBlockItem,
-				sphaleriteBlockItem, extranetiumBlockItem, silverBlockItem, platinumBlockItem, titaniumBlockItem, zincBlockItem,
-				brassBlockItem, leadBlockItem, nickelBlockItem, pewterBlockItem, aluminumBlockItem,
+				sphaleriteBlockItem, extranetiumBlockItem, silverBlockItem, platinumBlockItem, titaniumBlockItem,
+				zincBlockItem, brassBlockItem, leadBlockItem, nickelBlockItem, pewterBlockItem, aluminumBlockItem,
 
 				storeBoxItem, superStoreBoxItem, mysteriousBoxItem, diamondStoreBoxItem,
 

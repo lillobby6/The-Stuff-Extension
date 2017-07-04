@@ -13,6 +13,7 @@ public class TSEToolMaterials {
 	//e.g.  IRON(2, 250, 6.0F, 2.0F, 14)
 		public static final ToolMaterial LAPIS = EnumHelper.addToolMaterial("LAPIS", 1, 50, 10.0F, 1.0F, 30);
 		public static final ToolMaterial COPPER = EnumHelper.addToolMaterial("COPPER", 2, 250, 5.0F, 2.0F, 22);
+		public static final ToolMaterial ALUMINUM = EnumHelper.addToolMaterial("ALUMINUM", 1, 131, 5.0F, 0.8F, 10);
 		public static final ToolMaterial BRONZE = EnumHelper.addToolMaterial("BRONZE", 3, 1000, 7.0F, 4.0F, 20);
 		public static final ToolMaterial TYIONETIUM = EnumHelper.addToolMaterial("TYIONETIUM", 5, 3000, 15.0F, 7.0F, 20);
 		public static final ToolMaterial TDIAMOND = EnumHelper.addToolMaterial("TDIAMOND", 4, 2000, 13.0F, 5.0F, 20);
@@ -24,6 +25,7 @@ public class TSEToolMaterials {
 		public static final ToolMaterial MYSTIC = EnumHelper.addToolMaterial("MYSTIC", 5, 12000, 20.0F, 7.0F, 30);
 		public static final ToolMaterial MITHRIL = EnumHelper.addToolMaterial("MITHRIL", 7, 20000, 35.0F, 15.0F, 50);
 		public static final ToolMaterial EXTRANETIUM = EnumHelper.addToolMaterial("EXTRANETIUM", 8, 30000, 50.0F, 20F, 60);
+		public static final ToolMaterial MNEMIUM = EnumHelper.addToolMaterial("MNEMIUM", 9, 60000, 70.0F, 30.0F, 80);
 		public static final ToolMaterial MORTIUM = EnumHelper.addToolMaterial("MORTIUM", 4, 2161, 9.0F, 4.0F, 13);
 		public static final ToolMaterial MYSTERIOUS = EnumHelper.addToolMaterial("MYSTERIOUS", 6, 16000, 32F, 11F, 32);
 		public static final ToolMaterial SKYIRON = EnumHelper.addToolMaterial("SKYIRON", 2, 300, 6.5F, 2.0F, 14);

@@ -330,6 +330,18 @@ public class ItemManager {
 	public static Item pewterHoe = registerHoe(TSEToolMaterials.PEWTER, "pewter_hoe", TSECreativeTabs.tabTools, 3);
 	public static Item pewterMattock = registerMattock(TSEToolMaterials.PEWTER, "pewter_mattock",
 			TSECreativeTabs.tabTools, 3);
+	
+	public static Item mnemiumPickaxe = registerPickaxe(TSEToolMaterials.MNEMIUM, "mnemium_pickaxe", TSECreativeTabs.tabTools, 9);
+	public static Item mnemiumAxe = registerAxe(TSEToolMaterials.MNEMIUM, "mnemium_axe", TSECreativeTabs.tabTools, 9, 30F);
+	public static Item mnemiumShovel = registerShovel(TSEToolMaterials.MNEMIUM, "mnemium_shovel", TSECreativeTabs.tabTools, 9);
+	public static Item mnemiumHoe = registerHoe(TSEToolMaterials.MNEMIUM, "mnemium_hoe", TSECreativeTabs.tabTools, 9);
+	public static Item mnemiumMattock = registerMattock(TSEToolMaterials.MNEMIUM, "mnemium_mattock", TSECreativeTabs.tabTools, 9);
+	
+	public static Item aluminumPickaxe = registerPickaxe(TSEToolMaterials.ALUMINUM, "aluminum_pickaxe", TSECreativeTabs.tabTools, 1);
+	public static Item aluminumAxe = registerAxe(TSEToolMaterials.ALUMINUM, "aluminum_axe", TSECreativeTabs.tabTools, 1, 3F);
+	public static Item aluminumShovel = registerShovel(TSEToolMaterials.ALUMINUM, "aluminum_shovel", TSECreativeTabs.tabTools, 1);
+	public static Item aluminumHoe = registerHoe(TSEToolMaterials.ALUMINUM, "aluminum_hoe", TSECreativeTabs.tabTools, 1);
+	public static Item aluminumMattock = registerMattock(TSEToolMaterials.ALUMINUM, "aluminum_mattock", TSECreativeTabs.tabTools, 1);
 
 	// Others
 	public static Item woodMattock = registerMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools,
@@ -389,6 +401,8 @@ public class ItemManager {
 			TSECreativeTabs.tabWeapons);
 	public static Item tinSword = registerSword(TSEToolMaterials.TIN, "tin_sword", TSECreativeTabs.tabWeapons);
 	public static Item pewterSword = registerSword(TSEToolMaterials.PEWTER, "pewter_sword", TSECreativeTabs.tabWeapons);
+	public static Item mnemiumSword = registerSword(TSEToolMaterials.MNEMIUM, "mnemium_sword", TSECreativeTabs.tabWeapons);
+	public static Item aluminumSword = registerSword(TSEToolMaterials.ALUMINUM, "aluminum_sword", TSECreativeTabs.tabWeapons);
 
 	public static Item justice = registerLightSword(ToolMaterial.DIAMOND, "justice", TSECreativeTabs.tabWeapons, true);
 	public static Item corruption = registerLightSword(ToolMaterial.DIAMOND, "corruption", TSECreativeTabs.tabWeapons,
@@ -513,6 +527,11 @@ public class ItemManager {
 			EntityEquipmentSlot.LEGS);
 	public static Item mysteriousBoots = registerArmor("mysterious_boots", TSEArmorMaterials.MYSTERIOUS, 1,
 			EntityEquipmentSlot.FEET);
+	
+	public static Item mysticHelmet = registerArmor("mystic_helmet", TSEArmorMaterials.MYSTIC, 1, EntityEquipmentSlot.HEAD);
+	public static Item mysticChestplate = registerArmor("mystic_chestplate", TSEArmorMaterials.MYSTIC, 1, EntityEquipmentSlot.CHEST);
+	public static Item mysticLeggings = registerArmor("mystic_leggings", TSEArmorMaterials.MYSTIC, 1, EntityEquipmentSlot.LEGS);
+	public static Item mysticBoots = registerArmor("mystic_boots", TSEArmorMaterials.MYSTIC, 1, EntityEquipmentSlot.FEET);
 
 	private static void registerItem(Item item, String registryName) {
 		item.setRegistryName(StringsLib.MODID, registryName);
@@ -677,6 +696,10 @@ public class ItemManager {
 				tinPickaxe, tinAxe, tinShovel, tinHoe, tinMattock, tinSword,
 
 				pewterPickaxe, pewterAxe, pewterShovel, pewterHoe, pewterMattock, pewterSword,
+				
+				mnemiumPickaxe, mnemiumAxe, mnemiumShovel, mnemiumHoe, mnemiumMattock, mnemiumSword,
+				
+				aluminumPickaxe, aluminumAxe, aluminumShovel, aluminumHoe, aluminumMattock, aluminumSword,
 
 				woodMattock, stoneMattock, ironMattock, diamondMattock, goldMattock,
 
@@ -706,7 +729,9 @@ public class ItemManager {
 
 				extranetiumHelmet, extranetiumChestplate, extranetiumLeggings, extranetiumBoots,
 				
-				mysteriousHelmet, mysteriousChestplate, mysteriousLeggings, mysteriousBoots);
+				mysteriousHelmet, mysteriousChestplate, mysteriousLeggings, mysteriousBoots,
+				
+				mysticHelmet, mysticChestplate, mysticLeggings, mysticBoots);
 		TheStuffExtension.log("Registered Items");
 	}
 

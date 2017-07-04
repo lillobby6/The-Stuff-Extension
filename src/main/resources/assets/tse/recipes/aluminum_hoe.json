@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:aluminum_hoe"
+  },
+  "pattern": [
+    "xx",
+    " y",
+    " y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:aluminum_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}
