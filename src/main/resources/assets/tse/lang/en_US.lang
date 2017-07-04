@@ -61,6 +61,7 @@ item.lead_ingot.name=Lead Ingot
 item.nickel_ingot.name=Nickel Ingot
 item.pewter_ingot.name=Pewter Ingot
 item.aluminum_ingot.name=Aluminum Ingot
+item.mnemium_ingot.name=Mnemium Ingot
 
 item.copper_pickaxe.name=Copper Pickaxe
 item.copper_axe.name=Copper Axe
@@ -285,6 +286,21 @@ item.steel_helmet.name=Steel Helmet
 item.steel_chestplate.name=Steel Chestplate
 item.steel_leggings.name=Steel Leggings
 item.steel_boots.name=Steel Boots
+
+item.titanium_helmet.name=Titanium Helmet
+item.titanium_chestplate.name=Titanium Chestplate
+item.titanium_leggings.name=Titanium Leggings
+item.titanium_boots.name=Titanium Boots
+
+item.extranetium_helmet.name=Extranetium Helmet
+item.extranetium_chestplate.name=Extranetium Chestplate
+item.extranetium_leggings.name=Extranetium Leggings
+item.extranetium_boots.name=Extranetium Boots
+
+item.mysterious_helmet.name=Mysterious Helmet
+item.mysterious_chestplate.name=Mysterious Chestplate
+item.mysterious_leggings.name=Mysterious Leggings
+item.mysterious_boots.name=Mysterious Boots
 
 item.lapis_remover.name=Lapis Lazuli Remover
 

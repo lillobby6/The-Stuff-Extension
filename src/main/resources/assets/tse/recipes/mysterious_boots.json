@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:mysterious_boots"
+  },
+  "pattern": [
+	"x x",
+	"x x"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:mysterious_ingot"
+    }
+  }
+}

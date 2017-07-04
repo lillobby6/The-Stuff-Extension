@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "tse:extranetium_chestplate"
+  },
+  "pattern": [
+    "x x",
+	"xxx",
+	"xxx"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:extranetium_ingot"
+    }
+  }
+}

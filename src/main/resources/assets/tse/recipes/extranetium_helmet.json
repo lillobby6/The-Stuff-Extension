@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:extranetium_helmet"
+  },
+  "pattern": [
+    "xxx",
+	"x x"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:extranetium_ingot"
+    }
+  }
+}

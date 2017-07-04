@@ -114,6 +114,7 @@ public class ItemRenderRegister {
 	    reg(ItemManager.nickelIngot);
 	    reg(ItemManager.pewterIngot);
 	    reg(ItemManager.aluminumIngot);
+	    reg(ItemManager.mnemiumIngot);
 	    
 	    reg(ItemManager.justice);
 	    reg(ItemManager.corruption);
@@ -304,6 +305,21 @@ public class ItemRenderRegister {
 	    reg(ItemManager.steelChestplate);
 	    reg(ItemManager.steelLeggings);
 	    reg(ItemManager.steelBoots);
+	    
+	    reg(ItemManager.titaniumHelmet);
+	    reg(ItemManager.titaniumChestplate);
+	    reg(ItemManager.titaniumLeggings);
+	    reg(ItemManager.titaniumBoots);
+	    
+	    reg(ItemManager.extranetiumHelmet);
+	    reg(ItemManager.extranetiumChestplate);
+	    reg(ItemManager.extranetiumLeggings);
+	    reg(ItemManager.extranetiumBoots);
+	    
+	    reg(ItemManager.mysteriousHelmet);
+	    reg(ItemManager.mysteriousChestplate);
+	    reg(ItemManager.mysteriousLeggings);
+	    reg(ItemManager.mysteriousBoots);
 	    TheStuffExtension.log("Rendered items.");
 	}
 	public static void reg(Item item)
