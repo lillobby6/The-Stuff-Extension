@@ -66,6 +66,7 @@ public class ItemManager {
 	public static Item pewterIngot = registerMainItem("pewter_ingot", TSECreativeTabs.tabMaterials);
 	public static Item aluminumIngot = registerMainItem("aluminum_ingot", TSECreativeTabs.tabMaterials);
 	public static Item mnemiumIngot = registerMainItem("mnemium_ingot", TSECreativeTabs.tabMaterials);
+	public static Item eterniumIngot = registerMainItem("eternium_ingot", TSECreativeTabs.tabMaterials);
 
 	public static Item magicNugget = registerMainItem("magic_nugget", TSECreativeTabs.tabMaterials);
 	public static Item mysticNugget = registerMainItem("mystic_nugget", TSECreativeTabs.tabMaterials);
@@ -88,7 +89,8 @@ public class ItemManager {
 			TSECreativeTabs.tabMaterials);
 	public static Item titaniumMysticMixedIngot = registerMainItem("titanium_mystic_mixed_ingot",
 			TSECreativeTabs.tabMaterials);
-	public static Item titaniumExtranetiumMixedIngot = registerMainItem("titanium_extranetium_mixed_ingot", TSECreativeTabs.tabMaterials);
+	public static Item titaniumExtranetiumMixedIngot = registerMainItem("titanium_extranetium_mixed_ingot",
+			TSECreativeTabs.tabMaterials);
 	// End Materials
 
 	// Start Tools
@@ -331,18 +333,27 @@ public class ItemManager {
 	public static Item pewterHoe = registerHoe(TSEToolMaterials.PEWTER, "pewter_hoe", TSECreativeTabs.tabTools, 3);
 	public static Item pewterMattock = registerMattock(TSEToolMaterials.PEWTER, "pewter_mattock",
 			TSECreativeTabs.tabTools, 3);
-	
-	public static Item mnemiumPickaxe = registerPickaxe(TSEToolMaterials.MNEMIUM, "mnemium_pickaxe", TSECreativeTabs.tabTools, 9);
-	public static Item mnemiumAxe = registerAxe(TSEToolMaterials.MNEMIUM, "mnemium_axe", TSECreativeTabs.tabTools, 9, 30F);
-	public static Item mnemiumShovel = registerShovel(TSEToolMaterials.MNEMIUM, "mnemium_shovel", TSECreativeTabs.tabTools, 9);
+
+	public static Item mnemiumPickaxe = registerPickaxe(TSEToolMaterials.MNEMIUM, "mnemium_pickaxe",
+			TSECreativeTabs.tabTools, 9);
+	public static Item mnemiumAxe = registerAxe(TSEToolMaterials.MNEMIUM, "mnemium_axe", TSECreativeTabs.tabTools, 9,
+			30F);
+	public static Item mnemiumShovel = registerShovel(TSEToolMaterials.MNEMIUM, "mnemium_shovel",
+			TSECreativeTabs.tabTools, 9);
 	public static Item mnemiumHoe = registerHoe(TSEToolMaterials.MNEMIUM, "mnemium_hoe", TSECreativeTabs.tabTools, 9);
-	public static Item mnemiumMattock = registerMattock(TSEToolMaterials.MNEMIUM, "mnemium_mattock", TSECreativeTabs.tabTools, 9);
-	
-	public static Item aluminumPickaxe = registerPickaxe(TSEToolMaterials.ALUMINUM, "aluminum_pickaxe", TSECreativeTabs.tabTools, 1);
-	public static Item aluminumAxe = registerAxe(TSEToolMaterials.ALUMINUM, "aluminum_axe", TSECreativeTabs.tabTools, 1, 3F);
-	public static Item aluminumShovel = registerShovel(TSEToolMaterials.ALUMINUM, "aluminum_shovel", TSECreativeTabs.tabTools, 1);
-	public static Item aluminumHoe = registerHoe(TSEToolMaterials.ALUMINUM, "aluminum_hoe", TSECreativeTabs.tabTools, 1);
-	public static Item aluminumMattock = registerMattock(TSEToolMaterials.ALUMINUM, "aluminum_mattock", TSECreativeTabs.tabTools, 1);
+	public static Item mnemiumMattock = registerMattock(TSEToolMaterials.MNEMIUM, "mnemium_mattock",
+			TSECreativeTabs.tabTools, 9);
+
+	public static Item aluminumPickaxe = registerPickaxe(TSEToolMaterials.ALUMINUM, "aluminum_pickaxe",
+			TSECreativeTabs.tabTools, 1);
+	public static Item aluminumAxe = registerAxe(TSEToolMaterials.ALUMINUM, "aluminum_axe", TSECreativeTabs.tabTools, 1,
+			3F);
+	public static Item aluminumShovel = registerShovel(TSEToolMaterials.ALUMINUM, "aluminum_shovel",
+			TSECreativeTabs.tabTools, 1);
+	public static Item aluminumHoe = registerHoe(TSEToolMaterials.ALUMINUM, "aluminum_hoe", TSECreativeTabs.tabTools,
+			1);
+	public static Item aluminumMattock = registerMattock(TSEToolMaterials.ALUMINUM, "aluminum_mattock",
+			TSECreativeTabs.tabTools, 1);
 
 	// Others
 	public static Item woodMattock = registerMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools,
@@ -402,12 +413,17 @@ public class ItemManager {
 			TSECreativeTabs.tabWeapons);
 	public static Item tinSword = registerSword(TSEToolMaterials.TIN, "tin_sword", TSECreativeTabs.tabWeapons);
 	public static Item pewterSword = registerSword(TSEToolMaterials.PEWTER, "pewter_sword", TSECreativeTabs.tabWeapons);
-	public static Item mnemiumSword = registerSword(TSEToolMaterials.MNEMIUM, "mnemium_sword", TSECreativeTabs.tabWeapons);
-	public static Item aluminumSword = registerSword(TSEToolMaterials.ALUMINUM, "aluminum_sword", TSECreativeTabs.tabWeapons);
+	public static Item mnemiumSword = registerSword(TSEToolMaterials.MNEMIUM, "mnemium_sword",
+			TSECreativeTabs.tabWeapons);
+	public static Item aluminumSword = registerSword(TSEToolMaterials.ALUMINUM, "aluminum_sword",
+			TSECreativeTabs.tabWeapons);
 
-	public static Item justice = registerLightSword(ToolMaterial.DIAMOND, "justice", TSECreativeTabs.tabWeapons, true);
-	public static Item corruption = registerLightSword(ToolMaterial.DIAMOND, "corruption", TSECreativeTabs.tabWeapons,
-			false);
+	public static Item justice = registerLightSword(TSEToolMaterials.JUSTICE, "justice", TSECreativeTabs.tabWeapons,
+			true);
+	public static Item corruption = registerLightSword(TSEToolMaterials.CORRUPTION, "corruption",
+			TSECreativeTabs.tabWeapons, false);
+	public static Item destruction = registerLightSword(TSEToolMaterials.DESTRUCTION, "destruction",
+			TSECreativeTabs.tabWeapons, false);
 
 	// End Swords
 
@@ -528,11 +544,57 @@ public class ItemManager {
 			EntityEquipmentSlot.LEGS);
 	public static Item mysteriousBoots = registerArmor("mysterious_boots", TSEArmorMaterials.MYSTERIOUS, 1,
 			EntityEquipmentSlot.FEET);
+
+	public static Item skyIronHelmet = registerArmor("sky_iron_helmet", TSEArmorMaterials.SKYIRON, 1,
+			EntityEquipmentSlot.HEAD);
+	public static Item skyIronChestplate = registerArmor("sky_iron_chestplate", TSEArmorMaterials.SKYIRON, 1,
+			EntityEquipmentSlot.CHEST);
+	public static Item skyIronLeggings = registerArmor("sky_iron_leggings", TSEArmorMaterials.SKYIRON, 1,
+			EntityEquipmentSlot.LEGS);
+	public static Item skyIronBoots = registerArmor("sky_iron_boots", TSEArmorMaterials.SKYIRON, 1,
+			EntityEquipmentSlot.FEET);
+
+	public static Item mysticHelmet = registerArmor("mystic_helmet", TSEArmorMaterials.MYSTIC, 1,
+			EntityEquipmentSlot.HEAD);
+	public static Item mysticChestplate = registerArmor("mystic_chestplate", TSEArmorMaterials.MYSTIC, 1,
+			EntityEquipmentSlot.CHEST);
+	public static Item mysticLeggings = registerArmor("mystic_leggings", TSEArmorMaterials.MYSTIC, 1,
+			EntityEquipmentSlot.LEGS);
+	public static Item mysticBoots = registerArmor("mystic_boots", TSEArmorMaterials.MYSTIC, 1,
+			EntityEquipmentSlot.FEET);
+
+	public static Item terriumHelmet = registerArmor("terrium_helmet", TSEArmorMaterials.TERRIUM, 1,
+			EntityEquipmentSlot.HEAD);
+	public static Item terriumChestplate = registerArmor("terrium_chestplate", TSEArmorMaterials.TERRIUM, 1,
+			EntityEquipmentSlot.CHEST);
+	public static Item terriumLeggings = registerArmor("terrium_leggings", TSEArmorMaterials.TERRIUM, 1,
+			EntityEquipmentSlot.LEGS);
+	public static Item terriumBoots = registerArmor("terrium_boots", TSEArmorMaterials.TERRIUM, 1,
+			EntityEquipmentSlot.FEET);
+
+	public static Item vividiumHelmet = registerArmor("vivdium_helmet", TSEArmorMaterials.VIVIDIUM, 1,
+			EntityEquipmentSlot.HEAD);
+	public static Item vividiumChestplate = registerArmor("vividium_chestplate", TSEArmorMaterials.VIVIDIUM, 1,
+			EntityEquipmentSlot.CHEST);
+	public static Item vividiumLeggings = registerArmor("vividium_leggings", TSEArmorMaterials.VIVIDIUM, 1,
+			EntityEquipmentSlot.LEGS);
+	public static Item vividiumBoots = registerArmor("vividium_boots", TSEArmorMaterials.VIVIDIUM, 1,
+			EntityEquipmentSlot.FEET);
 	
-	public static Item mysticHelmet = registerArmor("mystic_helmet", TSEArmorMaterials.MYSTIC, 1, EntityEquipmentSlot.HEAD);
-	public static Item mysticChestplate = registerArmor("mystic_chestplate", TSEArmorMaterials.MYSTIC, 1, EntityEquipmentSlot.CHEST);
-	public static Item mysticLeggings = registerArmor("mystic_leggings", TSEArmorMaterials.MYSTIC, 1, EntityEquipmentSlot.LEGS);
-	public static Item mysticBoots = registerArmor("mystic_boots", TSEArmorMaterials.MYSTIC, 1, EntityEquipmentSlot.FEET);
+	public static Item tyionetiumHelmet = registerArmor("tyionetium_helmet", TSEArmorMaterials.TYIONETIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item tyionetiumChestplate = registerArmor("tyionetium_chestplate", TSEArmorMaterials.TYIONETIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item tyionetiumLeggings = registerArmor("tyionetium_leggings", TSEArmorMaterials.TYIONETIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item tyionetiumBoots = registerArmor("tyionetium_boots", TSEArmorMaterials.TYIONETIUM, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item silverHelmet = registerArmor("silver_helmet", TSEArmorMaterials.SILVER, 1, EntityEquipmentSlot.HEAD);
+	public static Item silverChestplate = registerArmor("silver_chestplate", TSEArmorMaterials.SILVER, 1, EntityEquipmentSlot.CHEST);
+	public static Item silverLeggings = registerArmor("silver_leggings", TSEArmorMaterials.SILVER, 1, EntityEquipmentSlot.LEGS);
+	public static Item silverBoots = registerArmor("silver_boots", TSEArmorMaterials.SILVER, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item exaltedDiamondHelmet = registerArmor("exalted_diamond_helmet", TSEArmorMaterials.EDIAMOND, 1, EntityEquipmentSlot.HEAD);
+	public static Item exaltedDiamondChestplate = registerArmor("exalted_diamond_chestplate", TSEArmorMaterials.EDIAMOND, 1, EntityEquipmentSlot.CHEST);
+	public static Item exaltedDiamondLeggings = registerArmor("exalted_diamond_leggings", TSEArmorMaterials.EDIAMOND, 1, EntityEquipmentSlot.LEGS);
+	public static Item exaltedDiamondBoots = registerArmor("exalted_diamond_boots", TSEArmorMaterials.EDIAMOND, 1, EntityEquipmentSlot.FEET);
 
 	private static void registerItem(Item item, String registryName) {
 		item.setRegistryName(StringsLib.MODID, registryName);
@@ -636,7 +698,7 @@ public class ItemManager {
 				diamondIngot, reforgedGoldIngot, magicIngot, mithrilIngot, mortiumIngot, mysteriousIngot, mysticIngot,
 				skyIronIngot, terriumIngot, toslotriumIngot, vividiumIngot, extranetiumIngot, silverIngot,
 				platinumIngot, titaniumIngot, zincIngot, brassIngot, leadIngot, nickelIngot, pewterIngot, aluminumIngot,
-				mnemiumIngot,
+				mnemiumIngot, eterniumIngot,
 
 				magicNugget, mysticNugget, mysteriousNugget, brightflameNugget, diamondNugget, bronzeNugget,
 				brassNugget, silverNugget, platinumNugget, titaniumNugget, steelNugget,
@@ -644,7 +706,7 @@ public class ItemManager {
 				diamondToslotriumMixedIngot, tyionetiumMithrilToslotriumMixedIngot, mixedIngot,
 				reforgedGoldTyionetiumMixedIngot, titaniumMysticMixedIngot, titaniumExtranetiumMixedIngot,
 
-				justice, corruption,
+				justice, corruption, destruction,
 
 				bronzePickaxe, bronzeAxe, bronzeShovel, bronzeHoe, bronzeMattock, bronzeSword,
 
@@ -697,9 +759,9 @@ public class ItemManager {
 				tinPickaxe, tinAxe, tinShovel, tinHoe, tinMattock, tinSword,
 
 				pewterPickaxe, pewterAxe, pewterShovel, pewterHoe, pewterMattock, pewterSword,
-				
+
 				mnemiumPickaxe, mnemiumAxe, mnemiumShovel, mnemiumHoe, mnemiumMattock, mnemiumSword,
-				
+
 				aluminumPickaxe, aluminumAxe, aluminumShovel, aluminumHoe, aluminumMattock, aluminumSword,
 
 				woodMattock, stoneMattock, ironMattock, diamondMattock, goldMattock,
@@ -729,10 +791,20 @@ public class ItemManager {
 				titaniumHelmet, titaniumChestplate, titaniumLeggings, titaniumBoots,
 
 				extranetiumHelmet, extranetiumChestplate, extranetiumLeggings, extranetiumBoots,
-				
+
 				mysteriousHelmet, mysteriousChestplate, mysteriousLeggings, mysteriousBoots,
+
+				mysticHelmet, mysticChestplate, mysticLeggings, mysticBoots,
+
+				skyIronHelmet, skyIronChestplate, skyIronLeggings, skyIronBoots,
+
+				vividiumHelmet, vividiumChestplate, vividiumLeggings, vividiumBoots,
 				
-				mysticHelmet, mysticChestplate, mysticLeggings, mysticBoots);
+				tyionetiumHelmet, tyionetiumChestplate, tyionetiumLeggings, tyionetiumBoots,
+				
+				silverHelmet, silverChestplate, silverLeggings, silverBoots,
+				
+				exaltedDiamondHelmet, exaltedDiamondChestplate, exaltedDiamondLeggings, exaltedDiamondBoots);
 		TheStuffExtension.log("Registered Items");
 	}
 

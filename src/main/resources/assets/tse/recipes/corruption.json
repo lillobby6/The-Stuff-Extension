@@ -1,0 +1,25 @@
+{
+  "result": {
+    "item": "tse:corruption"
+  },
+  "pattern": [
+    "axa",
+    "axa",
+    "byb" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+	"a": {
+	  "item": "tse:brightsteel_ingot"
+	},
+	"b": {
+	  "item": "tse:titanium_rod"
+	},
+    "x": {
+      "item": "tse:mnemium_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

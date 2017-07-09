@@ -80,7 +80,7 @@ public class ItemRenderRegister {
 	    reg(ItemManager.terraDiamondBoots);
 	    
 	    reg(ItemManager.tinIngot);
-	    
+	    reg(ItemManager.eterniumIngot);
 	    reg(ItemManager.tyionetiumIngot);
 	    
 	    reg(ItemManager.tyionetiumPickaxe);
@@ -125,6 +125,7 @@ public class ItemRenderRegister {
 	    
 	    reg(ItemManager.justice);
 	    reg(ItemManager.corruption);
+	    reg(ItemManager.destruction);
 	    
 	    reg(ItemManager.brightflamePickaxe);
 	    reg(ItemManager.brightflameAxe);

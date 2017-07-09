@@ -29,7 +29,7 @@ public class LightningSword extends ItemSword{
 	
 	@Override
 	public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase owner) {
-		Entity bolt = new EntityLightningBolt(owner.world, target.posX, target.posY, target.posZ, hasFlames);
+		Entity bolt = new EntityLightningBolt(owner.world, target.posX, target.posY, target.posZ, this.hasFlames);
 	    owner.world.addWeatherEffect(bolt);
 	    return true;
     }

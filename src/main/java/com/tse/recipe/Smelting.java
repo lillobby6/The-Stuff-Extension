@@ -57,6 +57,7 @@ public class Smelting {
 		
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.whiteCobblestone), new ItemStack(Item.getItemFromBlock(BlockManager.whiteStone)), 0.1F);
 		
+		GameRegistry.addSmelting(ItemManager.destruction, new ItemStack(ItemManager.eterniumIngot), 2.0F);
 		TheStuffExtension.log("Finished registering smelting.");
 	}	
 	/**All shaped and shapeless recipes moved into JSONs.*/
