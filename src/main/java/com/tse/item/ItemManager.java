@@ -596,6 +596,11 @@ public class ItemManager {
 	public static Item exaltedDiamondLeggings = registerArmor("exalted_diamond_leggings", TSEArmorMaterials.EDIAMOND, 1, EntityEquipmentSlot.LEGS);
 	public static Item exaltedDiamondBoots = registerArmor("exalted_diamond_boots", TSEArmorMaterials.EDIAMOND, 1, EntityEquipmentSlot.FEET);
 
+	public static Item bloodDiamondHelmet = registerArmor("blood_diamond_helmet", TSEArmorMaterials.BDIAMOND, 1, EntityEquipmentSlot.HEAD);
+	public static Item bloodDiamondChestplate = registerArmor("blood_diamond_chestplate", TSEArmorMaterials.BDIAMOND, 1, EntityEquipmentSlot.CHEST);
+	public static Item bloodDiamondLeggings = registerArmor("blood_diamond_leggings", TSEArmorMaterials.BDIAMOND, 1, EntityEquipmentSlot.LEGS);
+	public static Item bloodDiamondBoots = registerArmor("blood_diamond_boots", TSEArmorMaterials.BDIAMOND, 1, EntityEquipmentSlot.FEET);
+	
 	private static void registerItem(Item item, String registryName) {
 		item.setRegistryName(StringsLib.MODID, registryName);
 		item.setUnlocalizedName(registryName);
@@ -804,7 +809,9 @@ public class ItemManager {
 				
 				silverHelmet, silverChestplate, silverLeggings, silverBoots,
 				
-				exaltedDiamondHelmet, exaltedDiamondChestplate, exaltedDiamondLeggings, exaltedDiamondBoots);
+				exaltedDiamondHelmet, exaltedDiamondChestplate, exaltedDiamondLeggings, exaltedDiamondBoots,
+				
+				bloodDiamondHelmet, bloodDiamondChestplate, bloodDiamondLeggings, bloodDiamondBoots);
 		TheStuffExtension.log("Registered Items");
 	}
 

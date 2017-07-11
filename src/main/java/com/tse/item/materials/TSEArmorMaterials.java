@@ -14,6 +14,7 @@ public class TSEArmorMaterials {
 	public static final ArmorMaterial COPPER = EnumHelper.addArmorMaterial("COPPER", "tse:copper", 15, new int[] {2, 6, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
 	public static final ArmorMaterial TERRADIAMOND = EnumHelper.addArmorMaterial("TERRADIAMOND", "tse:terra_diamond", 40, new int[] {3, 8, 6, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
 	public static final ArmorMaterial EDIAMOND = EnumHelper.addArmorMaterial("EDIAMOND", "tse:exalted_diamond", 40, new int[] {4, 7, 5, 4}, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
+	public static final ArmorMaterial BDIAMOND = EnumHelper.addArmorMaterial("BDIAMOND", "tse:blood_diamond", 43, new int[] {3, 8, 4, 5}, 30, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
 	public static final ArmorMaterial BRIGHTFLAME = EnumHelper.addArmorMaterial("BRIGHTFLAME", "tse:brightflame", 38, new int[] {3, 7, 7, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1.5F);
 	public static final ArmorMaterial BRIGHTSTEEL = EnumHelper.addArmorMaterial("BRIGHTSTEEL", "tse:brightsteel", 38, new int[] {4, 6, 6, 4}, 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.5F);
 	public static final ArmorMaterial TIN = EnumHelper.addArmorMaterial("TIN", "tse:tin", 10, new int[] {1, 3, 3, 2}, 4, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0F);

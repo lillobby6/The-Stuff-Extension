@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "ore": "ingotTitanium", "type": "forge:ore_dict"
+        },
+		{
+            "ore": "ingotExtranetium", "type": "forge:ore_dict"
+        }
+    ],
+    "result": {
+        "item": "tse:titanium_extranetium_mixed_ingot", "count": 2
+    }
+}
