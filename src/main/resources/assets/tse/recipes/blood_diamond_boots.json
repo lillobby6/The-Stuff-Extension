@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:blood_diamond_boots"
+  },
+  "pattern": [
+    "x x",
+	"x x"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:blood_diamond"
+    }
+  }
+}

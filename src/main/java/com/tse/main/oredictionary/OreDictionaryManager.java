@@ -8,32 +8,31 @@ import jline.internal.Log;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class OreDictionaryManager {
-		
-	public static void registerOres()
-	{
+
+	public static void registerOres() {
 		registerItems();
 		registerBlocks();
 	}
-	public static void registerItems()
-	{
+
+	public static void registerItems() {
 		TheStuffExtension.log("Registering items to ore dictionary...");
 		OreDictionary.registerOre("stickGold", ItemManager.goldenStick);
 		OreDictionary.registerOre("stickDiamond", ItemManager.diamondStick);
 		OreDictionary.registerOre("stickMystic", ItemManager.mysticStick);
-		
+
 		OreDictionary.registerOre("stickIron", ItemManager.ironRod);
 		OreDictionary.registerOre("stickSteel", ItemManager.steelRod);
 		OreDictionary.registerOre("stickBronze", ItemManager.bronzeRod);
 		OreDictionary.registerOre("stickBrass", ItemManager.brassRod);
 		OreDictionary.registerOre("stickTitanium", ItemManager.titaniumRod);
-		
+
 		OreDictionary.registerOre("gemDiamondExalted", ItemManager.exaltedDiamond);
 		OreDictionary.registerOre("gemDiamondBlood", ItemManager.bloodDiamond);
 		OreDictionary.registerOre("gemDiamondTerra", ItemManager.terraDiamond);
 		OreDictionary.registerOre("gemDiamondLuna", ItemManager.lunaDiamond);
-		
+
 		OreDictionary.registerOre("gemSphalerite", ItemManager.sphaleriteGem);
-		
+
 		OreDictionary.registerOre("ingotCopper", ItemManager.copperIngot);
 		OreDictionary.registerOre("ingotSteel", ItemManager.steelIngot);
 		OreDictionary.registerOre("ingotTin", ItemManager.tinIngot);
@@ -64,7 +63,7 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("ingotAluminum", ItemManager.aluminumIngot);
 		OreDictionary.registerOre("ingotMnemium", ItemManager.mnemiumIngot);
 		OreDictionary.registerOre("ingotEternium", ItemManager.eterniumIngot);
-		
+
 		OreDictionary.registerOre("nuggetMagic", ItemManager.magicNugget);
 		OreDictionary.registerOre("nuggetMystic", ItemManager.mysticNugget);
 		OreDictionary.registerOre("nuggetMysterious", ItemManager.mysteriousIngot);
@@ -77,9 +76,8 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("nuggetSteel", ItemManager.steelNugget);
 		TheStuffExtension.log("Finished registering items to ore dictionary.");
 	}
-	
-	public static void registerBlocks()
-	{
+
+	public static void registerBlocks() {
 		TheStuffExtension.log("Registering blocks to ore dictionary...");
 		OreDictionary.registerOre("oreDiamondExalted", BlockManager.exaltedDiamondOre);
 		OreDictionary.registerOre("oreDiamondBlood", BlockManager.bloodDiamondOre);
@@ -98,9 +96,9 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("oreIronSky", BlockManager.skyIronOre);
 		OreDictionary.registerOre("oreTerrium", BlockManager.terriumOre);
 		OreDictionary.registerOre("oreAluminum", BlockManager.aluminumOre);
-		
+
 		OreDictionary.registerOre("oreIron", BlockManager.moonIronOre);
-		
+
 		OreDictionary.registerOre("blockCopper", BlockManager.copperBlock);
 		OreDictionary.registerOre("blockSteel", BlockManager.steelBlock);
 		OreDictionary.registerOre("blockDiamondTerra", BlockManager.terraDiamondBlock);
@@ -121,14 +119,14 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("blockToslotrium", BlockManager.toslotriumBlock);
 		OreDictionary.registerOre("blockVividium", BlockManager.vividiumBlock);
 		OreDictionary.registerOre("blockSphalerite", BlockManager.sphaleriteBlock);
-		
+
 		OreDictionary.registerOre("stone", BlockManager.whiteStone);
 		OreDictionary.registerOre("cobblestone", BlockManager.whiteCobblestone);
-		
+
 		OreDictionary.registerOre("logWood", BlockManager.purpleheartLog);
 
 		OreDictionary.registerOre("plankWood", BlockManager.purpleheartPlanks);
-		//OreDictionary.registerOre("logWood", BlockManager.padaukLog);
+		// OreDictionary.registerOre("logWood", BlockManager.padaukLog);
 		TheStuffExtension.log("Blocks registered to ore dictionary.");
 	}
 }

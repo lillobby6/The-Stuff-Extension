@@ -341,6 +341,11 @@ public class ItemRenderRegister {
 	    reg(ItemManager.mysticChestplate);
 	    reg(ItemManager.mysticLeggings);
 	    reg(ItemManager.mysticBoots);
+	    
+	    reg(ItemManager.bloodDiamondHelmet);
+	    reg(ItemManager.bloodDiamondChestplate);
+	    reg(ItemManager.bloodDiamondLeggings);
+	    reg(ItemManager.bloodDiamondBoots);
 	    TheStuffExtension.log("Rendered items.");
 	}
 	public static void reg(Item item)
