@@ -26,7 +26,7 @@ public class CommonProxy {
     public void init(FMLInitializationEvent e) {
     	TheStuffExtension.log("Starting init...");
     	Smelting.smelting();
-    	EntityManager.init();
+    	//EntityManager.init();
     	OreDictionaryManager.registerOres();
     	NetworkRegistry.INSTANCE.registerGuiHandler(TheStuffExtension.instance, new GuiManager());
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);

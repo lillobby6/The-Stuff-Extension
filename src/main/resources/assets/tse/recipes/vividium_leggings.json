@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "tse:vividium_leggings"
+  },
+  "pattern": [
+    "xxx",
+    "x x",
+	"x x"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:vividium_ingot"
+    }
+  }
+}

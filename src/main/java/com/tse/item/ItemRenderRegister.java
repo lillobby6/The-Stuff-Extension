@@ -341,6 +341,41 @@ public class ItemRenderRegister {
 	    reg(ItemManager.mysticChestplate);
 	    reg(ItemManager.mysticLeggings);
 	    reg(ItemManager.mysticBoots);
+	    
+	    reg(ItemManager.bloodDiamondHelmet);
+	    reg(ItemManager.bloodDiamondChestplate);
+	    reg(ItemManager.bloodDiamondLeggings);
+	    reg(ItemManager.bloodDiamondBoots);
+	    
+	    reg(ItemManager.skyIronHelmet);
+	    reg(ItemManager.skyIronChestplate);
+	    reg(ItemManager.skyIronLeggings);
+	    reg(ItemManager.skyIronBoots);
+	    
+	    reg(ItemManager.vividiumHelmet);
+	    reg(ItemManager.vividiumChestplate);
+	    reg(ItemManager.vividiumLeggings);
+	    reg(ItemManager.vividiumBoots);
+	    
+	    reg(ItemManager.tyionetiumHelmet);
+	    reg(ItemManager.tyionetiumChestplate);
+	    reg(ItemManager.tyionetiumLeggings);
+	    reg(ItemManager.tyionetiumBoots);
+	    
+	    reg(ItemManager.silverHelmet);
+	    reg(ItemManager.silverChestplate);
+	    reg(ItemManager.silverLeggings);
+	    reg(ItemManager.silverBoots);
+	    
+	    reg(ItemManager.exaltedDiamondHelmet);
+	    reg(ItemManager.exaltedDiamondChestplate);
+	    reg(ItemManager.exaltedDiamondLeggings);
+	    reg(ItemManager.exaltedDiamondBoots);
+	    
+	    reg(ItemManager.platinumHelmet);
+	    reg(ItemManager.platinumChestplate);
+	    reg(ItemManager.platinumLeggings);
+	    reg(ItemManager.platinumBoots);
 	    TheStuffExtension.log("Rendered items.");
 	}
 	public static void reg(Item item)

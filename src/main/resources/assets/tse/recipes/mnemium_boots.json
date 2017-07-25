@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:mnemium_boots"
+  },
+  "pattern": [
+    "x x",
+	"x x"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:mnemium_ingot"
+    }
+  }
+}

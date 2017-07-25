@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "tse:mnemium_chestplate"
+  },
+  "pattern": [
+    "x x",
+    "xxx",
+	"xxx"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:mnemium_ingot"
+    }
+  }
+}

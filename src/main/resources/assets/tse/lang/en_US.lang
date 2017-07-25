@@ -322,10 +322,63 @@ item.mystic_chestplate.name=Mystic Chestplate
 item.mystic_leggings.name=Mystic Leggings
 item.mystic_boots.name=Mystic Boots
 
+item.sky_iron_helmet.name=Sky Iron Helmet
+item.sky_iron_chestplate.name=Sky Iron Chestplate
+item.sky_iron_leggings.name=Sky Iron Leggings
+item.sky_iron_boots.name=Sky Iron Boots
+
+item.vividium_helmet.name=Vividium Helmet
+item.vividium_chestplate.name=Vividium Chestplate
+item.vividium_leggings.name=Vividium Leggings
+item.vividium_boots.name=Vividium Boots
+
+item.tyionetium_helmet.name=Tyionetium Helmet
+item.tyionetium_chestplate.name=Tyionetium Chestplate
+item.tyionetium_leggings.name=Tyionetium Leggings
+item.tyionetium_boots.name=Tyionetium Boots
+
+item.silver_helmet.name=Silver Helmet
+item.silver_chestplate.name=Silver Chestplate
+item.silver_leggings.name=Silver Leggings
+item.silver_boots.name=Silver Boots
+
+item.exalted_diamond_helmet.name=Exalted Diamond Helmet
+item.exalted_diamond_chestplate.name=Exalted Diamond Chestplate
+item.exalted_diamond_leggings.name=Exalted Diamond Leggings
+item.exalted_diamond_boots.name=Exalted Diamond Boots
+
+item.blood_diamond_helmet.name=Blood Diamond Helmet
+item.blood_diamond_chestplate.name=Blood Diamond Chestplate
+item.blood_diamond_leggings.name=Blood Diamond Leggings
+item.blood_diamond_boots.name=Blood Diamond Boots
+
+item.platinum_helmet.name=Platinum Helmet
+item.platinum_chestplate.name=Platinum Chestplate
+item.platinum_leggings.name=Platinum Leggings
+item.platinum_boots.name=Platinum Boots
+
+item.pewter_helmet.name=Pewter Helmet
+item.pewter_chestplate.name=Pewter Chestplate
+item.pewter_leggings.name=Pewter Leggings
+item.pewter_boots.name=Pewter Boots
+
+item.mnemium_helmet.name=Mnemium Helmet
+item.mnemium_chestplate.name=Mnemium Chestplate
+item.mnemium_leggings.name=Mnemium Leggings
+item.mnemium_boots.name=Mnemium Boots
+
+item.aluminum_helmet.name=Aluminum Helmet
+item.aluminum_chestplate.name=Aluminum Chestplate
+item.aluminum_leggings.name=Aluminum Leggings
+item.aluminum_boots.name=Aluminum Boots
+
 item.lapis_remover.name=Lapis Lazuli Remover
 
 item.justice.name=Justice
 item.corruption.name=Corruption
+item.destruction.name=Destruction
+
+
 
 tile.exalted_diamond_ore.name=Exalted Diamond Ore
 tile.blood_diamond_ore.name=Blood Diamond Ore
