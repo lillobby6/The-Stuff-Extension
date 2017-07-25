@@ -7,6 +7,11 @@ item.aluminum_hoe.name=Aluminium Hoe
 item.aluminum_mattock.name=Aluminium Mattock
 item.aluminum_sword.name=Aluminium Sword
 
+item.aluminum_helmet.name=Aluminium Helmet
+item.aluminum_chestplate.name=Aluminium Chestplate
+item.aluminum_leggings.name=Aluminium Leggings
+item.aluminum_boots.name=Aluminium Boots
+
 tile.aluminum_ore.name=Aluminium Ore
 
 tile.aluminum_block.name=Aluminium Block

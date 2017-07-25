@@ -572,7 +572,7 @@ public class ItemManager {
 	public static Item terriumBoots = registerArmor("terrium_boots", TSEArmorMaterials.TERRIUM, 1,
 			EntityEquipmentSlot.FEET);
 
-	public static Item vividiumHelmet = registerArmor("vivdium_helmet", TSEArmorMaterials.VIVIDIUM, 1,
+	public static Item vividiumHelmet = registerArmor("vividium_helmet", TSEArmorMaterials.VIVIDIUM, 1,
 			EntityEquipmentSlot.HEAD);
 	public static Item vividiumChestplate = registerArmor("vividium_chestplate", TSEArmorMaterials.VIVIDIUM, 1,
 			EntityEquipmentSlot.CHEST);
@@ -643,11 +643,15 @@ public class ItemManager {
 			EntityEquipmentSlot.LEGS);
 	public static Item mnemiumBoots = registerArmor("mnemium_boots", TSEArmorMaterials.MNEMIUM, 1,
 			EntityEquipmentSlot.FEET);
-	
-	public static Item aluminumHelmet = registerArmor("aluminum_helmet", TSEArmorMaterials.ALUMINUM, 1, EntityEquipmentSlot.HEAD);
-	public static Item aluminumChestplate = registerArmor("aluminum_chestplate", TSEArmorMaterials.ALUMINUM, 1, EntityEquipmentSlot.CHEST);
-	public static Item aluminumLeggings = registerArmor("aluminum_leggings", TSEArmorMaterials.ALUMINUM, 1, EntityEquipmentSlot.LEGS);
-	public static Item aluminumBoots = registerArmor("aluminum_boots", TSEArmorMaterials.ALUMINUM, 1, EntityEquipmentSlot.FEET);
+
+	public static Item aluminumHelmet = registerArmor("aluminum_helmet", TSEArmorMaterials.ALUMINUM, 1,
+			EntityEquipmentSlot.HEAD);
+	public static Item aluminumChestplate = registerArmor("aluminum_chestplate", TSEArmorMaterials.ALUMINUM, 1,
+			EntityEquipmentSlot.CHEST);
+	public static Item aluminumLeggings = registerArmor("aluminum_leggings", TSEArmorMaterials.ALUMINUM, 1,
+			EntityEquipmentSlot.LEGS);
+	public static Item aluminumBoots = registerArmor("aluminum_boots", TSEArmorMaterials.ALUMINUM, 1,
+			EntityEquipmentSlot.FEET);
 
 	private static void registerItem(Item item, String registryName) {
 		item.setRegistryName(StringsLib.MODID, registryName);
@@ -864,9 +868,9 @@ public class ItemManager {
 				platinumHelmet, platinumChestplate, platinumLeggings, platinumBoots,
 
 				pewterHelmet, pewterChestplate, pewterLeggings, pewterBoots,
-				
+
 				mnemiumHelmet, mnemiumChestplate, mnemiumLeggings, mnemiumBoots,
-				
+
 				aluminumHelmet, aluminumChestplate, aluminumLeggings, aluminumBoots);
 		TheStuffExtension.log("Registered Items");
 	}
