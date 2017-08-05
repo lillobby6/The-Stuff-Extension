@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:eternium_ingot"
+        },
+		{
+            "item": "tse:eternium_ingot"
+        },
+		{
+            "item": "tse:eternium_ingot"
+        },
+		{
+            "item": "tse:eternium_ingot"
+        },
+		{
+            "item": "tse:eternium_ingot"
+        },
+		{
+            "item": "tse:eternium_ingot"
+        },
+		{
+            "item": "tse:eternium_ingot"
+        },
+		{
+            "item": "tse:eternium_ingot"
+        },
+		{
+            "item": "tse:eternium_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:eternium_block"
+    }
+}

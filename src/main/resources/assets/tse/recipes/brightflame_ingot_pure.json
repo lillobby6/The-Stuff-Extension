@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "ore": "gemDiamondBlood", "type": "forge:ore_dict"
+        },
+		{
+            "ore": "ingotTitanium", "type": "forge:ore_dict"
+        },
+		{
+            "ore": "ingotLead", "type": "forge:ore_dict"
+        }
+    ],
+    "result": {
+        "item": "tse:brightflame_ingot"
+    }
+}

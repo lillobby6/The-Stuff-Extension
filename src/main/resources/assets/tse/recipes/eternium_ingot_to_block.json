@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{
+            "item": "tse:eternium_block"
+        }
+    ],
+    "result": {
+        "item": "tse:eternium_ingot", "count": 9
+    }
+}

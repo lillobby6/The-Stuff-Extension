@@ -355,6 +355,17 @@ public class ItemManager {
 	public static Item aluminumMattock = registerMattock(TSEToolMaterials.ALUMINUM, "aluminum_mattock",
 			TSECreativeTabs.tabTools, 1);
 
+	public static Item eterniumPickaxe = registerPickaxe(TSEToolMaterials.ETERNIUM, "eternium_pickaxe",
+			TSECreativeTabs.tabTools, 10);
+	public static Item eterniumAxe = registerAxe(TSEToolMaterials.ETERNIUM, "eternium_axe", TSECreativeTabs.tabTools,
+			10, 60F);
+	public static Item eterniumShovel = registerShovel(TSEToolMaterials.ETERNIUM, "eternium_shovel",
+			TSECreativeTabs.tabTools, 10);
+	public static Item eterniumHoe = registerHoe(TSEToolMaterials.ETERNIUM, "eternium_hoe", TSECreativeTabs.tabTools,
+			10);
+	public static Item eterniumMattock = registerMattock(TSEToolMaterials.ETERNIUM, "eternium_mattock",
+			TSECreativeTabs.tabTools, 10);
+
 	// Others
 	public static Item woodMattock = registerMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools,
 			0);
@@ -416,6 +427,8 @@ public class ItemManager {
 	public static Item mnemiumSword = registerSword(TSEToolMaterials.MNEMIUM, "mnemium_sword",
 			TSECreativeTabs.tabWeapons);
 	public static Item aluminumSword = registerSword(TSEToolMaterials.ALUMINUM, "aluminum_sword",
+			TSECreativeTabs.tabWeapons);
+	public static Item eterniumSword = registerSword(TSEToolMaterials.ETERNIUM, "eternium_sword",
 			TSECreativeTabs.tabWeapons);
 
 	public static Item justice = registerLightSword(TSEToolMaterials.JUSTICE, "justice", TSECreativeTabs.tabWeapons,
@@ -653,6 +666,15 @@ public class ItemManager {
 	public static Item aluminumBoots = registerArmor("aluminum_boots", TSEArmorMaterials.ALUMINUM, 1,
 			EntityEquipmentSlot.FEET);
 
+	public static Item eterniumHelmet = registerArmor("eternium_helmet", TSEArmorMaterials.ETERNIUM, 1,
+			EntityEquipmentSlot.HEAD);
+	public static Item eterniumChestplate = registerArmor("eternium_chestplate", TSEArmorMaterials.ETERNIUM, 1,
+			EntityEquipmentSlot.CHEST);
+	public static Item eterniumLeggings = registerArmor("eternium_leggings", TSEArmorMaterials.ETERNIUM, 1,
+			EntityEquipmentSlot.LEGS);
+	public static Item eterniumBoots = registerArmor("eternium_boots", TSEArmorMaterials.ETERNIUM, 1,
+			EntityEquipmentSlot.FEET);
+
 	private static void registerItem(Item item, String registryName) {
 		item.setRegistryName(StringsLib.MODID, registryName);
 		item.setUnlocalizedName(registryName);
@@ -821,6 +843,8 @@ public class ItemManager {
 
 				aluminumPickaxe, aluminumAxe, aluminumShovel, aluminumHoe, aluminumMattock, aluminumSword,
 
+				eterniumPickaxe, eterniumAxe, eterniumShovel, eterniumHoe, eterniumMattock, eterniumSword,
+
 				woodMattock, stoneMattock, ironMattock, diamondMattock, goldMattock,
 
 				lapisRemover,
@@ -871,7 +895,9 @@ public class ItemManager {
 
 				mnemiumHelmet, mnemiumChestplate, mnemiumLeggings, mnemiumBoots,
 
-				aluminumHelmet, aluminumChestplate, aluminumLeggings, aluminumBoots);
+				aluminumHelmet, aluminumChestplate, aluminumLeggings, aluminumBoots,
+				
+				eterniumHelmet, eterniumChestplate, eterniumLeggings, eterniumBoots);
 		TheStuffExtension.log("Registered Items");
 	}
 

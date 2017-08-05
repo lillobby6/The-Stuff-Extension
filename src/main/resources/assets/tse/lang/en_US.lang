@@ -63,6 +63,7 @@ item.nickel_ingot.name=Nickel Ingot
 item.pewter_ingot.name=Pewter Ingot
 item.aluminum_ingot.name=Aluminum Ingot
 item.mnemium_ingot.name=Mnemium Ingot
+item.eternium_ingot.name=Eternium Ingot
 
 item.copper_pickaxe.name=Copper Pickaxe
 item.copper_axe.name=Copper Axe
@@ -246,6 +247,13 @@ item.aluminum_hoe.name=Aluminum Hoe
 item.aluminum_mattock.name=Aluminum Mattock
 item.aluminum_sword.name=Aluminum Sword
 
+item.eternium_pickaxe.name=Eternium Pickaxe
+item.eternium_axe.name=Eternium Axe
+item.eternium_shovel.name=Eternium Shovel
+item.eternium_hoe.name=Eternium Hoe
+item.eternium_mattock.name=Eternium Mattock
+item.eternium_sword.name=Eternium Sword
+
 item.wood_mattock.name=Wood Mattock
 item.stone_mattock.name=Stone Mattock
 item.iron_mattock.name=Iron Mattock
@@ -372,6 +380,11 @@ item.aluminum_chestplate.name=Aluminum Chestplate
 item.aluminum_leggings.name=Aluminum Leggings
 item.aluminum_boots.name=Aluminum Boots
 
+item.eternium_helmet.name=Eternium Helmet
+item.eternium_chestplate.name=Eternium Chestplate
+item.eternium_leggings.name=Eternium Leggings
+item.eternium_boots.name=Eternium Boots
+
 item.lapis_remover.name=Lapis Lazuli Remover
 
 item.justice.name=Justice
@@ -435,6 +448,8 @@ tile.lead_block.name=Lead Block
 tile.nickel_block.name=Nickel Block
 tile.pewter_block.name=Pewter Block
 tile.aluminum_block.name=Aluminum Block
+tile.mnemium_block.name=Mnemium Block
+tile.eternium_block.name=Eternium Block
 
 tile.white_stone.name=White Stone
 tile.white_cobblestone.name=White Cobblestone

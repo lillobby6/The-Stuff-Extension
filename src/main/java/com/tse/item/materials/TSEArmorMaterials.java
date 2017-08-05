@@ -16,6 +16,8 @@ public class TSEArmorMaterials {
 			new int[] { 1, 3, 4, 1 }, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
 	public static final ArmorMaterial MNEMIUM = EnumHelper.addArmorMaterial("MNEMIUM", "tse:mnemium", 120,
 			new int[] { 10, 13, 12, 10 }, 100, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 8.0F);
+	public static final ArmorMaterial ETERNIUM = EnumHelper.addArmorMaterial("ETERNIUM", "tse:eternium", 200,
+			new int[] { 12, 14, 13, 11 }, 120, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 10.0F);
 	public static final ArmorMaterial PLATINUM = EnumHelper.addArmorMaterial("PLATINUM", "tse:platinum", 9,
 			new int[] { 2, 3, 6, 2 }, 30, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0F);
 	public static final ArmorMaterial PEWTER = EnumHelper.addArmorMaterial("PEWTER", "tse:pewter", 22,
