@@ -119,7 +119,19 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("blockToslotrium", BlockManager.toslotriumBlock);
 		OreDictionary.registerOre("blockVividium", BlockManager.vividiumBlock);
 		OreDictionary.registerOre("blockSphalerite", BlockManager.sphaleriteBlock);
-
+		OreDictionary.registerOre("blockExtranetium", BlockManager.extranetiumBlock);
+		OreDictionary.registerOre("blockSilver", BlockManager.silverBlock);
+		OreDictionary.registerOre("blockPlatinum", BlockManager.platinumBlock);
+		OreDictionary.registerOre("blockTitanium", BlockManager.titaniumBlock);
+		OreDictionary.registerOre("blockZinc", BlockManager.zincBlock);
+		OreDictionary.registerOre("blockBrass", BlockManager.brassBlock);
+		OreDictionary.registerOre("blockLead", BlockManager.leadBlock);
+		OreDictionary.registerOre("blockNickel", BlockManager.nickelBlock);
+		OreDictionary.registerOre("blockPewter", BlockManager.pewterBlock);
+		OreDictionary.registerOre("blockAluminum", BlockManager.aluminumBlock);
+		OreDictionary.registerOre("blockMnemium", BlockManager.mnemiumBlock);
+		OreDictionary.registerOre("blockEternium", BlockManager.eterniumBlock);
+		
 		OreDictionary.registerOre("stone", BlockManager.whiteStone);
 		OreDictionary.registerOre("cobblestone", BlockManager.whiteCobblestone);
 

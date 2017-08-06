@@ -102,6 +102,7 @@ public class BlockManager {
 	public static Block pewterBlock = registerBlockNormal("pewter_block", 5.0F, 5.0F);
 	public static Block aluminumBlock = registerBlockNormal("aluminum_block", 5.0F, 5.0F);
 	public static Block mnemiumBlock = registerBlockNormal("mnemium_block", 5.0F, 5.0F);
+	public static Block eterniumBlock = registerBlockNormal("eternium_block", 5.0F, 5.0F);
 
 	public static Block storeBox = registerStoreBox("store_box");
 	public static Block mysteriousBox = registerMBox("mysterious_box");
@@ -209,7 +210,6 @@ public class BlockManager {
 			.setUnlocalizedName("vividium_block");
 	public static Item sphaleriteBlockItem = new ItemBlock(sphaleriteBlock).setRegistryName("sphalerite_block")
 			.setUnlocalizedName("sphalerite_block");
-	// TODO
 	public static Item extranetiumBlockItem = new ItemBlock(extranetiumBlock).setRegistryName("extranetium_block")
 			.setUnlocalizedName("extranetium_block");
 	public static Item silverBlockItem = new ItemBlock(silverBlock).setRegistryName("silver_block")
@@ -232,6 +232,7 @@ public class BlockManager {
 			.setUnlocalizedName("aluminum_block");
 	public static Item mnemiumBlockItem = new ItemBlock(mnemiumBlock).setRegistryName("mnemium_block")
 			.setUnlocalizedName("mnemium_block");
+	public static Item eterniumBlockItem = new ItemBlock(eterniumBlock).setRegistryName("eternium_block").setUnlocalizedName("eternium_block");
 
 	public static Item storeBoxItem = new ItemBlock(storeBox).setRegistryName("store_box")
 			.setUnlocalizedName("store_box");
@@ -348,7 +349,7 @@ public class BlockManager {
 				tyionetiumBlock, bronzeBlock, brightflameBlock, brightsteelBlock, reforgedGoldBlock, magicBlock,
 				mithrilBlock, mortiumBlock, mysteriousBlock, mysticBlock, skyIronBlock, terriumBlock, toslotriumBlock,
 				vividiumBlock, sphaleriteBlock, extranetiumBlock, silverBlock, platinumBlock, titaniumBlock, zincBlock,
-				brassBlock, leadBlock, nickelBlock, pewterBlock, aluminumBlock, mnemiumBlock,
+				brassBlock, leadBlock, nickelBlock, pewterBlock, aluminumBlock, mnemiumBlock, eterniumBlock,
 
 				storeBox, superStoreBox, mysteriousBox, diamondStoreBox, whiteStone, whiteCobblestone,
 
@@ -378,7 +379,7 @@ public class BlockManager {
 				mysticBlockItem, skyIronBlockItem, terriumBlockItem, toslotriumBlockItem, vividiumBlockItem,
 				sphaleriteBlockItem, extranetiumBlockItem, silverBlockItem, platinumBlockItem, titaniumBlockItem,
 				zincBlockItem, brassBlockItem, leadBlockItem, nickelBlockItem, pewterBlockItem, aluminumBlockItem,
-				mnemiumBlockItem,
+				mnemiumBlockItem, eterniumBlockItem,
 
 				storeBoxItem, superStoreBoxItem, mysteriousBoxItem, diamondStoreBoxItem,
 

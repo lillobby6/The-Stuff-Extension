@@ -246,6 +246,13 @@ public class ItemRenderRegister {
 	    reg(ItemManager.platinumMattock);
 	    reg(ItemManager.platinumSword);
 	    
+	    reg(ItemManager.eterniumPickaxe);
+	    reg(ItemManager.eterniumAxe);
+	    reg(ItemManager.eterniumShovel);
+	    reg(ItemManager.eterniumHoe);
+	    reg(ItemManager.eterniumMattock);
+	    reg(ItemManager.eterniumSword);
+	    
 	    reg(ItemManager.tinPickaxe);
 	    reg(ItemManager.tinAxe);
 	    reg(ItemManager.tinShovel);
@@ -376,6 +383,26 @@ public class ItemRenderRegister {
 	    reg(ItemManager.platinumChestplate);
 	    reg(ItemManager.platinumLeggings);
 	    reg(ItemManager.platinumBoots);
+	    
+	    reg(ItemManager.pewterHelmet);
+	    reg(ItemManager.pewterChestplate);
+	    reg(ItemManager.pewterLeggings);
+	    reg(ItemManager.pewterBoots);
+	    
+	    reg(ItemManager.mnemiumHelmet);
+	    reg(ItemManager.mnemiumChestplate);
+	    reg(ItemManager.mnemiumLeggings);
+	    reg(ItemManager.mnemiumBoots);
+	    
+	    reg(ItemManager.aluminumHelmet);
+	    reg(ItemManager.aluminumChestplate);
+	    reg(ItemManager.aluminumLeggings);
+	    reg(ItemManager.aluminumBoots);
+	    
+	    reg(ItemManager.eterniumHelmet);
+	    reg(ItemManager.eterniumChestplate);
+	    reg(ItemManager.eterniumLeggings);
+	    reg(ItemManager.eterniumBoots);
 	    TheStuffExtension.log("Rendered items.");
 	}
 	public static void reg(Item item)

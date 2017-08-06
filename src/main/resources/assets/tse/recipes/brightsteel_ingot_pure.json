@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "ore": "gemDiamondExalted", "type": "forge:ore_dict"
+        },
+		{
+            "ore": "ingotSteel", "type": "forge:ore_dict"
+        },
+		{
+            "ore": "ingotNickel", "type": "forge:ore_dict"
+        }
+    ],
+    "result": {
+        "item": "tse:brightsteel_ingot"
+    }
+}
