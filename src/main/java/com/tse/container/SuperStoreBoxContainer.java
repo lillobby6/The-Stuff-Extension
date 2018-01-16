@@ -1,12 +1,12 @@
 package com.tse.container;
 
+import com.tse.tileentity.SuperStoreBoxTileEntity;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-
-import com.tse.tileentity.SuperStoreBoxTileEntity;
 
 public class SuperStoreBoxContainer extends Container{
 

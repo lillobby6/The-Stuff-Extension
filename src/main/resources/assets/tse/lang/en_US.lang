@@ -409,6 +409,7 @@ tile.titanium_ore.name=Titanium Ore
 tile.galena_ore.name=Galena Ore
 tile.pentlandite_ore.name=Pentlandite Ore
 tile.aluminum_ore.name=Aluminum Ore
+tile.sphalerite_ore.name=Sphalerite Ore
 
 tile.moon_sand.name=Moon Sand
 tile.moon_stone.name=Moon Stone
