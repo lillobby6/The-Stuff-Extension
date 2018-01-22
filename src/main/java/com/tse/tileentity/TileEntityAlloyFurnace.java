@@ -1,6 +1,7 @@
 package com.tse.tileentity;
 
 import com.tse.container.ContainerAlloyFurnace;
+import com.tse.world.block.AlloyFurnace;
 import com.tse.world.item.recipe.AlloyFurnaceRecipes;
 
 import net.minecraft.block.Block;
@@ -26,12 +27,14 @@ import net.minecraft.item.ItemTool;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityLockable;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.ITickable;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-public class TileEntityAlloyFurnace extends TileEntity implements ISidedInventory
+public class TileEntityAlloyFurnace extends TileEntityLockable implements ISidedInventory, ITickable
 {
     private static final int[] slots_top = new int[] {0, 1};
     private static final int[] slots_bottom = new int[] {2, 3};
@@ -287,9 +290,9 @@ public class TileEntityAlloyFurnace extends TileEntity implements ISidedInventor
 
         if (!this.world.isRemote)
         {
-            ItemStack itemstack = this.furnaceItemStacks.get(1);
+            ItemStack itemstack = this.furnaceItemStacks.get(2);
 
-            if (this.isBurning() || !itemstack.isEmpty() && !((ItemStack)this.furnaceItemStacks.get(0)).isEmpty())
+            if (this.isBurning() || !itemstack.isEmpty() && !((ItemStack)this.furnaceItemStacks.get(0)).isEmpty() && !((ItemStack)this.furnaceItemStacks.get(1)).isEmpty())
             {
                 if (!this.isBurning() && this.canSmelt())
                 {
@@ -321,7 +324,7 @@ public class TileEntityAlloyFurnace extends TileEntity implements ISidedInventor
                     if (this.cookTime == this.totalCookTime)
                     {
                         this.cookTime = 0;
-                        this.totalCookTime = this.getCookTime(this.furnaceItemStacks.get(0));
+                        this.totalCookTime = this.getCookTime(new ItemStack[] {this.furnaceItemStacks.get(0), this.furnaceItemStacks.get(1)});
                         this.smeltItem();
                         flag1 = true;
                     }
@@ -339,7 +342,7 @@ public class TileEntityAlloyFurnace extends TileEntity implements ISidedInventor
             if (flag != this.isBurning())
             {
                 flag1 = true;
-                BlockFurnace.setState(this.isBurning(), this.world, this.pos);
+                AlloyFurnace.setState(this.isBurning(), this.world, this.pos);
             }
         }
 
@@ -374,13 +377,9 @@ public class TileEntityAlloyFurnace extends TileEntity implements ISidedInventor
 	
 	private boolean canSmelt()
     {
-        if (((ItemStack)this.furnaceItemStacks.get(0)).isEmpty())
+        if (((ItemStack)this.furnaceItemStacks.get(0)).isEmpty() || ((ItemStack)this.furnaceItemStacks.get(1)).isEmpty())
         {
             return false;
-        }
-        if (((ItemStack)this.furnaceItemStacks.get(1)).isEmpty())
-        {
-        	return false;
         }
         else
         {
@@ -494,6 +493,10 @@ public class TileEntityAlloyFurnace extends TileEntity implements ISidedInventor
         }
 		return true;
 	}
+	public int getCookTime(ItemStack[] stack)
+    {
+        return 200;
+    }
 	public int getCookTime(ItemStack stack)
     {
         return 200;
@@ -508,6 +511,11 @@ public class TileEntityAlloyFurnace extends TileEntity implements ISidedInventor
     {
         return inventory.getField(0) > 0;
     }
+	@Override
+	public String getGuiID() {
+		// TODO Auto-generated method stub
+		return "tse:alloy_furnace";
+	}
 	
 	
 }

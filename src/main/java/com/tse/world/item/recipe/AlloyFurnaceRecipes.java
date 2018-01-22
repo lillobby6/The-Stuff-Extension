@@ -49,7 +49,7 @@ public class AlloyFurnaceRecipes {
 	
 	public float getExperience(ItemStack item)
 	{
-		if (item.isEmpty() || item == null || item.getItem() == null)
+		if (item.isEmpty())
 		{
 			return 0;
 		}

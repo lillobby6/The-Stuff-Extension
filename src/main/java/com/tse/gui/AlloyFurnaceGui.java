@@ -18,7 +18,7 @@ public class AlloyFurnaceGui extends GuiContainer
     private static final ResourceLocation ALLOY_FURNACE_GUI_TEXTURES = new ResourceLocation("tse:textures/gui/alloy_furnace.png");
     /** The player inventory bound to this GUI. */
     private final InventoryPlayer playerInventory;
-    private final IInventory tileFurnace;
+    private final TileEntityAlloyFurnace tileFurnace;
 
     public AlloyFurnaceGui(EntityPlayer playerIn, InventoryPlayer playerInv, TileEntityAlloyFurnace furnaceInv)
     {
@@ -42,9 +42,9 @@ public class AlloyFurnaceGui extends GuiContainer
      */
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
     {
-       /** String s = this.tileFurnace.getDisplayName().getUnformattedText();
+        String s = this.tileFurnace.getDisplayName().getUnformattedText();
         this.fontRenderer.drawString(s, this.xSize / 2 - this.fontRenderer.getStringWidth(s) / 2, 6, 4210752);
-        this.fontRenderer.drawString(this.playerInventory.getDisplayName().getUnformattedText(), 8, this.ySize - 96 + 2, 4210752);*/
+        this.fontRenderer.drawString(this.playerInventory.getDisplayName().getUnformattedText(), 8, this.ySize - 96 + 2, 4210752);
     }
 
     /**
