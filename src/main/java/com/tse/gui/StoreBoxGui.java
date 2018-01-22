@@ -6,7 +6,7 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.util.ResourceLocation;
 
 import com.tse.container.StoreBoxContainer;
-import com.tse.main.lib.StringsLib;
+import com.tse.library.StringsLib;
 import com.tse.tileentity.StoreBoxTileEntity;
 
 public class StoreBoxGui extends GuiContainer{

@@ -1,13 +1,13 @@
 package com.tse.container;
 
+import com.tse.tileentity.DiamondSBTileEntity;
+import com.tse.tileentity.StoreBoxTileEntity;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-
-import com.tse.tileentity.DiamondSBTileEntity;
-import com.tse.tileentity.StoreBoxTileEntity;
 
 public class DiamondSBContainer extends Container{
 
