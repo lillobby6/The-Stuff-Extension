@@ -249,8 +249,8 @@ public class BlockManager {
 
 	public static Item alloyFurnaceItem = new ItemBlock(alloyFurnace).setRegistryName("alloy_furnace")
 			.setUnlocalizedName("alloy_furnace");
-	public static Item alloyFurnaceActiveItem = new ItemBlock(alloyFurnaceActive).setRegistryName("alloy_furnace_inactive")
-			.setUnlocalizedName("alloy_furnace_inactive");
+	public static Item alloyFurnaceActiveItem = new ItemBlock(alloyFurnaceActive).setRegistryName("alloy_furnace_active")
+			.setUnlocalizedName("alloy_furnace_active");
 
 	// new ItemBlock( alloyFurnace);
 

@@ -7,6 +7,7 @@ import com.tse.common.core.TheStuffExtension;
 import com.tse.common.oredictionary.OreDictionaryManager;
 import com.tse.gui.GuiManager;
 import com.tse.world.gen.WorldGen;
+import com.tse.world.item.recipe.AlloyFurnaceRecipes;
 import com.tse.world.item.recipe.Smelting;
 
 import net.minecraftforge.common.config.Configuration;
@@ -32,6 +33,7 @@ public class CommonProxy {
     public void init(FMLInitializationEvent e) {
     	TheStuffExtension.log("Starting init...");
     	Smelting.smelting();
+    	AlloyFurnaceRecipes.instance();
     	//EntityManager.init();
     	OreDictionaryManager.registerOres();
     	NetworkRegistry.INSTANCE.registerGuiHandler(TheStuffExtension.instance, new GuiManager());

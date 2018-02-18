@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tse:blocks/alloy_furnace_sides",
+    "up": "tse:blocks/alloy_furnace_sides",
+    "east": "tse:blocks/alloy_furnace_sides",
+    "west": "tse:blocks/alloy_furnace_sides",
+    "north": "tse:blocks/alloy_furnace_front",
+    "south": "tse:blocks/alloy_furnace_sides"
+  }
+}
