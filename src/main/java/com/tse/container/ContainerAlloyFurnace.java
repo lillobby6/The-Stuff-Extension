@@ -13,6 +13,8 @@ import net.minecraft.inventory.SlotFurnaceFuel;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.tileentity.TileEntityFurnace;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ContainerAlloyFurnace extends Container{
 
@@ -28,6 +30,12 @@ public class ContainerAlloyFurnace extends Container{
 	
 	public static final int INV_START = OUTPUT.length + INPUT.length + FUEL.length, INV_END = INV_START + 26, HOTBAR_START = INV_END + 1, HOTBAR_END = HOTBAR_START + 8;
 		
+	@SideOnly(Side.CLIENT)
+    public void updateProgressBar(int id, int data)
+    {
+        this.alloyFurnace.setField(id, data);
+    }
+	
 	public ContainerAlloyFurnace(EntityPlayer playerIn, InventoryPlayer playerInventory, TileEntityAlloyFurnace alloyFurnace)
 	{
 		this.alloyFurnace = alloyFurnace;

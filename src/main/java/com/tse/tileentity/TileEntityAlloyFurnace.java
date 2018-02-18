@@ -292,7 +292,7 @@ public class TileEntityAlloyFurnace extends TileEntityLockable implements ISided
         {
             ItemStack itemstack = this.furnaceItemStacks.get(2);
 
-            if (this.isBurning() || !itemstack.isEmpty() && !((ItemStack)this.furnaceItemStacks.get(0)).isEmpty() && !((ItemStack)this.furnaceItemStacks.get(1)).isEmpty())
+            if ((this.isBurning() || !itemstack.isEmpty()) && !((ItemStack)this.furnaceItemStacks.get(0)).isEmpty() && !((ItemStack)this.furnaceItemStacks.get(1)).isEmpty())
             {
                 if (!this.isBurning() && this.canSmelt())
                 {
@@ -311,7 +311,7 @@ public class TileEntityAlloyFurnace extends TileEntityLockable implements ISided
                             if (itemstack.isEmpty())
                             {
                                 ItemStack item1 = item.getContainerItem(itemstack);
-                                this.furnaceItemStacks.set(1, item1);
+                                this.furnaceItemStacks.set(2, item1);
                             }
                         }
                     }
@@ -358,12 +358,12 @@ public class TileEntityAlloyFurnace extends TileEntityLockable implements ISided
         {
             ItemStack itemstack = this.furnaceItemStacks.get(0);
             ItemStack itemstack1 = this.furnaceItemStacks.get(1);
-            ItemStack itemstack2 = AlloyFurnaceRecipes.instance().getSmeltingResult(new ItemStack[] {itemstack, itemstack1});
-            ItemStack itemstack3 = this.furnaceItemStacks.get(2);
+            ItemStack itemstack2 = AlloyFurnaceRecipes.instance().getSmeltingResult(itemstack, itemstack1);
+            ItemStack itemstack3 = this.furnaceItemStacks.get(3);
 
-            if (itemstack2.isEmpty())
+            if (itemstack3.isEmpty())
             {
-                this.furnaceItemStacks.set(2, itemstack2.copy());
+                this.furnaceItemStacks.set(3, itemstack2.copy());
             }
             else if (itemstack3.getItem() == itemstack2.getItem())
             {
@@ -383,7 +383,7 @@ public class TileEntityAlloyFurnace extends TileEntityLockable implements ISided
         }
         else
         {
-            ItemStack itemstack = AlloyFurnaceRecipes.instance().getSmeltingResult(new ItemStack[] {((ItemStack)this.furnaceItemStacks.get(0)), ((ItemStack)this.furnaceItemStacks.get(1))});
+            ItemStack itemstack = AlloyFurnaceRecipes.instance().getSmeltingResult((ItemStack)this.furnaceItemStacks.get(0), (ItemStack)this.furnaceItemStacks.get(1));
 
             if (itemstack.isEmpty())
             {
@@ -391,7 +391,7 @@ public class TileEntityAlloyFurnace extends TileEntityLockable implements ISided
             }
             else
             {
-                ItemStack itemstack1 = this.furnaceItemStacks.get(2);
+                ItemStack itemstack1 = this.furnaceItemStacks.get(3);
 
                 if (itemstack1.isEmpty())
                 {
@@ -410,6 +410,7 @@ public class TileEntityAlloyFurnace extends TileEntityLockable implements ISided
                     return itemstack1.getCount() + itemstack.getCount() <= itemstack.getMaxStackSize(); // Forge fix: make furnace respect stack sizes in furnace recipes
                 }
             }
+            		
         }
     }
 	
