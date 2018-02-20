@@ -1,6 +1,5 @@
 package com.tse.world.block;
 
-import com.tse.common.config.Config;
 import com.tse.common.core.TheStuffExtension;
 import com.tse.common.creativetabs.TSECreativeTabs;
 
@@ -109,9 +108,15 @@ public class BlockManager {
 	public static Block superStoreBox = registerSSBox("super_store_box");
 	public static Block diamondStoreBox = registerDSBox("diamond_store_box");
 
-	public static Block alloyFurnace = registerAlloyFurnace("alloy_furnace", false, true);
-	public static Block alloyFurnaceActive = registerAlloyFurnace("alloy_furnace_active", true, false);
-
+	public static Block alloyFurnace = registerAlloyFurnace("alloy_furnace", false, true, "regular");
+	public static Block alloyFurnaceActive = registerAlloyFurnace("alloy_furnace_active", true, false, "regular");
+	
+	public static Block copperAlloyFurnace = registerAlloyFurnace("copper_alloy_furnace", false, true, "copper");
+	public static Block copperAlloyFurnaceActive = registerAlloyFurnace("copper_alloy_furnace_active", true, false, "copper");
+	
+	public static Block copperFurnace = registerBlockNormal("copper_furnace", 5.0F, 5.0F);
+	public static Block copperFurnaceActive = registerBlockNormal("copper_furnace_active", 5.0F, 5.0F);
+	
 	public static Block whiteStone = registerBlockNormal("white_stone", 2.0F, 2.0F);
 	public static Block whiteCobblestone = registerBlockNormal("white_cobblestone", 2.0F, 2.0F);
 
@@ -124,6 +129,8 @@ public class BlockManager {
 	// public static Block paduakPlanks = registerBlockNormal("padauk_planks",
 	// 2.0F, 2.0F);
 	public static Block padaukLeaves;
+	
+	
 
 	public static Item exaltedDiamondOreItem = new ItemBlock(exaltedDiamondOre).setRegistryName("exalted_diamond_ore")
 			.setUnlocalizedName("exalted_diamond_ore");
@@ -251,6 +258,13 @@ public class BlockManager {
 			.setUnlocalizedName("alloy_furnace");
 	public static Item alloyFurnaceActiveItem = new ItemBlock(alloyFurnaceActive).setRegistryName("alloy_furnace_active")
 			.setUnlocalizedName("alloy_furnace_active");
+	
+	public static Item copperAlloyFurnaceItem = new ItemBlock(copperAlloyFurnace).setRegistryName("copper_alloy_furnace").setUnlocalizedName("copper_alloy_furnace");
+	public static Item copperAlloyFurnaceActiveItem = new ItemBlock(copperAlloyFurnaceActive).setRegistryName("copper_alloy_furnace_active").setUnlocalizedName("copper_alloy_furnace_active");
+	
+	public static Item copperFurnaceItem = new ItemBlock(copperFurnace).setRegistryName("copper_furnace").setUnlocalizedName("copper_furnace");
+	public static Item copperFurnaceActiveItem = new ItemBlock(copperFurnaceActive).setRegistryName("copper_furnace_active").setUnlocalizedName("copper_furnace_active");
+	
 
 	// new ItemBlock( alloyFurnace);
 
@@ -341,13 +355,34 @@ public class BlockManager {
 		return registerBlock(registryName, itemBlock, block);
 	}
 	
-	public static Block registerAlloyFurnace(String registryName, boolean active, boolean inTab)
+	public static Block registerAlloyFurnace(String registryName, boolean active, boolean inTab, String identifier)
 	{
-		final Block block = new AlloyFurnace(active);
-		if(inTab)
-			block.setCreativeTab(TSECreativeTabs.tabBlocks);
-		final ItemBlock itemBlock = new ItemBlock(block);
-		return registerBlock(registryName, itemBlock, block);
+		final Block aalloyFurnace = new AlloyFurnace(active);
+		final Block copperAalloyFurnace = new CopperAlloyFurnace(active);
+		if(identifier == "regular")
+		{
+			if(inTab)
+				aalloyFurnace.setCreativeTab(TSECreativeTabs.tabMachines);
+			aalloyFurnace.setHardness(5.0F);
+			aalloyFurnace.setResistance(5.0F);
+			aalloyFurnace.setHarvestLevel("pickaxe", 1);
+			final ItemBlock itemBlock = new ItemBlock(aalloyFurnace);
+			return registerBlock(registryName, itemBlock, aalloyFurnace);
+		}
+		else if(identifier == "copper")
+		{
+			if(inTab)
+				copperAalloyFurnace.setCreativeTab(TSECreativeTabs.tabMachines);
+			copperAalloyFurnace.setHardness(5.0F);
+			copperAalloyFurnace.setResistance(5.0F);
+			copperAalloyFurnace.setHarvestLevel("pickaxe", 1);
+			final ItemBlock itemBlock = new ItemBlock(copperAalloyFurnace);
+			return registerBlock(registryName, itemBlock, copperAalloyFurnace);
+		}
+		else
+		{
+			throw new NullPointerException("Identifier for alloyfurnace does not exist.");
+		}
 	}
 
 	@SubscribeEvent
@@ -371,6 +406,10 @@ public class BlockManager {
 				storeBox, superStoreBox, mysteriousBox, diamondStoreBox,
 
 				alloyFurnace, alloyFurnaceActive,
+				
+				copperAlloyFurnace, copperAlloyFurnaceActive,
+				
+				copperFurnace, copperFurnaceActive,
 
 				whiteStone, whiteCobblestone,
 
@@ -405,7 +444,11 @@ public class BlockManager {
 				storeBoxItem, superStoreBoxItem, mysteriousBoxItem, diamondStoreBoxItem,
 
 				alloyFurnaceItem, alloyFurnaceActiveItem,
-
+				
+				copperAlloyFurnaceItem, copperAlloyFurnaceActiveItem,
+				
+				copperFurnaceItem, copperFurnaceActiveItem,
+				
 				whiteStoneItem, whiteCobblestoneItem,
 
 				purpleheartLogItem, purpleheartPlanksItem// ,

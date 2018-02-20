@@ -8,6 +8,14 @@ import com.tse.world.block.BlockManager;
 import com.tse.world.item.ItemManager;
 
 public class TSECreativeTabs {
+	
+	public static final CreativeTabs tabMachines = new CreativeTabs("tabMachines")
+	{
+		@Override public ItemStack getTabIconItem()
+		{
+			return new ItemStack(Item.getItemFromBlock(BlockManager.alloyFurnace));
+		}
+	};
 
 	public static final CreativeTabs tabStorage = new CreativeTabs("tabStorage") {
 	    @Override public ItemStack getTabIconItem() {

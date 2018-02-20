@@ -1,7 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "tse:items/titanium_mystic_mixed_ingot"
+		"layer0": "tse:items/magneium_ingot"
 	}
 }
 

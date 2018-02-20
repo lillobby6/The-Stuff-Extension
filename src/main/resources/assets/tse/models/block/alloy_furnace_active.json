@@ -2,7 +2,7 @@
   "parent": "block/orientable",
   "textures": {
     "top": "tse:blocks/alloy_furnace_top",
-    "front": "tse:blocks/alloy_furnace_front",
+    "front": "tse:blocks/alloy_furnace_front_active",
 	"side": "tse:blocks/alloy_furnace_sides"
   }
 }

@@ -31,6 +31,8 @@ public class ItemManager {
 	public static Item brassRod = registerMainItem("brass_rod", TSECreativeTabs.tabMaterials);
 	public static Item titaniumRod = registerMainItem("titanium_rod", TSECreativeTabs.tabMaterials);
 
+	public static Item unusableMaterial = registerMainItem("unusable_material", TSECreativeTabs.tabMaterials);
+
 	public static Item exaltedDiamond = registerMainItem("exalted_diamond", TSECreativeTabs.tabMaterials);
 	public static Item bloodDiamond = registerMainItem("blood_diamond", TSECreativeTabs.tabMaterials);
 	public static Item terraDiamond = registerMainItem("terra_diamond", TSECreativeTabs.tabMaterials);
@@ -68,6 +70,11 @@ public class ItemManager {
 	public static Item aluminumIngot = registerMainItem("aluminum_ingot", TSECreativeTabs.tabMaterials);
 	public static Item mnemiumIngot = registerMainItem("mnemium_ingot", TSECreativeTabs.tabMaterials);
 	public static Item eterniumIngot = registerMainItem("eternium_ingot", TSECreativeTabs.tabMaterials);
+	public static Item fantasiumIngot = registerMainItem("fantasium_ingot", TSECreativeTabs.tabMaterials);
+	public static Item scorniumIngot = registerMainItem("scornium_ingot", TSECreativeTabs.tabMaterials);
+	public static Item electrumIngot = registerMainItem("electrum_ingot", TSECreativeTabs.tabMaterials);
+	public static Item laeniumIngot = registerMainItem("laenium_ingot", TSECreativeTabs.tabMaterials);
+	public static Item magneiumIngot = registerMainItem("magneium_ingot", TSECreativeTabs.tabMaterials);
 
 	public static Item magicNugget = registerMainItem("magic_nugget", TSECreativeTabs.tabMaterials);
 	public static Item mysticNugget = registerMainItem("mystic_nugget", TSECreativeTabs.tabMaterials);
@@ -81,17 +88,22 @@ public class ItemManager {
 	public static Item titaniumNugget = registerMainItem("titanium_nugget", TSECreativeTabs.tabMaterials);
 	public static Item steelNugget = registerMainItem("steel_nugget", TSECreativeTabs.tabMaterials);
 
-	public static Item diamondToslotriumMixedIngot = registerMainItem("diamond_toslotrium_mixed_ingot",
-			TSECreativeTabs.tabMaterials);
-	public static Item mixedIngot = registerMainItem("mixed_ingot", TSECreativeTabs.tabMaterials);
-	public static Item tyionetiumMithrilToslotriumMixedIngot = registerMainItem(
-			"tyionetium_mithril_toslotrium_mixed_ingot", TSECreativeTabs.tabMaterials);
-	public static Item reforgedGoldTyionetiumMixedIngot = registerMainItem("reforged_gold_tyionetium_mixed_ingot",
-			TSECreativeTabs.tabMaterials);
-	public static Item titaniumMysticMixedIngot = registerMainItem("titanium_mystic_mixed_ingot",
-			TSECreativeTabs.tabMaterials);
-	public static Item titaniumExtranetiumMixedIngot = registerMainItem("titanium_extranetium_mixed_ingot",
-			TSECreativeTabs.tabMaterials);
+	/*
+	 * public static Item diamondToslotriumMixedIngot =
+	 * registerMainItem("diamond_toslotrium_mixed_ingot",
+	 * TSECreativeTabs.tabMaterials); public static Item mixedIngot =
+	 * registerMainItem("mixed_ingot", TSECreativeTabs.tabMaterials); public static
+	 * Item tyionetiumMithrilToslotriumMixedIngot = registerMainItem(
+	 * "tyionetium_mithril_toslotrium_mixed_ingot", TSECreativeTabs.tabMaterials);
+	 * public static Item reforgedGoldTyionetiumMixedIngot =
+	 * registerMainItem("reforged_gold_tyionetium_mixed_ingot",
+	 * TSECreativeTabs.tabMaterials); public static Item titaniumMysticMixedIngot =
+	 * registerMainItem("titanium_mystic_mixed_ingot",
+	 * TSECreativeTabs.tabMaterials); public static Item
+	 * titaniumExtranetiumMixedIngot =
+	 * registerMainItem("titanium_extranetium_mixed_ingot",
+	 * TSECreativeTabs.tabMaterials);
+	 */
 	// End Materials
 
 	// Start Tools
@@ -770,21 +782,26 @@ public class ItemManager {
 
 				ironRod, steelRod, bronzeRod, brassRod, titaniumRod,
 
+				unusableMaterial,
+
 				exaltedDiamond, bloodDiamond, terraDiamond, lunaDiamond,
-				
+
 				sphaleriteGem,
 
 				copperIngot, steelIngot, tinIngot, tyionetiumIngot, bronzeIngot, brightflameIngot, brightsteelIngot,
 				diamondIngot, reforgedGoldIngot, magicIngot, mithrilIngot, mortiumIngot, mysteriousIngot, mysticIngot,
 				skyIronIngot, terriumIngot, toslotriumIngot, vividiumIngot, extranetiumIngot, silverIngot,
 				platinumIngot, titaniumIngot, zincIngot, brassIngot, leadIngot, nickelIngot, pewterIngot, aluminumIngot,
-				mnemiumIngot, eterniumIngot,
+				mnemiumIngot, eterniumIngot, fantasiumIngot, scorniumIngot, electrumIngot, laeniumIngot, magneiumIngot,
 
 				magicNugget, mysticNugget, mysteriousNugget, brightflameNugget, diamondNugget, bronzeNugget,
 				brassNugget, silverNugget, platinumNugget, titaniumNugget, steelNugget,
 
-				diamondToslotriumMixedIngot, tyionetiumMithrilToslotriumMixedIngot, mixedIngot,
-				reforgedGoldTyionetiumMixedIngot, titaniumMysticMixedIngot, titaniumExtranetiumMixedIngot,
+				/*
+				 * diamondToslotriumMixedIngot, tyionetiumMithrilToslotriumMixedIngot,
+				 * mixedIngot, reforgedGoldTyionetiumMixedIngot, titaniumMysticMixedIngot,
+				 * titaniumExtranetiumMixedIngot,
+				 */
 
 				justice, corruption, destruction,
 

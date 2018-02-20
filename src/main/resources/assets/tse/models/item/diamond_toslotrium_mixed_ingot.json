@@ -1,7 +1,0 @@
-{
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "tse:items/diamond_toslotrium_mixed_ingot"
-	}
-}
-

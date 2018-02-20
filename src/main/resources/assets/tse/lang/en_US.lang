@@ -8,6 +8,8 @@ item.bronze_rod.name=Bronze Rod
 item.brass_rod.name=Brass Rod
 item.titanium_rod.name=Titanium Rod
 
+item.unusable_material.name=Unusable Material
+
 item.exalted_diamond.name=Exalted Diamond
 item.blood_diamond.name=Blood Diamond
 item.terra_diamond.name=Terra Diamond
@@ -64,6 +66,11 @@ item.pewter_ingot.name=Pewter Ingot
 item.aluminum_ingot.name=Aluminum Ingot
 item.mnemium_ingot.name=Mnemium Ingot
 item.eternium_ingot.name=Eternium Ingot
+item.fantasium_ingot.name=Fantasium Ingot
+item.scornium_ingot.name=Scornium Ingot
+item.electrum_ingot.name=Electrum Ingot
+item.laenium_ingot.name=Laenium Ingot
+item.magneium_ingot.name=Magenium Ingot
 
 item.copper_pickaxe.name=Copper Pickaxe
 item.copper_axe.name=Copper Axe
@@ -463,10 +470,14 @@ tile.super_store_box.name=Super Store Box
 tile.mysterious_box.name=Mysterious Box
 tile.diamond_store_box.name=Diamond Store Box
 
+tile.alloy_furnace.name=Alloy Furnace
+tile.alloy_furnace_active.name=Alloy Furnace
+
 container.store_box=Store Box
 container.super_store_box=Super Store Box
 container.mysterious_box=Mysterious Box
 container.diamond_store_box=Diamond Store Box
+container.alloyfurnace=Alloy Furnace
 
 itemGroup.tabStorage=The Stuff Extension: Storage
 itemGroup.tabTools=The Stuff Extension: Tools
@@ -474,6 +485,7 @@ itemGroup.tabWeapons=The Stuff Extension: Combat
 itemGroup.tabMaterials=The Stuff Extension: Materials
 itemGroup.tabBlocks=The Stuff Extension: Blocks
 itemGroup.tabOres=The Stuff Extension: Ores
+itemGroup.tabMachines=The Stuff Extension: Machines
 
 entity.MortiumOreWalker.name=Mortium Ore Walker
 entity.ToslotriumOreWalker.name=Toslotrium Ore Walker

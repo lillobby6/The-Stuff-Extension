@@ -1,7 +1,7 @@
 package com.tse.container;
 
 import com.tse.inventory.SlotAlloyFurnaceOutput;
-import com.tse.tileentity.TileEntityAlloyFurnace;
+import com.tse.tileentity.TileEntityCopperAlloyFurnace;
 import com.tse.world.item.recipe.AlloyFurnaceRecipes;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -11,13 +11,12 @@ import net.minecraft.inventory.IContainerListener;
 import net.minecraft.inventory.Slot;
 import net.minecraft.inventory.SlotFurnaceFuel;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ContainerAlloyFurnace extends Container{
+public class ContainerCopperAlloyFurnace extends Container{
 
-	private TileEntityAlloyFurnace alloyFurnace;
+	private TileEntityCopperAlloyFurnace alloyFurnace;
 	private int cookTime;
     private int totalCookTime;
     private int furnaceBurnTime;
@@ -35,7 +34,7 @@ public class ContainerAlloyFurnace extends Container{
         this.alloyFurnace.setField(id, data);
     }
 	
-	public ContainerAlloyFurnace(EntityPlayer playerIn, InventoryPlayer playerInventory, TileEntityAlloyFurnace alloyFurnace)
+	public ContainerCopperAlloyFurnace(EntityPlayer playerIn, InventoryPlayer playerInventory, TileEntityCopperAlloyFurnace alloyFurnace)
 	{
 		this.alloyFurnace = alloyFurnace;
 		
@@ -132,7 +131,7 @@ public class ContainerAlloyFurnace extends Container{
                         return ItemStack.EMPTY;
                     }
                 }
-                else if (TileEntityAlloyFurnace.isItemFuel(itemstack1))
+                else if (TileEntityCopperAlloyFurnace.isItemFuel(itemstack1))
                 {
                     if (!this.mergeItemStack(itemstack1, 2, 3, false))
                     {

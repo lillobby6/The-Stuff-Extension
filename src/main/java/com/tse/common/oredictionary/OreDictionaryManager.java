@@ -63,6 +63,11 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("ingotAluminum", ItemManager.aluminumIngot);
 		OreDictionary.registerOre("ingotMnemium", ItemManager.mnemiumIngot);
 		OreDictionary.registerOre("ingotEternium", ItemManager.eterniumIngot);
+		OreDictionary.registerOre("ingotFantasium", ItemManager.fantasiumIngot);
+		OreDictionary.registerOre("ingotScornium", ItemManager.scorniumIngot);
+		OreDictionary.registerOre("ingotElectrum", ItemManager.electrumIngot);
+		OreDictionary.registerOre("ingotLaenium", ItemManager.laeniumIngot);
+		OreDictionary.registerOre("ingotMegneium", ItemManager.magneiumIngot);
 
 		OreDictionary.registerOre("nuggetMagic", ItemManager.magicNugget);
 		OreDictionary.registerOre("nuggetMystic", ItemManager.mysticNugget);

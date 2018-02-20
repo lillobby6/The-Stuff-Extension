@@ -85,6 +85,10 @@ public class BlockRenderRegister {
 		reg(BlockManager.purpleheartPlanks);
 		
 		reg(BlockManager.alloyFurnace);
+		reg(BlockManager.alloyFurnaceActive);
+		
+		reg(BlockManager.copperAlloyFurnace);
+		reg(BlockManager.copperAlloyFurnaceActive);
 		
 		//reg(BlockManager.padaukLog);
 		TheStuffExtension.log("Rendered blocks.");

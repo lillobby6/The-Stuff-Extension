@@ -1,7 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "tse:items/mixed_ingot"
+		"layer0": "tse:items/scornium_ingot"
 	}
 }
 
