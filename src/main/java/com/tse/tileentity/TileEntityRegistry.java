@@ -10,5 +10,6 @@ public class TileEntityRegistry {
 		GameRegistry.registerTileEntity(DiamondSBTileEntity.class, "diamond_store_box_tile_entity");
 		GameRegistry.registerTileEntity(TileEntityAlloyFurnace.class, "alloy_furnace_tile_entity");
 		GameRegistry.registerTileEntity(TileEntityCopperAlloyFurnace.class, "copper_alloy_furnace_tile_entity");
+		GameRegistry.registerTileEntity(TileEntityCopperFurnace.class, "copper_furnace");
 	}
 }

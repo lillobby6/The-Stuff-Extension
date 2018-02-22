@@ -70,7 +70,7 @@ item.fantasium_ingot.name=Fantasium Ingot
 item.scornium_ingot.name=Scornium Ingot
 item.electrum_ingot.name=Electrum Ingot
 item.laenium_ingot.name=Laenium Ingot
-item.magneium_ingot.name=Magenium Ingot
+item.magneium_ingot.name=Magneium Ingot
 
 item.copper_pickaxe.name=Copper Pickaxe
 item.copper_axe.name=Copper Axe
@@ -472,12 +472,18 @@ tile.diamond_store_box.name=Diamond Store Box
 
 tile.alloy_furnace.name=Alloy Furnace
 tile.alloy_furnace_active.name=Alloy Furnace
+tile.copper_alloy_furnace.name=Copper Alloy Furnace
+tile.copper_alloy_furnace_active.name=Copper Alloy Furnace
+tile.copper_furnace.name=Copper Furnace
+tile.copper_furnace_active.name=Copper Furnace
 
 container.store_box=Store Box
 container.super_store_box=Super Store Box
 container.mysterious_box=Mysterious Box
 container.diamond_store_box=Diamond Store Box
 container.alloyfurnace=Alloy Furnace
+container.copperalloyfurnace=Copper Alloy Furnace
+container.copperfurnace=Copper Furnace
 
 itemGroup.tabStorage=The Stuff Extension: Storage
 itemGroup.tabTools=The Stuff Extension: Tools

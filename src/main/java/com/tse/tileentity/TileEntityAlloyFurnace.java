@@ -455,7 +455,7 @@ public class TileEntityAlloyFurnace extends TileEntityLockable implements ISided
         this.totalCookTime = compound.getInteger("AlloyFurnaceCookTimeTotal");
         this.currentItemBurnTime = getItemBurnTime(this.furnaceItemStacks.get(1));
 
-        if (compound.hasKey("CustomName", 8))
+        if (compound.hasKey("AlloyFurnaceCustomName", 8))
         {
             this.furnaceCustomName = compound.getString("AlloyFurnaceCustomName");
         }

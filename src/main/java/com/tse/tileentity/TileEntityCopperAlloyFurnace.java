@@ -451,7 +451,7 @@ public class TileEntityCopperAlloyFurnace extends TileEntityLockable implements 
         this.totalCookTime = compound.getInteger("CopperAlloyFurnaceCookTimeTotal");
         this.currentItemBurnTime = getItemBurnTime(this.furnaceItemStacks.get(1));
 
-        if (compound.hasKey("CustomName", 8))
+        if (compound.hasKey("CopperAlloyFurnaceCustomName", 8))
         {
             this.furnaceCustomName = compound.getString("CopperAlloyFurnaceCustomName");
         }

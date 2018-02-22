@@ -114,8 +114,8 @@ public class BlockManager {
 	public static Block copperAlloyFurnace = registerAlloyFurnace("copper_alloy_furnace", false, true, "copper");
 	public static Block copperAlloyFurnaceActive = registerAlloyFurnace("copper_alloy_furnace_active", true, false, "copper");
 	
-	public static Block copperFurnace = registerBlockNormal("copper_furnace", 5.0F, 5.0F);
-	public static Block copperFurnaceActive = registerBlockNormal("copper_furnace_active", 5.0F, 5.0F);
+	public static Block copperFurnace = registerFurnace("copper_furnace", false, true);
+	public static Block copperFurnaceActive = registerFurnace("copper_furnace_active", true, false);
 	
 	public static Block whiteStone = registerBlockNormal("white_stone", 2.0F, 2.0F);
 	public static Block whiteCobblestone = registerBlockNormal("white_cobblestone", 2.0F, 2.0F);
@@ -383,6 +383,20 @@ public class BlockManager {
 		{
 			throw new NullPointerException("Identifier for alloyfurnace does not exist.");
 		}
+	}
+	
+	public static Block registerFurnace(String registryName, boolean active, boolean inTab)
+	{
+		final Block block = new BlockCopperFurnace(active);
+		if(inTab)
+		{
+			block.setCreativeTab(TSECreativeTabs.tabMachines);
+		}
+		block.setHardness(5.0F);
+		block.setResistance(5.0F);
+		block.setHarvestLevel("pickaxe", 1);
+		final ItemBlock itemBlock = new ItemBlock(block);
+		return registerBlock(registryName, itemBlock, block);
 	}
 
 	@SubscribeEvent
