@@ -87,6 +87,9 @@ public class BlockRenderRegister {
 		reg(BlockManager.alloyFurnace);
 		reg(BlockManager.alloyFurnaceActive);
 		
+		reg(BlockManager.copperFurnace);
+		reg(BlockManager.copperFurnaceActive);
+		
 		reg(BlockManager.copperAlloyFurnace);
 		reg(BlockManager.copperAlloyFurnaceActive);
 		

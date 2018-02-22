@@ -15,12 +15,36 @@ public class ItemRenderRegister {
 		reg(ItemManager.lunaDiamond);
 		
 		reg(ItemManager.unusableMaterial);
+		
+		reg(ItemManager.brightflameStick);
+		reg(ItemManager.brightsteelStick);
+		reg(ItemManager.reforgedGoldStick);
+		reg(ItemManager.magicStick);
+		reg(ItemManager.mithrilStick);
+		reg(ItemManager.mysteriousStick);
+		reg(ItemManager.extranetiumStick);
 
 		reg(ItemManager.ironRod);
 		reg(ItemManager.steelRod);
 		reg(ItemManager.bronzeRod);
 		reg(ItemManager.brassRod);
 		reg(ItemManager.titaniumRod);
+		reg(ItemManager.copperRod);
+		reg(ItemManager.tinRod);
+		reg(ItemManager.tyionetiumRod);
+		reg(ItemManager.mortiumRod);
+		reg(ItemManager.skyIronRod);
+		reg(ItemManager.terriumRod);
+		reg(ItemManager.toslotriumRod);
+		reg(ItemManager.vividiumRod);
+		reg(ItemManager.silverRod);
+		reg(ItemManager.platinumRod);
+		reg(ItemManager.zincRod);
+		reg(ItemManager.leadRod);
+		reg(ItemManager.nickelRod);
+		reg(ItemManager.pewterRod);
+		reg(ItemManager.aluminumRod);
+		reg(ItemManager.mnemiumRod);
 
 		reg(ItemManager.sphaleriteGem);
 

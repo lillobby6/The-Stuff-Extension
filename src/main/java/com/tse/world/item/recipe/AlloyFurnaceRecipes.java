@@ -11,6 +11,7 @@ import com.tse.world.item.ItemManager;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class AlloyFurnaceRecipes {
 	private static final AlloyFurnaceRecipes recipes = new AlloyFurnaceRecipes();

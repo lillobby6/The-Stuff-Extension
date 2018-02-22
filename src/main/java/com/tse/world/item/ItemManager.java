@@ -21,16 +21,48 @@ import net.minecraftforge.registries.IForgeRegistry;
 @Mod.EventBusSubscriber
 public class ItemManager {
 
-	public static Item goldenStick = new TSEItem("golden_stick").setRegistryName("golden_stick");
+	public static Item goldenStick = new TSEItem("golden_stick").setRegistryName("golden_stick")
+			.setCreativeTab(TSECreativeTabs.tabMaterials);
+
+	public static Item brightflameStick = registerMainItem("brightflame_stick", TSECreativeTabs.tabMaterials);
+	public static Item brightsteelStick = registerMainItem("brightsteel_stick", TSECreativeTabs.tabMaterials);
 	public static Item diamondStick = registerMainItem("diamond_stick", TSECreativeTabs.tabMaterials);
+	public static Item reforgedGoldStick = registerMainItem("reforged_gold_stick", TSECreativeTabs.tabMaterials);
+	public static Item magicStick = registerMainItem("magic_stick", TSECreativeTabs.tabMaterials);
+	public static Item mithrilStick = registerMainItem("mithril_stick", TSECreativeTabs.tabMaterials);
+	public static Item mysteriousStick = registerMainItem("mysterious_stick", TSECreativeTabs.tabMaterials);
 	public static Item mysticStick = registerMainItem("mystic_stick", TSECreativeTabs.tabMaterials);
+	public static Item extranetiumStick = registerMainItem("extranetium_stick", TSECreativeTabs.tabMaterials);
 
 	public static Item ironRod = registerMainItem("iron_rod", TSECreativeTabs.tabMaterials);
-	public static Item steelRod = registerMainItem("steel_rod", TSECreativeTabs.tabMaterials);
-	public static Item bronzeRod = registerMainItem("bronze_rod", TSECreativeTabs.tabMaterials);
-	public static Item brassRod = registerMainItem("brass_rod", TSECreativeTabs.tabMaterials);
-	public static Item titaniumRod = registerMainItem("titanium_rod", TSECreativeTabs.tabMaterials);
 
+	public static Item copperRod = registerMainItem("copper_rod", TSECreativeTabs.tabMaterials);
+	public static Item steelRod = registerMainItem("steel_rod", TSECreativeTabs.tabMaterials);
+	public static Item tinRod = registerMainItem("tin_rod", TSECreativeTabs.tabMaterials);
+	public static Item tyionetiumRod = registerMainItem("tyionetium_rod", TSECreativeTabs.tabMaterials);
+	public static Item bronzeRod = registerMainItem("bronze_rod", TSECreativeTabs.tabMaterials);
+	public static Item mortiumRod = registerMainItem("mortium_rod", TSECreativeTabs.tabMaterials);
+	public static Item skyIronRod = registerMainItem("sky_iron_rod", TSECreativeTabs.tabMaterials);
+	public static Item terriumRod = registerMainItem("terrium_rod", TSECreativeTabs.tabMaterials);
+	public static Item toslotriumRod = registerMainItem("toslotrium_rod", TSECreativeTabs.tabMaterials);
+	public static Item vividiumRod = registerMainItem("vividium_rod", TSECreativeTabs.tabMaterials);
+	public static Item silverRod = registerMainItem("silver_rod", TSECreativeTabs.tabMaterials);
+	public static Item platinumRod = registerMainItem("platinum_rod", TSECreativeTabs.tabMaterials);
+	public static Item titaniumRod = registerMainItem("titanium_rod", TSECreativeTabs.tabMaterials);
+	public static Item zincRod = registerMainItem("zinc_rod", TSECreativeTabs.tabMaterials);
+	public static Item brassRod = registerMainItem("brass_rod", TSECreativeTabs.tabMaterials);
+	public static Item leadRod = registerMainItem("lead_rod", TSECreativeTabs.tabMaterials);
+	public static Item nickelRod = registerMainItem("nickel_rod", TSECreativeTabs.tabMaterials);
+	public static Item pewterRod = registerMainItem("pewter_rod", TSECreativeTabs.tabMaterials);
+	public static Item aluminumRod = registerMainItem("aluminum_rod", TSECreativeTabs.tabMaterials);
+	public static Item mnemiumRod = registerMainItem("mnemium_rod", TSECreativeTabs.tabMaterials);
+	public static Item eterniumRod = registerMainItem("eternium_rod", TSECreativeTabs.tabMaterials);
+	public static Item fantasiumRod = registerMainItem("fantasium_rod", TSECreativeTabs.tabMaterials);
+	public static Item scorniumRod = registerMainItem("scornium_rod", TSECreativeTabs.tabMaterials);
+	public static Item electrumRod = registerMainItem("electrum_rod", TSECreativeTabs.tabMaterials);
+	public static Item laeniumRod = registerMainItem("laenium_rod", TSECreativeTabs.tabMaterials);
+	public static Item magneiumRod = registerMainItem("magneium_rod", TSECreativeTabs.tabMaterials);
+	
 	public static Item unusableMaterial = registerMainItem("unusable_material", TSECreativeTabs.tabMaterials);
 
 	public static Item exaltedDiamond = registerMainItem("exalted_diamond", TSECreativeTabs.tabMaterials);
@@ -76,17 +108,41 @@ public class ItemManager {
 	public static Item laeniumIngot = registerMainItem("laenium_ingot", TSECreativeTabs.tabMaterials);
 	public static Item magneiumIngot = registerMainItem("magneium_ingot", TSECreativeTabs.tabMaterials);
 
-	public static Item magicNugget = registerMainItem("magic_nugget", TSECreativeTabs.tabMaterials);
-	public static Item mysticNugget = registerMainItem("mystic_nugget", TSECreativeTabs.tabMaterials);
-	public static Item mysteriousNugget = registerMainItem("mysterious_nugget", TSECreativeTabs.tabMaterials);
-	public static Item brightflameNugget = registerMainItem("brightflame_nugget", TSECreativeTabs.tabMaterials);
-	public static Item diamondNugget = registerMainItem("diamond_nugget", TSECreativeTabs.tabMaterials);
+	public static Item copperNugget = registerMainItem("copper_nugget", TSECreativeTabs.tabMaterials);
+	public static Item steelNugget = registerMainItem("steel_nugget", TSECreativeTabs.tabMaterials);
+	public static Item tinNugget = registerMainItem("tin_nugget", TSECreativeTabs.tabMaterials);
+	public static Item tyionetiumNugget = registerMainItem("tyionetium_nugget", TSECreativeTabs.tabMaterials);
 	public static Item bronzeNugget = registerMainItem("bronze_nugget", TSECreativeTabs.tabMaterials);
-	public static Item brassNugget = registerMainItem("brass_nugget", TSECreativeTabs.tabMaterials);
+	public static Item brightflameNugget = registerMainItem("brightflame_nugget", TSECreativeTabs.tabMaterials);
+	public static Item brightsteelNugget = registerMainItem("brightsteel_nugget", TSECreativeTabs.tabMaterials);
+	public static Item diamondNugget = registerMainItem("diamond_nugget", TSECreativeTabs.tabMaterials);
+	public static Item reforgedGoldNugget = registerMainItem("reforged_gold_nugget", TSECreativeTabs.tabMaterials);
+	public static Item magicNugget = registerMainItem("magic_nugget", TSECreativeTabs.tabMaterials);
+	public static Item mithrilNugget = registerMainItem("mithril_nugget", TSECreativeTabs.tabMaterials);
+	public static Item mortiumNugget = registerMainItem("mortium_nugget", TSECreativeTabs.tabMaterials);
+	public static Item mysteriousNugget = registerMainItem("mysterious_nugget", TSECreativeTabs.tabMaterials);
+	public static Item mysticNugget = registerMainItem("mystic_nugget", TSECreativeTabs.tabMaterials);
+	public static Item skyIronNugget = registerMainItem("sky_iron_nugget", TSECreativeTabs.tabMaterials);
+	public static Item terriumNugget = registerMainItem("terrium_nugget", TSECreativeTabs.tabMaterials);
+	public static Item toslotriumNugget = registerMainItem("toslotrium_nugget", TSECreativeTabs.tabMaterials);
+	public static Item vividiumNugget = registerMainItem("vividium_nugget", TSECreativeTabs.tabMaterials);
+	public static Item extranetiumNugget = registerMainItem("extranetium_nugget", TSECreativeTabs.tabMaterials);
 	public static Item silverNugget = registerMainItem("silver_nugget", TSECreativeTabs.tabMaterials);
 	public static Item platinumNugget = registerMainItem("platinum_nugget", TSECreativeTabs.tabMaterials);
 	public static Item titaniumNugget = registerMainItem("titanium_nugget", TSECreativeTabs.tabMaterials);
-	public static Item steelNugget = registerMainItem("steel_nugget", TSECreativeTabs.tabMaterials);
+	public static Item zincNugget = registerMainItem("zinc_nugget", TSECreativeTabs.tabMaterials);
+	public static Item brassNugget = registerMainItem("brass_nugget", TSECreativeTabs.tabMaterials);
+	public static Item leadNugget = registerMainItem("lead_nugget", TSECreativeTabs.tabMaterials);
+	public static Item nickelNugget = registerMainItem("nickel_nugget", TSECreativeTabs.tabMaterials);
+	public static Item pewterNugget = registerMainItem("pewter_nugget", TSECreativeTabs.tabMaterials);
+	public static Item aluminumNugget = registerMainItem("aluminum_nugget", TSECreativeTabs.tabMaterials);
+	public static Item mnemiumNugget = registerMainItem("mnemium_nugget", TSECreativeTabs.tabMaterials);
+	public static Item eterniumNugget = registerMainItem("eternium_nugget", TSECreativeTabs.tabMaterials);
+	public static Item fantasiumNugget = registerMainItem("fantasium_nugget", TSECreativeTabs.tabMaterials);
+	public static Item scorniumNugget = registerMainItem("scornium_nugget", TSECreativeTabs.tabMaterials);
+	public static Item electrumNugget = registerMainItem("electrum_nugget", TSECreativeTabs.tabMaterials);
+	public static Item laeniumNugget = registerMainItem("laenium_nugget", TSECreativeTabs.tabMaterials);
+	public static Item magneiumNugget = registerMainItem("magneium_nugget", TSECreativeTabs.tabMaterials);
 
 	/*
 	 * public static Item diamondToslotriumMixedIngot =
@@ -778,9 +834,16 @@ public class ItemManager {
 	public static void registerItems(RegistryEvent.Register<Item> event) {
 		final IForgeRegistry<Item> registry = event.getRegistry();
 		TheStuffExtension.log("Registering Items...");
-		registry.registerAll(goldenStick, diamondStick, mysticStick,
+		registry.registerAll(goldenStick, diamondStick,
 
-				ironRod, steelRod, bronzeRod, brassRod, titaniumRod,
+				brightflameStick, brightsteelStick, diamondStick, reforgedGoldStick, magicStick, mithrilStick,
+				mysteriousStick, mysticStick, extranetiumStick,
+
+				ironRod,
+
+				copperRod, steelRod, tinRod, tyionetiumRod, bronzeRod, mortiumRod, skyIronRod, terriumRod,
+				toslotriumRod, vividiumRod, silverRod, platinumRod, titaniumRod, zincRod, brassRod, leadRod, nickelRod,
+				pewterRod, aluminumRod, mnemiumRod,
 
 				unusableMaterial,
 
@@ -794,8 +857,12 @@ public class ItemManager {
 				platinumIngot, titaniumIngot, zincIngot, brassIngot, leadIngot, nickelIngot, pewterIngot, aluminumIngot,
 				mnemiumIngot, eterniumIngot, fantasiumIngot, scorniumIngot, electrumIngot, laeniumIngot, magneiumIngot,
 
-				magicNugget, mysticNugget, mysteriousNugget, brightflameNugget, diamondNugget, bronzeNugget,
-				brassNugget, silverNugget, platinumNugget, titaniumNugget, steelNugget,
+				copperNugget, steelNugget, tinNugget, tyionetiumNugget, bronzeNugget, brightflameNugget,
+				brightsteelNugget, diamondNugget, reforgedGoldNugget, magicNugget, mithrilNugget, mortiumNugget,
+				mysteriousNugget, mysticNugget, skyIronNugget, terriumNugget, toslotriumNugget, vividiumNugget,
+				extranetiumNugget, silverNugget, platinumNugget, titaniumNugget, zincNugget, brassNugget, leadNugget,
+				nickelNugget, pewterNugget, aluminumNugget, mnemiumNugget, eterniumNugget, fantasiumNugget,
+				scorniumNugget, electrumNugget, laeniumNugget, magneiumNugget,
 
 				/*
 				 * diamondToslotriumMixedIngot, tyionetiumMithrilToslotriumMixedIngot,

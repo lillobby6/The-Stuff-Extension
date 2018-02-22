@@ -2,6 +2,7 @@ package com.tse.gui;
 
 import com.tse.container.ContainerAlloyFurnace;
 import com.tse.container.ContainerCopperAlloyFurnace;
+import com.tse.container.ContainerCopperFurnace;
 import com.tse.container.DiamondSBContainer;
 import com.tse.container.MysteriousContainer;
 import com.tse.container.StoreBoxContainer;
@@ -12,6 +13,7 @@ import com.tse.tileentity.StoreBoxTileEntity;
 import com.tse.tileentity.SuperStoreBoxTileEntity;
 import com.tse.tileentity.TileEntityAlloyFurnace;
 import com.tse.tileentity.TileEntityCopperAlloyFurnace;
+import com.tse.tileentity.TileEntityCopperFurnace;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
@@ -26,6 +28,7 @@ public class GuiManager implements IGuiHandler{
 	public static final int VOID_STORE_BOX_GUI = 19;
 	public static final int MYSTERIOUS_BOX_GUI = 20;
 	public static final int DIAMOND_STORE_BOX_GUI = 21;
+	public static final int COPPER_FURNACE_GUI = 25;
 	public static final int ALLOY_FURNACE_GUI = 30;
 	public static final int COPPER_ALLOY_FURNACE_GUI = 31;
 
@@ -49,6 +52,10 @@ public class GuiManager implements IGuiHandler{
 		else if(ID == DIAMOND_STORE_BOX_GUI)
 		{
 			return new DiamondSBContainer(player.inventory, (DiamondSBTileEntity) world.getTileEntity(new BlockPos(x, y, z)));
+		}
+		else if(ID == COPPER_FURNACE_GUI)
+		{
+			return new ContainerCopperFurnace(player.inventory, (TileEntityCopperFurnace) world.getTileEntity(new BlockPos(x, y, z)));
 		}
 		else if(ID == ALLOY_FURNACE_GUI)
 		{
@@ -79,6 +86,10 @@ public class GuiManager implements IGuiHandler{
 		else if(ID == DIAMOND_STORE_BOX_GUI)
 		{
 			return new DiamondSBGui(player.inventory, (DiamondSBTileEntity) world.getTileEntity(new BlockPos(x, y, z)));
+		}
+		else if(ID == COPPER_FURNACE_GUI)
+		{
+			return new GuiCopperFurnace(player.inventory, (TileEntityCopperFurnace) world.getTileEntity(new BlockPos(x, y, z)));
 		}
 		else if(ID == ALLOY_FURNACE_GUI)
 		{
