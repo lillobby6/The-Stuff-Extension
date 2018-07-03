@@ -20,7 +20,7 @@ public class BiomeManager {
 	{
 		final IForgeRegistry<Biome> registry = event.getRegistry();
 		TheStuffExtension.log("Registering biomes...");
-		registry.register(mysticPlains);
+		//registry.register(mysticPlains);
 		TheStuffExtension.log("Registered biomes.");
 	}
 	

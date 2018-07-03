@@ -71,7 +71,7 @@ public class ItemManager {
 	public static Item lunaDiamond = registerMainItem("luna_diamond", TSECreativeTabs.tabMaterials);
 
 	public static Item sphaleriteGem = registerMainItem("sphalerite_gem", TSECreativeTabs.tabMaterials);
-
+	
 	public static Item copperIngot = registerMainItem("copper_ingot", TSECreativeTabs.tabMaterials);
 	public static Item steelIngot = registerMainItem("steel_ingot", TSECreativeTabs.tabMaterials);
 	public static Item tinIngot = registerMainItem("tin_ingot", TSECreativeTabs.tabMaterials);
@@ -107,7 +107,12 @@ public class ItemManager {
 	public static Item electrumIngot = registerMainItem("electrum_ingot", TSECreativeTabs.tabMaterials);
 	public static Item laeniumIngot = registerMainItem("laenium_ingot", TSECreativeTabs.tabMaterials);
 	public static Item magneiumIngot = registerMainItem("magneium_ingot", TSECreativeTabs.tabMaterials);
-
+	//TODO
+	public static Item sterlingSilverIngot = registerMainItem("sterling_silver_ingot", TSECreativeTabs.tabMaterials);
+	public static Item roseGoldIngot = registerMainItem("rose_gold_ingot", TSECreativeTabs.tabMaterials);
+	public static Item whiteGoldIngot = registerMainItem("white_gold_ingot", TSECreativeTabs.tabMaterials);
+	public static Item spangoldIngot = registerMainItem("spangold_ingot", TSECreativeTabs.tabMaterials);
+	
 	public static Item copperNugget = registerMainItem("copper_nugget", TSECreativeTabs.tabMaterials);
 	public static Item steelNugget = registerMainItem("steel_nugget", TSECreativeTabs.tabMaterials);
 	public static Item tinNugget = registerMainItem("tin_nugget", TSECreativeTabs.tabMaterials);
@@ -836,39 +841,19 @@ public class ItemManager {
 		TheStuffExtension.log("Registering Items...");
 		registry.registerAll(goldenStick, diamondStick,
 
-				brightflameStick, brightsteelStick, diamondStick, reforgedGoldStick, magicStick, mithrilStick,
-				mysteriousStick, mysticStick, extranetiumStick,
+				brightflameStick, brightsteelStick, diamondStick, reforgedGoldStick, magicStick, mithrilStick, mysteriousStick, mysticStick, extranetiumStick,
 
-				ironRod,
-
-				copperRod, steelRod, tinRod, tyionetiumRod, bronzeRod, mortiumRod, skyIronRod, terriumRod,
-				toslotriumRod, vividiumRod, silverRod, platinumRod, titaniumRod, zincRod, brassRod, leadRod, nickelRod,
-				pewterRod, aluminumRod, mnemiumRod,
+				ironRod,copperRod, steelRod, tinRod, tyionetiumRod, bronzeRod, mortiumRod, skyIronRod, terriumRod, toslotriumRod, vividiumRod, silverRod, platinumRod, titaniumRod, zincRod, brassRod, leadRod, nickelRod, pewterRod, aluminumRod, mnemiumRod,
 
 				unusableMaterial,
 
 				exaltedDiamond, bloodDiamond, terraDiamond, lunaDiamond,
 
 				sphaleriteGem,
-
-				copperIngot, steelIngot, tinIngot, tyionetiumIngot, bronzeIngot, brightflameIngot, brightsteelIngot,
-				diamondIngot, reforgedGoldIngot, magicIngot, mithrilIngot, mortiumIngot, mysteriousIngot, mysticIngot,
-				skyIronIngot, terriumIngot, toslotriumIngot, vividiumIngot, extranetiumIngot, silverIngot,
-				platinumIngot, titaniumIngot, zincIngot, brassIngot, leadIngot, nickelIngot, pewterIngot, aluminumIngot,
-				mnemiumIngot, eterniumIngot, fantasiumIngot, scorniumIngot, electrumIngot, laeniumIngot, magneiumIngot,
-
-				copperNugget, steelNugget, tinNugget, tyionetiumNugget, bronzeNugget, brightflameNugget,
-				brightsteelNugget, diamondNugget, reforgedGoldNugget, magicNugget, mithrilNugget, mortiumNugget,
-				mysteriousNugget, mysticNugget, skyIronNugget, terriumNugget, toslotriumNugget, vividiumNugget,
-				extranetiumNugget, silverNugget, platinumNugget, titaniumNugget, zincNugget, brassNugget, leadNugget,
-				nickelNugget, pewterNugget, aluminumNugget, mnemiumNugget, eterniumNugget, fantasiumNugget,
-				scorniumNugget, electrumNugget, laeniumNugget, magneiumNugget,
-
-				/*
-				 * diamondToslotriumMixedIngot, tyionetiumMithrilToslotriumMixedIngot,
-				 * mixedIngot, reforgedGoldTyionetiumMixedIngot, titaniumMysticMixedIngot,
-				 * titaniumExtranetiumMixedIngot,
-				 */
+				
+				copperIngot, steelIngot, tinIngot, tyionetiumIngot, bronzeIngot, brightflameIngot, brightsteelIngot, diamondIngot, reforgedGoldIngot, magicIngot, mithrilIngot, mortiumIngot, mysteriousIngot, mysticIngot, skyIronIngot, terriumIngot, toslotriumIngot, vividiumIngot, extranetiumIngot, silverIngot, platinumIngot, titaniumIngot, zincIngot, brassIngot, leadIngot, nickelIngot, pewterIngot, aluminumIngot, mnemiumIngot, eterniumIngot, fantasiumIngot, scorniumIngot, electrumIngot, laeniumIngot, magneiumIngot, sterlingSilverIngot, roseGoldIngot, whiteGoldIngot, spangoldIngot,
+				
+				copperNugget, steelNugget, tinNugget, tyionetiumNugget, bronzeNugget, brightflameNugget, brightsteelNugget, diamondNugget, reforgedGoldNugget, magicNugget, mithrilNugget, mortiumNugget, mysteriousNugget, mysticNugget, skyIronNugget, terriumNugget, toslotriumNugget, vividiumNugget, extranetiumNugget, silverNugget, platinumNugget, titaniumNugget, zincNugget, brassNugget, leadNugget, nickelNugget, pewterNugget, aluminumNugget, mnemiumNugget, eterniumNugget, fantasiumNugget,	scorniumNugget, electrumNugget, laeniumNugget, magneiumNugget,
 
 				justice, corruption, destruction,
 
@@ -876,18 +861,15 @@ public class ItemManager {
 
 				copperPickaxe, copperAxe, copperShovel, copperHoe, copperMattock, copperSword,
 
-				brightflamePickaxe, brightflameAxe, brightflameShovel, brightflameHoe, brightflameMattock,
-				brightflameSword,
+				brightflamePickaxe, brightflameAxe, brightflameShovel, brightflameHoe, brightflameMattock, brightflameSword,
 
-				brightsteelPickaxe, brightsteelAxe, brightsteelShovel, brightsteelHoe, brightsteelMattock,
-				brightsteelSword,
+				brightsteelPickaxe, brightsteelAxe, brightsteelShovel, brightsteelHoe, brightsteelMattock, brightsteelSword,
 
-				magicPickaxe, magicAxe, magicShovel, magicHoe, magicMattock, magicSword,
-
+				magicPickaxe, magicAxe, magicShovel, magicHoe, magicMattock, magicSword, 
+				
 				mithrilPickaxe, mithrilAxe, mithrilShovel, mithrilHoe, mithrilMattock, mithrilSword,
 
-				extranetiumPickaxe, extranetiumAxe, extranetiumShovel, extranetiumHoe, extranetiumMattock,
-				extranetiumSword,
+				extranetiumPickaxe, extranetiumAxe, extranetiumShovel, extranetiumHoe, extranetiumMattock, extranetiumSword,
 
 				mortiumPickaxe, mortiumAxe, mortiumShovel, mortiumHoe, mortiumMattock, mortiumSword,
 
@@ -901,8 +883,7 @@ public class ItemManager {
 
 				vividiumPickaxe, vividiumAxe, vividiumShovel, vividiumHoe, vividiumMattock, vividiumSword,
 
-				terraDiamondPickaxe, terraDiamondAxe, terraDiamondShovel, terraDiamondHoe, terraDiamondMattock,
-				terraDiamondSword,
+				terraDiamondPickaxe, terraDiamondAxe, terraDiamondShovel, terraDiamondHoe, terraDiamondMattock,	terraDiamondSword,
 
 				tyionetiumPickaxe, tyionetiumAxe, tyionetiumShovel, tyionetiumHoe, tyionetiumMattock, tyionetiumSword,
 
@@ -912,11 +893,9 @@ public class ItemManager {
 
 				silverPickaxe, silverAxe, silverShovel, silverHoe, silverMattock, silverSword,
 
-				exaltedDiamondPickaxe, exaltedDiamondAxe, exaltedDiamondShovel, exaltedDiamondHoe,
-				exaltedDiamondMattock, exaltedDiamondSword,
+				exaltedDiamondPickaxe, exaltedDiamondAxe, exaltedDiamondShovel, exaltedDiamondHoe, exaltedDiamondMattock, exaltedDiamondSword,
 
-				bloodDiamondPickaxe, bloodDiamondAxe, bloodDiamondShovel, bloodDiamondHoe, bloodDiamondMattock,
-				bloodDiamondSword,
+				bloodDiamondPickaxe, bloodDiamondAxe, bloodDiamondShovel, bloodDiamondHoe, bloodDiamondMattock,	bloodDiamondSword,
 
 				platinumPickaxe, platinumAxe, platinumShovel, platinumHoe, platinumMattock, platinumSword,
 

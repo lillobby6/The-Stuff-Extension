@@ -17,91 +17,93 @@ import net.minecraftforge.registries.IForgeRegistry;
 @Mod.EventBusSubscriber
 public class BlockManager {
 
-	public static Block exaltedDiamondOre = registerOre("exalted_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F,
+	public static Block exaltedDiamondOre = registerOre("exalted_diamond_ore", Material.ROCK, 2, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block bloodDiamondOre = registerOre("blood_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F,
+	public static Block bloodDiamondOre = registerOre("blood_diamond_ore", Material.ROCK, 2, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block terraDiamondOre = registerOre("terra_diamond_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F,
+	public static Block terraDiamondOre = registerOre("terra_diamond_ore", Material.ROCK, 2, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block copperOre = registerOre("copper_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F,
+	public static Block copperOre = registerOre("copper_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block mortiumOre = registerOre("mortium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F,
+	public static Block mortiumOre = registerOre("mortium_ore", Material.ROCK, 3, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block tinOre = registerOre("tin_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F,
+	public static Block tinOre = registerOre("tin_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block toslotriumOre = registerOre("toslotrium_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F,
+	public static Block toslotriumOre = registerOre("toslotrium_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block vividiumOre = registerOre("vividium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F,
+	public static Block vividiumOre = registerOre("vividium_ore", Material.ROCK, 3, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block sphaleriteOre = registerOre("sphalerite_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F,
+	public static Block sphaleriteOre = registerOre("sphalerite_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block silverOre = registerOre("silver_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F,
+	public static Block silverOre = registerOre("silver_ore", Material.ROCK, 2, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block platinumOre = registerOre("platinum_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F,
+	public static Block platinumOre = registerOre("platinum_ore", Material.ROCK, 3, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block titaniumOre = registerOre("titanium_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F,
+	public static Block titaniumOre = registerOre("titanium_ore", Material.ROCK, 3, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block galenaOre = registerOre("galena_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F,
+	public static Block galenaOre = registerOre("galena_ore", Material.ROCK, 2, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block pentlanditeOre = registerOre("pentlandite_ore", Material.ROCK, 2, "pickaxe", 5.0F, 5.0F,
+	public static Block pentlanditeOre = registerOre("pentlandite_ore", Material.ROCK, 2, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
 	public static Block skyIronOre = registerOre("sky_iron_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
 	public static Block terriumOre = registerOre("terrium_ore", Material.ROCK, 4, "pickaxe", 3.5F, 3.5F,
 			TSECreativeTabs.tabOres);
-	public static Block aluminumOre = registerOre("aluminum_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F,
+	public static Block aluminumOre = registerOre("aluminum_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-
-	public static Block moonStone = registerBlockNormal("moon_stone", 5.0F, 5.0F);
+	
+	public static Block meteor = registerOre("meteor", Material.ROCK, 1, "pickaxe", 3.0F, 50.0F, TSECreativeTabs.tabOres);
+			
+	public static Block moonStone = registerBlockNormal("moon_stone", 3.0F, 3.0F);
 	public static Block moonSand = registerBlockWithSound("moon_sand", 2.0F, 2.0F, SoundType.SAND);
-	public static Block moonTeleporter = registerBlockNormal("moon_teleporter", 5.0F, 5.0F);
+	public static Block moonTeleporter = registerBlockNormal("moon_teleporter", 3.0F, 3.0F);
 
 	/*
-	 * public static Block mysticStone = registerBlockNormal("mystic_stone", 5.0F,
-	 * 5.0F); public static Block mysticDirt = registerBlockNormal("mystic_dirt",
+	 * public static Block mysticStone = registerBlockNormal("mystic_stone", 3.0F,
+	 * 3.0F); public static Block mysticDirt = registerBlockNormal("mystic_dirt",
 	 * 1.0F, 1.0F); public static Block mysticLog =
 	 * registerBlockNormal("mystic_log", 2.0F, 2.0F); public static Block
 	 * mysticPlanks = registerBlockNormal("mystic_planks", 2.0F, 2.0F);
 	 */
 
-	public static Block lunaDiamondOre = registerOre("luna_diamond_ore", Material.ROCK, 3, "pickaxe", 5.0F, 5.0F,
+	public static Block lunaDiamondOre = registerOre("luna_diamond_ore", Material.ROCK, 3, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
-	public static Block moonIronOre = registerOre("moon_iron_ore", Material.ROCK, 1, "pickaxe", 5.0F, 5.0F,
+	public static Block moonIronOre = registerOre("moon_iron_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F,
 			TSECreativeTabs.tabOres);
 
-	public static Block copperBlock = registerBlockNormal("copper_block", 5.0F, 5.0F);
-	public static Block steelBlock = registerBlockNormal("steel_block", 5.0F, 5.0F);
-	public static Block terraDiamondBlock = registerBlockNormal("terra_diamond_block", 5.0F, 5.0F);
-	public static Block exaltedDiamondBlock = registerBlockNormal("exalted_diamond_block", 5.0F, 5.0F);
-	public static Block bloodDiamondBlock = registerBlockNormal("blood_diamond_block", 5.0F, 5.0F);
-	public static Block tinBlock = registerBlockNormal("tin_block", 5.0F, 5.0F);
-	public static Block tyionetiumBlock = registerBlockNormal("tyionetium_block", 5.0F, 5.0F);
-	public static Block bronzeBlock = registerBlockNormal("bronze_block", 5.0F, 5.0F);
-	public static Block brightflameBlock = registerBlockNormal("brightflame_block", 5.0F, 5.0F);
-	public static Block brightsteelBlock = registerBlockNormal("brightsteel_block", 5.0F, 5.0F);
-	public static Block reforgedGoldBlock = registerBlockNormal("reforged_gold_block", 5.0F, 5.0F);
-	public static Block magicBlock = registerBlockNormal("magic_block", 5.0F, 5.0F);
-	public static Block mithrilBlock = registerBlockNormal("mithril_block", 5.0F, 5.0F);
-	public static Block mortiumBlock = registerBlockNormal("mortium_block", 5.0F, 5.0F);
-	public static Block mysteriousBlock = registerBlockNormal("mysterious_block", 5.0F, 5.0F);
-	public static Block mysticBlock = registerBlockNormal("mystic_block", 5.0F, 5.0F);
-	public static Block skyIronBlock = registerBlockNormal("sky_iron_block", 5.0F, 5.0F);
-	public static Block terriumBlock = registerBlockNormal("terrium_block", 5.0F, 5.0F);
-	public static Block toslotriumBlock = registerBlockNormal("toslotrium_block", 5.0F, 5.0F);
-	public static Block vividiumBlock = registerBlockNormal("vividium_block", 5.0F, 5.0F);
-	public static Block sphaleriteBlock = registerBlockNormal("sphalerite_block", 5.0F, 5.0F);
-	public static Block extranetiumBlock = registerBlockNormal("extranetium_block", 5.0F, 5.0F);
-	public static Block silverBlock = registerBlockNormal("silver_block", 5.0F, 5.0F);
-	public static Block platinumBlock = registerBlockNormal("platinum_block", 5.0F, 5.0F);
-	public static Block titaniumBlock = registerBlockNormal("titanium_block", 5.0F, 5.0F);
-	public static Block zincBlock = registerBlockNormal("zinc_block", 5.0F, 5.0F);
-	public static Block brassBlock = registerBlockNormal("brass_block", 5.0F, 5.0F);
-	public static Block leadBlock = registerBlockNormal("lead_block", 5.0F, 5.0F);
-	public static Block nickelBlock = registerBlockNormal("nickel_block", 5.0F, 5.0F);
-	public static Block pewterBlock = registerBlockNormal("pewter_block", 5.0F, 5.0F);
-	public static Block aluminumBlock = registerBlockNormal("aluminum_block", 5.0F, 5.0F);
-	public static Block mnemiumBlock = registerBlockNormal("mnemium_block", 5.0F, 5.0F);
-	public static Block eterniumBlock = registerBlockNormal("eternium_block", 5.0F, 5.0F);
+	public static Block copperBlock = registerBlockNormal("copper_block", 3.0F, 3.0F);
+	public static Block steelBlock = registerBlockNormal("steel_block", 3.0F, 3.0F);
+	public static Block terraDiamondBlock = registerBlockNormal("terra_diamond_block", 3.0F, 3.0F);
+	public static Block exaltedDiamondBlock = registerBlockNormal("exalted_diamond_block", 3.0F, 3.0F);
+	public static Block bloodDiamondBlock = registerBlockNormal("blood_diamond_block", 3.0F, 3.0F);
+	public static Block tinBlock = registerBlockNormal("tin_block", 3.0F, 3.0F);
+	public static Block tyionetiumBlock = registerBlockNormal("tyionetium_block", 3.0F, 3.0F);
+	public static Block bronzeBlock = registerBlockNormal("bronze_block", 3.0F, 3.0F);
+	public static Block brightflameBlock = registerBlockNormal("brightflame_block", 3.0F, 3.0F);
+	public static Block brightsteelBlock = registerBlockNormal("brightsteel_block", 3.0F, 3.0F);
+	public static Block reforgedGoldBlock = registerBlockNormal("reforged_gold_block", 3.0F, 3.0F);
+	public static Block magicBlock = registerBlockNormal("magic_block", 3.0F, 3.0F);
+	public static Block mithrilBlock = registerBlockNormal("mithril_block", 3.0F, 3.0F);
+	public static Block mortiumBlock = registerBlockNormal("mortium_block", 3.0F, 3.0F);
+	public static Block mysteriousBlock = registerBlockNormal("mysterious_block", 3.0F, 3.0F);
+	public static Block mysticBlock = registerBlockNormal("mystic_block", 3.0F, 3.0F);
+	public static Block skyIronBlock = registerBlockNormal("sky_iron_block", 3.0F, 3.0F);
+	public static Block terriumBlock = registerBlockNormal("terrium_block", 3.0F, 3.0F);
+	public static Block toslotriumBlock = registerBlockNormal("toslotrium_block", 3.0F, 3.0F);
+	public static Block vividiumBlock = registerBlockNormal("vividium_block", 3.0F, 3.0F);
+	public static Block sphaleriteBlock = registerBlockNormal("sphalerite_block", 3.0F, 3.0F);
+	public static Block extranetiumBlock = registerBlockNormal("extranetium_block", 3.0F, 3.0F);
+	public static Block silverBlock = registerBlockNormal("silver_block", 3.0F, 3.0F);
+	public static Block platinumBlock = registerBlockNormal("platinum_block", 3.0F, 3.0F);
+	public static Block titaniumBlock = registerBlockNormal("titanium_block", 3.0F, 3.0F);
+	public static Block zincBlock = registerBlockNormal("zinc_block", 3.0F, 3.0F);
+	public static Block brassBlock = registerBlockNormal("brass_block", 3.0F, 3.0F);
+	public static Block leadBlock = registerBlockNormal("lead_block", 3.0F, 3.0F);
+	public static Block nickelBlock = registerBlockNormal("nickel_block", 3.0F, 3.0F);
+	public static Block pewterBlock = registerBlockNormal("pewter_block", 3.0F, 3.0F);
+	public static Block aluminumBlock = registerBlockNormal("aluminum_block", 3.0F, 3.0F);
+	public static Block mnemiumBlock = registerBlockNormal("mnemium_block", 3.0F, 3.0F);
+	public static Block eterniumBlock = registerBlockNormal("eternium_block", 3.0F, 3.0F);
 
 	public static Block storeBox = registerStoreBox("store_box");
 	public static Block mysteriousBox = registerMBox("mysterious_box");

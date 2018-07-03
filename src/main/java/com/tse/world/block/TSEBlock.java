@@ -1,11 +1,17 @@
 package com.tse.world.block;
 
+import java.util.Random;
+
+import com.tse.common.config.Config;
 import com.tse.common.creativetabs.TSECreativeTabs;
+import com.tse.world.item.ItemManager;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 
 public class TSEBlock extends Block{
 
@@ -19,6 +25,15 @@ public class TSEBlock extends Block{
 		this.setResistance(resistance);
 		this.setSoundType(sound);
 	}
+	
+	@Override
+	public Item getItemDropped(IBlockState state, Random rand, int fortune)
+    {
+    	if(this == BlockManager.whiteStone)
+    		return Item.getItemFromBlock(BlockManager.whiteCobblestone);
+    	else
+    		return Item.getItemFromBlock(this);
+    }
 
 	/**Add a block with a custom unlocalized name, material, hardness, resistance, and sound. The creative tab will default to TSEBlocks.*/
 	public TSEBlock(String unlocalizedName, Material material, float hardness, float resistance, SoundType sound)
