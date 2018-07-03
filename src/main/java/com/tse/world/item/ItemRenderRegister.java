@@ -47,7 +47,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.mnemiumRod);
 
 		reg(ItemManager.sphaleriteGem);
-
+		
 		reg(ItemManager.copperIngot);
 		reg(ItemManager.copperAxe);
 		reg(ItemManager.copperPickaxe);
