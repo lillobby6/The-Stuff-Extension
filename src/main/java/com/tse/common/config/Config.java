@@ -10,8 +10,8 @@ public class Config {
 	private static final String CATEGORY_OREGEN = "ore_gen";
 	private static final String CATEGORY_OREFREQ = "ore_freq";
 	private static final String CATEGORY_RECIPES = "recipes";
-
-	public static boolean simpleAlloys = true;
+	
+	public static boolean useOreDictionaryForTools = false;
 
 	public static boolean spawnExaltedDiamond = true;
 	public static boolean spawnBloodDiamond = true;
@@ -74,8 +74,7 @@ public class Config {
 
 	private static void initGeneralConfig(Configuration cfg) {
 		cfg.addCustomCategoryComment(CATEGORY_GENERAL, "General configuration: ");
-		simpleAlloys = cfg.getBoolean("simpleAlloys", CATEGORY_GENERAL, simpleAlloys,
-				"On true: uses crafting to make alloys; On false: uses alloy furnace to make alloys. *Currently does nothing*");
+		useOreDictionaryForTools = cfg.getBoolean("useOreDictionaryForTools", CATEGORY_GENERAL, useOreDictionaryForTools, "On true all recipes will use the oredictionary, this is useful when a mod defaults all types of materials to one mods version. WARNING this can some items to be impossible to make.");
 	}
 
 	private static void initOreGenConfig(Configuration cfg) {
