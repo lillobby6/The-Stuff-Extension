@@ -1,5 +1,7 @@
 package com.tse.world.item;
 
+import java.util.List;
+
 import com.tse.common.config.Config;
 import com.tse.common.core.TheStuffExtension;
 import com.tse.common.creativetabs.TSECreativeTabs;
@@ -20,10 +22,8 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod.EventBusSubscriber
 public class ItemManager {
-
-	public static Item goldenStick = new TSEItem("golden_stick").setRegistryName("golden_stick")
-			.setCreativeTab(TSECreativeTabs.tabMaterials);
-
+	
+	public static Item goldenStick = registerMainItem("golden_stick", TSECreativeTabs.tabMaterials);
 	public static Item brightflameStick = registerMainItem("brightflame_stick", TSECreativeTabs.tabMaterials);
 	public static Item brightsteelStick = registerMainItem("brightsteel_stick", TSECreativeTabs.tabMaterials);
 	public static Item diamondStick = registerMainItem("diamond_stick", TSECreativeTabs.tabMaterials);
@@ -148,23 +148,6 @@ public class ItemManager {
 	public static Item electrumNugget = registerMainItem("electrum_nugget", TSECreativeTabs.tabMaterials);
 	public static Item laeniumNugget = registerMainItem("laenium_nugget", TSECreativeTabs.tabMaterials);
 	public static Item magneiumNugget = registerMainItem("magneium_nugget", TSECreativeTabs.tabMaterials);
-
-	/*
-	 * public static Item diamondToslotriumMixedIngot =
-	 * registerMainItem("diamond_toslotrium_mixed_ingot",
-	 * TSECreativeTabs.tabMaterials); public static Item mixedIngot =
-	 * registerMainItem("mixed_ingot", TSECreativeTabs.tabMaterials); public static
-	 * Item tyionetiumMithrilToslotriumMixedIngot = registerMainItem(
-	 * "tyionetium_mithril_toslotrium_mixed_ingot", TSECreativeTabs.tabMaterials);
-	 * public static Item reforgedGoldTyionetiumMixedIngot =
-	 * registerMainItem("reforged_gold_tyionetium_mixed_ingot",
-	 * TSECreativeTabs.tabMaterials); public static Item titaniumMysticMixedIngot =
-	 * registerMainItem("titanium_mystic_mixed_ingot",
-	 * TSECreativeTabs.tabMaterials); public static Item
-	 * titaniumExtranetiumMixedIngot =
-	 * registerMainItem("titanium_extranetium_mixed_ingot",
-	 * TSECreativeTabs.tabMaterials);
-	 */
 	// End Materials
 
 	// Start Tools

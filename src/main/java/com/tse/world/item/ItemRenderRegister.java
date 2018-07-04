@@ -152,6 +152,10 @@ public class ItemRenderRegister {
 		reg(ItemManager.laeniumIngot);
 		reg(ItemManager.magneiumIngot);
 		reg(ItemManager.electrumIngot);
+		reg(ItemManager.sterlingSilverIngot);
+		reg(ItemManager.roseGoldIngot);
+		reg(ItemManager.whiteGoldIngot);
+		reg(ItemManager.spangoldIngot);
 
 		reg(ItemManager.justice);
 		reg(ItemManager.corruption);
