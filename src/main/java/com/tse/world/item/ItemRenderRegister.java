@@ -316,7 +316,6 @@ public class ItemRenderRegister {
 		reg(ItemManager.aluminumSword);
 
 		reg(ItemManager.magicNugget);
-		// reg(ItemManager.mixedIngot);
 		reg(ItemManager.mysticNugget);
 		reg(ItemManager.mysteriousNugget);
 		reg(ItemManager.brightflameNugget);
@@ -326,14 +325,30 @@ public class ItemRenderRegister {
 		reg(ItemManager.platinumNugget);
 		reg(ItemManager.titaniumNugget);
 		reg(ItemManager.steelNugget);
-
-		/*
-		 * reg(ItemManager.diamondToslotriumMixedIngot);
-		 * reg(ItemManager.tyionetiumMithrilToslotriumMixedIngot);
-		 * reg(ItemManager.reforgedGoldTyionetiumMixedIngot);
-		 * reg(ItemManager.titaniumMysticMixedIngot);
-		 * reg(ItemManager.titaniumExtranetiumMixedIngot);
-		 */
+		reg(ItemManager.copperNugget);
+		reg(ItemManager.tinNugget);
+		reg(ItemManager.tyionetiumNugget);
+		reg(ItemManager.brightsteelNugget);
+		reg(ItemManager.reforgedGoldNugget);
+		reg(ItemManager.mithrilNugget);
+		reg(ItemManager.mortiumNugget);
+		reg(ItemManager.skyIronNugget);
+		reg(ItemManager.terriumNugget);
+		reg(ItemManager.toslotriumNugget);
+		reg(ItemManager.vividiumNugget);
+		reg(ItemManager.extranetiumNugget);
+		reg(ItemManager.zincNugget);
+		reg(ItemManager.leadNugget);
+		reg(ItemManager.nickelNugget);
+		reg(ItemManager.pewterNugget);
+		reg(ItemManager.aluminumNugget);
+		reg(ItemManager.mnemiumNugget);
+		reg(ItemManager.eterniumNugget);
+		reg(ItemManager.fantasiumNugget);
+		reg(ItemManager.scorniumNugget);
+		reg(ItemManager.electrumNugget);
+		reg(ItemManager.laeniumNugget);
+		reg(ItemManager.magneiumNugget);
 
 		reg(ItemManager.brightsteelHelmet);
 		reg(ItemManager.brightsteelChestplate);

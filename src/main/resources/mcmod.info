@@ -4,7 +4,7 @@
   "name": "The Stuff Extension",
   "description": "A mod that adds tons of cool stuff!",
   "version": "v1.2.0.4-1.12.2",
-  "mcversion": "${1.8}",
+  "mcversion": "${1.12.2}",
   "url": "https://minecraft.curseforge.com/projects/the-stuff-extension",
   "updateUrl": "",
   "authorList": ["lillobby6"],

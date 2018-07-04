@@ -822,7 +822,7 @@ public class ItemManager {
 	public static void registerItems(RegistryEvent.Register<Item> event) {
 		final IForgeRegistry<Item> registry = event.getRegistry();
 		TheStuffExtension.log("Registering Items...");
-		registry.registerAll(goldenStick, diamondStick,
+		registry.registerAll(goldenStick,
 
 				brightflameStick, brightsteelStick, diamondStick, reforgedGoldStick, magicStick, mithrilStick, mysteriousStick, mysticStick, extranetiumStick,
 

@@ -57,6 +57,8 @@ public class BlockManager {
 	public static Block moonStone = registerBlockNormal("moon_stone", 3.0F, 3.0F);
 	public static Block moonSand = registerBlockWithSound("moon_sand", 2.0F, 2.0F, SoundType.SAND);
 	public static Block moonTeleporter = registerBlockNormal("moon_teleporter", 3.0F, 3.0F);
+	
+	//TODO Create converter - converts equivalent TSE materials for other TSE materials - Vividium for mortium, brightsteel for brightflame, etc.
 
 	/*
 	 * public static Block mysticStone = registerBlockNormal("mystic_stone", 3.0F,

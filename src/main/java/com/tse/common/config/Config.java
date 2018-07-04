@@ -31,6 +31,7 @@ public class Config {
 	public static boolean spawnTerrium = true;
 	public static boolean spawnAluminum = true;
 	public static boolean spawnWhiteStone = true;
+	public static boolean spawnMeteors = true;
 
 	public static int freqWhiteStone = 80;
 	public static int freqTitanium = 7;
@@ -50,6 +51,7 @@ public class Config {
 	public static int freqMortium = 2;
 	public static int freqVividium = 2;
 	public static int freqTerrium = 1;
+	public static int freqMeteors = 1;
 
 	public static boolean easyZinc = false;
 
@@ -74,8 +76,7 @@ public class Config {
 
 	private static void initGeneralConfig(Configuration cfg) {
 		cfg.addCustomCategoryComment(CATEGORY_GENERAL, "General configuration: ");
-		useOreDictionaryForTools = cfg.getBoolean("useOreDictionaryForTools", CATEGORY_GENERAL, useOreDictionaryForTools, "On true all recipes will use the oredictionary, this is useful when a mod defaults all types of materials to one mods version. WARNING this can some items to be impossible to make.");
-	}
+			}
 
 	private static void initOreGenConfig(Configuration cfg) {
 		cfg.addCustomCategoryComment(CATEGORY_OREGEN, "Ore generation configuration: ");
@@ -115,6 +116,7 @@ public class Config {
 				"On false will no longer spawn aluminum in the world.");
 		spawnWhiteStone = cfg.getBoolean("spawnWhiteStone", CATEGORY_OREGEN, spawnWhiteStone,
 				"On false will no longer spawn white stone in the world.");
+		spawnMeteors = cfg.getBoolean("spawnMeteors", CATEGORY_OREGEN, spawnMeteors, "On false will no longer spawn meteors (effectively a type of ore) in the world.");
 	}
 
 	private static void initOreFreqConfig(Configuration cfg) {
@@ -157,11 +159,14 @@ public class Config {
 				"How many veins of vividium will be in each chunk.");
 		freqTerrium = cfg.getInt("freqTerrium", CATEGORY_OREFREQ, freqTerrium, 0, 200,
 				"How many veins of terrium will be in each chunk.");
+		freqMeteors = cfg.getInt("freqMeteors", CATEGORY_OREFREQ, freqMeteors, 0, 200, "How many meteors will be in each chunk");
 	}
 
 	private static void initRecipeConfig(Configuration cfg) {
 		cfg.addCustomCategoryComment(CATEGORY_RECIPES, "Recipe configuration: ");
 		easyZinc = cfg.getBoolean("easyZinc", CATEGORY_RECIPES, easyZinc,
 				"On true, zinc will come directly from smelting sphalerite. Sphalerite blocks will now drop themselves.");
+		useOreDictionaryForTools = cfg.getBoolean("useOreDictionaryForTools", CATEGORY_RECIPES, useOreDictionaryForTools, "On true all recipes will use the oredictionary, this is useful when a mod defaults all types of materials to one mods version. WARNING this can some items to be impossible to make.");
+
 	}
 }

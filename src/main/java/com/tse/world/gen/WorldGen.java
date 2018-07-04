@@ -70,6 +70,8 @@ public class WorldGen implements IWorldGenerator{
 			addGen(BlockManager.vividiumOre, world, random, chunkX, chunkZ, 1, 5, Config.freqVividium, 0, 10);
 		if(Config.spawnTerrium)
 			addGen(BlockManager.terriumOre, world, random, chunkX, chunkZ, 1, 1, Config.freqTerrium, 0, 5);
+		if(Config.spawnMeteors)
+			addGen(BlockManager.meteor, world, random, chunkX, chunkZ, 1, 30, Config.freqMeteors, 50, 64);
 	}
 	
 	public void genNether(Random random, int chunkX, int chunkZ, World world, net.minecraft.world.gen.IChunkGenerator chunkGenerator, IChunkProvider chunkProvider){}
