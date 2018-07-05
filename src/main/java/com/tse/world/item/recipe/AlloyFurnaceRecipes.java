@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import com.google.common.collect.Maps;
+import com.tse.common.config.Config;
 import com.tse.common.core.TheStuffExtension;
 import com.tse.container.ContainerAlloyFurnace;
 import com.tse.world.item.ItemManager;
@@ -62,6 +63,10 @@ public class AlloyFurnaceRecipes {
 				new ItemStack(ItemManager.unusableMaterial), 0.0F);
 		this.addSmeltingRecipe(ItemManager.magneiumIngot, ItemManager.fantasiumIngot,
 				new ItemStack(ItemManager.unusableMaterial), 0.0F);
+		if(!Config.easySteel)
+		{
+			this.addSmeltingRecipe(Items.COAL, Items.IRON_INGOT, new ItemStack(ItemManager.steelIngot), 0.2F);
+		}
 	}
 
 	public void addSmeltingRecipe(Item input1, Item input2, ItemStack stack, float experience) {
@@ -94,7 +99,7 @@ public class AlloyFurnaceRecipes {
 				|| it == ItemManager.copperIngot || it == ItemManager.tinIngot || it == ItemManager.diamondIngot
 				|| it == ItemManager.reforgedGoldIngot || it == ItemManager.titaniumIngot
 				|| it == ItemManager.extranetiumIngot || it == ItemManager.unusableMaterial
-				|| it == ItemManager.magneiumIngot)
+				|| it == ItemManager.magneiumIngot || it == Items.COAL)
 			return true;
 		return false;
 	}

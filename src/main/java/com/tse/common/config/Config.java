@@ -54,6 +54,7 @@ public class Config {
 	public static int freqMeteors = 1;
 
 	public static boolean easyZinc = false;
+	public static boolean easySteel = false;
 
 	public static void readConfig() {
 		TheStuffExtension.log("Creating config...");
@@ -166,6 +167,7 @@ public class Config {
 		cfg.addCustomCategoryComment(CATEGORY_RECIPES, "Recipe configuration: ");
 		easyZinc = cfg.getBoolean("easyZinc", CATEGORY_RECIPES, easyZinc,
 				"On true, zinc will come directly from smelting sphalerite. Sphalerite blocks will now drop themselves.");
+		easySteel = cfg.getBoolean("easySteel", CATEGORY_RECIPES, easySteel, "On true, steel will be created by smelting in a furnace; on false, steel will be created in the alloy furnace by smelting one iron and one coal or charcoal.");
 		useOreDictionaryForTools = cfg.getBoolean("useOreDictionaryForTools", CATEGORY_RECIPES, useOreDictionaryForTools, "On true all recipes will use the oredictionary, this is useful when a mod defaults all types of materials to one mods version. WARNING this can some items to be impossible to make.");
 
 	}

@@ -15,19 +15,23 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class TSEItem extends Item
 {
-	private static @Nullable String itemtext;
-	
-	public TSEItem(@Nullable String itemtext, String unlocalizedName)
+	public TSEItem()
 	{
 		super();
-		this.itemtext = itemtext;
-		this.setUnlocalizedName(unlocalizedName);
 	}
 	
 	@Override
 	@SideOnly(Side.CLIENT)
-	public void addInformation(ItemStack stack, @Nullable World world, List<String> itemtexts, ITooltipFlag advanced) {
-		if(itemtext != null) 
-			itemtexts.add(itemtext);
+	public void addInformation(ItemStack stack, @Nullable World world, List<String> tooltip, ITooltipFlag advanced) {
+		if(this==ItemManager.meteoricIronShard)
+			tooltip.add("§7A piece of the stars");
+		if(this==ItemManager.unusableMaterial)
+			tooltip.add("A little bit of everything, but mostly nothing");
+		if(this==ItemManager.toslotriumIngot)
+			tooltip.add("It feels like it could mix with anything");
+		if(this==ItemManager.magicStick)
+			tooltip.add("WARNING: Do not wave in the air while reciting Latin!");
+		if(this==ItemManager.mysticIngot)
+			tooltip.add("A memory of a time long past");
 	}
 }

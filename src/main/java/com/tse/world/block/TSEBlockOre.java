@@ -57,8 +57,18 @@ public class TSEBlockOre extends Block{
     			return ItemManager.sphaleriteGem;
     		else
     			return Item.getItemFromBlock(this);
+    	else if(this == BlockManager.meteor)
+    		return ItemManager.meteoricIronShard;
     	else
     		return Item.getItemFromBlock(this);
+    }
+	
+	public int quantityDropped(Random random)
+    {
+		if(this == BlockManager.meteor)
+			return random.nextInt(3);
+		else
+			return 1;
     }
     
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)

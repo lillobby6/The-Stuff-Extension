@@ -60,7 +60,7 @@ public class GuiCopperAlloyFurnace extends GuiContainer
         if (TileEntityCopperAlloyFurnace.isBurning(this.tileFurnace))
         {
             int k = this.getBurnLeftScaled(13);
-            this.drawTexturedModalRect(i + 56, j + 36 + 12 - k, 176, 12 - k, 14, k + 1);
+            this.drawTexturedModalRect(i + 58, j + 36 + 12 - k, 176, 12 - k, 14, k + 1);
         }
 
         int l = this.getCookProgressScaled(24);

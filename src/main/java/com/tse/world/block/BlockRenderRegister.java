@@ -1,4 +1,4 @@
-package com.tse.world.block.render;
+package com.tse.world.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -6,7 +6,6 @@ import net.minecraft.item.Item;
 
 import com.tse.common.core.TheStuffExtension;
 import com.tse.library.StringsLib;
-import com.tse.world.block.BlockManager;
 
 public class BlockRenderRegister {
 	public static void registerBlockRenderer()
@@ -31,6 +30,8 @@ public class BlockRenderRegister {
 		reg(BlockManager.skyIronOre);
 
 		reg(BlockManager.terriumOre);
+		
+		reg(BlockManager.meteor);
 		
 		reg(BlockManager.moonSand);
 		reg(BlockManager.moonStone);

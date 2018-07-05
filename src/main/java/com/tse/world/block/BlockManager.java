@@ -169,6 +169,8 @@ public class BlockManager {
 			.setUnlocalizedName("terrium_ore");
 	public static Item aluminumOreItem = new ItemBlock(aluminumOre).setRegistryName("aluminum_ore")
 			.setUnlocalizedName("aluminum_ore");
+	
+	public static Item meteorItem = new ItemBlock(meteor).setRegistryName("meteor").setUnlocalizedName("meteor");
 
 	public static Item moonStoneItem = new ItemBlock(moonStone).setRegistryName("moon_stone")
 			.setUnlocalizedName("moon_stone");
@@ -410,6 +412,8 @@ public class BlockManager {
 		registry.registerAll(exaltedDiamondOre, bloodDiamondOre, terraDiamondOre, copperOre, mortiumOre, tinOre,
 				toslotriumOre, vividiumOre, silverOre, platinumOre, titaniumOre, galenaOre, pentlanditeOre, skyIronOre,
 				terriumOre, aluminumOre, sphaleriteOre,
+				
+				meteor,
 
 				moonStone, moonSand, moonTeleporter,
 
@@ -446,6 +450,8 @@ public class BlockManager {
 				mortiumOreItem, tinOreItem, toslotriumOreItem, vividiumOreItem, sphaleriteOreItem, silverOreItem,
 				platinumOreItem, titaniumOreItem, galenaOreItem, pentlanditeOreItem, skyIronOreItem, terriumOreItem,
 				aluminumOreItem,
+				
+				meteorItem,
 
 				moonStoneItem, moonSandItem, moonTeleporterItem,
 

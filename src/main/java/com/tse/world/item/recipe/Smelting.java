@@ -37,17 +37,15 @@ public class Smelting {
 		
 		GameRegistry.addSmelting(Items.DIAMOND, new ItemStack(ItemManager.diamondIngot), 0.1F);
 		
-		/*GameRegistry.addSmelting(ItemManager.mixedIngot, new ItemStack(ItemManager.mithrilIngot), 0.1F);
-		GameRegistry.addSmelting(ItemManager.diamondToslotriumMixedIngot, new ItemStack(ItemManager.mysticIngot), 0.1F);
-		GameRegistry.addSmelting(ItemManager.tyionetiumMithrilToslotriumMixedIngot, new ItemStack(ItemManager.extranetiumIngot), 0.5F);
-		GameRegistry.addSmelting(ItemManager.reforgedGoldTyionetiumMixedIngot, new ItemStack(ItemManager.mysteriousIngot), 0.3F);
-		GameRegistry.addSmelting(ItemManager.titaniumMysticMixedIngot, new ItemStack(ItemManager.magicIngot), 0.4F);
-		GameRegistry.addSmelting(ItemManager.titaniumExtranetiumMixedIngot, new ItemStack(ItemManager.mnemiumIngot), 0.8F);*/
+		GameRegistry.addSmelting(ItemManager.meteoricIronShard, new ItemStack(ItemManager.meteoricIronIngot), 0.1F);
 		
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.moonIronOre), new ItemStack(Items.IRON_INGOT), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.lunaDiamondOre), new ItemStack(ItemManager.lunaDiamond), 0.1F);
 		
-		GameRegistry.addSmelting(Items.IRON_INGOT, new ItemStack(ItemManager.steelIngot), 0.1F);
+		if(Config.easySteel)
+		{
+			GameRegistry.addSmelting(Items.IRON_INGOT, new ItemStack(ItemManager.steelIngot), 0.1F);
+		}
 		GameRegistry.addSmelting(Item.getItemFromBlock(Blocks.IRON_BLOCK), new ItemStack(Item.getItemFromBlock(BlockManager.steelBlock)), 0.9F);
 		
 		GameRegistry.addSmelting(ItemManager.tinIngot, new ItemStack(ItemManager.pewterIngot), 0.1F);

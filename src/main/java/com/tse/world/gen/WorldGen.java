@@ -55,9 +55,9 @@ public class WorldGen implements IWorldGenerator{
 		if(Config.spawnExaltedDiamond)
 			addGen(BlockManager.exaltedDiamondOre, world, random, chunkX, chunkZ, 2, 6, Config.freqExaltedDiamond, 0, 16);
 		if(Config.spawnBloodDiamond)
-			addGen(BlockManager.bloodDiamondOre, world, random, chunkX, chunkZ, 2, 6, Config.freqBloodDiamond, 0, 16);
+			addGen(BlockManager.bloodDiamondOre, world, random, chunkX, chunkZ, 1, 6, Config.freqBloodDiamond, 0, 16);
 		if(Config.spawnTerraDiamond)
-			addGen(BlockManager.terraDiamondOre, world, random, chunkX, chunkZ, 2, 6, Config.freqTerraDiamond, 0, 16);
+			addGen(BlockManager.terraDiamondOre, world, random, chunkX, chunkZ, 1, 6, Config.freqTerraDiamond, 0, 16);
 		if(Config.spawnSkyIron)
 			addGen(BlockManager.skyIronOre, world, random, chunkX, chunkZ, 2, 12, Config.freqSkyIron, 0, 64);
 		if(Config.spawnCopper)
@@ -71,7 +71,7 @@ public class WorldGen implements IWorldGenerator{
 		if(Config.spawnTerrium)
 			addGen(BlockManager.terriumOre, world, random, chunkX, chunkZ, 1, 1, Config.freqTerrium, 0, 5);
 		if(Config.spawnMeteors)
-			addGen(BlockManager.meteor, world, random, chunkX, chunkZ, 1, 30, Config.freqMeteors, 50, 64);
+			addGen(BlockManager.meteor, world, random, chunkX, chunkZ, 0, 30, Config.freqMeteors, 50, 64);
 	}
 	
 	public void genNether(Random random, int chunkX, int chunkZ, World world, net.minecraft.world.gen.IChunkGenerator chunkGenerator, IChunkProvider chunkProvider){}

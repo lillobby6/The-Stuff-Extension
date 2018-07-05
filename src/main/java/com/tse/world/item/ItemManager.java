@@ -1,15 +1,11 @@
 package com.tse.world.item;
 
-import java.util.List;
-
-import com.tse.common.config.Config;
 import com.tse.common.core.TheStuffExtension;
 import com.tse.common.creativetabs.TSECreativeTabs;
 import com.tse.library.StringsLib;
 import com.tse.world.item.materials.TSEArmorMaterials;
 import com.tse.world.item.materials.TSEToolMaterials;
 
-import jline.internal.Log;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -33,9 +29,18 @@ public class ItemManager {
 	public static Item mysteriousStick = registerMainItem("mysterious_stick", TSECreativeTabs.tabMaterials);
 	public static Item mysticStick = registerMainItem("mystic_stick", TSECreativeTabs.tabMaterials);
 	public static Item extranetiumStick = registerMainItem("extranetium_stick", TSECreativeTabs.tabMaterials);
-
+	public static Item eterniumStick = registerMainItem("eternium_stick", TSECreativeTabs.tabMaterials);
+	public static Item fantasiumStick = registerMainItem("fantasium_stick", TSECreativeTabs.tabMaterials);
+	public static Item scorniumStick = registerMainItem("scornium_stick", TSECreativeTabs.tabMaterials);
+	public static Item electrumStick = registerMainItem("electrum_stick", TSECreativeTabs.tabMaterials);
+	public static Item laeniumStick = registerMainItem("laenium_stick", TSECreativeTabs.tabMaterials);
+	public static Item magneiumStick = registerMainItem("magneium_stick", TSECreativeTabs.tabMaterials);
+	public static Item sterlingSilverStick = registerMainItem("sterling_silver_stick", TSECreativeTabs.tabMaterials);
+	public static Item roseGoldStick = registerMainItem("rose_gold_stick", TSECreativeTabs.tabMaterials);
+	public static Item whiteGoldStick = registerMainItem("white_gold_stick", TSECreativeTabs.tabMaterials);
+	public static Item spangoldStick = registerMainItem("spangold_stick", TSECreativeTabs.tabMaterials);
+	
 	public static Item ironRod = registerMainItem("iron_rod", TSECreativeTabs.tabMaterials);
-
 	public static Item copperRod = registerMainItem("copper_rod", TSECreativeTabs.tabMaterials);
 	public static Item steelRod = registerMainItem("steel_rod", TSECreativeTabs.tabMaterials);
 	public static Item tinRod = registerMainItem("tin_rod", TSECreativeTabs.tabMaterials);
@@ -56,12 +61,7 @@ public class ItemManager {
 	public static Item pewterRod = registerMainItem("pewter_rod", TSECreativeTabs.tabMaterials);
 	public static Item aluminumRod = registerMainItem("aluminum_rod", TSECreativeTabs.tabMaterials);
 	public static Item mnemiumRod = registerMainItem("mnemium_rod", TSECreativeTabs.tabMaterials);
-	public static Item eterniumRod = registerMainItem("eternium_rod", TSECreativeTabs.tabMaterials);
-	public static Item fantasiumRod = registerMainItem("fantasium_rod", TSECreativeTabs.tabMaterials);
-	public static Item scorniumRod = registerMainItem("scornium_rod", TSECreativeTabs.tabMaterials);
-	public static Item electrumRod = registerMainItem("electrum_rod", TSECreativeTabs.tabMaterials);
-	public static Item laeniumRod = registerMainItem("laenium_rod", TSECreativeTabs.tabMaterials);
-	public static Item magneiumRod = registerMainItem("magneium_rod", TSECreativeTabs.tabMaterials);
+	public static Item meteoricIronRod = registerMainItem("meteoric_iron_rod", TSECreativeTabs.tabMaterials);
 	
 	public static Item unusableMaterial = registerMainItem("unusable_material", TSECreativeTabs.tabMaterials);
 
@@ -107,11 +107,11 @@ public class ItemManager {
 	public static Item electrumIngot = registerMainItem("electrum_ingot", TSECreativeTabs.tabMaterials);
 	public static Item laeniumIngot = registerMainItem("laenium_ingot", TSECreativeTabs.tabMaterials);
 	public static Item magneiumIngot = registerMainItem("magneium_ingot", TSECreativeTabs.tabMaterials);
-	//TODO
 	public static Item sterlingSilverIngot = registerMainItem("sterling_silver_ingot", TSECreativeTabs.tabMaterials);
 	public static Item roseGoldIngot = registerMainItem("rose_gold_ingot", TSECreativeTabs.tabMaterials);
 	public static Item whiteGoldIngot = registerMainItem("white_gold_ingot", TSECreativeTabs.tabMaterials);
 	public static Item spangoldIngot = registerMainItem("spangold_ingot", TSECreativeTabs.tabMaterials);
+	public static Item meteoricIronIngot = registerMainItem("meteoric_iron_ingot", TSECreativeTabs.tabMaterials);
 	
 	public static Item copperNugget = registerMainItem("copper_nugget", TSECreativeTabs.tabMaterials);
 	public static Item steelNugget = registerMainItem("steel_nugget", TSECreativeTabs.tabMaterials);
@@ -148,6 +148,13 @@ public class ItemManager {
 	public static Item electrumNugget = registerMainItem("electrum_nugget", TSECreativeTabs.tabMaterials);
 	public static Item laeniumNugget = registerMainItem("laenium_nugget", TSECreativeTabs.tabMaterials);
 	public static Item magneiumNugget = registerMainItem("magneium_nugget", TSECreativeTabs.tabMaterials);
+	public static Item sterlingSilverNugget = registerMainItem("sterling_silver_nugget", TSECreativeTabs.tabMaterials);
+	public static Item roseGoldNugget = registerMainItem("rose_gold_nugget", TSECreativeTabs.tabMaterials);
+	public static Item whiteGoldNugget = registerMainItem("white_gold_nugget", TSECreativeTabs.tabMaterials);
+	public static Item spangoldNugget = registerMainItem("spangold_nugget", TSECreativeTabs.tabMaterials);
+	public static Item meteoricIronNugget = registerMainItem("meteoric_iron_nugget", TSECreativeTabs.tabMaterials);
+	
+	public static Item meteoricIronShard = registerMainItem("meteoric_iron_shard", TSECreativeTabs.tabMaterials);
 	// End Materials
 
 	// Start Tools
@@ -740,7 +747,7 @@ public class ItemManager {
 	}
 
 	public static Item registerMainItem(String registryName, CreativeTabs tab) {
-		final Item item = new Item();
+		final Item item = new TSEItem();
 		item.setCreativeTab(tab);
 
 		registerItem(item, registryName);
@@ -824,9 +831,9 @@ public class ItemManager {
 		TheStuffExtension.log("Registering Items...");
 		registry.registerAll(goldenStick,
 
-				brightflameStick, brightsteelStick, diamondStick, reforgedGoldStick, magicStick, mithrilStick, mysteriousStick, mysticStick, extranetiumStick,
+				brightflameStick, brightsteelStick, diamondStick, reforgedGoldStick, magicStick, mithrilStick, mysteriousStick, mysticStick, extranetiumStick, eterniumStick, fantasiumStick, scorniumStick, electrumStick, laeniumStick, magneiumStick, sterlingSilverStick, roseGoldStick, whiteGoldStick, spangoldStick,
 
-				ironRod,copperRod, steelRod, tinRod, tyionetiumRod, bronzeRod, mortiumRod, skyIronRod, terriumRod, toslotriumRod, vividiumRod, silverRod, platinumRod, titaniumRod, zincRod, brassRod, leadRod, nickelRod, pewterRod, aluminumRod, mnemiumRod,
+				ironRod,copperRod, steelRod, tinRod, tyionetiumRod, bronzeRod, mortiumRod, skyIronRod, terriumRod, toslotriumRod, vividiumRod, silverRod, platinumRod, titaniumRod, zincRod, brassRod, leadRod, nickelRod, pewterRod, aluminumRod, mnemiumRod, meteoricIronRod,
 
 				unusableMaterial,
 
@@ -834,10 +841,12 @@ public class ItemManager {
 
 				sphaleriteGem,
 				
-				copperIngot, steelIngot, tinIngot, tyionetiumIngot, bronzeIngot, brightflameIngot, brightsteelIngot, diamondIngot, reforgedGoldIngot, magicIngot, mithrilIngot, mortiumIngot, mysteriousIngot, mysticIngot, skyIronIngot, terriumIngot, toslotriumIngot, vividiumIngot, extranetiumIngot, silverIngot, platinumIngot, titaniumIngot, zincIngot, brassIngot, leadIngot, nickelIngot, pewterIngot, aluminumIngot, mnemiumIngot, eterniumIngot, fantasiumIngot, scorniumIngot, electrumIngot, laeniumIngot, magneiumIngot, sterlingSilverIngot, roseGoldIngot, whiteGoldIngot, spangoldIngot,
+				copperIngot, steelIngot, tinIngot, tyionetiumIngot, bronzeIngot, brightflameIngot, brightsteelIngot, diamondIngot, reforgedGoldIngot, magicIngot, mithrilIngot, mortiumIngot, mysteriousIngot, mysticIngot, skyIronIngot, terriumIngot, toslotriumIngot, vividiumIngot, extranetiumIngot, silverIngot, platinumIngot, titaniumIngot, zincIngot, brassIngot, leadIngot, nickelIngot, pewterIngot, aluminumIngot, mnemiumIngot, eterniumIngot, fantasiumIngot, scorniumIngot, electrumIngot, laeniumIngot, magneiumIngot, sterlingSilverIngot, roseGoldIngot, whiteGoldIngot, spangoldIngot, meteoricIronIngot,
 				
-				copperNugget, steelNugget, tinNugget, tyionetiumNugget, bronzeNugget, brightflameNugget, brightsteelNugget, diamondNugget, reforgedGoldNugget, magicNugget, mithrilNugget, mortiumNugget, mysteriousNugget, mysticNugget, skyIronNugget, terriumNugget, toslotriumNugget, vividiumNugget, extranetiumNugget, silverNugget, platinumNugget, titaniumNugget, zincNugget, brassNugget, leadNugget, nickelNugget, pewterNugget, aluminumNugget, mnemiumNugget, eterniumNugget, fantasiumNugget,	scorniumNugget, electrumNugget, laeniumNugget, magneiumNugget,
+				copperNugget, steelNugget, tinNugget, tyionetiumNugget, bronzeNugget, brightflameNugget, brightsteelNugget, diamondNugget, reforgedGoldNugget, magicNugget, mithrilNugget, mortiumNugget, mysteriousNugget, mysticNugget, skyIronNugget, terriumNugget, toslotriumNugget, vividiumNugget, extranetiumNugget, silverNugget, platinumNugget, titaniumNugget, zincNugget, brassNugget, leadNugget, nickelNugget, pewterNugget, aluminumNugget, mnemiumNugget, eterniumNugget, fantasiumNugget,	scorniumNugget, electrumNugget, laeniumNugget, magneiumNugget, sterlingSilverNugget, roseGoldNugget, whiteGoldNugget, spangoldNugget, meteoricIronNugget,
 
+				meteoricIronShard,
+				
 				justice, corruption, destruction,
 
 				bronzePickaxe, bronzeAxe, bronzeShovel, bronzeHoe, bronzeMattock, bronzeSword,

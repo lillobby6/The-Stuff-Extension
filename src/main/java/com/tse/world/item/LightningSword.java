@@ -1,13 +1,22 @@
 package com.tse.world.item;
 
+import java.util.List;
+
+import javax.annotation.Nullable;
+
 import com.tse.common.creativetabs.TSECreativeTabs;
 
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class LightningSword extends ItemSword{
 	
@@ -33,5 +42,18 @@ public class LightningSword extends ItemSword{
 	    owner.world.addWeatherEffect(bolt);
 	    return true;
     }
+	
+	@SideOnly(Side.CLIENT)
+	@Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)
+    {
+		if(this==ItemManager.justice)
+			tooltip.add("§3In the name of the law, I sentence you to die!");
+		if(this==ItemManager.corruption)
+			tooltip.add("§4With this, I am unstoppable!");
+		if(this==ItemManager.destruction)
+			tooltip.add("§8In the end, all will die.");
+
+	}
 
 }

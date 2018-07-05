@@ -23,7 +23,17 @@ public class ItemRenderRegister {
 		reg(ItemManager.mithrilStick);
 		reg(ItemManager.mysteriousStick);
 		reg(ItemManager.extranetiumStick);
-
+		reg(ItemManager.eterniumStick);
+		reg(ItemManager.fantasiumStick);
+		reg(ItemManager.scorniumStick);
+		reg(ItemManager.electrumStick);
+		reg(ItemManager.laeniumStick);
+		reg(ItemManager.magneiumStick);
+		reg(ItemManager.sterlingSilverStick);
+		reg(ItemManager.roseGoldStick);
+		reg(ItemManager.whiteGoldStick);
+		reg(ItemManager.spangoldStick);
+		
 		reg(ItemManager.ironRod);
 		reg(ItemManager.steelRod);
 		reg(ItemManager.bronzeRod);
@@ -45,6 +55,8 @@ public class ItemRenderRegister {
 		reg(ItemManager.pewterRod);
 		reg(ItemManager.aluminumRod);
 		reg(ItemManager.mnemiumRod);
+		reg(ItemManager.meteoricIronRod);
+
 
 		reg(ItemManager.sphaleriteGem);
 		
@@ -156,6 +168,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.roseGoldIngot);
 		reg(ItemManager.whiteGoldIngot);
 		reg(ItemManager.spangoldIngot);
+		reg(ItemManager.meteoricIronIngot);
 
 		reg(ItemManager.justice);
 		reg(ItemManager.corruption);
@@ -349,6 +362,13 @@ public class ItemRenderRegister {
 		reg(ItemManager.electrumNugget);
 		reg(ItemManager.laeniumNugget);
 		reg(ItemManager.magneiumNugget);
+		reg(ItemManager.sterlingSilverNugget);
+		reg(ItemManager.roseGoldNugget);
+		reg(ItemManager.whiteGoldNugget);
+		reg(ItemManager.spangoldNugget);
+		reg(ItemManager.meteoricIronNugget);
+		
+		reg(ItemManager.meteoricIronShard);
 
 		reg(ItemManager.brightsteelHelmet);
 		reg(ItemManager.brightsteelChestplate);

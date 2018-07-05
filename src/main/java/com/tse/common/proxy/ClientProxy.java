@@ -4,7 +4,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-import com.tse.world.block.render.BlockRenderRegister;
+import com.tse.world.block.BlockRenderRegister;
 import com.tse.world.entity.EntityManager;
 import com.tse.world.item.ItemRenderRegister;
 
