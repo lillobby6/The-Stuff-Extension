@@ -13,6 +13,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.bloodDiamond);
 		reg(ItemManager.terraDiamond);
 		reg(ItemManager.lunaDiamond);
+		reg(ItemManager.solDiamond);
 		
 		reg(ItemManager.unusableMaterial);
 		
@@ -57,7 +58,6 @@ public class ItemRenderRegister {
 		reg(ItemManager.mnemiumRod);
 		reg(ItemManager.meteoricIronRod);
 
-
 		reg(ItemManager.sphaleriteGem);
 		
 		reg(ItemManager.copperIngot);
@@ -79,8 +79,6 @@ public class ItemRenderRegister {
 		reg(ItemManager.bronzeBoots);
 
 		reg(ItemManager.bronzeNugget);
-
-		reg(ItemManager.lapisRemover);
 
 		reg(ItemManager.steelIngot);
 
@@ -173,6 +171,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.justice);
 		reg(ItemManager.corruption);
 		reg(ItemManager.destruction);
+		reg(ItemManager.creation);
 
 		reg(ItemManager.brightflamePickaxe);
 		reg(ItemManager.brightflameAxe);

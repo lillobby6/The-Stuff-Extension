@@ -1,12 +1,47 @@
 item.mystic_stick.name=Mystic Stick
 item.golden_stick.name=Golden Stick
 item.diamond_stick.name=Diamond Stick
+item.brightflame_stick.name=Brightflame Stick
+item.brightsteel_stick.name=Brightsteel Stick
+item.reforged_gold_stick.name=Reforged Gold Stick
+item.magic_stick.name=Magic Stick
+item.mithril_stick.name=Mithril Stick
+item.mysterious_stick.name=Mysterious Stick
+item.extranetium_stick.name=Extranetium Stick
+item.eternium_stick.name=Eternium Stick
+item.fantasium_stick.name=Fantasium Stick
+item.scornium_stick.name=Scornium Stick
+item.electrum_stick.name=Electrum Stick
+item.laenium_stick.name=Laenium Stick
+item.magneium_stick.name=Magneium Stick
+item.sterling_silver_stick.name=Sterling Silver Stick
+item.rose_gold_stick.name=Rose Gold Stick
+item.white_gold_stick.name=White Gold Stick
+item.spangold_stick.name=Spangold Stick
 
 item.iron_rod.name=Iron Rod
 item.steel_rod.name=Steel Rod
 item.bronze_rod.name=Bronze Rod
 item.brass_rod.name=Brass Rod
 item.titanium_rod.name=Titanium Rod
+item.copper_rod.name=Copper Rod
+item.tin_rod.name=Tin Rod
+item.tyionetium_rod.name=Tyionetium Rod
+item.mortium_rod.name=Mortium Rod
+item.sky_iron_rod.name=Sky Iron Rod
+item.terrium_rod.name=Terrium Rod
+item.toslotrium_rod.name=Toslotrium Rod
+item.vividium_rod.name=Vividium Rod
+item.silver_rod.name=Silver Rod
+item.platinum_rod.name=Platinum Rod
+item.titanium_rod.name=Titanium Rod
+item.zinc_rod.name=Zinc Rod
+item.lead_rod.name=Lead Rod
+item.nickel_rod.name=Nickel Rod
+item.pewter_rod.name=Pewter Rod
+item.aluminun_rod.name=Aluminum Rod
+item.mnemium_rod.name=Mnemium Rod
+item.meteoric_iron_rod.name=Meteoric Iron Rod
 
 item.unusable_material.name=Unusable Material
 
@@ -14,6 +49,7 @@ item.exalted_diamond.name=Exalted Diamond
 item.blood_diamond.name=Blood Diamond
 item.terra_diamond.name=Terra Diamond
 item.luna_diamond.name=Luna Diamond
+item.sol_diamond.name=Sol Diamond
 
 item.sphalerite_gem.name=Sphalerite Gem
 
@@ -28,13 +64,36 @@ item.silver_nugget.name=Silver Nugget
 item.platinum_nugget.name=Platinum Nugget
 item.titanium_nugget.name=Titanium Nugget
 item.steel_nugget.name=Steel Nugget
-
-item.diamond_toslotrium_mixed_ingot.name=Diamond/Toslotrium Mixed Ingot
-item.mixed_ingot.name=Mixed Ingot
-item.tyionetium_mithril_toslotrium_mixed_ingot.name=Tyionetium/Mithril/Toslotrium Mixed Ingot
-item.reforged_gold_tyionetium_mixed_ingot.name=Reforged Gold/Tyionetium Mixed Ingot
-item.titanium_mystic_mixed_ingot.name=Titanium/Mystic Mixed Ingot
-item.titanium_extranetium_mixed_ingot.name=Titanium/Extranetium Mixed Ingot
+item.copper_nugget.name=Copper Nugget
+item.tin_nugget.name=Tin Nugget
+item.tyionetium_nugget.name=Tyionetium Nugget
+item.brightsteel_nugget.name=Brightsteel Nugget
+item.reforged_gold_nugget.name=Reforged Gold Nugget
+item.mithril_nugget.name=Mithril Nugget
+item.mortium_nugget.name=Mortium Nugget
+item.mystic_nugget.name=Mystic Nugget
+item.sky_iron_nugget.name=Sky Iron Nugget
+item.terrium_nugget.name=Terrium Nugget
+item.toslotrium_nugget.name=Toslotrium Nugget
+item.vividium_nugget.name=Vividium Nugget
+item.extranetium_nugget.name=Extranetium Nugget
+item.zinc_nugget.name=Zinc Nugget
+item.lead_nugget.name=Lead Nugget
+item.nickel_nugget.name=Nickel Nugget
+item.pewter_nugget.name=Pewter Nugget
+item.aluminum_nugget.name=Aluminum Nugget
+item.mnemium_nugget.name=Mnemium Nugget
+item.eternium_nugget.name=Eternium Nugget
+item.fantasium_nugget.name=Fantasium Nugget
+item.scornium_nugget.name=Scornium Nugget
+item.electrum_nugget.name=Electrum Nugget
+item.laenium_nugget.name=Laenium Nugget
+item.magneium_nugget.name=Magneium Nugget
+item.sterling_silver_nugget.name=Sterling Silver Nugget
+item.meteoric_iron_nugget.name=Meteoric Iron Nugget
+item.spangold_nugget.name=Spangold Nugget
+item.white_gold_nugget.name=White Gold Nugget
+item.rose_gold_nugget.name=Rose Gold Nugget
 
 item.copper_ingot.name=Copper Ingot
 item.steel_ingot.name=Steel Ingot
@@ -71,6 +130,13 @@ item.scornium_ingot.name=Scornium Ingot
 item.electrum_ingot.name=Electrum Ingot
 item.laenium_ingot.name=Laenium Ingot
 item.magneium_ingot.name=Magneium Ingot
+item.sterling_silver_ingot.name=Sterling Silver Ingot
+item.rose_gold_ingot.name=Rose Gold Ingot
+item.white_gold_ingot.name=White Gold Ingot
+item.spangold_ingot.name=Spangold Ingot
+item.meteoric_iron_ingot.name=Meteoric Iron Ingot
+
+item.meteoric_iron_shard.name=Meteoric Iron Shard
 
 item.copper_pickaxe.name=Copper Pickaxe
 item.copper_axe.name=Copper Axe
@@ -397,6 +463,7 @@ item.lapis_remover.name=Lapis Lazuli Remover
 item.justice.name=Justice
 item.corruption.name=Corruption
 item.destruction.name=Destruction
+item.creation.name=Creation
 
 
 

@@ -52,7 +52,9 @@ public class LightningSword extends ItemSword{
 		if(this==ItemManager.corruption)
 			tooltip.add("§4With this, I am unstoppable!");
 		if(this==ItemManager.destruction)
-			tooltip.add("§8In the end, all will die.");
+			tooltip.add("§8Vae victis!");
+		if(this==ItemManager.creation)
+			tooltip.add("§5Deus vult!");
 
 	}
 

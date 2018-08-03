@@ -2,6 +2,7 @@ package com.tse.tileentity;
 
 import com.tse.container.ContainerCopperAlloyFurnace;
 import com.tse.world.block.CopperAlloyFurnace;
+import com.tse.world.item.ItemManager;
 import com.tse.world.item.recipe.AlloyFurnaceRecipes;
 
 import net.minecraft.block.Block;
@@ -45,6 +46,9 @@ public class TileEntityCopperAlloyFurnace extends TileEntityLockable implements 
     private int cookTime;
     private int totalCookTime;
     private String furnaceCustomName;
+    
+    private boolean returnUnusable = false;
+    
 	@Override
 	public int getSizeInventory() {
 		return this.furnaceItemStacks.size();
@@ -352,20 +356,34 @@ public class TileEntityCopperAlloyFurnace extends TileEntityLockable implements 
     {
         if (this.canSmelt())
         {
-            ItemStack itemstack = this.furnaceItemStacks.get(0);
+        	ItemStack itemstack = this.furnaceItemStacks.get(0);
             ItemStack itemstack1 = this.furnaceItemStacks.get(1);
             ItemStack itemstack2 = AlloyFurnaceRecipes.instance().getSmeltingResult(itemstack, itemstack1);
             ItemStack itemstack3 = this.furnaceItemStacks.get(3);
-
-            if (itemstack3.isEmpty())
-            {
-                this.furnaceItemStacks.set(3, itemstack2.copy());
-            }
-            else if (itemstack3.getItem() == itemstack2.getItem())
-            {
-                itemstack3.grow(itemstack2.getCount());
-            }
-
+        	if(this.returnUnusable)
+        	{
+        		if (itemstack3.isEmpty())
+                {
+                    this.furnaceItemStacks.set(3, new ItemStack(ItemManager.unusableMaterial));
+                    this.returnUnusable = false;
+                }
+                else if (itemstack3.getItem() == ItemManager.unusableMaterial)
+                {
+                    itemstack3.grow(1);
+                    this.returnUnusable = false;
+                }
+        	}
+        	else
+        	{
+        		if (itemstack3.isEmpty())
+                {
+                    this.furnaceItemStacks.set(3, itemstack2.copy());
+                }
+                else if (itemstack3.getItem() == itemstack2.getItem())
+                {
+                    itemstack3.grow(itemstack2.getCount());
+                }
+        	}
             itemstack.shrink(1);
             itemstack1.shrink(1);
         }
@@ -383,7 +401,8 @@ public class TileEntityCopperAlloyFurnace extends TileEntityLockable implements 
 
             if (itemstack.isEmpty())
             {
-                return false;
+            	this.returnUnusable = true;
+                return true;
             }
             else
             {

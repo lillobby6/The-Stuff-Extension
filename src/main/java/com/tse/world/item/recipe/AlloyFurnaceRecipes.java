@@ -26,43 +26,20 @@ public class AlloyFurnaceRecipes {
 	}
 
 	private AlloyFurnaceRecipes() {
-		this.addSmeltingRecipe(ItemManager.mysteriousIngot, ItemManager.mysticIngot,
-				new ItemStack(ItemManager.fantasiumIngot), 0.2F);
-		this.addSmeltingRecipe(ItemManager.tyionetiumIngot, ItemManager.toslotriumIngot,
-				new ItemStack(ItemManager.scorniumIngot), 0.3F);
-		this.addSmeltingRecipe(ItemManager.mithrilIngot, ItemManager.scorniumIngot,
-				new ItemStack(ItemManager.extranetiumIngot), 0.5F);
-		this.addSmeltingRecipe(ItemManager.fantasiumIngot, ItemManager.magicIngot,
-				new ItemStack(ItemManager.mithrilIngot), 0.5F);
-		this.addSmeltingRecipe(ItemManager.copperIngot, ItemManager.tinIngot, new ItemStack(ItemManager.bronzeIngot),
-				0.1F);
-		this.addSmeltingRecipe(ItemManager.diamondIngot, ItemManager.toslotriumIngot,
-				new ItemStack(ItemManager.mysticIngot), 0.1F);
-		this.addSmeltingRecipe(ItemManager.reforgedGoldIngot, ItemManager.tyionetiumIngot,
-				new ItemStack(ItemManager.mysteriousIngot), 0.3F);
-		this.addSmeltingRecipe(ItemManager.titaniumIngot, ItemManager.extranetiumIngot,
-				new ItemStack(ItemManager.mnemiumIngot), 0.8F);
-		this.addSmeltingRecipe(ItemManager.unusableMaterial, ItemManager.unusableMaterial,
-				new ItemStack(ItemManager.toslotriumIngot), 0.0F);
-		this.addSmeltingRecipe(ItemManager.copperIngot, ItemManager.zincIngot, new ItemStack(ItemManager.brassIngot),
-				0.1F);
-		this.addSmeltingRecipe(Items.GOLD_INGOT, ItemManager.silverIngot, new ItemStack(ItemManager.electrumIngot),
-				0.5F);
-		this.addSmeltingRecipe(ItemManager.brightflameIngot, ItemManager.brightsteelIngot,
-				new ItemStack(ItemManager.unusableMaterial), 0.0F);
-		this.addSmeltingRecipe(ItemManager.brightflameIngot, ItemManager.platinumIngot,
-				new ItemStack(ItemManager.laeniumIngot), 0.1F);
-		this.addSmeltingRecipe(ItemManager.brightsteelIngot, ItemManager.platinumIngot,
-				new ItemStack(ItemManager.laeniumIngot), 0.1F);
-		this.addSmeltingRecipe(ItemManager.laeniumIngot, ItemManager.brightflameIngot,
-				new ItemStack(ItemManager.unusableMaterial, 2), 0.0F);
-		this.addSmeltingRecipe(ItemManager.laeniumIngot, ItemManager.brightsteelIngot,
-				new ItemStack(ItemManager.unusableMaterial, 2), 0.0F);
-		this.addSmeltingRecipe(Items.IRON_INGOT, Items.GOLD_INGOT, new ItemStack(ItemManager.magneiumIngot), 0.3F);
-		this.addSmeltingRecipe(ItemManager.toslotriumIngot, ItemManager.toslotriumIngot,
-				new ItemStack(ItemManager.unusableMaterial), 0.0F);
-		this.addSmeltingRecipe(ItemManager.magneiumIngot, ItemManager.fantasiumIngot,
-				new ItemStack(ItemManager.unusableMaterial), 0.0F);
+		this.addSmeltingRecipe(ItemManager.mysteriousIngot, ItemManager.mysticIngot, new ItemStack(ItemManager.fantasiumIngot, 2), 0.2F);
+		this.addSmeltingRecipe(ItemManager.tyionetiumIngot, ItemManager.toslotriumIngot, new ItemStack(ItemManager.scorniumIngot, 2), 0.3F);
+		this.addSmeltingRecipe(ItemManager.mithrilIngot, ItemManager.scorniumIngot, new ItemStack(ItemManager.extranetiumIngot, 2), 0.5F);
+		this.addSmeltingRecipe(ItemManager.fantasiumIngot, ItemManager.magicIngot, new ItemStack(ItemManager.mithrilIngot, 2), 0.5F);
+		this.addSmeltingRecipe(ItemManager.copperIngot, ItemManager.tinIngot, new ItemStack(ItemManager.bronzeIngot, 2), 0.1F);
+		this.addSmeltingRecipe(ItemManager.diamondIngot, ItemManager.toslotriumIngot, new ItemStack(ItemManager.mysticIngot, 2), 0.1F);
+		this.addSmeltingRecipe(ItemManager.reforgedGoldIngot, ItemManager.tyionetiumIngot, new ItemStack(ItemManager.mysteriousIngot, 2), 0.3F);
+		this.addSmeltingRecipe(ItemManager.titaniumIngot, ItemManager.extranetiumIngot, new ItemStack(ItemManager.mnemiumIngot, 2), 0.8F);
+		this.addSmeltingRecipe(ItemManager.unusableMaterial, ItemManager.unusableMaterial, new ItemStack(ItemManager.toslotriumIngot), 0.0F);
+		this.addSmeltingRecipe(ItemManager.copperIngot, ItemManager.zincIngot, new ItemStack(ItemManager.brassIngot, 2), 0.1F);
+		this.addSmeltingRecipe(Items.GOLD_INGOT, ItemManager.silverIngot, new ItemStack(ItemManager.electrumIngot, 2), 0.5F);
+		this.addSmeltingRecipe(ItemManager.brightflameIngot, ItemManager.platinumIngot, new ItemStack(ItemManager.laeniumIngot, 2), 0.1F);
+		this.addSmeltingRecipe(ItemManager.brightsteelIngot, ItemManager.platinumIngot, new ItemStack(ItemManager.laeniumIngot, 2), 0.1F);
+		this.addSmeltingRecipe(Items.IRON_INGOT, Items.GOLD_INGOT, new ItemStack(ItemManager.magneiumIngot, 2), 0.3F);
 		if(!Config.easySteel)
 		{
 			this.addSmeltingRecipe(Items.COAL, Items.IRON_INGOT, new ItemStack(ItemManager.steelIngot), 0.2F);
@@ -89,19 +66,7 @@ public class AlloyFurnaceRecipes {
 	}
 
 	public static boolean matchesIngredient(ItemStack itemstack) {
-		Item it = itemstack.getItem();
-		if (it == ItemManager.mysteriousIngot || it == Items.IRON_INGOT || it == ItemManager.laeniumIngot
-				|| it == ItemManager.platinumIngot || it == ItemManager.brightflameIngot
-				|| it == ItemManager.brightsteelIngot || it == ItemManager.zincIngot || it == Items.GOLD_INGOT
-				|| it == ItemManager.silverIngot || it == ItemManager.mysticIngot || it == ItemManager.tyionetiumIngot
-				|| it == ItemManager.toslotriumIngot || it == ItemManager.mithrilIngot
-				|| it == ItemManager.scorniumIngot || it == ItemManager.fantasiumIngot || it == ItemManager.magicIngot
-				|| it == ItemManager.copperIngot || it == ItemManager.tinIngot || it == ItemManager.diamondIngot
-				|| it == ItemManager.reforgedGoldIngot || it == ItemManager.titaniumIngot
-				|| it == ItemManager.extranetiumIngot || it == ItemManager.unusableMaterial
-				|| it == ItemManager.magneiumIngot || it == Items.COAL)
-			return true;
-		return false;
+		return true;
 	}
 
 	public float getExperience(ItemStack item) {

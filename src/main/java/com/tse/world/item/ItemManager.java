@@ -19,10 +19,10 @@ import net.minecraftforge.registries.IForgeRegistry;
 @Mod.EventBusSubscriber
 public class ItemManager {
 	
+	public static Item diamondStick = registerMainItem("diamond_stick", TSECreativeTabs.tabMaterials);
 	public static Item goldenStick = registerMainItem("golden_stick", TSECreativeTabs.tabMaterials);
 	public static Item brightflameStick = registerMainItem("brightflame_stick", TSECreativeTabs.tabMaterials);
 	public static Item brightsteelStick = registerMainItem("brightsteel_stick", TSECreativeTabs.tabMaterials);
-	public static Item diamondStick = registerMainItem("diamond_stick", TSECreativeTabs.tabMaterials);
 	public static Item reforgedGoldStick = registerMainItem("reforged_gold_stick", TSECreativeTabs.tabMaterials);
 	public static Item magicStick = registerMainItem("magic_stick", TSECreativeTabs.tabMaterials);
 	public static Item mithrilStick = registerMainItem("mithril_stick", TSECreativeTabs.tabMaterials);
@@ -65,13 +65,17 @@ public class ItemManager {
 	
 	public static Item unusableMaterial = registerMainItem("unusable_material", TSECreativeTabs.tabMaterials);
 
+	public static Item meteoricIronShard = registerMainItem("meteoric_iron_shard", TSECreativeTabs.tabMaterials);
+	
 	public static Item exaltedDiamond = registerMainItem("exalted_diamond", TSECreativeTabs.tabMaterials);
 	public static Item bloodDiamond = registerMainItem("blood_diamond", TSECreativeTabs.tabMaterials);
 	public static Item terraDiamond = registerMainItem("terra_diamond", TSECreativeTabs.tabMaterials);
 	public static Item lunaDiamond = registerMainItem("luna_diamond", TSECreativeTabs.tabMaterials);
-
+	public static Item solDiamond = registerMainItem("sol_diamond", TSECreativeTabs.tabMaterials);
+	
 	public static Item sphaleriteGem = registerMainItem("sphalerite_gem", TSECreativeTabs.tabMaterials);
 	
+	public static Item diamondIngot = registerMainItem("diamond_ingot", TSECreativeTabs.tabMaterials);
 	public static Item copperIngot = registerMainItem("copper_ingot", TSECreativeTabs.tabMaterials);
 	public static Item steelIngot = registerMainItem("steel_ingot", TSECreativeTabs.tabMaterials);
 	public static Item tinIngot = registerMainItem("tin_ingot", TSECreativeTabs.tabMaterials);
@@ -79,7 +83,6 @@ public class ItemManager {
 	public static Item bronzeIngot = registerMainItem("bronze_ingot", TSECreativeTabs.tabMaterials);
 	public static Item brightflameIngot = registerMainItem("brightflame_ingot", TSECreativeTabs.tabMaterials);
 	public static Item brightsteelIngot = registerMainItem("brightsteel_ingot", TSECreativeTabs.tabMaterials);
-	public static Item diamondIngot = registerMainItem("diamond_ingot", TSECreativeTabs.tabMaterials);
 	public static Item reforgedGoldIngot = registerMainItem("reforged_gold_ingot", TSECreativeTabs.tabMaterials);
 	public static Item magicIngot = registerMainItem("magic_ingot", TSECreativeTabs.tabMaterials);
 	public static Item mithrilIngot = registerMainItem("mithril_ingot", TSECreativeTabs.tabMaterials);
@@ -113,6 +116,7 @@ public class ItemManager {
 	public static Item spangoldIngot = registerMainItem("spangold_ingot", TSECreativeTabs.tabMaterials);
 	public static Item meteoricIronIngot = registerMainItem("meteoric_iron_ingot", TSECreativeTabs.tabMaterials);
 	
+	public static Item diamondNugget = registerMainItem("diamond_nugget", TSECreativeTabs.tabMaterials);
 	public static Item copperNugget = registerMainItem("copper_nugget", TSECreativeTabs.tabMaterials);
 	public static Item steelNugget = registerMainItem("steel_nugget", TSECreativeTabs.tabMaterials);
 	public static Item tinNugget = registerMainItem("tin_nugget", TSECreativeTabs.tabMaterials);
@@ -120,7 +124,6 @@ public class ItemManager {
 	public static Item bronzeNugget = registerMainItem("bronze_nugget", TSECreativeTabs.tabMaterials);
 	public static Item brightflameNugget = registerMainItem("brightflame_nugget", TSECreativeTabs.tabMaterials);
 	public static Item brightsteelNugget = registerMainItem("brightsteel_nugget", TSECreativeTabs.tabMaterials);
-	public static Item diamondNugget = registerMainItem("diamond_nugget", TSECreativeTabs.tabMaterials);
 	public static Item reforgedGoldNugget = registerMainItem("reforged_gold_nugget", TSECreativeTabs.tabMaterials);
 	public static Item magicNugget = registerMainItem("magic_nugget", TSECreativeTabs.tabMaterials);
 	public static Item mithrilNugget = registerMainItem("mithril_nugget", TSECreativeTabs.tabMaterials);
@@ -154,233 +157,138 @@ public class ItemManager {
 	public static Item spangoldNugget = registerMainItem("spangold_nugget", TSECreativeTabs.tabMaterials);
 	public static Item meteoricIronNugget = registerMainItem("meteoric_iron_nugget", TSECreativeTabs.tabMaterials);
 	
-	public static Item meteoricIronShard = registerMainItem("meteoric_iron_shard", TSECreativeTabs.tabMaterials);
 	// End Materials
 
 	// Start Tools
 	// Copper
-	public static Item copperPickaxe = registerPickaxe(TSEToolMaterials.COPPER, "copper_pickaxe",
-			TSECreativeTabs.tabTools, 2);
-	public static Item copperAxe = registerAxe(TSEToolMaterials.COPPER, "copper_axe", TSECreativeTabs.tabTools, 2, 1F,
-			5.0F);
-	public static Item copperMattock = registerMattock(-2.2F, TSEToolMaterials.COPPER, "copper_mattock",
-			TSECreativeTabs.tabTools, 2);
-	public static Item copperShovel = registerShovel(TSEToolMaterials.COPPER, "copper_shovel", TSECreativeTabs.tabTools,
-			2);
+	public static Item copperPickaxe = registerPickaxe(TSEToolMaterials.COPPER, "copper_pickaxe", TSECreativeTabs.tabTools, 2);
+	public static Item copperAxe = registerAxe(TSEToolMaterials.COPPER, "copper_axe", TSECreativeTabs.tabTools, 2, 1F, 5.0F);
+	public static Item copperMattock = registerMattock(-2.2F, TSEToolMaterials.COPPER, "copper_mattock", TSECreativeTabs.tabTools, 2);
+	public static Item copperShovel = registerShovel(TSEToolMaterials.COPPER, "copper_shovel", TSECreativeTabs.tabTools, 2);
 	public static Item copperHoe = registerHoe(TSEToolMaterials.COPPER, "copper_hoe", TSECreativeTabs.tabTools, 2);
 	// Copper
 
-	public static Item bronzePickaxe = registerPickaxe(TSEToolMaterials.BRONZE, "bronze_pickaxe",
-			TSECreativeTabs.tabTools, 3);
-	public static Item bronzeAxe = registerAxe(TSEToolMaterials.BRONZE, "bronze_axe", TSECreativeTabs.tabTools, 3, 1F,
-			4.0F);
-	public static Item bronzeMattock = registerMattock(-2.2F, TSEToolMaterials.BRONZE, "bronze_mattock",
-			TSECreativeTabs.tabTools, 3);
-	public static Item bronzeShovel = registerShovel(TSEToolMaterials.BRONZE, "bronze_shovel", TSECreativeTabs.tabTools,
-			3);
+	public static Item bronzePickaxe = registerPickaxe(TSEToolMaterials.BRONZE, "bronze_pickaxe", TSECreativeTabs.tabTools, 3);
+	public static Item bronzeAxe = registerAxe(TSEToolMaterials.BRONZE, "bronze_axe", TSECreativeTabs.tabTools, 3, 1F, 4.0F);
+	public static Item bronzeMattock = registerMattock(-2.2F, TSEToolMaterials.BRONZE, "bronze_mattock", TSECreativeTabs.tabTools, 3);
+	public static Item bronzeShovel = registerShovel(TSEToolMaterials.BRONZE, "bronze_shovel", TSECreativeTabs.tabTools, 3);
 	public static Item bronzeHoe = registerHoe(TSEToolMaterials.BRONZE, "bronze_hoe", TSECreativeTabs.tabTools, 3);
 
-	public static Item magicPickaxe = registerPickaxe(TSEToolMaterials.MAGIC, "magic_pickaxe", TSECreativeTabs.tabTools,
-			6);
-	public static Item magicAxe = registerAxe(TSEToolMaterials.MITHRIL, "magic_axe", TSECreativeTabs.tabTools, 6, 1F,
-			10.0F);
-	public static Item magicMattock = registerMattock(-2.2F, TSEToolMaterials.MAGIC, "magic_mattock",
-			TSECreativeTabs.tabTools, 6);
-	public static Item magicShovel = registerShovel(TSEToolMaterials.MAGIC, "magic_shovel", TSECreativeTabs.tabTools,
-			6);
+	public static Item magicPickaxe = registerPickaxe(TSEToolMaterials.MAGIC, "magic_pickaxe", TSECreativeTabs.tabTools, 6);
+	public static Item magicAxe = registerAxe(TSEToolMaterials.MITHRIL, "magic_axe", TSECreativeTabs.tabTools, 6, 1F, 10.0F);
+	public static Item magicMattock = registerMattock(-2.2F, TSEToolMaterials.MAGIC, "magic_mattock", TSECreativeTabs.tabTools, 6);
+	public static Item magicShovel = registerShovel(TSEToolMaterials.MAGIC, "magic_shovel", TSECreativeTabs.tabTools, 6);
 	public static Item magicHoe = registerHoe(TSEToolMaterials.MAGIC, "magic_hoe", TSECreativeTabs.tabTools, 6);
 
-	public static Item mithrilPickaxe = registerPickaxe(TSEToolMaterials.MITHRIL, "mithril_pickaxe",
-			TSECreativeTabs.tabTools, 7);
-	public static Item mithrilAxe = registerAxe(TSEToolMaterials.MITHRIL, "mithril_axe", TSECreativeTabs.tabTools, 7,
-			1F, 15.0F);
-	public static Item mithrilMattock = registerMattock(-2.2F, TSEToolMaterials.MITHRIL, "mithril_mattock",
-			TSECreativeTabs.tabTools, 7);
-	public static Item mithrilShovel = registerShovel(TSEToolMaterials.MITHRIL, "mithril_shovel",
-			TSECreativeTabs.tabTools, 7);
+	public static Item mithrilPickaxe = registerPickaxe(TSEToolMaterials.MITHRIL, "mithril_pickaxe", TSECreativeTabs.tabTools, 7);
+	public static Item mithrilAxe = registerAxe(TSEToolMaterials.MITHRIL, "mithril_axe", TSECreativeTabs.tabTools, 7, 1F, 15.0F);
+	public static Item mithrilMattock = registerMattock(-2.2F, TSEToolMaterials.MITHRIL, "mithril_mattock", TSECreativeTabs.tabTools, 7);
+	public static Item mithrilShovel = registerShovel(TSEToolMaterials.MITHRIL, "mithril_shovel", TSECreativeTabs.tabTools, 7);
 	public static Item mithrilHoe = registerHoe(TSEToolMaterials.MITHRIL, "mithril_hoe", TSECreativeTabs.tabTools, 7);
 
-	public static Item mortiumPickaxe = registerPickaxe(TSEToolMaterials.MORTIUM, "mortium_pickaxe",
-			TSECreativeTabs.tabTools, 4);
-	public static Item mortiumAxe = registerAxe(TSEToolMaterials.MORTIUM, "mortium_axe", TSECreativeTabs.tabTools, 4,
-			1F, 4.0F);
-	public static Item mortiumMattock = registerMattock(-2.2F, TSEToolMaterials.MORTIUM, "mortium_mattock",
-			TSECreativeTabs.tabTools, 4);
-	public static Item mortiumShovel = registerShovel(TSEToolMaterials.MORTIUM, "mortium_shovel",
-			TSECreativeTabs.tabTools, 4);
+	public static Item mortiumPickaxe = registerPickaxe(TSEToolMaterials.MORTIUM, "mortium_pickaxe", TSECreativeTabs.tabTools, 4);
+	public static Item mortiumAxe = registerAxe(TSEToolMaterials.MORTIUM, "mortium_axe", TSECreativeTabs.tabTools, 4, 1F, 4.0F);
+	public static Item mortiumMattock = registerMattock(-2.2F, TSEToolMaterials.MORTIUM, "mortium_mattock", TSECreativeTabs.tabTools, 4);
+	public static Item mortiumShovel = registerShovel(TSEToolMaterials.MORTIUM, "mortium_shovel", TSECreativeTabs.tabTools, 4);
 	public static Item mortiumHoe = registerHoe(TSEToolMaterials.MORTIUM, "mortium_hoe", TSECreativeTabs.tabTools, 4);
 
-	public static Item mysteriousPickaxe = registerPickaxe(TSEToolMaterials.MYSTERIOUS, "mysterious_pickaxe",
-			TSECreativeTabs.tabTools, 6);
-	public static Item mysteriousAxe = registerAxe(TSEToolMaterials.MYSTERIOUS, "mysterious_axe",
-			TSECreativeTabs.tabTools, 6, 1F, 11F);
-	public static Item mysteriousMattock = registerMattock(-2.2F, TSEToolMaterials.MYSTERIOUS, "mysterious_mattock",
-			TSECreativeTabs.tabTools, 6);
-	public static Item mysteriousShovel = registerShovel(TSEToolMaterials.MYSTERIOUS, "mysterious_shovel",
-			TSECreativeTabs.tabTools, 6);
-	public static Item mysteriousHoe = registerHoe(TSEToolMaterials.MYSTERIOUS, "mysterious_hoe",
-			TSECreativeTabs.tabTools, 6);
+	public static Item mysteriousPickaxe = registerPickaxe(TSEToolMaterials.MYSTERIOUS, "mysterious_pickaxe", TSECreativeTabs.tabTools, 6);
+	public static Item mysteriousAxe = registerAxe(TSEToolMaterials.MYSTERIOUS, "mysterious_axe", TSECreativeTabs.tabTools, 6, 1F, 11F);
+	public static Item mysteriousMattock = registerMattock(-2.2F, TSEToolMaterials.MYSTERIOUS, "mysterious_mattock", TSECreativeTabs.tabTools, 6);
+	public static Item mysteriousShovel = registerShovel(TSEToolMaterials.MYSTERIOUS, "mysterious_shovel", TSECreativeTabs.tabTools, 6);
+	public static Item mysteriousHoe = registerHoe(TSEToolMaterials.MYSTERIOUS, "mysterious_hoe", TSECreativeTabs.tabTools, 6);
 
-	public static Item mysticPickaxe = registerPickaxe(TSEToolMaterials.MYSTIC, "mystic_pickaxe",
-			TSECreativeTabs.tabTools, 5);
-	public static Item mysticAxe = registerAxe(TSEToolMaterials.MYSTIC, "mystic_axe", TSECreativeTabs.tabTools, 5, 1F,
-			7F);
-	public static Item mysticMattock = registerMattock(-2.2F, TSEToolMaterials.MYSTIC, "mystic_mattock",
-			TSECreativeTabs.tabTools, 5);
-	public static Item mysticShovel = registerShovel(TSEToolMaterials.MYSTIC, "mystic_shovel", TSECreativeTabs.tabTools,
-			5);
+	public static Item mysticPickaxe = registerPickaxe(TSEToolMaterials.MYSTIC, "mystic_pickaxe", TSECreativeTabs.tabTools, 5);
+	public static Item mysticAxe = registerAxe(TSEToolMaterials.MYSTIC, "mystic_axe", TSECreativeTabs.tabTools, 5, 1F, 7F);
+	public static Item mysticMattock = registerMattock(-2.2F, TSEToolMaterials.MYSTIC, "mystic_mattock", TSECreativeTabs.tabTools, 5);
+	public static Item mysticShovel = registerShovel(TSEToolMaterials.MYSTIC, "mystic_shovel", TSECreativeTabs.tabTools, 5);
 	public static Item mysticHoe = registerHoe(TSEToolMaterials.MYSTIC, "mystic_hoe", TSECreativeTabs.tabTools, 5);
 
-	public static Item skyIronPickaxe = registerPickaxe(TSEToolMaterials.SKYIRON, "sky_iron_pickaxe",
-			TSECreativeTabs.tabTools, 2);
-	public static Item skyIronAxe = registerAxe(TSEToolMaterials.SKYIRON, "sky_iron_axe", TSECreativeTabs.tabTools, 2,
-			1F, 2F);
-	public static Item skyIronMattock = registerMattock(-2.2F, TSEToolMaterials.SKYIRON, "sky_iron_mattock",
-			TSECreativeTabs.tabTools, 2);
-	public static Item skyIronShovel = registerShovel(TSEToolMaterials.SKYIRON, "sky_iron_shovel",
-			TSECreativeTabs.tabTools, 2);
+	public static Item skyIronPickaxe = registerPickaxe(TSEToolMaterials.SKYIRON, "sky_iron_pickaxe", TSECreativeTabs.tabTools, 2);
+	public static Item skyIronAxe = registerAxe(TSEToolMaterials.SKYIRON, "sky_iron_axe", TSECreativeTabs.tabTools, 2, 1F, 2F);
+	public static Item skyIronMattock = registerMattock(-2.2F, TSEToolMaterials.SKYIRON, "sky_iron_mattock", TSECreativeTabs.tabTools, 2);
+	public static Item skyIronShovel = registerShovel(TSEToolMaterials.SKYIRON, "sky_iron_shovel", TSECreativeTabs.tabTools, 2);
 	public static Item skyIronHoe = registerHoe(TSEToolMaterials.SKYIRON, "sky_iron_hoe", TSECreativeTabs.tabTools, 2);
 
-	public static Item terriumPickaxe = registerPickaxe(TSEToolMaterials.TERRIUM, "terrium_pickaxe",
-			TSECreativeTabs.tabTools, 5);
-	public static Item terriumAxe = registerAxe(TSEToolMaterials.TERRIUM, "terrium_axe", TSECreativeTabs.tabTools, 5,
-			1F, 4.0F);
-	public static Item terriumMattock = registerMattock(-2.2F, TSEToolMaterials.TERRIUM, "terrium_mattock",
-			TSECreativeTabs.tabTools, 5);
-	public static Item terriumShovel = registerShovel(TSEToolMaterials.TERRIUM, "terrium_shovel",
-			TSECreativeTabs.tabTools, 5);
+	public static Item terriumPickaxe = registerPickaxe(TSEToolMaterials.TERRIUM, "terrium_pickaxe", TSECreativeTabs.tabTools, 5);
+	public static Item terriumAxe = registerAxe(TSEToolMaterials.TERRIUM, "terrium_axe", TSECreativeTabs.tabTools, 5, 1F, 4.0F);
+	public static Item terriumMattock = registerMattock(-2.2F, TSEToolMaterials.TERRIUM, "terrium_mattock", TSECreativeTabs.tabTools, 5);
+	public static Item terriumShovel = registerShovel(TSEToolMaterials.TERRIUM, "terrium_shovel", TSECreativeTabs.tabTools, 5);
 	public static Item terriumHoe = registerHoe(TSEToolMaterials.TERRIUM, "terrium_hoe", TSECreativeTabs.tabTools, 5);
 
-	public static Item vividiumPickaxe = registerPickaxe(TSEToolMaterials.VIVIDIUM, "vividium_pickaxe",
-			TSECreativeTabs.tabTools, 4);
-	public static Item vividiumAxe = registerAxe(TSEToolMaterials.VIVIDIUM, "vividium_axe", TSECreativeTabs.tabTools, 4,
-			1F, 4F);
-	public static Item vividiumMattock = registerMattock(-2.2F, TSEToolMaterials.VIVIDIUM, "vividium_mattock",
-			TSECreativeTabs.tabTools, 4);
-	public static Item vividiumShovel = registerShovel(TSEToolMaterials.VIVIDIUM, "vividium_shovel",
-			TSECreativeTabs.tabTools, 4);
-	public static Item vividiumHoe = registerHoe(TSEToolMaterials.VIVIDIUM, "vividium_hoe", TSECreativeTabs.tabTools,
-			4);
+	public static Item vividiumPickaxe = registerPickaxe(TSEToolMaterials.VIVIDIUM, "vividium_pickaxe", TSECreativeTabs.tabTools, 4);
+	public static Item vividiumAxe = registerAxe(TSEToolMaterials.VIVIDIUM, "vividium_axe", TSECreativeTabs.tabTools, 4, 1F, 4F);
+	public static Item vividiumMattock = registerMattock(-2.2F, TSEToolMaterials.VIVIDIUM, "vividium_mattock", TSECreativeTabs.tabTools, 4);
+	public static Item vividiumShovel = registerShovel(TSEToolMaterials.VIVIDIUM, "vividium_shovel", TSECreativeTabs.tabTools, 4);
+	public static Item vividiumHoe = registerHoe(TSEToolMaterials.VIVIDIUM, "vividium_hoe", TSECreativeTabs.tabTools, 4);
 
 	// Terra Diamond
-	public static Item terraDiamondPickaxe = registerPickaxe(TSEToolMaterials.TDIAMOND, "terra_diamond_pickaxe",
-			TSECreativeTabs.tabTools, 4);
-	public static Item terraDiamondAxe = registerAxe(TSEToolMaterials.TDIAMOND, "terra_diamond_axe",
-			TSECreativeTabs.tabTools, 4, 1F, 5F);
-	public static Item terraDiamondMattock = registerMattock(-2.0F, TSEToolMaterials.TDIAMOND, "terra_diamond_mattock",
-			TSECreativeTabs.tabTools, 4);
-	public static Item terraDiamondShovel = registerShovel(TSEToolMaterials.TDIAMOND, "terra_diamond_shovel",
-			TSECreativeTabs.tabTools, 4);
-	public static Item terraDiamondHoe = registerHoe(TSEToolMaterials.TDIAMOND, "terra_diamond_hoe",
-			TSECreativeTabs.tabTools, 4);
+	public static Item terraDiamondPickaxe = registerPickaxe(TSEToolMaterials.TDIAMOND, "terra_diamond_pickaxe", TSECreativeTabs.tabTools, 4);
+	public static Item terraDiamondAxe = registerAxe(TSEToolMaterials.TDIAMOND, "terra_diamond_axe", TSECreativeTabs.tabTools, 4, 1F, 5F);
+	public static Item terraDiamondMattock = registerMattock(-2.0F, TSEToolMaterials.TDIAMOND, "terra_diamond_mattock", TSECreativeTabs.tabTools, 4);
+	public static Item terraDiamondShovel = registerShovel(TSEToolMaterials.TDIAMOND, "terra_diamond_shovel", TSECreativeTabs.tabTools, 4);
+	public static Item terraDiamondHoe = registerHoe(TSEToolMaterials.TDIAMOND, "terra_diamond_hoe", TSECreativeTabs.tabTools, 4);
 	// Terra Diamond
 
-	public static Item tyionetiumPickaxe = registerPickaxe(TSEToolMaterials.TYIONETIUM, "tyionetium_pickaxe",
-			TSECreativeTabs.tabTools, 5);
-	public static Item tyionetiumAxe = registerAxe(TSEToolMaterials.TYIONETIUM, "tyionetium_axe",
-			TSECreativeTabs.tabTools, 5, 1F, 7F);
-	public static Item tyionetiumMattock = registerMattock(-2.2F, TSEToolMaterials.TYIONETIUM, "tyionetium_mattock",
-			TSECreativeTabs.tabTools, 5);
-	public static Item tyionetiumShovel = registerShovel(TSEToolMaterials.TYIONETIUM, "tyionetium_shovel",
-			TSECreativeTabs.tabTools, 5);
-	public static Item tyionetiumHoe = registerHoe(TSEToolMaterials.TYIONETIUM, "tyionetium_hoe",
-			TSECreativeTabs.tabTools, 5);
+	public static Item tyionetiumPickaxe = registerPickaxe(TSEToolMaterials.TYIONETIUM, "tyionetium_pickaxe", TSECreativeTabs.tabTools, 5);
+	public static Item tyionetiumAxe = registerAxe(TSEToolMaterials.TYIONETIUM, "tyionetium_axe", TSECreativeTabs.tabTools, 5, 1F, 7F);
+	public static Item tyionetiumMattock = registerMattock(-2.2F, TSEToolMaterials.TYIONETIUM, "tyionetium_mattock", TSECreativeTabs.tabTools, 5);
+	public static Item tyionetiumShovel = registerShovel(TSEToolMaterials.TYIONETIUM, "tyionetium_shovel", TSECreativeTabs.tabTools, 5);
+	public static Item tyionetiumHoe = registerHoe(TSEToolMaterials.TYIONETIUM, "tyionetium_hoe", TSECreativeTabs.tabTools, 5);
 
-	public static Item brightflamePickaxe = registerPickaxe(TSEToolMaterials.BRIGHTFLAME, "brightflame_pickaxe",
-			TSECreativeTabs.tabTools, 6);
-	public static Item brightflameAxe = registerAxe(ToolMaterial.DIAMOND, "brightflame_axe", TSECreativeTabs.tabTools,
-			6, 1F, 9F);
-	public static Item brightflameMattock = registerMattock(-2.2F, TSEToolMaterials.BRIGHTFLAME, "brightflame_mattock",
-			TSECreativeTabs.tabTools, 6);
-	public static Item brightflameShovel = registerShovel(TSEToolMaterials.BRIGHTFLAME, "brightflame_shovel",
-			TSECreativeTabs.tabTools, 6);
-	public static Item brightflameHoe = registerHoe(TSEToolMaterials.BRIGHTFLAME, "brightflame_hoe",
-			TSECreativeTabs.tabTools, 6);
+	public static Item brightflamePickaxe = registerPickaxe(TSEToolMaterials.BRIGHTFLAME, "brightflame_pickaxe", TSECreativeTabs.tabTools, 6);
+	public static Item brightflameAxe = registerAxe(ToolMaterial.DIAMOND, "brightflame_axe", TSECreativeTabs.tabTools, 6, 1F, 9F);
+	public static Item brightflameMattock = registerMattock(-2.2F, TSEToolMaterials.BRIGHTFLAME, "brightflame_mattock", TSECreativeTabs.tabTools, 6);
+	public static Item brightflameShovel = registerShovel(TSEToolMaterials.BRIGHTFLAME, "brightflame_shovel", TSECreativeTabs.tabTools, 6);
+	public static Item brightflameHoe = registerHoe(TSEToolMaterials.BRIGHTFLAME, "brightflame_hoe", TSECreativeTabs.tabTools, 6);
 
-	public static Item brightsteelPickaxe = registerPickaxe(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_pickaxe",
-			TSECreativeTabs.tabTools, 6);
-	public static Item brightsteelAxe = registerAxe(ToolMaterial.DIAMOND, "brightsteel_axe", TSECreativeTabs.tabTools,
-			6, 1F, 4F);
-	public static Item brightsteelMattock = registerMattock(-2.2F, TSEToolMaterials.BRIGHTSTEEL, "brightsteel_mattock",
-			TSECreativeTabs.tabTools, 6);
-	public static Item brightsteelShovel = registerShovel(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_shovel",
-			TSECreativeTabs.tabTools, 6);
-	public static Item brightsteelHoe = registerHoe(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_hoe",
-			TSECreativeTabs.tabTools, 6);
+	public static Item brightsteelPickaxe = registerPickaxe(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_pickaxe", TSECreativeTabs.tabTools, 6);
+	public static Item brightsteelAxe = registerAxe(ToolMaterial.DIAMOND, "brightsteel_axe", TSECreativeTabs.tabTools, 6, 1F, 4F);
+	public static Item brightsteelMattock = registerMattock(-2.2F, TSEToolMaterials.BRIGHTSTEEL, "brightsteel_mattock", TSECreativeTabs.tabTools, 6);
+	public static Item brightsteelShovel = registerShovel(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_shovel", TSECreativeTabs.tabTools, 6);
+	public static Item brightsteelHoe = registerHoe(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_hoe", TSECreativeTabs.tabTools, 6);
 
-	public static Item extranetiumPickaxe = registerPickaxe(TSEToolMaterials.EXTRANETIUM, "extranetium_pickaxe",
-			TSECreativeTabs.tabTools, 8);
-	public static Item extranetiumAxe = registerAxe(TSEToolMaterials.EXTRANETIUM, "extranetium_axe",
-			TSECreativeTabs.tabTools, 8, 1F, 20F);
-	public static Item extranetiumMattock = registerMattock(-2.2F, TSEToolMaterials.EXTRANETIUM, "extranetium_mattock",
-			TSECreativeTabs.tabTools, 8);
-	public static Item extranetiumShovel = registerShovel(TSEToolMaterials.EXTRANETIUM, "extranetium_shovel",
-			TSECreativeTabs.tabTools, 8);
-	public static Item extranetiumHoe = registerHoe(TSEToolMaterials.EXTRANETIUM, "extranetium_hoe",
-			TSECreativeTabs.tabTools, 8);
+	public static Item extranetiumPickaxe = registerPickaxe(TSEToolMaterials.EXTRANETIUM, "extranetium_pickaxe", TSECreativeTabs.tabTools, 8);
+	public static Item extranetiumAxe = registerAxe(TSEToolMaterials.EXTRANETIUM, "extranetium_axe", TSECreativeTabs.tabTools, 8, 1F, 20F);
+	public static Item extranetiumMattock = registerMattock(-2.2F, TSEToolMaterials.EXTRANETIUM, "extranetium_mattock", TSECreativeTabs.tabTools, 8);
+	public static Item extranetiumShovel = registerShovel(TSEToolMaterials.EXTRANETIUM, "extranetium_shovel", TSECreativeTabs.tabTools, 8);
+	public static Item extranetiumHoe = registerHoe(TSEToolMaterials.EXTRANETIUM, "extranetium_hoe", TSECreativeTabs.tabTools, 8);
 
-	public static Item steelPickaxe = registerPickaxe(TSEToolMaterials.STEEL, "steel_pickaxe", TSECreativeTabs.tabTools,
-			3);
+	public static Item steelPickaxe = registerPickaxe(TSEToolMaterials.STEEL, "steel_pickaxe", TSECreativeTabs.tabTools, 3);
 	public static Item steelAxe = registerAxe(TSEToolMaterials.STEEL, "steel_axe", TSECreativeTabs.tabTools, 3, 1F, 5F);
-	public static Item steelShovel = registerShovel(TSEToolMaterials.STEEL, "steel_shovel", TSECreativeTabs.tabTools,
-			3);
+	public static Item steelShovel = registerShovel(TSEToolMaterials.STEEL, "steel_shovel", TSECreativeTabs.tabTools, 3);
 	public static Item steelHoe = registerHoe(TSEToolMaterials.STEEL, "steel_hoe", TSECreativeTabs.tabTools, 3);
-	public static Item steelMattock = registerMattock(-2.2F, TSEToolMaterials.STEEL, "steel_mattock",
-			TSECreativeTabs.tabTools, 3);
+	public static Item steelMattock = registerMattock(-2.2F, TSEToolMaterials.STEEL, "steel_mattock", TSECreativeTabs.tabTools, 3);
 
-	public static Item titaniumPickaxe = registerPickaxe(TSEToolMaterials.TITANIUM, "titanium_pickaxe",
-			TSECreativeTabs.tabTools, 3);
-	public static Item titaniumAxe = registerAxe(TSEToolMaterials.TITANIUM, "titanium_axe", TSECreativeTabs.tabTools, 3,
-			1F, 6F);
-	public static Item titaniumShovel = registerShovel(TSEToolMaterials.TITANIUM, "titanium_shovel",
-			TSECreativeTabs.tabTools, 3);
-	public static Item titaniumHoe = registerHoe(TSEToolMaterials.TITANIUM, "titanium_hoe", TSECreativeTabs.tabTools,
-			3);
-	public static Item titaniumMattock = registerMattock(-2.2F, TSEToolMaterials.TITANIUM, "titanium_mattock",
-			TSECreativeTabs.tabTools, 3);
+	public static Item titaniumPickaxe = registerPickaxe(TSEToolMaterials.TITANIUM, "titanium_pickaxe", TSECreativeTabs.tabTools, 3);
+	public static Item titaniumAxe = registerAxe(TSEToolMaterials.TITANIUM, "titanium_axe", TSECreativeTabs.tabTools, 3, 1F, 6F);
+	public static Item titaniumShovel = registerShovel(TSEToolMaterials.TITANIUM, "titanium_shovel", TSECreativeTabs.tabTools, 3);
+	public static Item titaniumHoe = registerHoe(TSEToolMaterials.TITANIUM, "titanium_hoe", TSECreativeTabs.tabTools, 3);
+	public static Item titaniumMattock = registerMattock(-2.2F, TSEToolMaterials.TITANIUM, "titanium_mattock", TSECreativeTabs.tabTools, 3);
 
-	public static Item silverPickaxe = registerPickaxe(TSEToolMaterials.SILVER, "silver_pickaxe",
-			TSECreativeTabs.tabTools, 0);
-	public static Item silverAxe = registerAxe(TSEToolMaterials.SILVER, "silver_axe", TSECreativeTabs.tabTools, 0, 1F,
-			1F);
-	public static Item silverShovel = registerShovel(TSEToolMaterials.SILVER, "silver_shovel", TSECreativeTabs.tabTools,
-			0);
+	public static Item silverPickaxe = registerPickaxe(TSEToolMaterials.SILVER, "silver_pickaxe", TSECreativeTabs.tabTools, 0);
+	public static Item silverAxe = registerAxe(TSEToolMaterials.SILVER, "silver_axe", TSECreativeTabs.tabTools, 0, 1F, 1F);
+	public static Item silverShovel = registerShovel(TSEToolMaterials.SILVER, "silver_shovel", TSECreativeTabs.tabTools, 0);
 	public static Item silverHoe = registerHoe(TSEToolMaterials.SILVER, "silver_hoe", TSECreativeTabs.tabTools, 0);
-	public static Item silverMattock = registerMattock(-2.2F, TSEToolMaterials.SILVER, "silver_mattock",
-			TSECreativeTabs.tabTools, 0);
+	public static Item silverMattock = registerMattock(-2.2F, TSEToolMaterials.SILVER, "silver_mattock", TSECreativeTabs.tabTools, 0);
 
-	public static Item exaltedDiamondPickaxe = registerPickaxe(TSEToolMaterials.EDIAMOND, "exalted_diamond_pickaxe",
-			TSECreativeTabs.tabTools, 4);
-	public static Item exaltedDiamondAxe = registerAxe(TSEToolMaterials.EDIAMOND, "exalted_diamond_axe",
-			TSECreativeTabs.tabTools, 4, 1F, 6F);
-	public static Item exaltedDiamondShovel = registerShovel(TSEToolMaterials.EDIAMOND, "exalted_diamond_shovel",
-			TSECreativeTabs.tabTools, 4);
-	public static Item exaltedDiamondHoe = registerHoe(TSEToolMaterials.EDIAMOND, "exalted_diamond_hoe",
-			TSECreativeTabs.tabTools, 4);
-	public static Item exaltedDiamondMattock = registerMattock(TSEToolMaterials.EDIAMOND, "exalted_diamond_mattock",
-			TSECreativeTabs.tabTools, 4);
+	public static Item exaltedDiamondPickaxe = registerPickaxe(TSEToolMaterials.EDIAMOND, "exalted_diamond_pickaxe", TSECreativeTabs.tabTools, 4);
+	public static Item exaltedDiamondAxe = registerAxe(TSEToolMaterials.EDIAMOND, "exalted_diamond_axe", TSECreativeTabs.tabTools, 4, 1F, 6F);
+	public static Item exaltedDiamondShovel = registerShovel(TSEToolMaterials.EDIAMOND, "exalted_diamond_shovel", TSECreativeTabs.tabTools, 4);
+	public static Item exaltedDiamondHoe = registerHoe(TSEToolMaterials.EDIAMOND, "exalted_diamond_hoe", TSECreativeTabs.tabTools, 4);
+	public static Item exaltedDiamondMattock = registerMattock(TSEToolMaterials.EDIAMOND, "exalted_diamond_mattock", TSECreativeTabs.tabTools, 4);
 
-	public static Item bloodDiamondPickaxe = registerPickaxe(TSEToolMaterials.BDIAMOND, "blood_diamond_pickaxe",
-			TSECreativeTabs.tabTools, 4);
-	public static Item bloodDiamondAxe = registerAxe(TSEToolMaterials.BDIAMOND, "blood_diamond_axe",
-			TSECreativeTabs.tabTools, 4, 4F);
-	public static Item bloodDiamondShovel = registerShovel(TSEToolMaterials.BDIAMOND, "blood_diamond_shovel",
-			TSECreativeTabs.tabTools, 4);
-	public static Item bloodDiamondHoe = registerHoe(TSEToolMaterials.BDIAMOND, "blood_diamond_hoe",
-			TSECreativeTabs.tabTools, 4);
-	public static Item bloodDiamondMattock = registerMattock(TSEToolMaterials.BDIAMOND, "blood_diamond_mattock",
-			TSECreativeTabs.tabTools, 4);
+	public static Item bloodDiamondPickaxe = registerPickaxe(TSEToolMaterials.BDIAMOND, "blood_diamond_pickaxe", TSECreativeTabs.tabTools, 4);
+	public static Item bloodDiamondAxe = registerAxe(TSEToolMaterials.BDIAMOND, "blood_diamond_axe", TSECreativeTabs.tabTools, 4, 4F);
+	public static Item bloodDiamondShovel = registerShovel(TSEToolMaterials.BDIAMOND, "blood_diamond_shovel", TSECreativeTabs.tabTools, 4);
+	public static Item bloodDiamondHoe = registerHoe(TSEToolMaterials.BDIAMOND, "blood_diamond_hoe", TSECreativeTabs.tabTools, 4);
+	public static Item bloodDiamondMattock = registerMattock(TSEToolMaterials.BDIAMOND, "blood_diamond_mattock", TSECreativeTabs.tabTools, 4);
 
-	public static Item platinumPickaxe = registerPickaxe(TSEToolMaterials.PLATINUM, "platinum_pickaxe",
-			TSECreativeTabs.tabTools, 0);
-	public static Item platinumAxe = registerAxe(TSEToolMaterials.PLATINUM, "platinum_axe", TSECreativeTabs.tabTools, 0,
-			2F);
-	public static Item platinumShovel = registerShovel(TSEToolMaterials.PLATINUM, "platinum_shovel",
-			TSECreativeTabs.tabTools, 0);
-	public static Item platinumHoe = registerHoe(TSEToolMaterials.PLATINUM, "platinum_hoe", TSECreativeTabs.tabTools,
-			0);
-	public static Item platinumMattock = registerMattock(TSEToolMaterials.PLATINUM, "platinum_mattock",
-			TSECreativeTabs.tabTools, 0);
+	public static Item platinumPickaxe = registerPickaxe(TSEToolMaterials.PLATINUM, "platinum_pickaxe", TSECreativeTabs.tabTools, 0);
+	public static Item platinumAxe = registerAxe(TSEToolMaterials.PLATINUM, "platinum_axe", TSECreativeTabs.tabTools, 0, 2F);
+	public static Item platinumShovel = registerShovel(TSEToolMaterials.PLATINUM, "platinum_shovel", TSECreativeTabs.tabTools, 0);
+	public static Item platinumHoe = registerHoe(TSEToolMaterials.PLATINUM, "platinum_hoe", TSECreativeTabs.tabTools, 0);
+	public static Item platinumMattock = registerMattock(TSEToolMaterials.PLATINUM, "platinum_mattock", TSECreativeTabs.tabTools, 0);
 
 	public static Item tinPickaxe = registerPickaxe(TSEToolMaterials.TIN, "tin_pickaxe", TSECreativeTabs.tabTools, 1);
 	public static Item tinAxe = registerAxe(TSEToolMaterials.TIN, "tin_axe", TSECreativeTabs.tabTools, 1, 1F);
@@ -388,62 +296,102 @@ public class ItemManager {
 	public static Item tinHoe = registerHoe(TSEToolMaterials.TIN, "tin_hoe", TSECreativeTabs.tabTools, 1);
 	public static Item tinMattock = registerMattock(TSEToolMaterials.TIN, "tin_mattock", TSECreativeTabs.tabTools, 1);
 
-	public static Item pewterPickaxe = registerPickaxe(TSEToolMaterials.PEWTER, "pewter_pickaxe",
-			TSECreativeTabs.tabTools, 3);
-	public static Item pewterAxe = registerAxe(TSEToolMaterials.PEWTER, "pewter_axe", TSECreativeTabs.tabTools, 3,
-			3.0F);
-	public static Item pewterShovel = registerShovel(TSEToolMaterials.PEWTER, "pewter_shovel", TSECreativeTabs.tabTools,
-			3);
+	public static Item pewterPickaxe = registerPickaxe(TSEToolMaterials.PEWTER, "pewter_pickaxe", TSECreativeTabs.tabTools, 3);
+	public static Item pewterAxe = registerAxe(TSEToolMaterials.PEWTER, "pewter_axe", TSECreativeTabs.tabTools, 3, 3.0F);
+	public static Item pewterShovel = registerShovel(TSEToolMaterials.PEWTER, "pewter_shovel", TSECreativeTabs.tabTools, 3);
 	public static Item pewterHoe = registerHoe(TSEToolMaterials.PEWTER, "pewter_hoe", TSECreativeTabs.tabTools, 3);
-	public static Item pewterMattock = registerMattock(TSEToolMaterials.PEWTER, "pewter_mattock",
-			TSECreativeTabs.tabTools, 3);
+	public static Item pewterMattock = registerMattock(TSEToolMaterials.PEWTER, "pewter_mattock", TSECreativeTabs.tabTools, 3);
 
-	public static Item mnemiumPickaxe = registerPickaxe(TSEToolMaterials.MNEMIUM, "mnemium_pickaxe",
-			TSECreativeTabs.tabTools, 9);
-	public static Item mnemiumAxe = registerAxe(TSEToolMaterials.MNEMIUM, "mnemium_axe", TSECreativeTabs.tabTools, 9,
-			30F);
-	public static Item mnemiumShovel = registerShovel(TSEToolMaterials.MNEMIUM, "mnemium_shovel",
-			TSECreativeTabs.tabTools, 9);
+	public static Item mnemiumPickaxe = registerPickaxe(TSEToolMaterials.MNEMIUM, "mnemium_pickaxe", TSECreativeTabs.tabTools, 9);
+	public static Item mnemiumAxe = registerAxe(TSEToolMaterials.MNEMIUM, "mnemium_axe", TSECreativeTabs.tabTools, 9, 30F);
+	public static Item mnemiumShovel = registerShovel(TSEToolMaterials.MNEMIUM, "mnemium_shovel", TSECreativeTabs.tabTools, 9);
 	public static Item mnemiumHoe = registerHoe(TSEToolMaterials.MNEMIUM, "mnemium_hoe", TSECreativeTabs.tabTools, 9);
-	public static Item mnemiumMattock = registerMattock(TSEToolMaterials.MNEMIUM, "mnemium_mattock",
-			TSECreativeTabs.tabTools, 9);
+	public static Item mnemiumMattock = registerMattock(TSEToolMaterials.MNEMIUM, "mnemium_mattock", TSECreativeTabs.tabTools, 9);
 
-	public static Item aluminumPickaxe = registerPickaxe(TSEToolMaterials.ALUMINUM, "aluminum_pickaxe",
-			TSECreativeTabs.tabTools, 1);
-	public static Item aluminumAxe = registerAxe(TSEToolMaterials.ALUMINUM, "aluminum_axe", TSECreativeTabs.tabTools, 1,
-			3F);
-	public static Item aluminumShovel = registerShovel(TSEToolMaterials.ALUMINUM, "aluminum_shovel",
-			TSECreativeTabs.tabTools, 1);
-	public static Item aluminumHoe = registerHoe(TSEToolMaterials.ALUMINUM, "aluminum_hoe", TSECreativeTabs.tabTools,
-			1);
-	public static Item aluminumMattock = registerMattock(TSEToolMaterials.ALUMINUM, "aluminum_mattock",
-			TSECreativeTabs.tabTools, 1);
+	public static Item aluminumPickaxe = registerPickaxe(TSEToolMaterials.ALUMINUM, "aluminum_pickaxe", TSECreativeTabs.tabTools, 1);
+	public static Item aluminumAxe = registerAxe(TSEToolMaterials.ALUMINUM, "aluminum_axe", TSECreativeTabs.tabTools, 1, 3F);
+	public static Item aluminumShovel = registerShovel(TSEToolMaterials.ALUMINUM, "aluminum_shovel", TSECreativeTabs.tabTools, 1);
+	public static Item aluminumHoe = registerHoe(TSEToolMaterials.ALUMINUM, "aluminum_hoe", TSECreativeTabs.tabTools, 1);
+	public static Item aluminumMattock = registerMattock(TSEToolMaterials.ALUMINUM, "aluminum_mattock", TSECreativeTabs.tabTools, 1);
 
-	public static Item eterniumPickaxe = registerPickaxe(TSEToolMaterials.ETERNIUM, "eternium_pickaxe",
-			TSECreativeTabs.tabTools, 10);
-	public static Item eterniumAxe = registerAxe(TSEToolMaterials.ETERNIUM, "eternium_axe", TSECreativeTabs.tabTools,
-			10, 60F);
-	public static Item eterniumShovel = registerShovel(TSEToolMaterials.ETERNIUM, "eternium_shovel",
-			TSECreativeTabs.tabTools, 10);
-	public static Item eterniumHoe = registerHoe(TSEToolMaterials.ETERNIUM, "eternium_hoe", TSECreativeTabs.tabTools,
-			10);
-	public static Item eterniumMattock = registerMattock(TSEToolMaterials.ETERNIUM, "eternium_mattock",
-			TSECreativeTabs.tabTools, 10);
-
+	public static Item eterniumPickaxe = registerPickaxe(TSEToolMaterials.ETERNIUM, "eternium_pickaxe", TSECreativeTabs.tabTools, 10);
+	public static Item eterniumAxe = registerAxe(TSEToolMaterials.ETERNIUM, "eternium_axe", TSECreativeTabs.tabTools, 10, 60F);
+	public static Item eterniumShovel = registerShovel(TSEToolMaterials.ETERNIUM, "eternium_shovel", TSECreativeTabs.tabTools, 10);
+	public static Item eterniumHoe = registerHoe(TSEToolMaterials.ETERNIUM, "eternium_hoe", TSECreativeTabs.tabTools, 10);
+	public static Item eterniumMattock = registerMattock(TSEToolMaterials.ETERNIUM, "eternium_mattock", TSECreativeTabs.tabTools, 10);
+	
+	public static Item reforgedGoldPickaxe = registerPickaxe(TSEToolMaterials.REFORGEDGOLD, "reforged_gold_pickaxe", TSECreativeTabs.tabTools, 2);
+	public static Item reforgedGoldAxe = registerAxe(TSEToolMaterials.REFORGEDGOLD, "reforged_gold_axe", TSECreativeTabs.tabTools, 2, 2.0F);
+	public static Item reforgedGoldShovel = registerShovel(TSEToolMaterials.REFORGEDGOLD, "reforged_gold_shovel", TSECreativeTabs.tabTools, 2);
+	public static Item reforgedGoldHoe = registerHoe(TSEToolMaterials.REFORGEDGOLD, "reforged_gold_hoe", TSECreativeTabs.tabTools, 2);
+	public static Item reforgedGoldMattock = registerMattock(TSEToolMaterials.REFORGEDGOLD, "reforged_gold_mattock", TSECreativeTabs.tabTools, 2);
+	
+	public static Item zincPickaxe = registerPickaxe(TSEToolMaterials.ZINC, "zinc_pickaxe", TSECreativeTabs.tabTools, 1);
+	public static Item zincAxe = registerAxe(TSEToolMaterials.ZINC, "zinc_axe", TSECreativeTabs.tabTools, 1, 0.0F);
+	public static Item zincShovel = registerShovel(TSEToolMaterials.ZINC, "zinc_shovel", TSECreativeTabs.tabTools, 1);
+	public static Item zincHoe = registerHoe(TSEToolMaterials.ZINC, "zinc_hoe", TSECreativeTabs.tabTools, 1);
+	public static Item zincMattock = registerMattock(TSEToolMaterials.ZINC, "zinc_mattock", TSECreativeTabs.tabTools, 1);
+	
+	public static Item brassPickaxe = registerPickaxe(TSEToolMaterials.BRASS, "brass_pickaxe", TSECreativeTabs.tabTools, 2);
+	public static Item brassAxe = registerAxe(TSEToolMaterials.BRASS, "brass_axe", TSECreativeTabs.tabTools, 2, 1.5F);
+	public static Item brassShovel = registerShovel(TSEToolMaterials.BRASS, "brass_shovel", TSECreativeTabs.tabTools, 2);
+	public static Item brassHoe = registerHoe(TSEToolMaterials.BRASS, "brass_hoe", TSECreativeTabs.tabTools, 2);
+	public static Item brassMattock = registerMattock(TSEToolMaterials.BRASS, "brass_mattock", TSECreativeTabs.tabTools, 2);
+	
+	public static Item leadPickaxe = registerPickaxe(TSEToolMaterials.LEAD, "lead_pickaxe", TSECreativeTabs.tabTools, 3);
+	public static Item leadAxe = registerAxe(TSEToolMaterials.LEAD, "lead_axe", TSECreativeTabs.tabTools, 3, 3.2F);
+	public static Item leadShovel = registerShovel(TSEToolMaterials.LEAD, "lead_shovel", TSECreativeTabs.tabTools, 3);
+	public static Item leadHoe = registerHoe(TSEToolMaterials.LEAD, "lead_hoe", TSECreativeTabs.tabTools, 3);
+	public static Item leadMattock = registerMattock(TSEToolMaterials.LEAD, "lead_mattock", TSECreativeTabs.tabTools, 3);
+	
+	public static Item nickelPickaxe = registerPickaxe(TSEToolMaterials.NICKEL, "nickel_pickaxe", TSECreativeTabs.tabTools, 1);
+	public static Item nickelAxe = registerAxe(TSEToolMaterials.NICKEL, "nickel_axe", TSECreativeTabs.tabTools, 1, 0.0F);
+	public static Item nickelShovel = registerShovel(TSEToolMaterials.NICKEL, "nickel_shovel", TSECreativeTabs.tabTools, 1);
+	public static Item nickelHoe = registerHoe(TSEToolMaterials.NICKEL, "nickel_hoe", TSECreativeTabs.tabTools, 1);
+	public static Item nickelMattock = registerMattock(TSEToolMaterials.NICKEL, "nickel_mattock", TSECreativeTabs.tabTools, 1);
+	
+	public static Item fantasiumPickaxe = registerPickaxe(TSEToolMaterials.FANTASIUM, "fantasium_pickaxe", TSECreativeTabs.tabTools, 5);
+	public static Item fantasiumAxe = registerAxe(TSEToolMaterials.FANTASIUM, "fantasium_axe", TSECreativeTabs.tabTools, 5, 8.0F);
+	public static Item fantasiumShovel = registerShovel(TSEToolMaterials.FANTASIUM, "fantasium_shovel", TSECreativeTabs.tabTools, 5);
+	public static Item fantasiumHoe = registerHoe(TSEToolMaterials.FANTASIUM, "fantasium_hoe", TSECreativeTabs.tabTools, 5);
+	public static Item fantasiumMattock = registerMattock(TSEToolMaterials.FANTASIUM, "fantasium_mattock", TSECreativeTabs.tabTools, 5);
+	
+	public static Item scorniumPickaxe = registerPickaxe(TSEToolMaterials.SCORNIUM, "scornium_pickaxe", TSECreativeTabs.tabTools, 5);
+	public static Item scorniumAxe = registerAxe(TSEToolMaterials.SCORNIUM, "scornium_axe", TSECreativeTabs.tabTools, 5, 9.0F);
+	public static Item scorniumShovel = registerShovel(TSEToolMaterials.SCORNIUM, "scornium_shovel", TSECreativeTabs.tabTools, 5);
+	public static Item scorniumHoe = registerHoe(TSEToolMaterials.SCORNIUM, "scornium_hoe", TSECreativeTabs.tabTools, 5);
+	public static Item scorniumMattock = registerMattock(TSEToolMaterials.SCORNIUM, "scornium_mattock", TSECreativeTabs.tabTools, 5);
+	
+	public static Item electrumPickaxe = registerPickaxe(TSEToolMaterials.ELECTRUM, "electrum_pickaxe", TSECreativeTabs.tabTools, 1);
+	public static Item electrumAxe = registerAxe(TSEToolMaterials.ELECTRUM, "electrum_axe", TSECreativeTabs.tabTools, 1, 0.5F);
+	public static Item electrumShovel = registerShovel(TSEToolMaterials.ELECTRUM, "electrum_shovel", TSECreativeTabs.tabTools, 1);
+	public static Item electrumHoe = registerHoe(TSEToolMaterials.ELECTRUM, "electrum_hoe", TSECreativeTabs.tabTools, 1);
+	public static Item electrumMattock = registerMattock(TSEToolMaterials.ELECTRUM, "electrum_mattock", TSECreativeTabs.tabTools, 1);
+	
+	public static Item laeniumPickaxe = registerPickaxe(TSEToolMaterials.LAENIUM, "laenium_pickaxe", TSECreativeTabs.tabTools, 4);
+	public static Item laeniumAxe = registerAxe(TSEToolMaterials.LAENIUM, "laenium_pickaxe", TSECreativeTabs.tabTools, 4, 2.0F);
+	public static Item laeniumShovel = registerShovel(TSEToolMaterials.LAENIUM, "laenium_shovel", TSECreativeTabs.tabTools, 4);
+	public static Item laeniumHoe = registerHoe(TSEToolMaterials.LAENIUM, "laenium_hoe", TSECreativeTabs.tabTools, 4);
+	public static Item laeniumMattock = registerMattock(TSEToolMaterials.LAENIUM, "laenium_mattock", TSECreativeTabs.tabTools, 4);
+	
+	public static Item magneiumPickaxe = registerPickaxe(TSEToolMaterials.MAGNEIUM, "magneium_pickaxe", TSECreativeTabs.tabTools, 2);
+	public static Item magneiumAxe = registerAxe(TSEToolMaterials.MAGNEIUM, "magneium_axe", TSECreativeTabs.tabTools, 2, 1.0F);
+	public static Item magneiumShovel = registerShovel(TSEToolMaterials.MAGNEIUM, "magneium_shovel", TSECreativeTabs.tabTools, 2);
+	public static Item magneiumHoe = registerHoe(TSEToolMaterials.MAGNEIUM, "magneium_hoe", TSECreativeTabs.tabTools, 2);
+	public static Item magneiumMattock = registerMattock(TSEToolMaterials.MAGNEIUM, "magneium_mattock", TSECreativeTabs.tabTools, 2);
+	
+	public static Item sterlingSilverPickaxe = registerPickaxe(TSEToolMaterials.STSILVER, "sterling_silver_pickaxe", TSECreativeTabs.tabTools, 1);
+	public static Item sterlingSilverAxe = registerAxe(TSEToolMaterials.STSILVER, "sterling_silver_axe", TSECreativeTabs.tabTools, 1, 0.0F);
+	public static Item sterlingSilverShovel = registerShovel(TSEToolMaterials.STSILVER, "sterling_silver_shovel", TSECreativeTabs.tabTools, 1);
+	public static Item sterlingSilverHoe = registerHoe(TSEToolMaterials.STSILVER, "sterling_silver_hoe", TSECreativeTabs.tabTools, 1);
+	public static Item sterlingSilverMattock = registerMattock(TSEToolMaterials.STSILVER, "sterling_silver_mattock", TSECreativeTabs.tabTools, 1);
+	
 	// Others
-	public static Item woodMattock = registerMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools,
-			0);
-	public static Item stoneMattock = registerMattock(-2.5F, ToolMaterial.STONE, "stone_mattock",
-			TSECreativeTabs.tabTools, 1);
-	public static Item ironMattock = registerMattock(-2.2F, ToolMaterial.IRON, "iron_mattock", TSECreativeTabs.tabTools,
-			2);
-	public static Item diamondMattock = registerMattock(-2.0F, ToolMaterial.DIAMOND, "diamond_mattock",
-			TSECreativeTabs.tabTools, 3);
-	public static Item goldMattock = registerMattock(1.0F, ToolMaterial.GOLD, "gold_mattock", TSECreativeTabs.tabTools,
-			0);
-
-	public static Item lapisRemover = registerRemover("lapis_remover", -3.0F, TSEToolMaterials.LAPIS, 1,
-			TSECreativeTabs.tabTools);
+	public static Item woodMattock = registerMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools, 0);
+	public static Item stoneMattock = registerMattock(-2.5F, ToolMaterial.STONE, "stone_mattock", TSECreativeTabs.tabTools, 1);
+	public static Item ironMattock = registerMattock(-2.2F, ToolMaterial.IRON, "iron_mattock", TSECreativeTabs.tabTools, 2);
+	public static Item diamondMattock = registerMattock(-2.0F, ToolMaterial.DIAMOND, "diamond_mattock", TSECreativeTabs.tabTools, 3);
+	public static Item goldMattock = registerMattock(1.0F, ToolMaterial.GOLD, "gold_mattock", TSECreativeTabs.tabTools, 0);
 	// Others
 
 	// End Tools
@@ -452,292 +400,185 @@ public class ItemManager {
 
 	public static Item copperSword = registerSword(TSEToolMaterials.COPPER, "copper_sword", TSECreativeTabs.tabWeapons);
 	public static Item bronzeSword = registerSword(TSEToolMaterials.BRONZE, "bronze_sword", TSECreativeTabs.tabWeapons);
-	public static Item terraDiamondSword = registerSword(TSEToolMaterials.TDIAMOND, "terra_diamond_sword",
-			TSECreativeTabs.tabWeapons);
-	public static Item tyionetiumSword = registerSword(TSEToolMaterials.TYIONETIUM, "tyionetium_sword",
-			TSECreativeTabs.tabWeapons);
-	public static Item brightflameSword = registerSword(TSEToolMaterials.BRIGHTFLAME, "brightflame_sword",
-			TSECreativeTabs.tabWeapons);
-	public static Item brightsteelSword = registerSword(TSEToolMaterials.BRIGHTFLAME, "brightsteel_sword",
-			TSECreativeTabs.tabWeapons);
+	public static Item terraDiamondSword = registerSword(TSEToolMaterials.TDIAMOND, "terra_diamond_sword", TSECreativeTabs.tabWeapons);
+	public static Item tyionetiumSword = registerSword(TSEToolMaterials.TYIONETIUM, "tyionetium_sword", TSECreativeTabs.tabWeapons);
+	public static Item brightflameSword = registerSword(TSEToolMaterials.BRIGHTFLAME, "brightflame_sword", TSECreativeTabs.tabWeapons);
+	public static Item brightsteelSword = registerSword(TSEToolMaterials.BRIGHTFLAME, "brightsteel_sword", TSECreativeTabs.tabWeapons);
 	public static Item magicSword = registerSword(TSEToolMaterials.MAGIC, "magic_sword", TSECreativeTabs.tabWeapons);
-	public static Item mithrilSword = registerSword(TSEToolMaterials.MITHRIL, "mithril_sword",
-			TSECreativeTabs.tabWeapons);
-	public static Item mortiumSword = registerSword(TSEToolMaterials.MORTIUM, "mortium_sword",
-			TSECreativeTabs.tabWeapons);
-	public static Item mysteriousSword = registerSword(TSEToolMaterials.MYSTERIOUS, "mysterious_sword",
-			TSECreativeTabs.tabWeapons);
+	public static Item mithrilSword = registerSword(TSEToolMaterials.MITHRIL, "mithril_sword", TSECreativeTabs.tabWeapons);
+	public static Item mortiumSword = registerSword(TSEToolMaterials.MORTIUM, "mortium_sword", TSECreativeTabs.tabWeapons);
+	public static Item mysteriousSword = registerSword(TSEToolMaterials.MYSTERIOUS, "mysterious_sword", TSECreativeTabs.tabWeapons);
 	public static Item mysticSword = registerSword(TSEToolMaterials.MYSTIC, "mystic_sword", TSECreativeTabs.tabWeapons);
-	public static Item skyIronSword = registerSword(TSEToolMaterials.SKYIRON, "sky_iron_sword",
-			TSECreativeTabs.tabWeapons);
-	public static Item terriumSword = registerSword(TSEToolMaterials.TERRIUM, "terrium_sword",
-			TSECreativeTabs.tabWeapons);
-	public static Item vividiumSword = registerSword(TSEToolMaterials.VIVIDIUM, "vividium_sword",
-			TSECreativeTabs.tabWeapons);
-	public static Item extranetiumSword = registerSword(TSEToolMaterials.EXTRANETIUM, "extranetium_sword",
-			TSECreativeTabs.tabWeapons);
+	public static Item skyIronSword = registerSword(TSEToolMaterials.SKYIRON, "sky_iron_sword", TSECreativeTabs.tabWeapons);
+	public static Item terriumSword = registerSword(TSEToolMaterials.TERRIUM, "terrium_sword", TSECreativeTabs.tabWeapons);
+	public static Item vividiumSword = registerSword(TSEToolMaterials.VIVIDIUM, "vividium_sword", TSECreativeTabs.tabWeapons);
+	public static Item extranetiumSword = registerSword(TSEToolMaterials.EXTRANETIUM, "extranetium_sword", TSECreativeTabs.tabWeapons);
 	public static Item steelSword = registerSword(TSEToolMaterials.STEEL, "steel_sword", TSECreativeTabs.tabWeapons);
-	public static Item titaniumSword = registerSword(TSEToolMaterials.TITANIUM, "titanium_sword",
-			TSECreativeTabs.tabWeapons);
+	public static Item titaniumSword = registerSword(TSEToolMaterials.TITANIUM, "titanium_sword", TSECreativeTabs.tabWeapons);
 	public static Item silverSword = registerSword(TSEToolMaterials.SILVER, "silver_sword", TSECreativeTabs.tabWeapons);
-	public static Item exaltedDiamondSword = registerSword(TSEToolMaterials.EDIAMOND, "exalted_diamond_sword",
-			TSECreativeTabs.tabWeapons);
-	public static Item bloodDiamondSword = registerSword(TSEToolMaterials.BDIAMOND, "blood_diamond_sword",
-			TSECreativeTabs.tabWeapons);
-	public static Item platinumSword = registerSword(TSEToolMaterials.PLATINUM, "platinum_sword",
-			TSECreativeTabs.tabWeapons);
+	public static Item exaltedDiamondSword = registerSword(TSEToolMaterials.EDIAMOND, "exalted_diamond_sword", TSECreativeTabs.tabWeapons);
+	public static Item bloodDiamondSword = registerSword(TSEToolMaterials.BDIAMOND, "blood_diamond_sword", TSECreativeTabs.tabWeapons);
+	public static Item platinumSword = registerSword(TSEToolMaterials.PLATINUM, "platinum_sword", TSECreativeTabs.tabWeapons);
 	public static Item tinSword = registerSword(TSEToolMaterials.TIN, "tin_sword", TSECreativeTabs.tabWeapons);
 	public static Item pewterSword = registerSword(TSEToolMaterials.PEWTER, "pewter_sword", TSECreativeTabs.tabWeapons);
-	public static Item mnemiumSword = registerSword(TSEToolMaterials.MNEMIUM, "mnemium_sword",
-			TSECreativeTabs.tabWeapons);
-	public static Item aluminumSword = registerSword(TSEToolMaterials.ALUMINUM, "aluminum_sword",
-			TSECreativeTabs.tabWeapons);
-	public static Item eterniumSword = registerSword(TSEToolMaterials.ETERNIUM, "eternium_sword",
-			TSECreativeTabs.tabWeapons);
+	public static Item mnemiumSword = registerSword(TSEToolMaterials.MNEMIUM, "mnemium_sword", TSECreativeTabs.tabWeapons);
+	public static Item aluminumSword = registerSword(TSEToolMaterials.ALUMINUM, "aluminum_sword", TSECreativeTabs.tabWeapons);
+	public static Item eterniumSword = registerSword(TSEToolMaterials.ETERNIUM, "eternium_sword", TSECreativeTabs.tabWeapons);
+	public static Item reforgedGoldSword = registerSword(TSEToolMaterials.REFORGEDGOLD, "reforged_gold_sword", TSECreativeTabs.tabWeapons);
+	public static Item zincSword = registerSword(TSEToolMaterials.ZINC, "zinc_sword", TSECreativeTabs.tabWeapons);
+	public static Item brassSword = registerSword(TSEToolMaterials.BRASS, "brass_sword", TSECreativeTabs.tabWeapons);
+	public static Item leadSword = registerSword(TSEToolMaterials.LEAD, "lead_sword", TSECreativeTabs.tabWeapons);
+	public static Item nickelSword = registerSword(TSEToolMaterials.NICKEL, "nickel_sword", TSECreativeTabs.tabWeapons);
+	public static Item fantasiumSword = registerSword(TSEToolMaterials.FANTASIUM, "fantasium_sword", TSECreativeTabs.tabWeapons);
+	public static Item scorniumSword = registerSword(TSEToolMaterials.SCORNIUM, "scornium_sword", TSECreativeTabs.tabWeapons);
+	public static Item electrumSword = registerSword(TSEToolMaterials.ELECTRUM, "electrum_sword", TSECreativeTabs.tabWeapons);
+	public static Item laeniumSword = registerSword(TSEToolMaterials.LAENIUM, "laenium_sword", TSECreativeTabs.tabWeapons);
+	public static Item magneiumSword = registerSword(TSEToolMaterials.MAGNEIUM, "magneium_sword", TSECreativeTabs.tabWeapons);
+	public static Item sterlingSilverSword = registerSword(TSEToolMaterials.STSILVER, "sterling_silver_sword", TSECreativeTabs.tabWeapons);
 
-	public static Item justice = registerLightSword(TSEToolMaterials.JUSTICE, "justice", TSECreativeTabs.tabWeapons,
-			true);
-	public static Item corruption = registerLightSword(TSEToolMaterials.CORRUPTION, "corruption",
-			TSECreativeTabs.tabWeapons, false);
-	public static Item destruction = registerLightSword(TSEToolMaterials.DESTRUCTION, "destruction",
-			TSECreativeTabs.tabWeapons, false);
-
+	public static Item justice = registerLightSword(TSEToolMaterials.JUSTICE, "justice", TSECreativeTabs.tabWeapons, true);
+	public static Item corruption = registerLightSword(TSEToolMaterials.CORRUPTION, "corruption", TSECreativeTabs.tabWeapons, false);
+	public static Item destruction = registerLightSword(TSEToolMaterials.DESTRUCTION, "destruction", TSECreativeTabs.tabWeapons, false);
+	public static Item creation = registerLightSword(TSEToolMaterials.DESTRUCTION, "creation", TSECreativeTabs.tabWeapons, true);
+	
 	// End Swords
 
 	// Start Armor
 
 	// Copper
-	public static Item copperHelmet = registerArmor("copper_helmet", TSEArmorMaterials.COPPER, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item copperChestplate = registerArmor("copper_chestplate", TSEArmorMaterials.COPPER, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item copperLeggings = registerArmor("copper_leggings", TSEArmorMaterials.COPPER, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item copperBoots = registerArmor("copper_boots", TSEArmorMaterials.COPPER, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item copperHelmet = registerArmor("copper_helmet", TSEArmorMaterials.COPPER, 1,EntityEquipmentSlot.HEAD);
+	public static Item copperChestplate = registerArmor("copper_chestplate", TSEArmorMaterials.COPPER, 1,EntityEquipmentSlot.CHEST);
+	public static Item copperLeggings = registerArmor("copper_leggings", TSEArmorMaterials.COPPER, 1,EntityEquipmentSlot.LEGS);
+	public static Item copperBoots = registerArmor("copper_boots", TSEArmorMaterials.COPPER, 1,EntityEquipmentSlot.FEET);
 	// Copper
 
-	public static Item bronzeHelmet = registerArmor("bronze_helmet", TSEArmorMaterials.BRONZE, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item bronzeChestplate = registerArmor("bronze_chestplate", TSEArmorMaterials.BRONZE, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item bronzeLeggings = registerArmor("bronze_leggings", TSEArmorMaterials.BRONZE, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item bronzeBoots = registerArmor("bronze_boots", TSEArmorMaterials.BRONZE, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item bronzeHelmet = registerArmor("bronze_helmet", TSEArmorMaterials.BRONZE, 1,EntityEquipmentSlot.HEAD);
+	public static Item bronzeChestplate = registerArmor("bronze_chestplate", TSEArmorMaterials.BRONZE, 1,EntityEquipmentSlot.CHEST);
+	public static Item bronzeLeggings = registerArmor("bronze_leggings", TSEArmorMaterials.BRONZE, 1,EntityEquipmentSlot.LEGS);
+	public static Item bronzeBoots = registerArmor("bronze_boots", TSEArmorMaterials.BRONZE, 1,EntityEquipmentSlot.FEET);
 
 	// Terra Diamond
-	public static Item terraDiamondHelmet = registerArmor("terra_diamond_helmet", TSEArmorMaterials.TERRADIAMOND, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item terraDiamondChestplate = registerArmor("terra_diamond_chestplate",
-			TSEArmorMaterials.TERRADIAMOND, 1, EntityEquipmentSlot.CHEST);
-	public static Item terraDiamondLeggings = registerArmor("terra_diamond_leggings", TSEArmorMaterials.TERRADIAMOND, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item terraDiamondBoots = registerArmor("terra_diamond_boots", TSEArmorMaterials.TERRADIAMOND, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item terraDiamondHelmet = registerArmor("terra_diamond_helmet", TSEArmorMaterials.TERRADIAMOND, 1, EntityEquipmentSlot.HEAD);
+	public static Item terraDiamondChestplate = registerArmor("terra_diamond_chestplate",TSEArmorMaterials.TERRADIAMOND, 1, EntityEquipmentSlot.CHEST);
+	public static Item terraDiamondLeggings = registerArmor("terra_diamond_leggings", TSEArmorMaterials.TERRADIAMOND, 1, EntityEquipmentSlot.LEGS);
+	public static Item terraDiamondBoots = registerArmor("terra_diamond_boots", TSEArmorMaterials.TERRADIAMOND, 1 ,EntityEquipmentSlot.FEET);
 	// Terra Diamond
 
-	public static Item brightflameHelmet = registerArmor("brightflame_helmet", TSEArmorMaterials.BRIGHTFLAME, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item brightflameChestplate = registerArmor("brightflame_chestplate", TSEArmorMaterials.BRIGHTFLAME, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item brightflameLeggings = registerArmor("brightflame_leggings", TSEArmorMaterials.BRIGHTFLAME, 1,
-			EntityEquipmentSlot.LEGS);
+	public static Item brightflameHelmet = registerArmor("brightflame_helmet", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.HEAD);
+	public static Item brightflameChestplate = registerArmor("brightflame_chestplate", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.CHEST);
+	public static Item brightflameLeggings = registerArmor("brightflame_leggings", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.LEGS);
 	public static Item brightflameBoots = registerArmor("brightflame_boots", TSEArmorMaterials.BRIGHTFLAME, 1,
 			EntityEquipmentSlot.FEET);
 
-	public static Item brightsteelHelmet = registerArmor("brightsteel_helmet", TSEArmorMaterials.BRIGHTSTEEL, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item brightsteelChestplate = registerArmor("brightsteel_chestplate", TSEArmorMaterials.BRIGHTSTEEL, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item brightsteelLeggings = registerArmor("brightsteel_leggings", TSEArmorMaterials.BRIGHTSTEEL, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item brightsteelBoots = registerArmor("brightsteel_boots", TSEArmorMaterials.BRIGHTSTEEL, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item brightsteelHelmet = registerArmor("brightsteel_helmet", TSEArmorMaterials.BRIGHTSTEEL, 1, EntityEquipmentSlot.HEAD);
+	public static Item brightsteelChestplate = registerArmor("brightsteel_chestplate", TSEArmorMaterials.BRIGHTSTEEL, 1, EntityEquipmentSlot.CHEST);
+	public static Item brightsteelLeggings = registerArmor("brightsteel_leggings", TSEArmorMaterials.BRIGHTSTEEL, 1, EntityEquipmentSlot.LEGS);
+	public static Item brightsteelBoots = registerArmor("brightsteel_boots", TSEArmorMaterials.BRIGHTSTEEL, 1, EntityEquipmentSlot.FEET);
 
 	public static Item tinHelmet = registerArmor("tin_helmet", TSEArmorMaterials.TIN, 1, EntityEquipmentSlot.HEAD);
-	public static Item tinChestplate = registerArmor("tin_chestplate", TSEArmorMaterials.TIN, 1,
-			EntityEquipmentSlot.CHEST);
+	public static Item tinChestplate = registerArmor("tin_chestplate", TSEArmorMaterials.TIN, 1, EntityEquipmentSlot.CHEST);
 	public static Item tinLeggings = registerArmor("tin_leggings", TSEArmorMaterials.TIN, 1, EntityEquipmentSlot.LEGS);
 	public static Item tinBoots = registerArmor("tin_boots", TSEArmorMaterials.TIN, 1, EntityEquipmentSlot.FEET);
 
-	public static Item magicHelmet = registerArmor("magic_helmet", TSEArmorMaterials.MAGIC, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item magicChestplate = registerArmor("magic_chestplate", TSEArmorMaterials.MAGIC, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item magicLeggings = registerArmor("magic_leggings", TSEArmorMaterials.MAGIC, 1,
-			EntityEquipmentSlot.LEGS);
+	public static Item magicHelmet = registerArmor("magic_helmet", TSEArmorMaterials.MAGIC, 1, EntityEquipmentSlot.HEAD);
+	public static Item magicChestplate = registerArmor("magic_chestplate", TSEArmorMaterials.MAGIC, 1, EntityEquipmentSlot.CHEST);
+	public static Item magicLeggings = registerArmor("magic_leggings", TSEArmorMaterials.MAGIC, 1, EntityEquipmentSlot.LEGS);
 	public static Item magicBoots = registerArmor("magic_boots", TSEArmorMaterials.MAGIC, 1, EntityEquipmentSlot.FEET);
 
-	public static Item mithrilHelmet = registerArmor("mithril_helmet", TSEArmorMaterials.MITHRIL, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item mithrilChestplate = registerArmor("mithril_chestplate", TSEArmorMaterials.MITHRIL, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item mithrilLeggings = registerArmor("mithril_leggings", TSEArmorMaterials.MITHRIL, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item mithrilBoots = registerArmor("mithril_boots", TSEArmorMaterials.MITHRIL, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item mithrilHelmet = registerArmor("mithril_helmet", TSEArmorMaterials.MITHRIL, 1, EntityEquipmentSlot.HEAD);
+	public static Item mithrilChestplate = registerArmor("mithril_chestplate", TSEArmorMaterials.MITHRIL, 1, EntityEquipmentSlot.CHEST);
+	public static Item mithrilLeggings = registerArmor("mithril_leggings", TSEArmorMaterials.MITHRIL, 1, EntityEquipmentSlot.LEGS);
+	public static Item mithrilBoots = registerArmor("mithril_boots", TSEArmorMaterials.MITHRIL, 1, EntityEquipmentSlot.FEET);
 
-	public static Item mortiumHelmet = registerArmor("mortium_helmet", TSEArmorMaterials.MORTIUM, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item mortiumChestplate = registerArmor("mortium_chestplate", TSEArmorMaterials.MORTIUM, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item mortiumLeggings = registerArmor("mortium_leggings", TSEArmorMaterials.MORTIUM, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item mortiumBoots = registerArmor("mortium_boots", TSEArmorMaterials.MORTIUM, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item mortiumHelmet = registerArmor("mortium_helmet", TSEArmorMaterials.MORTIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item mortiumChestplate = registerArmor("mortium_chestplate", TSEArmorMaterials.MORTIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item mortiumLeggings = registerArmor("mortium_leggings", TSEArmorMaterials.MORTIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item mortiumBoots = registerArmor("mortium_boots", TSEArmorMaterials.MORTIUM, 1, EntityEquipmentSlot.FEET);
 
-	public static Item steelHelmet = registerArmor("steel_helmet", TSEArmorMaterials.STEEL, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item steelChestplate = registerArmor("steel_chestplate", TSEArmorMaterials.STEEL, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item steelLeggings = registerArmor("steel_leggings", TSEArmorMaterials.STEEL, 1,
-			EntityEquipmentSlot.LEGS);
+	public static Item steelHelmet = registerArmor("steel_helmet", TSEArmorMaterials.STEEL, 1, EntityEquipmentSlot.HEAD);
+	public static Item steelChestplate = registerArmor("steel_chestplate", TSEArmorMaterials.STEEL, 1, EntityEquipmentSlot.CHEST);
+	public static Item steelLeggings = registerArmor("steel_leggings", TSEArmorMaterials.STEEL, 1, EntityEquipmentSlot.LEGS);
 	public static Item steelBoots = registerArmor("steel_boots", TSEArmorMaterials.STEEL, 1, EntityEquipmentSlot.FEET);
 
-	public static Item titaniumHelmet = registerArmor("titanium_helmet", TSEArmorMaterials.TITANIUM, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item titaniumChestplate = registerArmor("titanium_chestplate", TSEArmorMaterials.TITANIUM, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item titaniumLeggings = registerArmor("titanium_leggings", TSEArmorMaterials.TITANIUM, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item titaniumBoots = registerArmor("titanium_boots", TSEArmorMaterials.TITANIUM, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item titaniumHelmet = registerArmor("titanium_helmet", TSEArmorMaterials.TITANIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item titaniumChestplate = registerArmor("titanium_chestplate", TSEArmorMaterials.TITANIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item titaniumLeggings = registerArmor("titanium_leggings", TSEArmorMaterials.TITANIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item titaniumBoots = registerArmor("titanium_boots", TSEArmorMaterials.TITANIUM, 1, EntityEquipmentSlot.FEET);
 
-	public static Item extranetiumHelmet = registerArmor("extranetium_helmet", TSEArmorMaterials.EXTRANETIUM, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item extranetiumChestplate = registerArmor("extranetium_chestplate", TSEArmorMaterials.EXTRANETIUM, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item extranetiumLeggings = registerArmor("extranetium_leggings", TSEArmorMaterials.EXTRANETIUM, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item extranetiumBoots = registerArmor("extranetium_boots", TSEArmorMaterials.EXTRANETIUM, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item extranetiumHelmet = registerArmor("extranetium_helmet", TSEArmorMaterials.EXTRANETIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item extranetiumChestplate = registerArmor("extranetium_chestplate", TSEArmorMaterials.EXTRANETIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item extranetiumLeggings = registerArmor("extranetium_leggings", TSEArmorMaterials.EXTRANETIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item extranetiumBoots = registerArmor("extranetium_boots", TSEArmorMaterials.EXTRANETIUM, 1, EntityEquipmentSlot.FEET);
 
-	public static Item mysteriousHelmet = registerArmor("mysterious_helmet", TSEArmorMaterials.MYSTERIOUS, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item mysteriousChestplate = registerArmor("mysterious_chestplate", TSEArmorMaterials.MYSTERIOUS, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item mysteriousLeggings = registerArmor("mysterious_leggings", TSEArmorMaterials.MYSTERIOUS, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item mysteriousBoots = registerArmor("mysterious_boots", TSEArmorMaterials.MYSTERIOUS, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item mysteriousHelmet = registerArmor("mysterious_helmet", TSEArmorMaterials.MYSTERIOUS, 1, EntityEquipmentSlot.HEAD);
+	public static Item mysteriousChestplate = registerArmor("mysterious_chestplate", TSEArmorMaterials.MYSTERIOUS, 1, EntityEquipmentSlot.CHEST);
+	public static Item mysteriousLeggings = registerArmor("mysterious_leggings", TSEArmorMaterials.MYSTERIOUS, 1, EntityEquipmentSlot.LEGS);
+	public static Item mysteriousBoots = registerArmor("mysterious_boots", TSEArmorMaterials.MYSTERIOUS, 1, EntityEquipmentSlot.FEET);
 
-	public static Item skyIronHelmet = registerArmor("sky_iron_helmet", TSEArmorMaterials.SKYIRON, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item skyIronChestplate = registerArmor("sky_iron_chestplate", TSEArmorMaterials.SKYIRON, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item skyIronLeggings = registerArmor("sky_iron_leggings", TSEArmorMaterials.SKYIRON, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item skyIronBoots = registerArmor("sky_iron_boots", TSEArmorMaterials.SKYIRON, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item skyIronHelmet = registerArmor("sky_iron_helmet", TSEArmorMaterials.SKYIRON, 1, EntityEquipmentSlot.HEAD);
+	public static Item skyIronChestplate = registerArmor("sky_iron_chestplate", TSEArmorMaterials.SKYIRON, 1, EntityEquipmentSlot.CHEST);
+	public static Item skyIronLeggings = registerArmor("sky_iron_leggings", TSEArmorMaterials.SKYIRON, 1, EntityEquipmentSlot.LEGS);
+	public static Item skyIronBoots = registerArmor("sky_iron_boots", TSEArmorMaterials.SKYIRON, 1, EntityEquipmentSlot.FEET);
 
-	public static Item mysticHelmet = registerArmor("mystic_helmet", TSEArmorMaterials.MYSTIC, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item mysticChestplate = registerArmor("mystic_chestplate", TSEArmorMaterials.MYSTIC, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item mysticLeggings = registerArmor("mystic_leggings", TSEArmorMaterials.MYSTIC, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item mysticBoots = registerArmor("mystic_boots", TSEArmorMaterials.MYSTIC, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item mysticHelmet = registerArmor("mystic_helmet", TSEArmorMaterials.MYSTIC, 1, EntityEquipmentSlot.HEAD);
+	public static Item mysticChestplate = registerArmor("mystic_chestplate", TSEArmorMaterials.MYSTIC, 1, EntityEquipmentSlot.CHEST);
+	public static Item mysticLeggings = registerArmor("mystic_leggings", TSEArmorMaterials.MYSTIC, 1, EntityEquipmentSlot.LEGS);
+	public static Item mysticBoots = registerArmor("mystic_boots", TSEArmorMaterials.MYSTIC, 1, EntityEquipmentSlot.FEET);
 
-	public static Item terriumHelmet = registerArmor("terrium_helmet", TSEArmorMaterials.TERRIUM, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item terriumChestplate = registerArmor("terrium_chestplate", TSEArmorMaterials.TERRIUM, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item terriumLeggings = registerArmor("terrium_leggings", TSEArmorMaterials.TERRIUM, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item terriumBoots = registerArmor("terrium_boots", TSEArmorMaterials.TERRIUM, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item terriumHelmet = registerArmor("terrium_helmet", TSEArmorMaterials.TERRIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item terriumChestplate = registerArmor("terrium_chestplate", TSEArmorMaterials.TERRIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item terriumLeggings = registerArmor("terrium_leggings", TSEArmorMaterials.TERRIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item terriumBoots = registerArmor("terrium_boots", TSEArmorMaterials.TERRIUM, 1, EntityEquipmentSlot.FEET);
 
-	public static Item vividiumHelmet = registerArmor("vividium_helmet", TSEArmorMaterials.VIVIDIUM, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item vividiumChestplate = registerArmor("vividium_chestplate", TSEArmorMaterials.VIVIDIUM, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item vividiumLeggings = registerArmor("vividium_leggings", TSEArmorMaterials.VIVIDIUM, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item vividiumBoots = registerArmor("vividium_boots", TSEArmorMaterials.VIVIDIUM, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item vividiumHelmet = registerArmor("vividium_helmet", TSEArmorMaterials.VIVIDIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item vividiumChestplate = registerArmor("vividium_chestplate", TSEArmorMaterials.VIVIDIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item vividiumLeggings = registerArmor("vividium_leggings", TSEArmorMaterials.VIVIDIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item vividiumBoots = registerArmor("vividium_boots", TSEArmorMaterials.VIVIDIUM, 1, EntityEquipmentSlot.FEET);
 
-	public static Item tyionetiumHelmet = registerArmor("tyionetium_helmet", TSEArmorMaterials.TYIONETIUM, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item tyionetiumChestplate = registerArmor("tyionetium_chestplate", TSEArmorMaterials.TYIONETIUM, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item tyionetiumLeggings = registerArmor("tyionetium_leggings", TSEArmorMaterials.TYIONETIUM, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item tyionetiumBoots = registerArmor("tyionetium_boots", TSEArmorMaterials.TYIONETIUM, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item tyionetiumHelmet = registerArmor("tyionetium_helmet", TSEArmorMaterials.TYIONETIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item tyionetiumChestplate = registerArmor("tyionetium_chestplate", TSEArmorMaterials.TYIONETIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item tyionetiumLeggings = registerArmor("tyionetium_leggings", TSEArmorMaterials.TYIONETIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item tyionetiumBoots = registerArmor("tyionetium_boots", TSEArmorMaterials.TYIONETIUM, 1, EntityEquipmentSlot.FEET);
 
-	public static Item silverHelmet = registerArmor("silver_helmet", TSEArmorMaterials.SILVER, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item silverChestplate = registerArmor("silver_chestplate", TSEArmorMaterials.SILVER, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item silverLeggings = registerArmor("silver_leggings", TSEArmorMaterials.SILVER, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item silverBoots = registerArmor("silver_boots", TSEArmorMaterials.SILVER, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item silverHelmet = registerArmor("silver_helmet", TSEArmorMaterials.SILVER, 1, EntityEquipmentSlot.HEAD);
+	public static Item silverChestplate = registerArmor("silver_chestplate", TSEArmorMaterials.SILVER, 1, EntityEquipmentSlot.CHEST);
+	public static Item silverLeggings = registerArmor("silver_leggings", TSEArmorMaterials.SILVER, 1, EntityEquipmentSlot.LEGS);
+	public static Item silverBoots = registerArmor("silver_boots", TSEArmorMaterials.SILVER, 1, EntityEquipmentSlot.FEET);
 
-	public static Item exaltedDiamondHelmet = registerArmor("exalted_diamond_helmet", TSEArmorMaterials.EDIAMOND, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item exaltedDiamondChestplate = registerArmor("exalted_diamond_chestplate",
-			TSEArmorMaterials.EDIAMOND, 1, EntityEquipmentSlot.CHEST);
-	public static Item exaltedDiamondLeggings = registerArmor("exalted_diamond_leggings", TSEArmorMaterials.EDIAMOND, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item exaltedDiamondBoots = registerArmor("exalted_diamond_boots", TSEArmorMaterials.EDIAMOND, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item exaltedDiamondHelmet = registerArmor("exalted_diamond_helmet", TSEArmorMaterials.EDIAMOND, 1, EntityEquipmentSlot.HEAD);
+	public static Item exaltedDiamondChestplate = registerArmor("exalted_diamond_chestplate", TSEArmorMaterials.EDIAMOND, 1, EntityEquipmentSlot.CHEST);
+	public static Item exaltedDiamondLeggings = registerArmor("exalted_diamond_leggings", TSEArmorMaterials.EDIAMOND, 1, EntityEquipmentSlot.LEGS);
+	public static Item exaltedDiamondBoots = registerArmor("exalted_diamond_boots", TSEArmorMaterials.EDIAMOND, 1, EntityEquipmentSlot.FEET);
 
-	public static Item bloodDiamondHelmet = registerArmor("blood_diamond_helmet", TSEArmorMaterials.BDIAMOND, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item bloodDiamondChestplate = registerArmor("blood_diamond_chestplate", TSEArmorMaterials.BDIAMOND, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item bloodDiamondLeggings = registerArmor("blood_diamond_leggings", TSEArmorMaterials.BDIAMOND, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item bloodDiamondBoots = registerArmor("blood_diamond_boots", TSEArmorMaterials.BDIAMOND, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item bloodDiamondHelmet = registerArmor("blood_diamond_helmet", TSEArmorMaterials.BDIAMOND, 1, EntityEquipmentSlot.HEAD);
+	public static Item bloodDiamondChestplate = registerArmor("blood_diamond_chestplate", TSEArmorMaterials.BDIAMOND, 1, EntityEquipmentSlot.CHEST);
+	public static Item bloodDiamondLeggings = registerArmor("blood_diamond_leggings", TSEArmorMaterials.BDIAMOND, 1, EntityEquipmentSlot.LEGS);
+	public static Item bloodDiamondBoots = registerArmor("blood_diamond_boots", TSEArmorMaterials.BDIAMOND, 1, EntityEquipmentSlot.FEET);
 
-	public static Item platinumHelmet = registerArmor("platinum_helmet", TSEArmorMaterials.PLATINUM, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item platinumChestplate = registerArmor("platinum_chestplate", TSEArmorMaterials.PLATINUM, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item platinumLeggings = registerArmor("platinum_leggings", TSEArmorMaterials.PLATINUM, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item platinumBoots = registerArmor("platinum_boots", TSEArmorMaterials.PLATINUM, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item platinumHelmet = registerArmor("platinum_helmet", TSEArmorMaterials.PLATINUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item platinumChestplate = registerArmor("platinum_chestplate", TSEArmorMaterials.PLATINUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item platinumLeggings = registerArmor("platinum_leggings", TSEArmorMaterials.PLATINUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item platinumBoots = registerArmor("platinum_boots", TSEArmorMaterials.PLATINUM, 1, EntityEquipmentSlot.FEET);
 
-	public static Item pewterHelmet = registerArmor("pewter_helmet", TSEArmorMaterials.PEWTER, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item pewterChestplate = registerArmor("pewter_chestplate", TSEArmorMaterials.PEWTER, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item pewterLeggings = registerArmor("pewter_leggings", TSEArmorMaterials.PEWTER, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item pewterBoots = registerArmor("pewter_boots", TSEArmorMaterials.PEWTER, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item pewterHelmet = registerArmor("pewter_helmet", TSEArmorMaterials.PEWTER, 1, EntityEquipmentSlot.HEAD);
+	public static Item pewterChestplate = registerArmor("pewter_chestplate", TSEArmorMaterials.PEWTER, 1, EntityEquipmentSlot.CHEST);
+	public static Item pewterLeggings = registerArmor("pewter_leggings", TSEArmorMaterials.PEWTER, 1, EntityEquipmentSlot.LEGS);
+	public static Item pewterBoots = registerArmor("pewter_boots", TSEArmorMaterials.PEWTER, 1, EntityEquipmentSlot.FEET);
 
-	public static Item mnemiumHelmet = registerArmor("mnemium_helmet", TSEArmorMaterials.MNEMIUM, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item mnemiumChestplate = registerArmor("mnemium_chestplate", TSEArmorMaterials.MNEMIUM, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item mnemiumLeggings = registerArmor("mnemium_leggings", TSEArmorMaterials.MNEMIUM, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item mnemiumBoots = registerArmor("mnemium_boots", TSEArmorMaterials.MNEMIUM, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item mnemiumHelmet = registerArmor("mnemium_helmet", TSEArmorMaterials.MNEMIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item mnemiumChestplate = registerArmor("mnemium_chestplate", TSEArmorMaterials.MNEMIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item mnemiumLeggings = registerArmor("mnemium_leggings", TSEArmorMaterials.MNEMIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item mnemiumBoots = registerArmor("mnemium_boots", TSEArmorMaterials.MNEMIUM, 1, EntityEquipmentSlot.FEET);
 
-	public static Item aluminumHelmet = registerArmor("aluminum_helmet", TSEArmorMaterials.ALUMINUM, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item aluminumChestplate = registerArmor("aluminum_chestplate", TSEArmorMaterials.ALUMINUM, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item aluminumLeggings = registerArmor("aluminum_leggings", TSEArmorMaterials.ALUMINUM, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item aluminumBoots = registerArmor("aluminum_boots", TSEArmorMaterials.ALUMINUM, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item aluminumHelmet = registerArmor("aluminum_helmet", TSEArmorMaterials.ALUMINUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item aluminumChestplate = registerArmor("aluminum_chestplate", TSEArmorMaterials.ALUMINUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item aluminumLeggings = registerArmor("aluminum_leggings", TSEArmorMaterials.ALUMINUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item aluminumBoots = registerArmor("aluminum_boots", TSEArmorMaterials.ALUMINUM, 1, EntityEquipmentSlot.FEET);
 
-	public static Item eterniumHelmet = registerArmor("eternium_helmet", TSEArmorMaterials.ETERNIUM, 1,
-			EntityEquipmentSlot.HEAD);
-	public static Item eterniumChestplate = registerArmor("eternium_chestplate", TSEArmorMaterials.ETERNIUM, 1,
-			EntityEquipmentSlot.CHEST);
-	public static Item eterniumLeggings = registerArmor("eternium_leggings", TSEArmorMaterials.ETERNIUM, 1,
-			EntityEquipmentSlot.LEGS);
-	public static Item eterniumBoots = registerArmor("eternium_boots", TSEArmorMaterials.ETERNIUM, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item eterniumHelmet = registerArmor("eternium_helmet", TSEArmorMaterials.ETERNIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item eterniumChestplate = registerArmor("eternium_chestplate", TSEArmorMaterials.ETERNIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item eterniumLeggings = registerArmor("eternium_leggings", TSEArmorMaterials.ETERNIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item eterniumBoots = registerArmor("eternium_boots", TSEArmorMaterials.ETERNIUM, 1, EntityEquipmentSlot.FEET);
 
 	private static void registerItem(Item item, String registryName) {
 		item.setRegistryName(StringsLib.MODID, registryName);
@@ -772,22 +613,19 @@ public class ItemManager {
 		return item;
 	}
 
-	public static Item registerAxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel,
-			float attackSpeed, float damage) {
+	public static Item registerAxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel, float attackSpeed, float damage) {
 		final Item item = new TSEAxe(mat, damage, -1F, tab, harvestLevel, registryName);
 		registerItem(item, registryName);
 		return item;
 	}
 
-	public static Item registerAxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel,
-			float damage) {
+	public static Item registerAxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel, float damage) {
 		final Item item = new TSEAxe(mat, damage, -1F, tab, harvestLevel, registryName);
 		registerItem(item, registryName);
 		return item;
 	}
 
-	public static Item registerMattock(float attackSpeed, ToolMaterial mat, String registryName, CreativeTabs tab,
-			int harvestLevel) {
+	public static Item registerMattock(float attackSpeed, ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel) {
 		final Item item = new TSEMattock(-2.2F, mat, harvestLevel, registryName, tab);
 		registerItem(item, registryName);
 		return item;
@@ -799,8 +637,7 @@ public class ItemManager {
 		return item;
 	}
 
-	public static Item registerRemover(String registryName, float attackSpeed, ToolMaterial mat, int harvestLevel,
-			CreativeTabs tab) {
+	public static Item registerRemover(String registryName, float attackSpeed, ToolMaterial mat, int harvestLevel, CreativeTabs tab) {
 		final Item item = new TSERemover(mat, tab, registryName, harvestLevel, attackSpeed);
 		registerItem(item, registryName);
 		return item;
@@ -818,8 +655,7 @@ public class ItemManager {
 		return item;
 	}
 
-	public static Item registerArmor(String registryName, ArmorMaterial mat, int renderIndex,
-			EntityEquipmentSlot equipSlot) {
+	public static Item registerArmor(String registryName, ArmorMaterial mat, int renderIndex, EntityEquipmentSlot equipSlot) {
 		final Item item = new TSEArmor(registryName, mat, renderIndex, equipSlot);
 		registerItem(item, registryName);
 		return item;
@@ -832,128 +668,92 @@ public class ItemManager {
 		registry.registerAll(goldenStick,
 
 				brightflameStick, brightsteelStick, diamondStick, reforgedGoldStick, magicStick, mithrilStick, mysteriousStick, mysticStick, extranetiumStick, eterniumStick, fantasiumStick, scorniumStick, electrumStick, laeniumStick, magneiumStick, sterlingSilverStick, roseGoldStick, whiteGoldStick, spangoldStick,
-
 				ironRod,copperRod, steelRod, tinRod, tyionetiumRod, bronzeRod, mortiumRod, skyIronRod, terriumRod, toslotriumRod, vividiumRod, silverRod, platinumRod, titaniumRod, zincRod, brassRod, leadRod, nickelRod, pewterRod, aluminumRod, mnemiumRod, meteoricIronRod,
 
 				unusableMaterial,
+				
+				meteoricIronShard,
 
-				exaltedDiamond, bloodDiamond, terraDiamond, lunaDiamond,
+				exaltedDiamond, bloodDiamond, terraDiamond, lunaDiamond, solDiamond,
 
 				sphaleriteGem,
 				
-				copperIngot, steelIngot, tinIngot, tyionetiumIngot, bronzeIngot, brightflameIngot, brightsteelIngot, diamondIngot, reforgedGoldIngot, magicIngot, mithrilIngot, mortiumIngot, mysteriousIngot, mysticIngot, skyIronIngot, terriumIngot, toslotriumIngot, vividiumIngot, extranetiumIngot, silverIngot, platinumIngot, titaniumIngot, zincIngot, brassIngot, leadIngot, nickelIngot, pewterIngot, aluminumIngot, mnemiumIngot, eterniumIngot, fantasiumIngot, scorniumIngot, electrumIngot, laeniumIngot, magneiumIngot, sterlingSilverIngot, roseGoldIngot, whiteGoldIngot, spangoldIngot, meteoricIronIngot,
+				diamondIngot, copperIngot, steelIngot, tinIngot, tyionetiumIngot, bronzeIngot, brightflameIngot, brightsteelIngot, reforgedGoldIngot, magicIngot, mithrilIngot, mortiumIngot, mysteriousIngot, mysticIngot, skyIronIngot, terriumIngot, toslotriumIngot, vividiumIngot, extranetiumIngot, silverIngot, platinumIngot, titaniumIngot, zincIngot, brassIngot, leadIngot, nickelIngot, pewterIngot, aluminumIngot, mnemiumIngot, eterniumIngot, fantasiumIngot, scorniumIngot, electrumIngot, laeniumIngot, magneiumIngot, sterlingSilverIngot, roseGoldIngot, whiteGoldIngot, spangoldIngot, meteoricIronIngot,
 				
-				copperNugget, steelNugget, tinNugget, tyionetiumNugget, bronzeNugget, brightflameNugget, brightsteelNugget, diamondNugget, reforgedGoldNugget, magicNugget, mithrilNugget, mortiumNugget, mysteriousNugget, mysticNugget, skyIronNugget, terriumNugget, toslotriumNugget, vividiumNugget, extranetiumNugget, silverNugget, platinumNugget, titaniumNugget, zincNugget, brassNugget, leadNugget, nickelNugget, pewterNugget, aluminumNugget, mnemiumNugget, eterniumNugget, fantasiumNugget,	scorniumNugget, electrumNugget, laeniumNugget, magneiumNugget, sterlingSilverNugget, roseGoldNugget, whiteGoldNugget, spangoldNugget, meteoricIronNugget,
-
-				meteoricIronShard,
+				diamondNugget, copperNugget, steelNugget, tinNugget, tyionetiumNugget, bronzeNugget, brightflameNugget, brightsteelNugget, reforgedGoldNugget, magicNugget, mithrilNugget, mortiumNugget, mysteriousNugget, mysticNugget, skyIronNugget, terriumNugget, toslotriumNugget, vividiumNugget, extranetiumNugget, silverNugget, platinumNugget, titaniumNugget, zincNugget, brassNugget, leadNugget, nickelNugget, pewterNugget, aluminumNugget, mnemiumNugget, eterniumNugget, fantasiumNugget,	scorniumNugget, electrumNugget, laeniumNugget, magneiumNugget, sterlingSilverNugget, roseGoldNugget, whiteGoldNugget, spangoldNugget, meteoricIronNugget,
 				
-				justice, corruption, destruction,
-
-				bronzePickaxe, bronzeAxe, bronzeShovel, bronzeHoe, bronzeMattock, bronzeSword,
-
+				justice, corruption, destruction, creation,
+				
 				copperPickaxe, copperAxe, copperShovel, copperHoe, copperMattock, copperSword,
-
-				brightflamePickaxe, brightflameAxe, brightflameShovel, brightflameHoe, brightflameMattock, brightflameSword,
-
-				brightsteelPickaxe, brightsteelAxe, brightsteelShovel, brightsteelHoe, brightsteelMattock, brightsteelSword,
-
-				magicPickaxe, magicAxe, magicShovel, magicHoe, magicMattock, magicSword, 
-				
-				mithrilPickaxe, mithrilAxe, mithrilShovel, mithrilHoe, mithrilMattock, mithrilSword,
-
-				extranetiumPickaxe, extranetiumAxe, extranetiumShovel, extranetiumHoe, extranetiumMattock, extranetiumSword,
-
-				mortiumPickaxe, mortiumAxe, mortiumShovel, mortiumHoe, mortiumMattock, mortiumSword,
-
-				mysteriousPickaxe, mysteriousAxe, mysteriousShovel, mysteriousHoe, mysteriousMattock, mysteriousSword,
-
-				mysticPickaxe, mysticAxe, mysticShovel, mysticHoe, mysticMattock, mysticSword,
-
-				skyIronPickaxe, skyIronAxe, skyIronShovel, skyIronHoe, skyIronMattock, skyIronSword,
-
-				terriumPickaxe, terriumAxe, terriumShovel, terriumHoe, terriumMattock, terriumSword,
-
-				vividiumPickaxe, vividiumAxe, vividiumShovel, vividiumHoe, vividiumMattock, vividiumSword,
-
-				terraDiamondPickaxe, terraDiamondAxe, terraDiamondShovel, terraDiamondHoe, terraDiamondMattock,	terraDiamondSword,
-
-				tyionetiumPickaxe, tyionetiumAxe, tyionetiumShovel, tyionetiumHoe, tyionetiumMattock, tyionetiumSword,
-
 				steelPickaxe, steelAxe, steelShovel, steelHoe, steelMattock, steelSword,
-
-				titaniumPickaxe, titaniumAxe, titaniumShovel, titaniumHoe, titaniumMattock, titaniumSword,
-
-				silverPickaxe, silverAxe, silverShovel, silverHoe, silverMattock, silverSword,
-
-				exaltedDiamondPickaxe, exaltedDiamondAxe, exaltedDiamondShovel, exaltedDiamondHoe, exaltedDiamondMattock, exaltedDiamondSword,
-
-				bloodDiamondPickaxe, bloodDiamondAxe, bloodDiamondShovel, bloodDiamondHoe, bloodDiamondMattock,	bloodDiamondSword,
-
-				platinumPickaxe, platinumAxe, platinumShovel, platinumHoe, platinumMattock, platinumSword,
-
 				tinPickaxe, tinAxe, tinShovel, tinHoe, tinMattock, tinSword,
-
+				tyionetiumPickaxe, tyionetiumAxe, tyionetiumShovel, tyionetiumHoe, tyionetiumMattock, tyionetiumSword,
+				bronzePickaxe, bronzeAxe, bronzeShovel, bronzeHoe, bronzeMattock, bronzeSword,
+				brightflamePickaxe, brightflameAxe, brightflameShovel, brightflameHoe, brightflameMattock, brightflameSword,
+				brightsteelPickaxe, brightsteelAxe, brightsteelShovel, brightsteelHoe, brightsteelMattock, brightsteelSword,
+				reforgedGoldPickaxe, reforgedGoldAxe, reforgedGoldShovel, reforgedGoldHoe, reforgedGoldMattock, reforgedGoldSword,
+				magicPickaxe, magicAxe, magicShovel, magicHoe, magicMattock, magicSword, 
+				mithrilPickaxe, mithrilAxe, mithrilShovel, mithrilHoe, mithrilMattock, mithrilSword,
+				mortiumPickaxe, mortiumAxe, mortiumShovel, mortiumHoe, mortiumMattock, mortiumSword,
+				mysteriousPickaxe, mysteriousAxe, mysteriousShovel, mysteriousHoe, mysteriousMattock, mysteriousSword,
+				mysticPickaxe, mysticAxe, mysticShovel, mysticHoe, mysticMattock, mysticSword,
+				skyIronPickaxe, skyIronAxe, skyIronShovel, skyIronHoe, skyIronMattock, skyIronSword,
+				terriumPickaxe, terriumAxe, terriumShovel, terriumHoe, terriumMattock, terriumSword,
+				vividiumPickaxe, vividiumAxe, vividiumShovel, vividiumHoe, vividiumMattock, vividiumSword,
+				extranetiumPickaxe, extranetiumAxe, extranetiumShovel, extranetiumHoe, extranetiumMattock, extranetiumSword,
+				silverPickaxe, silverAxe, silverShovel, silverHoe, silverMattock, silverSword,
+				platinumPickaxe, platinumAxe, platinumShovel, platinumHoe, platinumMattock, platinumSword,
+				titaniumPickaxe, titaniumAxe, titaniumShovel, titaniumHoe, titaniumMattock, titaniumSword,
+				zincPickaxe, zincAxe, zincShovel, zincHoe, zincMattock, zincSword,
+				brassPickaxe, brassAxe, brassShovel, brassHoe, brassMattock, brassSword,
+				leadPickaxe, leadAxe, leadShovel, leadHoe, leadMattock, leadSword,
+				nickelPickaxe, nickelAxe, nickelShovel, nickelHoe, nickelMattock, nickelSword,
 				pewterPickaxe, pewterAxe, pewterShovel, pewterHoe, pewterMattock, pewterSword,
-
-				mnemiumPickaxe, mnemiumAxe, mnemiumShovel, mnemiumHoe, mnemiumMattock, mnemiumSword,
-
 				aluminumPickaxe, aluminumAxe, aluminumShovel, aluminumHoe, aluminumMattock, aluminumSword,
-
+				mnemiumPickaxe, mnemiumAxe, mnemiumShovel, mnemiumHoe, mnemiumMattock, mnemiumSword,
 				eterniumPickaxe, eterniumAxe, eterniumShovel, eterniumHoe, eterniumMattock, eterniumSword,
+				fantasiumPickaxe, fantasiumAxe, fantasiumShovel, fantasiumHoe, fantasiumMattock, fantasiumSword,
+				scorniumPickaxe, scorniumAxe, scorniumShovel, scorniumHoe, scorniumMattock, scorniumSword,
+				electrumPickaxe, electrumAxe, electrumShovel, electrumHoe, electrumMattock, electrumSword,
+				laeniumPickaxe, laeniumAxe, laeniumShovel, laeniumHoe, laeniumMattock, laeniumSword,
+				magneiumPickaxe, magneiumAxe, magneiumShovel, magneiumHoe, magneiumMattock, magneiumSword,
+				sterlingSilverPickaxe, sterlingSilverAxe, sterlingSilverShovel, sterlingSilverHoe, sterlingSilverMattock, sterlingSilverSword,
+				
+				exaltedDiamondPickaxe, exaltedDiamondAxe, exaltedDiamondShovel, exaltedDiamondHoe, exaltedDiamondMattock, exaltedDiamondSword,
+				bloodDiamondPickaxe, bloodDiamondAxe, bloodDiamondShovel, bloodDiamondHoe, bloodDiamondMattock,	bloodDiamondSword,
+				terraDiamondPickaxe, terraDiamondAxe, terraDiamondShovel, terraDiamondHoe, terraDiamondMattock,	terraDiamondSword,
 
 				woodMattock, stoneMattock, ironMattock, diamondMattock, goldMattock,
 
-				lapisRemover,
-
 				copperHelmet, copperChestplate, copperLeggings, copperBoots,
-
-				terraDiamondHelmet, terraDiamondChestplate, terraDiamondLeggings, terraDiamondBoots,
-
-				brightflameHelmet, brightflameChestplate, brightflameLeggings, brightflameBoots,
-
-				brightsteelHelmet, brightsteelChestplate, brightsteelLeggings, brightsteelBoots,
-
-				bronzeHelmet, bronzeChestplate, bronzeLeggings, bronzeBoots,
-
-				tinHelmet, tinChestplate, tinLeggings, tinBoots,
-
-				magicHelmet, magicChestplate, magicLeggings, magicBoots,
-
-				mithrilHelmet, mithrilChestplate, mithrilLeggings, mithrilBoots,
-
-				mortiumHelmet, mortiumChestplate, mortiumLeggings, mortiumBoots,
-
 				steelHelmet, steelChestplate, steelLeggings, steelBoots,
-
-				titaniumHelmet, titaniumChestplate, titaniumLeggings, titaniumBoots,
-
-				extranetiumHelmet, extranetiumChestplate, extranetiumLeggings, extranetiumBoots,
-
-				mysteriousHelmet, mysteriousChestplate, mysteriousLeggings, mysteriousBoots,
-
-				mysticHelmet, mysticChestplate, mysticLeggings, mysticBoots,
-
-				skyIronHelmet, skyIronChestplate, skyIronLeggings, skyIronBoots,
-
-				vividiumHelmet, vividiumChestplate, vividiumLeggings, vividiumBoots,
-
+				tinHelmet, tinChestplate, tinLeggings, tinBoots,
 				tyionetiumHelmet, tyionetiumChestplate, tyionetiumLeggings, tyionetiumBoots,
-
+				bronzeHelmet, bronzeChestplate, bronzeLeggings, bronzeBoots,
+				brightflameHelmet, brightflameChestplate, brightflameLeggings, brightflameBoots,
+				brightsteelHelmet, brightsteelChestplate, brightsteelLeggings, brightsteelBoots,
+				magicHelmet, magicChestplate, magicLeggings, magicBoots,
+				mithrilHelmet, mithrilChestplate, mithrilLeggings, mithrilBoots,
+				mortiumHelmet, mortiumChestplate, mortiumLeggings, mortiumBoots,
+				mysteriousHelmet, mysteriousChestplate, mysteriousLeggings, mysteriousBoots,
+				mysticHelmet, mysticChestplate, mysticLeggings, mysticBoots,
+				skyIronHelmet, skyIronChestplate, skyIronLeggings, skyIronBoots,
+				vividiumHelmet, vividiumChestplate, vividiumLeggings, vividiumBoots,
+				extranetiumHelmet, extranetiumChestplate, extranetiumLeggings, extranetiumBoots,
 				silverHelmet, silverChestplate, silverLeggings, silverBoots,
+				platinumHelmet, platinumChestplate, platinumLeggings, platinumBoots,
+				titaniumHelmet, titaniumChestplate, titaniumLeggings, titaniumBoots,
+				pewterHelmet, pewterChestplate, pewterLeggings, pewterBoots,
+				aluminumHelmet, aluminumChestplate, aluminumLeggings, aluminumBoots,
+				mnemiumHelmet, mnemiumChestplate, mnemiumLeggings, mnemiumBoots,
+				eterniumHelmet, eterniumChestplate, eterniumLeggings, eterniumBoots,
 
 				exaltedDiamondHelmet, exaltedDiamondChestplate, exaltedDiamondLeggings, exaltedDiamondBoots,
-
 				bloodDiamondHelmet, bloodDiamondChestplate, bloodDiamondLeggings, bloodDiamondBoots,
+				terraDiamondHelmet, terraDiamondChestplate, terraDiamondLeggings, terraDiamondBoots
+				);
 
-				platinumHelmet, platinumChestplate, platinumLeggings, platinumBoots,
 
-				pewterHelmet, pewterChestplate, pewterLeggings, pewterBoots,
-
-				mnemiumHelmet, mnemiumChestplate, mnemiumLeggings, mnemiumBoots,
-
-				aluminumHelmet, aluminumChestplate, aluminumLeggings, aluminumBoots,
-
-				eterniumHelmet, eterniumChestplate, eterniumLeggings, eterniumBoots);
 		TheStuffExtension.log("Registered Items");
 	}
 
