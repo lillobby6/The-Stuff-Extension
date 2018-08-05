@@ -7,6 +7,7 @@ import com.google.common.collect.Maps;
 import com.tse.common.config.Config;
 import com.tse.common.core.TheStuffExtension;
 import com.tse.container.ContainerAlloyFurnace;
+import com.tse.tileentity.TileEntityAlloyFurnace;
 import com.tse.world.item.ItemManager;
 
 import net.minecraft.init.Items;
@@ -40,6 +41,8 @@ public class AlloyFurnaceRecipes {
 		this.addSmeltingRecipe(ItemManager.brightflameIngot, ItemManager.platinumIngot, new ItemStack(ItemManager.laeniumIngot, 2), 0.1F);
 		this.addSmeltingRecipe(ItemManager.brightsteelIngot, ItemManager.platinumIngot, new ItemStack(ItemManager.laeniumIngot, 2), 0.1F);
 		this.addSmeltingRecipe(Items.IRON_INGOT, Items.GOLD_INGOT, new ItemStack(ItemManager.magneiumIngot, 2), 0.3F);
+		this.addSmeltingRecipe(ItemManager.eterniumIngot, ItemManager.extranetiumIngot, new ItemStack(ItemManager.maduumIngot, 2), 10.0F);
+		this.addSmeltingRecipe(ItemManager.maduumIngot, ItemManager.maduumIngot, new ItemStack(ItemManager.maduumIngot, 2), 0.0F);
 		if(!Config.easySteel)
 		{
 			this.addSmeltingRecipe(Items.COAL, Items.IRON_INGOT, new ItemStack(ItemManager.steelIngot), 0.2F);
@@ -66,9 +69,16 @@ public class AlloyFurnaceRecipes {
 	}
 
 	public static boolean matchesIngredient(ItemStack itemstack) {
-		return true;
+		if(TileEntityAlloyFurnace.isItemFuel(itemstack) && itemstack.getItem() != Items.COAL)
+		{
+			return false;
+		}
+		else
+		{
+		
+			return true;
+		}
 	}
-
 	public float getExperience(ItemStack item) {
 		if (item.isEmpty()) {
 			return 0;

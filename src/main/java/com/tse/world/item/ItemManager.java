@@ -39,6 +39,7 @@ public class ItemManager {
 	public static Item roseGoldStick = registerMainItem("rose_gold_stick", TSECreativeTabs.tabMaterials);
 	public static Item whiteGoldStick = registerMainItem("white_gold_stick", TSECreativeTabs.tabMaterials);
 	public static Item spangoldStick = registerMainItem("spangold_stick", TSECreativeTabs.tabMaterials);
+	public static Item maduumStick = registerMainItem("maduum_stick", TSECreativeTabs.tabMaterials);
 	
 	public static Item ironRod = registerMainItem("iron_rod", TSECreativeTabs.tabMaterials);
 	public static Item copperRod = registerMainItem("copper_rod", TSECreativeTabs.tabMaterials);
@@ -115,6 +116,7 @@ public class ItemManager {
 	public static Item whiteGoldIngot = registerMainItem("white_gold_ingot", TSECreativeTabs.tabMaterials);
 	public static Item spangoldIngot = registerMainItem("spangold_ingot", TSECreativeTabs.tabMaterials);
 	public static Item meteoricIronIngot = registerMainItem("meteoric_iron_ingot", TSECreativeTabs.tabMaterials);
+	public static Item maduumIngot = registerMainItem("maduum_ingot", TSECreativeTabs.tabMaterials);
 	
 	public static Item diamondNugget = registerMainItem("diamond_nugget", TSECreativeTabs.tabMaterials);
 	public static Item copperNugget = registerMainItem("copper_nugget", TSECreativeTabs.tabMaterials);
@@ -156,6 +158,7 @@ public class ItemManager {
 	public static Item whiteGoldNugget = registerMainItem("white_gold_nugget", TSECreativeTabs.tabMaterials);
 	public static Item spangoldNugget = registerMainItem("spangold_nugget", TSECreativeTabs.tabMaterials);
 	public static Item meteoricIronNugget = registerMainItem("meteoric_iron_nugget", TSECreativeTabs.tabMaterials);
+	public static Item maduumNugget = registerMainItem("maduum_nugget", TSECreativeTabs.tabMaterials);
 	
 	// End Materials
 
@@ -369,7 +372,7 @@ public class ItemManager {
 	public static Item electrumMattock = registerMattock(TSEToolMaterials.ELECTRUM, "electrum_mattock", TSECreativeTabs.tabTools, 1);
 	
 	public static Item laeniumPickaxe = registerPickaxe(TSEToolMaterials.LAENIUM, "laenium_pickaxe", TSECreativeTabs.tabTools, 4);
-	public static Item laeniumAxe = registerAxe(TSEToolMaterials.LAENIUM, "laenium_pickaxe", TSECreativeTabs.tabTools, 4, 2.0F);
+	public static Item laeniumAxe = registerAxe(TSEToolMaterials.LAENIUM, "laenium_axe", TSECreativeTabs.tabTools, 4, 2.0F);
 	public static Item laeniumShovel = registerShovel(TSEToolMaterials.LAENIUM, "laenium_shovel", TSECreativeTabs.tabTools, 4);
 	public static Item laeniumHoe = registerHoe(TSEToolMaterials.LAENIUM, "laenium_hoe", TSECreativeTabs.tabTools, 4);
 	public static Item laeniumMattock = registerMattock(TSEToolMaterials.LAENIUM, "laenium_mattock", TSECreativeTabs.tabTools, 4);
@@ -385,6 +388,36 @@ public class ItemManager {
 	public static Item sterlingSilverShovel = registerShovel(TSEToolMaterials.STSILVER, "sterling_silver_shovel", TSECreativeTabs.tabTools, 1);
 	public static Item sterlingSilverHoe = registerHoe(TSEToolMaterials.STSILVER, "sterling_silver_hoe", TSECreativeTabs.tabTools, 1);
 	public static Item sterlingSilverMattock = registerMattock(TSEToolMaterials.STSILVER, "sterling_silver_mattock", TSECreativeTabs.tabTools, 1);
+	
+	public static Item roseGoldPickaxe = registerPickaxe(ToolMaterial.GOLD, "rose_gold_pickaxe", TSECreativeTabs.tabTools, 0);
+	public static Item roseGoldAxe = registerAxe(ToolMaterial.GOLD, "rose_gold_axe", TSECreativeTabs.tabTools, 0, 0.0F);
+	public static Item roseGoldShovel = registerShovel(ToolMaterial.GOLD, "rose_gold_shovel", TSECreativeTabs.tabTools, 0);
+	public static Item roseGoldHoe = registerHoe(ToolMaterial.GOLD, "rose_gold_hoe", TSECreativeTabs.tabTools, 0);
+	public static Item roseGoldMattock = registerMattock(ToolMaterial.GOLD, "rose_gold_mattock", TSECreativeTabs.tabTools, 0);
+	
+	public static Item whiteGoldPickaxe = registerPickaxe(ToolMaterial.GOLD, "white_gold_pickaxe", TSECreativeTabs.tabTools, 0);
+	public static Item whiteGoldAxe = registerAxe(ToolMaterial.GOLD, "white_gold_axe", TSECreativeTabs.tabTools, 0, 0.0F);
+	public static Item whiteGoldShovel = registerShovel(ToolMaterial.GOLD, "white_gold_shovel", TSECreativeTabs.tabTools, 0);
+	public static Item whiteGoldHoe = registerHoe(ToolMaterial.GOLD, "white_gold_hoe", TSECreativeTabs.tabTools, 0);
+	public static Item whiteGoldMattock = registerMattock(ToolMaterial.GOLD, "white_gold_mattock", TSECreativeTabs.tabTools, 0);
+	
+	public static Item spangoldPickaxe = registerPickaxe(ToolMaterial.GOLD, "spangold_pickaxe", TSECreativeTabs.tabTools, 0);
+	public static Item spangoldAxe = registerAxe(ToolMaterial.GOLD, "spangold_axe", TSECreativeTabs.tabTools, 0, 0.0F);
+	public static Item spangoldShovel = registerShovel(ToolMaterial.GOLD, "spangold_shovel", TSECreativeTabs.tabTools, 0);
+	public static Item spangoldHoe = registerHoe(ToolMaterial.GOLD, "spangold_hoe", TSECreativeTabs.tabTools, 0);
+	public static Item spangoldMattock = registerMattock(ToolMaterial.GOLD, "spangold_mattock", TSECreativeTabs.tabTools, 0);
+	
+	public static Item meteoricIronPickaxe = registerPickaxe(TSEToolMaterials.METEORICIRON, "meteoric_iron_pickaxe", TSECreativeTabs.tabTools, 2);
+	public static Item meteoricIronAxe = registerAxe(TSEToolMaterials.METEORICIRON, "meteoric_iron_axe", TSECreativeTabs.tabTools, 2, 2.1F);
+	public static Item meteoricIronShovel = registerShovel(TSEToolMaterials.METEORICIRON, "meteoric_iron_shovel", TSECreativeTabs.tabTools, 2);
+	public static Item meteoricIronHoe = registerHoe(TSEToolMaterials.METEORICIRON, "meteoric_iron_hoe", TSECreativeTabs.tabTools, 2);
+	public static Item meteoricIronMattock = registerMattock(TSEToolMaterials.METEORICIRON, "meteoric_iron_mattock", TSECreativeTabs.tabTools, 2);
+	
+	public static Item maduumPickaxe = registerPickaxe(TSEToolMaterials.MADUUM, "maduum_pickaxe", TSECreativeTabs.tabTools, 1);
+	public static Item maduumAxe = registerAxe(TSEToolMaterials.MADUUM, "maduum_axe", TSECreativeTabs.tabTools, 1, 0.0F);
+	public static Item maduumShovel = registerShovel(TSEToolMaterials.MADUUM, "maduum_shovel", TSECreativeTabs.tabTools, 1);
+	public static Item maduumHoe = registerHoe(TSEToolMaterials.MADUUM, "maduum_hoe", TSECreativeTabs.tabTools, 1);
+	public static Item maduumMattock = registerMattock(TSEToolMaterials.MADUUM, "maduum_mattock", TSECreativeTabs.tabTools, 1);
 	
 	// Others
 	public static Item woodMattock = registerMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools, 0);
@@ -435,7 +468,12 @@ public class ItemManager {
 	public static Item laeniumSword = registerSword(TSEToolMaterials.LAENIUM, "laenium_sword", TSECreativeTabs.tabWeapons);
 	public static Item magneiumSword = registerSword(TSEToolMaterials.MAGNEIUM, "magneium_sword", TSECreativeTabs.tabWeapons);
 	public static Item sterlingSilverSword = registerSword(TSEToolMaterials.STSILVER, "sterling_silver_sword", TSECreativeTabs.tabWeapons);
-
+	public static Item roseGoldSword = registerSword(ToolMaterial.GOLD, "rose_gold_sword", TSECreativeTabs.tabWeapons);
+	public static Item whiteGoldSword = registerSword(ToolMaterial.GOLD, "white_gold_sword", TSECreativeTabs.tabWeapons);
+	public static Item spangoldSword = registerSword(ToolMaterial.GOLD, "spangold_sword", TSECreativeTabs.tabWeapons);
+	public static Item meteoricIronSword = registerSword(TSEToolMaterials.METEORICIRON, "meteoric_iron_sword", TSECreativeTabs.tabWeapons);
+	public static Item maduumSword = registerSword(TSEToolMaterials.MADUUM, "maduum_sword", TSECreativeTabs.tabWeapons);
+	
 	public static Item justice = registerLightSword(TSEToolMaterials.JUSTICE, "justice", TSECreativeTabs.tabWeapons, true);
 	public static Item corruption = registerLightSword(TSEToolMaterials.CORRUPTION, "corruption", TSECreativeTabs.tabWeapons, false);
 	public static Item destruction = registerLightSword(TSEToolMaterials.DESTRUCTION, "destruction", TSECreativeTabs.tabWeapons, false);
@@ -467,8 +505,7 @@ public class ItemManager {
 	public static Item brightflameHelmet = registerArmor("brightflame_helmet", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.HEAD);
 	public static Item brightflameChestplate = registerArmor("brightflame_chestplate", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.CHEST);
 	public static Item brightflameLeggings = registerArmor("brightflame_leggings", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.LEGS);
-	public static Item brightflameBoots = registerArmor("brightflame_boots", TSEArmorMaterials.BRIGHTFLAME, 1,
-			EntityEquipmentSlot.FEET);
+	public static Item brightflameBoots = registerArmor("brightflame_boots", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.FEET);
 
 	public static Item brightsteelHelmet = registerArmor("brightsteel_helmet", TSEArmorMaterials.BRIGHTSTEEL, 1, EntityEquipmentSlot.HEAD);
 	public static Item brightsteelChestplate = registerArmor("brightsteel_chestplate", TSEArmorMaterials.BRIGHTSTEEL, 1, EntityEquipmentSlot.CHEST);
@@ -667,7 +704,7 @@ public class ItemManager {
 		TheStuffExtension.log("Registering Items...");
 		registry.registerAll(goldenStick,
 
-				brightflameStick, brightsteelStick, diamondStick, reforgedGoldStick, magicStick, mithrilStick, mysteriousStick, mysticStick, extranetiumStick, eterniumStick, fantasiumStick, scorniumStick, electrumStick, laeniumStick, magneiumStick, sterlingSilverStick, roseGoldStick, whiteGoldStick, spangoldStick,
+				brightflameStick, brightsteelStick, diamondStick, reforgedGoldStick, magicStick, mithrilStick, mysteriousStick, mysticStick, extranetiumStick, eterniumStick, fantasiumStick, scorniumStick, electrumStick, laeniumStick, magneiumStick, sterlingSilverStick, roseGoldStick, whiteGoldStick, spangoldStick, maduumStick,
 				ironRod,copperRod, steelRod, tinRod, tyionetiumRod, bronzeRod, mortiumRod, skyIronRod, terriumRod, toslotriumRod, vividiumRod, silverRod, platinumRod, titaniumRod, zincRod, brassRod, leadRod, nickelRod, pewterRod, aluminumRod, mnemiumRod, meteoricIronRod,
 
 				unusableMaterial,
@@ -678,9 +715,9 @@ public class ItemManager {
 
 				sphaleriteGem,
 				
-				diamondIngot, copperIngot, steelIngot, tinIngot, tyionetiumIngot, bronzeIngot, brightflameIngot, brightsteelIngot, reforgedGoldIngot, magicIngot, mithrilIngot, mortiumIngot, mysteriousIngot, mysticIngot, skyIronIngot, terriumIngot, toslotriumIngot, vividiumIngot, extranetiumIngot, silverIngot, platinumIngot, titaniumIngot, zincIngot, brassIngot, leadIngot, nickelIngot, pewterIngot, aluminumIngot, mnemiumIngot, eterniumIngot, fantasiumIngot, scorniumIngot, electrumIngot, laeniumIngot, magneiumIngot, sterlingSilverIngot, roseGoldIngot, whiteGoldIngot, spangoldIngot, meteoricIronIngot,
+				diamondIngot, copperIngot, steelIngot, tinIngot, tyionetiumIngot, bronzeIngot, brightflameIngot, brightsteelIngot, reforgedGoldIngot, magicIngot, mithrilIngot, mortiumIngot, mysteriousIngot, mysticIngot, skyIronIngot, terriumIngot, toslotriumIngot, vividiumIngot, extranetiumIngot, silverIngot, platinumIngot, titaniumIngot, zincIngot, brassIngot, leadIngot, nickelIngot, pewterIngot, aluminumIngot, mnemiumIngot, eterniumIngot, fantasiumIngot, scorniumIngot, electrumIngot, laeniumIngot, magneiumIngot, sterlingSilverIngot, roseGoldIngot, whiteGoldIngot, spangoldIngot, meteoricIronIngot, maduumIngot,
 				
-				diamondNugget, copperNugget, steelNugget, tinNugget, tyionetiumNugget, bronzeNugget, brightflameNugget, brightsteelNugget, reforgedGoldNugget, magicNugget, mithrilNugget, mortiumNugget, mysteriousNugget, mysticNugget, skyIronNugget, terriumNugget, toslotriumNugget, vividiumNugget, extranetiumNugget, silverNugget, platinumNugget, titaniumNugget, zincNugget, brassNugget, leadNugget, nickelNugget, pewterNugget, aluminumNugget, mnemiumNugget, eterniumNugget, fantasiumNugget,	scorniumNugget, electrumNugget, laeniumNugget, magneiumNugget, sterlingSilverNugget, roseGoldNugget, whiteGoldNugget, spangoldNugget, meteoricIronNugget,
+				diamondNugget, copperNugget, steelNugget, tinNugget, tyionetiumNugget, bronzeNugget, brightflameNugget, brightsteelNugget, reforgedGoldNugget, magicNugget, mithrilNugget, mortiumNugget, mysteriousNugget, mysticNugget, skyIronNugget, terriumNugget, toslotriumNugget, vividiumNugget, extranetiumNugget, silverNugget, platinumNugget, titaniumNugget, zincNugget, brassNugget, leadNugget, nickelNugget, pewterNugget, aluminumNugget, mnemiumNugget, eterniumNugget, fantasiumNugget,	scorniumNugget, electrumNugget, laeniumNugget, magneiumNugget, sterlingSilverNugget, roseGoldNugget, whiteGoldNugget, spangoldNugget, meteoricIronNugget, maduumNugget,
 				
 				justice, corruption, destruction, creation,
 				
@@ -718,6 +755,11 @@ public class ItemManager {
 				laeniumPickaxe, laeniumAxe, laeniumShovel, laeniumHoe, laeniumMattock, laeniumSword,
 				magneiumPickaxe, magneiumAxe, magneiumShovel, magneiumHoe, magneiumMattock, magneiumSword,
 				sterlingSilverPickaxe, sterlingSilverAxe, sterlingSilverShovel, sterlingSilverHoe, sterlingSilverMattock, sterlingSilverSword,
+				roseGoldPickaxe, roseGoldAxe, roseGoldShovel, roseGoldHoe, roseGoldMattock, roseGoldSword,
+				whiteGoldPickaxe, whiteGoldAxe, whiteGoldShovel, whiteGoldHoe, whiteGoldMattock, whiteGoldSword,
+				spangoldPickaxe, spangoldAxe, spangoldShovel, spangoldHoe, spangoldMattock, spangoldSword,
+				meteoricIronPickaxe, meteoricIronAxe, meteoricIronShovel, meteoricIronHoe, meteoricIronMattock, meteoricIronSword,
+				maduumPickaxe, maduumAxe, maduumShovel, maduumHoe, maduumMattock, maduumSword,
 				
 				exaltedDiamondPickaxe, exaltedDiamondAxe, exaltedDiamondShovel, exaltedDiamondHoe, exaltedDiamondMattock, exaltedDiamondSword,
 				bloodDiamondPickaxe, bloodDiamondAxe, bloodDiamondShovel, bloodDiamondHoe, bloodDiamondMattock,	bloodDiamondSword,

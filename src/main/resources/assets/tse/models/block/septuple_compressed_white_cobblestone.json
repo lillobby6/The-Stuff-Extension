@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "tse:blocks/septuple_compressed_white_cobblestone"
+	}
+}

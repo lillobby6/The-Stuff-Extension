@@ -10,6 +10,7 @@ public class TSEToolMaterials {
 	 * 2.0F, 14), DIAMOND(3, 1561, 8.0F, 3.0F, 10), GOLD(0, 32, 12.0F, 0.0F, 22);
 	 */
 	// e.g. IRON(2, 250, 6.0F, 2.0F, 14)
+	public static final ToolMaterial METEORICIRON = EnumHelper.addToolMaterial("METEORICIRON", 2, 300, 6.2F, 2.1F, 13);
 	public static final ToolMaterial MAGNEIUM = EnumHelper.addToolMaterial("MAGNEIUM", 2, 150, 8.0F, 1.0F, 18);
 	public static final ToolMaterial LAPIS = EnumHelper.addToolMaterial("LAPIS", 1, 50, 10.0F, 1.0F, 30);
 	public static final ToolMaterial COPPER = EnumHelper.addToolMaterial("COPPER", 2, 250, 5.0F, 2.0F, 22);
@@ -48,6 +49,7 @@ public class TSEToolMaterials {
 	public static final ToolMaterial SCORNIUM = EnumHelper.addToolMaterial("SCORNIUM", 5, 4000, 14.0F, 9.0F, 10);
 	public static final ToolMaterial ELECTRUM = EnumHelper.addToolMaterial("ELECTRUM", 1, 200, 12.0F, 0.5F, 23);
 	public static final ToolMaterial LAENIUM = EnumHelper.addToolMaterial("LAENIUM", 4, 400, 50.0F, 2.0F, 100);
+	public static final ToolMaterial MADUUM = EnumHelper.addToolMaterial("MADUUM", 1, -1, 1.0F, 0.0F, 0);
 
 	public static final ToolMaterial JUSTICE = EnumHelper.addToolMaterial("JUSTICE", 0, 5000, 2.0F, 90.0F, 10);
 	public static final ToolMaterial CORRUPTION = EnumHelper.addToolMaterial("CORRUPTION", 0, 800, 1.0F, 120.0F, 5);

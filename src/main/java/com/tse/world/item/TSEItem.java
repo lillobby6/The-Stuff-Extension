@@ -33,5 +33,7 @@ public class TSEItem extends Item
 			tooltip.add("WARNING: Do not wave in the air while reciting Latin!");
 		if(this==ItemManager.mysticIngot)
 			tooltip.add("A memory of a time long past");
+		if(this==ItemManager.maduumIngot)
+			tooltip.add("Too much of a good thing can be bad, or, in this case, terrible.");
 	}
 }

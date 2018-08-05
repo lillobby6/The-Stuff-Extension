@@ -82,6 +82,17 @@ public class BlockRenderRegister {
 		reg(BlockManager.whiteStone);
 		reg(BlockManager.whiteCobblestone);
 		
+		reg(BlockManager.compressedWhiteCobblestone);
+		reg(BlockManager.doubleCompressedWhiteCobblestone);
+		reg(BlockManager.tripleCompressedWhiteCobblestone);
+		reg(BlockManager.quadrupleCompressedWhiteCobblestone);
+		reg(BlockManager.quintupleCompressedWhiteCobblestone);
+		reg(BlockManager.sextupleCompressedWhiteCobblestone);
+		reg(BlockManager.septupleCompressedWhiteCobblestone);
+		reg(BlockManager.octupleCompressedWhiteCobblestone);
+		reg(BlockManager.nonupleCompressedWhiteCobblestone);
+		reg(BlockManager.decupleCompressedWhiteCobblestone);
+		
 		reg(BlockManager.purpleheartLog);
 		reg(BlockManager.purpleheartPlanks);
 		

@@ -48,6 +48,10 @@ public class TileEntityCopperAlloyFurnace extends TileEntityLockable implements 
     private String furnaceCustomName;
     
     private boolean returnUnusable = false;
+    private boolean returnMaduum = false;
+    private boolean returnMaduumIngot = false;
+    private boolean returnMaduumStick = false;
+    private boolean returnMaduumNugget = false;
     
 	@Override
 	public int getSizeInventory() {
@@ -360,7 +364,7 @@ public class TileEntityCopperAlloyFurnace extends TileEntityLockable implements 
             ItemStack itemstack1 = this.furnaceItemStacks.get(1);
             ItemStack itemstack2 = AlloyFurnaceRecipes.instance().getSmeltingResult(itemstack, itemstack1);
             ItemStack itemstack3 = this.furnaceItemStacks.get(3);
-        	if(this.returnUnusable)
+        	if(this.returnUnusable && !this.returnMaduum)
         	{
         		if (itemstack3.isEmpty())
                 {
@@ -372,6 +376,62 @@ public class TileEntityCopperAlloyFurnace extends TileEntityLockable implements 
                     itemstack3.grow(1);
                     this.returnUnusable = false;
                 }
+        	}
+        	else if(this.returnMaduum && !this.returnUnusable)
+        	{
+        		if(this.returnMaduumIngot)
+        		{
+	        		if (itemstack3.isEmpty())
+	                {
+	                    this.furnaceItemStacks.set(3, new ItemStack(ItemManager.maduumIngot));
+	                    this.returnMaduum = false;
+	                    this.returnMaduumIngot = false;
+	                }
+	                else if (itemstack3.getItem() == ItemManager.maduumIngot)
+	                {
+	                    itemstack3.grow(1);
+	                    this.returnMaduum = false;
+	                    this.returnMaduumIngot = false;
+	                }
+        		}
+        		else if(this.returnMaduumStick)
+        		{
+        			if (itemstack3.isEmpty())
+	                {
+	                    this.furnaceItemStacks.set(3, new ItemStack(ItemManager.maduumStick));
+	                    this.returnMaduum = false;
+	                    this.returnMaduumStick = false;
+	                }
+	                else if (itemstack3.getItem() == ItemManager.maduumStick)
+	                {
+	                    itemstack3.grow(1);
+	                    this.returnMaduum = false;
+	                    this.returnMaduumStick = false;
+	                }
+        		}
+        		else if(this.returnMaduumNugget)
+        		{
+        			if (itemstack3.isEmpty())
+	                {
+	                    this.furnaceItemStacks.set(3, new ItemStack(ItemManager.maduumNugget));
+	                    this.returnMaduum = false;
+	                    this.returnMaduumNugget = false;
+	                }
+	                else if (itemstack3.getItem() == ItemManager.maduumNugget)
+	                {
+	                    itemstack3.grow(1);
+	                    this.returnMaduum = false;
+	                    this.returnMaduumNugget = false;
+	                }
+        		}
+        		else
+                {
+                	throw new IllegalStateException("returnMaduum is true without a subsidiary boolean also being true, this should never happen! This error is from The Stuff Extension.");
+                }
+        	}
+        	else if(this.returnUnusable && this.returnMaduum)
+        	{
+        		throw new IllegalStateException("Both returnUnusable and returnMaduum are true, this should never happen! This error is from The Stuff Extension.");
         	}
         	else
         	{
@@ -391,42 +451,103 @@ public class TileEntityCopperAlloyFurnace extends TileEntityLockable implements 
 	
 	private boolean canSmelt()
     {
-        if (((ItemStack)this.furnaceItemStacks.get(0)).isEmpty() || ((ItemStack)this.furnaceItemStacks.get(1)).isEmpty())
-        {
-            return false;
-        }
-        else
-        {
-            ItemStack itemstack = AlloyFurnaceRecipes.instance().getSmeltingResult((ItemStack)this.furnaceItemStacks.get(0), (ItemStack)this.furnaceItemStacks.get(1));
-
-            if (itemstack.isEmpty())
-            {
-            	this.returnUnusable = true;
-                return true;
-            }
-            else
-            {
-                ItemStack itemstack1 = this.furnaceItemStacks.get(3);
-
-                if (itemstack1.isEmpty())
-                {
-                    return true;
-                }
-                else if (!itemstack1.isItemEqual(itemstack))
-                {
-                    return false;
-                }
-                else if (itemstack1.getCount() + itemstack.getCount() <= this.getInventoryStackLimit() && itemstack1.getCount() + itemstack.getCount() <= itemstack1.getMaxStackSize())  // Forge fix: make furnace respect stack sizes in furnace recipes
-                {
-                    return true;
-                }
-                else
-                {
-                    return itemstack1.getCount() + itemstack.getCount() <= itemstack.getMaxStackSize(); // Forge fix: make furnace respect stack sizes in furnace recipes
-                }
-            }
-            		
-        }
+		if(this.returnMaduum && this.returnUnusable)
+		{
+			this.returnMaduum = false;
+			this.returnUnusable = false;
+			return false;
+		}
+		else
+		{	
+			if(this.returnMaduum && this.returnMaduumIngot && (this.returnMaduumNugget || this.returnMaduumStick))
+			{
+				return true;
+			}
+			else
+			{
+		        if (((ItemStack)this.furnaceItemStacks.get(0)).isEmpty() || ((ItemStack)this.furnaceItemStacks.get(1)).isEmpty())
+		        {
+		            return false;
+		        }
+		        else
+		        {
+		            ItemStack itemstack = AlloyFurnaceRecipes.instance().getSmeltingResult((ItemStack)this.furnaceItemStacks.get(0), (ItemStack)this.furnaceItemStacks.get(1));
+		            ItemStack slot0 = this.furnaceItemStacks.get(0);
+		            ItemStack slot1 = this.furnaceItemStacks.get(1);
+		
+		            if (itemstack.isEmpty() && (slot0.getItem() != ItemManager.maduumIngot && slot0.getItem() != ItemManager.maduumNugget && slot0.getItem() != ItemManager.maduumStick) && (slot1.getItem() != ItemManager.maduumIngot && slot1.getItem() != ItemManager.maduumNugget && slot1.getItem() != ItemManager.maduumStick))
+		            {
+		            	this.returnUnusable = true;
+		                return true;
+		            }
+		            else if(itemstack.isEmpty() && ((slot0.getItem() == ItemManager.maduumIngot || slot0.getItem() == ItemManager.maduumStick || slot0.getItem() == ItemManager.maduumNugget) || (slot1.getItem() == ItemManager.maduumIngot || slot1.getItem() == ItemManager.maduumStick || slot1.getItem() == ItemManager.maduumNugget)))
+		            {
+		            	this.returnMaduum = true;
+		            	if((slot0.getItem() == ItemManager.maduumIngot && slot1.getItem() == ItemManager.maduumStick) || (slot0.getItem() == ItemManager.maduumIngot && slot1.getItem() == ItemManager.maduumNugget) || (slot1.getItem() == ItemManager.maduumIngot && slot0.getItem() == ItemManager.maduumStick) || (slot1.getItem() == ItemManager.maduumIngot && slot0.getItem() == ItemManager.maduumNugget))
+		            	{
+		            		this.returnMaduumIngot = true;
+		            		this.returnMaduumNugget = false;
+		            		this.returnMaduumStick = false;
+		            		return true;
+		            	}
+		            	else if((slot0.getItem() == ItemManager.maduumStick && slot1.getItem() == ItemManager.maduumNugget) || (slot1.getItem() == ItemManager.maduumStick && slot0.getItem() == ItemManager.maduumNugget))
+		            	{
+		            		this.returnMaduumIngot = false;
+		            		this.returnMaduumNugget = false;
+		            		this.returnMaduumStick = true;
+		            		return true;
+		            	}
+		            	else if(slot0.getItem() == ItemManager.maduumIngot || slot1.getItem() == ItemManager.maduumIngot)
+		            	{
+		            		this.returnMaduumIngot = true;
+		            		this.returnMaduumNugget = false;
+		            		this.returnMaduumStick = false;
+		            		return true;
+		            	}
+		            	else if(slot0.getItem() == ItemManager.maduumStick || slot1.getItem() == ItemManager.maduumStick)
+		            	{
+		            		this.returnMaduumIngot = false;
+		            		this.returnMaduumNugget = false;
+		            		this.returnMaduumStick = true;
+		            		return true;
+		            	}
+		            	else if(slot0.getItem() == ItemManager.maduumNugget || slot1.getItem() == ItemManager.maduumNugget)
+		            	{
+		            		this.returnMaduumIngot = false;
+		            		this.returnMaduumNugget = true;
+		            		this.returnMaduumStick = false;
+		            		return true;
+		            	}
+		            	else
+		            	{
+		            		return false;
+		            	}
+		            }
+		            else
+		            {
+		                ItemStack itemstack1 = this.furnaceItemStacks.get(3);
+		
+		                if (itemstack1.isEmpty())
+		                {
+		                    return true;
+		                }
+		                else if (!itemstack1.isItemEqual(itemstack))
+		                {
+		                    return false;
+		                }
+		                else if (itemstack1.getCount() + itemstack.getCount() <= this.getInventoryStackLimit() && itemstack1.getCount() + itemstack.getCount() <= itemstack1.getMaxStackSize())  // Forge fix: make furnace respect stack sizes in furnace recipes
+		                {
+		                    return true;
+		                }
+		                else
+		                {
+		                    return itemstack1.getCount() + itemstack.getCount() <= itemstack.getMaxStackSize();
+		                }
+		            }
+		            		
+		        }
+			}
+		}
     }
 	
 	@Override

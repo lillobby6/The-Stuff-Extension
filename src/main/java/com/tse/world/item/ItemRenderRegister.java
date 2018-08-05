@@ -167,6 +167,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.whiteGoldIngot);
 		reg(ItemManager.spangoldIngot);
 		reg(ItemManager.meteoricIronIngot);
+		reg(ItemManager.maduumIngot);
 
 		reg(ItemManager.justice);
 		reg(ItemManager.corruption);
