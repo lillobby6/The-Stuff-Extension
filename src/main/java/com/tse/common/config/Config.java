@@ -11,6 +11,7 @@ public class Config {
 	private static final String CATEGORY_OREFREQ = "ore_freq";
 	private static final String CATEGORY_RECIPES = "recipes";
 	
+	
 	public static boolean useOreDictionaryForTools = false;
 
 	public static boolean spawnExaltedDiamond = true;
@@ -55,6 +56,7 @@ public class Config {
 
 	public static boolean easyZinc = false;
 	public static boolean easySteel = false;
+	public static boolean easyReforgedGold = false;
 
 	public static void readConfig() {
 		TheStuffExtension.log("Creating config...");
@@ -168,7 +170,8 @@ public class Config {
 		easyZinc = cfg.getBoolean("easyZinc", CATEGORY_RECIPES, easyZinc,
 				"On true, zinc will come directly from smelting sphalerite. Sphalerite blocks will now drop themselves.");
 		easySteel = cfg.getBoolean("easySteel", CATEGORY_RECIPES, easySteel, "On true, steel will be created by smelting in a furnace; on false, steel will be created in the alloy furnace by smelting one iron and one coal or charcoal.");
-		useOreDictionaryForTools = cfg.getBoolean("useOreDictionaryForTools", CATEGORY_RECIPES, useOreDictionaryForTools, "On true all recipes will use the oredictionary, this is useful when a mod defaults all types of materials to one mods version. WARNING this can some items to be impossible to make.");
+		easyReforgedGold = cfg.getBoolean("easyReforgedGold", CATEGORY_RECIPES, easyReforgedGold, "On true, reforged gold will be created by smelting in a furnace; on false, reforged gold will be created through the alloy furnace.");
+		useOreDictionaryForTools = cfg.getBoolean("useOreDictionaryForTools", CATEGORY_RECIPES, useOreDictionaryForTools, "On true all recipes will use the oredictionary, this is useful when a mod defaults all types of materials to one mods version. WARNING this can cause some items to be impossible to make.");
 
 	}
 }

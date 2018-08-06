@@ -45,6 +45,7 @@ public class Smelting {
 		if(Config.easySteel)
 		{
 			GameRegistry.addSmelting(Items.IRON_INGOT, new ItemStack(ItemManager.steelIngot), 0.1F);
+			GameRegistry.addSmelting(Item.getItemFromBlock(Blocks.IRON_BLOCK), new ItemStack(Item.getItemFromBlock(BlockManager.steelBlock)), 0.9F);
 		}
 		GameRegistry.addSmelting(Item.getItemFromBlock(Blocks.IRON_BLOCK), new ItemStack(Item.getItemFromBlock(BlockManager.steelBlock)), 0.9F);
 		
@@ -54,12 +55,16 @@ public class Smelting {
 		if(Config.easyZinc)
 			GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.sphaleriteOre), new ItemStack(ItemManager.zincIngot), 0.1F);
 		
-		GameRegistry.addSmelting(Items.GOLD_INGOT, new ItemStack(ItemManager.reforgedGoldIngot), 0.1F);
-		GameRegistry.addSmelting(Item.getItemFromBlock(Blocks.GOLD_BLOCK), new ItemStack(Item.getItemFromBlock(BlockManager.reforgedGoldBlock)), 0.1F);
+		if(Config.easyReforgedGold)
+		{
+			GameRegistry.addSmelting(Items.GOLD_INGOT, new ItemStack(ItemManager.reforgedGoldIngot), 0.1F);
+			GameRegistry.addSmelting(Item.getItemFromBlock(Blocks.GOLD_BLOCK), new ItemStack(Item.getItemFromBlock(BlockManager.reforgedGoldBlock)), 0.9F);
+		}
 		
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.whiteCobblestone), new ItemStack(Item.getItemFromBlock(BlockManager.whiteStone)), 0.1F);
 		
 		GameRegistry.addSmelting(ItemManager.destruction, new ItemStack(ItemManager.eterniumIngot), 2.0F);
+		GameRegistry.addSmelting(ItemManager.creation, new ItemStack(ItemManager.immortaliumIngot), 2.0F);
 		TheStuffExtension.log("Finished registering smelting.");
 	}	
 	/**All shaped and shapeless recipes moved into JSONs.*/

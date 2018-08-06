@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:nickel_mattock"
+  },
+  "pattern": [
+    "xxx",
+    " yx",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:nickel_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

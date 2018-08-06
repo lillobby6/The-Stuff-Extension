@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:nickel_shovel"
+  },
+  "pattern": [
+    "x",
+    "y",
+    "y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:nickel_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

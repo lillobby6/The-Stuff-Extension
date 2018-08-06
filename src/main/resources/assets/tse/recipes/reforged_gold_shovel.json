@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:reforged_gold_shovel"
+  },
+  "pattern": [
+    "x",
+    "y",
+    "y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:reforged_gold_ingot"
+    },
+    "y": {
+      "item": "tse:bronze_rod"
+    }
+  }
+}

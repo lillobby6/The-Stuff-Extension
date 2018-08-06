@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:fantasium_shovel"
+  },
+  "pattern": [
+    "x",
+    "y",
+    "y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:fantasium_ingot"
+    },
+    "y": {
+      "item": "tse:mysterious_stick"
+    }
+  }
+}

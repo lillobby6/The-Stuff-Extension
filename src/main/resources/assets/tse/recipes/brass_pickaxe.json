@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:brass_pickaxe"
+  },
+  "pattern": [
+    "xxx",
+    " y ",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:brass_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

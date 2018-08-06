@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:nickel_axe"
+  },
+  "pattern": [
+    "xx",
+    "xy",
+    " y"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:nickel_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

@@ -40,7 +40,8 @@ public class TSEToolMaterials {
 	public static final ToolMaterial TIN = EnumHelper.addToolMaterial("TIN", 1, 130, 2.0F, 0.5F, 20);
 	public static final ToolMaterial NICKEL = EnumHelper.addToolMaterial("NICKEL", 1, 200, 4.0F, 1.0F, 13);
 	public static final ToolMaterial PEWTER = EnumHelper.addToolMaterial("PEWTER", 3, 1000, 6.0F, 3.0F, 5);
-	public static final ToolMaterial ETERNIUM = EnumHelper.addToolMaterial("ETERNIUM", 10, 100000, 90.0F, 50.0F, 100);
+	public static final ToolMaterial ETERNIUM = EnumHelper.addToolMaterial("ETERNIUM", 10, 100000, 50.0F, 90.0F, 100);
+	public static final ToolMaterial IMMORTALIUM = EnumHelper.addToolMaterial("IMMORTALIUM", 10, 100000, 90.0F, 50.0F, 100);
 	public static final ToolMaterial REFORGEDGOLD = EnumHelper.addToolMaterial("REFORGEDGOLD", 2, 131, 10.0F, 2.0F, 20);
 	public static final ToolMaterial ZINC = EnumHelper.addToolMaterial("ZINC", 1, 250, 3.0F, 1.0F, 9);
 	public static final ToolMaterial BRASS = EnumHelper.addToolMaterial("BRASS", 2, 500, 3.0F, 1.5F, 15);

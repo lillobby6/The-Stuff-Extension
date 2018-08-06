@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:brass_mattock"
+  },
+  "pattern": [
+    "xxx",
+    " yx",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:brass_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

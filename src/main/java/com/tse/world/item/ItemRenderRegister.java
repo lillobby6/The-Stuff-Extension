@@ -168,6 +168,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.spangoldIngot);
 		reg(ItemManager.meteoricIronIngot);
 		reg(ItemManager.maduumIngot);
+		reg(ItemManager.immortaliumIngot);
 
 		reg(ItemManager.justice);
 		reg(ItemManager.corruption);
@@ -474,6 +475,49 @@ public class ItemRenderRegister {
 		reg(ItemManager.eterniumChestplate);
 		reg(ItemManager.eterniumLeggings);
 		reg(ItemManager.eterniumBoots);
+		
+		reg(ItemManager.reforgedGoldAxe);
+		reg(ItemManager.reforgedGoldHoe);
+		reg(ItemManager.reforgedGoldMattock);
+		reg(ItemManager.reforgedGoldPickaxe);
+		reg(ItemManager.reforgedGoldShovel);
+		reg(ItemManager.reforgedGoldSword);
+		
+		reg(ItemManager.zincAxe);
+		reg(ItemManager.zincHoe);
+		reg(ItemManager.zincMattock);
+		reg(ItemManager.zincPickaxe);
+		reg(ItemManager.zincShovel);
+		reg(ItemManager.zincSword);
+		
+		reg(ItemManager.brassAxe);
+		reg(ItemManager.brassHoe);
+		reg(ItemManager.brassMattock);
+		reg(ItemManager.brassPickaxe);
+		reg(ItemManager.brassShovel);
+		reg(ItemManager.brassSword);
+		
+		reg(ItemManager.leadAxe);
+		reg(ItemManager.leadHoe);
+		reg(ItemManager.leadMattock);
+		reg(ItemManager.leadPickaxe);
+		reg(ItemManager.leadShovel);
+		reg(ItemManager.leadSword);
+		
+		reg(ItemManager.nickelAxe);
+		reg(ItemManager.nickelHoe);
+		reg(ItemManager.nickelMattock);
+		reg(ItemManager.nickelPickaxe);
+		reg(ItemManager.nickelShovel);
+		reg(ItemManager.nickelSword);
+		
+		reg(ItemManager.fantasiumAxe);
+		reg(ItemManager.fantasiumHoe);
+		reg(ItemManager.fantasiumMattock);
+		reg(ItemManager.fantasiumPickaxe);
+		reg(ItemManager.fantasiumShovel);
+		reg(ItemManager.fantasiumSword);
+		
 		TheStuffExtension.log("Rendered items.");
 	}
 

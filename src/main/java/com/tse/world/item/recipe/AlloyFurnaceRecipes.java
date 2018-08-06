@@ -8,8 +8,10 @@ import com.tse.common.config.Config;
 import com.tse.common.core.TheStuffExtension;
 import com.tse.container.ContainerAlloyFurnace;
 import com.tse.tileentity.TileEntityAlloyFurnace;
+import com.tse.world.block.BlockManager;
 import com.tse.world.item.ItemManager;
 
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -41,11 +43,17 @@ public class AlloyFurnaceRecipes {
 		this.addSmeltingRecipe(ItemManager.brightflameIngot, ItemManager.platinumIngot, new ItemStack(ItemManager.laeniumIngot, 2), 0.1F);
 		this.addSmeltingRecipe(ItemManager.brightsteelIngot, ItemManager.platinumIngot, new ItemStack(ItemManager.laeniumIngot, 2), 0.1F);
 		this.addSmeltingRecipe(Items.IRON_INGOT, Items.GOLD_INGOT, new ItemStack(ItemManager.magneiumIngot, 2), 0.3F);
-		this.addSmeltingRecipe(ItemManager.eterniumIngot, ItemManager.extranetiumIngot, new ItemStack(ItemManager.maduumIngot, 2), 10.0F);
+		this.addSmeltingRecipe(ItemManager.eterniumIngot, ItemManager.immortaliumIngot, new ItemStack(ItemManager.maduumIngot, 2), 10.0F);
 		this.addSmeltingRecipe(ItemManager.maduumIngot, ItemManager.maduumIngot, new ItemStack(ItemManager.maduumIngot, 2), 0.0F);
 		if(!Config.easySteel)
 		{
-			this.addSmeltingRecipe(Items.COAL, Items.IRON_INGOT, new ItemStack(ItemManager.steelIngot), 0.2F);
+			this.addSmeltingRecipe(Items.COAL, Items.IRON_INGOT, new ItemStack(ItemManager.steelIngot), 0.1F);
+			this.addSmeltingRecipe(Item.getItemFromBlock(Blocks.COAL_BLOCK), Item.getItemFromBlock(Blocks.IRON_BLOCK), new ItemStack(Item.getItemFromBlock(BlockManager.steelBlock)), 0.9F);
+		}
+		if(!Config.easyReforgedGold)
+		{
+			this.addSmeltingRecipe(Items.COAL, Items.GOLD_INGOT, new ItemStack(ItemManager.reforgedGoldIngot), 0.1F);
+			this.addSmeltingRecipe(Item.getItemFromBlock(Blocks.COAL_BLOCK), Item.getItemFromBlock(Blocks.GOLD_BLOCK), new ItemStack(Item.getItemFromBlock(BlockManager.reforgedGoldBlock)), 0.9F);
 		}
 	}
 

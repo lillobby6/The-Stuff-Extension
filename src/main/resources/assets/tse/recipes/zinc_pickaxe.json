@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:zinc_pickaxe"
+  },
+  "pattern": [
+    "xxx",
+    " y ",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:zinc_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

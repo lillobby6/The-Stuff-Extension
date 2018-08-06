@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:lead_pickaxe"
+  },
+  "pattern": [
+    "xxx",
+    " y ",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:lead_ingot"
+    },
+    "y": {
+      "item": "tse:iron_rod"
+    }
+  }
+}
