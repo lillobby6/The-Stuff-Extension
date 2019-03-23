@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:magneium_sword"
+  },
+  "pattern": [
+    "x",
+    "x",
+    "y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:magneium_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

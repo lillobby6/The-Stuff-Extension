@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:sterling_silver_shovel"
+  },
+  "pattern": [
+    "x",
+    "y",
+    "y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:sterling_silver_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

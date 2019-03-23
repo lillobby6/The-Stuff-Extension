@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:meteoric_iron_sword"
+  },
+  "pattern": [
+    "x",
+    "x",
+    "y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:meteoric_iron_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:laenium_mattock"
+  },
+  "pattern": [
+    "xxx",
+    " yx",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:laenium_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

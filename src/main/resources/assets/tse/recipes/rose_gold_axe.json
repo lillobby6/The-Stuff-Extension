@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:rose_gold_axe"
+  },
+  "pattern": [
+    "xx",
+    "xy",
+    " y"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:rose_gold_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

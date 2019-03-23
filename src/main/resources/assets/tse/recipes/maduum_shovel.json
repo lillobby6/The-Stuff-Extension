@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:meteoric_iron_shovel"
+  },
+  "pattern": [
+    "x",
+    "y",
+    "y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:maduum_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:white_gold_hoe"
+  },
+  "pattern": [
+    "xx",
+    " y",
+    " y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:white_gold_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

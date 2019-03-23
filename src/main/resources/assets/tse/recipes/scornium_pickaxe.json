@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:scornium_pickaxe"
+  },
+  "pattern": [
+    "xxx",
+    " y ",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:scornium_ingot"
+    },
+    "y": {
+      "item": "tse:aluminum_rod"
+    }
+  }
+}

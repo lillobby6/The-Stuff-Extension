@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:electrum_shovel"
+  },
+  "pattern": [
+    "x",
+    "y",
+    "y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:electrum_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

@@ -34,6 +34,8 @@ public class ItemRenderRegister {
 		reg(ItemManager.roseGoldStick);
 		reg(ItemManager.whiteGoldStick);
 		reg(ItemManager.spangoldStick);
+		reg(ItemManager.maduumStick);
+		reg(ItemManager.immortaliumStick);
 		
 		reg(ItemManager.ironRod);
 		reg(ItemManager.steelRod);
@@ -368,6 +370,8 @@ public class ItemRenderRegister {
 		reg(ItemManager.whiteGoldNugget);
 		reg(ItemManager.spangoldNugget);
 		reg(ItemManager.meteoricIronNugget);
+		reg(ItemManager.maduumNugget);
+		reg(ItemManager.immortaliumNugget);
 		
 		reg(ItemManager.meteoricIronShard);
 
@@ -518,12 +522,87 @@ public class ItemRenderRegister {
 		reg(ItemManager.fantasiumShovel);
 		reg(ItemManager.fantasiumSword);
 		
+		reg(ItemManager.scorniumAxe);
+		reg(ItemManager.scorniumHoe);
+		reg(ItemManager.scorniumMattock);
+		reg(ItemManager.scorniumPickaxe);
+		reg(ItemManager.scorniumShovel);
+		reg(ItemManager.scorniumSword);
+		
+		reg(ItemManager.electrumAxe);
+		reg(ItemManager.electrumHoe);
+		reg(ItemManager.electrumMattock);
+		reg(ItemManager.electrumPickaxe);
+		reg(ItemManager.electrumShovel);
+		reg(ItemManager.electrumSword);
+		
+		reg(ItemManager.laeniumAxe);
+		reg(ItemManager.laeniumHoe);
+		reg(ItemManager.laeniumMattock);
+		reg(ItemManager.laeniumPickaxe);
+		reg(ItemManager.laeniumShovel);
+		reg(ItemManager.laeniumSword);
+		
+		reg(ItemManager.magneiumAxe);
+		reg(ItemManager.magneiumHoe);
+		reg(ItemManager.magneiumMattock);
+		reg(ItemManager.magneiumPickaxe);
+		reg(ItemManager.magneiumShovel);
+		reg(ItemManager.magneiumSword);
+		
+		reg(ItemManager.sterlingSilverAxe);
+		reg(ItemManager.sterlingSilverHoe);
+		reg(ItemManager.sterlingSilverMattock);
+		reg(ItemManager.sterlingSilverPickaxe);
+		reg(ItemManager.sterlingSilverShovel);
+		reg(ItemManager.sterlingSilverSword);
+		
+		reg(ItemManager.roseGoldAxe);
+		reg(ItemManager.roseGoldHoe);
+		reg(ItemManager.roseGoldMattock);
+		reg(ItemManager.roseGoldPickaxe);
+		reg(ItemManager.roseGoldShovel);
+		reg(ItemManager.roseGoldSword);
+		
+		reg(ItemManager.whiteGoldAxe);
+		reg(ItemManager.whiteGoldHoe);
+		reg(ItemManager.whiteGoldMattock);
+		reg(ItemManager.whiteGoldPickaxe);
+		reg(ItemManager.whiteGoldShovel);
+		reg(ItemManager.whiteGoldSword);
+		
+		reg(ItemManager.spangoldAxe);
+		reg(ItemManager.spangoldHoe);
+		reg(ItemManager.spangoldMattock);
+		reg(ItemManager.spangoldPickaxe);
+		reg(ItemManager.spangoldShovel);
+		reg(ItemManager.spangoldSword);
+		
+		reg(ItemManager.meteoricIronAxe);
+		reg(ItemManager.meteoricIronHoe);
+		reg(ItemManager.meteoricIronMattock);
+		reg(ItemManager.meteoricIronPickaxe);
+		reg(ItemManager.meteoricIronShovel);
+		reg(ItemManager.meteoricIronSword);
+		
+		reg(ItemManager.maduumAxe);
+		reg(ItemManager.maduumHoe);
+		reg(ItemManager.maduumMattock);
+		reg(ItemManager.maduumPickaxe);
+		reg(ItemManager.maduumShovel);
+		reg(ItemManager.maduumSword);
+		
+		reg(ItemManager.immortaliumAxe);
+		reg(ItemManager.immortaliumHoe);
+		reg(ItemManager.immortaliumMattock);
+		reg(ItemManager.immortaliumPickaxe);
+		reg(ItemManager.immortaliumShovel);
+		reg(ItemManager.immortaliumSword);
+		
 		TheStuffExtension.log("Rendered items.");
 	}
 
 	public static void reg(Item item) {
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0,
-				new net.minecraft.client.renderer.block.model.ModelResourceLocation(
-						StringsLib.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new net.minecraft.client.renderer.block.model.ModelResourceLocation(StringsLib.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
 	}
 }

@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:meteoric_iron_hoe"
+  },
+  "pattern": [
+    "xx",
+    " y",
+    " y" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:immortalium_ingot"
+    },
+    "y": {
+      "item": "tse:mysterious_stick"
+    }
+  }
+}

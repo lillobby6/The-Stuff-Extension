@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:spangold_pickaxe"
+  },
+  "pattern": [
+    "xxx",
+    " y ",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:spangold_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

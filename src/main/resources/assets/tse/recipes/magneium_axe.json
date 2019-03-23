@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:magneium_axe"
+  },
+  "pattern": [
+    "xx",
+    "xy",
+    " y"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:magneium_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

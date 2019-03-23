@@ -493,25 +493,21 @@ public class ItemManager {
 
 	// Start Armor
 
-	// Copper
 	public static Item copperHelmet = registerArmor("copper_helmet", TSEArmorMaterials.COPPER, 1,EntityEquipmentSlot.HEAD);
 	public static Item copperChestplate = registerArmor("copper_chestplate", TSEArmorMaterials.COPPER, 1,EntityEquipmentSlot.CHEST);
 	public static Item copperLeggings = registerArmor("copper_leggings", TSEArmorMaterials.COPPER, 1,EntityEquipmentSlot.LEGS);
 	public static Item copperBoots = registerArmor("copper_boots", TSEArmorMaterials.COPPER, 1,EntityEquipmentSlot.FEET);
-	// Copper
 
 	public static Item bronzeHelmet = registerArmor("bronze_helmet", TSEArmorMaterials.BRONZE, 1,EntityEquipmentSlot.HEAD);
 	public static Item bronzeChestplate = registerArmor("bronze_chestplate", TSEArmorMaterials.BRONZE, 1,EntityEquipmentSlot.CHEST);
 	public static Item bronzeLeggings = registerArmor("bronze_leggings", TSEArmorMaterials.BRONZE, 1,EntityEquipmentSlot.LEGS);
 	public static Item bronzeBoots = registerArmor("bronze_boots", TSEArmorMaterials.BRONZE, 1,EntityEquipmentSlot.FEET);
 
-	// Terra Diamond
 	public static Item terraDiamondHelmet = registerArmor("terra_diamond_helmet", TSEArmorMaterials.TERRADIAMOND, 1, EntityEquipmentSlot.HEAD);
 	public static Item terraDiamondChestplate = registerArmor("terra_diamond_chestplate",TSEArmorMaterials.TERRADIAMOND, 1, EntityEquipmentSlot.CHEST);
 	public static Item terraDiamondLeggings = registerArmor("terra_diamond_leggings", TSEArmorMaterials.TERRADIAMOND, 1, EntityEquipmentSlot.LEGS);
 	public static Item terraDiamondBoots = registerArmor("terra_diamond_boots", TSEArmorMaterials.TERRADIAMOND, 1 ,EntityEquipmentSlot.FEET);
-	// Terra Diamond
-
+	
 	public static Item brightflameHelmet = registerArmor("brightflame_helmet", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.HEAD);
 	public static Item brightflameChestplate = registerArmor("brightflame_chestplate", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.CHEST);
 	public static Item brightflameLeggings = registerArmor("brightflame_leggings", TSEArmorMaterials.BRIGHTFLAME, 1, EntityEquipmentSlot.LEGS);
@@ -607,26 +603,111 @@ public class ItemManager {
 	public static Item platinumLeggings = registerArmor("platinum_leggings", TSEArmorMaterials.PLATINUM, 1, EntityEquipmentSlot.LEGS);
 	public static Item platinumBoots = registerArmor("platinum_boots", TSEArmorMaterials.PLATINUM, 1, EntityEquipmentSlot.FEET);
 
+	public static Item reforgedGoldHelmet = registerArmor("reforged_gold_helmet", TSEArmorMaterials.REFORGEDGOLD, 1, EntityEquipmentSlot.HEAD);
+	public static Item reforgedGoldChestplate = registerArmor("reforged_gold_chestplate", TSEArmorMaterials.REFORGEDGOLD, 1, EntityEquipmentSlot.CHEST);
+	public static Item reforgedGoldLeggings = registerArmor("reforged_gold_leggings", TSEArmorMaterials.REFORGEDGOLD, 1, EntityEquipmentSlot.LEGS);
+	public static Item reforgedGoldBoots = registerArmor("reforged_gold_boots", TSEArmorMaterials.REFORGEDGOLD, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item zincHelmet = registerArmor("zinc_helmet", TSEArmorMaterials.ZINC, 1, EntityEquipmentSlot.HEAD);
+	public static Item zincChestplate = registerArmor("zinc_chestplate", TSEArmorMaterials.ZINC, 1, EntityEquipmentSlot.CHEST);
+	public static Item zincLeggings = registerArmor("zinc_leggings", TSEArmorMaterials.ZINC, 1, EntityEquipmentSlot.LEGS);
+	public static Item zincBoots = registerArmor("zinc_boots", TSEArmorMaterials.ZINC, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item brassHelmet = registerArmor("brass_helmet", TSEArmorMaterials.BRASS, 1, EntityEquipmentSlot.HEAD);
+	public static Item brassChestplate = registerArmor("brass_chestplate", TSEArmorMaterials.BRASS, 1, EntityEquipmentSlot.CHEST);
+	public static Item brassLeggings = registerArmor("brass_leggings", TSEArmorMaterials.BRASS, 1, EntityEquipmentSlot.LEGS);
+	public static Item brassBoots = registerArmor("brass_boots", TSEArmorMaterials.BRASS, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item leadHelmet = registerArmor("lead_helmet", TSEArmorMaterials.LEAD, 1, EntityEquipmentSlot.HEAD);
+	public static Item leadChestplate = registerArmor("lead_chestplate", TSEArmorMaterials.LEAD, 1, EntityEquipmentSlot.CHEST);
+	public static Item leadLeggings = registerArmor("lead_leggings", TSEArmorMaterials.LEAD, 1, EntityEquipmentSlot.LEGS);
+	public static Item leadBoots = registerArmor("lead_boots", TSEArmorMaterials.LEAD, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item nickelHelmet = registerArmor("nickel_helmet", TSEArmorMaterials.NICKEL, 1, EntityEquipmentSlot.HEAD);
+	public static Item nickelChestplate = registerArmor("nickel_chesplate", TSEArmorMaterials.NICKEL, 1, EntityEquipmentSlot.CHEST);
+	public static Item nickelLeggings = registerArmor("nickel_leggings", TSEArmorMaterials.NICKEL, 1, EntityEquipmentSlot.LEGS);
+	public static Item nickelBoots = registerArmor("nickel_boots", TSEArmorMaterials.NICKEL, 1, EntityEquipmentSlot.FEET);
+	
 	public static Item pewterHelmet = registerArmor("pewter_helmet", TSEArmorMaterials.PEWTER, 1, EntityEquipmentSlot.HEAD);
 	public static Item pewterChestplate = registerArmor("pewter_chestplate", TSEArmorMaterials.PEWTER, 1, EntityEquipmentSlot.CHEST);
 	public static Item pewterLeggings = registerArmor("pewter_leggings", TSEArmorMaterials.PEWTER, 1, EntityEquipmentSlot.LEGS);
 	public static Item pewterBoots = registerArmor("pewter_boots", TSEArmorMaterials.PEWTER, 1, EntityEquipmentSlot.FEET);
-
-	public static Item mnemiumHelmet = registerArmor("mnemium_helmet", TSEArmorMaterials.MNEMIUM, 1, EntityEquipmentSlot.HEAD);
-	public static Item mnemiumChestplate = registerArmor("mnemium_chestplate", TSEArmorMaterials.MNEMIUM, 1, EntityEquipmentSlot.CHEST);
-	public static Item mnemiumLeggings = registerArmor("mnemium_leggings", TSEArmorMaterials.MNEMIUM, 1, EntityEquipmentSlot.LEGS);
-	public static Item mnemiumBoots = registerArmor("mnemium_boots", TSEArmorMaterials.MNEMIUM, 1, EntityEquipmentSlot.FEET);
 
 	public static Item aluminumHelmet = registerArmor("aluminum_helmet", TSEArmorMaterials.ALUMINUM, 1, EntityEquipmentSlot.HEAD);
 	public static Item aluminumChestplate = registerArmor("aluminum_chestplate", TSEArmorMaterials.ALUMINUM, 1, EntityEquipmentSlot.CHEST);
 	public static Item aluminumLeggings = registerArmor("aluminum_leggings", TSEArmorMaterials.ALUMINUM, 1, EntityEquipmentSlot.LEGS);
 	public static Item aluminumBoots = registerArmor("aluminum_boots", TSEArmorMaterials.ALUMINUM, 1, EntityEquipmentSlot.FEET);
 
+	public static Item mnemiumHelmet = registerArmor("mnemium_helmet", TSEArmorMaterials.MNEMIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item mnemiumChestplate = registerArmor("mnemium_chestplate", TSEArmorMaterials.MNEMIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item mnemiumLeggings = registerArmor("mnemium_leggings", TSEArmorMaterials.MNEMIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item mnemiumBoots = registerArmor("mnemium_boots", TSEArmorMaterials.MNEMIUM, 1, EntityEquipmentSlot.FEET);
+	
 	public static Item eterniumHelmet = registerArmor("eternium_helmet", TSEArmorMaterials.ETERNIUM, 1, EntityEquipmentSlot.HEAD);
 	public static Item eterniumChestplate = registerArmor("eternium_chestplate", TSEArmorMaterials.ETERNIUM, 1, EntityEquipmentSlot.CHEST);
 	public static Item eterniumLeggings = registerArmor("eternium_leggings", TSEArmorMaterials.ETERNIUM, 1, EntityEquipmentSlot.LEGS);
 	public static Item eterniumBoots = registerArmor("eternium_boots", TSEArmorMaterials.ETERNIUM, 1, EntityEquipmentSlot.FEET);
 
+	public static Item fantasiumHelmet = registerArmor("fantasium_helmet", TSEArmorMaterials.FANTASIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item fantasiumChestplate = registerArmor("fantasium_chestplate", TSEArmorMaterials.FANTASIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item fantasiumLeggings = registerArmor("fantasium_leggings", TSEArmorMaterials.FANTASIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item fantasiumBoots = registerArmor("fantasium_boots", TSEArmorMaterials.FANTASIUM, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item scorniumHelmet = registerArmor("scornium_helmet", TSEArmorMaterials.SCORNIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item scorniumChestplate = registerArmor("scornium_chestplate", TSEArmorMaterials.SCORNIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item scorniumLeggings = registerArmor("scornium_leggings", TSEArmorMaterials.SCORNIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item scorniumBoots = registerArmor("scornium_boots", TSEArmorMaterials.SCORNIUM, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item electrumHelmet = registerArmor("electrum_helmet", TSEArmorMaterials.ELECTRUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item electrumChestplate = registerArmor("electrum_chestplate", TSEArmorMaterials.ELECTRUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item electrumLeggings = registerArmor("electrum_leggings", TSEArmorMaterials.ELECTRUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item electrumBoots = registerArmor("electrum_boots", TSEArmorMaterials.ELECTRUM, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item laeniumHelmet = registerArmor("laenium_helmet", TSEArmorMaterials.LAENIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item laeniumChestplate = registerArmor("laenium_chestplate", TSEArmorMaterials.LAENIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item laeniumLeggings = registerArmor("laenium_leggings", TSEArmorMaterials.LAENIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item laeniumBoots = registerArmor("laenium_boots", TSEArmorMaterials.LAENIUM, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item magneiumHelmet = registerArmor("magneium_helmet", TSEArmorMaterials.MAGNEIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item magneiumChestplate = registerArmor("magneium_chestplate", TSEArmorMaterials.MAGNEIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item magneiumLeggings = registerArmor("magneium_leggings", TSEArmorMaterials.MAGNEIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item magneiumBoots = registerArmor("magneium_boots", TSEArmorMaterials.MAGNEIUM, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item sterlingSilverHelmet = registerArmor("sterling_silver_helmet", TSEArmorMaterials.STSILVER, 1, EntityEquipmentSlot.HEAD);
+	public static Item sterlingSilverChestplate = registerArmor("sterling_silver_chestplate", TSEArmorMaterials.STSILVER, 1, EntityEquipmentSlot.CHEST);
+	public static Item sterlingSilverLeggings = registerArmor("sterling_silver_leggings", TSEArmorMaterials.STSILVER, 1, EntityEquipmentSlot.LEGS);
+	public static Item sterlingSilverBoots = registerArmor("sterling_silver_boots", TSEArmorMaterials.STSILVER, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item roseGoldHelmet = registerArmor("rose_gold_helmet", ArmorMaterial.GOLD, 1, EntityEquipmentSlot.HEAD);
+	public static Item roseGoldChestplate = registerArmor("rose_gold_chestplate", ArmorMaterial.GOLD, 1, EntityEquipmentSlot.CHEST);
+	public static Item roseGoldLeggings = registerArmor("rose_gold_leggings", ArmorMaterial.GOLD, 1, EntityEquipmentSlot.LEGS);
+	public static Item roseGoldBoots = registerArmor("rose_gold_boots", ArmorMaterial.GOLD, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item whiteGoldHelmet = registerArmor("white_gold_helmet", ArmorMaterial.GOLD, 1, EntityEquipmentSlot.HEAD);
+	public static Item whiteGoldChestplate = registerArmor("white_gold_chestplate", ArmorMaterial.GOLD, 1, EntityEquipmentSlot.CHEST);
+	public static Item whiteGoldLeggings = registerArmor("white_gold_leggings", ArmorMaterial.GOLD, 1, EntityEquipmentSlot.FEET);
+	public static Item whiteGoldBoots = registerArmor("white_gold_boots", ArmorMaterial.GOLD, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item spangoldHelmet = registerArmor("spangold_helmet", ArmorMaterial.GOLD, 1, EntityEquipmentSlot.HEAD);
+	public static Item spangoldChestplate = registerArmor("spangold_chestplate", ArmorMaterial.GOLD, 1, EntityEquipmentSlot.CHEST);
+	public static Item spangoldLeggings = registerArmor("spangold_leggings", ArmorMaterial.GOLD, 1, EntityEquipmentSlot.LEGS);
+	public static Item spangoldBoots = registerArmor("spangold_boots", ArmorMaterial.GOLD, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item meteoricIronHelmet = registerArmor("meteoric_iron_helmet", TSEArmorMaterials.METEORICIRON, 1, EntityEquipmentSlot.HEAD);
+	public static Item meteoricIronChestplate = registerArmor("meteoric_iron_chestplate", TSEArmorMaterials.METEORICIRON, 1, EntityEquipmentSlot.CHEST);
+	public static Item meteoricIronLeggings = registerArmor("meteoric_iron_leggings", TSEArmorMaterials.METEORICIRON, 1, EntityEquipmentSlot.LEGS);
+	public static Item meteoricIronBoots = registerArmor("meteoric_iron_boots", TSEArmorMaterials.METEORICIRON, 1, EntityEquipmentSlot.FEET);	
+	
+	public static Item maduumHelmet = registerArmor("maduum_helmet", TSEArmorMaterials.MADUUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item maduumChestplate = registerArmor("maduum_chestplate", TSEArmorMaterials.MADUUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item maduumLeggings = registerArmor("maduum_leggings", TSEArmorMaterials.MADUUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item maduumBoots = registerArmor("maduum_boots", TSEArmorMaterials.MADUUM, 1, EntityEquipmentSlot.FEET);
+	
+	public static Item immortaliumHelmet = registerArmor("immortalium_helmet", TSEArmorMaterials.IMMORTALIUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item immortaliumChestplate = registerArmor("immortalium_chestplate", TSEArmorMaterials.IMMORTALIUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item immortaliumLeggings = registerArmor("immortalium_leggings", TSEArmorMaterials.IMMORTALIUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item immortaliumBoots = registerArmor("immortalium_boots", TSEArmorMaterials.IMMORTALIUM, 1, EntityEquipmentSlot.FEET);
+	
 	private static void registerItem(Item item, String registryName) {
 		item.setRegistryName(StringsLib.MODID, registryName);
 		item.setUnlocalizedName(registryName);
@@ -785,6 +866,7 @@ public class ItemManager {
 				bronzeHelmet, bronzeChestplate, bronzeLeggings, bronzeBoots,
 				brightflameHelmet, brightflameChestplate, brightflameLeggings, brightflameBoots,
 				brightsteelHelmet, brightsteelChestplate, brightsteelLeggings, brightsteelBoots,
+				reforgedGoldHelmet, reforgedGoldChestplate, reforgedGoldLeggings, reforgedGoldBoots,
 				magicHelmet, magicChestplate, magicLeggings, magicBoots,
 				mithrilHelmet, mithrilChestplate, mithrilLeggings, mithrilBoots,
 				mortiumHelmet, mortiumChestplate, mortiumLeggings, mortiumBoots,
@@ -796,11 +878,26 @@ public class ItemManager {
 				silverHelmet, silverChestplate, silverLeggings, silverBoots,
 				platinumHelmet, platinumChestplate, platinumLeggings, platinumBoots,
 				titaniumHelmet, titaniumChestplate, titaniumLeggings, titaniumBoots,
+				zincHelmet, zincChestplate, zincLeggings, zincBoots,
+				brassHelmet, brassChestplate, brassLeggings, brassBoots,
 				pewterHelmet, pewterChestplate, pewterLeggings, pewterBoots,
+				leadHelmet, leadChestplate, leadLeggings, leadBoots,
+				nickelHelmet, nickelChestplate, nickelLeggings, nickelBoots,
 				aluminumHelmet, aluminumChestplate, aluminumLeggings, aluminumBoots,
 				mnemiumHelmet, mnemiumChestplate, mnemiumLeggings, mnemiumBoots,
 				eterniumHelmet, eterniumChestplate, eterniumLeggings, eterniumBoots,
-
+				fantasiumHelmet, fantasiumChestplate, fantasiumLeggings, fantasiumBoots,
+				electrumHelmet, electrumChestplate, electrumLeggings, electrumBoots,
+				laeniumHelmet, laeniumChestplate, laeniumLeggings, laeniumBoots,
+				magneiumHelmet, magneiumChestplate, magneiumLeggings, magneiumBoots,
+				sterlingSilverHelmet, sterlingSilverChestplate, sterlingSilverLeggings, sterlingSilverBoots,
+				roseGoldHelmet, roseGoldChestplate, roseGoldLeggings, roseGoldBoots,
+				whiteGoldHelmet, whiteGoldChestplate, whiteGoldLeggings, whiteGoldBoots,
+				spangoldHelmet, spangoldChestplate, spangoldLeggings, spangoldBoots,
+				meteoricIronHelmet, meteoricIronChestplate, meteoricIronLeggings, meteoricIronBoots,
+				maduumHelmet, maduumChestplate, maduumLeggings, maduumBoots,
+				immortaliumHelmet, immortaliumChestplate, immortaliumLeggings, immortaliumBoots,
+				
 				exaltedDiamondHelmet, exaltedDiamondChestplate, exaltedDiamondLeggings, exaltedDiamondBoots,
 				bloodDiamondHelmet, bloodDiamondChestplate, bloodDiamondLeggings, bloodDiamondBoots,
 				terraDiamondHelmet, terraDiamondChestplate, terraDiamondLeggings, terraDiamondBoots

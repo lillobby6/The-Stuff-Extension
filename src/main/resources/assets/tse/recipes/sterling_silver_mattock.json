@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:sterling_silver_mattock"
+  },
+  "pattern": [
+    "xxx",
+    " yx",
+    " y " 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:sterling_silver_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

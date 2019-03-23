@@ -20,6 +20,7 @@ public class BlockManager {
 	public static Block exaltedDiamondOre = registerOre("exalted_diamond_ore", Material.ROCK, 2, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
 	public static Block bloodDiamondOre = registerOre("blood_diamond_ore", Material.ROCK, 2, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
 	public static Block terraDiamondOre = registerOre("terra_diamond_ore", Material.ROCK, 2, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
+	
 	public static Block copperOre = registerOre("copper_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
 	public static Block mortiumOre = registerOre("mortium_ore", Material.ROCK, 3, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
 	public static Block tinOre = registerOre("tin_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
@@ -37,19 +38,19 @@ public class BlockManager {
 	
 	public static Block meteor = registerOre("meteor", Material.ROCK, 1, "pickaxe", 3.0F, 50.0F, TSECreativeTabs.tabOres);
 			
+	//TODO Moon stuff
 	public static Block moonStone = registerBlockNormal("moon_stone", 3.0F, 3.0F);
 	public static Block moonSand = registerBlockWithSound("moon_sand", 2.0F, 2.0F, SoundType.SAND);
 	public static Block moonTeleporter = registerBlockNormal("moon_teleporter", 3.0F, 3.0F);
 	
 	//TODO Create converter - converts equivalent TSE materials for other TSE materials - Vividium for mortium, brightsteel for brightflame, etc.
 
-	/*
-	 * public static Block mysticStone = registerBlockNormal("mystic_stone", 3.0F,
-	 * 3.0F); public static Block mysticDirt = registerBlockNormal("mystic_dirt",
-	 * 1.0F, 1.0F); public static Block mysticLog =
-	 * registerBlockNormal("mystic_log", 2.0F, 2.0F); public static Block
-	 * mysticPlanks = registerBlockNormal("mystic_planks", 2.0F, 2.0F);
-	 */
+	
+	public static Block mysticStone = registerBlockNormal("mystic_stone", 3.0F,3.0F);
+	public static Block mysticDirt = registerBlockNormal("mystic_dirt",1.0F, 1.0F); 
+	public static Block mysticLog = registerBlockNormal("mystic_log", 2.0F, 2.0F);
+	public static Block mysticPlanks = registerBlockNormal("mystic_planks", 2.0F, 2.0F);
+	 
 
 	public static Block lunaDiamondOre = registerOre("luna_diamond_ore", Material.ROCK, 3, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
 	public static Block moonIronOre = registerOre("moon_iron_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
@@ -97,6 +98,8 @@ public class BlockManager {
 	public static Block whiteGoldBlock = registerBlockNormal("white_gold_block", 3.0F, 3.0F);
 	public static Block spangoldBlock = registerBlockNormal("spangold_block", 3.0F, 3.0F);
 	public static Block meteoricIronBlock = registerBlockNormal("meteoric_iron_block", 3.0F, 3.0F);
+	public static Block maduumBlock = registerBlockNormal("maduum_block", 10.0F, 100.0F);
+	public static Block immortaliumBlock = registerBlockNormal("immortalium_block", 10.0F, 100.0F);
 	
 	public static Block storeBox = registerStoreBox("store_box");
 	public static Block mysteriousBox = registerMBox("mysterious_box");
@@ -162,6 +165,9 @@ public class BlockManager {
 	public static Item moonSandItem = new ItemBlock(moonSand).setRegistryName("moon_sand").setUnlocalizedName("moon_sand");
 	public static Item moonTeleporterItem = new ItemBlock(moonTeleporter).setRegistryName("moon_teleporter").setUnlocalizedName("moon_teleporter");
 
+	public static Item mysticStoneItem = new ItemBlock(mysticStone);
+	public static Item mysticDirtItem = new ItemBlock(mysticDirt);
+	
 	public static Item lunaDiamondOreItem = new ItemBlock(lunaDiamondOre).setRegistryName("luna_diamond_ore").setUnlocalizedName("luna_diamond_ore");
 	public static Item moonIronOreItem = new ItemBlock(moonIronOre).setRegistryName("moon_iron_ore").setUnlocalizedName("moon_diamond_ore");
 
@@ -208,6 +214,8 @@ public class BlockManager {
 	public static Item whiteGoldBlockItem = new ItemBlock(whiteGoldBlock).setRegistryName("white_gold_block").setUnlocalizedName("white_gold_block");
 	public static Item spangoldBlockItem = new ItemBlock(spangoldBlock).setRegistryName("spangold_block").setUnlocalizedName("spangold_block");
 	public static Item meteoricIronBlockItem = new ItemBlock(meteoricIronBlock).setRegistryName("meteoric_iron_block").setUnlocalizedName("meteoric_iron_block");
+	public static Item maduumBlockItem = new ItemBlock(maduumBlock).setRegistryName("maduum_block").setUnlocalizedName("maduum_block");
+	public static Item immortaliumBlockItem = new ItemBlock(immortaliumBlock).setRegistryName("immortalium_block").setUnlocalizedName("immortalium_block");
 	
 	public static Item storeBoxItem = new ItemBlock(storeBox).setRegistryName("store_box").setUnlocalizedName("store_box");
 	public static Item superStoreBoxItem = new ItemBlock(superStoreBox).setRegistryName("super_store_box").setUnlocalizedName("super_store_box");
@@ -323,8 +331,7 @@ public class BlockManager {
 		final Block copperAalloyFurnace = new CopperAlloyFurnace(active);
 		if(identifier == "regular")
 		{
-			if(inTab)
-				aalloyFurnace.setCreativeTab(TSECreativeTabs.tabMachines);
+			if(inTab) aalloyFurnace.setCreativeTab(TSECreativeTabs.tabMachines);
 			aalloyFurnace.setHardness(5.0F);
 			aalloyFurnace.setResistance(5.0F);
 			aalloyFurnace.setHarvestLevel("pickaxe", 1);
@@ -333,8 +340,7 @@ public class BlockManager {
 		}
 		else if(identifier == "copper")
 		{
-			if(inTab)
-				copperAalloyFurnace.setCreativeTab(TSECreativeTabs.tabMachines);
+			if(inTab) copperAalloyFurnace.setCreativeTab(TSECreativeTabs.tabMachines);
 			copperAalloyFurnace.setHardness(5.0F);
 			copperAalloyFurnace.setResistance(5.0F);
 			copperAalloyFurnace.setHarvestLevel("pickaxe", 1);
@@ -370,11 +376,11 @@ public class BlockManager {
 				
 				meteor,
 
-				moonStone, moonSand, moonTeleporter,
+				/*moonStone, moonSand, moonTeleporter,*/
 
 				lunaDiamondOre, moonIronOre,
 
-				copperBlock, steelBlock, tinBlock, tyionetiumBlock, bronzeBlock, brightflameBlock, brightsteelBlock, reforgedGoldBlock, magicBlock, mithrilBlock, mortiumBlock, mysteriousBlock, mysticBlock, skyIronBlock, terriumBlock, toslotriumBlock, vividiumBlock, extranetiumBlock, silverBlock, platinumBlock, titaniumBlock, zincBlock, brassBlock, leadBlock, nickelBlock, pewterBlock, aluminumBlock, mnemiumBlock, eterniumBlock, fantasiumBlock, scorniumBlock, electrumBlock, laeniumBlock, magneiumBlock, sterlingSilverBlock, roseGoldBlock, whiteGoldBlock, spangoldBlock, meteoricIronBlock,
+				copperBlock, steelBlock, tinBlock, tyionetiumBlock, bronzeBlock, brightflameBlock, brightsteelBlock, reforgedGoldBlock, magicBlock, mithrilBlock, mortiumBlock, mysteriousBlock, mysticBlock, skyIronBlock, terriumBlock, toslotriumBlock, vividiumBlock, extranetiumBlock, silverBlock, platinumBlock, titaniumBlock, zincBlock, brassBlock, leadBlock, nickelBlock, pewterBlock, aluminumBlock, mnemiumBlock, eterniumBlock, fantasiumBlock, scorniumBlock, electrumBlock, laeniumBlock, magneiumBlock, sterlingSilverBlock, roseGoldBlock, whiteGoldBlock, spangoldBlock, meteoricIronBlock, maduumBlock, immortaliumBlock,
 				
 				exaltedDiamondBlock, bloodDiamondBlock, terraDiamondBlock, 
 				
@@ -408,11 +414,11 @@ public class BlockManager {
 				
 				meteorItem,
 
-				moonStoneItem, moonSandItem, moonTeleporterItem,
+				/*moonStoneItem, moonSandItem, moonTeleporterItem,*/
 
 				lunaDiamondOreItem, moonIronOreItem,
 
-				copperBlockItem, steelBlockItem, tinBlockItem, tyionetiumBlockItem, bronzeBlockItem, brightflameBlockItem, brightsteelBlockItem, reforgedGoldBlockItem, magicBlockItem, mithrilBlockItem, mortiumBlockItem, mysteriousBlockItem, mysticBlockItem, skyIronBlockItem, terriumBlockItem, toslotriumBlockItem, vividiumBlockItem, extranetiumBlockItem, silverBlockItem, platinumBlockItem, titaniumBlockItem, zincBlockItem, brassBlockItem, leadBlockItem, nickelBlockItem, pewterBlockItem, aluminumBlockItem, mnemiumBlockItem, eterniumBlockItem, fantasiumBlockItem, scorniumBlockItem, electrumBlockItem, laeniumBlockItem, magneiumBlockItem, sterlingSilverBlockItem, roseGoldBlockItem, whiteGoldBlockItem, spangoldBlockItem, meteoricIronBlockItem,
+				copperBlockItem, steelBlockItem, tinBlockItem, tyionetiumBlockItem, bronzeBlockItem, brightflameBlockItem, brightsteelBlockItem, reforgedGoldBlockItem, magicBlockItem, mithrilBlockItem, mortiumBlockItem, mysteriousBlockItem, mysticBlockItem, skyIronBlockItem, terriumBlockItem, toslotriumBlockItem, vividiumBlockItem, extranetiumBlockItem, silverBlockItem, platinumBlockItem, titaniumBlockItem, zincBlockItem, brassBlockItem, leadBlockItem, nickelBlockItem, pewterBlockItem, aluminumBlockItem, mnemiumBlockItem, eterniumBlockItem, fantasiumBlockItem, scorniumBlockItem, electrumBlockItem, laeniumBlockItem, magneiumBlockItem, sterlingSilverBlockItem, roseGoldBlockItem, whiteGoldBlockItem, spangoldBlockItem, meteoricIronBlockItem, maduumBlockItem, immortaliumBlockItem,
 	
 				exaltedDiamondBlockItem, bloodDiamondBlockItem, terraDiamondBlockItem, 
 				
