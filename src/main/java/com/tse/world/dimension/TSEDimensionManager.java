@@ -2,7 +2,7 @@ package com.tse.world.dimension;
 
 import net.minecraft.world.DimensionType;
 
-public class TSEDimensionManager {
+public class TSEDimensionManager{
 	public TSEDimensionManager()
 	{
 		registerDimensions();

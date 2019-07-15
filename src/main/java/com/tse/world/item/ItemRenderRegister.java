@@ -480,6 +480,86 @@ public class ItemRenderRegister {
 		reg(ItemManager.eterniumLeggings);
 		reg(ItemManager.eterniumBoots);
 		
+		reg(ItemManager.reforgedGoldHelmet);
+		reg(ItemManager.reforgedGoldChestplate);
+		reg(ItemManager.reforgedGoldLeggings);
+		reg(ItemManager.reforgedGoldBoots);
+		
+		reg(ItemManager.nickelHelmet);
+		reg(ItemManager.nickelChestplate);
+		reg(ItemManager.nickelLeggings);
+		reg(ItemManager.nickelBoots);
+		
+		reg(ItemManager.brassHelmet);
+		reg(ItemManager.brassChestplate);
+		reg(ItemManager.brassLeggings);
+		reg(ItemManager.brassBoots);
+		
+		reg(ItemManager.leadHelmet);
+		reg(ItemManager.leadChestplate);
+		reg(ItemManager.leadLeggings);
+		reg(ItemManager.leadBoots);
+		
+		reg(ItemManager.zincHelmet);
+		reg(ItemManager.zincChestplate);
+		reg(ItemManager.zincLeggings);
+		reg(ItemManager.zincBoots);
+		
+		reg(ItemManager.fantasiumHelmet);
+		reg(ItemManager.fantasiumChestplate);
+		reg(ItemManager.fantasiumLeggings);
+		reg(ItemManager.fantasiumBoots);
+		
+		reg(ItemManager.electrumHelmet);
+		reg(ItemManager.electrumChestplate);
+		reg(ItemManager.electrumLeggings);
+		reg(ItemManager.electrumBoots);
+		
+		reg(ItemManager.laeniumHelmet);
+		reg(ItemManager.laeniumChestplate);
+		reg(ItemManager.laeniumLeggings);
+		reg(ItemManager.laeniumBoots);
+		
+		reg(ItemManager.magneiumHelmet);
+		reg(ItemManager.magneiumChestplate);
+		reg(ItemManager.magneiumLeggings);
+		reg(ItemManager.magneiumBoots);
+		
+		reg(ItemManager.sterlingSilverHelmet);
+		reg(ItemManager.sterlingSilverChestplate);
+		reg(ItemManager.sterlingSilverLeggings);
+		reg(ItemManager.sterlingSilverBoots);
+		
+		reg(ItemManager.roseGoldHelmet);
+		reg(ItemManager.roseGoldChestplate);
+		reg(ItemManager.roseGoldLeggings);
+		reg(ItemManager.roseGoldBoots);
+		
+		reg(ItemManager.whiteGoldHelmet);
+		reg(ItemManager.whiteGoldChestplate);
+		reg(ItemManager.whiteGoldLeggings);
+		reg(ItemManager.whiteGoldBoots);
+		
+		reg(ItemManager.spangoldHelmet);
+		reg(ItemManager.spangoldChestplate);
+		reg(ItemManager.spangoldLeggings);
+		reg(ItemManager.spangoldBoots);
+		
+		reg(ItemManager.meteoricIronHelmet);
+		reg(ItemManager.meteoricIronChestplate);
+		reg(ItemManager.meteoricIronLeggings);
+		reg(ItemManager.meteoricIronBoots);
+		
+		reg(ItemManager.maduumHelmet);
+		reg(ItemManager.maduumChestplate);
+		reg(ItemManager.maduumLeggings);
+		reg(ItemManager.maduumBoots);
+		
+		reg(ItemManager.immortaliumHelmet);
+		reg(ItemManager.immortaliumChestplate);
+		reg(ItemManager.immortaliumLeggings);
+		reg(ItemManager.immortaliumBoots);
+		
 		reg(ItemManager.reforgedGoldAxe);
 		reg(ItemManager.reforgedGoldHoe);
 		reg(ItemManager.reforgedGoldMattock);

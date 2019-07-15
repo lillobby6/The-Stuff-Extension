@@ -5,12 +5,10 @@ import com.tse.common.core.TheStuffExtension;
 import com.tse.world.block.BlockManager;
 import com.tse.world.item.ItemManager;
 
-import jline.internal.Log;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class Smelting {

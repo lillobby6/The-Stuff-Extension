@@ -624,7 +624,7 @@ public class ItemManager {
 	public static Item leadBoots = registerArmor("lead_boots", TSEArmorMaterials.LEAD, 1, EntityEquipmentSlot.FEET);
 	
 	public static Item nickelHelmet = registerArmor("nickel_helmet", TSEArmorMaterials.NICKEL, 1, EntityEquipmentSlot.HEAD);
-	public static Item nickelChestplate = registerArmor("nickel_chesplate", TSEArmorMaterials.NICKEL, 1, EntityEquipmentSlot.CHEST);
+	public static Item nickelChestplate = registerArmor("nickel_chestplate", TSEArmorMaterials.NICKEL, 1, EntityEquipmentSlot.CHEST);
 	public static Item nickelLeggings = registerArmor("nickel_leggings", TSEArmorMaterials.NICKEL, 1, EntityEquipmentSlot.LEGS);
 	public static Item nickelBoots = registerArmor("nickel_boots", TSEArmorMaterials.NICKEL, 1, EntityEquipmentSlot.FEET);
 	

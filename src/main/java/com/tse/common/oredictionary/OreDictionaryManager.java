@@ -4,7 +4,6 @@ import com.tse.common.core.TheStuffExtension;
 import com.tse.world.block.BlockManager;
 import com.tse.world.item.ItemManager;
 
-import jline.internal.Log;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class OreDictionaryManager {

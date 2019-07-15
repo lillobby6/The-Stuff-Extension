@@ -78,6 +78,18 @@ public class BlockRenderRegister {
 		reg(BlockManager.aluminumBlock);
 		reg(BlockManager.mnemiumBlock);
 		reg(BlockManager.eterniumBlock);
+		reg(BlockManager.fantasiumBlock);
+		reg(BlockManager.scorniumBlock);
+		reg(BlockManager.electrumBlock);
+		reg(BlockManager.laeniumBlock);
+		reg(BlockManager.magneiumBlock);
+		reg(BlockManager.sterlingSilverBlock);
+		reg(BlockManager.roseGoldBlock);
+		reg(BlockManager.whiteGoldBlock);
+		reg(BlockManager.spangoldBlock);
+		reg(BlockManager.meteoricIronBlock);
+		reg(BlockManager.maduumBlock);
+		reg(BlockManager.immortaliumBlock);
 		
 		reg(BlockManager.whiteStone);
 		reg(BlockManager.whiteCobblestone);
