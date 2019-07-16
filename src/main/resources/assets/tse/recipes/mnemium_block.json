@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:mnemium_ingot"
+        },
+		{
+            "item": "tse:mnemium_ingot"
+        },
+		{
+            "item": "tse:mnemium_ingot"
+        },
+		{
+            "item": "tse:mnemium_ingot"
+        },
+		{
+            "item": "tse:mnemium_ingot"
+        },
+		{
+            "item": "tse:mnemium_ingot"
+        },
+		{
+            "item": "tse:mnemium_ingot"
+        },
+		{
+            "item": "tse:mnemium_ingot"
+        },
+		{
+            "item": "tse:mnemium_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:mnemium_block"
+    }
+}

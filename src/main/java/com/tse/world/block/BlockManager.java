@@ -434,7 +434,7 @@ public class BlockManager {
 				
 				whiteStoneItem, whiteCobblestoneItem,
 				
-				compressedWhiteCobblestoneItem, doubleCompressedWhiteCobblestoneItem, tripleCompressedWhiteCobblestoneItem, quadrupleCompressedWhiteCobblestoneItem, quintupleCompressedWhiteCobblestoneItem, sextupleCompressedWhiteCobblestoneItem, octupleCompressedWhiteCobblestoneItem, nonupleCompressedWhiteCobblestoneItem, decupleCompressedWhiteCobblestoneItem,
+				compressedWhiteCobblestoneItem, doubleCompressedWhiteCobblestoneItem, tripleCompressedWhiteCobblestoneItem, quadrupleCompressedWhiteCobblestoneItem, quintupleCompressedWhiteCobblestoneItem, sextupleCompressedWhiteCobblestoneItem, septupleCompressedWhiteCobblestoneItem, octupleCompressedWhiteCobblestoneItem, nonupleCompressedWhiteCobblestoneItem, decupleCompressedWhiteCobblestoneItem,
 				
 				purpleheartLogItem, purpleheartPlanksItem
 

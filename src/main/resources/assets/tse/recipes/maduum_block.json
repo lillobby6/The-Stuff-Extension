@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:maduum_ingot"
+        },
+		{
+            "item": "tse:maduum_ingot"
+        },
+		{
+            "item": "tse:maduum_ingot"
+        },
+		{
+            "item": "tse:maduum_ingot"
+        },
+		{
+            "item": "tse:maduum_ingot"
+        },
+		{
+            "item": "tse:maduum_ingot"
+        },
+		{
+            "item": "tse:maduum_ingot"
+        },
+		{
+            "item": "tse:maduum_ingot"
+        },
+		{
+            "item": "tse:maduum_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:maduum_block"
+    }
+}

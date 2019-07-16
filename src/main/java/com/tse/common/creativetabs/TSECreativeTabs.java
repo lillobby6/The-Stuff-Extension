@@ -13,7 +13,7 @@ public class TSECreativeTabs {
 	{
 		@Override public ItemStack getTabIconItem()
 		{
-			return new ItemStack(Item.getItemFromBlock(BlockManager.alloyFurnace));
+			return new ItemStack(Item.getItemFromBlock(BlockManager.copperAlloyFurnace));
 		}
 	};
 

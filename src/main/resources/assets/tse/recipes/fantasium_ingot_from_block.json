@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{
+            "item": "tse:fantasium_block"
+        }
+    ],
+    "result": {
+        "item": "tse:fantasium_ingot", "count": 9
+    }
+}

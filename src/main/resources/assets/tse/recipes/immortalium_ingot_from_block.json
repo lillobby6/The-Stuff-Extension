@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{
+            "item": "tse:immortalium_block"
+        }
+    ],
+    "result": {
+        "item": "tse:immortalium_ingot", "count": 9
+    }
+}

@@ -327,6 +327,125 @@ item.eternium_hoe.name=Eternium Hoe
 item.eternium_mattock.name=Eternium Mattock
 item.eternium_sword.name=Eternium Sword
 
+item.zinc_pickaxe.name=Zinc Pickaxe
+item.zinc_axe.name=Zinc Axe
+item.zinc_shovel.name=Zinc Shovel
+item.zinc_hoe.name=Zinc Hoe
+item.zinc_mattock.name=Zinc Mattock
+item.zinc_sword.name=Zinc Sword
+
+item.brass_pickaxe.name=Brass Pickaxe
+item.brass_axe.name=Brass Axe
+item.brass_shovel.name=Brass Shovel
+item.brass_hoe.name=Brass Hoe
+item.brass_mattock.name=Brass Mattock
+item.brass_sword.name=Brass Sword
+
+item.lead_pickaxe.name=Lead Pickaxe
+item.lead_axe.name=Lead Axe
+item.lead_shovel.name=Lead Shovel
+item.lead_hoe.name=Lead Hoe
+item.lead_mattock.name=Lead Mattock
+item.lead_sword.name=Lead Sword
+
+item.nickel_pickaxe.name=Nickel Pickaxe
+item.nickel_axe.name=Nickel Axe
+item.nickel_shovel.name=Nickel Shovel
+item.nickel_hoe.name=Nickel Hoe
+item.nickel_mattock.name=Nickel Mattock
+item.nickel_sword.name=Nickel Sword
+
+item.fantasium_pickaxe.name=Fantasium Pickaxe
+item.fantasium_axe.name=Fantasium Axe
+item.fantasium_shovel.name=Fantasium Shovel
+item.fantasium_hoe.name=Fantasium Hoe
+item.fantasium_mattock.name=Fantasium Mattock
+item.fantasium_sword.name=Fantasium Sword
+
+item.scornium_pickaxe.name=Scornium Pickaxe
+item.scornium_axe.name=Scornium Axe
+item.scornium_shovel.name=Scornium Shovel
+item.scornium_hoe.name=Scornium Hoe
+item.scornium_mattock.name=Scornium Mattock
+item.scornium_sword.name=Scornium Sword
+
+item.electrum_pickaxe.name=Electrum Pickaxe
+item.electrum_axe.name=Electrum Axe
+item.electrum_shovel.name=Electrum Shovel
+item.electrum_hoe.name=Electrum Hoe
+item.electrum_mattock.name=Electrum Mattock
+item.electrum_sword.name=Electrum Sword
+
+item.laenium_pickaxe.name=Laenium Pickaxe
+item.laenium_axe.name=Laenium Axe
+item.laenium_shovel.name=Laenium Shovel
+item.laenium_hoe.name=Laenium Hoe
+item.laenium_mattock.name=Laenium Mattock
+item.laenium_sword.name=Laenium Sword
+
+item.magneium_pickaxe.name=Magneium Pickaxe
+item.magneium_axe.name=Magneium Axe
+item.magneium_shovel.name=Magneium Shovel
+item.magneium_hoe.name=Magneium Hoe
+item.magneium_mattock.name=Magneium Mattock
+item.magneium_sword.name=Magenium Sword
+
+item.sterling_silver_pickaxe.name=Sterling Silver Pickaxe
+item.sterling_silver_axe.name=Sterling Silver Axe
+item.sterling_silver_shovel.name=Sterling Silver Shovel
+item.sterling_silver_hoe.name=Sterling Silver Hoe
+item.sterling_silver_mattock.name=Sterling Silver Mattock
+item.sterling_silver_sword.name=Sterling Silver Sword
+
+item.rose_gold_pickaxe.name=Rose Gold Pickaxe
+item.rose_gold_axe.name=Rose Gold Axe
+item.rose_gold_shovel.name=Rose Gold Shovel
+item.rose_gold_hoe.name=Rose Gold Hoe
+item.rose_gold_mattock.name=Rose Gold Mattock
+item.rose_gold_sword.name=Rose Gold Sword
+
+item.white_gold_pickaxe.name=White Gold Pickaxe
+item.white_gold_axe.name=White Gold Axe
+item.white_gold_shovel.name=White Gold Shovel
+item.white_gold_hoe.name=White Gold Hoe
+item.white_gold_mattock.name=White Gold Mattock
+item.white_gold_sword.name=White Gold Sword
+
+item.spangold_pickaxe.name=Spangold Pickaxe
+item.spangold_axe.name=Spangold Axe
+item.spangold_shovel.name=Spangold Shovel
+item.spangold_hoe.name=Spangold Hoe
+item.spangold_mattock.name=Spangold Mattock
+item.spangold_sword.name=Spangold Sword
+
+item.meteoric_iron_pickaxe.name=Meteoric Iron Pickaxe
+item.meteoric_iron_axe.name=Meteoric Iron Axe
+item.meteoric_iron_shovel.name=Meteoric Iron Shovel
+item.meteoric_iron_hoe.name=Meteoric Iron Hoe
+item.meteoric_iron_mattock.name=Meteoric Iron Mattock
+item.meteoric_iron_sword.name=Meteoric Iron Sword
+
+item.maduum_pickaxe.name=Maduum Pickaxe
+item.maduum_axe.name=Maduum Axe
+item.maduum_shovel.name=Maduum Shovel
+item.maduum_hoe.name=Maduum Hoe
+item.maduum_mattock.name=Maduum Mattock
+item.maduum_sword.name=Maduum Sword
+
+item.immortalium_pickaxe.name=Immortalium Pickaxe
+item.immortalium_axe.name=Immortalium Axe
+item.immortalium_shovel.name=Immortalium Shovel
+item.immortalium_hoe.name=Immortalium Hoe
+item.immortalium_mattock.name=Immortalium Mattock
+item.immortalium_sword.name=Immortalium Sword
+
+item.reforged_gold_pickaxe.name=Reforged Gold Pickaxe
+item.reforged_gold_axe.name=Reforged Gold Axe
+item.reforged_gold_shovel.name=Reforged Gold Shovel
+item.reforged_gold_hoe.name=Reforged Gold Hoe
+item.reforged_gold_mattock.name=Reforged Gold Mattock
+item.reforged_gold_sword.name=Reforged Gold Sword
+
 item.wood_mattock.name=Wood Mattock
 item.stone_mattock.name=Stone Mattock
 item.iron_mattock.name=Iron Mattock
@@ -458,6 +577,86 @@ item.eternium_chestplate.name=Eternium Chestplate
 item.eternium_leggings.name=Eternium Leggings
 item.eternium_boots.name=Eternium Boots
 
+item.reforged_gold_helmet.name=Reforged Gold Helmet
+item.reforged_gold_chestplate.name=Reforged Gold Chestplate
+item.reforged_gold_leggings.name=Reforged Gold Leggings
+item.reforged_gold_boots.name=Reforged Gold Boots
+
+item.zinc_helmet.name=Zinc Helmet
+item.zinc_chestplate.name=Zinc Chestplate
+item.zinc_leggings.name=Zinc Leggings
+item.zinc_boots.name=Zinc Boots
+
+item.brass_helmet.name=Brass Helmet
+item.brass_chestplate.name=Brass Chestplate
+item.brass_leggings.name=Brass Leggings
+item.brass_boots.name=Brass Boots
+
+item.lead_helmet.name=Lead Helmet
+item.lead_chestplate.name=Lead Chestplate
+item.lead_leggings.name=Lead Leggings
+item.lead_boots.name=Lead Boots
+
+item.nickel_helmet.name=Nickel Helmet
+item.nickel_chestplate.name=Nickel Chestplate
+item.nickel_leggings.name=Nickel Leggings
+item.nickel_boots.name=Nickel Boots
+
+item.fantasium_helmet.name=Fantasium Helmet
+item.fantasium_chestplate.name=Fantasium Chestplate
+item.fantasium_leggings.name=Fantasium Leggings
+item.fantasium_boots.name=Fantasium Boots
+
+item.electrum_helmet.name=Electrum Helmet
+item.electrum_chestplate.name=Electrum Chestplate
+item.electrum_leggings.name=Electrum Leggings
+item.electrum_boots.name=Electrum Boots
+
+item.laenium_helmet.name=Laenium Helmet
+item.laenium_chestplate.name=Laenium Chestplate
+item.laenium_leggings.name=Laenium Leggings
+item.laenium_boots.name=Laenium Boots
+
+item.magneium_helmet.name=Magneium Helmet
+item.magneium_chestplate.name=Magneium Chestplate
+item.magneium_leggings.name=Magneium Leggings
+item.magneium_boots.name=Magneium Boots
+
+item.sterling_silver_helmet.name=Sterling Silver Helmet
+item.sterling_silver_chestplate.name=Sterling Silver Chestplate
+item.sterling_silver_leggings.name=Sterling Silver Leggings
+item.sterling_silver_boots.name=Sterling Silver Boots
+
+item.rose_gold_helmet.name=Rose Gold Helmet
+item.rose_gold_chestplate.name=Rose Gold Chestplate
+item.rose_gold_leggings.name=Rose Gold Leggings
+item.rose_gold_boots.name=Rose Gold Boots
+
+item.white_gold_helmet.name=White Gold Helmet
+item.white_gold_chestplate.name=White Gold Chestplate
+item.white_gold_leggings.name=White Gold Leggings
+item.white_gold_boots.name=White Gold Boots
+
+item.spangold_helmet.name=Spangold Helmet
+item.spangold_chestplate.name=Spangold Chestplate
+item.spangold_leggings.name=Spangold Leggings
+item.spangold_boots.name=Spangold Boots
+
+item.meteoric_iron_helmet.name=Meteoric Iron Helmet
+item.meteoric_iron_chestplate.name=Meteoric Iron Chestplate
+item.meteoric_iron_leggings.name=Meteoric Iron Leggings
+item.meteoric_iron_boots.name=Meteoric Iron Boots
+
+item.maduum_helmet.name=Maduum Helmet
+item.maduum_chestplate.name=Maduum Chestplate
+item.maduum_leggings.name=Maduum Leggings
+item.maduum_boots.name=Maduum Boots
+
+item.immortalium_helmet.name=Immortalium Helmet
+item.immortalium_chestplate.name=Immortalium Chestplate
+item.immortalium_leggings.name=Immortalium Leggings
+item.immortalium_boots.name=Immortalium Boots
+
 item.lapis_remover.name=Lapis Lazuli Remover
 
 item.justice.name=Justice
@@ -492,6 +691,8 @@ tile.moon_teleporter.name=Moon Teleporter
 tile.luna_diamond_ore.name=Luna Diamond Ore
 tile.moon_iron_ore.name=Iron Ore
 
+tile.meteor.name=Meteor
+
 tile.terra_diamond_block.name=Terra Diamond Block
 tile.exalted_diamond_block.name=Exalted Diamond Block
 tile.copper_block.name=Copper Block
@@ -525,9 +726,32 @@ tile.pewter_block.name=Pewter Block
 tile.aluminum_block.name=Aluminum Block
 tile.mnemium_block.name=Mnemium Block
 tile.eternium_block.name=Eternium Block
+tile.fantasium_block.name=Fantasium Block
+tile.scornium_block.name=Scornium Block
+tile.electrum_block.name=Electrum Block
+tile.laenium_block.name=Laenium Block
+tile.magneium_block.name=Magneium Block
+tile.sterling_silver_block.name=Sterling Silver Block
+tile.rose_gold_block.name=Rose Gold Block
+tile.white_gold_block.name=White Gold Block
+tile.spangold_block.name=Spangold Block
+tile.meteoric_iron_block.name=Meteoric Iron Block
+tile.maduum_block.name=Maduum Block
+tile.immortalium_block.name=Immortalium Block
 
 tile.white_stone.name=White Stone
 tile.white_cobblestone.name=White Cobblestone
+
+tile.compressed_white_cobblestone.name=Compressed White Cobblestone
+tile.double_compressed_white_cobblestone.name=Double Compressed White Cobblestone
+tile.triple_compressed_white_cobblestone.name=Triple Compressed White Cobblestone
+tile.quadruple_compressed_white_cobblestone.name=Quadruple Compressed White Cobblestone
+tile.quintuple_compressed_white_cobblestone.name=Quintuple Compressed White Cobblestone
+tile.sextuple_compressed_white_cobblestone.name=Sextuple Compressed White Cobblestone
+tile.septuple_compressed_white_cobblestone.name=Septuple Compressed White Cobblestone
+tile.octuple_compressed_white_cobblestone.name=Octuple Compressed White Cobblestone
+tile.nonuple_compressed_white_cobblestone.name=Nonuple Compressed White Cobblestone
+tile.decuple_compressed_white_cobblestone.name=Decuple Compressed White Cobblestone
 
 tile.purpleheart_log.name=Purpleheart Log
 tile.purpleheart_planks.name=Purpleheart Planks

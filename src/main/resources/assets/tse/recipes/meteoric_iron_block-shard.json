@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:meteoric_iron_shard"
+        },
+		{
+            "item": "tse:meteoric_iron_shard"
+        },
+		{
+            "item": "tse:meteoric_iron_shard"
+        },
+		{
+            "item": "tse:meteoric_iron_shard"
+        },
+		{
+            "item": "tse:meteoric_iron_shard"
+        },
+		{
+            "item": "tse:meteoric_iron_shard"
+        },
+		{
+            "item": "tse:meteoric_iron_shard"
+        },
+		{
+            "item": "tse:meteoric_iron_shard"
+        },
+		{
+            "item": "tse:meteoric_iron_shard"
+        }
+    ],
+    "result": {
+        "item": "tse:meteoric_iron_block"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:septuple_compressed_white_cobblestone"
+        },
+		{
+            "item": "tse:septuple_compressed_white_cobblestone"
+        },
+		{
+            "item": "tse:septuple_compressed_white_cobblestone"
+        },
+		{
+            "item": "tse:septuple_compressed_white_cobblestone"
+        },
+		{
+            "item": "tse:septuple_compressed_white_cobblestone"
+        },
+		{
+            "item": "tse:septuple_compressed_white_cobblestone"
+        },
+		{
+            "item": "tse:septuple_compressed_white_cobblestone"
+        },
+		{
+            "item": "tse:septuple_compressed_white_cobblestone"
+        },
+		{
+            "item": "tse:septuple_compressed_white_cobblestone"
+        }
+    ],
+    "result": {
+        "item": "tse:octuple_compressed_white_cobblestone"
+    }
+}

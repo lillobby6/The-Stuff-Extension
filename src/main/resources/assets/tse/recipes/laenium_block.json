@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:laenium_ingot"
+        },
+		{
+            "item": "tse:laenium_ingot"
+        },
+		{
+            "item": "tse:laenium_ingot"
+        },
+		{
+            "item": "tse:laenium_ingot"
+        },
+		{
+            "item": "tse:laenium_ingot"
+        },
+		{
+            "item": "tse:laenium_ingot"
+        },
+		{
+            "item": "tse:laenium_ingot"
+        },
+		{
+            "item": "tse:laenium_ingot"
+        },
+		{
+            "item": "tse:laenium_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:laenium_block"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:magneium_ingot"
+        },
+		{
+            "item": "tse:magneium_ingot"
+        },
+		{
+            "item": "tse:magneium_ingot"
+        },
+		{
+            "item": "tse:magneium_ingot"
+        },
+		{
+            "item": "tse:magneium_ingot"
+        },
+		{
+            "item": "tse:magneium_ingot"
+        },
+		{
+            "item": "tse:magneium_ingot"
+        },
+		{
+            "item": "tse:magneium_ingot"
+        },
+		{
+            "item": "tse:magneium_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:magneium_block"
+    }
+}

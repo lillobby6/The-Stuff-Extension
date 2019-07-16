@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:spangold_ingot"
+        },
+		{
+            "item": "tse:spangold_ingot"
+        },
+		{
+            "item": "tse:spangold_ingot"
+        },
+		{
+            "item": "tse:spangold_ingot"
+        },
+		{
+            "item": "tse:spangold_ingot"
+        },
+		{
+            "item": "tse:spangold_ingot"
+        },
+		{
+            "item": "tse:spangold_ingot"
+        },
+		{
+            "item": "tse:spangold_ingot"
+        },
+		{
+            "item": "tse:spangold_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:spangold_block"
+    }
+}

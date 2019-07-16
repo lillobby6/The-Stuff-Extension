@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{
+            "item": "tse:magneium_block"
+        }
+    ],
+    "result": {
+        "item": "tse:magneium_ingot", "count": 9
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{
+            "item": "tse:maduum_block"
+        }
+    ],
+    "result": {
+        "item": "tse:maduum_ingot", "count": 9
+    }
+}

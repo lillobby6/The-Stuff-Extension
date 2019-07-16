@@ -1,0 +1,25 @@
+{
+  "result": {
+    "item": "tse:alloy_furnace"
+  },
+  "pattern": [
+    "xyx",
+    "zaz",
+    "xzx"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+	"y": {
+	  "item": "minecraft:redstone_block"
+	},
+    "x": {
+      "ore": "ingotIron", "type": "forge:ore_dict"
+    },
+	"z": {
+      "ore": "ingotCopper", "type": "forge:ore_dict"
+    },
+    "a": {
+      "item": "minecraft:furnace"
+    }
+  }
+}

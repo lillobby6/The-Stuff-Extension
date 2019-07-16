@@ -1,0 +1,25 @@
+{
+  "result": {
+    "item": "tse:creation"
+  },
+  "pattern": [
+    "xxx",
+    "yza",
+    "xxx" 
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+	"a": {
+	  "item": "tse:corruption"
+	},
+	"z": {
+	  "item": "tse:magic_ingot"
+	},
+    "y": {
+      "item": "tse:justice"
+    },
+    "x": {
+      "item": "tse:white_stone"
+    }
+  }
+}

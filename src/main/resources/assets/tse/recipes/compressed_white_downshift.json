@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{
+            "item": "tse:compressed_white_cobblestone"
+        }
+    ],
+    "result": {
+        "item": "tse:white_cobblestone", "count": 9
+    }
+}

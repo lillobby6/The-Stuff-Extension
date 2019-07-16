@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:copper_furnace"
+  },
+  "pattern": [
+    "xxx",
+    "xax",
+    "xxx"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "x": {
+      "ore": "blockCopper", "type": "forge:ore_dict"
+    },
+    "a": {
+      "item": "minecraft:furnace"
+    }
+  }
+}

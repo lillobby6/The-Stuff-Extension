@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+		{
+            "item": "tse:mnemium_block"
+        }
+    ],
+    "result": {
+        "item": "tse:mnemium_ingot", "count": 9
+    }
+}

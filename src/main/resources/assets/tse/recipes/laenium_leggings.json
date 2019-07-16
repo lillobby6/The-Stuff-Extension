@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "tse:laenium_leggings"
+  },
+  "pattern": [
+    "xxx",
+    "x x",
+	"x x"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:laenium_ingot"
+    }
+  }
+}

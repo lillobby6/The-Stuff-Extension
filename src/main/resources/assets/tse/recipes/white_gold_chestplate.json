@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "tse:white_gold_chestplate"
+  },
+  "pattern": [
+    "x x",
+    "xxx",
+	"xxx"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:white_gold_ingot"
+    }
+  }
+}
