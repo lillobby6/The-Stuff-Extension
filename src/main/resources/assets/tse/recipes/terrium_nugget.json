@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:terrium_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:terrium_nugget", "count": 9
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:mithril_nugget"
+        },
+		{
+            "item": "tse:mithril_nugget"
+        },
+		{
+            "item": "tse:mithril_nugget"
+        },
+		{
+            "item": "tse:mithril_nugget"
+        },
+		{
+            "item": "tse:mithril_nugget"
+        },
+		{
+            "item": "tse:mithril_nugget"
+        },
+		{
+            "item": "tse:mithril_nugget"
+        },
+		{
+            "item": "tse:mithril_nugget"
+        },
+		{
+            "item": "tse:mithril_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:mithril_ingot"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:laenium_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:laenium_nugget", "count": 9
+    }
+}

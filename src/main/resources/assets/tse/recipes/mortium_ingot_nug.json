@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:mortium_nugget"
+        },
+		{
+            "item": "tse:mortium_nugget"
+        },
+		{
+            "item": "tse:mortium_nugget"
+        },
+		{
+            "item": "tse:mortium_nugget"
+        },
+		{
+            "item": "tse:mortium_nugget"
+        },
+		{
+            "item": "tse:mortium_nugget"
+        },
+		{
+            "item": "tse:mortium_nugget"
+        },
+		{
+            "item": "tse:mortium_nugget"
+        },
+		{
+            "item": "tse:mortium_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:mortium_ingot"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:electrum_nugget"
+        },
+		{
+            "item": "tse:electrum_nugget"
+        },
+		{
+            "item": "tse:electrum_nugget"
+        },
+		{
+            "item": "tse:electrum_nugget"
+        },
+		{
+            "item": "tse:electrum_nugget"
+        },
+		{
+            "item": "tse:electrum_nugget"
+        },
+		{
+            "item": "tse:electrum_nugget"
+        },
+		{
+            "item": "tse:electrum_nugget"
+        },
+		{
+            "item": "tse:electrum_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:electrum_ingot"
+    }
+}

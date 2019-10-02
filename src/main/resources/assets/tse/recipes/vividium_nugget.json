@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:vividium_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:vividium_nugget", "count": 9
+    }
+}

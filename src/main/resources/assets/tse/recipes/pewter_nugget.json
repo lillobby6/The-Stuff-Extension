@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:pewter_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:pewter_nugget", "count": 9
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:maduum_nugget"
+        },
+		{
+            "item": "tse:maduum_nugget"
+        },
+		{
+            "item": "tse:maduum_nugget"
+        },
+		{
+            "item": "tse:maduum_nugget"
+        },
+		{
+            "item": "tse:maduum_nugget"
+        },
+		{
+            "item": "tse:maduum_nugget"
+        },
+		{
+            "item": "tse:maduum_nugget"
+        },
+		{
+            "item": "tse:maduum_nugget"
+        },
+		{
+            "item": "tse:maduum_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:maduum_ingot"
+    }
+}

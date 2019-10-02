@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:vividium_nugget"
+        },
+		{
+            "item": "tse:vividium_nugget"
+        },
+		{
+            "item": "tse:vividium_nugget"
+        },
+		{
+            "item": "tse:vividium_nugget"
+        },
+		{
+            "item": "tse:vividium_nugget"
+        },
+		{
+            "item": "tse:vividium_nugget"
+        },
+		{
+            "item": "tse:vividium_nugget"
+        },
+		{
+            "item": "tse:vividium_nugget"
+        },
+		{
+            "item": "tse:vividium_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:vividium_ingot"
+    }
+}

@@ -335,6 +335,7 @@ public class BlockManager {
 			aalloyFurnace.setHardness(5.0F);
 			aalloyFurnace.setResistance(5.0F);
 			aalloyFurnace.setHarvestLevel("pickaxe", 1);
+			if(!inTab) aalloyFurnace.setLightLevel(0.6F);
 			final ItemBlock itemBlock = new ItemBlock(aalloyFurnace);
 			return registerBlock(registryName, itemBlock, aalloyFurnace);
 		}
@@ -344,6 +345,7 @@ public class BlockManager {
 			copperAalloyFurnace.setHardness(5.0F);
 			copperAalloyFurnace.setResistance(5.0F);
 			copperAalloyFurnace.setHarvestLevel("pickaxe", 1);
+			if(!inTab) copperAalloyFurnace.setLightLevel(0.6F);
 			final ItemBlock itemBlock = new ItemBlock(copperAalloyFurnace);
 			return registerBlock(registryName, itemBlock, copperAalloyFurnace);
 		}
@@ -360,6 +362,7 @@ public class BlockManager {
 		{
 			block.setCreativeTab(TSECreativeTabs.tabMachines);
 		}
+		if(!inTab) block.setLightLevel(0.6F);
 		block.setHardness(5.0F);
 		block.setResistance(5.0F);
 		block.setHarvestLevel("pickaxe", 1);

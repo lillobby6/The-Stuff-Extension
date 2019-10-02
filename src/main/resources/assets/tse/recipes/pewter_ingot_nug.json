@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:pewter_nugget"
+        },
+		{
+            "item": "tse:pewter_nugget"
+        },
+		{
+            "item": "tse:pewter_nugget"
+        },
+		{
+            "item": "tse:pewter_nugget"
+        },
+		{
+            "item": "tse:pewter_nugget"
+        },
+		{
+            "item": "tse:pewter_nugget"
+        },
+		{
+            "item": "tse:pewter_nugget"
+        },
+		{
+            "item": "tse:pewter_nugget"
+        },
+		{
+            "item": "tse:pewter_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:pewter_ingot"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:extranetium_nugget"
+        },
+		{
+            "item": "tse:extranetium_nugget"
+        },
+		{
+            "item": "tse:extranetium_nugget"
+        },
+		{
+            "item": "tse:extranetium_nugget"
+        },
+		{
+            "item": "tse:extranetium_nugget"
+        },
+		{
+            "item": "tse:extranetium_nugget"
+        },
+		{
+            "item": "tse:extranetium_nugget"
+        },
+		{
+            "item": "tse:extranetium_nugget"
+        },
+		{
+            "item": "tse:extranetium_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:extranetium_ingot"
+    }
+}

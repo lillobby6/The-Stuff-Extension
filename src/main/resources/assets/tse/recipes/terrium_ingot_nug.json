@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:terrium_nugget"
+        },
+		{
+            "item": "tse:terrium_nugget"
+        },
+		{
+            "item": "tse:terrium_nugget"
+        },
+		{
+            "item": "tse:terrium_nugget"
+        },
+		{
+            "item": "tse:terrium_nugget"
+        },
+		{
+            "item": "tse:terrium_nugget"
+        },
+		{
+            "item": "tse:terrium_nugget"
+        },
+		{
+            "item": "tse:terrium_nugget"
+        },
+		{
+            "item": "tse:terrium_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:terrium_ingot"
+    }
+}

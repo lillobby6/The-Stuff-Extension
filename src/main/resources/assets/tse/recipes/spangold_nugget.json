@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:spangold_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:spangold_nugget", "count": 9
+    }
+}

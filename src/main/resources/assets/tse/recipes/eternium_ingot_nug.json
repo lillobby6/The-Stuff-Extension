@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:eternium_nugget"
+        },
+		{
+            "item": "tse:eternium_nugget"
+        },
+		{
+            "item": "tse:eternium_nugget"
+        },
+		{
+            "item": "tse:eternium_nugget"
+        },
+		{
+            "item": "tse:eternium_nugget"
+        },
+		{
+            "item": "tse:eternium_nugget"
+        },
+		{
+            "item": "tse:eternium_nugget"
+        },
+		{
+            "item": "tse:eternium_nugget"
+        },
+		{
+            "item": "tse:eternium_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:eternium_ingot"
+    }
+}

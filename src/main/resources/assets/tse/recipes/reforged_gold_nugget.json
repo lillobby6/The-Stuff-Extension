@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:reforged_gold_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:reforged_gold_nugget", "count": 9
+    }
+}

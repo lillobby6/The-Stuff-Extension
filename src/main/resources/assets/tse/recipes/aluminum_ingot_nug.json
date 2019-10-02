@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:aluminum_nugget"
+        },
+		{
+            "item": "tse:aluminum_nugget"
+        },
+		{
+            "item": "tse:aluminum_nugget"
+        },
+		{
+            "item": "tse:aluminum_nugget"
+        },
+		{
+            "item": "tse:aluminum_nugget"
+        },
+		{
+            "item": "tse:aluminum_nugget"
+        },
+		{
+            "item": "tse:aluminum_nugget"
+        },
+		{
+            "item": "tse:aluminum_nugget"
+        },
+		{
+            "item": "tse:aluminum_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:aluminum_ingot"
+    }
+}

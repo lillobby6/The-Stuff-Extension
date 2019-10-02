@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:sky_iron_nugget"
+        },
+		{
+            "item": "tse:sky_iron_nugget"
+        },
+		{
+            "item": "tse:sky_iron_nugget"
+        },
+		{
+            "item": "tse:sky_iron_nugget"
+        },
+		{
+            "item": "tse:sky_iron_nugget"
+        },
+		{
+            "item": "tse:sky_iron_nugget"
+        },
+		{
+            "item": "tse:sky_iron_nugget"
+        },
+		{
+            "item": "tse:sky_iron_nugget"
+        },
+		{
+            "item": "tse:sky_iron_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:sky_iron_ingot"
+    }
+}

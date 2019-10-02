@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:mortium_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:mortium_nugget", "count": 9
+    }
+}

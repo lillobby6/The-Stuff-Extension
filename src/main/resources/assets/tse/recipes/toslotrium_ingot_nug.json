@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:toslotrium_nugget"
+        },
+		{
+            "item": "tse:toslotrium_nugget"
+        },
+		{
+            "item": "tse:toslotrium_nugget"
+        },
+		{
+            "item": "tse:toslotrium_nugget"
+        },
+		{
+            "item": "tse:toslotrium_nugget"
+        },
+		{
+            "item": "tse:toslotrium_nugget"
+        },
+		{
+            "item": "tse:toslotrium_nugget"
+        },
+		{
+            "item": "tse:toslotrium_nugget"
+        },
+		{
+            "item": "tse:toslotrium_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:toslotrium_ingot"
+    }
+}

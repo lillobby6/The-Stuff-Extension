@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:brightsteel_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:brightsteel_nugget", "count": 9
+    }
+}

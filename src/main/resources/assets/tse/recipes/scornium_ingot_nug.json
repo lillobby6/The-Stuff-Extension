@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:scornium_nugget"
+        },
+		{
+            "item": "tse:scornium_nugget"
+        },
+		{
+            "item": "tse:scornium_nugget"
+        },
+		{
+            "item": "tse:scornium_nugget"
+        },
+		{
+            "item": "tse:scornium_nugget"
+        },
+		{
+            "item": "tse:scornium_nugget"
+        },
+		{
+            "item": "tse:scornium_nugget"
+        },
+		{
+            "item": "tse:scornium_nugget"
+        },
+		{
+            "item": "tse:scornium_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:scornium_ingot"
+    }
+}

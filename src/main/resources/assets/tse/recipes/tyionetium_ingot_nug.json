@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:tyionetium_nugget"
+        },
+		{
+            "item": "tse:tyionetium_nugget"
+        },
+		{
+            "item": "tse:tyionetium_nugget"
+        },
+		{
+            "item": "tse:tyionetium_nugget"
+        },
+		{
+            "item": "tse:tyionetium_nugget"
+        },
+		{
+            "item": "tse:tyionetium_nugget"
+        },
+		{
+            "item": "tse:tyionetium_nugget"
+        },
+		{
+            "item": "tse:tyionetium_nugget"
+        },
+		{
+            "item": "tse:tyionetium_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:tyionetium_ingot"
+    }
+}

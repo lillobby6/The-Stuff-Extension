@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafbrightsteelg_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:brightsteel_nugget"
+        },
+		{
+            "item": "tse:brightsteel_nugget"
+        },
+		{
+            "item": "tse:brightsteel_nugget"
+        },
+		{
+            "item": "tse:brightsteel_nugget"
+        },
+		{
+            "item": "tse:brightsteel_nugget"
+        },
+		{
+            "item": "tse:brightsteel_nugget"
+        },
+		{
+            "item": "tse:brightsteel_nugget"
+        },
+		{
+            "item": "tse:brightsteel_nugget"
+        },
+		{
+            "item": "tse:brightsteel_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:brightsteel_ingot"
+    }
+}
