@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:mithril_stick", "count": 2
+  },
+  "pattern": [
+    "y",
+    "y"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "y": {
+      "item": "tse:mithril_nugget"
+    }
+  }
+}

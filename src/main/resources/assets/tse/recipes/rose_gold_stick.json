@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:rose_gold_stick", "count": 2
+  },
+  "pattern": [
+    "y",
+    "y"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "y": {
+      "item": "tse:rose_gold_nugget"
+    }
+  }
+}

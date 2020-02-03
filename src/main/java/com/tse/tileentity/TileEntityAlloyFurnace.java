@@ -5,14 +5,12 @@ import com.tse.world.block.AlloyFurnace;
 import com.tse.world.item.recipe.AlloyFurnaceRecipes;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockFurnace;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.Container;
-import net.minecraft.inventory.ContainerFurnace;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.inventory.ItemStackHelper;
@@ -24,9 +22,7 @@ import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemTool;
-import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityLockable;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
@@ -383,7 +379,7 @@ public class TileEntityAlloyFurnace extends TileEntityLockable implements ISided
         }
         else
         {
-            ItemStack itemstack = AlloyFurnaceRecipes.instance().getSmeltingResult((ItemStack)this.furnaceItemStacks.get(0), (ItemStack)this.furnaceItemStacks.get(1));
+            ItemStack itemstack = AlloyFurnaceRecipes.instance().getSmeltingResult(((ItemStack)this.furnaceItemStacks.get(0)), (ItemStack)this.furnaceItemStacks.get(1));
 
             if (itemstack.isEmpty())
             {

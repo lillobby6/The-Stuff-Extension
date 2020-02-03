@@ -18,6 +18,8 @@ item.sterling_silver_stick.name=Sterling Silver Stick
 item.rose_gold_stick.name=Rose Gold Stick
 item.white_gold_stick.name=White Gold Stick
 item.spangold_stick.name=Spangold Stick
+item.maduum_stick.name=Maduum Stick
+item.immortalium_stick.name=Immortalium Stick
 
 item.iron_rod.name=Iron Rod
 item.steel_rod.name=Steel Rod
@@ -94,6 +96,8 @@ item.meteoric_iron_nugget.name=Meteoric Iron Nugget
 item.spangold_nugget.name=Spangold Nugget
 item.white_gold_nugget.name=White Gold Nugget
 item.rose_gold_nugget.name=Rose Gold Nugget
+item.maduum_nugget.name=Maduum Nugget
+item.immortalium_nugget.name=Immortalium Nugget
 
 item.copper_ingot.name=Copper Ingot
 item.steel_ingot.name=Steel Ingot
@@ -135,6 +139,8 @@ item.rose_gold_ingot.name=Rose Gold Ingot
 item.white_gold_ingot.name=White Gold Ingot
 item.spangold_ingot.name=Spangold Ingot
 item.meteoric_iron_ingot.name=Meteoric Iron Ingot
+item.maduum_ingot.name=Maduum Ingot
+item.immortalium_ingot.name=Immortalium Ingot
 
 item.meteoric_iron_shard.name=Meteoric Iron Shard
 
@@ -775,6 +781,8 @@ container.diamond_store_box=Diamond Store Box
 container.alloyfurnace=Alloy Furnace
 container.copperalloyfurnace=Copper Alloy Furnace
 container.copperfurnace=Copper Furnace
+
+gui.tse.alloy_smelting=Alloy Smelting
 
 itemGroup.tabStorage=The Stuff Extension: Storage
 itemGroup.tabTools=The Stuff Extension: Tools

@@ -1,13 +1,10 @@
 package com.tse.inventory;
 
-import com.tse.world.item.recipe.AlloyFurnaceRecipes;
-
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.util.math.MathHelper;
 
 public class SlotAlloyFurnaceOutput extends Slot {
@@ -70,7 +67,7 @@ public class SlotAlloyFurnaceOutput extends Slot {
         if (!this.player.world.isRemote)
         {
             int i = this.removeCount;
-            float f = AlloyFurnaceRecipes.instance().getExperience(stack);
+            float f = 0F;//AlloyFurnaceRecipeManager.getExperience(stack);
 
             if (f == 0.0F)
             {

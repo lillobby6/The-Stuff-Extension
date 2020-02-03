@@ -18,7 +18,7 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("stickGold", ItemManager.goldenStick);
 		OreDictionary.registerOre("stickDiamond", ItemManager.diamondStick);
 		OreDictionary.registerOre("stickMystic", ItemManager.mysticStick);
-
+		
 		OreDictionary.registerOre("stickIron", ItemManager.ironRod);
 		OreDictionary.registerOre("stickSteel", ItemManager.steelRod);
 		OreDictionary.registerOre("stickBronze", ItemManager.bronzeRod);

@@ -32,10 +32,12 @@ public class CommonProxy {
 
     public void init(FMLInitializationEvent e) {
     	TheStuffExtension.log("Starting init...");
+    	OreDictionaryManager.registerOres();
     	Smelting.smelting();
+    	//AlloyFurnaceRecipeRegistry.init();
     	AlloyFurnaceRecipes.instance();
     	//EntityManager.init();
-    	OreDictionaryManager.registerOres();
+    	
     	NetworkRegistry.INSTANCE.registerGuiHandler(TheStuffExtension.instance, new GuiManager());
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
         TheStuffExtension.log("Finished Init.");

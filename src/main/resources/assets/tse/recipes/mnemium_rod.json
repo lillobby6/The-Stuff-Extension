@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:mnemium_rod", "count": 2
+  },
+  "pattern": [
+    "y",
+    "y"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "y": {
+      "item": "tse:mnemium_nugget"
+    }
+  }
+}

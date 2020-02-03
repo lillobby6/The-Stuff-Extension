@@ -6,7 +6,6 @@ import java.util.Map.Entry;
 import com.google.common.collect.Maps;
 import com.tse.common.config.Config;
 import com.tse.common.core.TheStuffExtension;
-import com.tse.container.ContainerAlloyFurnace;
 import com.tse.tileentity.TileEntityAlloyFurnace;
 import com.tse.world.block.BlockManager;
 import com.tse.world.item.ItemManager;
@@ -15,9 +14,11 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class AlloyFurnaceRecipes {
+	
 	private static final AlloyFurnaceRecipes recipes = new AlloyFurnaceRecipes();
 	// Recipe
 	private final Map<ItemStack[], ItemStack> metaRecipeList = Maps.<ItemStack[], ItemStack>newHashMap();
@@ -29,6 +30,9 @@ public class AlloyFurnaceRecipes {
 	}
 
 	private AlloyFurnaceRecipes() {
+		
+		this.addSmeltingRecipe(OreDictionary.getOres("ingotCopper"), OreDictionary.getOres("ingotTin"), new ItemStack(ItemManager.bronzeIngot, 2), 0.1F);
+		
 		this.addSmeltingRecipe(ItemManager.mysteriousIngot, ItemManager.mysticIngot, new ItemStack(ItemManager.fantasiumIngot, 2), 0.2F);
 		this.addSmeltingRecipe(ItemManager.tyionetiumIngot, ItemManager.toslotriumIngot, new ItemStack(ItemManager.scorniumIngot, 2), 0.3F);
 		this.addSmeltingRecipe(ItemManager.mithrilIngot, ItemManager.scorniumIngot, new ItemStack(ItemManager.extranetiumIngot, 2), 0.5F);
@@ -61,6 +65,18 @@ public class AlloyFurnaceRecipes {
 		this.addSmelting(new ItemStack[] { new ItemStack(input1), new ItemStack(input2) }, stack, experience);
 		this.addSmelting(new ItemStack[] { new ItemStack(input2), new ItemStack(input1) }, stack, experience);
 	}
+	
+	public void addSmeltingRecipe(NonNullList<ItemStack> input1, NonNullList<ItemStack> input2, ItemStack stack, float experience)
+	{
+		for(ItemStack i: input1)
+		{
+			for(ItemStack j: input2)
+			{
+				this.addSmelting(new ItemStack[] {i, j}, stack, experience);
+				this.addSmelting(new ItemStack[] {j, i}, stack, experience);
+			}
+		}
+	}
 
 	public void addSmeltingRecipe(ItemStack[] input, ItemStack stack, float experience) {
 		this.addSmelting(input, stack, experience);
@@ -75,7 +91,7 @@ public class AlloyFurnaceRecipes {
 			metaExperience.put(items, Float.valueOf(experience));
 		}
 	}
-
+	
 	public static boolean matchesIngredient(ItemStack itemstack) {
 		if(TileEntityAlloyFurnace.isItemFuel(itemstack) && itemstack.getItem() != Items.COAL)
 		{
@@ -124,5 +140,7 @@ public class AlloyFurnaceRecipes {
 	public Map<ItemStack[], ItemStack> getMetaRecipeList() {
 		return metaRecipeList;
 	}
+
+	
 
 }

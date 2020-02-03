@@ -510,9 +510,6 @@ public class TileEntityCopperAlloyFurnace extends TileEntityLockable implements 
     }
 	@Override
 	public String getGuiID() {
-		// TODO Auto-generated method stub
 		return "tse:copper_alloy_furnace";
 	}
-	
-	
 }

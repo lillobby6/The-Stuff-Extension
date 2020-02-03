@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:sky_iron_rod", "count": 2
+  },
+  "pattern": [
+    "y",
+    "y"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "y": {
+      "item": "tse:sky_iron_nugget"
+    }
+  }
+}
