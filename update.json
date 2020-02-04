@@ -4,7 +4,6 @@
     "v1.1.0.0-1.12.2-b": "https://www.curseforge.com/minecraft/mc-mods/the-stuff-extension/files/2470827", 
     "v1.2.0.0-1.12.2": "https://www.curseforge.com/minecraft/mc-mods/the-stuff-extension/files/2461250", 
     "v1.3.0.2-1.12.2": "https://www.curseforge.com/minecraft/mc-mods/the-stuff-extension/files/2874753"
-    // List all versions of your mod for the given Minecraft version, along with their changelogs
   },
   "1.9.4": {
     "v1.2.0-1.9.4": "https://www.curseforge.com/minecraft/mc-mods/the-stuff-extension/files/2306015"
