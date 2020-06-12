@@ -37,8 +37,8 @@ public class Smelting {
 		
 		GameRegistry.addSmelting(ItemManager.meteoricIronShard, new ItemStack(ItemManager.meteoricIronIngot), 0.1F);
 		
-		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.moonIronOre), new ItemStack(Items.IRON_INGOT), 0.1F);
-		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.lunaDiamondOre), new ItemStack(ItemManager.lunaDiamond), 0.1F);
+		//GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.moonIronOre), new ItemStack(Items.IRON_INGOT), 0.1F);
+		//GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.lunaDiamondOre), new ItemStack(ItemManager.lunaDiamond), 0.1F);
 		
 		if(Config.easySteel)
 		{

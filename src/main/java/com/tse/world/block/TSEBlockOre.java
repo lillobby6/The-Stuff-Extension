@@ -16,69 +16,65 @@ import com.tse.common.config.Config;
 import com.tse.common.creativetabs.TSECreativeTabs;
 import com.tse.world.item.ItemManager;
 
-
-
 public class TSEBlockOre extends Block{
+
+	private Item itemDropped;
+	private int quantityDropped;
 	
-	private int meta;
-	
-	protected TSEBlockOre(String unlocalizedName, Material mat, int harvestLevel, String toolType, float hardness, float resistance, CreativeTabs tab, int meta) {
+	protected TSEBlockOre(String unlocalizedName, Material mat, int harvestLevel, String toolType, float hardness, float resistance, CreativeTabs tab, Item itemDropped, int quantityDropped) {
         super(mat);
-        this.meta = meta;
+        this.itemDropped = itemDropped;
         this.setHarvestLevel(toolType, harvestLevel);
         this.setHardness(hardness);
         this.setResistance(resistance);
         this.setUnlocalizedName(unlocalizedName);
+        this.setRegistryName(unlocalizedName);
         this.setCreativeTab(tab);
+        this.quantityDropped = quantityDropped;
+        BlockManager.registerBlock(this);
     }
 	
-	protected TSEBlockOre(String unlocalizedName, Material mat) {
-	    this(unlocalizedName, mat, 1, "pickaxe", 10.0F, 15.0F, TSECreativeTabs.tabBlocks, 0);
-	}
+	protected TSEBlockOre(String unlocalizedName, Material mat, int harvestLevel, String toolType, float hardness, float resistance, CreativeTabs tab, Item itemDropped) {
+        super(mat);
+        this.itemDropped = itemDropped;
+        this.setHarvestLevel(toolType, harvestLevel);
+        this.setHardness(hardness);
+        this.setResistance(resistance);
+        this.setUnlocalizedName(unlocalizedName);
+        this.setRegistryName(unlocalizedName);
+        this.setCreativeTab(tab);
+        this.quantityDropped = 1;
+        BlockManager.registerBlock(this);
+    }
 	
-	@Override
-	public int damageDropped(IBlockState blockstate)
-	{
-		return 0;//this.meta;
-	}
+	protected TSEBlockOre(String unlocalizedName, Material mat, int harvestLevel, String toolType, float hardness, float resistance, CreativeTabs tab) {
+        super(mat);
+        this.itemDropped = Item.getItemFromBlock(this);
+        this.setHarvestLevel(toolType, harvestLevel);
+        this.setHardness(hardness);
+        this.setResistance(resistance);
+        this.setUnlocalizedName(unlocalizedName);
+        this.setRegistryName(unlocalizedName);
+        this.setCreativeTab(tab);
+        this.quantityDropped = 1;
+        BlockManager.registerBlock(this);
+        
+    }
+	
 	
 	public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-    	if(this == BlockManager.bloodDiamondOre)
-    		return ItemManager.bloodDiamond;
-    	else if(this == BlockManager.exaltedDiamondOre)
-    		return ItemManager.exaltedDiamond;
-    	else if(this == BlockManager.terraDiamondOre)
-    		return ItemManager.terraDiamond;
-    	else if(this == BlockManager.lunaDiamondOre)
-    		return ItemManager.lunaDiamond;
-    	else if(this == BlockManager.sphaleriteOre)
-    		if(!Config.easyZinc)
-    			return ItemManager.sphaleriteGem;
-    		else
-    			return Item.getItemFromBlock(this);
-    	else if(this == BlockManager.meteor)
-    		return ItemManager.meteoricIronShard;
-    	else
-    		return Item.getItemFromBlock(this);
+		return itemDropped;
     }
 	
 	public int quantityDropped(Random random)
     {
-		if(this == BlockManager.meteor)
-			return random.nextInt(3);
-		else
-			return 1;
+		return quantityDropped;
     }
     
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
     {
         return new ItemStack(this);
-    }
-	
-    public void dropBlockAsItemWithChance(World worldIn, BlockPos pos, IBlockState state, float chance, int fortune)
-    {
-        super.dropBlockAsItemWithChance(worldIn, pos, state, chance, fortune);
     }
     
 }

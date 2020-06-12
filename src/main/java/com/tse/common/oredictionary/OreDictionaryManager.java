@@ -31,6 +31,7 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("gemDiamondLuna", ItemManager.lunaDiamond);
 
 		OreDictionary.registerOre("gemSphalerite", ItemManager.sphaleriteGem);
+		OreDictionary.registerOre("oreZinc", ItemManager.sphaleriteGem);
 
 		OreDictionary.registerOre("ingotCopper", ItemManager.copperIngot);
 		OreDictionary.registerOre("ingotSteel", ItemManager.steelIngot);
@@ -96,12 +97,14 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("orePlatinum", BlockManager.platinumOre);
 		OreDictionary.registerOre("oreTitanium", BlockManager.titaniumOre);
 		OreDictionary.registerOre("oreGalena", BlockManager.galenaOre);
+		OreDictionary.registerOre("oreLead", BlockManager.galenaOre);
 		OreDictionary.registerOre("orePentlandite", BlockManager.pentlanditeOre);
+		OreDictionary.registerOre("oreNickel", BlockManager.pentlanditeOre);
 		OreDictionary.registerOre("oreIronSky", BlockManager.skyIronOre);
 		OreDictionary.registerOre("oreTerrium", BlockManager.terriumOre);
 		OreDictionary.registerOre("oreAluminum", BlockManager.aluminumOre);
 
-		OreDictionary.registerOre("oreIron", BlockManager.moonIronOre);
+		//OreDictionary.registerOre("oreIron", BlockManager.moonIronOre);
 
 		OreDictionary.registerOre("blockCopper", BlockManager.copperBlock);
 		OreDictionary.registerOre("blockSteel", BlockManager.steelBlock);

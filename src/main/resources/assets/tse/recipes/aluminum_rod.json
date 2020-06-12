@@ -3,13 +3,13 @@
     "item": "tse:aluminum_rod", "count": 2
   },
   "pattern": [
-    "y",
-    "y"
+    " y ",
+    " y "
   ],
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "key": {
     "y": {
-      "item": "tse:aluminum_nugget"
+      "ore": "ingotAluminum", "type": "forge:ore_dict"
     }
   }
 }

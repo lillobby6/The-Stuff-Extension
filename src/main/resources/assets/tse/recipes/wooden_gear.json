@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:wooden_gear", "count": 4
+  },
+  "pattern": [
+    " y ",
+    "yxy",
+    " y "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "y": {
+      "ore": "stick", "type": "forge:ore_dict"
+    },
+    "x":{
+      "ore": "plankWood", "type": "forge:ore_dict"
+    }
+  }
+}

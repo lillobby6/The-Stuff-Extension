@@ -39,11 +39,14 @@ public class CopperAlloyFurnace extends BlockContainer
     private final boolean isBurning;
     private static boolean keepInventory;
 
-    protected CopperAlloyFurnace(boolean isBurning)
+    protected CopperAlloyFurnace(boolean isBurning, String name)
     {
         super(Material.ROCK);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
         this.isBurning = isBurning;
+        this.setUnlocalizedName(name);
+        this.setRegistryName(name);
+        BlockManager.registerBlock(this);
     }
 
     /**

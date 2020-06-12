@@ -797,3 +797,21 @@ entity.ToslotriumOreWalker.name=Toslotrium Ore Walker
 entity.WhiteStoneWalker.name=White Stone Walker
 entity.StoneWalker.name=Stone Walker
 entity.BrightsteelBlockWalker.name=Brightsteel Block Walker
+
+ui.mininglevel.0=§8Stone
+ui.mininglevel.1=§6Copper
+ui.mininglevel.2=§fIron
+ui.mininglevel.3=§bDiamond
+ui.mininglevel.4=§1Cobalt
+ui.mininglevel.5=§5Manyullyn
+ui.mininglevel.6=Magic
+ui.mininglevel.7=Mithril
+ui.mininglevel.8=Extranetium
+ui.mininglevel.9=Mnemium
+ui.mininglevel.10=Eternium
+
+fluid.titanium=Molten Titanium
+
+material.titanium.name=Titanium
+
+tile.molten_titanium.name=Molten Titanium

@@ -3,7 +3,10 @@ package com.tse.world.block;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.common.Loader;
 
+import com.tse.common.client.integration.tconstruct.TConstructHelper;
 import com.tse.common.core.TheStuffExtension;
 import com.tse.library.StringsLib;
 
@@ -33,12 +36,12 @@ public class BlockRenderRegister {
 		
 		reg(BlockManager.meteor);
 		
-		reg(BlockManager.moonSand);
-		reg(BlockManager.moonStone);
-		reg(BlockManager.moonTeleporter);
+		//reg(BlockManager.moonSand);
+		//reg(BlockManager.moonStone);
+		//reg(BlockManager.moonTeleporter);
 
-		reg(BlockManager.lunaDiamondOre);
-		reg(BlockManager.moonIronOre);
+		//reg(BlockManager.lunaDiamondOre);
+		//reg(BlockManager.moonIronOre);
 		
 		reg(BlockManager.storeBox);
 		reg(BlockManager.superStoreBox);
@@ -115,10 +118,10 @@ public class BlockRenderRegister {
 		reg(BlockManager.copperFurnaceActive);
 		
 		reg(BlockManager.copperAlloyFurnace);
-		reg(BlockManager.copperAlloyFurnaceActive);
-		
+
 		//reg(BlockManager.padaukLog);
 		TheStuffExtension.log("Rendered blocks.");
+		
 	}
 	
 	public static void reg(Block block) {

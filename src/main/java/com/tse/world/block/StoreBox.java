@@ -29,10 +29,12 @@ public class StoreBox extends BlockContainer{
 	protected StoreBox(String unlocalizedName) {
 		super(Material.WOOD);
 		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(unlocalizedName);
 		this.setHardness(2.0F);
 		this.setResistance(6.0F);
 		this.setHarvestLevel("axe", 0);
 		this.setCreativeTab(TSECreativeTabs.tabStorage);
+		BlockManager.registerBlock(this);
 	}
 	
 	public void func_77624_a(ItemStack itemStack, EntityPlayer player, List list, boolean p_77624_4_)

@@ -59,6 +59,8 @@ public class ItemRenderRegister {
 		reg(ItemManager.aluminumRod);
 		reg(ItemManager.mnemiumRod);
 		reg(ItemManager.meteoricIronRod);
+		
+		reg(ItemManager.woodenGear);
 
 		reg(ItemManager.sphaleriteGem);
 		
@@ -678,6 +680,16 @@ public class ItemRenderRegister {
 		reg(ItemManager.immortaliumPickaxe);
 		reg(ItemManager.immortaliumShovel);
 		reg(ItemManager.immortaliumSword);
+		
+		reg(ItemManager.terriumHelmet);
+		reg(ItemManager.terriumChestplate);
+		reg(ItemManager.terriumLeggings);
+		reg(ItemManager.terriumBoots);
+		
+		reg(ItemManager.scorniumHelmet);
+		reg(ItemManager.scorniumChestplate);
+		reg(ItemManager.scorniumLeggings);
+		reg(ItemManager.scorniumBoots);
 		
 		TheStuffExtension.log("Rendered items.");
 	}

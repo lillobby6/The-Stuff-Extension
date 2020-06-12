@@ -1,5 +1,8 @@
 package com.tse.world.item;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.tse.common.core.TheStuffExtension;
 import com.tse.common.creativetabs.TSECreativeTabs;
 import com.tse.library.StringsLib;
@@ -18,6 +21,8 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod.EventBusSubscriber
 public class ItemManager {
+	
+	private static List<Item> registeredItems = new ArrayList<Item>();
 	
 	public static Item diamondStick = registerMainItem("diamond_stick", TSECreativeTabs.tabMaterials);
 	public static Item goldenStick = registerMainItem("golden_stick", TSECreativeTabs.tabMaterials);
@@ -64,6 +69,9 @@ public class ItemManager {
 	public static Item aluminumRod = registerMainItem("aluminum_rod", TSECreativeTabs.tabMaterials);
 	public static Item mnemiumRod = registerMainItem("mnemium_rod", TSECreativeTabs.tabMaterials);
 	public static Item meteoricIronRod = registerMainItem("meteoric_iron_rod", TSECreativeTabs.tabMaterials);
+	
+	public static Item woodenGear = registerMainItem("wooden_gear", TSECreativeTabs.tabMaterials);
+	public static Item stoneGear = registerMainItem("stone_gear", TSECreativeTabs.tabMaterials);
 	
 	public static Item unusableMaterial = registerMainItem("unusable_material", TSECreativeTabs.tabMaterials);
 
@@ -708,82 +716,86 @@ public class ItemManager {
 	public static Item immortaliumLeggings = registerArmor("immortalium_leggings", TSEArmorMaterials.IMMORTALIUM, 1, EntityEquipmentSlot.LEGS);
 	public static Item immortaliumBoots = registerArmor("immortalium_boots", TSEArmorMaterials.IMMORTALIUM, 1, EntityEquipmentSlot.FEET);
 	
-	private static void registerItem(Item item, String registryName) {
+	private static Item registerItem(Item item, String registryName) {
 		item.setRegistryName(StringsLib.MODID, registryName);
 		item.setUnlocalizedName(registryName);
-
-		// return GameRegistry.register(item);
+		registeredItems.add(item);
+		return item;
+	}
+	
+	public static void registerItem(Item item)
+	{
+		registeredItems.add(item);
 	}
 
-	public static Item registerMainItem(String registryName, CreativeTabs tab) {
+	private static Item registerMainItem(String registryName, CreativeTabs tab) {
 		final Item item = new TSEItem();
 		item.setCreativeTab(tab);
 
-		registerItem(item, registryName);
-		return item;
+		return registerItem(item, registryName);
 	}
 
-	public static Item registerSword(ToolMaterial mat, String registryName, CreativeTabs tab) {
+	private static Item registerSword(ToolMaterial mat, String registryName, CreativeTabs tab) {
 		final Item item = new TSESword(mat, tab, registryName);
 		registerItem(item, registryName);
 		return item;
 	}
 
-	public static Item registerLightSword(ToolMaterial mat, String registryName, CreativeTabs tab, boolean hasFlames) {
+	private static Item registerLightSword(ToolMaterial mat, String registryName, CreativeTabs tab, boolean hasFlames) {
 		final Item item = new LightningSword(mat, tab, registryName, hasFlames);
 		registerItem(item, registryName);
 		return item;
 	}
 
-	public static Item registerPickaxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel) {
+	private static Item registerPickaxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel) {
 		final Item item = new TSEPickaxe(mat, tab, harvestLevel, registryName);
 		registerItem(item, registryName);
 		return item;
 	}
 
-	public static Item registerAxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel, float attackSpeed, float damage) {
+	private static Item registerAxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel, float attackSpeed, float damage) {
 		final Item item = new TSEAxe(mat, damage, -1F, tab, harvestLevel, registryName);
 		registerItem(item, registryName);
 		return item;
 	}
 
-	public static Item registerAxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel, float damage) {
+	private static Item registerAxe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel, float damage) {
 		final Item item = new TSEAxe(mat, damage, -1F, tab, harvestLevel, registryName);
 		registerItem(item, registryName);
 		return item;
 	}
 
-	public static Item registerMattock(float attackSpeed, ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel) {
+	private static Item registerMattock(float attackSpeed, ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel) {
 		final Item item = new TSEMattock(-2.2F, mat, harvestLevel, registryName, tab);
 		registerItem(item, registryName);
 		return item;
 	}
 
-	public static Item registerMattock(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel) {
+	private static Item registerMattock(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel) {
 		final Item item = new TSEMattock(-2.2F, mat, harvestLevel, registryName, tab);
 		registerItem(item, registryName);
 		return item;
 	}
 
-	public static Item registerRemover(String registryName, float attackSpeed, ToolMaterial mat, int harvestLevel, CreativeTabs tab) {
+	private static Item registerRemover(String registryName, float attackSpeed, ToolMaterial mat, int harvestLevel, CreativeTabs tab) {
 		final Item item = new TSERemover(mat, tab, registryName, harvestLevel, attackSpeed);
 		registerItem(item, registryName);
 		return item;
 	}
 
-	public static Item registerShovel(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel) {
+	private static Item registerShovel(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel) {
 		final Item item = new TSESpade(mat, harvestLevel, tab, registryName);
 		registerItem(item, registryName);
 		return item;
 	}
 
-	public static Item registerHoe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel) {
+	private static Item registerHoe(ToolMaterial mat, String registryName, CreativeTabs tab, int harvestLevel) {
 		final Item item = new TSEHoe(mat, tab, harvestLevel, registryName);
 		registerItem(item, registryName);
 		return item;
 	}
 
-	public static Item registerArmor(String registryName, ArmorMaterial mat, int renderIndex, EntityEquipmentSlot equipSlot) {
+	private static Item registerArmor(String registryName, ArmorMaterial mat, int renderIndex, EntityEquipmentSlot equipSlot) {
 		final Item item = new TSEArmor(registryName, mat, renderIndex, equipSlot);
 		registerItem(item, registryName);
 		return item;
@@ -793,117 +805,10 @@ public class ItemManager {
 	public static void registerItems(RegistryEvent.Register<Item> event) {
 		final IForgeRegistry<Item> registry = event.getRegistry();
 		TheStuffExtension.log("Registering Items...");
-		registry.registerAll(goldenStick,
-
-				brightflameStick, brightsteelStick, diamondStick, reforgedGoldStick, magicStick, mithrilStick, mysteriousStick, mysticStick, extranetiumStick, eterniumStick, fantasiumStick, scorniumStick, electrumStick, laeniumStick, magneiumStick, sterlingSilverStick, roseGoldStick, whiteGoldStick, spangoldStick, maduumStick, immortaliumStick,
-				ironRod,copperRod, steelRod, tinRod, tyionetiumRod, bronzeRod, mortiumRod, skyIronRod, terriumRod, toslotriumRod, vividiumRod, silverRod, platinumRod, titaniumRod, zincRod, brassRod, leadRod, nickelRod, pewterRod, aluminumRod, mnemiumRod, meteoricIronRod,
-
-				unusableMaterial,
-				
-				meteoricIronShard,
-
-				exaltedDiamond, bloodDiamond, terraDiamond, lunaDiamond, solDiamond,
-
-				sphaleriteGem,
-				
-				diamondIngot, copperIngot, steelIngot, tinIngot, tyionetiumIngot, bronzeIngot, brightflameIngot, brightsteelIngot, reforgedGoldIngot, magicIngot, mithrilIngot, mortiumIngot, mysteriousIngot, mysticIngot, skyIronIngot, terriumIngot, toslotriumIngot, vividiumIngot, extranetiumIngot, silverIngot, platinumIngot, titaniumIngot, zincIngot, brassIngot, leadIngot, nickelIngot, pewterIngot, aluminumIngot, mnemiumIngot, eterniumIngot, fantasiumIngot, scorniumIngot, electrumIngot, laeniumIngot, magneiumIngot, sterlingSilverIngot, roseGoldIngot, whiteGoldIngot, spangoldIngot, meteoricIronIngot, maduumIngot, immortaliumIngot,
-				
-				diamondNugget, copperNugget, steelNugget, tinNugget, tyionetiumNugget, bronzeNugget, brightflameNugget, brightsteelNugget, reforgedGoldNugget, magicNugget, mithrilNugget, mortiumNugget, mysteriousNugget, mysticNugget, skyIronNugget, terriumNugget, toslotriumNugget, vividiumNugget, extranetiumNugget, silverNugget, platinumNugget, titaniumNugget, zincNugget, brassNugget, leadNugget, nickelNugget, pewterNugget, aluminumNugget, mnemiumNugget, eterniumNugget, fantasiumNugget,	scorniumNugget, electrumNugget, laeniumNugget, magneiumNugget, sterlingSilverNugget, roseGoldNugget, whiteGoldNugget, spangoldNugget, meteoricIronNugget, maduumNugget, immortaliumNugget,
-				
-				justice, corruption, destruction, creation,
-				
-				copperPickaxe, copperAxe, copperShovel, copperHoe, copperMattock, copperSword,
-				steelPickaxe, steelAxe, steelShovel, steelHoe, steelMattock, steelSword,
-				tinPickaxe, tinAxe, tinShovel, tinHoe, tinMattock, tinSword,
-				tyionetiumPickaxe, tyionetiumAxe, tyionetiumShovel, tyionetiumHoe, tyionetiumMattock, tyionetiumSword,
-				bronzePickaxe, bronzeAxe, bronzeShovel, bronzeHoe, bronzeMattock, bronzeSword,
-				brightflamePickaxe, brightflameAxe, brightflameShovel, brightflameHoe, brightflameMattock, brightflameSword,
-				brightsteelPickaxe, brightsteelAxe, brightsteelShovel, brightsteelHoe, brightsteelMattock, brightsteelSword,
-				reforgedGoldPickaxe, reforgedGoldAxe, reforgedGoldShovel, reforgedGoldHoe, reforgedGoldMattock, reforgedGoldSword,
-				magicPickaxe, magicAxe, magicShovel, magicHoe, magicMattock, magicSword, 
-				mithrilPickaxe, mithrilAxe, mithrilShovel, mithrilHoe, mithrilMattock, mithrilSword,
-				mortiumPickaxe, mortiumAxe, mortiumShovel, mortiumHoe, mortiumMattock, mortiumSword,
-				mysteriousPickaxe, mysteriousAxe, mysteriousShovel, mysteriousHoe, mysteriousMattock, mysteriousSword,
-				mysticPickaxe, mysticAxe, mysticShovel, mysticHoe, mysticMattock, mysticSword,
-				skyIronPickaxe, skyIronAxe, skyIronShovel, skyIronHoe, skyIronMattock, skyIronSword,
-				terriumPickaxe, terriumAxe, terriumShovel, terriumHoe, terriumMattock, terriumSword,
-				vividiumPickaxe, vividiumAxe, vividiumShovel, vividiumHoe, vividiumMattock, vividiumSword,
-				extranetiumPickaxe, extranetiumAxe, extranetiumShovel, extranetiumHoe, extranetiumMattock, extranetiumSword,
-				silverPickaxe, silverAxe, silverShovel, silverHoe, silverMattock, silverSword,
-				platinumPickaxe, platinumAxe, platinumShovel, platinumHoe, platinumMattock, platinumSword,
-				titaniumPickaxe, titaniumAxe, titaniumShovel, titaniumHoe, titaniumMattock, titaniumSword,
-				zincPickaxe, zincAxe, zincShovel, zincHoe, zincMattock, zincSword,
-				brassPickaxe, brassAxe, brassShovel, brassHoe, brassMattock, brassSword,
-				leadPickaxe, leadAxe, leadShovel, leadHoe, leadMattock, leadSword,
-				nickelPickaxe, nickelAxe, nickelShovel, nickelHoe, nickelMattock, nickelSword,
-				pewterPickaxe, pewterAxe, pewterShovel, pewterHoe, pewterMattock, pewterSword,
-				aluminumPickaxe, aluminumAxe, aluminumShovel, aluminumHoe, aluminumMattock, aluminumSword,
-				mnemiumPickaxe, mnemiumAxe, mnemiumShovel, mnemiumHoe, mnemiumMattock, mnemiumSword,
-				eterniumPickaxe, eterniumAxe, eterniumShovel, eterniumHoe, eterniumMattock, eterniumSword,
-				fantasiumPickaxe, fantasiumAxe, fantasiumShovel, fantasiumHoe, fantasiumMattock, fantasiumSword,
-				scorniumPickaxe, scorniumAxe, scorniumShovel, scorniumHoe, scorniumMattock, scorniumSword,
-				electrumPickaxe, electrumAxe, electrumShovel, electrumHoe, electrumMattock, electrumSword,
-				laeniumPickaxe, laeniumAxe, laeniumShovel, laeniumHoe, laeniumMattock, laeniumSword,
-				magneiumPickaxe, magneiumAxe, magneiumShovel, magneiumHoe, magneiumMattock, magneiumSword,
-				sterlingSilverPickaxe, sterlingSilverAxe, sterlingSilverShovel, sterlingSilverHoe, sterlingSilverMattock, sterlingSilverSword,
-				roseGoldPickaxe, roseGoldAxe, roseGoldShovel, roseGoldHoe, roseGoldMattock, roseGoldSword,
-				whiteGoldPickaxe, whiteGoldAxe, whiteGoldShovel, whiteGoldHoe, whiteGoldMattock, whiteGoldSword,
-				spangoldPickaxe, spangoldAxe, spangoldShovel, spangoldHoe, spangoldMattock, spangoldSword,
-				meteoricIronPickaxe, meteoricIronAxe, meteoricIronShovel, meteoricIronHoe, meteoricIronMattock, meteoricIronSword,
-				maduumPickaxe, maduumAxe, maduumShovel, maduumHoe, maduumMattock, maduumSword,
-				immortaliumPickaxe, immortaliumAxe, immortaliumShovel, immortaliumHoe, immortaliumMattock, immortaliumSword,
-				
-				exaltedDiamondPickaxe, exaltedDiamondAxe, exaltedDiamondShovel, exaltedDiamondHoe, exaltedDiamondMattock, exaltedDiamondSword,
-				bloodDiamondPickaxe, bloodDiamondAxe, bloodDiamondShovel, bloodDiamondHoe, bloodDiamondMattock,	bloodDiamondSword,
-				terraDiamondPickaxe, terraDiamondAxe, terraDiamondShovel, terraDiamondHoe, terraDiamondMattock,	terraDiamondSword,
-
-				woodMattock, stoneMattock, ironMattock, diamondMattock, goldMattock,
-
-				copperHelmet, copperChestplate, copperLeggings, copperBoots,
-				steelHelmet, steelChestplate, steelLeggings, steelBoots,
-				tinHelmet, tinChestplate, tinLeggings, tinBoots,
-				tyionetiumHelmet, tyionetiumChestplate, tyionetiumLeggings, tyionetiumBoots,
-				bronzeHelmet, bronzeChestplate, bronzeLeggings, bronzeBoots,
-				brightflameHelmet, brightflameChestplate, brightflameLeggings, brightflameBoots,
-				brightsteelHelmet, brightsteelChestplate, brightsteelLeggings, brightsteelBoots,
-				reforgedGoldHelmet, reforgedGoldChestplate, reforgedGoldLeggings, reforgedGoldBoots,
-				magicHelmet, magicChestplate, magicLeggings, magicBoots,
-				mithrilHelmet, mithrilChestplate, mithrilLeggings, mithrilBoots,
-				mortiumHelmet, mortiumChestplate, mortiumLeggings, mortiumBoots,
-				mysteriousHelmet, mysteriousChestplate, mysteriousLeggings, mysteriousBoots,
-				mysticHelmet, mysticChestplate, mysticLeggings, mysticBoots,
-				skyIronHelmet, skyIronChestplate, skyIronLeggings, skyIronBoots,
-				vividiumHelmet, vividiumChestplate, vividiumLeggings, vividiumBoots,
-				extranetiumHelmet, extranetiumChestplate, extranetiumLeggings, extranetiumBoots,
-				silverHelmet, silverChestplate, silverLeggings, silverBoots,
-				platinumHelmet, platinumChestplate, platinumLeggings, platinumBoots,
-				titaniumHelmet, titaniumChestplate, titaniumLeggings, titaniumBoots,
-				zincHelmet, zincChestplate, zincLeggings, zincBoots,
-				brassHelmet, brassChestplate, brassLeggings, brassBoots,
-				pewterHelmet, pewterChestplate, pewterLeggings, pewterBoots,
-				leadHelmet, leadChestplate, leadLeggings, leadBoots,
-				nickelHelmet, nickelChestplate, nickelLeggings, nickelBoots,
-				aluminumHelmet, aluminumChestplate, aluminumLeggings, aluminumBoots,
-				mnemiumHelmet, mnemiumChestplate, mnemiumLeggings, mnemiumBoots,
-				eterniumHelmet, eterniumChestplate, eterniumLeggings, eterniumBoots,
-				fantasiumHelmet, fantasiumChestplate, fantasiumLeggings, fantasiumBoots,
-				electrumHelmet, electrumChestplate, electrumLeggings, electrumBoots,
-				laeniumHelmet, laeniumChestplate, laeniumLeggings, laeniumBoots,
-				magneiumHelmet, magneiumChestplate, magneiumLeggings, magneiumBoots,
-				sterlingSilverHelmet, sterlingSilverChestplate, sterlingSilverLeggings, sterlingSilverBoots,
-				roseGoldHelmet, roseGoldChestplate, roseGoldLeggings, roseGoldBoots,
-				whiteGoldHelmet, whiteGoldChestplate, whiteGoldLeggings, whiteGoldBoots,
-				spangoldHelmet, spangoldChestplate, spangoldLeggings, spangoldBoots,
-				meteoricIronHelmet, meteoricIronChestplate, meteoricIronLeggings, meteoricIronBoots,
-				maduumHelmet, maduumChestplate, maduumLeggings, maduumBoots,
-				immortaliumHelmet, immortaliumChestplate, immortaliumLeggings, immortaliumBoots,
-				
-				exaltedDiamondHelmet, exaltedDiamondChestplate, exaltedDiamondLeggings, exaltedDiamondBoots,
-				bloodDiamondHelmet, bloodDiamondChestplate, bloodDiamondLeggings, bloodDiamondBoots,
-				terraDiamondHelmet, terraDiamondChestplate, terraDiamondLeggings, terraDiamondBoots
-				);
-
-
+		for(Item i: registeredItems)
+		{
+			registry.register(i);
+		}
 		TheStuffExtension.log("Registered Items");
 	}
 

@@ -10,7 +10,10 @@ import com.tse.world.gen.WorldGen;
 import com.tse.world.item.recipe.AlloyFurnaceRecipes;
 import com.tse.world.item.recipe.Smelting;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.common.Optional;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -26,7 +29,7 @@ public class CommonProxy {
     	File directory = e.getModConfigurationDirectory();
     	config = new Configuration(new File(directory.getPath(), "thestuffextension.cfg"));
     	Config.readConfig();
-    	//AchievementManager.createAchievements();
+    	
     	TheStuffExtension.log("Finished preInit.");
     }
 
@@ -34,12 +37,10 @@ public class CommonProxy {
     	TheStuffExtension.log("Starting init...");
     	OreDictionaryManager.registerOres();
     	Smelting.smelting();
-    	//AlloyFurnaceRecipeRegistry.init();
     	AlloyFurnaceRecipes.instance();
-    	//EntityManager.init();
-    	
     	NetworkRegistry.INSTANCE.registerGuiHandler(TheStuffExtension.instance, new GuiManager());
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
+       
         TheStuffExtension.log("Finished Init.");
     }
 
@@ -51,4 +52,19 @@ public class CommonProxy {
     	}
     	TheStuffExtension.log("Finished postInit.");
     }
+    
+    public void registerFluidBlockRendering(Block block, String name) {
+		
+	}
+	
+    
+    @Optional.Method(modid = "tconstruct")
+	public void setRenderInfo(Material mat, int color) {
+		
+	}
+	
+	@Optional.Method(modid = "tconstruct")
+	public void setRenderInfo(Material mat, int lo, int mid, int hi) {
+		
+	}
 }

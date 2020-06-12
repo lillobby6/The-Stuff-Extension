@@ -25,10 +25,12 @@ public class MysteriousBox extends BlockContainer {
 	protected MysteriousBox(String unlocalizedName) {
 		super(Material.IRON);
 		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(unlocalizedName);
 		this.setHardness(1.0F);
 		this.setResistance(9999999999999999999.0F);
 		this.setHarvestLevel("Remover", 1);
 		this.setCreativeTab(TSECreativeTabs.tabStorage);
+		BlockManager.registerBlock(this);
 	}
 
 	@Override

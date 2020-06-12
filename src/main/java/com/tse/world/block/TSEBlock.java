@@ -20,10 +20,12 @@ public class TSEBlock extends Block{
 	public TSEBlock(String unlocalizedName, Material material, float hardness, float resistance, CreativeTabs tab, SoundType sound	) {
 		super(material);
 		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(unlocalizedName);
 		this.setCreativeTab(tab);
 		this.setHardness(hardness);
 		this.setResistance(resistance);
 		this.setSoundType(sound);
+		BlockManager.registerBlock(this);
 	}
 	
 	@Override
