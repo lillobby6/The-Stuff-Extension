@@ -4,10 +4,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import com.tse.common.client.integration.tconstruct.CompatModule;
+import com.tse.common.core.library.StringsLib;
+import com.tse.common.gui.tileentity.TileEntityRegistry;
+import com.tse.common.integration.CompatModule;
 import com.tse.common.proxy.CommonProxy;
-import com.tse.library.StringsLib;
-import com.tse.tileentity.TileEntityRegistry;
 
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
@@ -28,7 +28,7 @@ public class TheStuffExtension
 		//FluidRegistry.enableUniversalBucket();
 	}
 	
-	@SidedProxy(clientSide = "com.tse.common.proxy.ClientProxy", serverSide = "com.tse.common.proxy.CommonProxy")
+	@SidedProxy(clientSide = "com.tse.client.proxy.ClientProxy", serverSide = "com.tse.common.proxy.CommonProxy")
 	public static CommonProxy proxy;
 	
 	@Instance(StringsLib.MODID)

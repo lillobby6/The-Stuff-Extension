@@ -4,8 +4,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-import com.tse.world.block.BlockManager;
-import com.tse.world.item.ItemManager;
+import com.tse.common.world.block.BlockManager;
+import com.tse.common.world.item.ItemManager;
 
 public class TSECreativeTabs {
 	

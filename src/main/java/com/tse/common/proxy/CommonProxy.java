@@ -4,11 +4,11 @@ import java.io.File;
 
 import com.tse.common.config.Config;
 import com.tse.common.core.TheStuffExtension;
-import com.tse.common.oredictionary.OreDictionaryManager;
-import com.tse.gui.GuiManager;
-import com.tse.world.gen.WorldGen;
-import com.tse.world.item.recipe.AlloyFurnaceRecipes;
-import com.tse.world.item.recipe.Smelting;
+import com.tse.common.gui.GUIManager;
+import com.tse.common.integration.oredictionary.OreDictionaryManager;
+import com.tse.common.world.gen.WorldGen;
+import com.tse.common.world.item.recipe.AlloyFurnaceRecipes;
+import com.tse.common.world.item.recipe.Smelting;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -38,7 +38,7 @@ public class CommonProxy {
     	OreDictionaryManager.registerOres();
     	Smelting.smelting();
     	AlloyFurnaceRecipes.instance();
-    	NetworkRegistry.INSTANCE.registerGuiHandler(TheStuffExtension.instance, new GuiManager());
+    	NetworkRegistry.INSTANCE.registerGuiHandler(TheStuffExtension.instance, new GUIManager());
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
        
         TheStuffExtension.log("Finished Init.");
@@ -54,17 +54,6 @@ public class CommonProxy {
     }
     
     public void registerFluidBlockRendering(Block block, String name) {
-		
-	}
-	
-    
-    @Optional.Method(modid = "tconstruct")
-	public void setRenderInfo(Material mat, int color) {
-		
-	}
-	
-	@Optional.Method(modid = "tconstruct")
-	public void setRenderInfo(Material mat, int lo, int mid, int hi) {
 		
 	}
 }
