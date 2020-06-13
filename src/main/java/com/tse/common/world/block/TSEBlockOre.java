@@ -49,7 +49,6 @@ public class TSEBlockOre extends Block{
 	
 	protected TSEBlockOre(String unlocalizedName, Material mat, int harvestLevel, String toolType, float hardness, float resistance, CreativeTabs tab) {
         super(mat);
-        this.itemDropped = Item.getItemFromBlock(this);
         this.setHarvestLevel(toolType, harvestLevel);
         this.setHardness(hardness);
         this.setResistance(resistance);
@@ -64,7 +63,11 @@ public class TSEBlockOre extends Block{
 	
 	public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-		return itemDropped;
+		if(itemDropped != null)
+		{
+			return itemDropped;
+		}
+		else return super.getItemDropped(state, rand, fortune);
     }
 	
 	public int quantityDropped(Random random)

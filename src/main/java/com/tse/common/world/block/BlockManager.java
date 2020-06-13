@@ -2,13 +2,13 @@ package com.tse.common.world.block;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import com.tse.common.core.TheStuffExtension;
 import com.tse.common.creativetabs.TSECreativeTabs;
 import com.tse.common.world.item.ItemManager;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.event.RegistryEvent;
@@ -18,6 +18,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod.EventBusSubscriber
 public class BlockManager {
+	private static Random rand = new Random();
 	
 	private static List<Block> registeredBlocks = new ArrayList<Block>();
 
@@ -40,7 +41,7 @@ public class BlockManager {
 	public static Block terriumOre = new TSEBlockOre("terrium_ore", Material.ROCK, 4, "pickaxe", 8.0F, 8.0F, TSECreativeTabs.tabOres);
 	public static Block aluminumOre = new TSEBlockOre("aluminum_ore", Material.ROCK, 1, "pickaxe", 2.0F, 3.0F, TSECreativeTabs.tabOres);
 	
-	public static Block meteor = new TSEBlockOre("meteor", Material.ROCK, 1, "pickaxe", 3.0F, 50.0F, TSECreativeTabs.tabOres, ItemManager.sphaleriteGem);
+	public static Block meteor = new TSEBlockOre("meteor", Material.ROCK, 1, "pickaxe", 3.0F, 50.0F, TSECreativeTabs.tabOres, ItemManager.sphaleriteGem, rand.nextInt(3));
 			
 	//TODO Moon stuff
 	public static Block moonStone;// = new TSEBlock("moon_stone", 3.0F, 3.0F);

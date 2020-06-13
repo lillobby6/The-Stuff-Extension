@@ -5,7 +5,8 @@
     "v1.2.0.0-1.12.2": "https://www.curseforge.com/minecraft/mc-mods/the-stuff-extension/files/2461250", 
     "v1.3.0.2-1.12.2": "https://www.curseforge.com/minecraft/mc-mods/the-stuff-extension/files/2874753",
     "v1.3.0.5-1.12.2": "https://www.curseforge.com/minecraft/mc-mods/the-stuff-extension/files/2978336",
-    "v1.3.0.6-1.12.2": "https://www.curseforge.com/minecraft/mc-mods/the-stuff-extension/files/2978881"
+    "v1.3.0.6-1.12.2": "https://www.curseforge.com/minecraft/mc-mods/the-stuff-extension/files/2978881",
+    "v1.3.0.7-1.12.2": "https://www.curseforge.com/minecraft/mc-mods/the-stuff-extension/files/2979024"
   },
   "1.9.4": {
     "v1.2.0-1.9.4": "https://www.curseforge.com/minecraft/mc-mods/the-stuff-extension/files/2306015"
@@ -14,7 +15,7 @@
     "v1.0.0": "https://www.curseforge.com/minecraft/mc-mods/the-stuff-extension/files/2272761"
   },
   "promos": {
-    "1.12.2-latest": "v1.3.0.6-1.12.2",
+    "1.12.2-latest": "v1.3.0.7-1.12.2",
     "1.12.2-recommended": "v1.3.0.2-1.12.2",
     "1.9.4-latest": "v1.2.0-1.9.4",
     "1.9.4-recommended": "v1.2.0-1.9.4",
