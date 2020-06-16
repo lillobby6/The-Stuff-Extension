@@ -12,7 +12,7 @@ public class TSEToolMaterials {
 	 * DIAMOND(3, 1561, 8.0F, 3.0F, 10), 
 	 * GOLD(0, 32, 12.0F, 0.0F, 22);
 	 */
-	public static final ToolMaterial METEORICIRON = EnumHelper.addToolMaterial("METEORICIRON", 2, 300, 6.2F, 2.1F, 13);
+	public static final ToolMaterial METEORICIRON = EnumHelper.addToolMaterial("METEORICIRON", 2, 200, 6.2F, 2.1F, 12);
 	public static final ToolMaterial MAGNEIUM = EnumHelper.addToolMaterial("MAGNEIUM", 2, 150, 8.0F, 1.0F, 18);
 	public static final ToolMaterial LAPIS = EnumHelper.addToolMaterial("LAPIS", 1, 50, 10.0F, 1.0F, 30);
 	public static final ToolMaterial COPPER = EnumHelper.addToolMaterial("COPPER", 2, 250, 5.0F, 2.0F, 22);
@@ -27,8 +27,8 @@ public class TSEToolMaterials {
 	public static final ToolMaterial MAGIC = EnumHelper.addToolMaterial("MAGIC", 6, 9600, 28.0F, 10.0F, 30);
 	public static final ToolMaterial MYSTIC = EnumHelper.addToolMaterial("MYSTIC", 5, 6920, 20.0F, 7.0F, 30);
 	public static final ToolMaterial MITHRIL = EnumHelper.addToolMaterial("MITHRIL", 7, 9820, 31.0F, 12.0F, 50);
-	public static final ToolMaterial EXTRANETIUM = EnumHelper.addToolMaterial("EXTRANETIUM", 8, 15128, 50.0F, 20F, 60);
-	public static final ToolMaterial MNEMIUM = EnumHelper.addToolMaterial("MNEMIUM", 9, 31496, 70.0F, 30.0F, 80);
+	public static final ToolMaterial EXTRANETIUM = EnumHelper.addToolMaterial("EXTRANETIUM", 8, 15128, 35.0F, 14.0F, 60);
+	public static final ToolMaterial MNEMIUM = EnumHelper.addToolMaterial("MNEMIUM", 9, 13295, 52.0F, 26.0F, 80);
 	public static final ToolMaterial MORTIUM = EnumHelper.addToolMaterial("MORTIUM", 4, 2161, 9.0F, 4.0F, 13);
 	public static final ToolMaterial MYSTERIOUS = EnumHelper.addToolMaterial("MYSTERIOUS", 6, 8950, 26.0F, 9.0F, 32);
 	public static final ToolMaterial SKYIRON = EnumHelper.addToolMaterial("SKYIRON", 2, 300, 6.5F, 2.0F, 14);
@@ -42,8 +42,8 @@ public class TSEToolMaterials {
 	public static final ToolMaterial TIN = EnumHelper.addToolMaterial("TIN", 1, 130, 2.0F, 0.5F, 20);
 	public static final ToolMaterial NICKEL = EnumHelper.addToolMaterial("NICKEL", 1, 200, 4.0F, 1.0F, 13);
 	public static final ToolMaterial PEWTER = EnumHelper.addToolMaterial("PEWTER", 3, 1000, 6.0F, 3.0F, 5);
-	public static final ToolMaterial ETERNIUM = EnumHelper.addToolMaterial("ETERNIUM", 10, 68920, 50.0F, 90.0F, 100);
-	public static final ToolMaterial IMMORTALIUM = EnumHelper.addToolMaterial("IMMORTALIUM", 10, 68920, 90.0F, 50.0F, 100);
+	public static final ToolMaterial ETERNIUM = EnumHelper.addToolMaterial("ETERNIUM", 10, 26450, 50.0F, 90.0F, 100);
+	public static final ToolMaterial IMMORTALIUM = EnumHelper.addToolMaterial("IMMORTALIUM", 10, 26450, 90.0F, 50.0F, 100);
 	public static final ToolMaterial REFORGEDGOLD = EnumHelper.addToolMaterial("REFORGEDGOLD", 2, 131, 10.0F, 2.0F, 20);
 	public static final ToolMaterial ZINC = EnumHelper.addToolMaterial("ZINC", 1, 250, 3.0F, 1.0F, 9);
 	public static final ToolMaterial BRASS = EnumHelper.addToolMaterial("BRASS", 2, 500, 3.0F, 1.5F, 15);

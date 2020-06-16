@@ -8,6 +8,7 @@ import com.tse.common.world.block.BlockManager;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
@@ -74,7 +75,9 @@ public class WorldGen implements IWorldGenerator{
 			addGen(BlockManager.meteor, world, random, chunkX, chunkZ, 0, 30, Config.freqMeteors, 50, 64);
 	}
 	
-	public void genNether(Random random, int chunkX, int chunkZ, World world, net.minecraft.world.gen.IChunkGenerator chunkGenerator, IChunkProvider chunkProvider){}
+	public void genNether(Random random, int chunkX, int chunkZ, World world, net.minecraft.world.gen.IChunkGenerator chunkGenerator, IChunkProvider chunkProvider){
+
+	}
 	
 	public void genEnd(Random random, int chunkX, int chunkZ, World world, net.minecraft.world.gen.IChunkGenerator chunkGenerator, IChunkProvider chunkProvider){}
 	

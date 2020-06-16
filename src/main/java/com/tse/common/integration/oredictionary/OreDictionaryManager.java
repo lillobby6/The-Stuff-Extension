@@ -18,21 +18,61 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("stickGold", ItemManager.goldenStick);
 		OreDictionary.registerOre("stickDiamond", ItemManager.diamondStick);
 		OreDictionary.registerOre("stickMystic", ItemManager.mysticStick);
-		
+		OreDictionary.registerOre("stickBrightflame", ItemManager.brightflameStick);
+		OreDictionary.registerOre("stickBrightsteel", ItemManager.brightsteelStick);
+		OreDictionary.registerOre("stickMagic", ItemManager.magicStick);
+		OreDictionary.registerOre("stickMithril", ItemManager.mithrilStick);
+		OreDictionary.registerOre("stickMyterious", ItemManager.mysteriousStick);
+		OreDictionary.registerOre("stickExtranetium", ItemManager.extranetiumStick);
+		OreDictionary.registerOre("stickEternium", ItemManager.eterniumStick);
+		OreDictionary.registerOre("stickFantasium", ItemManager.fantasiumStick);
+		OreDictionary.registerOre("stickScornium", ItemManager.scorniumStick);
+		OreDictionary.registerOre("stickElectrum", ItemManager.electrumStick);
+		OreDictionary.registerOre("stickLaenium", ItemManager.laeniumStick);
+		OreDictionary.registerOre("stickMagneium", ItemManager.magneiumStick);
+		OreDictionary.registerOre("stickSilverSterling", ItemManager.sterlingSilverStick);
+		OreDictionary.registerOre("stickGoldRose", ItemManager.roseGoldStick);
+		OreDictionary.registerOre("stickGoldWhite", ItemManager.whiteGoldStick);
+		OreDictionary.registerOre("stickSpangold", ItemManager.spangoldStick);
+		OreDictionary.registerOre("stickMaduum", ItemManager.maduumStick);
+		OreDictionary.registerOre("stickImmortalium", ItemManager.immortaliumStick);
 		OreDictionary.registerOre("stickIron", ItemManager.ironRod);
+		OreDictionary.registerOre("stickCopper", ItemManager.copperRod);
 		OreDictionary.registerOre("stickSteel", ItemManager.steelRod);
+		OreDictionary.registerOre("stickTin", ItemManager.tinRod);
+		OreDictionary.registerOre("stickTyionetium", ItemManager.tyionetiumRod);
 		OreDictionary.registerOre("stickBronze", ItemManager.bronzeRod);
-		OreDictionary.registerOre("stickBrass", ItemManager.brassRod);
+		OreDictionary.registerOre("stickMortium", ItemManager.mortiumRod);
+		OreDictionary.registerOre("stickIronSky", ItemManager.skyIronRod);
+		OreDictionary.registerOre("stickTerrium", ItemManager.terriumRod);
+		OreDictionary.registerOre("stickToslotrium", ItemManager.toslotriumRod);
+		OreDictionary.registerOre("stickVividium", ItemManager.vividiumRod);
+		OreDictionary.registerOre("stickSilver", ItemManager.silverRod);
+		OreDictionary.registerOre("stickPlatinum", ItemManager.platinumRod);
 		OreDictionary.registerOre("stickTitanium", ItemManager.titaniumRod);
-
+		OreDictionary.registerOre("stickZinc", ItemManager.zincRod);
+		OreDictionary.registerOre("stickBrass", ItemManager.brassRod);
+		OreDictionary.registerOre("stickLead", ItemManager.leadRod);
+		OreDictionary.registerOre("stickNickel", ItemManager.nickelRod);
+		OreDictionary.registerOre("stickPewter", ItemManager.pewterRod);
+		OreDictionary.registerOre("stickAluminum", ItemManager.aluminumRod);
+		OreDictionary.registerOre("stickMnemium", ItemManager.mnemiumRod);
+		OreDictionary.registerOre("stickIronMeteoric", ItemManager.meteoricIronRod);
+		
+		OreDictionary.registerOre("gearWood", ItemManager.woodenGear);
+		OreDictionary.registerOre("gearStone", ItemManager.stoneGear);
+		
 		OreDictionary.registerOre("gemDiamondExalted", ItemManager.exaltedDiamond);
 		OreDictionary.registerOre("gemDiamondBlood", ItemManager.bloodDiamond);
 		OreDictionary.registerOre("gemDiamondTerra", ItemManager.terraDiamond);
 		OreDictionary.registerOre("gemDiamondLuna", ItemManager.lunaDiamond);
+		OreDictionary.registerOre("gemDiamondSol", ItemManager.solDiamond);
 
 		OreDictionary.registerOre("gemSphalerite", ItemManager.sphaleriteGem);
 		OreDictionary.registerOre("oreZinc", ItemManager.sphaleriteGem);
 
+		OreDictionary.registerOre("ingotDiamond", ItemManager.diamondIngot);
+		
 		OreDictionary.registerOre("ingotCopper", ItemManager.copperIngot);
 		OreDictionary.registerOre("ingotSteel", ItemManager.steelIngot);
 		OreDictionary.registerOre("ingotTin", ItemManager.tinIngot);
@@ -40,7 +80,6 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("ingotBronze", ItemManager.bronzeIngot);
 		OreDictionary.registerOre("ingotBrightflame", ItemManager.brightflameIngot);
 		OreDictionary.registerOre("ingotBrightsteel", ItemManager.brightsteelIngot);
-		OreDictionary.registerOre("ingotDiamond", ItemManager.diamondIngot);
 		OreDictionary.registerOre("ingotGoldReforged", ItemManager.reforgedGoldIngot);
 		OreDictionary.registerOre("ingotMagic", ItemManager.magicIngot);
 		OreDictionary.registerOre("ingotMithril", ItemManager.mithrilIngot);
@@ -67,18 +106,55 @@ public class OreDictionaryManager {
 		OreDictionary.registerOre("ingotScornium", ItemManager.scorniumIngot);
 		OreDictionary.registerOre("ingotElectrum", ItemManager.electrumIngot);
 		OreDictionary.registerOre("ingotLaenium", ItemManager.laeniumIngot);
-		OreDictionary.registerOre("ingotMegneium", ItemManager.magneiumIngot);
-
-		OreDictionary.registerOre("nuggetMagic", ItemManager.magicNugget);
-		OreDictionary.registerOre("nuggetMystic", ItemManager.mysticNugget);
-		OreDictionary.registerOre("nuggetMysterious", ItemManager.mysteriousIngot);
-		OreDictionary.registerOre("nuggetBrightflame", ItemManager.brightflameNugget);
+		OreDictionary.registerOre("ingotMagneium", ItemManager.magneiumIngot);
+		OreDictionary.registerOre("ingotSilverSterling", ItemManager.sterlingSilverIngot);
+		OreDictionary.registerOre("ingotGoldRose", ItemManager.roseGoldIngot);
+		OreDictionary.registerOre("ingotGoldWhite", ItemManager.whiteGoldIngot);
+		OreDictionary.registerOre("ingotSpangold", ItemManager.spangoldIngot);
+		OreDictionary.registerOre("ingotIronMeteoric", ItemManager.meteoricIronIngot);
+		OreDictionary.registerOre("ingotMaduum", ItemManager.maduumIngot);
+		OreDictionary.registerOre("ingotImmortalium", ItemManager.immortaliumIngot);
+		
 		OreDictionary.registerOre("nuggetDiamond", ItemManager.diamondNugget);
-		OreDictionary.registerOre("nuggetBronze", ItemManager.bronzeNugget);
-		OreDictionary.registerOre("nuggetBrass", ItemManager.brassNugget);
-		OreDictionary.registerOre("nuggetPlatinum", ItemManager.platinumNugget);
-		OreDictionary.registerOre("nuggetTitanium", ItemManager.titaniumNugget);
+
+		OreDictionary.registerOre("nuggetCopper", ItemManager.copperNugget);
 		OreDictionary.registerOre("nuggetSteel", ItemManager.steelNugget);
+		OreDictionary.registerOre("nuggetTin", ItemManager.tinNugget);
+		OreDictionary.registerOre("nuggetTyionetium", ItemManager.tyionetiumNugget);
+		OreDictionary.registerOre("nuggetBronze", ItemManager.bronzeNugget);
+		OreDictionary.registerOre("nuggetBrightflame", ItemManager.brightflameNugget);
+		OreDictionary.registerOre("nuggetBrightsteel", ItemManager.brightsteelNugget);
+		OreDictionary.registerOre("nuggetGoldReforged", ItemManager.reforgedGoldNugget);
+		OreDictionary.registerOre("nuggetMagic", ItemManager.magicNugget);
+		OreDictionary.registerOre("nuggetMithril", ItemManager.mithrilNugget);
+		OreDictionary.registerOre("nuggetMortium", ItemManager.mortiumNugget);
+		OreDictionary.registerOre("nuggetMysterious", ItemManager.mysteriousNugget);
+		OreDictionary.registerOre("nuggetMystic", ItemManager.mysticNugget);
+		OreDictionary.registerOre("nuggetIronSky", ItemManager.skyIronNugget);
+		OreDictionary.registerOre("nuggetTerrium", ItemManager.terriumNugget);
+		OreDictionary.registerOre("nuggetToslotrium", ItemManager.toslotriumNugget);
+		OreDictionary.registerOre("nuggetVividium", ItemManager.vividiumNugget);
+		OreDictionary.registerOre("nuggetExtranetium", ItemManager.extranetiumNugget);
+		OreDictionary.registerOre("nuggetSilver", ItemManager.silverIngot);
+		OreDictionary.registerOre("nuggetPlatinum", ItemManager.platinumNugget);	
+		OreDictionary.registerOre("nuggetTitanium", ItemManager.titaniumNugget);
+		OreDictionary.registerOre("nuggetZinc", ItemManager.zincNugget);
+		OreDictionary.registerOre("nuggetBrass", ItemManager.brassNugget);
+		OreDictionary.registerOre("nuggetLead", ItemManager.leadNugget);
+		OreDictionary.registerOre("nuggetNickel", ItemManager.nickelNugget);
+		OreDictionary.registerOre("nuggetPewter", ItemManager.pewterNugget);
+		OreDictionary.registerOre("nuggetAluminum", ItemManager.aluminumNugget);
+		OreDictionary.registerOre("nuggetMnemium", ItemManager.mnemiumNugget);
+		OreDictionary.registerOre("nuggetEternium", ItemManager.eterniumNugget);
+		OreDictionary.registerOre("nuggetFantasium", ItemManager.fantasiumNugget);
+		OreDictionary.registerOre("nuggetSilverSterling", ItemManager.sterlingSilverNugget);
+		OreDictionary.registerOre("nuggetGoldRose", ItemManager.roseGoldNugget);
+		OreDictionary.registerOre("nuggetGoldWhite", ItemManager.whiteGoldNugget);
+		OreDictionary.registerOre("nuggetSpangold", ItemManager.spangoldNugget);
+		OreDictionary.registerOre("nuggetIronMeteoric", ItemManager.meteoricIronNugget);
+		OreDictionary.registerOre("nuggetMaduum", ItemManager.maduumNugget);
+		OreDictionary.registerOre("nuggetImmortalium", ItemManager.immortaliumNugget);
+
 		TheStuffExtension.log("Finished registering items to ore dictionary.");
 	}
 

@@ -3,6 +3,7 @@ package com.tse.common.integration.tconstruct;
 import com.tse.common.core.TheStuffExtension;
 import com.tse.common.integration.CompatModule;
 import com.tse.common.integration.tconstruct.trait.TSETraits;
+import com.tse.common.world.item.ItemManager;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -23,12 +24,12 @@ import slimeknights.tconstruct.library.materials.HandleMaterialStats;
 import slimeknights.tconstruct.library.materials.HeadMaterialStats;
 import slimeknights.tconstruct.library.materials.Material;
 import slimeknights.tconstruct.library.materials.MaterialTypes;
+import slimeknights.tconstruct.tools.TinkerMaterials;
 import slimeknights.tconstruct.tools.TinkerTraits;
 
 public class TConstructHelper extends CompatModule
 {
 	public static final Material tyionetium = new Material("tyionetium", 0xEA00EA);
-	public static final Material titanium = new Material("titanium", 0xE2E2E2);
 	public static final Material brightflame = new Material("brightflame", 0x6C0408);
 	public static final Material brightsteel = new Material("brightsteel", 0x2F4B4A);
 	public static final Material reforgedGold = new Material("reforgedGold", 0x707035);
@@ -41,9 +42,19 @@ public class TConstructHelper extends CompatModule
 	public static final Material terrium = new Material("terrium", 0x55BB57);
 	public static final Material vividium = new Material("vividium", 0x05B200);
 	public static final Material extranetium = new Material("extranetium", 0x65BBBC);
-	
+	public static final Material platinum = new Material("platinum", 0xF2F2F2);
+	public static final Material titanium = new Material("titanium", 0xE2E2E2);
+	public static final Material pewter = new Material("pewter", 0xD0DBDB);
+	public static final Material mnemium = new Material("mnemium", 0xCC00A3);
+	public static final Material sterlingSilver = new Material("sterling_silver", 0xEDEDED);
+	public static final Material roseGold = new Material("rose_gold", 0xD8B1AD);
+	public static final Material whiteGold = new Material("white_gold", 0xDBDBDB);
+	public static final Material spangold = new Material("spangold", 0xE2C42D);
+	public static final Material meteoricIron = new Material("meteoric_iron", 0xCCCCCC);
 
-	public static Fluid fluidTitanium;
+	public static Fluid fluidToslotrium;
+	public static Fluid fluidDiamond;
+	
 	public static Fluid fluidTyionetium;
 	public static Fluid fluidBrightflame;
 	public static Fluid fluidBrightsteel;
@@ -55,74 +66,97 @@ public class TConstructHelper extends CompatModule
 	public static Fluid fluidMystic;
 	public static Fluid fluidSkyIron;
 	public static Fluid fluidTerrium;
-	public static Fluid fluidToslotrium;
 	public static Fluid fluidVividium;
 	public static Fluid fluidExtranetium;
-	
+	public static Fluid fluidPlatinum;
+	public static Fluid fluidTitanium;
+	public static Fluid fluidPewter;
+	public static Fluid fluidMnemium;
+	public static Fluid fluidSterlingSilver;
+	public static Fluid fluidRoseGold;
+	public static Fluid fluidWhiteGold;
+	public static Fluid fluidSpangold;
+	public static Fluid fluidMeteoricIron;
 	
 	static
 	{
-		fluidTitanium = setupFluid(new FluidColoredMetal("titanium", 0xFF5400, 1600));
-		sendFluidForMelting("Titanium", fluidTitanium);
-		
-		fluidTyionetium = setupFluid(new FluidColoredMetal("tyionetium", 0xFF007C, 1200));
-		sendFluidForMelting("Tyionetium", fluidTyionetium);
-		
-		fluidBrightflame = setupFluid(new FluidColoredMetal("brightflame", 0xE41408, 1000));
-		sendFluidForMelting("Brightflame", fluidBrightflame);
-		
-		fluidBrightsteel = setupFluid(new FluidColoredMetal("brightsteel", 0x2F4B4A, 1000));
-		sendFluidForMelting("Brightsteel", fluidBrightsteel);
-		
-		fluidReforgedGold = setupFluid(new FluidColoredMetal("reforged_gold", 0xBA8259, 800));
-		sendFluidForMelting("GoldReforged", fluidReforgedGold);
-		
-		fluidMagic = setupFluid(new FluidColoredMetal("magic", 0x955BC6, 1400));
-		sendFluidForMelting("Magic", fluidMagic);
-		
-		fluidMithril = setupFluid(new FluidColoredMetal("mithril", 0x4C50A9, 900));
-		sendFluidForMelting("Mithril", fluidMithril);
-		
-		fluidMortium = setupFluid(new FluidColoredMetal("mortium", 0xA3131C, 1200));
-		sendFluidForMelting("Mortium", fluidMortium);
-		
-		fluidMysterious = setupFluid(new FluidColoredMetal("mysterious", 0x5535B5, 1100));
-		sendFluidForMelting("Mysterious", fluidMysterious);
-		
-		fluidMystic = setupFluid(new FluidColoredMetal("mystic", 0x26EE8F, 1600));
-		sendFluidForMelting("Mystic", fluidMystic);
-		
-		fluidSkyIron = setupFluid(new FluidColoredMetal("sky_iron", 0x9F292A, 1500));
-		sendFluidForMelting("IronSky", fluidSkyIron);
-		
-		fluidTerrium = setupFluid(new FluidColoredMetal("terrium", 0x55BBD1, 1800));
-		sendFluidForMelting("Terrium", fluidTerrium);
-		
-		fluidToslotrium = setupFluid(new FluidColoredMetal("toslotrium", 0xD38C00, 500));
+		//(int)(0.5 * RL Melting Point) - Math conversion made Titanium RL = 1668, Iron RL = 1538; Iron TiC Block = 469, Titanium = 508.64 (Block); Iron TiC Reg = 769, Titanium Reg, 469/769  = 508.64/x, x = 834; Modifier = 834/1668 = .5
+		fluidToslotrium = setupFluid(new FluidColoredMetal("toslotrium", 0xD38C00, (int)(0.5 * 1000)));
 		sendFluidForMelting("Toslotrium", fluidToslotrium);
 		
-		fluidVividium = setupFluid(new FluidColoredMetal("vividium", 0x053700, 1200));
+		fluidDiamond = setupFluid(new FluidColoredMetal("diamond", 0x38DAFF, (int)(0.5 * 4000)));
+		sendFluidForMelting("Diamond", fluidDiamond);
+		
+		
+		fluidTyionetium = setupFluid(new FluidColoredMetal("tyionetium", 0xFF007C, (int)(0.5 * 1200)));
+		sendFluidForMelting("Tyionetium", fluidTyionetium);
+		
+		fluidBrightflame = setupFluid(new FluidColoredMetal("brightflame", 0xE41408, (int)(0.5 * 1000)));
+		sendFluidForMelting("Brightflame", fluidBrightflame);
+		
+		fluidBrightsteel = setupFluid(new FluidColoredMetal("brightsteel", 0x2F4B4A, (int)(0.5 * 1000)));
+		sendFluidForMelting("Brightsteel", fluidBrightsteel);
+		
+		fluidReforgedGold = setupFluid(new FluidColoredMetal("reforged_gold", 0xBA8259, (int)(0.5 * 1064.18)));
+		sendFluidForMelting("GoldReforged", fluidReforgedGold);
+		
+		fluidMagic = setupFluid(new FluidColoredMetal("magic", 0x955BC6, (int)(0.5 * 1400)));
+		sendFluidForMelting("Magic", fluidMagic);
+		
+		fluidMithril = setupFluid(new FluidColoredMetal("mithril", 0x4C50A9, (int)(0.5 * 2200)));
+		sendFluidForMelting("Mithril", fluidMithril);
+		
+		fluidMortium = setupFluid(new FluidColoredMetal("mortium", 0xA3131C, (int)(0.5 * 1200)));
+		sendFluidForMelting("Mortium", fluidMortium);
+		
+		fluidMysterious = setupFluid(new FluidColoredMetal("mysterious", 0x5535B5, (int)(0.5 * 1100)));
+		sendFluidForMelting("Mysterious", fluidMysterious);
+		
+		fluidMystic = setupFluid(new FluidColoredMetal("mystic", 0x26EE8F, (int)(0.5 * 1600)));
+		sendFluidForMelting("Mystic", fluidMystic);
+		
+		fluidSkyIron = setupFluid(new FluidColoredMetal("sky_iron", 0x9F292A, (int)(0.5 * 1500)));
+		sendFluidForMelting("IronSky", fluidSkyIron);
+		
+		fluidTerrium = setupFluid(new FluidColoredMetal("terrium", 0x55BBD1, (int)(0.5 * 1800)));
+		sendFluidForMelting("Terrium", fluidTerrium);
+		
+		fluidVividium = setupFluid(new FluidColoredMetal("vividium", 0x053700, (int)(0.5 * 1200)));
 		sendFluidForMelting("Vividium", fluidVividium);
 		
-		fluidExtranetium = setupFluid(new FluidColoredMetal("extranetium", 0x652FBC, 1234));
+		fluidExtranetium = setupFluid(new FluidColoredMetal("extranetium", 0x652FBC, (int)(0.5 * 1234)));
 		sendFluidForMelting("Extranetium", fluidExtranetium);
+		
+		fluidPlatinum = setupFluid(new FluidColoredMetal("platinum", 0xBA9494, (int)(0.5 * 1768.3)));
+		sendFluidForMelting("Platinum", fluidPlatinum);
+		
+		fluidTitanium = setupFluid(new FluidColoredMetal("titanium", 0xFF5400, (int)(0.5* 1668)));
+		sendFluidForMelting("Titanium", fluidTitanium);
+		
+		fluidPewter = setupFluid(new FluidColoredMetal("pewter", 0x8BBCBC, (int)(0.5 * 1000)));
+		sendFluidForMelting("Pewter", fluidPewter);
+		
+		fluidMnemium = setupFluid(new FluidColoredMetal("mnemium", 0x9300A3, (int)(0.5 * 1531)));
+		sendFluidForMelting("Mnemium", fluidMnemium);
+		
+		fluidSterlingSilver = setupFluid(new FluidColoredMetal("sterling_silver", 0xCECECE, (int)(0.5 * 1000)));
+		sendFluidForMelting("SilverSterling", fluidSterlingSilver);
+		
+		fluidRoseGold = setupFluid(new FluidColoredMetal("rose_gold", 0xD6746B, (int)(0.5 * 1000)));
+		sendFluidForMelting("GoldRose", fluidRoseGold);
+		
+		fluidWhiteGold = setupFluid(new FluidColoredMetal("white_gold", 0xF2F2DF, (int)(0.5 * 1000)));
+		sendFluidForMelting("GoldWhite", fluidWhiteGold);
+		
+		fluidSpangold = setupFluid(new FluidColoredMetal("spangold", 0xE2A12D, (int)(0.5*1000)));
+		sendFluidForMelting("Spangold", fluidSpangold);
+		
+		fluidMeteoricIron = setupFluid(new FluidColoredMetal("meteoric_iron", 0xA33B3B, (int)(0.5*1538)));
+		sendFluidForMelting("IronMeteoric", fluidMeteoricIron);
 	}
 
 	public void preInit()
 	{
-		TinkerRegistry.addMaterialStats(titanium, 
-				new HeadMaterialStats(3100, 7.0F, 4.0F, 3),
-				new HandleMaterialStats(0.8F, 600),
-				new ExtraMaterialStats(400));
-		try
-		{
-			TinkerRegistry.integrate(titanium, fluidTitanium, "Titanium").toolforge().preInit();
-		} 
-		catch(Exception e)
-		{
-			TheStuffExtension.logError("[TCon] Material 'titanium' has already been registered", e);
-		}
-		
 		TinkerRegistry.addMaterialStats(tyionetium, 
 				new HeadMaterialStats(2600, 12.0F, 4.0F, 5),
 				new HandleMaterialStats(1.2F, 200),
@@ -209,62 +243,236 @@ public class TConstructHelper extends CompatModule
 				new HandleMaterialStats(1.0F, 1000),
 				new ExtraMaterialStats(1000));
 		TinkerRegistry.integrate(extranetium, fluidExtranetium, "Extranetium").toolforge().preInit();
+		
+		TinkerRegistry.addMaterialStats(platinum,
+				new HeadMaterialStats(50, 15.0F, 1.0F, 0),
+				new HandleMaterialStats(1.3F, -20),
+				new ExtraMaterialStats(20));
+		try
+		{
+			TinkerRegistry.integrate(platinum, fluidPlatinum, "Platinum").toolforge().preInit();
+		} 
+		catch(Exception e)
+		{
+			TheStuffExtension.logError("[TCon] Material 'platinum' has already been registered", e);
+		}
+		
+		TinkerRegistry.addMaterialStats(titanium, 
+				new HeadMaterialStats(3100, 7.0F, 4.0F, 3),
+				new HandleMaterialStats(0.8F, 600),
+				new ExtraMaterialStats(400));
+		try
+		{
+			TinkerRegistry.integrate(titanium, fluidTitanium, "Titanium").toolforge().preInit();
+		} 
+		catch(Exception e)
+		{
+			TheStuffExtension.logError("[TCon] Material 'titanium' has already been registered", e);
+		}
+		
+		TinkerRegistry.addMaterialStats(pewter,
+				new HeadMaterialStats(800, 5.0F, 2.4F, 3),
+				new HandleMaterialStats(0.7F, 300),
+				new ExtraMaterialStats(100));
+		try
+		{
+			TinkerRegistry.integrate(pewter, fluidPewter, "Pewter").toolforge().preInit();
+		} 
+		catch(Exception e)
+		{
+			TheStuffExtension.logError("[TCon] Material 'pewter' has already been registered", e);
+		}
+		
+		TinkerRegistry.addMaterialStats(mnemium,
+				new HeadMaterialStats(12000, 49.0F, 23.0F, 9),
+				new HandleMaterialStats(2.1F, -5000),
+				new ExtraMaterialStats(4000));
+		TinkerRegistry.integrate(mnemium, fluidMnemium, "Mnemium").toolforge().preInit();
+		
+		TinkerRegistry.addMaterialStats(sterlingSilver,
+				new HeadMaterialStats(90, 8.0F, 0.0F, 1),
+				new HandleMaterialStats(1.2F, -50),
+				new ExtraMaterialStats(75));
+		try
+		{
+			TinkerRegistry.integrate(sterlingSilver, fluidSterlingSilver, "SilverSterling").toolforge().preInit();
+		}
+		catch(Exception e)
+		{
+			TheStuffExtension.logError("[TCon] Material 'sterling_silver' has already been registered", e);
+		}
+		
+		TinkerRegistry.addMaterialStats(roseGold,
+				new HeadMaterialStats(20, 12.0F, 0.0F, 0),
+				new HandleMaterialStats(1.1F, -30),
+				new ExtraMaterialStats(20));
+		try
+		{
+			TinkerRegistry.integrate(roseGold, fluidRoseGold, "GoldRose").toolforge().preInit();
+		}
+		catch(Exception e)
+		{
+			TheStuffExtension.logError("[TCon] Material 'rose_gold' has already been registered", e);
+		}
+		
+		TinkerRegistry.addMaterialStats(whiteGold,
+				new HeadMaterialStats(11, 13.0F, 0.0F, 0),
+				new HandleMaterialStats(0.9F, -20),
+				new ExtraMaterialStats(22));
+		try
+		{
+			TinkerRegistry.integrate(whiteGold, fluidWhiteGold, "GoldWhite").toolforge().preInit();
+		}
+		catch(Exception e)
+		{
+			TheStuffExtension.logError("[TCon] Material 'white_gold' has already been registered", e);
+		}
+		
+		TinkerRegistry.addMaterialStats(spangold,
+				new HeadMaterialStats(33, 13.0F, 0.0F, 0),
+				new HandleMaterialStats(0.5F, 5),
+				new ExtraMaterialStats(15));
+		try
+		{
+			TinkerRegistry.integrate(spangold, fluidSpangold, "Spangold").toolforge().preInit();
+		}
+		catch(Exception e)
+		{
+			TheStuffExtension.logError("[TCon] Material 'spangold' has already been registered", e);
+		}
+		
+		TinkerRegistry.addMaterialStats(meteoricIron,
+				new HeadMaterialStats(150, 6.0F, 1.7F, 2),
+				new HandleMaterialStats(.75F, 100),
+				new ExtraMaterialStats(50));
+		try
+		{
+			TinkerRegistry.integrate(meteoricIron, fluidMeteoricIron, "IronMeteoric").toolforge().preInit();
+		}
+		catch(Exception e)
+		{
+			TheStuffExtension.logError("[TCon] Material 'meteoric_iron' has already been registered", e);
+		}
 	}
 	public void init()
-	{
-		titanium.setCastable(true).setCraftable(false);
-		titanium.addTrait(TinkerTraits.lightweight);
-		
+	{	
 		tyionetium.setCastable(true).setCraftable(false);
 		tyionetium.addTrait(TinkerTraits.magnetic2);
+		tyionetium.setRepresentativeItem(ItemManager.tyionetiumIngot);
+		tyionetium.addCommonItems("Tyionetium");
 		
 		brightflame.setCastable(true).setCraftable(false);
 		brightflame.addTrait(TinkerTraits.autosmelt, MaterialTypes.HEAD);
 		brightflame.addTrait(TinkerTraits.flammable, MaterialTypes.EXTRA);
 		brightflame.addTrait(TinkerTraits.superheat, MaterialTypes.HANDLE);
+		brightflame.setRepresentativeItem(ItemManager.brightflameIngot);
+		brightflame.addCommonItems("Brightflame");
 		
 		brightsteel.setCastable(true).setCraftable(false);
 		brightsteel.addTrait(TinkerTraits.sharp, MaterialTypes.HEAD);
 		brightsteel.addTrait(TinkerTraits.dense, MaterialTypes.EXTRA);
 		brightsteel.addTrait(TinkerTraits.heavy, MaterialTypes.HANDLE);
+		brightsteel.setRepresentativeItem(ItemManager.brightsteelIngot);
+		brightsteel.addCommonItems("Brightsteel");
 		
 		reforgedGold.setCastable(true).setCraftable(false);
 		reforgedGold.addTrait(TinkerTraits.shocking);
+		reforgedGold.setRepresentativeItem(ItemManager.reforgedGoldIngot);
+		reforgedGold.addCommonItems("GoldReforged");
 		
 		magic.setCastable(true).setCraftable(false);
 		magic.addTrait(TinkerTraits.holy);
 		magic.addTrait(TinkerTraits.lightweight);
+		magic.setRepresentativeItem(ItemManager.magicIngot);
+		magic.addCommonItems("Magic");
 		
 		mithril.setCastable(true).setCraftable(false);
 		mithril.addTrait(TinkerTraits.alien);
+		mithril.setRepresentativeItem(ItemManager.mithrilIngot);
+		mithril.addCommonItems("Mithril");
 		
 		//TODO Add NuclearCraft compat with Withering
 		mortium.setCastable(true).setCraftable(false);
 		mortium.addTrait(TinkerTraits.coldblooded);
+		mortium.setRepresentativeItem(ItemManager.mortiumIngot);
+		mortium.addCommonItems("Mortium");
 		
 		mysterious.setCastable(true).setCraftable(false);
 		mysterious.addTrait(TinkerTraits.petramor);
+		mysterious.setRepresentativeItem(ItemManager.mysteriousIngot);
+		mysterious.addCommonItems("Mysterious");
 		
 		mystic.setCastable(true).setCraftable(false);
 		mystic.addTrait(TinkerTraits.duritos, MaterialTypes.EXTRA);
 		mystic.addTrait(TinkerTraits.duritos, MaterialTypes.HEAD);
 		mystic.addTrait(TinkerTraits.momentum, MaterialTypes.HANDLE);
+		mystic.setRepresentativeItem(ItemManager.mysticIngot);
+		mystic.addCommonItems("Mystic");
 		
 		skyIron.setCastable(true).setCraftable(false);
 		skyIron.addTrait(TinkerTraits.alien, MaterialTypes.HEAD);
 		skyIron.addTrait(TinkerTraits.magnetic, MaterialTypes.HANDLE);
 		skyIron.addTrait(TinkerTraits.magnetic, MaterialTypes.EXTRA);
+		skyIron.setRepresentativeItem(ItemManager.skyIronIngot);
+		skyIron.addCommonItems("IronSky");
 		
 		terrium.setCastable(true).setCraftable(false);
 		terrium.addTrait(TinkerTraits.duritos, MaterialTypes.HEAD);
 		terrium.addTrait(TinkerTraits.dense, MaterialTypes.EXTRA);
 		terrium.addTrait(TinkerTraits.heavy, MaterialTypes.HANDLE);
+		terrium.setRepresentativeItem(ItemManager.terriumIngot);
+		terrium.addCommonItems("Terrium");
 		
 		vividium.setCastable(true).setCraftable(false);
 		vividium.addTrait(TSETraits.AMELIORATING);
+		vividium.setRepresentativeItem(ItemManager.vividiumIngot);
+		vividium.addCommonItems("Vividium");
 		
 		extranetium.setCastable(true).setCraftable(false);
 		extranetium.addTrait(TinkerTraits.insatiable);
+		extranetium.setRepresentativeItem(ItemManager.extranetiumIngot);
+		extranetium.addCommonItems("Extranetium");
+		
+		platinum.setCastable(true).setCraftable(false);
+		platinum.addTrait(TinkerTraits.holy);
+		platinum.setRepresentativeItem(ItemManager.platinumIngot);
+		platinum.addCommonItems("Platinum");
+		
+		titanium.setCastable(true).setCraftable(false);
+		titanium.addTrait(TinkerTraits.lightweight);
+		titanium.setRepresentativeItem(ItemManager.titaniumIngot);
+		titanium.addCommonItems("Titanium");
+		
+		pewter.setCastable(true).setCraftable(false);
+		pewter.addTrait(TinkerTraits.lightweight);
+		pewter.setRepresentativeItem(ItemManager.pewterIngot);
+		pewter.addCommonItems("Pewter");
+		
+		mnemium.setCastable(true).setCraftable(false);
+		mnemium.addTrait(TinkerTraits.insatiable);
+		mnemium.addTrait(TinkerTraits.momentum);
+		mnemium.setRepresentativeItem(ItemManager.mnemiumIngot);
+		mnemium.addCommonItems("Mnemium");
+		
+		sterlingSilver.setRepresentativeItem(ItemManager.sterlingSilverIngot);
+		sterlingSilver.setCastable(true).setCraftable(false);
+		sterlingSilver.addTrait(TinkerTraits.holy);
+		sterlingSilver.addCommonItems("SilverSterling");
+		
+		roseGold.setRepresentativeItem(ItemManager.roseGoldIngot);
+		roseGold.setCastable(true).setCraftable(false);
+		roseGold.addCommonItems("GoldRose");
+		
+		whiteGold.setRepresentativeItem(ItemManager.whiteGoldIngot);
+		whiteGold.setCastable(true).setCraftable(false);
+		
+		spangold.setRepresentativeItem(ItemManager.spangoldIngot);
+		spangold.setCastable(true).setCraftable(false);
+		
+		meteoricIron.setRepresentativeItem(ItemManager.meteoricIronIngot);
+		meteoricIron.setCastable(true).setCraftable(false);
+		meteoricIron.addTrait(TinkerTraits.alien);
+		meteoricIron.addItem(ItemManager.meteoricIronShard, 1, 144);
 	}
 	
 	
