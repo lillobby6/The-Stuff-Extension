@@ -13,5 +13,3 @@ Please include
 	* Crash log
 
 If the error is in an unofficial (i.e. you modified the code) build, please do not ask about it.
-
-Please do not redistribute the mod for any monetary gain.
