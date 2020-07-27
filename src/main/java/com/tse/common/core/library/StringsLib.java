@@ -3,7 +3,7 @@ package com.tse.common.core.library;
 public class StringsLib {
 	public static final String MODID = "tse";
 	//HUGE-VERSION.RELEASE-VERSION.BETA-VERSION.ALPHA-VERSION/HOT-FIX
-	public static final String VERSION = "v1.3.0.9-1.12.2";
+	public static final String VERSION = "v1.3.0.11-1.12.2";
     public static final String NAME = "TheStuffExtension";
     public static final String PACKET_CHANNEL = "StuffExtension";
     
@@ -72,6 +72,6 @@ public class StringsLib {
      * Coldsteel:
      * Necromium:
      * Dream:
-     * Arcaeum
+     * Arcaeum:
      * */
 }

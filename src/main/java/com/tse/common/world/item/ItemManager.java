@@ -46,6 +46,7 @@ public class ItemManager {
 	public static Item spangoldStick = registerMainItem("spangold_stick", TSECreativeTabs.tabMaterials);
 	public static Item maduumStick = registerMainItem("maduum_stick", TSECreativeTabs.tabMaterials);
 	public static Item immortaliumStick = registerMainItem("immortalium_stick", TSECreativeTabs.tabMaterials);
+	public static Item dreamStick = registerMainItem("dream_stick", TSECreativeTabs.tabMaterials);
 	
 	public static Item ironRod = registerMainItem("iron_rod", TSECreativeTabs.tabMaterials);
 	public static Item copperRod = registerMainItem("copper_rod", TSECreativeTabs.tabMaterials);
@@ -127,6 +128,7 @@ public class ItemManager {
 	public static Item meteoricIronIngot = registerMainItem("meteoric_iron_ingot", TSECreativeTabs.tabMaterials);
 	public static Item maduumIngot = registerMainItem("maduum_ingot", TSECreativeTabs.tabMaterials);
 	public static Item immortaliumIngot = registerMainItem("immortalium_ingot", TSECreativeTabs.tabMaterials);
+	public static Item dreamIngot = registerMainItem("dream_ingot", TSECreativeTabs.tabMaterials);
 	
 	public static Item diamondNugget = registerMainItem("diamond_nugget", TSECreativeTabs.tabMaterials);
 	public static Item copperNugget = registerMainItem("copper_nugget", TSECreativeTabs.tabMaterials);
@@ -170,6 +172,7 @@ public class ItemManager {
 	public static Item meteoricIronNugget = registerMainItem("meteoric_iron_nugget", TSECreativeTabs.tabMaterials);
 	public static Item maduumNugget = registerMainItem("maduum_nugget", TSECreativeTabs.tabMaterials);
 	public static Item immortaliumNugget = registerMainItem("immortalium_nugget", TSECreativeTabs.tabMaterials);
+	public static Item dreamNugget = registerMainItem("dream_nugget", TSECreativeTabs.tabMaterials);
 	
 	// End Materials
 
@@ -436,6 +439,12 @@ public class ItemManager {
 	public static Item immortaliumHoe = registerHoe(TSEToolMaterials.IMMORTALIUM, "immortalium_hoe", TSECreativeTabs.tabTools, 10);
 	public static Item immortaliumMattock = registerMattock(TSEToolMaterials.IMMORTALIUM, "immortalium_mattock", TSECreativeTabs.tabTools, 10);
 	
+	public static Item dreamPickaxe = registerPickaxe(TSEToolMaterials.DREAM, "dream_pickaxe", TSECreativeTabs.tabTools, 10);
+	public static Item dreamAxe = registerAxe(TSEToolMaterials.DREAM, "dream_axe", TSECreativeTabs.tabTools, 10, 50.0F);
+	public static Item dreamShovel = registerShovel(TSEToolMaterials.DREAM, "dream_shovel", TSECreativeTabs.tabTools, 10);
+	public static Item dreamHoe = registerHoe(TSEToolMaterials.DREAM, "dream_hoe", TSECreativeTabs.tabTools, 10);
+	public static Item dreamMattock = registerMattock(TSEToolMaterials.DREAM, "dream_mattock", TSECreativeTabs.tabTools, 10);
+	
 	// Others
 	public static Item woodMattock = registerMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools, 0);
 	public static Item stoneMattock = registerMattock(-2.5F, ToolMaterial.STONE, "stone_mattock", TSECreativeTabs.tabTools, 1);
@@ -491,6 +500,7 @@ public class ItemManager {
 	public static Item meteoricIronSword = registerSword(TSEToolMaterials.METEORICIRON, "meteoric_iron_sword", TSECreativeTabs.tabWeapons);
 	public static Item maduumSword = registerSword(TSEToolMaterials.MADUUM, "maduum_sword", TSECreativeTabs.tabWeapons);
 	public static Item immortaliumSword = registerSword(TSEToolMaterials.IMMORTALIUM, "immortalium_sword", TSECreativeTabs.tabWeapons);
+	public static Item dreamSword = registerSword(TSEToolMaterials.DREAM, "dream_sword", TSECreativeTabs.tabWeapons);
 	
 	public static Item justice = registerLightSword(TSEToolMaterials.JUSTICE, "justice", TSECreativeTabs.tabWeapons, true);
 	public static Item corruption = registerLightSword(TSEToolMaterials.CORRUPTION, "corruption", TSECreativeTabs.tabWeapons, false);

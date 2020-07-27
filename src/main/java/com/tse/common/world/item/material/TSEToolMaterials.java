@@ -48,11 +48,12 @@ public class TSEToolMaterials {
 	public static final ToolMaterial ZINC = EnumHelper.addToolMaterial("ZINC", 1, 250, 3.0F, 1.0F, 9);
 	public static final ToolMaterial BRASS = EnumHelper.addToolMaterial("BRASS", 2, 500, 3.0F, 1.5F, 15);
 	public static final ToolMaterial LEAD = EnumHelper.addToolMaterial("LEAD", 3, 70, 1.0F, 3.2F, 0);
-	public static final ToolMaterial FANTASIUM = EnumHelper.addToolMaterial("FANTASIUM", 5, 10000, 25.0F, 8.0F, 25);
+	public static final ToolMaterial FANTASIUM = EnumHelper.addToolMaterial("FANTASIUM", 5, 8320, 25.0F, 8.0F, 25);
 	public static final ToolMaterial SCORNIUM = EnumHelper.addToolMaterial("SCORNIUM", 5, 4000, 14.0F, 9.0F, 10);
 	public static final ToolMaterial ELECTRUM = EnumHelper.addToolMaterial("ELECTRUM", 1, 200, 12.0F, 0.5F, 23);
 	public static final ToolMaterial LAENIUM = EnumHelper.addToolMaterial("LAENIUM", 4, 400, 50.0F, 2.0F, 100);
 	public static final ToolMaterial MADUUM = EnumHelper.addToolMaterial("MADUUM", 1, -1, 1.0F, 0.0F, 0);
+	public static final ToolMaterial DREAM = EnumHelper.addToolMaterial("DREAM", 7, 10362, 14.0F, 14.0F, 30);
 
 	public static final ToolMaterial JUSTICE = EnumHelper.addToolMaterial("JUSTICE", 0, 5000, 2.0F, 90.0F, 10);
 	public static final ToolMaterial CORRUPTION = EnumHelper.addToolMaterial("CORRUPTION", 0, 800, 1.0F, 120.0F, 5);
