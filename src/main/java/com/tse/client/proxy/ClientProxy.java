@@ -18,7 +18,6 @@ public class ClientProxy extends CommonProxy{
 	@Override
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);
-        EntityManager.initmodels();
         for(CompatModule compat : CompatModule.modules)
 			try
 			{

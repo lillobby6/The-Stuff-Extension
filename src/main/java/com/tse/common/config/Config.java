@@ -4,6 +4,7 @@ import com.tse.common.core.TheStuffExtension;
 import com.tse.common.proxy.CommonProxy;
 
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class Config {
 	private static final String CATEGORY_GENERAL = "general";
@@ -11,6 +12,7 @@ public class Config {
 	private static final String CATEGORY_OREFREQ = "ore_freq";
 	private static final String CATEGORY_RECIPES = "recipes";
 	
+	public static boolean autoCheckOreSpawn = true;
 	
 	public static boolean useOreDictionaryForTools = false;
 
@@ -33,26 +35,28 @@ public class Config {
 	public static boolean spawnAluminum = true;
 	public static boolean spawnWhiteStone = true;
 	public static boolean spawnMeteors = true;
+	public static boolean spawnEverbright = true;
 
-	public static int freqWhiteStone = 80;
+	public static int freqWhiteStone = 60;
 	public static int freqTitanium = 7;
 	public static int freqPlatinum = 8;
 	public static int freqGalena = 10;
 	public static int freqSilver = 15;
-	public static int freqPentlandite = 22;
-	public static int freqAluminum = 22;
-	public static int freqToslotrium = 30;
+	public static int freqPentlandite = 18;
+	public static int freqAluminum = 19;
+	public static int freqToslotrium = 25;
 	public static int freqSphalerite = 20;
-	public static int freqExaltedDiamond = 3;
-	public static int freqBloodDiamond = 3;
-	public static int freqTerraDiamond = 3;
+	public static int freqExaltedDiamond = 2;
+	public static int freqBloodDiamond = 2;
+	public static int freqTerraDiamond = 2;
 	public static int freqSkyIron = 15;
-	public static int freqCopper = 20;
-	public static int freqTin = 20;
+	public static int freqCopper = 17;
+	public static int freqTin = 16;
 	public static int freqMortium = 2;
 	public static int freqVividium = 2;
 	public static int freqTerrium = 1;
 	public static int freqMeteors = 1;
+	public static int freqEverbright = 1;
 
 	public static boolean easyZinc = false;
 	public static boolean easySteel = false;
@@ -79,7 +83,8 @@ public class Config {
 
 	private static void initGeneralConfig(Configuration cfg) {
 		cfg.addCustomCategoryComment(CATEGORY_GENERAL, "General configuration: ");
-			}
+		autoCheckOreSpawn = cfg.getBoolean("autoCheckOreSpawn", CATEGORY_GENERAL, autoCheckOreSpawn, "On false will generate all ores from the mod even if other mods are detected which spawn the ores.");
+	}
 
 	private static void initOreGenConfig(Configuration cfg) {
 		cfg.addCustomCategoryComment(CATEGORY_OREGEN, "Ore generation configuration: ");

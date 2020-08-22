@@ -29,6 +29,7 @@ public class BlockRenderRegister {
 		reg(BlockManager.galenaOre);
 		reg(BlockManager.pentlanditeOre);
 		reg(BlockManager.aluminumOre);
+		reg(BlockManager.everbrightOre);
 		
 		reg(BlockManager.skyIronOre);
 
@@ -96,6 +97,7 @@ public class BlockRenderRegister {
 		
 		reg(BlockManager.whiteStone);
 		reg(BlockManager.whiteCobblestone);
+		reg(BlockManager.whiteStoneBricks);
 		
 		reg(BlockManager.compressedWhiteCobblestone);
 		reg(BlockManager.doubleCompressedWhiteCobblestone);

@@ -7,27 +7,13 @@ import net.minecraft.item.ItemSpade;
 
 public class TSESpade extends ItemSpade{
 
-	public TSESpade(ToolMaterial material, int harvestLevel, CreativeTabs tab, String unlocalizedName) {
+	public TSESpade(ToolMaterial material, String unlocalizedName, CreativeTabs tab, int harvestLevel) {
 		super(material);
 		this.setCreativeTab(tab);
 		this.setHarvestLevel("shovel", harvestLevel);
 		this.setUnlocalizedName(unlocalizedName);
-	}
-	
-	public TSESpade(ToolMaterial material, CreativeTabs tab, String unlocalizedName)
-	{
-		super(material);
-		this.setCreativeTab(tab);
-		this.setHarvestLevel("shovel", 1);
-		this.setUnlocalizedName(unlocalizedName);
-	}
-	
-	public TSESpade(ToolMaterial material, String unlocalizedName)
-	{
-		super(material);
-		this.setCreativeTab(TSECreativeTabs.tabTools);
-		this.setHarvestLevel("shovel", 1);
-		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(unlocalizedName);
+		ItemManager.registerItem(this);
 	}
 
 }

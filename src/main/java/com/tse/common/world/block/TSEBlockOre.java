@@ -20,6 +20,38 @@ public class TSEBlockOre extends Block{
 
 	private Item itemDropped;
 	private int quantityDropped;
+	private boolean random;
+	private float lightlevel;
+	
+	protected TSEBlockOre(String unlocalizedName, Material mat, int harvestLevel, String toolType, float hardness, float resistance, CreativeTabs tab, Item itemDropped, int quantityDropped, boolean random, float lightlevel) {
+        super(mat);
+        this.itemDropped = itemDropped;
+        this.setHarvestLevel(toolType, harvestLevel);
+        this.setHardness(hardness);
+        this.setResistance(resistance);
+        this.setUnlocalizedName(unlocalizedName);
+        this.setRegistryName(unlocalizedName);
+        this.setCreativeTab(tab);
+        this.quantityDropped = quantityDropped;
+        this.random = random;
+        this.setLightLevel(lightlevel);
+        BlockManager.registerBlock(this);
+    }
+	
+	
+	protected TSEBlockOre(String unlocalizedName, Material mat, int harvestLevel, String toolType, float hardness, float resistance, CreativeTabs tab, Item itemDropped, int quantityDropped, boolean random) {
+        super(mat);
+        this.itemDropped = itemDropped;
+        this.setHarvestLevel(toolType, harvestLevel);
+        this.setHardness(hardness);
+        this.setResistance(resistance);
+        this.setUnlocalizedName(unlocalizedName);
+        this.setRegistryName(unlocalizedName);
+        this.setCreativeTab(tab);
+        this.quantityDropped = quantityDropped;
+        this.random = random;
+        BlockManager.registerBlock(this);
+    }
 	
 	protected TSEBlockOre(String unlocalizedName, Material mat, int harvestLevel, String toolType, float hardness, float resistance, CreativeTabs tab, Item itemDropped, int quantityDropped) {
         super(mat);
@@ -72,12 +104,16 @@ public class TSEBlockOre extends Block{
 	
 	public int quantityDropped(Random random)
     {
-		return quantityDropped;
+		if(this.random)
+			return random.nextInt(quantityDropped)+1;
+		else
+			return quantityDropped;
     }
     
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
     {
         return new ItemStack(this);
     }
+    
     
 }

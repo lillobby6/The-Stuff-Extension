@@ -3,8 +3,8 @@
     "item": "tse:aluminum_rod", "count": 2
   },
   "pattern": [
-    " y ",
-    " y "
+    "y",
+    "y"
   ],
   "type": "forge:ore_shaped",
   "key": {

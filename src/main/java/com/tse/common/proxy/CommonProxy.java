@@ -5,6 +5,7 @@ import java.io.File;
 import com.tse.common.config.Config;
 import com.tse.common.core.TheStuffExtension;
 import com.tse.common.gui.GUIManager;
+import com.tse.common.integration.OreCompat;
 import com.tse.common.integration.oredictionary.OreDictionaryManager;
 import com.tse.common.world.gen.WorldGen;
 import com.tse.common.world.item.recipe.AlloyFurnaceRecipes;
@@ -18,6 +19,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class CommonProxy {
@@ -29,7 +31,8 @@ public class CommonProxy {
     	File directory = e.getModConfigurationDirectory();
     	config = new Configuration(new File(directory.getPath(), "thestuffextension.cfg"));
     	Config.readConfig();
-    	
+    	if(Config.autoCheckOreSpawn)
+    		OreCompat.checkForOres();
     	TheStuffExtension.log("Finished preInit.");
     }
 
@@ -40,7 +43,7 @@ public class CommonProxy {
     	AlloyFurnaceRecipes.instance();
     	NetworkRegistry.INSTANCE.registerGuiHandler(TheStuffExtension.instance, new GUIManager());
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
-       
+        EntityRegistry.instance();
         TheStuffExtension.log("Finished Init.");
     }
 

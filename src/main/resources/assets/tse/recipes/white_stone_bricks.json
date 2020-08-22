@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:white_stone_bricks", "count": 4
+  },
+  "pattern": [
+    "yy",
+    "yy"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "y": {
+      "item": "tse:white_stone"
+    }
+  }
+}

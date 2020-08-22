@@ -32,6 +32,7 @@ public class Smelting {
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.pentlanditeOre), new ItemStack(ItemManager.nickelIngot), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.silverOre), new ItemStack(ItemManager.silverIngot), 0.1F);
 		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.aluminumOre), new ItemStack(ItemManager.aluminumIngot), 0.1F);
+		GameRegistry.addSmelting(Item.getItemFromBlock(BlockManager.everbrightOre), new ItemStack(ItemManager.everbrightShard, 2), 0.3F);
 		
 		GameRegistry.addSmelting(Items.DIAMOND, new ItemStack(ItemManager.diamondIngot), 0.1F);
 		

@@ -1,11 +1,11 @@
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "forge:ore_shapeless",
     "ingredients": [
         {
-            "item": "tse:exalted_diamond"
+            "ore": "gemDiamondExalted", "type": "forge:ore_dict"
         },
 		{
-			"item": "tse:bronze_ingot"
+			"ore": "ingotBronze", "type": "forge:ore_dict"
 		}
     ],
     "result": {

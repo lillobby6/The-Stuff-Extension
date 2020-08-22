@@ -4,6 +4,7 @@ import java.util.Random;
 
 import com.google.common.base.Predicate;
 import com.tse.common.config.Config;
+import com.tse.common.core.TheStuffExtension;
 import com.tse.common.world.block.BlockManager;
 
 import net.minecraft.block.Block;
@@ -54,11 +55,11 @@ public class WorldGen implements IWorldGenerator{
 		if(Config.spawnSphalerite)
 			addGen(BlockManager.sphaleriteOre, world, random, chunkX, chunkZ, 4, 8, Config.freqSphalerite, 0, 128);
 		if(Config.spawnExaltedDiamond)
-			addGen(BlockManager.exaltedDiamondOre, world, random, chunkX, chunkZ, 2, 6, Config.freqExaltedDiamond, 0, 16);
+			addGen(BlockManager.exaltedDiamondOre, world, random, chunkX, chunkZ, 1, 4, Config.freqExaltedDiamond, 0, 16);
 		if(Config.spawnBloodDiamond)
-			addGen(BlockManager.bloodDiamondOre, world, random, chunkX, chunkZ, 1, 6, Config.freqBloodDiamond, 0, 16);
+			addGen(BlockManager.bloodDiamondOre, world, random, chunkX, chunkZ, 1, 4, Config.freqBloodDiamond, 0, 16);
 		if(Config.spawnTerraDiamond)
-			addGen(BlockManager.terraDiamondOre, world, random, chunkX, chunkZ, 1, 6, Config.freqTerraDiamond, 0, 16);
+			addGen(BlockManager.terraDiamondOre, world, random, chunkX, chunkZ, 1, 4, Config.freqTerraDiamond, 0, 16);
 		if(Config.spawnSkyIron)
 			addGen(BlockManager.skyIronOre, world, random, chunkX, chunkZ, 2, 12, Config.freqSkyIron, 0, 64);
 		if(Config.spawnCopper)
@@ -66,13 +67,15 @@ public class WorldGen implements IWorldGenerator{
 		if(Config.spawnTin)
 			addGen(BlockManager.tinOre, world, random, chunkX, chunkZ, 4, 16, Config.freqTin, 0, 64);
 		if(Config.spawnMortium)
-			addGen(BlockManager.mortiumOre, world, random, chunkX, chunkZ, 1, 5, Config.freqMortium, 0, 10);
+			addGen(BlockManager.mortiumOre, world, random, chunkX, chunkZ, 1, 4, Config.freqMortium, 0, 10);
 		if(Config.spawnVividium)
-			addGen(BlockManager.vividiumOre, world, random, chunkX, chunkZ, 1, 5, Config.freqVividium, 0, 10);
+			addGen(BlockManager.vividiumOre, world, random, chunkX, chunkZ, 1, 4, Config.freqVividium, 0, 10);
 		if(Config.spawnTerrium)
-			addGen(BlockManager.terriumOre, world, random, chunkX, chunkZ, 1, 1, Config.freqTerrium, 0, 5);
+			addGen(BlockManager.terriumOre, world, random, chunkX, chunkZ, 1, 3, Config.freqTerrium, 0, 7);
 		if(Config.spawnMeteors)
-			addGen(BlockManager.meteor, world, random, chunkX, chunkZ, 0, 30, Config.freqMeteors, 50, 64);
+			addGen(BlockManager.meteor, world, random, chunkX, chunkZ, 0, 15, Config.freqMeteors, 40, 64);
+		if(Config.spawnEverbright)
+			addGen(BlockManager.everbrightOre, world, random, chunkX, chunkZ, 1, 3, Config.freqEverbright, 0, 5);
 	}
 	
 	public void genNether(Random random, int chunkX, int chunkZ, World world, net.minecraft.world.gen.IChunkGenerator chunkGenerator, IChunkProvider chunkProvider){

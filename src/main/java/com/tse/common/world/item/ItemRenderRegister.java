@@ -173,6 +173,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.meteoricIronIngot);
 		reg(ItemManager.maduumIngot);
 		reg(ItemManager.immortaliumIngot);
+		reg(ItemManager.everbrightIngot);
 
 		reg(ItemManager.justice);
 		reg(ItemManager.corruption);
@@ -374,8 +375,10 @@ public class ItemRenderRegister {
 		reg(ItemManager.meteoricIronNugget);
 		reg(ItemManager.maduumNugget);
 		reg(ItemManager.immortaliumNugget);
+		reg(ItemManager.everbrightNugget);
 		
 		reg(ItemManager.meteoricIronShard);
+		reg(ItemManager.everbrightShard);
 
 		reg(ItemManager.brightsteelHelmet);
 		reg(ItemManager.brightsteelChestplate);

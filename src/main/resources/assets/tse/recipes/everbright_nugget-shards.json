@@ -1,0 +1,15 @@
+{
+  "result": {
+    "item": "tse:everbright_nugget", "count": 2
+  },
+  "pattern": [
+    "yy",
+    "yy"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "y": {
+      "item": "tse:everbright_shard"
+    }
+  }
+}

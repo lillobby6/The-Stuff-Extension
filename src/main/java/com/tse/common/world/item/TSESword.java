@@ -7,19 +7,12 @@ import net.minecraft.item.ItemSword;
 
 public class TSESword extends ItemSword{
 
-	public TSESword(ToolMaterial material, CreativeTabs tab, String name) {
+	public TSESword(ToolMaterial material, String name, CreativeTabs tab) {
 		super(material);
 		this.setCreativeTab(tab);
 		this.setUnlocalizedName(name);
-	}
-	
-	public TSESword(ToolMaterial material, String name)
-	{
-		super(material);
-		this.setCreativeTab(TSECreativeTabs.tabWeapons);
-		this.setUnlocalizedName(name);
-	}
-	
-	
+		this.setRegistryName(name);
+		ItemManager.registerItem(this);
+	}	
 
 }

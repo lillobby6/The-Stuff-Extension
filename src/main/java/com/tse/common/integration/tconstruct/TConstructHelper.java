@@ -220,13 +220,13 @@ public class TConstructHelper extends CompatModule
 		TinkerRegistry.integrate(tyionetium, fluidTyionetium, "Tyionetium").toolforge().preInit();
 		
 		TinkerRegistry.addMaterialStats(brightflame,
-				new HeadMaterialStats(7526, 22.0F, 8.2F, 6),
+				new HeadMaterialStats(7526, 22.0F, 8.2F, 5),
 				new HandleMaterialStats(0.1F, 20),
 				new ExtraMaterialStats(300));
 		TinkerRegistry.integrate(brightflame, fluidBrightflame, "Brightflame").toolforge().preInit();
 		
 		TinkerRegistry.addMaterialStats(brightsteel,
-				new HeadMaterialStats(6888, 25.0F, 4.0F, 6),
+				new HeadMaterialStats(6888, 25.0F, 4.0F, 5),
 				new HandleMaterialStats(0.5F, 50),
 				new ExtraMaterialStats(230));
 		TinkerRegistry.integrate(brightsteel, fluidBrightsteel, "Brightsteel").toolforge().preInit();
@@ -270,7 +270,7 @@ public class TConstructHelper extends CompatModule
 		
 		TinkerRegistry.addMaterialStats(mystic,
 				new HeadMaterialStats(6920, 15.0F, 5.0F, 5),
-				new HandleMaterialStats(1.6F, -1000),
+				new HandleMaterialStats(1.3F, -2000),
 				new ExtraMaterialStats(500));
 		TinkerRegistry.integrate(mystic, fluidMystic, "Mystic").toolforge().preInit();
 		

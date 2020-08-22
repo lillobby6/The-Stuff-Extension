@@ -5,15 +5,18 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 import com.tse.common.creativetabs.TSECreativeTabs;
+import com.tse.common.world.item.entity.TSEItemEntityFireproof;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
+import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -22,18 +25,13 @@ public class LightningSword extends ItemSword{
 	
 	public boolean hasFlames;
 
-	public LightningSword(ToolMaterial material, CreativeTabs tab, String name, boolean hasFlames) {
+	public LightningSword(ToolMaterial material, String name, CreativeTabs tab, boolean hasFlames) {
 		super(material);
 		this.setCreativeTab(tab);
 		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
 		this.hasFlames = hasFlames;
-	}
-	
-	public LightningSword(ToolMaterial material, String name)
-	{
-		super(material);
-		this.setCreativeTab(TSECreativeTabs.tabWeapons);
-		this.setUnlocalizedName(name);
+		ItemManager.registerItem(this);
 	}
 	
 	@Override
@@ -43,18 +41,35 @@ public class LightningSword extends ItemSword{
 	    return true;
     }
 	
+	@Override
+	public boolean hasCustomEntity(ItemStack stack)
+	{
+		return true;
+	}
+	
+	@Override
+	public Entity createEntity(World world, Entity old, ItemStack stack)
+	{
+		EntityItem entity = new TSEItemEntityFireproof(world, old.posX, old.posY, old.posZ, stack);
+		entity.motionX = old.motionX;
+		entity.motionY = old.motionY;
+		entity.motionZ = old.motionZ;
+		entity.setDefaultPickupDelay();
+		return entity;
+	}
+	
 	@SideOnly(Side.CLIENT)
 	@Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)
     {
 		if(this==ItemManager.justice)
-			tooltip.add("§3In the name of the law, I sentence you to die!");
+			tooltip.add(TextFormatting.DARK_AQUA + "In the name of the law, I sentence you to die!");
 		if(this==ItemManager.corruption)
-			tooltip.add("§4With this, I am unstoppable!");
+			tooltip.add(TextFormatting.DARK_RED + "With this, I am unstoppable!");
 		if(this==ItemManager.destruction)
-			tooltip.add("§8Vae victis!");
+			tooltip.add(TextFormatting.DARK_GRAY + "Vae victis!");
 		if(this==ItemManager.creation)
-			tooltip.add("§5Deus vult!");
+			tooltip.add(TextFormatting.DARK_PURPLE + "Deus vult!");
 
 	}
 

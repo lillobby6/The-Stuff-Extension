@@ -22,8 +22,9 @@ public class TSEToolMaterials {
 	public static final ToolMaterial TDIAMOND = EnumHelper.addToolMaterial("TDIAMOND", 4, 2000, 13.0F, 5.0F, 20);
 	public static final ToolMaterial EDIAMOND = EnumHelper.addToolMaterial("EDIAMOND", 4, 1000, 17.0F, 8.0F, 15);
 	public static final ToolMaterial BDIAMOND = EnumHelper.addToolMaterial("BDIAMOND", 4, 3000, 10.0F, 4.0F, 15);
-	public static final ToolMaterial BRIGHTFLAME = EnumHelper.addToolMaterial("BRIGHTFLAME", 6, 8192, 25.0f, 9.0f, 25);
-	public static final ToolMaterial BRIGHTSTEEL = EnumHelper.addToolMaterial("BRIGHTSTEEL", 6, 7488, 30.0f, 4.0f, 35);
+	public static final ToolMaterial BRIGHTFLAME = EnumHelper.addToolMaterial("BRIGHTFLAME", 5, 8192, 25.0f, 9.0f, 25);
+	public static final ToolMaterial BRIGHTSTEEL = EnumHelper.addToolMaterial("BRIGHTSTEEL", 5, 7488, 30.0f, 4.0f, 35);
+	//public static final ToolMaterial BRIGHTHEART
 	public static final ToolMaterial MAGIC = EnumHelper.addToolMaterial("MAGIC", 6, 9600, 28.0F, 10.0F, 30);
 	public static final ToolMaterial MYSTIC = EnumHelper.addToolMaterial("MYSTIC", 5, 6920, 20.0F, 7.0F, 30);
 	public static final ToolMaterial MITHRIL = EnumHelper.addToolMaterial("MITHRIL", 7, 9820, 31.0F, 12.0F, 50);

@@ -8,7 +8,10 @@ import com.tse.common.core.library.StringsLib;
 import com.tse.common.gui.tileentity.TileEntityRegistry;
 import com.tse.common.integration.CompatModule;
 import com.tse.common.proxy.CommonProxy;
+import com.tse.common.world.dimension.WorldProviderMystic;
 
+import net.minecraft.world.DimensionType;
+import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -22,11 +25,8 @@ import scala.Console;
 @Mod(modid = StringsLib.MODID, version = StringsLib.VERSION, updateJSON = "https://raw.githubusercontent.com/lillobby6/The-Stuff-Extension/master/update.json")
 public class TheStuffExtension
 {
-	
-	static
-	{
-		//FluidRegistry.enableUniversalBucket();
-	}
+	public static int dimensionID = 32;
+	public static DimensionType dimType = DimensionType.register("mystic", "_mystic", 32, WorldProviderMystic.class, false);
 	
 	@SidedProxy(clientSide = "com.tse.client.proxy.ClientProxy", serverSide = "com.tse.common.proxy.CommonProxy")
 	public static CommonProxy proxy;
@@ -77,7 +77,18 @@ public class TheStuffExtension
     @EventHandler
     public void postInit(FMLPostInitializationEvent e)
     {
+    	//registerDimension();
     	this.proxy.postInit(e);
     	CompatModule.doModulesPostInit();
+    }
+    
+    
+    public void registerDimension()
+    {
+    	if(DimensionManager.isDimensionRegistered(dimensionID))
+    	{
+    		dimensionID = 34;
+    	}
+    	DimensionManager.registerDimension(dimensionID, dimType);
     }
 }

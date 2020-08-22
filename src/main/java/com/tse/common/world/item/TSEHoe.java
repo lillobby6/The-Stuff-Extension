@@ -7,28 +7,14 @@ import net.minecraft.item.ItemHoe;
 
 public class TSEHoe extends ItemHoe{
 
-	public TSEHoe(ToolMaterial material, CreativeTabs tab, int harvestLevel, String unlocalizedName) 
+	public TSEHoe(ToolMaterial material, String unlocalizedName, CreativeTabs tab, int harvestLevel) 
 	{
 		super(material);
 		this.setCreativeTab(tab);
 		this.setUnlocalizedName(unlocalizedName);
 		this.setHarvestLevel("hoe", harvestLevel);
-	}
-	
-	public TSEHoe(ToolMaterial material, CreativeTabs tab, String unlocalizedName) 
-	{
-		super(material);
-		this.setCreativeTab(tab);
-		this.setUnlocalizedName(unlocalizedName);
-		this.setHarvestLevel("hoe", 2);
-	}
-	
-	public TSEHoe(ToolMaterial material, String unlocalizedName) 
-	{
-		super(material);
-		this.setCreativeTab(TSECreativeTabs.tabTools);
-		this.setUnlocalizedName(unlocalizedName);
-		this.setHarvestLevel("hoe", 2);
+		this.setRegistryName(unlocalizedName);
+		ItemManager.registerItem(this);
 	}
 
 }

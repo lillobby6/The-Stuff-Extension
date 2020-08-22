@@ -31,7 +31,7 @@ public class BlockManager {
 	public static Block tinOre = new TSEBlockOre("tin_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
 	public static Block toslotriumOre = new TSEBlockOre("toslotrium_ore", Material.ROCK, 1, "pickaxe", 1.0F, 4.0F, TSECreativeTabs.tabOres);
 	public static Block vividiumOre = new TSEBlockOre("vividium_ore", Material.ROCK, 3, "pickaxe", 6.0F, 5.0F, TSECreativeTabs.tabOres);
-	public static Block sphaleriteOre = new TSEBlockOre("sphalerite_ore", Material.ROCK, 1, "pickaxe", 4.0F, 2.0F, TSECreativeTabs.tabOres);
+	public static Block sphaleriteOre = new TSEBlockOre("sphalerite_ore", Material.ROCK, 1, "pickaxe", 4.0F, 2.0F, TSECreativeTabs.tabOres, ItemManager.sphaleriteGem);
 	public static Block silverOre = new TSEBlockOre("silver_ore", Material.ROCK, 2, "pickaxe", 4.0F, 8.0F, TSECreativeTabs.tabOres);
 	public static Block platinumOre = new TSEBlockOre("platinum_ore", Material.ROCK, 3, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
 	public static Block titaniumOre = new TSEBlockOre("titanium_ore", Material.ROCK, 3, "pickaxe", 7.0F, 8.0F, TSECreativeTabs.tabOres);
@@ -40,8 +40,11 @@ public class BlockManager {
 	public static Block skyIronOre = new TSEBlockOre("sky_iron_ore", Material.ROCK, 1, "pickaxe", 2.0F, 3.0F, TSECreativeTabs.tabOres);
 	public static Block terriumOre = new TSEBlockOre("terrium_ore", Material.ROCK, 4, "pickaxe", 8.0F, 8.0F, TSECreativeTabs.tabOres);
 	public static Block aluminumOre = new TSEBlockOre("aluminum_ore", Material.ROCK, 1, "pickaxe", 2.0F, 3.0F, TSECreativeTabs.tabOres);
+	public static Block everbrightOre = new TSEBlockOre("everbright_ore", Material.ROCK, 5, "pickaxe", 18.0F, 40.0F, TSECreativeTabs.tabOres, ItemManager.everbrightShard, 3, true, 0.8F);
 	
-	public static Block meteor = new TSEBlockOre("meteor", Material.ROCK, 1, "pickaxe", 3.0F, 50.0F, TSECreativeTabs.tabOres, ItemManager.sphaleriteGem, rand.nextInt(3));
+	//public static Block mysticPortal = new BlockMysticPortal("mystic_portal");
+	
+	public static Block meteor = new TSEBlockOre("meteor", Material.ROCK, 1, "pickaxe", 3.0F, 50.0F, TSECreativeTabs.tabOres, ItemManager.meteoricIronShard, 2, true);
 			
 	//TODO Moon stuff
 	public static Block moonStone;// = new TSEBlock("moon_stone", 3.0F, 3.0F);
@@ -54,8 +57,8 @@ public class BlockManager {
 	public static Block crusher;
 	public static Block filterer;
 	
-	public static Block mysticStone;// = new TSEBlock("mystic_stone", 3.0F,3.0F);
-	public static Block mysticDirt;// = new TSEBlock("mystic_dirt",1.0F, 1.0F); 
+	public static Block mysticStone = new TSEBlock("mystic_stone", 3.0F,3.0F);
+	public static Block mysticDirt = new TSEBlock("mystic_dirt", 1.0F, 1.0F); 
 	public static Block mysticLog;// = new TSEBlock("mystic_log", 2.0F, 2.0F);
 	public static Block mysticPlanks;// = new TSEBlock("mystic_planks", 2.0F, 2.0F);
 	 
@@ -126,6 +129,8 @@ public class BlockManager {
 	public static Block whiteStone = new TSEBlock("white_stone", 2.0F, 2.0F);
 	public static Block whiteCobblestone = new TSEBlock("white_cobblestone", 2.0F, 2.0F);
 	
+	public static Block whiteStoneBricks = new TSEBlock("white_stone_bricks", 2.0F, 2.0F);
+	
 	public static Block compressedWhiteCobblestone = new TSEBlock("compressed_white_cobblestone", 2.5F, 2.5F);
 	public static Block doubleCompressedWhiteCobblestone = new TSEBlock("double_compressed_white_cobblestone", 3.0F, 3.0F);
 	public static Block tripleCompressedWhiteCobblestone = new TSEBlock("triple_compressed_white_cobblestone", 3.5F, 3.5F);
@@ -144,6 +149,8 @@ public class BlockManager {
 	public static Block padaukLog;// = new TSEBlock("padauk_log", 2.0F, 2.0F);
 	public static Block paduakPlanks;// = new TSEBlock("padauk_planks", 2.0F, 2.0F);
 	public static Block padaukLeaves;
+
+	
 
 	public static Block registerBlock(Block block) {
 

@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:everbright_nugget"
+        },
+		{
+            "item": "tse:everbright_nugget"
+        },
+		{
+            "item": "tse:everbright_nugget"
+        },
+		{
+            "item": "tse:everbright_nugget"
+        },
+		{
+            "item": "tse:everbright_nugget"
+        },
+		{
+            "item": "tse:everbright_nugget"
+        },
+		{
+            "item": "tse:everbright_nugget"
+        },
+		{
+            "item": "tse:everbright_nugget"
+        },
+		{
+            "item": "tse:everbright_nugget"
+        }
+    ],
+    "result": {
+        "item": "tse:everbright_ingot"
+    }
+}
