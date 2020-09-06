@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:manatheum_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:manatheum_nugget", "count": 9
+    }
+}

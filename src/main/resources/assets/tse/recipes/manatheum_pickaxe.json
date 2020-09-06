@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "tse:manatheum_pickaxe"
+  },
+  "pattern": [
+    "xxx",
+    " y ",
+    " y "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "x": {
+      "item": "tse:manatheum_ingot"
+    },
+    "y": {
+      "item": "minecraft:stick"
+    }
+  }
+}

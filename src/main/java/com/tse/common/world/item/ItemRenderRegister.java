@@ -14,6 +14,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.terraDiamond);
 		reg(ItemManager.lunaDiamond);
 		reg(ItemManager.solDiamond);
+		reg(ItemManager.iceDiamond);
 		
 		reg(ItemManager.unusableMaterial);
 		
@@ -22,6 +23,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.reforgedGoldStick);
 		reg(ItemManager.magicStick);
 		reg(ItemManager.mithrilStick);
+		reg(ItemManager.manatheumStick);
 		reg(ItemManager.mysteriousStick);
 		reg(ItemManager.extranetiumStick);
 		reg(ItemManager.eterniumStick);
@@ -70,10 +72,19 @@ public class ItemRenderRegister {
 		reg(ItemManager.copperShovel);
 		reg(ItemManager.copperSword);
 		reg(ItemManager.copperHoe);
+		
+		reg(ItemManager.manatheumIngot);
+		reg(ItemManager.manatheumNugget);
+		reg(ItemManager.manatheumAxe);
+		reg(ItemManager.manatheumPickaxe);
+		reg(ItemManager.manatheumShovel);
+		reg(ItemManager.manatheumSword);
+		reg(ItemManager.manatheumHoe);
+		
 
 		reg(ItemManager.bronzePickaxe);
 		reg(ItemManager.bronzeAxe);
-		reg(ItemManager.bronzeMattock);
+		//reg(ItemManager.bronzeMattock);
 		reg(ItemManager.bronzeShovel);
 		reg(ItemManager.bronzeHoe);
 
@@ -85,33 +96,34 @@ public class ItemRenderRegister {
 		reg(ItemManager.bronzeNugget);
 
 		reg(ItemManager.steelIngot);
-
-		reg(ItemManager.stoneMattock);
-
-		reg(ItemManager.copperMattock);
-
+		
+		reg(ItemManager.brightheartIngot);
+		
+		reg(ItemManager.coldheartIngot);
+		reg(ItemManager.coldflameIngot);
+		reg(ItemManager.coldsteelIngot);
+		
 		reg(ItemManager.copperHelmet);
 		reg(ItemManager.copperChestplate);
 		reg(ItemManager.copperLeggings);
 		reg(ItemManager.copperBoots);
+		
+		reg(ItemManager.manatheumHelmet);
+		reg(ItemManager.manatheumChestplate);
+		reg(ItemManager.manatheumLeggings);
+		reg(ItemManager.manatheumBoots);
 
 		reg(ItemManager.extranetiumAxe);
 		reg(ItemManager.extranetiumHoe);
-		reg(ItemManager.extranetiumMattock);
 		reg(ItemManager.extranetiumPickaxe);
 		reg(ItemManager.extranetiumShovel);
 		reg(ItemManager.extranetiumSword);
-
-		reg(ItemManager.ironMattock);
-		reg(ItemManager.woodMattock);
-		reg(ItemManager.goldMattock);
-		reg(ItemManager.diamondMattock);
 
 		reg(ItemManager.terraDiamondPickaxe);
 		reg(ItemManager.terraDiamondAxe);
 		reg(ItemManager.terraDiamondShovel);
 		reg(ItemManager.terraDiamondHoe);
-		reg(ItemManager.terraDiamondMattock);
+		//reg(ItemManager.terraDiamondMattock);
 		reg(ItemManager.terraDiamondSword);
 		reg(ItemManager.terraDiamondHelmet);
 		reg(ItemManager.terraDiamondChestplate);
@@ -126,14 +138,14 @@ public class ItemRenderRegister {
 		reg(ItemManager.tyionetiumAxe);
 		reg(ItemManager.tyionetiumShovel);
 		reg(ItemManager.tyionetiumHoe);
-		reg(ItemManager.tyionetiumMattock);
+		//reg(ItemManager.tyionetiumMattock);
 		reg(ItemManager.tyionetiumSword);
 
 		reg(ItemManager.mnemiumPickaxe);
 		reg(ItemManager.mnemiumAxe);
 		reg(ItemManager.mnemiumShovel);
 		reg(ItemManager.mnemiumHoe);
-		reg(ItemManager.mnemiumMattock);
+		//reg(ItemManager.mnemiumMattock);
 		reg(ItemManager.mnemiumSword);
 
 		reg(ItemManager.bronzeIngot);
@@ -174,6 +186,10 @@ public class ItemRenderRegister {
 		reg(ItemManager.maduumIngot);
 		reg(ItemManager.immortaliumIngot);
 		reg(ItemManager.everbrightIngot);
+		reg(ItemManager.dreamIngot);
+		reg(ItemManager.arcaeumIngot);
+		reg(ItemManager.necromiumIngot);
+		reg(ItemManager.nightmareIngot);
 
 		reg(ItemManager.justice);
 		reg(ItemManager.corruption);
@@ -184,7 +200,7 @@ public class ItemRenderRegister {
 		reg(ItemManager.brightflameAxe);
 		reg(ItemManager.brightflameHoe);
 		reg(ItemManager.brightflameShovel);
-		reg(ItemManager.brightflameMattock);
+		//reg(ItemManager.brightflameMattock);
 		reg(ItemManager.brightflameSword);
 		reg(ItemManager.brightflameHelmet);
 		reg(ItemManager.brightflameChestplate);
@@ -209,129 +225,129 @@ public class ItemRenderRegister {
 		reg(ItemManager.magicAxe);
 		reg(ItemManager.magicHoe);
 		reg(ItemManager.magicShovel);
-		reg(ItemManager.magicMattock);
+		//reg(ItemManager.magicMattock);
 
 		reg(ItemManager.mortiumPickaxe);
 		reg(ItemManager.mortiumAxe);
 		reg(ItemManager.mortiumShovel);
 		reg(ItemManager.mortiumHoe);
 		reg(ItemManager.mortiumSword);
-		reg(ItemManager.mortiumMattock);
+		//reg(ItemManager.mortiumMattock);
 
 		reg(ItemManager.mithrilPickaxe);
 		reg(ItemManager.mithrilAxe);
 		reg(ItemManager.mithrilShovel);
 		reg(ItemManager.mithrilHoe);
-		reg(ItemManager.mithrilMattock);
+		//reg(ItemManager.mithrilMattock);
 		reg(ItemManager.mithrilSword);
 
 		reg(ItemManager.mysteriousPickaxe);
 		reg(ItemManager.mysteriousAxe);
 		reg(ItemManager.mysteriousShovel);
 		reg(ItemManager.mysteriousHoe);
-		reg(ItemManager.mysteriousMattock);
+		//reg(ItemManager.mysteriousMattock);
 		reg(ItemManager.mysteriousSword);
 
 		reg(ItemManager.mysticPickaxe);
 		reg(ItemManager.mysticAxe);
 		reg(ItemManager.mysticShovel);
 		reg(ItemManager.mysticHoe);
-		reg(ItemManager.mysticMattock);
+		//reg(ItemManager.mysticMattock);
 		reg(ItemManager.mysticSword);
 
 		reg(ItemManager.skyIronPickaxe);
 		reg(ItemManager.skyIronAxe);
 		reg(ItemManager.skyIronShovel);
-		reg(ItemManager.skyIronMattock);
+		//reg(ItemManager.skyIronMattock);
 		reg(ItemManager.skyIronHoe);
 
 		reg(ItemManager.terriumPickaxe);
 		reg(ItemManager.terriumAxe);
 		reg(ItemManager.terriumShovel);
 		reg(ItemManager.terriumHoe);
-		reg(ItemManager.terriumMattock);
+		//reg(ItemManager.terriumMattock);
 
 		reg(ItemManager.brightsteelPickaxe);
 		reg(ItemManager.brightsteelAxe);
 		reg(ItemManager.brightsteelHoe);
 		reg(ItemManager.brightsteelShovel);
-		reg(ItemManager.brightsteelMattock);
+		//reg(ItemManager.brightsteelMattock);
 		reg(ItemManager.brightsteelSword);
 
 		reg(ItemManager.vividiumPickaxe);
 		reg(ItemManager.vividiumAxe);
 		reg(ItemManager.vividiumShovel);
 		reg(ItemManager.vividiumHoe);
-		reg(ItemManager.vividiumMattock);
+		//reg(ItemManager.vividiumMattock);
 
 		reg(ItemManager.steelPickaxe);
 		reg(ItemManager.steelAxe);
 		reg(ItemManager.steelShovel);
 		reg(ItemManager.steelHoe);
-		reg(ItemManager.steelMattock);
+		//reg(ItemManager.steelMattock);
 		reg(ItemManager.steelSword);
 
 		reg(ItemManager.silverPickaxe);
 		reg(ItemManager.silverAxe);
 		reg(ItemManager.silverShovel);
 		reg(ItemManager.silverHoe);
-		reg(ItemManager.silverMattock);
+		//reg(ItemManager.silverMattock);
 		reg(ItemManager.silverSword);
 
 		reg(ItemManager.exaltedDiamondPickaxe);
 		reg(ItemManager.exaltedDiamondAxe);
 		reg(ItemManager.exaltedDiamondShovel);
 		reg(ItemManager.exaltedDiamondHoe);
-		reg(ItemManager.exaltedDiamondMattock);
+		//reg(ItemManager.exaltedDiamondMattock);
 		reg(ItemManager.exaltedDiamondSword);
 
 		reg(ItemManager.bloodDiamondPickaxe);
 		reg(ItemManager.bloodDiamondAxe);
 		reg(ItemManager.bloodDiamondShovel);
 		reg(ItemManager.bloodDiamondHoe);
-		reg(ItemManager.bloodDiamondMattock);
+		//reg(ItemManager.bloodDiamondMattock);
 		reg(ItemManager.bloodDiamondSword);
 
 		reg(ItemManager.platinumPickaxe);
 		reg(ItemManager.platinumAxe);
 		reg(ItemManager.platinumShovel);
 		reg(ItemManager.platinumHoe);
-		reg(ItemManager.platinumMattock);
+		//reg(ItemManager.platinumMattock);
 		reg(ItemManager.platinumSword);
 
 		reg(ItemManager.eterniumPickaxe);
 		reg(ItemManager.eterniumAxe);
 		reg(ItemManager.eterniumShovel);
 		reg(ItemManager.eterniumHoe);
-		reg(ItemManager.eterniumMattock);
+		//reg(ItemManager.eterniumMattock);
 		reg(ItemManager.eterniumSword);
 
 		reg(ItemManager.tinPickaxe);
 		reg(ItemManager.tinAxe);
 		reg(ItemManager.tinShovel);
 		reg(ItemManager.tinHoe);
-		reg(ItemManager.tinMattock);
+		//reg(ItemManager.tinMattock);
 		reg(ItemManager.tinSword);
 
 		reg(ItemManager.pewterPickaxe);
 		reg(ItemManager.pewterAxe);
 		reg(ItemManager.pewterShovel);
 		reg(ItemManager.pewterHoe);
-		reg(ItemManager.pewterMattock);
+		//reg(ItemManager.pewterMattock);
 		reg(ItemManager.pewterSword);
 
 		reg(ItemManager.titaniumPickaxe);
 		reg(ItemManager.titaniumAxe);
 		reg(ItemManager.titaniumShovel);
 		reg(ItemManager.titaniumHoe);
-		reg(ItemManager.titaniumMattock);
+		//reg(ItemManager.titaniumMattock);
 		reg(ItemManager.titaniumSword);
 
 		reg(ItemManager.aluminumPickaxe);
 		reg(ItemManager.aluminumAxe);
 		reg(ItemManager.aluminumShovel);
 		reg(ItemManager.aluminumHoe);
-		reg(ItemManager.aluminumMattock);
+		//reg(ItemManager.aluminumMattock);
 		reg(ItemManager.aluminumSword);
 
 		reg(ItemManager.magicNugget);
@@ -567,119 +583,119 @@ public class ItemRenderRegister {
 		
 		reg(ItemManager.reforgedGoldAxe);
 		reg(ItemManager.reforgedGoldHoe);
-		reg(ItemManager.reforgedGoldMattock);
+		//reg(ItemManager.reforgedGoldMattock);
 		reg(ItemManager.reforgedGoldPickaxe);
 		reg(ItemManager.reforgedGoldShovel);
 		reg(ItemManager.reforgedGoldSword);
 		
 		reg(ItemManager.zincAxe);
 		reg(ItemManager.zincHoe);
-		reg(ItemManager.zincMattock);
+		//reg(ItemManager.zincMattock);
 		reg(ItemManager.zincPickaxe);
 		reg(ItemManager.zincShovel);
 		reg(ItemManager.zincSword);
 		
 		reg(ItemManager.brassAxe);
 		reg(ItemManager.brassHoe);
-		reg(ItemManager.brassMattock);
+		//reg(ItemManager.brassMattock);
 		reg(ItemManager.brassPickaxe);
 		reg(ItemManager.brassShovel);
 		reg(ItemManager.brassSword);
 		
 		reg(ItemManager.leadAxe);
 		reg(ItemManager.leadHoe);
-		reg(ItemManager.leadMattock);
+		//reg(ItemManager.leadMattock);
 		reg(ItemManager.leadPickaxe);
 		reg(ItemManager.leadShovel);
 		reg(ItemManager.leadSword);
 		
 		reg(ItemManager.nickelAxe);
 		reg(ItemManager.nickelHoe);
-		reg(ItemManager.nickelMattock);
+		//reg(ItemManager.nickelMattock);
 		reg(ItemManager.nickelPickaxe);
 		reg(ItemManager.nickelShovel);
 		reg(ItemManager.nickelSword);
 		
 		reg(ItemManager.fantasiumAxe);
 		reg(ItemManager.fantasiumHoe);
-		reg(ItemManager.fantasiumMattock);
+		//reg(ItemManager.fantasiumMattock);
 		reg(ItemManager.fantasiumPickaxe);
 		reg(ItemManager.fantasiumShovel);
 		reg(ItemManager.fantasiumSword);
 		
 		reg(ItemManager.scorniumAxe);
 		reg(ItemManager.scorniumHoe);
-		reg(ItemManager.scorniumMattock);
+		//reg(ItemManager.scorniumMattock);
 		reg(ItemManager.scorniumPickaxe);
 		reg(ItemManager.scorniumShovel);
 		reg(ItemManager.scorniumSword);
 		
 		reg(ItemManager.electrumAxe);
 		reg(ItemManager.electrumHoe);
-		reg(ItemManager.electrumMattock);
+		//reg(ItemManager.electrumMattock);
 		reg(ItemManager.electrumPickaxe);
 		reg(ItemManager.electrumShovel);
 		reg(ItemManager.electrumSword);
 		
 		reg(ItemManager.laeniumAxe);
 		reg(ItemManager.laeniumHoe);
-		reg(ItemManager.laeniumMattock);
+		//reg(ItemManager.laeniumMattock);
 		reg(ItemManager.laeniumPickaxe);
 		reg(ItemManager.laeniumShovel);
 		reg(ItemManager.laeniumSword);
 		
 		reg(ItemManager.magneiumAxe);
 		reg(ItemManager.magneiumHoe);
-		reg(ItemManager.magneiumMattock);
+		//reg(ItemManager.magneiumMattock);
 		reg(ItemManager.magneiumPickaxe);
 		reg(ItemManager.magneiumShovel);
 		reg(ItemManager.magneiumSword);
 		
 		reg(ItemManager.sterlingSilverAxe);
 		reg(ItemManager.sterlingSilverHoe);
-		reg(ItemManager.sterlingSilverMattock);
+		//reg(ItemManager.sterlingSilverMattock);
 		reg(ItemManager.sterlingSilverPickaxe);
 		reg(ItemManager.sterlingSilverShovel);
 		reg(ItemManager.sterlingSilverSword);
 		
 		reg(ItemManager.roseGoldAxe);
 		reg(ItemManager.roseGoldHoe);
-		reg(ItemManager.roseGoldMattock);
+		//reg(ItemManager.roseGoldMattock);
 		reg(ItemManager.roseGoldPickaxe);
 		reg(ItemManager.roseGoldShovel);
 		reg(ItemManager.roseGoldSword);
 		
 		reg(ItemManager.whiteGoldAxe);
 		reg(ItemManager.whiteGoldHoe);
-		reg(ItemManager.whiteGoldMattock);
+		//reg(ItemManager.whiteGoldMattock);
 		reg(ItemManager.whiteGoldPickaxe);
 		reg(ItemManager.whiteGoldShovel);
 		reg(ItemManager.whiteGoldSword);
 		
 		reg(ItemManager.spangoldAxe);
 		reg(ItemManager.spangoldHoe);
-		reg(ItemManager.spangoldMattock);
+		//reg(ItemManager.spangoldMattock);
 		reg(ItemManager.spangoldPickaxe);
 		reg(ItemManager.spangoldShovel);
 		reg(ItemManager.spangoldSword);
 		
 		reg(ItemManager.meteoricIronAxe);
 		reg(ItemManager.meteoricIronHoe);
-		reg(ItemManager.meteoricIronMattock);
+		//reg(ItemManager.meteoricIronMattock);
 		reg(ItemManager.meteoricIronPickaxe);
 		reg(ItemManager.meteoricIronShovel);
 		reg(ItemManager.meteoricIronSword);
 		
 		reg(ItemManager.maduumAxe);
 		reg(ItemManager.maduumHoe);
-		reg(ItemManager.maduumMattock);
+		//reg(ItemManager.maduumMattock);
 		reg(ItemManager.maduumPickaxe);
 		reg(ItemManager.maduumShovel);
 		reg(ItemManager.maduumSword);
 		
 		reg(ItemManager.immortaliumAxe);
 		reg(ItemManager.immortaliumHoe);
-		reg(ItemManager.immortaliumMattock);
+		//reg(ItemManager.immortaliumMattock);
 		reg(ItemManager.immortaliumPickaxe);
 		reg(ItemManager.immortaliumShovel);
 		reg(ItemManager.immortaliumSword);

@@ -27,7 +27,7 @@ public class TSEToolMaterials {
 	//public static final ToolMaterial BRIGHTHEART
 	public static final ToolMaterial MAGIC = EnumHelper.addToolMaterial("MAGIC", 6, 9600, 28.0F, 10.0F, 30);
 	public static final ToolMaterial MYSTIC = EnumHelper.addToolMaterial("MYSTIC", 5, 6920, 20.0F, 7.0F, 30);
-	public static final ToolMaterial MITHRIL = EnumHelper.addToolMaterial("MITHRIL", 7, 9820, 31.0F, 12.0F, 50);
+	public static final ToolMaterial MANATHEUM = EnumHelper.addToolMaterial("MANATHEUM", 7, 9820, 31.0F, 12.0F, 50);
 	public static final ToolMaterial EXTRANETIUM = EnumHelper.addToolMaterial("EXTRANETIUM", 8, 15128, 35.0F, 14.0F, 60);
 	public static final ToolMaterial MNEMIUM = EnumHelper.addToolMaterial("MNEMIUM", 9, 13295, 52.0F, 26.0F, 80);
 	public static final ToolMaterial MORTIUM = EnumHelper.addToolMaterial("MORTIUM", 4, 2161, 9.0F, 4.0F, 13);

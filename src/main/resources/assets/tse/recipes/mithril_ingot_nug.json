@@ -2,31 +2,31 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "tse:mithril_nugget"
+            "item": "tse:manatheum_nugget"
         },
 		{
-            "item": "tse:mithril_nugget"
+            "item": "tse:manatheum_nugget"
         },
 		{
-            "item": "tse:mithril_nugget"
+            "item": "tse:manatheum_nugget"
         },
 		{
-            "item": "tse:mithril_nugget"
+            "item": "tse:manatheum_nugget"
         },
 		{
-            "item": "tse:mithril_nugget"
+            "item": "tse:manatheum_nugget"
         },
 		{
-            "item": "tse:mithril_nugget"
+            "item": "tse:manatheum_nugget"
         },
 		{
-            "item": "tse:mithril_nugget"
+            "item": "tse:manatheum_nugget"
         },
 		{
-            "item": "tse:mithril_nugget"
+            "item": "tse:manatheum_nugget"
         },
 		{
-            "item": "tse:mithril_nugget"
+            "item": "tse:manatheum_nugget"
         }
     ],
     "result": {

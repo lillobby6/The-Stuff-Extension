@@ -45,11 +45,6 @@ public class BlockManager {
 	//public static Block mysticPortal = new BlockMysticPortal("mystic_portal");
 	
 	public static Block meteor = new TSEBlockOre("meteor", Material.ROCK, 1, "pickaxe", 3.0F, 50.0F, TSECreativeTabs.tabOres, ItemManager.meteoricIronShard, 2, true);
-			
-	//TODO Moon stuff
-	public static Block moonStone;// = new TSEBlock("moon_stone", 3.0F, 3.0F);
-	public static Block moonSand;// = registerBlockWithSound("moon_sand", 2.0F, 2.0F, SoundType.SAND);
-	public static Block moonTeleporter;// = new TSEBlock("moon_teleporter", 3.0F, 3.0F);
 	
 	//TODO Create converter - converts equivalent TSE materials for other TSE materials - Vividium for mortium, brightsteel for brightflame, etc.
 	
@@ -63,8 +58,7 @@ public class BlockManager {
 	public static Block mysticPlanks;// = new TSEBlock("mystic_planks", 2.0F, 2.0F);
 	 
 
-	public static Block lunaDiamondOre;// = registerOre("luna_diamond_ore", Material.ROCK, 3, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
-	public static Block moonIronOre;// = registerOre("moon_iron_ore", Material.ROCK, 1, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
+	public static Block lunaDiamondOre = new TSEBlockOre("luna_diamond_ore", Material.ROCK, 3, "pickaxe", 3.0F, 3.0F, TSECreativeTabs.tabOres);
 
 	public static Block copperBlock = new TSEBlock("copper_block", 3.0F, 3.0F);
 	public static Block steelBlock = new TSEBlock("steel_block", 3.0F, 3.0F);
@@ -79,6 +73,7 @@ public class BlockManager {
 	public static Block reforgedGoldBlock = new TSEBlock("reforged_gold_block", 3.0F, 3.0F);
 	public static Block magicBlock = new TSEBlock("magic_block", 3.0F, 3.0F);
 	public static Block mithrilBlock = new TSEBlock("mithril_block", 3.0F, 3.0F);
+	public static Block manatheumBlock = new TSEBlock("manatheum_block", 3.0F, 3.0F);
 	public static Block mortiumBlock = new TSEBlock("mortium_block", 3.0F, 3.0F);
 	public static Block mysteriousBlock = new TSEBlock("mysterious_block", 3.0F, 3.0F);
 	public static Block mysticBlock = new TSEBlock("mystic_block", 3.0F, 3.0F);

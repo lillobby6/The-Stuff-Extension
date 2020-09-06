@@ -3,6 +3,7 @@ package com.tse.common.core;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Logger;
 
 import com.tse.common.core.library.StringsLib;
 import com.tse.common.gui.tileentity.TileEntityRegistry;
@@ -27,7 +28,7 @@ public class TheStuffExtension
 {
 	public static int dimensionID = 32;
 	public static DimensionType dimType = DimensionType.register("mystic", "_mystic", 32, WorldProviderMystic.class, false);
-	
+
 	@SidedProxy(clientSide = "com.tse.client.proxy.ClientProxy", serverSide = "com.tse.common.proxy.CommonProxy")
 	public static CommonProxy proxy;
 	
@@ -36,6 +37,8 @@ public class TheStuffExtension
 	
 	public static final DateFormat hms = new SimpleDateFormat("HH:mm:ss"); 
 	public static Date date = new Date();
+	
+	public static Logger logger = Logger.getGlobal();
 	
 
 	public static void log(String message)

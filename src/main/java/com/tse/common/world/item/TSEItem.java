@@ -81,16 +81,18 @@ public class TSEItem extends Item
 		if(this==ItemManager.arcaeumIngot)
 			tooltip.add("It feels as if it wants to go home.");
 		if(this==ItemManager.necromiumIngot)
-			tooltip.add("The very heart of evil, well maybe not technically, but it feels like it.");
+			tooltip.add("The very heart of evil, well, maybe not technically, but it feels like it.");
 		if(this==ItemManager.mysteriousIngot)
-			tooltip.add("You don't see this every day? Well I guess you do now at least.");
+			tooltip.add("You don't see this every day? Well, maybe you do now.");
 		if(this==ItemManager.terriumIngot)
 			tooltip.add("This stuff is rare, so rare, in fact, that it didn't exist for a while!");
 		if(this==ItemManager.dreamIngot)
-			tooltip.add("Sweet!");
+			tooltip.add("What is not lost may still yet be forgotten");
 		if(this==ItemManager.nightmareIngot)
 			tooltip.add("It speaks of sweet nothings...");
 		if(this==ItemManager.immortaliumIngot || this==ItemManager.eterniumIngot)
 			tooltip.add("Tell me, was it worth it?");
+		if(this==ItemManager.mithrilAxe || this == ItemManager.mithrilBoots || this == ItemManager.mithrilChestplate || this == ItemManager.mithrilHelmet || this == ItemManager.mithrilHoe || this == ItemManager.mithrilIngot || this == ItemManager.mithrilLeggings || this == ItemManager.mithrilNugget || this == ItemManager.mithrilPickaxe || this == ItemManager.mithrilShovel || this == ItemManager.mithrilStick || this == ItemManager.mithrilSword)
+			tooltip.add("Mithril is being removed in the next update.\nIt will be replaced with Manatheum.\nPlease convert all Mithril into Manatheum using the new recipes if you wish to keep it.");
 	}
 }

@@ -34,6 +34,15 @@ public class ClientProxy extends CommonProxy{
         
         ItemRenderRegister.registerItemRenderer();
         BlockRenderRegister.registerBlockRenderer();
+        
+        for(CompatModule compat : CompatModule.modules)
+			try
+			{
+				compat.clientInit();
+			} catch(Exception exception)
+			{
+				TheStuffExtension.logError("Compat module for "+compat+" could not be client initialized", exception);
+			}
     }
 
     @Override
@@ -45,7 +54,7 @@ public class ClientProxy extends CommonProxy{
 				compat.clientPostInit();
 			} catch(Exception exception)
 			{
-				TheStuffExtension.logError("Compat module for "+compat+" could not be client pre-initialized", exception);
+				TheStuffExtension.logError("Compat module for "+compat+" could not be client post-initialized", exception);
 			}
     }
     

@@ -7,6 +7,7 @@ import java.util.Set;
 
 import com.tse.common.core.TheStuffExtension;
 import com.tse.common.integration.tconstruct.TConstructHelper;
+import com.tse.common.integration.tconstruct.conarm.ConArmHelper;
 
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.relauncher.Side;
@@ -21,6 +22,7 @@ public abstract class CompatModule
 	static
 	{
 		moduleClasses.put("tconstruct", TConstructHelper.class);
+		moduleClasses.put("conarm", ConArmHelper.class);
 	}
 
 	public static void doModulesPreInit()

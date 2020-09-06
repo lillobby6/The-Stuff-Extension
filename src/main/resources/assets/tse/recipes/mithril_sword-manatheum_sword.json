@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:mithril_sword"
+        }
+    ],
+    "result": {
+        "item": "tse:manatheum_sword"
+    }
+}

@@ -33,8 +33,8 @@ public class AlloyFurnaceRecipes {
 		
 		this.addOreSmeltingRecipe("ingotMysterious", "ingotMystic", new ItemStack(ItemManager.fantasiumIngot, 2), 0.2F);
 		this.addOreSmeltingRecipe("ingotTyionetium", "ingotToslotrium", new ItemStack(ItemManager.scorniumIngot, 2), 0.3F);
-		this.addOreSmeltingRecipe("ingotMithril", "ingotScornium", new ItemStack(ItemManager.extranetiumIngot, 2), 0.5F);
-		this.addOreSmeltingRecipe("ingotFantasium", "ingotMagic", new ItemStack(ItemManager.mithrilIngot, 2), 0.5F);
+		this.addOreSmeltingRecipe("ingotManatheum", "ingotScornium", new ItemStack(ItemManager.extranetiumIngot, 2), 0.5F);
+		this.addOreSmeltingRecipe("ingotBrightheart", "ingotMagic", new ItemStack(ItemManager.manatheumIngot, 2), 0.5F);
 		this.addOreSmeltingRecipe("ingotCopper", "ingotTin", new ItemStack(ItemManager.bronzeIngot, 2), 0.1F);
 		this.addOreSmeltingRecipe("ingotDiamond", "ingotToslotrium", new ItemStack(ItemManager.mysticIngot, 2), 0.1F);
 		this.addOreSmeltingRecipe("ingotGoldReforged", "ingotTyionetium", new ItemStack(ItemManager.mysteriousIngot, 2), 0.3F);
@@ -45,7 +45,7 @@ public class AlloyFurnaceRecipes {
 		this.addOreSmeltingRecipe("ingotBrightsteel", "ingotPlatinum", new ItemStack(ItemManager.laeniumIngot, 2), 0.1F);
 		this.addOreSmeltingRecipe("ingotIron", "ingotGold", new ItemStack(ItemManager.magneiumIngot, 2), 0.3F);
 		this.addOreSmeltingRecipe("ingotEternium", "ingotImmortalium", new ItemStack(ItemManager.maduumIngot, 2), 0.0F);
-		this.addOreSmeltingRecipe("ingotMaduum", "ingotMaduum", new ItemStack(ItemManager.maduumIngot, 2), 0.0F);
+		this.addOreSmeltingRecipe("ingotMaduum", "ingotMaduum", new ItemStack(ItemManager.maduumIngot, 1), 0.0F);
 		this.addOreSmeltingRecipe("ingotToslotrium", "ingotFantasium", new ItemStack(ItemManager.magicIngot, 2), 0.3F);
 		this.addOreSmeltingRecipe("ingotManyullyn", "ingotMagic", new ItemStack(ItemManager.dreamIngot, 2), 1.0F);
 		

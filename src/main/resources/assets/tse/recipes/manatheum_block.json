@@ -1,0 +1,35 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "item": "tse:manatheum_ingot"
+        },
+		{
+            "item": "tse:manatheum_ingot"
+        },
+		{
+            "item": "tse:manatheum_ingot"
+        },
+		{
+            "item": "tse:manatheum_ingot"
+        },
+		{
+            "item": "tse:manatheum_ingot"
+        },
+		{
+            "item": "tse:manatheum_ingot"
+        },
+		{
+            "item": "tse:manatheum_ingot"
+        },
+		{
+            "item": "tse:manatheum_ingot"
+        },
+		{
+            "item": "tse:manatheum_ingot"
+        }
+    ],
+    "result": {
+        "item": "tse:manatheum_block"
+    }
+}

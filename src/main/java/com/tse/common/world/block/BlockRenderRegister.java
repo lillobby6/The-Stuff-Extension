@@ -37,6 +37,8 @@ public class BlockRenderRegister {
 		
 		reg(BlockManager.meteor);
 		
+		reg(BlockManager.manatheumBlock);
+		
 		//reg(BlockManager.moonSand);
 		//reg(BlockManager.moonStone);
 		//reg(BlockManager.moonTeleporter);

@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "tse:mithril_ingot"
+            "item": "tse:manatheum_ingot"
         }
     ],
     "result": {

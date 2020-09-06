@@ -31,6 +31,7 @@ public class ItemManager {
 	public static Item reforgedGoldStick = new TSEItem("reforged_gold_stick", TSECreativeTabs.tabMaterials);
 	public static Item magicStick = new TSEItem("magic_stick", TSECreativeTabs.tabMaterials);
 	public static Item mithrilStick = new TSEItem("mithril_stick", TSECreativeTabs.tabMaterials);
+	public static Item manatheumStick = new TSEItem("manatheum_stick", TSECreativeTabs.tabMaterials);
 	public static Item mysteriousStick = new TSEItem("mysterious_stick", TSECreativeTabs.tabMaterials);
 	public static Item mysticStick = new TSEItem("mystic_stick", TSECreativeTabs.tabMaterials);
 	public static Item extranetiumStick = new TSEItem("extranetium_stick", TSECreativeTabs.tabMaterials);
@@ -101,6 +102,7 @@ public class ItemManager {
 	public static Item reforgedGoldIngot = new TSEItem("reforged_gold_ingot", TSECreativeTabs.tabMaterials);
 	public static Item magicIngot = new TSEItem("magic_ingot", TSECreativeTabs.tabMaterials);
 	public static Item mithrilIngot = new TSEItem("mithril_ingot", TSECreativeTabs.tabMaterials);
+	public static Item manatheumIngot = new TSEItem("manatheum_ingot", TSECreativeTabs.tabMaterials);
 	public static Item mortiumIngot = new TSEItem("mortium_ingot", TSECreativeTabs.tabMaterials);
 	public static Item mysteriousIngot = new TSEItem("mysterious_ingot", TSECreativeTabs.tabMaterials);
 	public static Item mysticIngot = new TSEItem("mystic_ingot", TSECreativeTabs.tabMaterials);
@@ -134,9 +136,9 @@ public class ItemManager {
 	public static Item immortaliumIngot = new TSEItem("immortalium_ingot", TSECreativeTabs.tabMaterials);
 	public static Item dreamIngot = new TSEItem("dream_ingot", TSECreativeTabs.tabMaterials);
 	public static Item everbrightIngot = new TSEItem("everbright_ingot", TSECreativeTabs.tabMaterials, true);
-	public static Item arcaeumIngot = new TSEItem("arcaeum_ingot", TSECreativeTabs.tabMaterials);
-	public static Item necromiumIngot = new TSEItem("necromium_ingot", TSECreativeTabs.tabMaterials);
-	public static Item nightmareIngot = new TSEItem("nightmare_ingot", TSECreativeTabs.tabMaterials);
+	public static Item arcaeumIngot = new TSEItem("arcaeum_ingot", TSECreativeTabs.tabMaterials, true);
+	public static Item necromiumIngot = new TSEItem("necromium_ingot", TSECreativeTabs.tabMaterials, true);
+	public static Item nightmareIngot = new TSEItem("nightmare_ingot", TSECreativeTabs.tabMaterials, true);
 	public static Item coldflameIngot = new TSEItem("coldflame_ingot", TSECreativeTabs.tabMaterials);
 	public static Item coldheartIngot = new TSEItem("coldheart_ingot", TSECreativeTabs.tabMaterials);
 	public static Item coldsteelIngot = new TSEItem("coldsteel_ingot", TSECreativeTabs.tabMaterials);
@@ -152,6 +154,7 @@ public class ItemManager {
 	public static Item reforgedGoldNugget = new TSEItem("reforged_gold_nugget", TSECreativeTabs.tabMaterials);
 	public static Item magicNugget = new TSEItem("magic_nugget", TSECreativeTabs.tabMaterials);
 	public static Item mithrilNugget = new TSEItem("mithril_nugget", TSECreativeTabs.tabMaterials);
+	public static Item manatheumNugget = new TSEItem("manatheum_nugget", TSECreativeTabs.tabMaterials);
 	public static Item mortiumNugget = new TSEItem("mortium_nugget", TSECreativeTabs.tabMaterials);
 	public static Item mysteriousNugget = new TSEItem("mysterious_nugget", TSECreativeTabs.tabMaterials);
 	public static Item mysticNugget = new TSEItem("mystic_nugget", TSECreativeTabs.tabMaterials);
@@ -192,94 +195,100 @@ public class ItemManager {
 	// Copper
 	public static Item copperPickaxe = new TSEPickaxe(TSEToolMaterials.COPPER, "copper_pickaxe", TSECreativeTabs.tabTools, 2);
 	public static Item copperAxe = new TSEAxe(TSEToolMaterials.COPPER, "copper_axe", TSECreativeTabs.tabTools, 2, 1F, 5.0F);
-	public static Item copperMattock = new TSEMattock(-2.2F, TSEToolMaterials.COPPER, "copper_mattock", TSECreativeTabs.tabTools, 2);
+	//public static Item copperMattock = new TSEMattock(-2.2F, TSEToolMaterials.COPPER, "copper_mattock", TSECreativeTabs.tabTools, 2);
 	public static Item copperShovel = new TSESpade(TSEToolMaterials.COPPER, "copper_shovel", TSECreativeTabs.tabTools, 2);
 	public static Item copperHoe = new TSEHoe(TSEToolMaterials.COPPER, "copper_hoe", TSECreativeTabs.tabTools, 2);
 	// Copper
 
 	public static Item bronzePickaxe = new TSEPickaxe(TSEToolMaterials.BRONZE, "bronze_pickaxe", TSECreativeTabs.tabTools, 3);
 	public static Item bronzeAxe = new TSEAxe(TSEToolMaterials.BRONZE, "bronze_axe", TSECreativeTabs.tabTools, 3, 1F, 4.0F);
-	public static Item bronzeMattock = new TSEMattock(-2.2F, TSEToolMaterials.BRONZE, "bronze_mattock", TSECreativeTabs.tabTools, 3);
+	//public static Item bronzeMattock = new TSEMattock(-2.2F, TSEToolMaterials.BRONZE, "bronze_mattock", TSECreativeTabs.tabTools, 3);
 	public static Item bronzeShovel = new TSESpade(TSEToolMaterials.BRONZE, "bronze_shovel", TSECreativeTabs.tabTools, 3);
 	public static Item bronzeHoe = new TSEHoe(TSEToolMaterials.BRONZE, "bronze_hoe", TSECreativeTabs.tabTools, 3);
 
 	public static Item magicPickaxe = new TSEPickaxe(TSEToolMaterials.MAGIC, "magic_pickaxe", TSECreativeTabs.tabTools, 6);
-	public static Item magicAxe = new TSEAxe(TSEToolMaterials.MITHRIL, "magic_axe", TSECreativeTabs.tabTools, 6, 1F, 10.0F);
-	public static Item magicMattock = new TSEMattock(-2.2F, TSEToolMaterials.MAGIC, "magic_mattock", TSECreativeTabs.tabTools, 6);
+	public static Item magicAxe = new TSEAxe(TSEToolMaterials.MAGIC, "magic_axe", TSECreativeTabs.tabTools, 6, 1F, 10.0F);
+	//public static Item magicMattock = new TSEMattock(-2.2F, TSEToolMaterials.MAGIC, "magic_mattock", TSECreativeTabs.tabTools, 6);
 	public static Item magicShovel = new TSESpade(TSEToolMaterials.MAGIC, "magic_shovel", TSECreativeTabs.tabTools, 6);
 	public static Item magicHoe = new TSEHoe(TSEToolMaterials.MAGIC, "magic_hoe", TSECreativeTabs.tabTools, 6);
 
-	public static Item mithrilPickaxe = new TSEPickaxe(TSEToolMaterials.MITHRIL, "mithril_pickaxe", TSECreativeTabs.tabTools, 7);
-	public static Item mithrilAxe = new TSEAxe(TSEToolMaterials.MITHRIL, "mithril_axe", TSECreativeTabs.tabTools, 7, 1F, 15.0F);
-	public static Item mithrilMattock = new TSEMattock(-2.2F, TSEToolMaterials.MITHRIL, "mithril_mattock", TSECreativeTabs.tabTools, 7);
-	public static Item mithrilShovel = new TSESpade(TSEToolMaterials.MITHRIL, "mithril_shovel", TSECreativeTabs.tabTools, 7);
-	public static Item mithrilHoe = new TSEHoe(TSEToolMaterials.MITHRIL, "mithril_hoe", TSECreativeTabs.tabTools, 7);
+	public static Item mithrilPickaxe = new TSEItem("mithril_pickaxe", TSECreativeTabs.tabTools);//new TSEPickaxe(TSEToolMaterials.MITHRIL, "mithril_pickaxe", TSECreativeTabs.tabTools, 7);
+	public static Item mithrilAxe = new TSEItem("mithril_axe", TSECreativeTabs.tabTools);//new TSEAxe(TSEToolMaterials.MITHRIL, "mithril_axe", TSECreativeTabs.tabTools, 7, 1F, 15.0F);
+	//public static Item mithrilMattock = new TSEItem("mithril_mattock", TSECreativeTabs.tabTools);//new TSEMattock(-2.2F, TSEToolMaterials.MITHRIL, "mithril_mattock", TSECreativeTabs.tabTools, 7);
+	public static Item mithrilShovel = new TSEItem("mithril_shovel", TSECreativeTabs.tabTools);//new TSESpade(TSEToolMaterials.MITHRIL, "mithril_shovel", TSECreativeTabs.tabTools, 7);
+	public static Item mithrilHoe = new TSEItem("mithril_hoe", TSECreativeTabs.tabTools);//new TSEHoe(TSEToolMaterials.MITHRIL, "mithril_hoe", TSECreativeTabs.tabTools, 7);
+	
+	public static Item manatheumPickaxe = new TSEPickaxe(TSEToolMaterials.MANATHEUM, "manatheum_pickaxe", TSECreativeTabs.tabTools, 7);
+	public static Item manatheumAxe = new TSEAxe(TSEToolMaterials.MANATHEUM, "manatheum_axe", TSECreativeTabs.tabTools, 7, 1F, 15.0F);
+	//public static Item manatheumMattock = new TSEMattock(-2.2F, TSEToolMaterials.MANATHEUM, "manatheum_mattock", TSECreativeTabs.tabTools, 7);
+	public static Item manatheumShovel = new TSESpade(TSEToolMaterials.MANATHEUM, "manatheum_shovel", TSECreativeTabs.tabTools, 7);
+	public static Item manatheumHoe = new TSEHoe(TSEToolMaterials.MANATHEUM, "manatheum_hoe", TSECreativeTabs.tabTools, 7);
 
 	public static Item mortiumPickaxe = new TSEPickaxe(TSEToolMaterials.MORTIUM, "mortium_pickaxe", TSECreativeTabs.tabTools, 4);
 	public static Item mortiumAxe = new TSEAxe(TSEToolMaterials.MORTIUM, "mortium_axe", TSECreativeTabs.tabTools, 4, 1F, 4.0F);
-	public static Item mortiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.MORTIUM, "mortium_mattock", TSECreativeTabs.tabTools, 4);
+	//public static Item mortiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.MORTIUM, "mortium_mattock", TSECreativeTabs.tabTools, 4);
 	public static Item mortiumShovel = new TSESpade(TSEToolMaterials.MORTIUM, "mortium_shovel", TSECreativeTabs.tabTools, 4);
 	public static Item mortiumHoe = new TSEHoe(TSEToolMaterials.MORTIUM, "mortium_hoe", TSECreativeTabs.tabTools, 4);
 
 	public static Item mysteriousPickaxe = new TSEPickaxe(TSEToolMaterials.MYSTERIOUS, "mysterious_pickaxe", TSECreativeTabs.tabTools, 6);
 	public static Item mysteriousAxe = new TSEAxe(TSEToolMaterials.MYSTERIOUS, "mysterious_axe", TSECreativeTabs.tabTools, 6, 1F, 11F);
-	public static Item mysteriousMattock = new TSEMattock(-2.2F, TSEToolMaterials.MYSTERIOUS, "mysterious_mattock", TSECreativeTabs.tabTools, 6);
+	//public static Item mysteriousMattock = new TSEMattock(-2.2F, TSEToolMaterials.MYSTERIOUS, "mysterious_mattock", TSECreativeTabs.tabTools, 6);
 	public static Item mysteriousShovel = new TSESpade(TSEToolMaterials.MYSTERIOUS, "mysterious_shovel", TSECreativeTabs.tabTools, 6);
 	public static Item mysteriousHoe = new TSEHoe(TSEToolMaterials.MYSTERIOUS, "mysterious_hoe", TSECreativeTabs.tabTools, 6);
 
 	public static Item mysticPickaxe = new TSEPickaxe(TSEToolMaterials.MYSTIC, "mystic_pickaxe", TSECreativeTabs.tabTools, 5);
 	public static Item mysticAxe = new TSEAxe(TSEToolMaterials.MYSTIC, "mystic_axe", TSECreativeTabs.tabTools, 5, 1F, 7F);
-	public static Item mysticMattock = new TSEMattock(-2.2F, TSEToolMaterials.MYSTIC, "mystic_mattock", TSECreativeTabs.tabTools, 5);
+	//public static Item mysticMattock = new TSEMattock(-2.2F, TSEToolMaterials.MYSTIC, "mystic_mattock", TSECreativeTabs.tabTools, 5);
 	public static Item mysticShovel = new TSESpade(TSEToolMaterials.MYSTIC, "mystic_shovel", TSECreativeTabs.tabTools, 5);
 	public static Item mysticHoe = new TSEHoe(TSEToolMaterials.MYSTIC, "mystic_hoe", TSECreativeTabs.tabTools, 5);
 
 	public static Item skyIronPickaxe = new TSEPickaxe(TSEToolMaterials.SKYIRON, "sky_iron_pickaxe", TSECreativeTabs.tabTools, 2);
 	public static Item skyIronAxe = new TSEAxe(TSEToolMaterials.SKYIRON, "sky_iron_axe", TSECreativeTabs.tabTools, 2, 1F, 2F);
-	public static Item skyIronMattock = new TSEMattock(-2.2F, TSEToolMaterials.SKYIRON, "sky_iron_mattock", TSECreativeTabs.tabTools, 2);
+	//public static Item skyIronMattock = new TSEMattock(-2.2F, TSEToolMaterials.SKYIRON, "sky_iron_mattock", TSECreativeTabs.tabTools, 2);
 	public static Item skyIronShovel = new TSESpade(TSEToolMaterials.SKYIRON, "sky_iron_shovel", TSECreativeTabs.tabTools, 2);
 	public static Item skyIronHoe = new TSEHoe(TSEToolMaterials.SKYIRON, "sky_iron_hoe", TSECreativeTabs.tabTools, 2);
 
 	public static Item terriumPickaxe = new TSEPickaxe(TSEToolMaterials.TERRIUM, "terrium_pickaxe", TSECreativeTabs.tabTools, 5);
 	public static Item terriumAxe = new TSEAxe(TSEToolMaterials.TERRIUM, "terrium_axe", TSECreativeTabs.tabTools, 5, 1F, 4.0F);
-	public static Item terriumMattock = new TSEMattock(-2.2F, TSEToolMaterials.TERRIUM, "terrium_mattock", TSECreativeTabs.tabTools, 5);
+	//public static Item terriumMattock = new TSEMattock(-2.2F, TSEToolMaterials.TERRIUM, "terrium_mattock", TSECreativeTabs.tabTools, 5);
 	public static Item terriumShovel = new TSESpade(TSEToolMaterials.TERRIUM, "terrium_shovel", TSECreativeTabs.tabTools, 5);
 	public static Item terriumHoe = new TSEHoe(TSEToolMaterials.TERRIUM, "terrium_hoe", TSECreativeTabs.tabTools, 5);
 
 	public static Item vividiumPickaxe = new TSEPickaxe(TSEToolMaterials.VIVIDIUM, "vividium_pickaxe", TSECreativeTabs.tabTools, 4);
 	public static Item vividiumAxe = new TSEAxe(TSEToolMaterials.VIVIDIUM, "vividium_axe", TSECreativeTabs.tabTools, 4, 1F, 4F);
-	public static Item vividiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.VIVIDIUM, "vividium_mattock", TSECreativeTabs.tabTools, 4);
+	//public static Item vividiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.VIVIDIUM, "vividium_mattock", TSECreativeTabs.tabTools, 4);
 	public static Item vividiumShovel = new TSESpade(TSEToolMaterials.VIVIDIUM, "vividium_shovel", TSECreativeTabs.tabTools, 4);
 	public static Item vividiumHoe = new TSEHoe(TSEToolMaterials.VIVIDIUM, "vividium_hoe", TSECreativeTabs.tabTools, 4);
 
 	// Terra Diamond
 	public static Item terraDiamondPickaxe = new TSEPickaxe(TSEToolMaterials.TDIAMOND, "terra_diamond_pickaxe", TSECreativeTabs.tabTools, 4);
 	public static Item terraDiamondAxe = new TSEAxe(TSEToolMaterials.TDIAMOND, "terra_diamond_axe", TSECreativeTabs.tabTools, 4, 1F, 5F);
-	public static Item terraDiamondMattock = new TSEMattock(-2.0F, TSEToolMaterials.TDIAMOND, "terra_diamond_mattock", TSECreativeTabs.tabTools, 4);
+	//public static Item terraDiamondMattock = new TSEMattock(-2.0F, TSEToolMaterials.TDIAMOND, "terra_diamond_mattock", TSECreativeTabs.tabTools, 4);
 	public static Item terraDiamondShovel = new TSESpade(TSEToolMaterials.TDIAMOND, "terra_diamond_shovel", TSECreativeTabs.tabTools, 4);
 	public static Item terraDiamondHoe = new TSEHoe(TSEToolMaterials.TDIAMOND, "terra_diamond_hoe", TSECreativeTabs.tabTools, 4);
 	// Terra Diamond
 
 	public static Item tyionetiumPickaxe = new TSEPickaxe(TSEToolMaterials.TYIONETIUM, "tyionetium_pickaxe", TSECreativeTabs.tabTools, 5);
 	public static Item tyionetiumAxe = new TSEAxe(TSEToolMaterials.TYIONETIUM, "tyionetium_axe", TSECreativeTabs.tabTools, 5, 1F, 7F);
-	public static Item tyionetiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.TYIONETIUM, "tyionetium_mattock", TSECreativeTabs.tabTools, 5);
+	//public static Item tyionetiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.TYIONETIUM, "tyionetium_mattock", TSECreativeTabs.tabTools, 5);
 	public static Item tyionetiumShovel = new TSESpade(TSEToolMaterials.TYIONETIUM, "tyionetium_shovel", TSECreativeTabs.tabTools, 5);
 	public static Item tyionetiumHoe = new TSEHoe(TSEToolMaterials.TYIONETIUM, "tyionetium_hoe", TSECreativeTabs.tabTools, 5);
 
 	public static Item brightflamePickaxe = new TSEPickaxe(TSEToolMaterials.BRIGHTFLAME, "brightflame_pickaxe", TSECreativeTabs.tabTools, 6);
 	public static Item brightflameAxe = new TSEAxe(ToolMaterial.DIAMOND, "brightflame_axe", TSECreativeTabs.tabTools, 6, 1F, 9F);
-	public static Item brightflameMattock = new TSEMattock(-2.2F, TSEToolMaterials.BRIGHTFLAME, "brightflame_mattock", TSECreativeTabs.tabTools, 6);
+	//public static Item brightflameMattock = new TSEMattock(-2.2F, TSEToolMaterials.BRIGHTFLAME, "brightflame_mattock", TSECreativeTabs.tabTools, 6);
 	public static Item brightflameShovel = new TSESpade(TSEToolMaterials.BRIGHTFLAME, "brightflame_shovel", TSECreativeTabs.tabTools, 6);
 	public static Item brightflameHoe = new TSEHoe(TSEToolMaterials.BRIGHTFLAME, "brightflame_hoe", TSECreativeTabs.tabTools, 6);
 
 	public static Item brightsteelPickaxe = new TSEPickaxe(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_pickaxe", TSECreativeTabs.tabTools, 6);
 	public static Item brightsteelAxe = new TSEAxe(ToolMaterial.DIAMOND, "brightsteel_axe", TSECreativeTabs.tabTools, 6, 1F, 4F);
-	public static Item brightsteelMattock = new TSEMattock(-2.2F, TSEToolMaterials.BRIGHTSTEEL, "brightsteel_mattock", TSECreativeTabs.tabTools, 6);
+	//public static Item brightsteelMattock = new TSEMattock(-2.2F, TSEToolMaterials.BRIGHTSTEEL, "brightsteel_mattock", TSECreativeTabs.tabTools, 6);
 	public static Item brightsteelShovel = new TSESpade(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_shovel", TSECreativeTabs.tabTools, 6);
 	public static Item brightsteelHoe = new TSEHoe(TSEToolMaterials.BRIGHTSTEEL, "brightsteel_hoe", TSECreativeTabs.tabTools, 6);
 
 	public static Item extranetiumPickaxe = new TSEPickaxe(TSEToolMaterials.EXTRANETIUM, "extranetium_pickaxe", TSECreativeTabs.tabTools, 8);
 	public static Item extranetiumAxe = new TSEAxe(TSEToolMaterials.EXTRANETIUM, "extranetium_axe", TSECreativeTabs.tabTools, 8, 1F, 20F);
-	public static Item extranetiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.EXTRANETIUM, "extranetium_mattock", TSECreativeTabs.tabTools, 8);
+	//public static Item extranetiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.EXTRANETIUM, "extranetium_mattock", TSECreativeTabs.tabTools, 8);
 	public static Item extranetiumShovel = new TSESpade(TSEToolMaterials.EXTRANETIUM, "extranetium_shovel", TSECreativeTabs.tabTools, 8);
 	public static Item extranetiumHoe = new TSEHoe(TSEToolMaterials.EXTRANETIUM, "extranetium_hoe", TSECreativeTabs.tabTools, 8);
 
@@ -287,182 +296,182 @@ public class ItemManager {
 	public static Item steelAxe = new TSEAxe(TSEToolMaterials.STEEL, "steel_axe", TSECreativeTabs.tabTools, 3, 1F, 5F);
 	public static Item steelShovel = new TSESpade(TSEToolMaterials.STEEL, "steel_shovel", TSECreativeTabs.tabTools, 3);
 	public static Item steelHoe = new TSEHoe(TSEToolMaterials.STEEL, "steel_hoe", TSECreativeTabs.tabTools, 3);
-	public static Item steelMattock = new TSEMattock(-2.2F, TSEToolMaterials.STEEL, "steel_mattock", TSECreativeTabs.tabTools, 3);
+	//public static Item steelMattock = new TSEMattock(-2.2F, TSEToolMaterials.STEEL, "steel_mattock", TSECreativeTabs.tabTools, 3);
 
 	public static Item titaniumPickaxe = new TSEPickaxe(TSEToolMaterials.TITANIUM, "titanium_pickaxe", TSECreativeTabs.tabTools, 3);
 	public static Item titaniumAxe = new TSEAxe(TSEToolMaterials.TITANIUM, "titanium_axe", TSECreativeTabs.tabTools, 3, 1F, 6F);
 	public static Item titaniumShovel = new TSESpade(TSEToolMaterials.TITANIUM, "titanium_shovel", TSECreativeTabs.tabTools, 3);
 	public static Item titaniumHoe = new TSEHoe(TSEToolMaterials.TITANIUM, "titanium_hoe", TSECreativeTabs.tabTools, 3);
-	public static Item titaniumMattock = new TSEMattock(-2.2F, TSEToolMaterials.TITANIUM, "titanium_mattock", TSECreativeTabs.tabTools, 3);
+	//public static Item titaniumMattock = new TSEMattock(-2.2F, TSEToolMaterials.TITANIUM, "titanium_mattock", TSECreativeTabs.tabTools, 3);
 
 	public static Item silverPickaxe = new TSEPickaxe(TSEToolMaterials.SILVER, "silver_pickaxe", TSECreativeTabs.tabTools, 0);
 	public static Item silverAxe = new TSEAxe(TSEToolMaterials.SILVER, "silver_axe", TSECreativeTabs.tabTools, 0, 1F, 1F);
 	public static Item silverShovel = new TSESpade(TSEToolMaterials.SILVER, "silver_shovel", TSECreativeTabs.tabTools, 0);
 	public static Item silverHoe = new TSEHoe(TSEToolMaterials.SILVER, "silver_hoe", TSECreativeTabs.tabTools, 0);
-	public static Item silverMattock = new TSEMattock(-2.2F, TSEToolMaterials.SILVER, "silver_mattock", TSECreativeTabs.tabTools, 0);
+	//public static Item silverMattock = new TSEMattock(-2.2F, TSEToolMaterials.SILVER, "silver_mattock", TSECreativeTabs.tabTools, 0);
 
 	public static Item exaltedDiamondPickaxe = new TSEPickaxe(TSEToolMaterials.EDIAMOND, "exalted_diamond_pickaxe", TSECreativeTabs.tabTools, 4);
 	public static Item exaltedDiamondAxe = new TSEAxe(TSEToolMaterials.EDIAMOND, "exalted_diamond_axe", TSECreativeTabs.tabTools, 4, 1F, 6F);
 	public static Item exaltedDiamondShovel = new TSESpade(TSEToolMaterials.EDIAMOND, "exalted_diamond_shovel", TSECreativeTabs.tabTools, 4);
 	public static Item exaltedDiamondHoe = new TSEHoe(TSEToolMaterials.EDIAMOND, "exalted_diamond_hoe", TSECreativeTabs.tabTools, 4);
-	public static Item exaltedDiamondMattock = new TSEMattock(-2.2F, TSEToolMaterials.EDIAMOND, "exalted_diamond_mattock", TSECreativeTabs.tabTools, 4);
+	//public static Item exaltedDiamondMattock = new TSEMattock(-2.2F, TSEToolMaterials.EDIAMOND, "exalted_diamond_mattock", TSECreativeTabs.tabTools, 4);
 
 	public static Item bloodDiamondPickaxe = new TSEPickaxe(TSEToolMaterials.BDIAMOND, "blood_diamond_pickaxe", TSECreativeTabs.tabTools, 4);
 	public static Item bloodDiamondAxe = new TSEAxe(TSEToolMaterials.BDIAMOND, "blood_diamond_axe", TSECreativeTabs.tabTools, 4, 4F, 4F);
 	public static Item bloodDiamondShovel = new TSESpade(TSEToolMaterials.BDIAMOND, "blood_diamond_shovel", TSECreativeTabs.tabTools, 4);
 	public static Item bloodDiamondHoe = new TSEHoe(TSEToolMaterials.BDIAMOND, "blood_diamond_hoe", TSECreativeTabs.tabTools, 4);
-	public static Item bloodDiamondMattock = new TSEMattock(-2.2F, TSEToolMaterials.BDIAMOND, "blood_diamond_mattock", TSECreativeTabs.tabTools, 4);
+	//public static Item bloodDiamondMattock = new TSEMattock(-2.2F, TSEToolMaterials.BDIAMOND, "blood_diamond_mattock", TSECreativeTabs.tabTools, 4);
 
 	public static Item platinumPickaxe = new TSEPickaxe(TSEToolMaterials.PLATINUM, "platinum_pickaxe", TSECreativeTabs.tabTools, 0);
 	public static Item platinumAxe = new TSEAxe(TSEToolMaterials.PLATINUM, "platinum_axe", TSECreativeTabs.tabTools, 0, 2F, 2F);
 	public static Item platinumShovel = new TSESpade(TSEToolMaterials.PLATINUM, "platinum_shovel", TSECreativeTabs.tabTools, 0);
 	public static Item platinumHoe = new TSEHoe(TSEToolMaterials.PLATINUM, "platinum_hoe", TSECreativeTabs.tabTools, 0);
-	public static Item platinumMattock = new TSEMattock(-2.2F, TSEToolMaterials.PLATINUM, "platinum_mattock", TSECreativeTabs.tabTools, 0);
+	//public static Item platinumMattock = new TSEMattock(-2.2F, TSEToolMaterials.PLATINUM, "platinum_mattock", TSECreativeTabs.tabTools, 0);
 
 	public static Item tinPickaxe = new TSEPickaxe(TSEToolMaterials.TIN, "tin_pickaxe", TSECreativeTabs.tabTools, 1);
 	public static Item tinAxe = new TSEAxe(TSEToolMaterials.TIN, "tin_axe", TSECreativeTabs.tabTools, 1, 1F, 1F);
 	public static Item tinShovel = new TSESpade(TSEToolMaterials.TIN, "tin_shovel", TSECreativeTabs.tabTools, 1);
 	public static Item tinHoe = new TSEHoe(TSEToolMaterials.TIN, "tin_hoe", TSECreativeTabs.tabTools, 1);
-	public static Item tinMattock = new TSEMattock(-2.2F, TSEToolMaterials.TIN, "tin_mattock", TSECreativeTabs.tabTools, 1);
+	//public static Item tinMattock = new TSEMattock(-2.2F, TSEToolMaterials.TIN, "tin_mattock", TSECreativeTabs.tabTools, 1);
 
 	public static Item pewterPickaxe = new TSEPickaxe(TSEToolMaterials.PEWTER, "pewter_pickaxe", TSECreativeTabs.tabTools, 3);
 	public static Item pewterAxe = new TSEAxe(TSEToolMaterials.PEWTER, "pewter_axe", TSECreativeTabs.tabTools, 3, 3.0F, 3.0F);
 	public static Item pewterShovel = new TSESpade(TSEToolMaterials.PEWTER, "pewter_shovel", TSECreativeTabs.tabTools, 3);
 	public static Item pewterHoe = new TSEHoe(TSEToolMaterials.PEWTER, "pewter_hoe", TSECreativeTabs.tabTools, 3);
-	public static Item pewterMattock = new TSEMattock(-2.2F, TSEToolMaterials.PEWTER, "pewter_mattock", TSECreativeTabs.tabTools, 3);
+	//public static Item pewterMattock = new TSEMattock(-2.2F, TSEToolMaterials.PEWTER, "pewter_mattock", TSECreativeTabs.tabTools, 3);
 
 	public static Item mnemiumPickaxe = new TSEPickaxe(TSEToolMaterials.MNEMIUM, "mnemium_pickaxe", TSECreativeTabs.tabTools, 9);
 	public static Item mnemiumAxe = new TSEAxe(TSEToolMaterials.MNEMIUM, "mnemium_axe", TSECreativeTabs.tabTools, 9, 30F, 30F);
 	public static Item mnemiumShovel = new TSESpade(TSEToolMaterials.MNEMIUM, "mnemium_shovel", TSECreativeTabs.tabTools, 9);
 	public static Item mnemiumHoe = new TSEHoe(TSEToolMaterials.MNEMIUM, "mnemium_hoe", TSECreativeTabs.tabTools, 9);
-	public static Item mnemiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.MNEMIUM, "mnemium_mattock", TSECreativeTabs.tabTools, 9);
+	//public static Item mnemiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.MNEMIUM, "mnemium_mattock", TSECreativeTabs.tabTools, 9);
 
 	public static Item aluminumPickaxe = new TSEPickaxe(TSEToolMaterials.ALUMINUM, "aluminum_pickaxe", TSECreativeTabs.tabTools, 1);
 	public static Item aluminumAxe = new TSEAxe(TSEToolMaterials.ALUMINUM, "aluminum_axe", TSECreativeTabs.tabTools, 1, 3F, 3F);
 	public static Item aluminumShovel = new TSESpade(TSEToolMaterials.ALUMINUM, "aluminum_shovel", TSECreativeTabs.tabTools, 1);
 	public static Item aluminumHoe = new TSEHoe(TSEToolMaterials.ALUMINUM, "aluminum_hoe", TSECreativeTabs.tabTools, 1);
-	public static Item aluminumMattock = new TSEMattock(-2.2F, TSEToolMaterials.ALUMINUM, "aluminum_mattock", TSECreativeTabs.tabTools, 1);
+	//public static Item aluminumMattock = new TSEMattock(-2.2F, TSEToolMaterials.ALUMINUM, "aluminum_mattock", TSECreativeTabs.tabTools, 1);
 
 	public static Item eterniumPickaxe = new TSEPickaxe(TSEToolMaterials.ETERNIUM, "eternium_pickaxe", TSECreativeTabs.tabTools, 10);
 	public static Item eterniumAxe = new TSEAxe(TSEToolMaterials.ETERNIUM, "eternium_axe", TSECreativeTabs.tabTools, 10, 90.0F, 60.0F);
 	public static Item eterniumShovel = new TSESpade(TSEToolMaterials.ETERNIUM, "eternium_shovel", TSECreativeTabs.tabTools, 10);
 	public static Item eterniumHoe = new TSEHoe(TSEToolMaterials.ETERNIUM, "eternium_hoe", TSECreativeTabs.tabTools, 10);
-	public static Item eterniumMattock = new TSEMattock(-2.2F, TSEToolMaterials.ETERNIUM, "eternium_mattock", TSECreativeTabs.tabTools, 10);
+	//public static Item eterniumMattock = new TSEMattock(-2.2F, TSEToolMaterials.ETERNIUM, "eternium_mattock", TSECreativeTabs.tabTools, 10);
 	
 	public static Item reforgedGoldPickaxe = new TSEPickaxe(TSEToolMaterials.REFORGEDGOLD, "reforged_gold_pickaxe", TSECreativeTabs.tabTools, 2);
 	public static Item reforgedGoldAxe = new TSEAxe(TSEToolMaterials.REFORGEDGOLD, "reforged_gold_axe", TSECreativeTabs.tabTools, 2, 2.0F, 2.0F);
 	public static Item reforgedGoldShovel = new TSESpade(TSEToolMaterials.REFORGEDGOLD, "reforged_gold_shovel", TSECreativeTabs.tabTools, 2);
 	public static Item reforgedGoldHoe = new TSEHoe(TSEToolMaterials.REFORGEDGOLD, "reforged_gold_hoe", TSECreativeTabs.tabTools, 2);
-	public static Item reforgedGoldMattock = new TSEMattock(-2.2F, TSEToolMaterials.REFORGEDGOLD, "reforged_gold_mattock", TSECreativeTabs.tabTools, 2);
+	//public static Item reforgedGoldMattock = new TSEMattock(-2.2F, TSEToolMaterials.REFORGEDGOLD, "reforged_gold_mattock", TSECreativeTabs.tabTools, 2);
 	
 	public static Item zincPickaxe = new TSEPickaxe(TSEToolMaterials.ZINC, "zinc_pickaxe", TSECreativeTabs.tabTools, 1);
 	public static Item zincAxe = new TSEAxe(TSEToolMaterials.ZINC, "zinc_axe", TSECreativeTabs.tabTools, 1, 0.0F, 1.0F);
 	public static Item zincShovel = new TSESpade(TSEToolMaterials.ZINC, "zinc_shovel", TSECreativeTabs.tabTools, 1);
 	public static Item zincHoe = new TSEHoe(TSEToolMaterials.ZINC, "zinc_hoe", TSECreativeTabs.tabTools, 1);
-	public static Item zincMattock = new TSEMattock(-2.2F, TSEToolMaterials.ZINC, "zinc_mattock", TSECreativeTabs.tabTools, 1);
+	//public static Item zincMattock = new TSEMattock(-2.2F, TSEToolMaterials.ZINC, "zinc_mattock", TSECreativeTabs.tabTools, 1);
 	
 	public static Item brassPickaxe = new TSEPickaxe(TSEToolMaterials.BRASS, "brass_pickaxe", TSECreativeTabs.tabTools, 2);
 	public static Item brassAxe = new TSEAxe(TSEToolMaterials.BRASS, "brass_axe", TSECreativeTabs.tabTools, 2, 1.5F, 1.5F);
 	public static Item brassShovel = new TSESpade(TSEToolMaterials.BRASS, "brass_shovel", TSECreativeTabs.tabTools, 2);
 	public static Item brassHoe = new TSEHoe(TSEToolMaterials.BRASS, "brass_hoe", TSECreativeTabs.tabTools, 2);
-	public static Item brassMattock = new TSEMattock(-2.2F, TSEToolMaterials.BRASS, "brass_mattock", TSECreativeTabs.tabTools, 2);
+	//public static Item brassMattock = new TSEMattock(-2.2F, TSEToolMaterials.BRASS, "brass_mattock", TSECreativeTabs.tabTools, 2);
 	
 	public static Item leadPickaxe = new TSEPickaxe(TSEToolMaterials.LEAD, "lead_pickaxe", TSECreativeTabs.tabTools, 3);
 	public static Item leadAxe = new TSEAxe(TSEToolMaterials.LEAD, "lead_axe", TSECreativeTabs.tabTools, 3, 3.2F, 2.3F);
 	public static Item leadShovel = new TSESpade(TSEToolMaterials.LEAD, "lead_shovel", TSECreativeTabs.tabTools, 3);
 	public static Item leadHoe = new TSEHoe(TSEToolMaterials.LEAD, "lead_hoe", TSECreativeTabs.tabTools, 3);
-	public static Item leadMattock = new TSEMattock(-2.2F, TSEToolMaterials.LEAD, "lead_mattock", TSECreativeTabs.tabTools, 3);
+	//public static Item leadMattock = new TSEMattock(-2.2F, TSEToolMaterials.LEAD, "lead_mattock", TSECreativeTabs.tabTools, 3);
 	
 	public static Item nickelPickaxe = new TSEPickaxe(TSEToolMaterials.NICKEL, "nickel_pickaxe", TSECreativeTabs.tabTools, 1);
 	public static Item nickelAxe = new TSEAxe(TSEToolMaterials.NICKEL, "nickel_axe", TSECreativeTabs.tabTools, 1, 0.0F, 1.0F);
 	public static Item nickelShovel = new TSESpade(TSEToolMaterials.NICKEL, "nickel_shovel", TSECreativeTabs.tabTools, 1);
 	public static Item nickelHoe = new TSEHoe(TSEToolMaterials.NICKEL, "nickel_hoe", TSECreativeTabs.tabTools, 1);
-	public static Item nickelMattock = new TSEMattock(-2.2F, TSEToolMaterials.NICKEL, "nickel_mattock", TSECreativeTabs.tabTools, 1);
+	//public static Item nickelMattock = new TSEMattock(-2.2F, TSEToolMaterials.NICKEL, "nickel_mattock", TSECreativeTabs.tabTools, 1);
 	
 	public static Item fantasiumPickaxe = new TSEPickaxe(TSEToolMaterials.FANTASIUM, "fantasium_pickaxe", TSECreativeTabs.tabTools, 5);
 	public static Item fantasiumAxe = new TSEAxe(TSEToolMaterials.FANTASIUM, "fantasium_axe", TSECreativeTabs.tabTools, 5, 8.0F, 8.0F);
 	public static Item fantasiumShovel = new TSESpade(TSEToolMaterials.FANTASIUM, "fantasium_shovel", TSECreativeTabs.tabTools, 5);
 	public static Item fantasiumHoe = new TSEHoe(TSEToolMaterials.FANTASIUM, "fantasium_hoe", TSECreativeTabs.tabTools, 5);
-	public static Item fantasiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.FANTASIUM, "fantasium_mattock", TSECreativeTabs.tabTools, 5);
+	//public static Item fantasiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.FANTASIUM, "fantasium_mattock", TSECreativeTabs.tabTools, 5);
 	
 	public static Item scorniumPickaxe = new TSEPickaxe(TSEToolMaterials.SCORNIUM, "scornium_pickaxe", TSECreativeTabs.tabTools, 5);
 	public static Item scorniumAxe = new TSEAxe(TSEToolMaterials.SCORNIUM, "scornium_axe", TSECreativeTabs.tabTools, 5, 9.0F, 9.0F);
 	public static Item scorniumShovel = new TSESpade(TSEToolMaterials.SCORNIUM, "scornium_shovel", TSECreativeTabs.tabTools, 5);
 	public static Item scorniumHoe = new TSEHoe(TSEToolMaterials.SCORNIUM, "scornium_hoe", TSECreativeTabs.tabTools, 5);
-	public static Item scorniumMattock = new TSEMattock(-2.2F, TSEToolMaterials.SCORNIUM, "scornium_mattock", TSECreativeTabs.tabTools, 5);
+	//public static Item scorniumMattock = new TSEMattock(-2.2F, TSEToolMaterials.SCORNIUM, "scornium_mattock", TSECreativeTabs.tabTools, 5);
 	
 	public static Item electrumPickaxe = new TSEPickaxe(TSEToolMaterials.ELECTRUM, "electrum_pickaxe", TSECreativeTabs.tabTools, 1);
 	public static Item electrumAxe = new TSEAxe(TSEToolMaterials.ELECTRUM, "electrum_axe", TSECreativeTabs.tabTools, 1, 0.5F, 3.0F);
 	public static Item electrumShovel = new TSESpade(TSEToolMaterials.ELECTRUM, "electrum_shovel", TSECreativeTabs.tabTools, 1);
 	public static Item electrumHoe = new TSEHoe(TSEToolMaterials.ELECTRUM, "electrum_hoe", TSECreativeTabs.tabTools, 1);
-	public static Item electrumMattock = new TSEMattock(-2.2F, TSEToolMaterials.ELECTRUM, "electrum_mattock", TSECreativeTabs.tabTools, 1);
+	//public static Item electrumMattock = new TSEMattock(-2.2F, TSEToolMaterials.ELECTRUM, "electrum_mattock", TSECreativeTabs.tabTools, 1);
 	
 	public static Item laeniumPickaxe = new TSEPickaxe(TSEToolMaterials.LAENIUM, "laenium_pickaxe", TSECreativeTabs.tabTools, 4);
 	public static Item laeniumAxe = new TSEAxe(TSEToolMaterials.LAENIUM, "laenium_axe", TSECreativeTabs.tabTools, 4, 2.0F, 4.0F);
 	public static Item laeniumShovel = new TSESpade(TSEToolMaterials.LAENIUM, "laenium_shovel", TSECreativeTabs.tabTools, 4);
 	public static Item laeniumHoe = new TSEHoe(TSEToolMaterials.LAENIUM, "laenium_hoe", TSECreativeTabs.tabTools, 4);
-	public static Item laeniumMattock = new TSEMattock(-2.2F, TSEToolMaterials.LAENIUM, "laenium_mattock", TSECreativeTabs.tabTools, 4);
+	//public static Item laeniumMattock = new TSEMattock(-2.2F, TSEToolMaterials.LAENIUM, "laenium_mattock", TSECreativeTabs.tabTools, 4);
 	
 	public static Item magneiumPickaxe = new TSEPickaxe(TSEToolMaterials.MAGNEIUM, "magneium_pickaxe", TSECreativeTabs.tabTools, 2);
 	public static Item magneiumAxe = new TSEAxe(TSEToolMaterials.MAGNEIUM, "magneium_axe", TSECreativeTabs.tabTools, 2, 1.0F, 4.0F);
 	public static Item magneiumShovel = new TSESpade(TSEToolMaterials.MAGNEIUM, "magneium_shovel", TSECreativeTabs.tabTools, 2);
 	public static Item magneiumHoe = new TSEHoe(TSEToolMaterials.MAGNEIUM, "magneium_hoe", TSECreativeTabs.tabTools, 2);
-	public static Item magneiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.MAGNEIUM, "magneium_mattock", TSECreativeTabs.tabTools, 2);
+	//public static Item magneiumMattock = new TSEMattock(-2.2F, TSEToolMaterials.MAGNEIUM, "magneium_mattock", TSECreativeTabs.tabTools, 2);
 	
 	public static Item sterlingSilverPickaxe = new TSEPickaxe(TSEToolMaterials.STSILVER, "sterling_silver_pickaxe", TSECreativeTabs.tabTools, 1);
 	public static Item sterlingSilverAxe = new TSEAxe(TSEToolMaterials.STSILVER, "sterling_silver_axe", TSECreativeTabs.tabTools, 1, 0.0F, 2.0F);
 	public static Item sterlingSilverShovel = new TSESpade(TSEToolMaterials.STSILVER, "sterling_silver_shovel", TSECreativeTabs.tabTools, 1);
 	public static Item sterlingSilverHoe = new TSEHoe(TSEToolMaterials.STSILVER, "sterling_silver_hoe", TSECreativeTabs.tabTools, 1);
-	public static Item sterlingSilverMattock = new TSEMattock(-2.2F, TSEToolMaterials.STSILVER, "sterling_silver_mattock", TSECreativeTabs.tabTools, 1);
+	//public static Item sterlingSilverMattock = new TSEMattock(-2.2F, TSEToolMaterials.STSILVER, "sterling_silver_mattock", TSECreativeTabs.tabTools, 1);
 	
 	public static Item roseGoldPickaxe = new TSEPickaxe(ToolMaterial.GOLD, "rose_gold_pickaxe", TSECreativeTabs.tabTools, 0);
 	public static Item roseGoldAxe = new TSEAxe(ToolMaterial.GOLD, "rose_gold_axe", TSECreativeTabs.tabTools, 0, 0.0F, 2.0F);
 	public static Item roseGoldShovel = new TSESpade(ToolMaterial.GOLD, "rose_gold_shovel", TSECreativeTabs.tabTools, 0);
 	public static Item roseGoldHoe = new TSEHoe(ToolMaterial.GOLD, "rose_gold_hoe", TSECreativeTabs.tabTools, 0);
-	public static Item roseGoldMattock = new TSEMattock(-2.2F, ToolMaterial.GOLD, "rose_gold_mattock", TSECreativeTabs.tabTools, 0);
+	//public static Item roseGoldMattock = new TSEMattock(-2.2F, ToolMaterial.GOLD, "rose_gold_mattock", TSECreativeTabs.tabTools, 0);
 	
 	public static Item whiteGoldPickaxe = new TSEPickaxe(ToolMaterial.GOLD, "white_gold_pickaxe", TSECreativeTabs.tabTools, 0);
 	public static Item whiteGoldAxe = new TSEAxe(ToolMaterial.GOLD, "white_gold_axe", TSECreativeTabs.tabTools, 0, 0.0F, 2.0F);
 	public static Item whiteGoldShovel = new TSESpade(ToolMaterial.GOLD, "white_gold_shovel", TSECreativeTabs.tabTools, 0);
 	public static Item whiteGoldHoe = new TSEHoe(ToolMaterial.GOLD, "white_gold_hoe", TSECreativeTabs.tabTools, 0);
-	public static Item whiteGoldMattock = new TSEMattock(-2.2F, ToolMaterial.GOLD, "white_gold_mattock", TSECreativeTabs.tabTools, 0);
+	//public static Item whiteGoldMattock = new TSEMattock(-2.2F, ToolMaterial.GOLD, "white_gold_mattock", TSECreativeTabs.tabTools, 0);
 	
 	public static Item spangoldPickaxe = new TSEPickaxe(ToolMaterial.GOLD, "spangold_pickaxe", TSECreativeTabs.tabTools, 0);
 	public static Item spangoldAxe = new TSEAxe(ToolMaterial.GOLD, "spangold_axe", TSECreativeTabs.tabTools, 0, 0.0F, 2.0F);
 	public static Item spangoldShovel = new TSESpade(ToolMaterial.GOLD, "spangold_shovel", TSECreativeTabs.tabTools, 0);
 	public static Item spangoldHoe = new TSEHoe(ToolMaterial.GOLD, "spangold_hoe", TSECreativeTabs.tabTools, 0);
-	public static Item spangoldMattock = new TSEMattock(-2.2F, ToolMaterial.GOLD, "spangold_mattock", TSECreativeTabs.tabTools, 0);
+	//public static Item spangoldMattock = new TSEMattock(-2.2F, ToolMaterial.GOLD, "spangold_mattock", TSECreativeTabs.tabTools, 0);
 	
 	public static Item meteoricIronPickaxe = new TSEPickaxe(TSEToolMaterials.METEORICIRON, "meteoric_iron_pickaxe", TSECreativeTabs.tabTools, 2);
 	public static Item meteoricIronAxe = new TSEAxe(TSEToolMaterials.METEORICIRON, "meteoric_iron_axe", TSECreativeTabs.tabTools, 2, 2.1F, 2.2F);
 	public static Item meteoricIronShovel = new TSESpade(TSEToolMaterials.METEORICIRON, "meteoric_iron_shovel", TSECreativeTabs.tabTools, 2);
 	public static Item meteoricIronHoe = new TSEHoe(TSEToolMaterials.METEORICIRON, "meteoric_iron_hoe", TSECreativeTabs.tabTools, 2);
-	public static Item meteoricIronMattock = new TSEMattock(-2.2F, TSEToolMaterials.METEORICIRON, "meteoric_iron_mattock", TSECreativeTabs.tabTools, 2);
+	//public static Item meteoricIronMattock = new TSEMattock(-2.2F, TSEToolMaterials.METEORICIRON, "meteoric_iron_mattock", TSECreativeTabs.tabTools, 2);
 	
 	public static Item maduumPickaxe = new TSEPickaxe(TSEToolMaterials.MADUUM, "maduum_pickaxe", TSECreativeTabs.tabTools, 1);
 	public static Item maduumAxe = new TSEAxe(TSEToolMaterials.MADUUM, "maduum_axe", TSECreativeTabs.tabTools, 1, 0.0F, 2.0F);
 	public static Item maduumShovel = new TSESpade(TSEToolMaterials.MADUUM, "maduum_shovel", TSECreativeTabs.tabTools, 1);
 	public static Item maduumHoe = new TSEHoe(TSEToolMaterials.MADUUM, "maduum_hoe", TSECreativeTabs.tabTools, 1);
-	public static Item maduumMattock = new TSEMattock(-2.2F, TSEToolMaterials.MADUUM, "maduum_mattock", TSECreativeTabs.tabTools, 1);
+	//public static Item maduumMattock = new TSEMattock(-2.2F, TSEToolMaterials.MADUUM, "maduum_mattock", TSECreativeTabs.tabTools, 1);
 	
 	public static Item immortaliumPickaxe = new TSEPickaxe(TSEToolMaterials.IMMORTALIUM, "immortalium_pickaxe", TSECreativeTabs.tabTools, 10);
 	public static Item immortaliumAxe = new TSEAxe(TSEToolMaterials.IMMORTALIUM, "immortalium_axe", TSECreativeTabs.tabTools, 10, 50.0F, 90.0F);
 	public static Item immortaliumShovel = new TSESpade(TSEToolMaterials.IMMORTALIUM, "immortalium_shovel", TSECreativeTabs.tabTools, 10);
 	public static Item immortaliumHoe = new TSEHoe(TSEToolMaterials.IMMORTALIUM, "immortalium_hoe", TSECreativeTabs.tabTools, 10);
-	public static Item immortaliumMattock = new TSEMattock(-2.2F, TSEToolMaterials.IMMORTALIUM, "immortalium_mattock", TSECreativeTabs.tabTools, 10);
+	//public static Item immortaliumMattock = new TSEMattock(-2.2F, TSEToolMaterials.IMMORTALIUM, "immortalium_mattock", TSECreativeTabs.tabTools, 10);
 	
 	public static Item dreamPickaxe = new TSEPickaxe(TSEToolMaterials.DREAM, "dream_pickaxe", TSECreativeTabs.tabTools, 10);
 	public static Item dreamAxe = new TSEAxe(TSEToolMaterials.DREAM, "dream_axe", TSECreativeTabs.tabTools, 10, 50.0F, 30.0F);
 	public static Item dreamShovel = new TSESpade(TSEToolMaterials.DREAM, "dream_shovel", TSECreativeTabs.tabTools, 10);
 	public static Item dreamHoe = new TSEHoe(TSEToolMaterials.DREAM, "dream_hoe", TSECreativeTabs.tabTools, 10);
-	public static Item dreamMattock = new TSEMattock(-2.2F, TSEToolMaterials.DREAM, "dream_mattock", TSECreativeTabs.tabTools, 10);
+	//public static Item dreamMattock = new TSEMattock(-2.2F, TSEToolMaterials.DREAM, "dream_mattock", TSECreativeTabs.tabTools, 10);
 	
 	// Others
-	public static Item woodMattock = new TSEMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools, 0);
-	public static Item stoneMattock = new TSEMattock(-2.5F, ToolMaterial.STONE, "stone_mattock", TSECreativeTabs.tabTools, 1);
-	public static Item ironMattock = new TSEMattock(-2.2F, ToolMaterial.IRON, "iron_mattock", TSECreativeTabs.tabTools, 2);
-	public static Item diamondMattock = new TSEMattock(-2.0F, ToolMaterial.DIAMOND, "diamond_mattock", TSECreativeTabs.tabTools, 3);
-	public static Item goldMattock = new TSEMattock(1.0F, ToolMaterial.GOLD, "gold_mattock", TSECreativeTabs.tabTools, 0);
+//	public static Item woodMattock = new TSEMattock(-3.0F, ToolMaterial.WOOD, "wood_mattock", TSECreativeTabs.tabTools, 0);
+//	public static Item stoneMattock = new TSEMattock(-2.5F, ToolMaterial.STONE, "stone_mattock", TSECreativeTabs.tabTools, 1);
+//	public static Item ironMattock = new TSEMattock(-2.2F, ToolMaterial.IRON, "iron_mattock", TSECreativeTabs.tabTools, 2);
+//	public static Item diamondMattock = new TSEMattock(-2.0F, ToolMaterial.DIAMOND, "diamond_mattock", TSECreativeTabs.tabTools, 3);
+//	public static Item goldMattock = new TSEMattock(1.0F, ToolMaterial.GOLD, "gold_mattock", TSECreativeTabs.tabTools, 0);
 	// Others
 
 	// End Tools
@@ -476,7 +485,8 @@ public class ItemManager {
 	public static Item brightflameSword = new TSESword(TSEToolMaterials.BRIGHTFLAME, "brightflame_sword", TSECreativeTabs.tabWeapons);
 	public static Item brightsteelSword = new TSESword(TSEToolMaterials.BRIGHTFLAME, "brightsteel_sword", TSECreativeTabs.tabWeapons);
 	public static Item magicSword = new TSESword(TSEToolMaterials.MAGIC, "magic_sword", TSECreativeTabs.tabWeapons);
-	public static Item mithrilSword = new TSESword(TSEToolMaterials.MITHRIL, "mithril_sword", TSECreativeTabs.tabWeapons);
+	public static Item mithrilSword = new TSEItem("mithril_sword", TSECreativeTabs.tabWeapons);
+	public static Item manatheumSword = new TSESword(TSEToolMaterials.MANATHEUM, "manatheum_sword", TSECreativeTabs.tabWeapons);
 	public static Item mortiumSword = new TSESword(TSEToolMaterials.MORTIUM, "mortium_sword", TSECreativeTabs.tabWeapons);
 	public static Item mysteriousSword = new TSESword(TSEToolMaterials.MYSTERIOUS, "mysterious_sword", TSECreativeTabs.tabWeapons);
 	public static Item mysticSword = new TSESword(TSEToolMaterials.MYSTIC, "mystic_sword", TSECreativeTabs.tabWeapons);
@@ -558,10 +568,16 @@ public class ItemManager {
 	public static Item magicLeggings = new TSEArmor("magic_leggings", TSEArmorMaterials.MAGIC, 1, EntityEquipmentSlot.LEGS);
 	public static Item magicBoots = new TSEArmor("magic_boots", TSEArmorMaterials.MAGIC, 1, EntityEquipmentSlot.FEET);
 
-	public static Item mithrilHelmet = new TSEArmor("mithril_helmet", TSEArmorMaterials.MITHRIL, 1, EntityEquipmentSlot.HEAD);
-	public static Item mithrilChestplate = new TSEArmor("mithril_chestplate", TSEArmorMaterials.MITHRIL, 1, EntityEquipmentSlot.CHEST);
-	public static Item mithrilLeggings = new TSEArmor("mithril_leggings", TSEArmorMaterials.MITHRIL, 1, EntityEquipmentSlot.LEGS);
-	public static Item mithrilBoots = new TSEArmor("mithril_boots", TSEArmorMaterials.MITHRIL, 1, EntityEquipmentSlot.FEET);
+	public static Item mithrilHelmet = new TSEItem("mithril_helmet", TSECreativeTabs.tabWeapons);
+	public static Item mithrilChestplate = new TSEItem("mithril_chestplate", TSECreativeTabs.tabWeapons);
+	public static Item mithrilLeggings = new TSEItem("mithril_leggings", TSECreativeTabs.tabWeapons);
+	public static Item mithrilBoots = new TSEItem("mithril_boots", TSECreativeTabs.tabWeapons);
+	
+	public static Item manatheumHelmet = new TSEArmor("manatheum_helmet", TSEArmorMaterials.MANATHEUM, 1, EntityEquipmentSlot.HEAD);
+	public static Item manatheumChestplate = new TSEArmor("manatheum_chestplate", TSEArmorMaterials.MANATHEUM, 1, EntityEquipmentSlot.CHEST);
+	public static Item manatheumLeggings = new TSEArmor("manatheum_leggings", TSEArmorMaterials.MANATHEUM, 1, EntityEquipmentSlot.LEGS);
+	public static Item manatheumBoots = new TSEArmor("manatheum_boots", TSEArmorMaterials.MANATHEUM, 1, EntityEquipmentSlot.FEET);
+
 
 	public static Item mortiumHelmet = new TSEArmor("mortium_helmet", TSEArmorMaterials.MORTIUM, 1, EntityEquipmentSlot.HEAD);
 	public static Item mortiumChestplate = new TSEArmor("mortium_chestplate", TSEArmorMaterials.MORTIUM, 1, EntityEquipmentSlot.CHEST);

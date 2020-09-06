@@ -1,7 +1,0 @@
-{
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "tse:items/blood_diamond_mattock"
-	}
-}
-
